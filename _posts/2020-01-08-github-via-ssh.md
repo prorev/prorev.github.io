@@ -96,7 +96,7 @@ The next step is to add the public RSA key your GitHub account.
 <img class="alignnone" title="ssh2" src="/uploads/2020/01/ssh2.jpg" alt="ssh2"  />
 
 
-
+After that you can clone the repo:
 ```
 git clone git@github.com:[username]/[reponame].github.io.git
 ```
