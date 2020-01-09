@@ -25,6 +25,8 @@ where `[username]` is your GitHub username.
 
 But before you do that you need to have SSH key set on GitHub.
 
+<img class="alignnone" title="ssh1" src="/uploads/2020/01/ssh1.jpg" alt="ssh1"  />
+
 To do that make sure you have on Windows:
 
 `dir C:\Users\[uname]\.ssh`
@@ -67,9 +69,8 @@ If the agent is stopped you need to start it.
 
 You can start the **ssh-agent** service if you have `ssh-agent` service set on manual.
 
-<img class="alignnone" title="ssh1" src="/uploads/2020/01/ssh1.jpg" alt="ssh1" width="300" height="225" />
-<img class="alignnone" title="ssh2" src="/uploads/2020/01/ssh2.jpg" alt="ssh2" width="300" height="225" />
-<img class="alignnone" title="ssh3" src="/uploads/2020/01/ssh3.jpg" alt="ssh3" width="300" height="225" />
+
+<img class="alignnone" title="ssh3" src="/uploads/2020/01/ssh3.jpg" alt="ssh3"  />
 
 
 `Start-Service ssh-agent`
@@ -88,6 +89,13 @@ ssh-add C:\Users\[uname]\.ssh\id_rsa
 ```
 
 This would add the RSA key to the user and you will be able to user and you will be able to clone any repo.
+
+The next step is to add the public RSA key your GitHub account.
+>Settings > SSH and GPG keys
+
+<img class="alignnone" title="ssh2" src="/uploads/2020/01/ssh2.jpg" alt="ssh2"  />
+
+
 
 ```
 git clone git@github.com:[username]/[reponame].github.io.git
