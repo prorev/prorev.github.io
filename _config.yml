@@ -1,4 +1,4 @@
-title: PROGRAMMING REVIEW *
+title: PROGRAMMING REVIEW
 logo: /assets/img/logo.png
 description: Slow catching up the latest programming trends.
 google_analytics: 
@@ -7,6 +7,4 @@ plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 - jekyll-feed
-
-
 
