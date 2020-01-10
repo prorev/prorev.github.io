@@ -18,7 +18,7 @@ You can connect and authenticate to remote servers and services using the SSH pr
 
 Before you even generate a new SSH key, you can check to see if you have any existing SSH keys.
 
-On Windows:
+On Windows :
 
 `dir C:\Users\uname\.ssh`
 ```
