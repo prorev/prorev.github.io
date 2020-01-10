@@ -4,32 +4,37 @@ title: True and false in JavaScript
 date: 2020-01-08
 author: taimani
 layout: post
-permalink: /javascript/concepts
+permalink: /javascript/tips
 published: true
 image: 
 categories:
-   - github
+   - javascript
 tags:
    - ssh
 ---
+Here are some JavaScript simple tips.
+
 ### In JavaScript there are `true` and `false`
 
 These all will *eval* to `false`:
 
-* undefined
-* null
-* false
-* 0
-* NaN
-
+```
+undefined
+null
+false
+0
+NaN
+```
 All these will be `true`:
 
-* true
-* 1
-* 123 // any number
-* ‘any string’ // non-empty
-* [] // even empty arrays
-* {} // even empty objects, except null
+```
+true
+1
+123 // any number
+`any string` // non-empty
+[] // even empty arrays
+{} // even empty objects, except null
+```
 
 ### There are no classes in JavaScript, only objects
 
@@ -37,7 +42,9 @@ You can use the following shorthand to create object.
 
     var obj = new Object();
 
-But you can `forget var obj = new Object();` if you use `{}` like this:
+
+### How not to  use `new Object()`
+You can forget the syntax `var obj = new Object();` if you use `{}` like this:
 
     var obj = {};
 
@@ -47,12 +54,12 @@ Similar no need to use `var arr = new Array();`
 
 looks more compact.
 
-You can even use `var regex = new RegExp('something');` alternative:
+You can use `var regex = new RegExp('something');` alternative:
 
     var regex = /something/;
 
 
-### How to create an anonymous function and executes it?    
+### How to create an anonymous function and execute it?    
 
     (function(){})();
 
