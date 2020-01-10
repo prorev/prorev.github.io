@@ -4,33 +4,23 @@ title: USING GITHUB VIA SSH
 date: 2020-01-08
 author: taimani
 layout: post
-permalink: /using-github-via-ssh/
+permalink: /github/using-github-via-ssh/
 published: true
 image: 
-posno: 
 categories:
    - github
 tags:
    - ssh
 ---
-This text will explain connecting to GitHub repository using SSH protocol.
+This text will explain connecting to GitHub using SSH protocol.
 
-You can clone github repo with SSH keys, and no username or password are needed:
+You can connect and authenticate to remote servers and services using the SSH protocol. With SSH keys, no username or password are needed.
 
-```
-git clone git@github.com:[username]/[reponame].github.io.git
-```
+Before you even generate a new SSH key, you can check to see if you have any existing SSH keys.
 
-where `[username]` is your GitHub username.
+On Windows:
 
-But before you do that you need to have SSH key set on GitHub.
-
-<img class="alignnone" title="ssh1" src="/uploads/2020/01/ssh1.jpg" alt="ssh1"  />
-
-To do that make sure you have on Windows:
-
-`dir C:\Users\[uname]\.ssh`
-
+`dir C:\Users\uname\.ssh`
 ```
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -39,22 +29,18 @@ Mode                LastWriteTime         Length Name
 -a----        12/5/2019   2:30 PM           1193 known_hosts
 ```
 
-where `[uname]` is your Windows username.
-
-Similar on Linux and Mac you may check the same:
+Similar on Linux and Mac:
 
 `ls -al ~/.ssh`
 
-    If you don't have the `id_rsa` and `id_rsa.pub` you would have to generate them like this: 
-
-    `ssh-keygen -t rsa -b 4096 -C "your.email@address"`
-
-
 Now you need to add **SSH key** to the agent (ssh-agent).
+
 
 ## Adding ssh key to the agent
 
 On Windows:
+
+If you have GitHub for Windows installed, you can use it to clone repositories and not deal with SSH keys. It also comes with the Git Bash tool, which is the preferred way of running git commands on Windows.
 
 Ensure ssh-agent is enabled check:
 
@@ -65,12 +51,9 @@ Status   Name               DisplayName
 Stopped  ssh-agent          OpenSSH Authentication Agent
 ```
 
-If the agent is stopped you need to start it.
+If the agent is stopped you need to start it. You can start the **ssh-agent** service if you have `ssh-agent` service set on manual.
 
-You can start the **ssh-agent** service if you have `ssh-agent` service set on manual.
-
-
-<img class="alignnone" title="ssh3" src="/uploads/2020/01/ssh3.jpg" alt="ssh3"  />
+<img alt="ssh3">
 
 
 `Start-Service ssh-agent`
@@ -82,21 +65,33 @@ Running  ssh-agent          OpenSSH Authentication Agent
 ```
 
 
-And finally:
+Then 
 
 ```
-ssh-add C:\Users\[uname]\.ssh\id_rsa
+ssh-add C:\Users\dj\.ssh\id_rsa_intel
+Identity added: C:\Users\dj\.ssh\id_rsa_intel (C:\Users\dj\.ssh\id_rsa_intel)
 ```
 
-This would add the RSA key to the user and you will be able to user and you will be able to clone any repo.
-
-The next step is to add the public RSA key your GitHub account.
->Settings > SSH and GPG keys
-
-<img class="alignnone" title="ssh2" src="/uploads/2020/01/ssh2.jpg" alt="ssh2"  />
 
 
-After that you can clone the repo:
-```
-git clone git@github.com:[username]/[reponame].github.io.git
-```
+
+One could install Git for Windows and subsequently run ssh-add:
+
+
+
+After you've checked for existing SSH keys, you can generate a new SSH key to use for authentication, then add it to the ssh-agent.
+
+Adding a new SSH key to your GitHub account→
+To configure your GitHub account to use your new (or existing) SSH key, you'll also need to add it to your GitHub account.
+
+Testing your SSH connection→
+After you've set up your SSH key and added it to your GitHub account, you can test your connection.
+
+Working with SSH key passphrases→
+You can secure your SSH keys and configure an authentication agent so that you won't have to reenter your passphrase every time you use your SSH keys.
+
+In here I will set my setup how to fix,...
+
+>You don't have any public SSH keys in your GitHub account. You can add a new public key, or try cloning this repository via 
+
+
