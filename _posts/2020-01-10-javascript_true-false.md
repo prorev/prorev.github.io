@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: True and false in JavaScript
+title: JavaScript tips
 date: 2020-01-08
 author: taimani
 layout: post
