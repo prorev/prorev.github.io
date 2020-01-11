@@ -7,9 +7,8 @@ layout: post
 permalink: /sr/python/map/
 published: true
 image: 
-categories:
-   - sr 
-   - python
+categories: 
+   -
 tags:
    - 
 ---
