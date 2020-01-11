@@ -11,15 +11,16 @@ categories:
 tags:
    -
 ---
-Simple type 
-
-<pre class="prettyprint">http://www.google.com/s2/favicons?domain=[domain]</pre>
-
-Where [domain] is your domain of interest.
-
-In order to add the favicon to WordPress use the following line of header.php file.
-
-<pre class="prettyprint"><link rel="shortcut icon" href="<?php echo get_bloginfo('stylesheet_directory'); ?>/favicon.ico" type="image/x-icon" /></pre>
-
-Thanks  
+Simple type 
 
+```
+http://www.google.com/s2/favicons?domain=[domain]
+```
+
+Where [domain] is your domain of interest.
+
+In order to add the favicon to WordPress use the following line of header.php file.
+
+```
+<link rel="shortcut icon" href="<?php echo get_bloginfo('stylesheet_directory'); ?>/favicon.ico" type="image/x-icon" />
+```
