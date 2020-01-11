@@ -3,6 +3,7 @@ logo: /assets/img/logo.png
 description: Slow catching up the latest programming trends.
 lang: en
 theme: minima
+footer: (C) PROGRAMMING REVIEW 2010-2020
 plugins:
 - jekyll-redirect-from
 - jekyll-seo-tag
