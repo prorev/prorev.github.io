@@ -11,14 +11,13 @@ categories:
 tags:
    -
 ---
-Question is how to read HTML from some URL in Python. Here is the answer:
-
-<pre class="prettyprint">try:
-  r = urllib2.urlopen(url)
-except: 
-  print "Unexpected error, looks that URL isn't available or doesn't exist."
-  sys.exit(0)
-html = r.read()</pre>
-
-Thanks  
+Question is how to read HTML from some URL in Python. Here is the answer:
 
+```
+try:
+  r = urllib2.urlopen(url)
+except: 
+  print "Unexpected error, looks that URL isn't available or doesn't exist."
+  sys.exit(0)
+html = r.read()
+```
