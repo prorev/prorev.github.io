@@ -29,17 +29,21 @@ form button{
  font-size: 20px;
 }
 </style>
-
-
+<ul>
 
 {% for category in site.categories %}
- 
-  <h3>{{ category[0] | upcase }} ({{ category[1].size }})</h3>
+  {% assign cat = category | first | strip %}      
   
-  <ul>
-    {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+    {% if cat != empty and cat !='sr' %} 
+    <h3>{{ cat | upcase }} ({{ category[1].size }})</h3>
+    
+    <ul>
+      {% for post in category[1] %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
 {% endfor %}
 
+</ul>
