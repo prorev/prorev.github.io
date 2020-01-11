@@ -11,16 +11,14 @@ categories:
 tags:
    -
 ---
-Here is the example of simple function to log variables. Very basic.
-I like to copy paste this function:
-
-<pre class="prettyprint">function write_log($var) {
-$fi = fopen("/var/site.com/fi.txt", "w+") 
-or die("Unable to open file!");
-fwrite($fi, print_r($var, true));
-fwrite($fi, "\n");
-fclose($fi);
-}</pre>
-
-Thanks  
-
+Here is the example of simple function to log variables. Very basic.
+I like to copy paste this function:
+```
+function write_log($var) {
+$fi = fopen("/var/site.com/fi.txt", "w+") 
+or die("Unable to open file!");
+fwrite($fi, print_r($var, true));
+fwrite($fi, "\n");
+fclose($fi);
+}
+```

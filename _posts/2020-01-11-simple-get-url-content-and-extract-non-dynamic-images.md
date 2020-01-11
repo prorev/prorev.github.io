@@ -11,32 +11,29 @@ categories:
 tags:
    -
 ---
-This code loads the entire content of the URL and extracts the images from it.
-
-<pre class="prettyprint">
-function get_content($url)
-{
-    $ch = curl_init();
-    curl_setopt ($ch, CURLOPT_URL, $url);
-    curl_setopt ($ch, CURLOPT_HEADER, 0);
-    ob_start();
-    curl_exec ($ch);
-    curl_close ($ch);
-    $string = ob_get_contents();
-    ob_end_clean();
-    return $string;    
-}
-
-function print_images($url){
-    $string = $this->get_content($url);
-    preg_match_all('/<img src="([^"]+)"/i', $string, $matches);
-    foreach($matches[0] as $k=>$v){
-      $url = $matches[1][$k];
-      echo $v . ' width="75px" height="75px" onclick=img("' . $url . '") />'     ;
-    }
-    echo '<script> function img(i){ jQuery("textarea#_image").val(i); };</script>';
-}
-</pre>
-
-Thanks  
+This code loads the entire content of the URL and extracts the images from it.
 
+```
+function get_content($url)
+{
+    $ch = curl_init();
+    curl_setopt ($ch, CURLOPT_URL, $url);
+    curl_setopt ($ch, CURLOPT_HEADER, 0);
+    ob_start();
+    curl_exec ($ch);
+    curl_close ($ch);
+    $string = ob_get_contents();
+    ob_end_clean();
+    return $string;    
+}
+
+function print_images($url){
+    $string = $this->get_content($url);
+    preg_match_all('/<img src="([^"]+)"/i', $string, $matches);
+    foreach($matches[0] as $k=>$v){
+      $url = $matches[1][$k];
+      echo $v . ' width="75px" height="75px" onclick=img("' . $url . '") />'     ;
+    }
+    echo '<script> function img(i){ jQuery("textarea#_image").val(i); };</script>';
+}
+```
