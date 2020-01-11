@@ -79,11 +79,12 @@ Once you create all these helper classes which will take about 1 month you are r
 
 ## Write functions that take parameters and return non void.
 Writing helper classes kills many programming evils. It kills also a common evil when you write a method without parameters that returns void. Although, this is possible in C#
-<pre class="prettyprint">void MyFunctions()
+```
+void MyFunctions()
 {
 //do something
 }
-</pre>
+```
 I believe this is not a good practice. Your functions should return non-void. For instance you can return bool — true if successful execution occurred — otherwise false. If there is something you should return set an output parameter like this:
 ```
 bool MyNewFunction(object input, object output)
