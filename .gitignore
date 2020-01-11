@@ -1,11 +1,6 @@
 _site
 .jekyll-cache
-#wp-content/uploads/2011
-#wp-content/uploads/2012
-#wp-content/uploads/2013
-#wp-content/uploads/2014
-#wp-content/uploads/2015
-#wp-content/uploads/2016
+.jekyll-metadata
 .sass-cache
 Gemfile.lock
 *.gem
