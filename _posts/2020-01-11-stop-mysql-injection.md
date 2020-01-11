@@ -11,44 +11,47 @@ categories:
 tags:
    -
 ---
-The best way would be to use parameterized queries.
-SQL injection is well explained in http://en.wikipedia.org/wiki/SQL_injection. Here is the code sequence that is using parameterized queries in C# (ODBC connection):
-<pre class="prettyprint" >const string connectionString = "Driver={MySQL ODBC 5.1 Driver};
-Server=localhost;Database=testdb; User=root;Password=;Option=3;";
-// this is good because all input becomes a parameter and not part of the SQL statement
-string cmdStr = "INSERT INTO `table1` (`title`, `source`,  `category`, `occasion`, `comment`, `image`, `note`) " + "VALUES(?, ?, '', '', ?, ?, ?)";
-using (OdbcConnection conn = new OdbcConnection(connectionString))
-using (OdbcCommand cmd = new OdbcCommand(cmdStr, conn))
-{
-conn.Open();
-// add parameters in sequence order
-cmd.Parameters.Add("@strTitle", OdbcType.VarChar, 300).Value = strTitle;
-cmd.Parameters.Add("@strSource", OdbcType.VarChar, 300).Value = strSource;
-cmd.Parameters.Add("@strComments", OdbcType.Text).Value = strComments;
-cmd.Parameters.Add("@strImage", OdbcType.VarChar, 300).Value = strImage;
-cmd.Parameters.Add("@strNote", OdbcType.Int).Value = 5;
-cmd.ExecuteNonQuery();
-}
-}
-catch (Exception ex)
-{
-// your code here;
-}</pre>
-In PHP the best way to prevent MySQL injection would be to use parameterized queries too as explained here: http://us2.php.net/manual/en/pdo.prepared-statements.php
-<pre class="prettyprint"><?php
-$stmt = $dbh->prepare("INSERT INTO REGISTRY (name, value) VALUES (?, ?)");
-$stmt->bindParam(1, $name);
-$stmt->bindParam(2, $value);
-
-// insert one row
-$name = 'one';
-$value = 1;
-$stmt->execute();
-
-// insert another row with different values
-$name = 'two';
-$value = 2;
-$stmt->execute();
-?></pre>
-Using parameterized queries is general solution for the SQL injection problem and it is even faster comparing to mysql_real_escape_string or mysql_escape_string functions. Note that <strong>mysql_real_escape_string</strong> and <strong>mysql_escape_string</strong> are escaping possible special characters in a string for use in an SQL statement.  
+The best way would be to use parameterized queries.
+SQL injection is well explained in http://en.wikipedia.org/wiki/SQL_injection. Here is the code sequence that is using parameterized queries in C# (ODBC connection):
+```
+const string connectionString = "Driver={MySQL ODBC 5.1 Driver};
+Server=localhost;Database=testdb; User=root;Password=;Option=3;";
+// this is good because all input becomes a parameter and not part of the SQL statement
+string cmdStr = "INSERT INTO `table1` (`title`, `source`,  `category`, `occasion`, `comment`, `image`, `note`) " + "VALUES(?, ?, '', '', ?, ?, ?)";
+using (OdbcConnection conn = new OdbcConnection(connectionString))
+using (OdbcCommand cmd = new OdbcCommand(cmdStr, conn))
+{
+conn.Open();
+// add parameters in sequence order
+cmd.Parameters.Add("@strTitle", OdbcType.VarChar, 300).Value = strTitle;
+cmd.Parameters.Add("@strSource", OdbcType.VarChar, 300).Value = strSource;
+cmd.Parameters.Add("@strComments", OdbcType.Text).Value = strComments;
+cmd.Parameters.Add("@strImage", OdbcType.VarChar, 300).Value = strImage;
+cmd.Parameters.Add("@strNote", OdbcType.Int).Value = 5;
+cmd.ExecuteNonQuery();
+}
+}
+catch (Exception ex)
+{
+// your code here;
+}
+```
+In PHP the best way to prevent MySQL injection would be to use parameterized queries too as explained here: http://us2.php.net/manual/en/pdo.prepared-statements.php
+```
+<?php
+$stmt = $dbh->prepare("INSERT INTO REGISTRY (name, value) VALUES (?, ?)");
+$stmt->bindParam(1, $name);
+$stmt->bindParam(2, $value);
 
+// insert one row
+$name = 'one';
+$value = 1;
+$stmt->execute();
+
+// insert another row with different values
+$name = 'two';
+$value = 2;
+$stmt->execute();
+?>
+```
+Using parameterized queries is general solution for the SQL injection problem and it is even faster comparing to mysql_real_escape_string or mysql_escape_string functions. Note that <strong>mysql_real_escape_string</strong> and <strong>mysql_escape_string</strong> are escaping possible special characters in a string for use in an SQL statement.  
