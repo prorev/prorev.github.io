@@ -11,20 +11,17 @@ categories:
 tags:
    -
 ---
-Showcase how to use outerWidth, width, and css functions to get the widths of particular columns
-
-<pre class="prettyprint">
-<script type="text/javascript">
-jQuery(function()
-{
-if($('.colCenter table').outerWidth(true)>500){
-$('.colCenter').css({'float':'none','clear':'both','width':'auto'});
-}else{
-$('.colCenter').width(jQuery('.post-content').width()-$('.colLeft').outerWidth(true)).css('margin','0');
-}
-})
-</script>
-</pre>
-
-Thanks  
+Showcase how to use outerWidth, width, and css functions to get the widths of particular columns
 
+
+```
+<script type="text/javascript">
+   jQuery(function(){
+      if($('.colCenter table').outerWidth(true)>500){
+       $('.colCenter').css({'float':'none','clear':'both','width':'auto'});
+      }else{
+       $('.colCenter').width(jQuery('.post-content').width()-$('.colLeft').outerWidth(true)).css('margin','0');
+      }
+   })
+</script>
+```
