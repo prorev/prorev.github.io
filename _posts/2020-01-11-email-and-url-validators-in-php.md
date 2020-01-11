@@ -11,14 +11,12 @@ categories:
 tags:
    -
 ---
-<pre class="prettyprint">public static function is_valid_url($url){
-  return preg_match('!^(http|https)://([\w-]+\.?)+[\w-]+(:\d+)?(/[\w- ./?~%&=+\']*)?$!', $url);
-}
-
-public static function is_valid_email($email){
-  return preg_match('/^(([a-zA-Z0-9_.\-+!#$&\'*+=?^`{|}~])+\@((([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+|localhost) *,? *)+$/', $email);
-}</pre>
-
-Thanks
---D  
+```
+public static function is_valid_url($url){
+  return preg_match('!^(http|https)://([\w-]+\.?)+[\w-]+(:\d+)?(/[\w- ./?~%&=+\']*)?$!', $url);
+}
 
+public static function is_valid_email($email){
+  return preg_match('/^(([a-zA-Z0-9_.\-+!#$&\'*+=?^`{|}~])+\@((([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+|localhost) *,? *)+$/', $email);
+}
+```

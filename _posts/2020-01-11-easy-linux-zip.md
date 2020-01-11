@@ -11,19 +11,23 @@ categories:
 tags:
    -
 ---
-Having some big folder with 100k of images and thumbnails stored in <code>thumbs</code> folders here is how to delete all thumbnails and to create a zip of all images w/o thumbnails
-
-<pre class="prettyprint">
-find . -name thumbs -exec rm -rf {} \;
-zip -r  gallery.zip gallery
-</pre>
-
-
-Here is how to test the content of the gallery.zip w/o unzipping...
-
-<pre class="prettyprint">
-unzip -l gallery.zip
-</pre>
-
-Thanks  
+Having some big folder with 100k of images and thumbnails stored in <code>thumbs</code> folders here is how to delete all thumbnails and to create a zip of all images w/o thumbnails
 
+
+
+```
+find . -name thumbs -exec rm -rf {} \;
+zip -r  gallery.zip gallery
+```
+
+
+
+
+
+Here is how to test the content of the gallery.zip w/o unzipping...
+
+
+
+```
+unzip -l gallery.zip
+```
