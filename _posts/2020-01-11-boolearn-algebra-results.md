@@ -11,15 +11,16 @@ categories:
 tags:
    -
 ---
-You need to find the results for "boolean algebra". Here is how-to in PHP:
-<!--more-->
-
-<pre class="prettyprint">
-$uri = 'https://ajax.googleapis.com/ajax/services/search/web?start=23&v=1.0&rsz=large&q=boolean%20algebra';
-$data = file_get_contents($uri);
-$json = json_decode($data);
-print_r($json->responseData->results);
-</pre>
-
-Thanks  
+You need to find the results for "boolean algebra". Here is how-to in PHP:
+
+
+```
+$uri = 'https://ajax.googleapis.com/ajax/services/search/web?start=23&v=1.0&rsz=large&q=boolean%20algebra';
+
+$data = file_get_contents($uri);
+$json = json_decode($data);
+print_r($json->responseData->results);
+
+```
+
 
