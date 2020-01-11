@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: USING GITHUB VIA SSH
+title: Using GitHub via ssh
 date: 2020-01-08
 author: taimani
 layout: post
@@ -21,6 +21,7 @@ Before you even generate a new SSH key, you can check to see if you have any exi
 On Windows :
 
 `dir C:\Users\uname\.ssh`
+
 ```
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -53,7 +54,7 @@ Stopped  ssh-agent          OpenSSH Authentication Agent
 
 If the agent is stopped you need to start it. You can start the **ssh-agent** service if you have `ssh-agent` service set on manual.
 
-<img alt="ssh3">
+<img alt="ssh3" src="/wp-content/uploads/2020/01/ssh3.jpg">
 
 
 `Start-Service ssh-agent`
