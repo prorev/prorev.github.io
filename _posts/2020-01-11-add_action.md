@@ -7,14 +7,13 @@ layout: post
 permalink: /add_action/
 published: true
 categories:
-   -
+   - wordpress
 tags:
-   -
+   - add_action
 ---
-WordPress hooks change how the WordPress behaves without needing to edit any PHP source files.
+**WordPress hooks** change how the WordPress behaves without needing to edit any PHP source files.
 
 Here I will provide simple working example for the <code>add_action</code> hook filter in WordPress:
-
 
 
 ```
@@ -25,12 +24,10 @@ add_action('wp_head', 'hello_header');
 ```
 
 
-
 The result adding this code to the <strong>functions.php</strong> file of my theme would be echoing "I'm in the header!" string.
 
 
-
-Here <code> wp_head</code> represents the moment before the “head” section for the page is ready. Some other moments you can use are:
+Here <code>wp_head</code> represents the moment before the “head” section for the page is ready. Some other moments you can use are:
 
 
 
@@ -59,10 +56,9 @@ Here <code> wp_head</code> represents the moment before the “head” section f
 And <a href="http://adambrown.info/p/wp_hooks/hook">here</a> is the complete WordPress hooks list. And <a href="http://adambrown.info/p/wp_hooks/hook/actions">here</a> is the <code>add_action</code> hooks list.
 
 
+How about adding meta keywords to our post via a hook? How do we get meta keywords from the post tags and categories. 
 
-How about adding meta keywords to our post via a hook. But how do we get meta keywords, you may ask? From the post tags and categories. Here is the code I used:
-
-
+Here is the code I used:
 
 ```
 function add_metatags()
