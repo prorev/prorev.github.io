@@ -34,25 +34,25 @@ Here <code> wp_head</code> represents the moment before the “head” section f
 
 
 
-•  init: moment when creating a page, both front end and administration
+*   `init`: moment when creating a page, both front end and administration
 
-•  admin_init: the first thing done on every administration page
+*   `admin_init`: the first thing done on every administration page
 
-•  admin_head: the last moment in the administration page’s “head” section
+*   `admin_head`: the last moment in the administration page’s “head” section
 
-•  admin_menu: constructing the navigation menu in the administration pages
+*   `admin_menu`: constructing the navigation menu in the administration pages
 
-•  template_redirect: occurs before the theme template file bas been chosen
+*   `template_redirect`: occurs before the theme template file bas been chosen
 
-•  wp_enqueue_scripts: moment to eliminate duplicate scripts
+*   `wp_enqueue_scripts`: moment to eliminate duplicate scripts
 
-•  wp_enqueue_style : moment to eliminate duplicate styles
+*   `wp_enqueue_style` : moment to eliminate duplicate styles
 
-•  widgets_init: moment for constructing the list of active widgets
+*   `widgets_init`: moment for constructing the list of active widgets
 
-•  loop_start and loop_end: surrounding the Loop
+*   `loop_start` and `loop_end`: surrounding the Loop
 
-•  wp_footer: moment to insert additional stuff before closing “body” tag
+*   `wp_footer`: moment to insert additional stuff before closing “body” tag
 
 
 
