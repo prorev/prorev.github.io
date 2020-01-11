@@ -1,10 +1,10 @@
 ---
 id: 1965
-title: PHP namesapces
+title: PHP namespaces
 date: 2014-01-08 12:42:09
 author: taimane
 layout: post
-permalink: /php-namesapces/
+permalink: /php-namespaces/
 published: true
 categories:
    - php
