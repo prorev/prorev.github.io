@@ -55,7 +55,7 @@ I will list them here:
 * `the_excerpt_more`: determines what’s shown at the end of the_excerpt()
 * `wp_list_pages`: allows the list of pages to be modified
 
-[Here](http://adambrown.info/p/wp_hooks/hook/filters) is the list of all filter hooks:
+[Here](https://adambrown.info/p/wp_hooks/hook/filters) is the list of all filter hooks:
 
 It would be very good to mention here that it is possible in WordPress to get the list of all functions for the particular hook.
 In the case of our `the_content` hook the result would be like this:

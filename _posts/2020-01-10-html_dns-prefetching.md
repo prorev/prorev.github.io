@@ -30,5 +30,5 @@ Web server can opt out of DNS prefetching by serving content with the `x-dns-pre
 ```
 You can also set explicitly the dns-prefetching like this:
 ```
-<link rel="dns-prefetch" href="http://my-domain.com">
+<link rel="dns-prefetch" href="https://my-domain.com">
 ```

@@ -27,7 +27,7 @@ PHP code in dynamic fashion (dynamically):
 
 header("HTTP/1.1 301 Moved Permanently");
 
-header("Location: http://yourwebsite.com/$dynamicpart/");
+header("Location: https://yourwebsite.com/$dynamicpart/");
 
 ```
 
