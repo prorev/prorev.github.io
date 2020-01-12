@@ -25,7 +25,7 @@ Here is how to do it:
 
 1. Add the following function to functions.php file
 
-<pre>function pager_fix($seperator = ' | ', $after_previous = '  ', 
+<pre>function pager_fix($separator = ' | ', $after_previous = '  ', 
 
 $before_next = '  ', $prelabel='« Previous Page', 
 
@@ -59,7 +59,7 @@ $cnt . '</a>' . $end_link;
 
         }
 
-       echo join($seperator, $x);
+       echo join($separator, $x);
 
     }    
 

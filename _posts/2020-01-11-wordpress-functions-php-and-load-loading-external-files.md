@@ -14,7 +14,7 @@ tags:
 There the idea to load external files via <code><em>require</em></code> keyword. This is the way how to achieve the organization of your functions file in WordPress
 
 <code>
-//load the sidebarsbars and middlebars
+//load the sidebars and middlebars
 require(get_template_directory() . '/bars/sidebars.php');
 
 // custom widgets

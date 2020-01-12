@@ -21,7 +21,7 @@ do_action('your_new_action_name', $parameter)
 ```
 
 
-This is all the "hard job" you need to do. Nothing more, but it cannot be done for less, unless you do not need the <code>$paremeter</code>
+This is all the "hard job" you need to do. Nothing more, but it cannot be done for less, unless you do not need the <code>$parameter</code>
 
 
 
@@ -32,7 +32,7 @@ In order to use the action hooks you can refer to <a href="https://programming-r
 Here is the simple use of `your_new_action_name` hook.
 
 ```
-function shoot_clay_pigeons($prameter) {
+function shoot_clay_pigeons($parameter) {
 // some work in here
 }
 add_filter('your_new_action_name','shoot_clay_pigeons');

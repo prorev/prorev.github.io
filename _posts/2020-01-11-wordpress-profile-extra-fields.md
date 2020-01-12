@@ -12,7 +12,7 @@ tags:
    -
 ---
 There is a way in WordPress to add extra fields to WordPress users.
-While there's a "default" set of contact fields AIM, Yahoo IM and Jabber / Google Talk, oftentimes even more fields are required. This is particulary true if you need to create WordPress customization where each user should have its own home page and functionality.
+While there's a "default" set of contact fields AIM, Yahoo IM and Jabber / Google Talk, oftentimes even more fields are required. This is particularly true if you need to create WordPress customization where each user should have its own home page and functionality.
 
 Here is how I added textarea field for the job position. I got the idea from <a href="http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields">Justin Tadlock</a> website.
 

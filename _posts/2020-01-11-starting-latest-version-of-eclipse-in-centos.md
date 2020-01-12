@@ -17,7 +17,7 @@ After installing Eclipse (current Latest is Indigo) to the /opt folder we need t
 touch /usr/bin/eclipse
 chmod 755 /usr/bin/eclipse
 
-## Open Eclipse file with your favourite editor ##
+## Open Eclipse file with your favorite editor ##
 
 nano -w /usr/bin/eclipse
 
@@ -30,7 +30,7 @@ $ECLIPSE_HOME/eclipse $*</pre>
 
 More you can create desktop Launcher 
 ```
-## Create following file, with our favourite editor ##
+## Create following file, with our favorite editor ##
 
 /usr/share/applications/eclipse.desktop
 
