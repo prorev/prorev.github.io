@@ -11,16 +11,11 @@ categories:
 tags:
    -
 ---
-Case users are not administrators they could not enter the WordPress dashboard, else they can.
-<hr />
-<code>function admin_check_access($content) {
-	return ( current_user_can("administrator") ) ? $content : false;
-}
-add_filter( 'show_admin_bar' , 'admin_check_access');</code>
-
-
-<hr />
-Thanks
-
-  
+Case users are not administrators they could not enter the WordPress dashboard, else they can.
+
+```
+function admin_check_access($content) {
+	return ( current_user_can("administrator") ) ? $content : false;
+}
+add_filter( 'show_admin_bar' , 'admin_check_access');```
 

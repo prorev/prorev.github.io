@@ -11,20 +11,23 @@ categories:
 tags:
    -
 ---
-Interesting new beta bundle.js made by Alex Gorbatchev packing into bundle:
-* CSS,
-* JavaScript, and
-* images
-
-based on:
-
-* node.js,
-* MongoDB (for users and logs), and
-* Redis (for sessions and output cache)
-
-is out.
-
-Check it out from <a href="http://bundlejs.com/">here</a>.
-
-Thanks  
+Interesting new beta bundle.js made by Alex Gorbatchev packing into bundle:
+
+* CSS,
+* JavaScript, and
+* images
+
+
+
+based on:
+
+
+
+* node.js,
+* MongoDB (for users and logs), and
+* Redis (for sessions and output cache)
+
+Check it out from <a href="http://bundlejs.com/">here</a>.
+
+
 

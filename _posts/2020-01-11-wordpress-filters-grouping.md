@@ -11,33 +11,34 @@ categories:
 tags:
    -
 ---
-Provided the list of WordPress filters in <a href="https://programming-review.com/wordpress-filters-list/">here</a>, created some time ago. In fact the list is not grouped. How would you group all WordPress filters?
-
-In fact on the following page <a href="http://codex.wordpress.org/Plugin_API/Filter_Reference%20">http://codex.wordpress.org/Plugin_API/Filter_Reference </a>I found the answer:
-<ul >
-	<li class="toclevel-1"><span class="tocnumber">1</span> <span class="toctext">Post, Page, and Attachment (Upload) Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">2</span> <span class="toctext">Comment, Trackback, and Ping Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">3</span> <span class="toctext">Category and Term Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">4</span> <span class="toctext">Link Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">5</span> <span class="toctext">Date and Time Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">6</span> <span class="toctext">Author and User Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">7</span> <span class="toctext">Blogroll Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">8</span> <span class="toctext">Blog Information and Option Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">9</span> <span class="toctext">General Text Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">10</span> <span class="toctext">Administrative Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">11</span> <span class="toctext">Rich Text Editor Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">12</span> <span class="toctext">Template Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">13</span> <span class="toctext">Registration &amp; Login Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">14</span> <span class="toctext">Redirect/Rewrite Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">15</span> <span class="toctext">WP_Query Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">16</span> <span class="toctext">Media Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">17</span> <span class="toctext">Advanced WordPress Filters</span></li>
-	<li class="toclevel-1"><span class="tocnumber">18</span> <span class="toctext">Widgets</span></li>
-	<li class="toclevel-1"><span class="tocnumber">19</span> <span class="toctext">Admin Bar</span></li>
-</ul>
-&nbsp;
-
-Not all filters are covered but the grouping is awe.
-
-Thanks  
+Provided the list of WordPress filters in <a href="https://programming-review.com/wordpress-filters-list/">here</a>, created some time ago. In fact the list is not grouped. How would you group all WordPress filters?
+
+
+
+In fact on the following page <a href="http://codex.wordpress.org/Plugin_API/Filter_Reference%20">http://codex.wordpress.org/Plugin_API/Filter_Reference </a>I found the answer:
+
+
+* 1 Post, Page, and Attachment (Upload) Filters
+* 2 Comment, Trackback, and Ping Filters
+* 3 Category and Term Filters
+* 4 Link Filters
+* 5 Date and Time Filters
+* 6 Author and User Filters
+* 7 Blogroll Filters
+* 8 Blog Information and Option Filters
+* 9 General Text Filters
+* 10 Administrative Filters
+* 11 Rich Text Editor Filters
+* 12 Template Filters
+* 13 Registration & Login Filters
+* 14 Redirect/Rewrite Filters
+* 15 WP_Query Filters
+* 16 Media Filters
+* 17 Advanced WordPress Filters
+* 18 Widgets
+* 19 Admin Bar
+
+
+
+Not all filters are covered but the grouping is awe.
 

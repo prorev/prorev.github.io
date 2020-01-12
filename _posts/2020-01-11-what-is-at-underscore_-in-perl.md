@@ -11,15 +11,23 @@ categories:
 tags:
    -
 ---
-This is the first thing that confused me when I started to learn Perl. But I knew this is something important.
-
-You can define it as <em>parameters expanded</em>.
-Like the parameters are passed to a <strong>sub</strong> using the @_ variable:
-<pre>sub test{
-  my ($a, $b, $c) = @_;
-  ...
-}</pre>
-# call it then with the parameters
-<pre>test('perl', 'programming', 'call');</pre>
-<strong>@_</strong> is the list of incoming parameters to a sub.  
+This is the first thing that confused me when I started to learn Perl. But I knew this is something important.
+
+
+
+You can define it as <em>parameters expanded</em>.
+
+Like the parameters are passed to a `sub` using the `@_` variable:
+
+```
+sub test{
+  my ($a, $b, $c) = @_;
+  ...
+}
+
+# call it then with the parameters
+test('perl', 'programming', 'call');
+```
+
+`@_` is the list of incoming parameters to a sub.  
 

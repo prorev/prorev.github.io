@@ -11,18 +11,22 @@ categories:
 tags:
    -
 ---
-<h2>In JavaScript there are true and false</h2>
-<h3>These all will eval to <strong>false</strong>:</h3>
-undefined
-null
-false
-0
-NaN
-<h3>All these will be <strong>true</strong>:</h3>
-true
-1
-123 // any number
-'any string' // non-empty
-[] // even empty arrays
-{} // even empty objects, except null  
+<h2>In JavaScript there are true and false</h2>
+
+<h3>These all will eval to <strong>false</strong>:</h3>
+
+* undefined
+* null
+* false
+* 0
+* NaN
+
+<h3>All these will be <strong>true</strong>:</h3>
+
+* true
+* 1
+* 123 // any number
+* 'any string' // non-empty
+* [] // even empty arrays
+* {} // even empty objects, except null  
 

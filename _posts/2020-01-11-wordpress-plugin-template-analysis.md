@@ -14,17 +14,17 @@ tags:
 Here we will set the basic elements WordPress plugin should contain. We will not bother with the implementation details. We will simple try to understand the possible and the needed functionality of any WordPress plugin.
 Our analysis will mainly be based on the Empty Plugin Template that one can find <a href="http://wordpress.org/extend/plugins/empty-plugin-template/">here</a>.
 Here is what is stated for this plugin and we will also examine here if this is  correct list including:
-<ul>
-	<li>Multi language ability</li>
-	<li>Uninstall routine</li>
-	<li>Data delete routine (avoid orphaned data)</li>
-	<li>Coding advices</li>
-	<li>Security aspects (validating user inputs, nonces)</li>
-	<li>External third party stuff (Ajax, CSS, Javascript)</li>
-	<li>Shortcode</li>
-	<li>WordPress scheduler ("cronjob")</li>
-	<li>Logfiles</li>
-</ul>
+
+* Multi language ability
+* Uninstall routine
+* Data delete routine (avoid orphaned data)
+* Coding advices
+* Security aspects (validating user inputs, nonces)
+* External third party stuff (Ajax, CSS, Javascript)
+* Shortcode
+* WordPress scheduler ("cronjob")
+* Logfiles
+
 First there are just several pages:
 
 ```

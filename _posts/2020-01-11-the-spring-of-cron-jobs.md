@@ -11,20 +11,25 @@ categories:
 tags:
    -
 ---
-<pre>crontab -l
-/etc/cron.hourly/*
-/etc/cron.daily/*
-/etc/cron.weekly/*
-/etc/cron.monthly/*
-/etc/cron.d/*
-/etc/crontab
-/var/spool/cron/*
-</pre>
-
-On top of that, you can have at jobs 
-
-<pre>/var/spool/at/*
-/etc/anacrontab
-/var/spool/anacron/*</pre>
+```
+crontab -l
+/etc/cron.hourly/*
+/etc/cron.daily/*
+/etc/cron.weekly/*
+/etc/cron.monthly/*
+/etc/cron.d/*
+/etc/crontab
+/var/spool/cron/*
+```
+
+On top of that, you can have at jobs 
+
+
+```
+/var/spool/at/*
+/etc/anacrontab
+/var/spool/anacron/*
+```
+
   
 

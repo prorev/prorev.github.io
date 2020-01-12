@@ -11,33 +11,30 @@ categories:
 tags:
    -
 ---
-Here is the list of jQuery scripts already present in WordPress you can enqueue:
-<ul>
-	<li>'jquery'</li>
-	<li><span style="font-size: 16px;">'jquery-core'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-migrate'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-core'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-accordion',</span></li>
-	<li><span style="font-size: 16px;">'jquery-ui-autocomplete'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-button'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-datepicker'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-dialog'</span></li>
-	<li><span style="font-size: 16px;">'jquery-ui-draggable'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-droppable'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-menu'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-mouse'</span></li>
-	<li><span style="font-size: 16px;">'jquery-ui-position'</span></li>
-	<li><span style="font-size: 16px;">'jquery-ui-progressbar'</span></li>
-	<li><span style="font-size: 16px;">'jquery-ui-resizable'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-selectable'</span></li>
-	<li><span style="font-size: 16px;">'jquery-ui-slider'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-sortable'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-spinner'</span></li>
-	<li><span style="font-size: 16px;"> 'jquery-ui-tabs'</span></li>
-	<li><span style="font-size: 16px;">'jquery-ui-tooltip'</span></li>
-	<li><span style="font-size: 16px;">'jquery-ui-widget'</span></li>
-	<li><span style="font-size: 16px;"> 'underscore'</span></li>
-	<li><span style="font-size: 16px;">'backbone'</span></li>
-</ul>
-Thanks  
+Here is the list of jQuery scripts already present in WordPress you can enqueue:
 
+* 'jquery'
+* 'jquery-core'
+* 'jquery-migrate'
+* 'jquery-ui-core'
+* 'jquery-ui-accordion',
+* 'jquery-ui-autocomplete'
+* 'jquery-ui-button'
+* 'jquery-ui-datepicker'
+* 'jquery-ui-dialog'
+* 'jquery-ui-draggable'
+* 'jquery-ui-droppable'
+* 'jquery-ui-menu'
+* 'jquery-ui-mouse'
+* 'jquery-ui-position'
+* 'jquery-ui-progressbar'
+* 'jquery-ui-resizable'
+* 'jquery-ui-selectable'
+* 'jquery-ui-slider'
+* 'jquery-ui-sortable'
+* 'jquery-ui-spinner'
+* 'jquery-ui-tabs'
+* 'jquery-ui-tooltip'
+* 'jquery-ui-widget'
+* 'underscore'
+* 'backbone'

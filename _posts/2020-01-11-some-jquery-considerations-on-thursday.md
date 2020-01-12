@@ -11,24 +11,31 @@ categories:
 tags:
    -
 ---
-jQuery function to get URL parameter:
-<code lang="php">
-function getURLParameter(name) {
-       return decodeURI(
-          (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-       );
-      }
-</code>
-
-Here is the jQuery to get document referrer base name:
-
-<code lang="php">
-function getReferrerBase() {
-url = document.referrer; 
-ref = url.match(/:\/\/(.[^/]+)/)[1];
-return ref;
-}
-</code>
-
+jQuery function to get URL parameter:
+
+```
+function getURLParameter(name) {
+       return decodeURI(
+          (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+       );
+      }
+```
+
+
+
+Here is the jQuery to get document referrer base name:
+
+
+
+```
+function getReferrerBase() {
+url = document.referrer; 
+ref = url.match(/:\/\/(.[^/]+)/)[1];
+return ref;
+}
+```
+
+
+
 Thanks  
 

@@ -13,10 +13,6 @@ tags:
 ---
 Here I would like to outline some WordPress hooks resources and the short descriptions for those
 
-
-
-
-
 #1 http://wordpress.stackexchange.com/questions/307/where-can-i-find-a-list-of-wordpress-hooks
 
 List hooks and files from where the hooks have been called.

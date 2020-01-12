@@ -11,10 +11,10 @@ categories:
 tags:
    -
 ---
-If you type <code>http://www.example.com/templa</code> and you don't have the page with this URL you may end on a page like <code>http://www.example.com/template_redirect</code>. 
-
-What causes this? It is template redirect functionality that is in WordPress.
-You can disable it with this:
-
-<pre class="pretty_print">remove_action('template_redirect', 'redirect_canonical');</pre>  
+If you type <code>http://www.example.com/templa</code> and you don't have the page with this URL you may end on a page like <code>http://www.example.com/template_redirect</code>. 
 
+What causes this? It is template redirect functionality that is in WordPress.
+You can disable it with this:
+
+```
+remove_action('template_redirect', 'redirect_canonical');```

@@ -11,11 +11,11 @@ categories:
 tags:
    -
 ---
-We needed the best quality for our images:
-
-<pre>function custom_jpg_compression($args) { return 100;}
-add_filter('jpeg_quality', 'custom_jpg_compression');
-</pre>
-
-Thanks  
+We needed the best quality for our images:
 
+
+
+```
+function custom_jpg_compression($args) { return 100;}
+add_filter('jpeg_quality', 'custom_jpg_compression');
+```
