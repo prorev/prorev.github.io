@@ -12,7 +12,7 @@ categories:
 tags:
    - files
 ---
->How to get file extension, file name, file directory in C# (csharp) based on a file location?
+**How to get file extension, file name, file directory in C# (csharp) based on a file location?**
 
 The trick and the easiest way in C# is to use the `System.IO.Path` class.
 You can simple use this code:
