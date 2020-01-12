@@ -42,7 +42,7 @@ First the constants:
 
 ```
 // some definitions used
-define( 'EPT_PUGIN_NAME', 'EPT Empty Plugin Template');
+define( 'EPT_PLUGIN_NAME', 'EPT Empty Plugin Template');
 define( 'EPT_PLUGIN_DIRECTORY', 'empty-plugin-template');
 define( 'EPT_CURRENT_VERSION', '0.1.1.1' );
 define( 'EPT_CURRENT_BUILD', '3' );

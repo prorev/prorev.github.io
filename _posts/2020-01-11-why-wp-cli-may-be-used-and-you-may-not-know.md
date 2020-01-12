@@ -11,9 +11,12 @@ categories:
 tags:
    -
 ---
-<h2>To update the password for the user</h2>
-<code>&gt;wp user update USERNAME --user_pass="PASSWORD"</code>
-<h2>To search for plugins in WP directory based on key</h2>
+### To update the password for the user
+```
+#wp user update USERNAME --user_pass="PASSWORD"
+```
+
+### To search for plugins in WP directory based on key
 <code>&gt;wp plugin search hooks</code>
 
 Success: Showing 10 of 2506 plugins.
