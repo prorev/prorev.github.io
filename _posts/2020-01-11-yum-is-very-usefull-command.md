@@ -1,10 +1,10 @@
 ---
 id: 1478
-title: Yum is very usefull command
+title: Yum is very useful command
 date: 2013-05-15 10:09:27
 author: taimane
 layout: post
-permalink: /yum-is-very-usefull-command/
+permalink: /yum-is-very-useful-command/
 published: true
 categories:
    -
@@ -12,12 +12,9 @@ tags:
    -
 ---
 CentOS has yum - very useful command for package management.
-
 ```
 Usage: yum [options] COMMAND
-
 List of Commands:
-
 check          Check for problems in the rpmdb
 check-update   Check for available package updates
 clean          Remove cached data
@@ -46,6 +43,5 @@ update         Update a package or packages on your system
 upgrade        Update packages taking obsoletes into account
 version        Display a version for the machine and/or available repos.
 ```
-
 One of the commands is for sure: <code>yum -v repolist</code> that can give the list of installed packages with associated info.
 The repos are stored in `/etc/yum.repos.d/` folder.
