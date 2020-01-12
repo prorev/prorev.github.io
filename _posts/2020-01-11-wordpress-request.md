@@ -39,20 +39,32 @@ There are more the 100 rules. You can also create these rules, if you need speci
 
 <a href="https://programming-review.com/wp-content/uploads/2014/07/Selection_010.png"><img class="alignnone size-full wp-image-2338" src="https://programming-review.com/wp-content/uploads/2014/07/Selection_010.png" alt="Selection_010" width="1067" height="524" /></a>
 
-&nbsp;
 
 In WordPress <em>index.php</em> handles all requests. This is why your Apache configuration files probably contain the following lines:
-<p style="color: #1f0d0d;"><code>RewriteCond %{REQUEST_FILENAME} !-f
+```
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]</code></p>
-<p style="color: #1f0d0d;">and your nginx rolls with:</p>
-<code>if (!-e $request_filename) { rewrite ^(.*)$ /index.php last; }  </code>
-<p style="color: #1f0d0d;">Of course if you don’t have those rewrite rules you’re probably using some of the default</p>
-<p style="color: #1f0d0d;"><code>http://abc.de/index.php/2011/10/15/sample-post/</code> permalink structures, where the request <code>/2011/10/15/sample-post</code> is already being passed to <em>index.php</em>.</p>
+RewriteRule . /index.php [L]
+```
+
+and your nginx rolls with:
+
+```
+if (!-e $request_filename) { rewrite ^(.*)$ /index.php last; } 
+```
+
+Of course if you don’t have those rewrite rules you’re probably using some of the default.
+
+```
+http://abc.de/index.php/2011/10/15/sample-post/
+```
+
+permalink structures, where the request `/2011/10/15/sample-post` is already being passed to `index.php`.
+
 There are two types of rewrite rules in WordPress:
 
-1. internal rules = stored in the database and parsed by <code>WP::parse_request()</code>
+1. internal rules = stored in the database and parsed by `WP::parse_request()`
 
 2. external rules (stored in .htaccess and parsed by Apache if you are on Apache).
 
-Thanks  
+ 
