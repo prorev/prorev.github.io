@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Using GitHub via ssh
+title: Using GitHub via SSH
 date: 2020-01-08
 author: taimani
 layout: post
