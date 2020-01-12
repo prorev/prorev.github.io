@@ -16,7 +16,11 @@ This text will explain connecting to GitHub using SSH protocol.
 
 You can connect and authenticate to remote servers and services using the SSH protocol. With SSH keys, no username or password are needed.
 
-Before you even generate a new SSH key, you can check to see if you have any existing SSH keys.
+There are always two SSH keys:
+* **private key** and 
+* **public key**.
+
+Before you even generate a new SSH keys, check to see if you have any existing SSH keys.
 
 On Windows :
 
@@ -30,31 +34,32 @@ Mode                LastWriteTime         Length Name
 -a----        12/5/2019   2:30 PM           1193 known_hosts
 ```
 
-Similar on Linux and Mac:
+`id_rsa` and `id_rsa.pub` are typical names for the private and the public keys, although you can rename it to anything you like.
+
+Similar on Linux and Mac from the terminal you can check if you have any keys with this _one-liner_:
 
 `ls -al ~/.ssh`
 
-Now you need to add **SSH key** to the agent (ssh-agent).
+If you already have keys (these `ide_rsa` files) add them to the agent: `ssh-agent`.
 
 
-## Adding ssh key to the agent
+## Adding ssh keys to the `ssh-agent`
 
-On Windows:
+The procedure on Windows:
 
-If you have GitHub for Windows installed, you can use it to clone repositories and not deal with SSH keys. It also comes with the Git Bash tool, which is the preferred way of running git commands on Windows.
-
-Ensure ssh-agent is enabled check:
+Ensure first the `ssh-agent` is enabled. Check like this:
 
 `Get-Service ssh-agent`
+
 ```
 Status   Name               DisplayName
 ------   ----               -----------
 Stopped  ssh-agent          OpenSSH Authentication Agent
 ```
 
-If the agent is stopped you need to start it. You can start the **ssh-agent** service if you have `ssh-agent` service set on manual.
+If the agent is stopped you need to start it. You can start the `ssh-agent` service when you set _service **Startup type**_ to: **_Manual_**.
 
-<img alt="ssh3" src="/wp-content/uploads/2020/01/ssh3.jpg">
+<img alt="ssh3" src="https://programming-review.com/wp-content/uploads/2020/01/ssh3.jpg">
 
 
 `Start-Service ssh-agent`
@@ -67,32 +72,35 @@ Running  ssh-agent          OpenSSH Authentication Agent
 
 
 Then 
+```
+ssh-add C:\Users\uname\.ssh\id_rsa_intel
+Identity added: C:\Users\dj\.ssh\id_rsa_intel C:\Users\dj\.ssh\id_rsa_intel)
+```
+
+Note the _**uname**_ represents the actual **_user name_**.
+
+Note: _If you don't have _SSH keys_, you can [generate](https://help.github.com/en/enterprise/2.16/user/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) a new SSH key pair._
 
 ```
-ssh-add C:\Users\dj\.ssh\id_rsa_intel
-Identity added: C:\Users\dj\.ssh\id_rsa_intel (C:\Users\dj\.ssh\id_rsa_intel)
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
+### Adding a new SSH key to your GitHub account
 
+To configure your GitHub account to use your new (or existing) SSH keyS, you'll also need to add _the public key_ to your GitHub account.
 
+Go to the your GitHub account [settings](https://github.com/settings/profile). _You need to be logged in._
 
-One could install Git for Windows and subsequently run ssh-add:
+<img alt="adding ssh key" src="https://programming-review.com/wp-content/uploads/2020/01/ssh2.jpg">
 
+Click **`New SSH key`** button and add upload the key with the extension `.pub` (the public key).
 
+From there on you can open your terminal and clone GitHub repos in SSH style like 
+this:
+```
+git clone git@github.com:uname/pname.github.io.git
+```
+where **uname** and **pname** are _username_ and _project name_.
 
-After you've checked for existing SSH keys, you can generate a new SSH key to use for authentication, then add it to the ssh-agent.
-
-Adding a new SSH key to your GitHub account→
-To configure your GitHub account to use your new (or existing) SSH key, you'll also need to add it to your GitHub account.
-
-Testing your SSH connection→
-After you've set up your SSH key and added it to your GitHub account, you can test your connection.
-
-Working with SSH key passphrases→
-You can secure your SSH keys and configure an authentication agent so that you won't have to reenter your passphrase every time you use your SSH keys.
-
-In here I will set my setup how to fix,...
-
->You don't have any public SSH keys in your GitHub account. You can add a new public key, or try cloning this repository via 
 
 
