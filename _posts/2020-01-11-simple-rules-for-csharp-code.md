@@ -7,7 +7,7 @@ layout: post
 permalink: /simple-rules-for-csharp-code/
 published: true
 categories:
-   - c#
+   - csharp
 tags:
    - rules
 ---
