@@ -43,7 +43,7 @@ Similar on Linux and Mac from the terminal you can check if you have any keys wi
 If you already have keys (these `ide_rsa` files) add them to the agent: `ssh-agent`.
 
 
-## Adding ssh keys to the `ssh-agent`
+## .1. Adding ssh keys to the `ssh-agent`
 
 The procedure on Windows:
 
@@ -101,6 +101,4 @@ this:
 git clone git@github.com:uname/pname.github.io.git
 ```
 where **uname** and **pname** are _username_ and _project name_.
-
-
 

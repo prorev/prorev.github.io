@@ -4,7 +4,7 @@ title: File extension, file name, file directory in C#?
 date: 2020-01-10
 author: taimani
 layout: post
-permalink: 
+permalink: /csharp/files/
 published: true
 image: 
 categories:
@@ -37,3 +37,4 @@ Also the following functions from `System.IO.Path` are also useful:
 * IsPathRooted
 * GetFileNameWithoutExtension
 ```
+
