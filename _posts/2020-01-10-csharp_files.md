@@ -16,23 +16,23 @@ tags:
 
 The trick and the easiest way in C# is to use the `System.IO.Path` class.
 You can simple use this code:
-```c#
+``` c#
 string fileExtension = System.IO.Path.GetExtension(fileLocation);
 ```
 In order to find the file name use this code:
-```c#
+``` c#
 string fileName = System.IO.Path.GetFileName(fileLocation);
-```c#
+``` c#
 In order to get a file directory use this code:
 ```
 string dirName = System.IO.Path.GetDirectoryName(fileLocation);
-```c#
+``` c#
 In order to change the file extension to `.jpeg` use this snippet:
-```c#
+``` c#
 string dest = System.IO.Path.ChangeExtension(fileLocation, ".jpeg");
 ```
 Also the following functions from `System.IO.Path` are also useful:
-```c#
+``` c#
 * GetPathRoot()
 * IsPathRooted()
 * GetFileNameWithoutExtension()

@@ -26,7 +26,7 @@ mysqldump --user=myusername --password=mypassword --extended-insert=false
 * `–databases mydatabasename > /backup/backup_databasename.sql` will set specific database to sql file.
 
 Here is the shell script that you can cron
-```bash
+``` bash
 #purpose = Backup of any database
 #created on Nov 20th 2012
 #author = programming-review.com
