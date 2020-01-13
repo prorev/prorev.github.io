@@ -21,7 +21,7 @@ The `add_filter` hooks are being used in WordPress themes, in WordPress plugins 
 Here is the WordPress example for the add_filter hook.
 
 Code example:
-```
+```php
 /*appending a list of child pages*/
 function append_child_pages($content) {
 if (is_page()) {
@@ -59,7 +59,7 @@ I will list them here:
 
 It would be very good to mention here that it is possible in WordPress to get the list of all functions for the particular hook.
 In the case of our `the_content` hook the result would be like this:
-```
+```php
 function get_filter_functions( $hook = '' ) {
     global $wp_filter;
     if( empty( $hook ) || !isset( $wp_filter[$hook] ) )
