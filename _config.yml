@@ -4,6 +4,7 @@ description: Slow catching up the latest programming trends.
 lang: en
 theme: minima
 footer: © PROGRAMMING REVIEW 2010-2020
+highlighter: rouge
 plugins:
 - jekyll-redirect-from
 - jekyll-seo-tag
