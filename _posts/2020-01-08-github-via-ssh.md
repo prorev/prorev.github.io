@@ -12,7 +12,15 @@ categories:
 tags:
    - ssh
 ---
-This text will explain connecting to GitHub using SSH protocol.
+_Table of Contents:_
+
+- [Adding ssh keys to the `ssh-agent`](#adding-ssh-keys-to-the-ssh-agent)
+- [Adding a new SSH key to your GitHub account](#adding-a-new-ssh-key-to-your-github-account)
+- [Cloning the repo](#cloning-the-repo)
+
+---
+
+>> This text will explain connecting to GitHub using SSH protocol.
 
 You can connect and authenticate to remote servers and services using the SSH protocol. With SSH keys, no username or password are needed.
 
@@ -24,9 +32,10 @@ Before you even generate a new SSH keys, check to see if you have any existing S
 
 On Windows :
 
-`dir C:\Users\uname\.ssh`
+
 
 ```
+> dir C:\Users\uname\.ssh
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a----        12/3/2019  11:17 AM           3389 id_rsa
@@ -37,13 +46,13 @@ Mode                LastWriteTime         Length Name
 `id_rsa` and `id_rsa.pub` are typical names for the private and the public keys, although you can rename it to anything you like.
 
 Similar on Linux and Mac from the terminal you can check if you have any keys with this _one-liner_:
-
-`ls -al ~/.ssh`
+```
+ls -al ~/.ssh
+```
 
 If you already have keys (these `ide_rsa` files) add them to the agent: `ssh-agent`.
 
-
-## .1. Adding ssh keys to the `ssh-agent`
+## Adding ssh keys to the `ssh-agent`
 
 The procedure on Windows:
 
@@ -79,13 +88,13 @@ Identity added: C:\Users\dj\.ssh\id_rsa_intel C:\Users\dj\.ssh\id_rsa_intel)
 
 Note the _**uname**_ represents the actual **_user name_**.
 
-Note: _If you don't have _SSH keys_, you can [generate](https://help.github.com/en/enterprise/2.16/user/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) a new SSH key pair._
+>>_If you don't have SSH keys, you can [generate](https://help.github.com/en/enterprise/2.16/user/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) a new SSH key pair._
 
 ```
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
-### Adding a new SSH key to your GitHub account
+## Adding a new SSH key to your GitHub account
 
 To configure your GitHub account to use your new (or existing) SSH keyS, you'll also need to add _the public key_ to your GitHub account.
 
@@ -93,9 +102,11 @@ Go to the your GitHub account [settings](https://github.com/settings/profile). _
 
 <img alt="adding ssh key" src="https://programming-review.com/wp-content/uploads/2020/01/ssh2.jpg">
 
-Click **`New SSH key`** button and add upload the key with the extension `.pub` (the public key).
+Click <kbd>New SSH key</kbd> button and add upload the key with the extension `.pub` (the public key).
 
-From there on you can open your terminal and clone GitHub repos in SSH style like 
+
+## Cloning the repo
+From now on, you can open your terminal and clone GitHub repos in SSH style like 
 this:
 ```
 git clone git@github.com:uname/pname.github.io.git

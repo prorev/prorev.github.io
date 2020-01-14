@@ -16,7 +16,8 @@ How to customize Nginx config to disable access to _.htaccess_ file, and other h
 
 
 Global Restrictions to files starting with the _dot_ (.) would be like this:
-```
+
+```bash
 # Deny all attempts to access hidden files
 # such as .htaccess, .htpasswd, .DS_Store (Mac).
 location ~ /\. {
@@ -29,7 +30,7 @@ This of course will forbid access to all kind of files starting with dot.
 
 One extra improvement would be to allow certain folder starting with dot, not to be denied. You can do that again with the location directive, in this case for `.well-known`
 
-```
+```bash
 # Allow access to the ACME Challenge for Let's Encrypt
 location ~ /\.well-known\/acme-challenge {
 allow all;

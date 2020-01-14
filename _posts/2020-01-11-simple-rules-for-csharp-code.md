@@ -1,6 +1,6 @@
 ---
 id: 33
-title: Simple rules for writing tidy, clean, well tested and documented C# code
+title: Simple rules for writing C# code
 date: 2011-02-28 09:20:01
 author: taimane
 layout: post
@@ -25,17 +25,17 @@ Be consistent as much as possible whatever you do. This is especially important 
 
 A coding standard defines how you write you code. <a href="http://blogs.msdn.com/brada/articles/361363.aspx">Here</a> are some Microsoft guidelines from the coding standard:
 
-### `Guideline #1`: For class names us PascalCasing
-```
+**Guideline #1**: For class names use PascalCasing
+```c#
 class WebHelper
 ```
-### `Guideline #2`: For function names use PascalCasing
-```
+**Guideline #2**: **For function names use PascalCasing
+```c#
 static public string CreateSlug(string input)
 ```
 
-### `Guideline #3`: For properties use PascalCasing
-```
+**Guideline #3**: For properties use PascalCasing
+```c#
 public class Foo
 {
  int bar;
@@ -47,9 +47,9 @@ public class Foo
 }
 ```
 
-### `Guideline #4`: Use camelCasing for member variables, parameters, local variables.
+**Guideline #4**: Use camelCasing for member variables, parameters, local variables.
 
-### `Guideline #5`: To distinguish between local and member variables use `this` keyword and don't use Hungarian and notations having `_`, `m_`, `s_` for your local or member variables.
+**Guideline #5**: To distinguish between local and member variables use `this` keyword and don't use Hungarian and notations having `_`, `m_`, `s_` for your local or member variables.
 
 ## Use <a href="http://en.wikipedia.org/wiki/Revision_control">Revision Control system</a>
 
@@ -79,14 +79,14 @@ Once you create all these helper classes which will take about 1 month you are r
 
 ## Write functions that take parameters and return non void.
 Writing helper classes kills many programming evils. It kills also a common evil when you write a method without parameters that returns void. Although, this is possible in C#
-```
+```c#
 void MyFunctions()
 {
 //do something
 }
 ```
 I believe this is not a good practice. Your functions should return non-void. For instance you can return bool — true if successful execution occurred — otherwise false. If there is something you should return set an output parameter like this:
-```
+```c#
 bool MyNewFunction(object input, object output)
 {
 // do something
@@ -97,9 +97,9 @@ bool MyNewFunction(object input, object output)
 
 You use comments in C# via `//` or `/**/`. Why not to go a step ahead and use `///` also.
 
-**Visual Studio** as well as Sharp Develop environments can comment your methods and classes using “///” notation. Before your method enter “/” for 3 times and add additional comment info.
+**Visual Studio** and **Sharp Develop** environments can comment your methods and classes using `///` notation. Before your method enter `/` for 3 times and add additional comment info.
 
-```
+```c#
 ///
 /// Grab the tags for a term
 ///
@@ -107,7 +107,7 @@ You use comments in C# via `//` or `/**/`. Why not to go a step ahead and use `/
 public static string YahooTags(string str)
 {}
 ```
-Once you done that you can create a CHM or HTML help documents via 3-rd party tools.
+Note: It is always a good practice to create CHM or HTML help documents while developing. This way you can summarize what you have done already.
 
 ## Test your code
 Use some Unit Testing tools with Visual Studio. TypeMock is not bad, but you can use Visual Studio unit testing support out of the box.

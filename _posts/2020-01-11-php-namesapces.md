@@ -27,9 +27,9 @@ So inline and anonymous functions in PHP cannot be referred using namespaces
 The idea behind the namespace keyword is simple. Like in some other programming languages (Java for example) there is a need to define a special naming space (scope); so you can have many classes with the same name for instance; but in different namespaces.
 
 The very common usage of the namespace keyword would be something like this:
-```
+```php
 <?php
-namespace test;
-define(__NAMESPACE__ . '\HELLO', 'Hello from namespace!');
+namespace test;
+define(__NAMESPACE__ . '\HELLO', 'Hello from namespace!');
 ?>
 ```

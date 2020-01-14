@@ -6,7 +6,45 @@ layout: default
 
 <!-- <p class="view">by {{ page.author | default: site.author }}</p> -->
 
-{{content}}
+
+{% assign content_array = page.content | split: site.excerpt_separator %}
+{% assign sizeA = content_array | size %}
+
+{% if sizeA == 1 %}
+{% assign contentA = content_array[0] %}  
+{% assign excerptA = '<img src="/assets/img/any.jpg" >' %}
+{% assign extraA = "&nbsp;" %}
+{% endif %}
+
+{% if sizeA == 2 %}
+{% assign excerptA = content_array[0] %}
+{% assign contentA = content_array[1] %}
+{% assign extraA = "&nbsp;" %}
+{% endif %}
+
+{% if sizeA == 3 %}
+{% assign excerptA = content_array[0] %}
+{% assign contentA = content_array[1] %}
+{% assign extraA = content_array[2] %}
+{% endif %}
+
+
+<div style="overflow:auto">
+  <div class="menu">
+    {{ excerptA }}
+  </div>
+
+  <div class="main">
+    {{ contentA }}    
+
+  </div>
+
+  <div class="right">
+    {{ extraA }}
+  </div>
+
+</div>
+
 
 {% if page.tags %}
   <small><strong>tags:</strong> <em>{{ page.tags | join: "</em> - <em>" }}</em></small>

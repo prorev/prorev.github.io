@@ -9,27 +9,9 @@ title: Index
 <button type="submit" form="search-google" value="Submit">GO</button>
 </form>
 
-<style>
-form{
-float: right;
-}
-form input{
-  padding: 10px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  font-size: 20px;
-}
+<br style="clear:both" />
 
-form button{
-  padding: 10px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
- font-size: 20px;
-}
-</style>
-<ul>
+<div class="home">
 
 {% for category in site.categories %}
   {% assign cat = category | first | strip %}      
@@ -46,4 +28,4 @@ form button{
 
 {% endfor %}
 
-</ul>
+</div>

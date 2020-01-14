@@ -16,18 +16,18 @@ There is a way to modify <code>quicktags-toolbar</code> very simple in WordPress
 The "Quick Tags" are JQuery driven and here is the code responsible for them (from /wp-includes/quicktags.dev.js) :
 <pre>
 ensure backward compatibility
-edButtons[10] = new qt.TagButton('strong','b','&lt;strong&gt;','&lt;/strong&gt;','b');
-edButtons[20] = new qt.TagButton('em','i','&lt;em&gt;','&lt;/em&gt;','i'),
+edButtons[10] = new qt.TagButton('strong','b','<strong>','</strong>','b');
+edButtons[20] = new qt.TagButton('em','i','<em>','</em>','i'),
 edButtons[30] = new qt.LinkButton(), // special case
-edButtons[40] = new qt.TagButton('block','b-quote','&lt;blockquote&gt;','&lt;/blockquote&gt;','q'),
-edButtons[50] = new qt.TagButton('del','del','&lt;del datetime=&quot;' + _datetime + '&quot;&gt;','&lt;/del&gt;','d'),
-edButtons[60] = new qt.TagButton('ins','ins','&lt;ins datetime=&quot;' + _datetime + '&quot;&gt;','&lt;/ins&gt;','s'),
+edButtons[40] = new qt.TagButton('block','b-quote','<blockquote>','</blockquote>','q'),
+edButtons[50] = new qt.TagButton('del','del','<del datetime='' + _datetime + ''>','</del>','d'),
+edButtons[60] = new qt.TagButton('ins','ins','<ins datetime='' + _datetime + ''>','</ins>','s'),
 edButtons[70] = new qt.ImgButton(), // special case
-edButtons[80] = new qt.TagButton('ul','ul','&lt;ul&gt;','&lt;/ul&gt;','u'),
-edButtons[90] = new qt.TagButton('ol','ol','&lt;ol&gt;','&lt;/ol&gt;','o'),
-edButtons[100] = new qt.TagButton('li','li','&lt;li&gt;','&lt;/li&gt;','l'),
-edButtons[110] = new qt.TagButton('code','code','&lt;code&gt;','&lt;/code&gt;','c'),
-edButtons[120] = new qt.TagButton('more','more','&lt;!--more--&gt;','','t'),
+edButtons[80] = new qt.TagButton('ul','ul','<ul>','</ul>','u'),
+edButtons[90] = new qt.TagButton('ol','ol','<ol>','</ol>','o'),
+edButtons[100] = new qt.TagButton('li','li','<li>','</li>','l'),
+edButtons[110] = new qt.TagButton('code','code','<code>','</code>','c'),
+edButtons[120] = new qt.TagButton('more','more','<!--more-->','','t'),
 edButtons[130] = new qt.SpellButton(),
 edButtons[140] = new qt.CloseButton()
 </pre>
@@ -109,7 +109,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 			t.ready = function() {
 				if ( ! t.isReady ) {
 					t.isReady = true;
-					for ( i = 0; i &lt; t.funcs.length; i++ ) {
+					for ( i = 0; i < t.funcs.length; i++ ) {
 						t.funcs[i]();
 					}
 				}
@@ -130,7 +130,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 					window.attachEvent('onload', t.ready);
 					(function(){
 						try {
-							document.documentElement.doScroll(&quot;left&quot;);
+							document.documentElement.doScroll('left');
 						} catch(e) {
 							setTimeout(arguments.callee, 50);
 							return;
@@ -146,8 +146,8 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		var now = new Date(), zeroise;
 		zeroise = function(number) {
 			var str = number.toString();
-			if ( str.length &lt; 2 )
-				str = &quot;0&quot; + str;
+			if ( str.length < 2 )
+				str = '0' + str;
 			return str;
 		}
 		return now.getUTCFullYear() + '-' +
@@ -268,7 +268,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 	 *
 	 * Adds qt.Button or qt.TagButton depending on the args. The first three args are always required.
 	 * To be able to add button(s) to Quicktags, your script should be enqueued as dependent
-	 * on &quot;quicktags&quot; and outputted in the footer. If you are echoing JS directly from PHP,
+	 * on 'quicktags' and outputted in the footer. If you are echoing JS directly from PHP,
 	 * use add_action( 'admin_print_footer_scripts', 'output_my_js', 100 ) or add_action( 'wp_footer', 'output_my_js', 100 )
 	 *
 	 * Minimum required to add a button that calls an external function:
@@ -276,15 +276,15 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 	 *     function my_callback() { alert('yeah!'); }
 	 *
 	 * Minimum required to add a button that inserts a tag:
-	 *     QTags.addButton( 'my_id', 'my button', '&lt;span&gt;', '&lt;/span&gt;' );
-	 *     QTags.addButton( 'my_id2', 'my button', '&lt;br /&gt;' );
+	 *     QTags.addButton( 'my_id', 'my button', '<span>', '</span>' );
+	 *     QTags.addButton( 'my_id2', 'my button', '<br />' );
 	 *
 	 * @param id string required Button HTML ID
-	 * @param display string required Button's value=&quot;...&quot;
-	 * @param arg1 string || function required Either a starting tag to be inserted like &quot;&lt;span&gt;&quot; or a callback that is executed when the button is clicked.
-	 * @param arg2 string optional Ending tag like &quot;&lt;/span&gt;&quot;
+	 * @param display string required Button's value='...'
+	 * @param arg1 string || function required Either a starting tag to be inserted like '<span>' or a callback that is executed when the button is clicked.
+	 * @param arg2 string optional Ending tag like '</span>'
 	 * @param access_key string optional Access key for the button.
-	 * @param title string optional Button's title=&quot;...&quot;
+	 * @param title string optional Button's title='...'
 	 * @param priority int optional Number representing the desired position of the button in the toolbar. 1 - 9 = first, 11 - 19 = second, 21 - 29 = third, etc.
 	 * @param instance string optional Limit the button to a specifric instance of Quicktags, add to all instances if not present.
 	 * @return mixed null or the button object that is needed for back-compat.
@@ -305,7 +305,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		}
 		if ( priority == -1 ) // back-compat
 			return btn;
-		if ( priority &gt; 0 ) {
+		if ( priority > 0 ) {
 			while ( typeof(edButtons[priority]) != 'undefined' ) {
 				priority++
 			}
@@ -351,8 +351,8 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		t.instance = instance || '';
 	};
 	qt.Button.prototype.html = function(idPrefix) {
-		var access = this.access ? ' accesskey=&quot;' + this.access + '&quot;' : '';
-		return '&lt;input type=&quot;button&quot; id=&quot;' + idPrefix + this.id + '&quot;' + access + ' class=&quot;ed_button&quot; title=&quot;' + this.title + '&quot; value=&quot;' + this.display + '&quot; /&gt;';
+		var access = this.access ? ' accesskey='' + this.access + ''' : '';
+		return '<input type='button' id='' + idPrefix + this.id + ''' + access + ' class='ed_button' title='' + this.title + '' value='' + this.display + '' />';
 	};
 	qt.Button.prototype.callback = function(){};
 	// a button that inserts HTML tag
@@ -384,7 +384,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 	qt.TagButton.prototype.isOpen = function (ed) {
 		var t = this, i = 0, ret = false;
 		if ( ed.openTags ) {
-			while ( ret === false &amp;&amp; i &lt; ed.openTags.length ) {
+			while ( ret === false &amp;&amp; i < ed.openTags.length ) {
 				ret = ed.openTags[i] == t.id ? i : false;
 				i ++;
 			}
@@ -398,7 +398,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		if ( document.selection ) { // IE
 			canvas.focus();
 			sel = document.selection.createRange();
-			if ( sel.text.length &gt; 0 ) {
+			if ( sel.text.length > 0 ) {
 				if ( !t.tagEnd )
 					sel.text = sel.text + t.tagStart;
 				else
@@ -464,7 +464,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 	};
 	// the spell button
 	qt.SpellButton = function() {
-		qt.Button.call(this, 'spell', &quot;Spell&quot;, '', &quot;dictionaryLookup&quot;);
+		qt.Button.call(this, 'spell', 'Spell', '', 'dictionaryLookup');
 	};
 	qt.SpellButton.prototype = new qt.Button();
 	qt.SpellButton.prototype.callback = function(element, canvas, ed) {
@@ -472,7 +472,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		if ( document.selection ) {
 			canvas.focus();
 			sel = document.selection.createRange();
-			if ( sel.text.length &gt; 0 ) {
+			if ( sel.text.length > 0 ) {
 				word = sel.text;
 			}
 		} else if ( canvas.selectionStart || canvas.selectionStart == '0' ) {
@@ -483,7 +483,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 			}
 		}
 		if ( word === '' ) {
-			word = prompt(&quot;Word Lookup&quot;, '');
+			word = prompt('Word Lookup', '');
 		}
 		if ( word !== null &amp;&amp; /^\w[\w ]*$/.test(word)) {
 			window.open('http://www.answers.com/' + encodeURIComponent(word));
@@ -491,13 +491,13 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 	};
 	// the close tags button
 	qt.CloseButton = function() {
-		qt.Button.call(this, 'close', &quot;closeTags&quot;, '', &quot;closeAllOpenTags&quot;);
+		qt.Button.call(this, 'close', 'closeTags', '', 'closeAllOpenTags');
 	};
 	qt.CloseButton.prototype = new qt.Button();
 	qt._close = function(e, c, ed) {
 		var button, element, tbo = ed.openTags;
 		if ( tbo ) {
-			while ( tbo.length &gt; 0 ) {
+			while ( tbo.length > 0 ) {
 				button = ed.getButton(tbo[tbo.length - 1]);
 				element = document.getElementById(ed.name + '_' + button.id);
 				if ( e )
@@ -514,7 +514,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 	};
 	// the link button
 	qt.LinkButton = function() {
-		qt.TagButton.call(this, 'link', 'link', '', '&lt;/a&gt;', 'a');
+		qt.TagButton.call(this, 'link', 'link', '', '</a>', 'a');
 	};
 	qt.LinkButton.prototype = new qt.TagButton();
 	qt.LinkButton.prototype.callback = function(e, c, ed, defaultValue) {
@@ -526,9 +526,9 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		if ( ! defaultValue )
 			defaultValue = 'http://';
 		if ( t.isOpen(ed) === false ) {
-			URL = prompt(&quot;enterURL&quot;, defaultValue);
+			URL = prompt('enterURL', defaultValue);
 			if ( URL ) {
-				t.tagStart = '&lt;a href=&quot;' + URL + '&quot;&gt;';
+				t.tagStart = '<a href='' + URL + ''>';
 				qt.TagButton.prototype.callback.call(t, e, c, ed);
 			}
 		} else {
@@ -544,15 +544,15 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		if ( ! defaultValue ) {
 			defaultValue = 'http://';
 		}
-		var src = prompt(&quot;enterImageURL&quot;, defaultValue), alt;
+		var src = prompt('enterImageURL', defaultValue), alt;
 		if ( src ) {
-			alt = prompt(&quot;enterImageDescription&quot;, '');
-			this.tagStart = '&lt;img src=&quot;' + src + '&quot; alt=&quot;' + alt + '&quot; /&gt;';
+			alt = prompt('enterImageDescription', '');
+			this.tagStart = '<img src='' + src + '' alt='' + alt + '' />';
 			qt.TagButton.prototype.callback.call(this, e, c, ed);
 		}
 	};
 	qt.FullscreenButton = function() {
-		qt.Button.call(this, 'fullscreen', &quot;fullscreen&quot;, 'f', &quot;toggleFullscreen&quot;);
+		qt.Button.call(this, 'fullscreen', 'fullscreen', 'f', 'toggleFullscreen');
 	};
 	qt.FullscreenButton.prototype = new qt.Button();
 	qt.FullscreenButton.prototype.callback = function(e, c) {
@@ -561,7 +561,7 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		fullscreen.on();
 	};
 	qt.TextDirectionButton = function() {
-		qt.Button.call(this, 'textdirection', &quot;textdirection&quot;, '', &quot;toggleTextdirection&quot;)
+		qt.Button.call(this, 'textdirection', 'textdirection', '', 'toggleTextdirection')
 	};
 	qt.TextDirectionButton.prototype = new qt.Button();
 	qt.TextDirectionButton.prototype.callback = function(e, c) {
@@ -573,19 +573,19 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 		c.focus();
 	}
 	// ensure backward compatibility
-	edButtons[10] = new qt.TagButton('strong','b','&lt;strong&gt;','&lt;/strong&gt;','b');
-	edButtons[20] = new qt.TagButton('em','i','&lt;em&gt;','&lt;/em&gt;','i'),
+	edButtons[10] = new qt.TagButton('strong','b','<strong>','</strong>','b');
+	edButtons[20] = new qt.TagButton('em','i','<em>','</em>','i'),
 	edButtons[30] = new qt.LinkButton(), // special case
-	edButtons[40] = new qt.TagButton('block','b-quote','\n\n&lt;blockquote&gt;','&lt;/blockquote&gt;\n\n','q'),
-	edButtons[50] = new qt.TagButton('del','del','&lt;del datetime=&quot;' + _datetime + '&quot;&gt;','&lt;/del&gt;','d'),
-	edButtons[60] = new qt.TagButton('ins','ins','&lt;ins datetime=&quot;' + _datetime + '&quot;&gt;','&lt;/ins&gt;','s'),
+	edButtons[40] = new qt.TagButton('block','b-quote','\n\n<blockquote>','</blockquote>\n\n','q'),
+	edButtons[50] = new qt.TagButton('del','del','<del datetime='' + _datetime + ''>','</del>','d'),
+	edButtons[60] = new qt.TagButton('ins','ins','<ins datetime='' + _datetime + ''>','</ins>','s'),
 	edButtons[70] = new qt.ImgButton(), // special case
-	edButtons[80] = new qt.TagButton('ul','ul','&lt;ul&gt;\n','&lt;/ul&gt;\n\n','u'),
-	edButtons[90] = new qt.TagButton('ol','ol','&lt;ol&gt;\n','&lt;/ol&gt;\n\n','o'),
-	edButtons[100] = new qt.TagButton('li','li','\t&lt;li&gt;','&lt;/li&gt;\n','l'),
-	edButtons[110] = new qt.TagButton('code','code','&lt;code&gt;','&lt;/code&gt;','c'),
-	edButtons[120] = new qt.TagButton('more','more','&lt;!--more--&gt;','','t'),
-	edButtons[125] = new qt.TagButton('pre','pre','&lt;pre&gt;','&lt;/pre&gt;','p'),
+	edButtons[80] = new qt.TagButton('ul','ul','<ul>\n','</ul>\n\n','u'),
+	edButtons[90] = new qt.TagButton('ol','ol','<ol>\n','</ol>\n\n','o'),
+	edButtons[100] = new qt.TagButton('li','li','\t<li>','</li>\n','l'),
+	edButtons[110] = new qt.TagButton('code','code','<code>','</code>','c'),
+	edButtons[120] = new qt.TagButton('more','more','<!--more-->','','t'),
+	edButtons[125] = new qt.TagButton('pre','pre','<pre>','</pre>','p'),
 	edButtons[130] = new qt.SpellButton(),
 	edButtons[140] = new qt.CloseButton()
 })();

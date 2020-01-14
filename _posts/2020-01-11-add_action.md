@@ -1,6 +1,6 @@
 ---
 id: 25
-title: add_action hooks in WordPress!
+title: add_action hooks in WordPress
 date: 2011-02-28 09:15:54
 author: taimane
 layout: post
@@ -16,7 +16,7 @@ tags:
 Here I will provide simple working example for the <code>add_action</code> hook filter in WordPress:
 
 
-```
+```php
 function hello_header() {
   echo "I'm in the header!";
 }
@@ -31,26 +31,16 @@ Here <code>wp_head</code> represents the moment before the “head” section fo
 
 
 
-*   `init`: moment when creating a page, both front end and administration
-
-*   `admin_init`: the first thing done on every administration page
-
-*   `admin_head`: the last moment in the administration page’s “head” section
-
-*   `admin_menu`: constructing the navigation menu in the administration pages
-
-*   `template_redirect`: occurs before the theme template file bas been chosen
-
-*   `wp_enqueue_scripts`: moment to eliminate duplicate scripts
-
-*   `wp_enqueue_style` : moment to eliminate duplicate styles
-
-*   `widgets_init`: moment for constructing the list of active widgets
-
-*   `loop_start` and `loop_end`: surrounding the Loop
-
-*   `wp_footer`: moment to insert additional stuff before closing “body” tag
-
+*   `init` — moment when creating a page, both front end and administration
+*   `admin_init` — the first thing done on every administration page
+*   `admin_head` — the last moment in the administration page’s “head” section
+*   `admin_menu` — constructing the navigation menu in the administration pages
+*   `template_redirect` — occurs before the theme template file bas been chosen
+*   `wp_enqueue_scripts` — moment to eliminate duplicate scripts
+*   `wp_enqueue_style` — moment to eliminate duplicate styles
+*   `widgets_init` — moment for constructing the list of active widgets
+*   `loop_start` and `loop_end` — surrounding the Loop
+*   `wp_footer` — moment to insert additional stuff before closing the `body` tag
 
 
 And <a href="https://adambrown.info/p/wp_hooks/hook">here</a> is the complete WordPress hooks list. And <a href="https://adambrown.info/p/wp_hooks/hook/actions">here</a> is the <code>add_action</code> hooks list.
@@ -60,7 +50,7 @@ How about adding meta keywords to our post via a hook? How do we get meta keywor
 
 Here is the code I used:
 
-```
+```php
 function add_metatags()
 {
  if (is_single()){

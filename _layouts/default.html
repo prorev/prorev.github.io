@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=21" }}">
+    <link rel="stylesheet" href="{{ "/assets/css/monokai.css?v=21" }}">
     {% if post.title == "" %}
       <title> {{site.title | upcase}}  </title>
     {% else %}    
@@ -20,11 +21,8 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-35562836-1');
     </script>
-
-
   
 
   </head>
@@ -32,15 +30,16 @@
     <div class="wrapper">
 
       <header>
-        <h2><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h2>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <a href="/">
+        <img class="logo" src="/assets/img/logo.png" alt="Programming Review" height="90px">
+        </a>
         
       </header>
-      <section>
+      <article>
 
       {{ content }}
 
-      </section>
+      </article>
       
     </div>
     

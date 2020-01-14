@@ -13,10 +13,10 @@ tags:
    - class
 ---
 JavaScript doesn't have _classes_.
-Classes can be only simulated using _functions_.
+Classes can be only **simulated** using _functions_.
 
 The approach to achieving this is by defining a JavaScript function where we then create an object using the **new** keyword. This can be used to define new properties and methods for the object as follows:
-```
+```js
 // Album "class" example 1
 function Album( name , year) {
   this.name = name; 
@@ -32,7 +32,7 @@ console.log( album.getInfo() );
 ```
 
 or one another way to do the same, but just a touch different:
-```
+```js
 // Album "class" example 2
 function Album( name , year) {
   this.name = name; 
@@ -50,7 +50,7 @@ console.log( album.getInfo() );
 The different approach is: we use `Album.prototype` or `Object.prototype` to define the new function inside of the object. We can refer to the prototype as to the object constructor function. And we can use prototype again and again to add new functions to the object if we wish. In the first approach we defined function getInfo inside of the function Album representing the object.
 
 However, this is not all, the equivalent to the previous would be:
-```
+```js
 // Album "class" example 3
 var album = {
   name : "Hello", 
@@ -61,15 +61,15 @@ var album = {
 };
 ```
 anytime we could say:
-```
+```js
 album.name="Good bye";
 ```
 and call
-```
+```js
 album.getInfo();
 ```
-But, even this is not all. We can say something a touch different:
-```
+We can say write something a bit different:
+```js
 // Album "class" example 4
 var album = new function(){
   this.name = "Hello"; 

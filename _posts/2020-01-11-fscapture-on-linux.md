@@ -13,7 +13,7 @@ tags:
    - opt
    - wine
 ---
-On Linux I have some Windows programs that I miss. 
+On Linux I have some Windows programs that I miss, but this will work for any Windows program. 
 
 The <a title="FSCapture" href="https://www.faststone.org/FSCaptureDetail.htm">FSCapture</a> program for instance.
 
