@@ -10,8 +10,8 @@ kramdown:
   syntax_highlighter: rouge
 build_revision: 21
 excerpt_separator: [[[]]]
-# plugins:
-# - jekyll-redirect-from
-# - jekyll-seo-tag
-# - jekyll-sitemap
-# - jekyll-feed
+plugins:
+- jekyll-redirect-from
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
