@@ -15,7 +15,7 @@ You are in a need of:
 
 <ul>
 
-	<li>Generating <a href="http://en.wikipedia.org/wiki/Newsletter">newsletters</a></li>
+	<li>Generating <a rel="nofollow" href="http://en.wikipedia.org/wiki/Newsletter">newsletters</a></li>
 
 	<li>Promoting your organization's events, products and services</li>
 

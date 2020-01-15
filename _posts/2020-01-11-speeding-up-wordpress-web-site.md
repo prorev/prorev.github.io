@@ -13,9 +13,9 @@ tags:
 ---
 In general there are several ways for tracking your web site speed:
 
-* <a href="http://pagespeed.googlelabs.com/">http://pagespeed.googlelabs.com/</a>
+* <a rel="nofollow" href="http://pagespeed.googlelabs.com/">http://pagespeed.googlelabs.com/</a>
 
-* <a href="http://tools.pingdom.com/">http://tools.pingdom.com/</a>
+* <a rel="nofollow" href="http://tools.pingdom.com/">http://tools.pingdom.com/</a>
 
 * If you are using Chrome, right click and from the context menu select "Chrome Inspect Element"
 
@@ -31,7 +31,7 @@ In general there are several ways for tracking your web site speed:
 
 
 
-There is an <a href="http://developer.yahoo.com/performance/rules.html">excellent Yahoo tutorial</a> for general website speed optimization.
+There is an <a rel="nofollow" href="http://developer.yahoo.com/performance/rules.html">excellent Yahoo tutorial</a> for general website speed optimization.
 
 
 
@@ -50,9 +50,9 @@ A content delivery network (CDN) is a collection of web servers distributed acro
 
 Finally WordPress plugins for web site speedup: 
 
-* <a href="http://www.w3-edge.com/wordpress-plugins/w3-total-cache/">W3 Total Cache</a> (excellent choice for dedicated hosting)
+* <a rel="nofollow" href="http://www.w3-edge.com/wordpress-plugins/w3-total-cache/">W3 Total Cache</a> (excellent choice for dedicated hosting)
 
-* <a href="http://www.satollo.net/plugins/hyper-cache">Hyper Cache</a> (probable the best choice for shared hosting)
+* <a rel="nofollow" href="http://www.satollo.net/plugins/hyper-cache">Hyper Cache</a> (probable the best choice for shared hosting)
 
 
   

@@ -11,9 +11,13 @@ categories:
 tags:
    -
 ---
-<a href="http://ecma-international.org/" rel="nofollow">ECMAScript</a> is the language. JavaScript is just a dialect of ECMAScript. Like JScript.
-
-&nbsp;
-
+<a rel="nofollow" href="http://ecma-international.org/" rel="nofollow">ECMAScript</a> is the language. JavaScript is just a dialect of ECMAScript. Like JScript.
+
+
+
+&nbsp;
+
+
+
 &nbsp;  
 

@@ -19,8 +19,8 @@ VALUES(35019, 3080, '_wp_old_slug', 'old-post-name-slug');</pre>
 Based on the last line WordPress will redirect old-post-name-slug to a new URL slug defined in wp_posts table under ID=3080.
 This feature is available since WP 2.1
 
-Basically this is what <a href="http://wordpress.org/extend/plugins/redirection/">WordPress Redirection</a> plugin will do for you.
-Redirection plugin is available for WP 2.3 and higher. I checked this plugin and it looks secure. It was made by John Godley that works for <a href="http://automattic.com/">Automattic</a>.
+Basically this is what <a rel="nofollow" href="http://wordpress.org/extend/plugins/redirection/">WordPress Redirection</a> plugin will do for you.
+Redirection plugin is available for WP 2.3 and higher. I checked this plugin and it looks secure. It was made by John Godley that works for <a rel="nofollow" href="http://automattic.com/">Automattic</a>.
 
 To outline once more: The "_wp_old_slug" keys for redirection will be added only in case of posts. For the pages or custom post types this is not working.
 

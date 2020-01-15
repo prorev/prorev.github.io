@@ -15,11 +15,11 @@ If Apache has some advantages over Nginx — well that would be the ease you 
 
 
 
-<a href="http://php-fpm.org/">PHP-FPM</a> (FPM = "FastCGI Process Manager") integrates well with Nginx. And it is fast and scalable. As of PHP 5.3.3 PHP-FPM is in its core so you don't need special install.
+<a rel="nofollow" href="http://php-fpm.org/">PHP-FPM</a> (FPM = "FastCGI Process Manager") integrates well with Nginx. And it is fast and scalable. As of PHP 5.3.3 PHP-FPM is in its core so you don't need special install.
 
 
 
-To determine the PHP-FPM speed one would need to <a href="http://www.if-not-true-then-false.com/2011/nginx-and-php-fpm-configuration-and-optimizing-tips-and-tricks/">explore much</a>, so we can take this as a well-known-truth. Scalable means PHP-FPM can scale the number of its own worker processes that are currently running based on the need—and based on the php-fpm settings. Just to distinguish PHP-FPM worker processes are not the same as Nginx worker processes. Both the servers (Nginx and PHP-FPM) just have the similar pool mechanism.
+To determine the PHP-FPM speed one would need to <a rel="nofollow" href="http://www.if-not-true-then-false.com/2011/nginx-and-php-fpm-configuration-and-optimizing-tips-and-tricks/">explore much</a>, so we can take this as a well-known-truth. Scalable means PHP-FPM can scale the number of its own worker processes that are currently running based on the need—and based on the php-fpm settings. Just to distinguish PHP-FPM worker processes are not the same as Nginx worker processes. Both the servers (Nginx and PHP-FPM) just have the similar pool mechanism.
 
 
 

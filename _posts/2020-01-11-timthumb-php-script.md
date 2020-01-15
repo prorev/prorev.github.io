@@ -13,7 +13,7 @@ tags:
 ---
 You need to resize, crop or do basic raster image effects (brightness, contrast, greyscale, colorize...) on JPEG, GIF, PNG images. 
 
-There is an PHP script named <a href="http://timthumb.googlecode.com/svn/trunk/timthumb.php">TimThumb</a> great for that job. The great thing you can add that script to your WordPress theme and improve theme functionality.
+There is an PHP script named <a rel="nofollow" href="http://timthumb.googlecode.com/svn/trunk/timthumb.php">TimThumb</a> great for that job. The great thing you can add that script to your WordPress theme and improve theme functionality.
 
 
 
@@ -37,7 +37,7 @@ The <code>http://localhost/wordpress/wp-content/uploads/2009/08/Doctor3-750x1024
 
 The parameters <code>"w"</code> and <code>"h"</code> specified above are the width and the height of the new thumbnail image. 
 
-There are also other parameters you can use. Read more from <a href="http://www.binarymoon.co.uk/projects/timthumb/">here</a>. 
+There are also other parameters you can use. Read more from <a rel="nofollow" href="http://www.binarymoon.co.uk/projects/timthumb/">here</a>. 
 
 
 

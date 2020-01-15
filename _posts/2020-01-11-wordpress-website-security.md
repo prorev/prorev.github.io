@@ -48,7 +48,7 @@ A lot of Wordpress installations are hosted on an Apache server. If your site is
 <blockquote>“a concise, lightweight security strategy for Apache-powered websites...the 3G Blacklist serves as an extremely effective security strategy for preventing a vast majority of common exploits. The list consists of four distinct parts, providing multiple layers of protection while synergizing into a comprehensive defense mechanism.”</blockquote>
 
 
-Find instructions and usage information on the 3G Blacklist <a href="http://perishablepress.com/press/2008/05/13/perishable-press-3g-blacklist/">here</a>.
+Find instructions and usage information on the 3G Blacklist <a rel="nofollow" href="http://perishablepress.com/press/2008/05/13/perishable-press-3g-blacklist/">here</a>.
 
 <h2>WORDPRESS SECURITY CONFIGURATION</h2>
 

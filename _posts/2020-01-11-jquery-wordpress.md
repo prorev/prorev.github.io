@@ -11,7 +11,7 @@ categories:
 tags:
    -
 ---
-There is absolutely needed to outline how <strong><a href="http://en.wikipedia.org/wiki/JQuery">jQuery</a></strong> should be used together with <strong>WordPress</strong> because one can fail easily. I used my time to figure out what steps I need to undertake to have the perfect match.
+There is absolutely needed to outline how <strong><a rel="nofollow" href="http://en.wikipedia.org/wiki/JQuery">jQuery</a></strong> should be used together with <strong>WordPress</strong> because one can fail easily. I used my time to figure out what steps I need to undertake to have the perfect match.
 
 Here are the rules you should follow if you want to use jQuery that is already present in WordPress installation.
 #1. You should edit your <strong>header.php</strong> file of your WordPress theme like this.
@@ -35,7 +35,7 @@ $j(document).ready(function(){
 #3. The above code from #1 and #2 must be inside the `wp_head()` tags of your **header.php** file in your theme.
 
 
-Note that I have fond the similar explanation <a href="http://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/">here</a>.
+Note that I have fond the similar explanation <a rel="nofollow" href="http://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/">here</a>.
 
 Note that one can use theme **functions.php** file to add <strong>jQuery </strong>support. This can be done the following way:
 ```

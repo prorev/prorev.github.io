@@ -34,7 +34,7 @@ edButtons[140] = new qt.CloseButton()
         
 
 We can add the "pre" button similar as the "code" button, but we do not like to edit this file directly, because it is bad practice to edit the WordPress core files.
-Our solution is to reassign quicktags to load from our custom <a href="http://brettterpstra.com/edit-your-wordpress-quicktags-the-right-way/">file</a>:
+Our solution is to reassign quicktags to load from our custom <a rel="nofollow" href="http://brettterpstra.com/edit-your-wordpress-quicktags-the-right-way/">file</a>:
 ```
 if (is_admin()) {
   add_action('init', pr_load_admin_scripts);

@@ -25,7 +25,7 @@ Here are few tips to work with pages and how to create rewriting rules. Luckily,
 $wp_rewrite->page_structure = $wp_rewrite->page_structure . '.html';
 ```
 Please note, the rewrite rules have rule - the most important rule will prevail. There may be 20 rules that may affect our URL but only the most important rule will be considered.
-For the custom post types "<a href="http://wordpress.org/extend/plugins/custom-post-type-permalinks/">Custom Post Type Permalinks</a>" plugin provides perfect date to start with modifying custom post types permalinks.
+For the custom post types "<a rel="nofollow" href="http://wordpress.org/extend/plugins/custom-post-type-permalinks/">Custom Post Type Permalinks</a>" plugin provides perfect date to start with modifying custom post types permalinks.
 
 The idea is to create <code>extra_permastruct</code> array inside <code>$wp_rewrite</code> that will store extra permalink data for all custom post types and other taxonomies. For instance for the <code>videos</code> custom post type we may have this:
 

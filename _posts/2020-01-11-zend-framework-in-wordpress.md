@@ -12,7 +12,7 @@ tags:
    -
 ---
 I set in this blog some articles related to WordPress programming. Nothing will change this time, since now I will present how to integrate Zend Framework into WP.
-<a href="http://wordpress.org/extend/plugins/zend-framework/"><strong>Zend Framework</strong></a> (ZF) is is an <a title="Open source" href="http://en.wikipedia.org/wiki/Open_source">open source</a>, <a title="Object-oriented" href="http://en.wikipedia.org/wiki/Object-oriented">object-oriented</a> <a title="Web application framework" href="http://en.wikipedia.org/wiki/Web_application_framework">web application framework</a> implemented in <a title="PHP 5" href="http://en.wikipedia.org/wiki/PHP_5">PHP 5</a>.
+<a rel="nofollow" href="http://wordpress.org/extend/plugins/zend-framework/"><strong>Zend Framework</strong></a> (ZF) is is an <a title="Open source" href="http://en.wikipedia.org/wiki/Open_source">open source</a>, <a title="Object-oriented" href="http://en.wikipedia.org/wiki/Object-oriented">object-oriented</a> <a title="Web application framework" href="http://en.wikipedia.org/wiki/Web_application_framework">web application framework</a> implemented in <a title="PHP 5" href="http://en.wikipedia.org/wiki/PHP_5">PHP 5</a>.
 Zend Technologies is a company behind the (ZF) framework and also on of the co founders of  PHP.
 Zend Framework become the industry standard for developing the PHP applications. For instance Google use it.
 It is easy to add Zend Framework support to the WordPress just by editing the functions.php file and adding the Zend Library (from the Zend Framework package).

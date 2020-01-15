@@ -15,7 +15,7 @@ Provided the list of WordPress filters in <a href="https://programming-review.co
 
 
 
-In fact on the following page <a href="http://codex.wordpress.org/Plugin_API/Filter_Reference%20">http://codex.wordpress.org/Plugin_API/Filter_Reference </a>I found the answer:
+In fact on the following page <a rel="nofollow" href="http://codex.wordpress.org/Plugin_API/Filter_Reference%20">http://codex.wordpress.org/Plugin_API/Filter_Reference </a>I found the answer:
 
 
 * 1 Post, Page, and Attachment (Upload) Filters

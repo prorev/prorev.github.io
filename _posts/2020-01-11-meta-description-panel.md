@@ -23,7 +23,7 @@ Here I will provide the code to create meta description custom write panel that 
 
 <img class="alignnone size-full wp-image-436" title="seodescription" src="https://programming-review.com/wp-content/uploads/2011/05/seodescription-e1306831458774.png" alt="" width="500" height="393" />
 
-Now, there are different solutions for this specific problem, there are excellent WordPress plugins such as <a href="http://wordpress.org/plugins/simple-meta-description/">Simple Meta Description</a> that will do exactly this:
+Now, there are different solutions for this specific problem, there are excellent WordPress plugins such as <a rel="nofollow" href="http://wordpress.org/plugins/simple-meta-description/">Simple Meta Description</a> that will do exactly this:
 ```
 function tlf_add_meta_description() {
 	if (is_single()) {

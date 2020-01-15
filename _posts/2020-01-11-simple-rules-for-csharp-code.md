@@ -23,7 +23,7 @@ Be consistent as much as possible whatever you do. This is especially important 
 
 ## Have a coding standard
 
-A coding standard defines how you write you code. <a href="http://blogs.msdn.com/brada/articles/361363.aspx">Here</a> are some Microsoft guidelines from the coding standard:
+A coding standard defines how you write you code. <a rel="nofollow" href="http://blogs.msdn.com/brada/articles/361363.aspx">Here</a> are some Microsoft guidelines from the coding standard:
 
 **Guideline #1**: For class names use PascalCasing
 ```c#
@@ -51,7 +51,7 @@ public class Foo
 
 **Guideline #5**: To distinguish between local and member variables use `this` keyword and don't use Hungarian and notations having `_`, `m_`, `s_` for your local or member variables.
 
-## Use <a href="http://en.wikipedia.org/wiki/Revision_control">Revision Control system</a>
+## Use <a rel="nofollow" href="http://en.wikipedia.org/wiki/Revision_control">Revision Control system</a>
 
 Use Revision Control system to manage changes of your documents (source code).
 

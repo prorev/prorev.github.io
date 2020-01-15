@@ -11,10 +11,10 @@ categories:
 tags:
    -
 ---
-I needed to crate a <a href="http://codex.wordpress.org/Function_Reference/wp_schedule_event">pseudo cron job</a> in wordpress, but I was not careful and I created >100 jobs. Here is the preview:
+I needed to crate a <a rel="nofollow" href="http://codex.wordpress.org/Function_Reference/wp_schedule_event">pseudo cron job</a> in wordpress, but I was not careful and I created >100 jobs. Here is the preview:
 <img src="https://programming-review.com/wp-content/uploads/2011/06/cronscheduler-e1308729303177.png" alt="" title="cronscheduler" width="500" height="398" class="alignnone size-full wp-image-497" />
 
-I caught this image via <a href="http://wordpress.org/extend/plugins/gd-press-tools/">GD Press Tools</a> plugin. Now deleting all the cron jobs is not easy even using this plugin. One should click and wait hundred times to delete all the jobs.
+I caught this image via <a rel="nofollow" href="http://wordpress.org/extend/plugins/gd-press-tools/">GD Press Tools</a> plugin. Now deleting all the cron jobs is not easy even using this plugin. One should click and wait hundred times to delete all the jobs.
 
 It came out that the solution to delete all the cron jobs is possible using this PHP code.
 ```

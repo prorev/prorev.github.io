@@ -21,5 +21,5 @@ based on:
 * node.js,
 * MongoDB (for users and logs), and
 * Redis (for sessions and output cache)
-Check it out from <a href="http://bundlejs.com/">here</a>.
+Check it out from <a rel="nofollow" href="http://bundlejs.com/">here</a>.
 

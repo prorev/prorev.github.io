@@ -12,7 +12,7 @@ tags:
    -
 ---
 Here we will set the basic elements WordPress plugin should contain. We will not bother with the implementation details. We will simple try to understand the possible and the needed functionality of any WordPress plugin.
-Our analysis will mainly be based on the Empty Plugin Template that one can find <a href="http://wordpress.org/extend/plugins/empty-plugin-template/">here</a>.
+Our analysis will mainly be based on the Empty Plugin Template that one can find <a rel="nofollow" href="http://wordpress.org/extend/plugins/empty-plugin-template/">here</a>.
 Here is what is stated for this plugin and we will also examine here if this is  correct list including:
 
 * Multi language ability

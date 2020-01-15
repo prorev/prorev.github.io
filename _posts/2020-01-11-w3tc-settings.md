@@ -15,7 +15,7 @@ W3TC is very complex plugin. It consists of more than 500 different files conta
 
 
 
-Some info about files may be found here: <a href="http://plugins.programming-review.com/w3-total-cache/">http://plugins.programming-review.com/w3-total-cache/</a>
+Some info about files may be found here: <a rel="nofollow" href="http://plugins.programming-review.com/w3-total-cache/">http://plugins.programming-review.com/w3-total-cache/</a>
 
 
 
@@ -54,7 +54,7 @@ The database caching and object caching can be ignored, if we only use disk with
 
 
 
-W3TC is not perfect on minification of JavaScript; where CSS should be fine. For instance the minifying of JavaScript feature doesn't work with automatic option:  <a href="http://uprankers.com/w3-total-cache-javascript-minification-troubleshooting/">http://uprankers.com/w3-total-cache-javascript-minification-troubleshooting/</a>
+W3TC is not perfect on minification of JavaScript; where CSS should be fine. For instance the minifying of JavaScript feature doesn't work with automatic option:  <a rel="nofollow" href="http://uprankers.com/w3-total-cache-javascript-minification-troubleshooting/">http://uprankers.com/w3-total-cache-javascript-minification-troubleshooting/</a>
 
 
 
