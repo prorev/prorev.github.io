@@ -7,67 +7,72 @@ layout: post
 permalink: /installing-xdebug-on-centos/
 published: true
 categories:
-   -
+   - linux
 tags:
-   -
+   - centos
+   - xdebug
 ---
 Here are exact steps to follow:
 
 
-1. You need to install PHP's devel package for PHP commands execution
+### 1. Install PHP's devel package for PHP commands execution
 
-<code>yum install php-devel</code>
+```
+yum install php-devel
+```
 
-Make sure you also have <strong>php-paer</strong> package installed
+### 2. Make sure you also have <strong>php-paer</strong> package installed:
 
-<code>yum install php-pear</code>
-
-
-
-2. Next install GCC and GCC C++ compilers to compile Xdebug extension yourself.
-
-<code>yum install gcc gcc-c++ autoconf automake</code>
+```
+yum install php-pear
+```
 
 
+### 3. Next install GCC and GCC C++ compilers to compile Xdebug extension yourself.
 
-3. Compile Xdebug
-
-<code>pecl install Xdebug</code>
-
-
-
-4. Find the php.ini file using
-
-<code>locate php.ini</code>
+```
+yum install gcc gcc-c++ autoconf automake
+```
 
 
+### 4. Compile Xdebug
 
-And add the following line
+```
+pecl install Xdebug
+```
 
 
+### 5. Find the `php.ini` file using
 
-<code>[xdebug]
+```
+locate php.ini
+```
 
+
+### 6. Add the following line to `php.ini`
+
+
+```
+[xdebug]
 zend_extension="/usr/lib64/php/modules/xdebug.so"
+xdebug.remote_enable = 1
+```
 
-xdebug.remote_enable = 1 </code>
+### 7. Restart Apache
 
-
-
-5. Restart Apache
-
-<code>service httpd restart</code>
-
-
-
-6. Test if it works - create test.php with the following code
+```
+service httpd restart
+```
 
 
+### 8. Test if it works 
 
-<code>&lt;?php phpinfo() ?&gt;</code>
+Create `test.php` with the following code:
 
-and check if you have the following output
-
+```
+<?php phpinfo() ?>
+```
+and check if you have the following output:
 
 
 <a href="//programming-review.com/wp-content/uploads/2012/05/xdebug.png"><img class="alignnone size-full wp-image-683" title="xdebug" src="//programming-review.com/wp-content/uploads/2012/05/xdebug.png" alt="" /></a>
@@ -82,59 +87,52 @@ If you like to compile the xdebug.so object file yourself in order to get the la
 
 
 
-1. Download latest xdebug-X.Y.Z.tgz from <a title="XDebug download web site" href="https://xdebug.org/download.php">xdebug web site</a>
+- Download latest xdebug-X.Y.Z.tgz from <a title="XDebug download web site" href="https://xdebug.org/download.php">xdebug web site</a>
 
 
 
-2. Unpack the downloaded file with tar -xvzf xdebug-X.Y.Z.tgz to some test folder
+- Unpack the downloaded file with tar -xvzf xdebug-X.Y.Z.tgz to some test folder
 
 
 
-3. Run: cd xdebug-X.Y.Z
+- Run: cd xdebug-X.Y.Z
 
 
 
-4. Run: phpize (to prepare the environment)
+- Run: phpize (to prepare the environment)
 
 
 
-5. Run: ./configure
+- Run: ./configure
 
 
 
-6. Run: make (now you have xdebug.so created;)
+* Run: make (now you have xdebug.so created;)
 
 
 
-7. Copy xdebug.so to your modules file (in my case /usr/lib64/php/modules)
+- Copy xdebug.so to your modules file (in my case /usr/lib64/php/modules)
 
 
 
-8. Make sure you have the following in php.ini
+* Make sure you have the following in php.ini
 
-<code>zend_extension = /usr/lib64/php/modules/xdebug.so</code>
-
-
-
-9. Make sure you have the execute permission for the xdebug.so file
-
-<code>chmod +x /usr/lib64/php/modules/xdebug.so </code>
+```
+zend_extension = /usr/lib64/php/modules/xdebug.so
+```
 
 
+* Make sure you have the execute permission for the xdebug.so file
 
-10. Restart the webserver
+```
+chmod +x /usr/lib64/php/modules/xdebug.so
+```
 
-
-
-<img class="size-full wp-image-2718 alignnone" src="//programming-review.com/wp-content/uploads/2012/05/Derick-Rethans.png" alt="Derick Rethans" width="537" height="71" />
-
+* Restart the webserver
 
 
 PS. Please note with the release of PHP 6.0 you will probable see <strong>Zend Engine 3</strong> in the last image.
 
-
-
-Thanks.
 
 
 
