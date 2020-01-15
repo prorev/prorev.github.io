@@ -4,7 +4,7 @@ title: How to set a div in the center of a web browser using margins?
 date: 2011-03-01 23:38:51
 author: taimane
 layout: post
-permalink: /automargin/
+permalink: /css/automargin/
 published: true
 categories:
    -
