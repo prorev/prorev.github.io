@@ -12,7 +12,7 @@ tags:
    -
 ---
 Together with the WordPress Core API, following WordPress APIs are the most beneficial for WordPress security:
-(For the full list of wordPress APIs check <a href="https://codex.wordpress.org/WordPress_APIs)">WordPress APIs</a>)
+(For the full list of wordPress APIs check <a rel="nofollow" href="https://codex.wordpress.org/WordPress_APIs)">WordPress APIs</a>)
 
 <strong>The Database API</strong>
 

@@ -11,7 +11,7 @@ categories:
 tags:
    -
 ---
-Deferred loading of render blocking JavaScripts has been explained here: <a href="https://developers.google.com/speed/docs/insights/BlockingJS">https://developers.google.com/speed/docs/insights/BlockingJS</a>.
+Deferred loading of render blocking JavaScripts has been explained here: <a rel="nofollow" href="https://developers.google.com/speed/docs/insights/BlockingJS">https://developers.google.com/speed/docs/insights/BlockingJS</a>.
 
 <a rel="nofollow" href="http://
 

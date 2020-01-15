@@ -41,7 +41,7 @@ The `max-width` property overrides the `width` property, but `min-width` w
 
 ### Filament Group's Responsive Images
 
-This technique requires a few files, all of which are available on <a href="https://github.com/filamentgroup/Responsive-Images">Github</a>. First, a JavaScript file (rwd-images.js), the .htaccess file and an image file (rwd.gif). Then, we can use just a bit of HTML to reference both the larger and smaller resolution images: first, the small image, with an .r prefix to clarify that it should be responsive, and then a reference to the bigger image using data-fullsrc.
+This technique requires a few files, all of which are available on <a rel="nofollow" href="https://github.com/filamentgroup/Responsive-Images">Github</a>. First, a JavaScript file (rwd-images.js), the .htaccess file and an image file (rwd.gif). Then, we can use just a bit of HTML to reference both the larger and smaller resolution images: first, the small image, with an .r prefix to clarify that it should be responsive, and then a reference to the bigger image using data-fullsrc.
 
 The data-fullsrc is a custom HTML5 attribute, defined in the files linked to above. For any screen that is wider than 480 pixels, the larger-resolution image (largeRes.jpg) will load; smaller screens wouldn't need to load the bigger image, and so the smaller image (smallRes.jpg) will load.
 

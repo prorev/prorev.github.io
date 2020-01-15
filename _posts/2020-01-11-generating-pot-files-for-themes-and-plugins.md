@@ -21,7 +21,7 @@ PO – Portable Object. This is the file that you receive back from the translat
 
 MO – Machine Object. The MO file includes the exact same contents as PO file. The two files differ in their format. While a PO file is a text file and is easy for humans to read, MO files are compiled and are easy for computers to read. Your web server will use the MO file to display the translations.</blockquote>
 
-Here are the functions from the <a href="https://www.gnu.org/software/gettext/">gettext</a> libraries:
+Here are the functions from the <a rel="nofollow" href="https://www.gnu.org/software/gettext/">gettext</a> libraries:
 
 ```
 __()

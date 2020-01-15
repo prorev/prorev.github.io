@@ -27,5 +27,5 @@ KVM has much less overhead than Xen, so now you will get the most out of our inv
 
 We’re also working on a graphical console (GISH?) which should be out in the next few weeks.</blockquote>
 
-Source: <em><a href="https://blog.linode.com/2015/06/16/linode-turns-12-heres-some-kvm/">Linode Blog » Linode turns 12! Here’s some KVM!</a></em>  
+Source: <em><a rel="nofollow" href="https://blog.linode.com/2015/06/16/linode-turns-12-heres-some-kvm/">Linode Blog » Linode turns 12! Here’s some KVM!</a></em>  
 

@@ -43,7 +43,7 @@ Here <code>wp_head</code> represents the moment before the “head” section fo
 *   `wp_footer` — moment to insert additional stuff before closing the `body` tag
 
 
-And <a href="https://adambrown.info/p/wp_hooks/hook">here</a> is the complete WordPress hooks list. And <a href="https://adambrown.info/p/wp_hooks/hook/actions">here</a> is the <code>add_action</code> hooks list.
+And <a rel="nofollow" href="https://adambrown.info/p/wp_hooks/hook">here</a> is the complete WordPress hooks list. And <a rel="nofollow" href="https://adambrown.info/p/wp_hooks/hook/actions">here</a> is the <code>add_action</code> hooks list.
 
 
 How about adding meta keywords to our post via a hook? How do we get meta keywords from the post tags and categories. 
