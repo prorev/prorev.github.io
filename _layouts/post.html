@@ -37,23 +37,29 @@ layout: default
   <div class="main">
     {{ contentA }}    
 
+    <div style="text-align:center;margin:7px;">
+      <p>&hellip;</p>
+    {% if page.tags %}
+    <small><strong>tags:</strong> <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+    {% endif %} & 
+    {% if page.categories %}
+      <small><strong>category:</strong> <em>{{ page.categories | join: "</em> - <em>" }}</em></small>
+    {% endif %}
+    </div>
+
   </div>
 
   <div class="right">
     {{ extraA }}
   </div>
 
+
+
+
 </div>
 
 
-{% if page.tags %}
-  <small><strong>tags:</strong> <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %} & 
-{% if page.categories %}
-  <small><strong>category:</strong> <em>{{ page.categories | join: "</em> - <em>" }}</em></small>
-{% endif %}
+<footer style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
 
-
-<footer>        
 <small> {{site.footer}} </small>
 </footer>
