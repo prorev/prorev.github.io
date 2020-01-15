@@ -29,5 +29,5 @@ After this step please create a symbolic link to your file /opt/firefox8/firefox
 
 <pre>ln -s /opt/firefox8/firefox /usr/bin/firefox</pre>
 
-Thanks.  
+Thanks  
 

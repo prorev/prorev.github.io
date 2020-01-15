@@ -33,5 +33,5 @@ The same troubleshoot work when WordPress cannot write <code>wp-conf.php</code> 
 
 
 
-Thanks.  
+Thanks  
 

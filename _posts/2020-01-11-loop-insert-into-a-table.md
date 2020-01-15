@@ -30,6 +30,6 @@ begin
 end;
 GO</pre>
 
-Thanks.
+Thanks
   
 

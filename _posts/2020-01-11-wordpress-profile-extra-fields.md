@@ -55,4 +55,4 @@ function my_save_extra_profile_fields( $user_id ) {
 
 And that's it.You'll just need to add this code to your functions.php file and it will rock. Just to mention that if you need straight textfields there is probable the better solution you can find on <a rel="nofollow" href="http://yoast.com/user-contact-fields-wp29/">Yoast's</a> website. As I tested Yoast's code works in WordPress 3.0 perfectly.
 
-Thanks.  
+Thanks  

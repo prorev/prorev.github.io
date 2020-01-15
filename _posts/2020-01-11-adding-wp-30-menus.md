@@ -241,5 +241,3 @@ Note how easy is to work with the menus now from the WP backend:
 
 
 
-Thanks,  
-

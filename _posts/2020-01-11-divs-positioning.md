@@ -367,5 +367,5 @@ Summary: We noted first the distinction between absolute and relative position. 
 
 
 
-Thanks.  
+Thanks  
 

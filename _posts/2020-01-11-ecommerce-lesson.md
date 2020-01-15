@@ -69,5 +69,4 @@ Anyone in the right way. If you have small little shop that builds souvenirs y
 
 <p dir="ltr">Probable the M-commerce, or Mobile commerce. This is a new term when people are shopping via Phone while sitting in a waiting room. mCommerce will be very popular in the future.</p>
 
-<p dir="ltr">Thanks</p>  
 

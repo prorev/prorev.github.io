@@ -89,5 +89,5 @@ In order to use non-default page template you need to create one and the best wa
 
 
 
-Thanks.  
+Thanks  
 

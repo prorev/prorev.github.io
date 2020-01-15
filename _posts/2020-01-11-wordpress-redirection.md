@@ -36,4 +36,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 Redirect 301 /old-post-name-slug /new-post-name-slug
 # END WordPress</pre>
-Thanks.  
+Thanks  

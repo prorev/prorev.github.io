@@ -65,7 +65,7 @@ In the <a href="https://programming-review.com/offset/">next</a> article I will 
 
 
 
-Thanks.
+Thanks
 
   
 

@@ -67,5 +67,5 @@ Also you may use the <a rel="nofollow" href="http://www.colorzilla.com/gradient-
 
 
 
-Thanks.  
+Thanks  
 

@@ -11,18 +11,31 @@ categories:
 tags:
    -
 ---
-It is possible to get the custom post field value?
-
-YES. You need to use <code>get_post_meta</code> function.
-
-If "in the WordPress Loop" use this code
-<pre>$result = get_post_meta($post->ID, 'customField', true); </pre>
-
-If outside the Loop:
-
-<pre>global $wp_query;
-$postid = $wp_query->post->ID;
-echo get_post_meta($postid, 'customField', true);</pre>
-
+It is possible to get the custom post field value?
+
+
+
+YES. You need to use <code>get_post_meta</code> function.
+
+
+
+If "in the WordPress Loop" use this code
+
+<pre>$result = get_post_meta($post->ID, 'customField', true); </pre>
+
+
+Thanks
+If outside the Loop:
+
+
+
+<pre>global $wp_query;
+
+$postid = $wp_query->post->ID;
+
+echo get_post_meta($postid, 'customField', true);</pre>
+
+
+
 Thanks.  
 

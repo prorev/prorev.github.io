@@ -35,5 +35,5 @@ Download SEO Meta Description plugin from here: <a href="https://programming-rev
 
 
 
-Thanks.  
+Thanks  
 

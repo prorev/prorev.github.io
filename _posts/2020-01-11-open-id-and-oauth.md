@@ -33,5 +33,5 @@ Now do you have an OpenID, probable yes if you have Google email account, or Yah
 
 
 
-Thanks.  
+Thanks  
 

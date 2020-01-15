@@ -47,5 +47,5 @@ The output for the last example will be: <code>blue, large, sphere, medium</code
 
 
 
-Thanks.  
+Thanks  
 

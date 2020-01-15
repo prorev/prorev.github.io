@@ -301,5 +301,5 @@ Goto <a href="https://programming-review.com/journal-style/">Next</a> article.
 
 
 
-Thanks.  
+Thanks  
 

@@ -123,5 +123,5 @@ In the <a href="https://programming-review.com/divs-positioning/">next</a> examp
 
 
 
-Thanks.  
+Thanks  
 

@@ -35,4 +35,4 @@ Permissions and current user API
 
 This is a set of functions which will help verify the current user's permissions and authority to perform any task or operation being requested, and can protect further against unauthorized users accessing or performing functions beyond their permitted capabilities.
 
-Thanks.  
+Thanks  

@@ -54,4 +54,4 @@ Please note; in some cases you may be using some additional tables together with
 
 Please read more from this URL: <a href="https://programming-review.com/review-of-the-wordpress-plugin-architecture/">Review of the WordPress plugin architecture</a>.
 
-Thanks.  
+Thanks  

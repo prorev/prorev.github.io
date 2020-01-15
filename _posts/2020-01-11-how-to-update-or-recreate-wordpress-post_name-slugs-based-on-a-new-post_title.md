@@ -20,7 +20,6 @@ I needed to recreate post_name column for all posts based on updated post title 
 I will name 2 solutions for the problem that I found:
 
 
-
 <span style="font-size: 16px;">1. A PHP script from here http://pario.no/wp-content/uploads/2010/11/regenerate_post_slugs.txt</span>
 
 
@@ -109,7 +108,4 @@ The fastest solution is to use method #1.
 
 Also one minor point regarding the method #2 is that each updated post means adding an additional line to the wp_posts database table. If you have for instance 3000 posts and you execute the script in the method #3 additional 3000 rows will be added to the wp_posts table.
 
-
-
-Hope you will find this useful. Thanks.  
 

@@ -11,17 +11,29 @@ categories:
 tags:
    -
 ---
-Products you may sell may be :
-
-* physical, 
-* intangible, 
-* downloadable,
-* and subscription based.
-
-Probable in all cases you are facing with the fact that while you are in the "E-commerce chart" you can set different product options.
-For instance for the piece of furniture you may set the color, shape, sizes, quantity and many other finer details.
-
-Thanks.
-
+Products you may sell may be :
+
+
+
+* physical, 
+
+* intangible, 
+
+* downloadable,
+
+Thanksubscription based.
+
+
+
+Probable in all cases you are facing with the fact that while you are in the "E-commerce chart" you can set different product options.
+
+For instance for the piece of furniture you may set the color, shape, sizes, quantity and many other finer details.
+
+
+
+Thanks.
+
+
+
   
 

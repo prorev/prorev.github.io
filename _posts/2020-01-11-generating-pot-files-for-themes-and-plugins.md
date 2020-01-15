@@ -53,5 +53,5 @@ Your trunk folder will contain the `.pot` template file.
 
 
 
-Thanks.  
+Thanks  
 

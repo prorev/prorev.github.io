@@ -34,5 +34,5 @@ Here are some regular expressions constructed that I use everyday. These are tes
 7. Matching CSS {} content: {[^{]*}
 
 
-Thanks.  
+Thanks  
 

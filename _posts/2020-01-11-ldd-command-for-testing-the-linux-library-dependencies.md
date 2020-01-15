@@ -49,5 +49,5 @@ This shows the libraries <code>libssl.so.0.9.8</code> and <code>libcrypto.so.0.9
 
 
 
-Thanks.  
+Thanks  
 

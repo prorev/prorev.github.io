@@ -27,5 +27,5 @@ Taken from: <a rel="nofollow" href="http://www.jephens.com/2008/10/14/importing-
 
 
 
-Thanks.  
+Thanks  
 
