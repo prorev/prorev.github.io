@@ -28,18 +28,14 @@ The text in blue at the top of each column is called “<em>field name</em>“, 
 
 
 Suppose, we will store basic information of our client:
-<a rel="nofollow" href="https://
-<ul>
 
-	<li>First Name</li>
 
-	<li>Last Name</li>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Middle Name</li>
+<li>Email Address</li>
 
-	<li>Middle Name</li>
 
-	<li>Email Address</li>
-
-</ul>
 
 The first thing that we need to do is to create a database name “<strong>user</strong>” and a table name “<strong>user</strong>” having a field names of<em>first_name, middle_name, last_name, and email</em>. Our database structure would be the same as the image below.
 
@@ -51,7 +47,4 @@ The first thing that we need to do is to create a database name “<strong>user<
 
 As you can see on the image above, our <em>database</em> consist of <em>1 table</em> that has <em>field names and data in it</em>.
 
-
-
-I’ll teach you on how to create a database and table, on my next topic.  
 

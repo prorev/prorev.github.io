@@ -21,7 +21,11 @@ const string connectionString = "Driver={MySQL ODBC 5.1 Driver};
 Server=localhost;Database=testdb; User=root;Password=;Option=3;";
 // all input will become
 // a parameter (not part of the SQL statement)
-string cmdStr = "INSERT INTO `table1` (`title`, `source`,  `category`, `occasion`, `comment`, `image`, `note`) " + "VALUES(?, ?, '', '', ?, ?, ?)";
+
+string cmdStr = @"INSERT INTO `table1` 
+(`title`, `source`,  `category`, `occasion`, `comment`, `image`, `note`) " 
++ "VALUES(?, ?, '', '', ?, ?, ?)";
+
 using (OdbcConnection conn = new OdbcConnection(connectionString))
 using (OdbcCommand cmd = new OdbcCommand(cmdStr, conn))
 {
