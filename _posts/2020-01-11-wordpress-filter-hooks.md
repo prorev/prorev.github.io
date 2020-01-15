@@ -11,7 +11,7 @@ categories:
 tags:
    -
 ---
-In WordPress, a filter is a function. Developers can create custom filters by using the <a title="http://codex.wordpress.org/Plugin_API/Filter_Reference" href="http://codex.wordpress.org/Plugin_API/Filter_Reference">Filter API</a>. 
+In WordPress, a filter is a function. Developers can create custom filters by using the <a rel="nofollow" title="http://codex.wordpress.org/Plugin_API/Filter_Reference" href="http://codex.wordpress.org/Plugin_API/Filter_Reference">Filter API</a>. 
 
 This process is called "hooking" and the place where we apply the filter is called a hook.
 

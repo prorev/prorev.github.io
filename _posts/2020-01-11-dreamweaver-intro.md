@@ -11,13 +11,13 @@ categories:
 tags:
    -
 ---
-<a title="Adobe Dreamweaver" href="http://www.adobe.com/products/dreamweaver.html">Adobe Dreamweaver</a> is a web development application originally created by Macromedia.
+<a rel="nofollow" title="Adobe Dreamweaver" href="http://www.adobe.com/products/dreamweaver.html">Adobe Dreamweaver</a> is a web development application originally created by Macromedia.
 
-Dreamweaver is available for both Mac and Windows operating systems. Recent versions have incorporated support for web technologies such as <a title="CSS" href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a>, <a title="JavaScript" href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, and server-side scripting languages like <a title="PHP" href="http://en.wikipedia.org/wiki/PHP">PHP</a>.
+Dreamweaver is available for both Mac and Windows operating systems. Recent versions have incorporated support for web technologies such as <a rel="nofollow" title="CSS" href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a>, <a rel="nofollow" title="JavaScript" href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, and server-side scripting languages like <a rel="nofollow" title="PHP" href="http://en.wikipedia.org/wiki/PHP">PHP</a>.
 
 
 
-Dreamweaver allows users to preview websites in locally installed web browsers. Such as if you have installed Chrome, and Opera, and FireFox and IE, Dreamweaver can call and test websites from these browsers. Further more Adobe® has"<a title="Adobe BrowserLab" href="https://browserlab.adobe.com/en-us/features.html">Adobe BrowserLab</a>" online service that helps ensure your web content displays as intended — by previewing web pages across multiple browsers and operating systems, navigate links, and use diagnostic tools to optimize websites efficiently.
+Dreamweaver allows users to preview websites in locally installed web browsers. Such as if you have installed Chrome, and Opera, and FireFox and IE, Dreamweaver can call and test websites from these browsers. Further more Adobe® has"<a rel="nofollow" title="Adobe BrowserLab" href="https://browserlab.adobe.com/en-us/features.html">Adobe BrowserLab</a>" online service that helps ensure your web content displays as intended — by previewing web pages across multiple browsers and operating systems, navigate links, and use diagnostic tools to optimize websites efficiently.
 
 
 
@@ -36,9 +36,7 @@ Code coloring works like a charm for many programming languages.
 There is also possible to set code coloring options.
 
 
-
-Code hints (intelisense) works well for mayor languages too:
-
+Code hints (intellisense) works well for mayor languages too:
 <img class="alignnone size-full wp-image-421" title="codehints" src="https://programming-review.com/wp-content/uploads/2011/05/codehints.png" alt="" width="558" height="394" />
 
 
@@ -60,12 +58,3 @@ DreamWeaver is powerful because it has great number of third-party "Extensions" 
 
 
 DreamWeaver supports Subversion (SVN) version control system. DW concurrent products are Microsoft Visual Studio and Microsoft Expression Web.
-
-
-
-&nbsp;
-
-
-
-Thanks.  
-

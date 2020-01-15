@@ -87,7 +87,7 @@ If you like to compile the xdebug.so object file yourself in order to get the la
 
 
 
-- Download latest xdebug-X.Y.Z.tgz from <a title="XDebug download web site" href="https://xdebug.org/download.php">xdebug web site</a>
+- Download latest xdebug-X.Y.Z.tgz from <a rel="nofollow" title="XDebug download web site" href="https://xdebug.org/download.php">xdebug web site</a>
 
 
 

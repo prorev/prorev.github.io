@@ -11,7 +11,7 @@ categories:
 tags:
    -
 ---
-The most significant factors for WordPress <a title="SEO " href="http://en.wikipedia.org/wiki/Search_engine_optimization">SEO </a>of your blog article:
+The most significant factors for WordPress <a rel="nofollow" title="SEO " href="http://en.wikipedia.org/wiki/Search_engine_optimization">SEO </a>of your blog article:
 
 * the page title
 * the page url
@@ -34,7 +34,7 @@ function tlf_add_meta_description() {
 }
 add_action('wp_head','tlf_add_meta_description')
 ```
-..., but these are using the excerpt field to add a meta description to posts. Sometimes the excerpt field is needed as is, and the meta description is needed as separate field. I solved the problem using so called custom write panel that can be achieved via: <code><a title="add_meta_box" href="http://codex.wordpress.org/Function_Reference/add_meta_box">add_meta_box</a></code> and <code><a title="update_post_meta" href="http://codex.wordpress.org/Function_Reference/update_post_meta">update_post_meta</a></code> WordPress functions.
+..., but these are using the excerpt field to add a meta description to posts. Sometimes the excerpt field is needed as is, and the meta description is needed as separate field. I solved the problem using so called custom write panel that can be achieved via: <code><a rel="nofollow" title="add_meta_box" href="http://codex.wordpress.org/Function_Reference/add_meta_box">add_meta_box</a></code> and <code><a rel="nofollow" title="update_post_meta" href="http://codex.wordpress.org/Function_Reference/update_post_meta">update_post_meta</a></code> WordPress functions.
 ```
 /*smd = seo meta description*/
 add_action( 'add_meta_boxes', 'smd_add_custom_box' );
@@ -100,7 +100,7 @@ function smd_save_postdata( $post_id ) {
   return $mydata;
 }
 ```
-Once we have this code we will need to update the header for our posts either through header.php, or to create a <a title="hook" href="https://programming-review.com/add_action/">hook</a> for<a title=" wp_head" href="http://codex.wordpress.org/Plugin_API/Action_Reference/wp_head"> wp_head</a> function like this:
+Once we have this code we will need to update the header for our posts either through header.php, or to create a <a rel="nofollow" title="hook" href="https://programming-review.com/add_action/">hook</a> for<a rel="nofollow" title=" wp_head" href="http://codex.wordpress.org/Plugin_API/Action_Reference/wp_head"> wp_head</a> function like this:
 ```
 function add_meta_description() {
   global $post;

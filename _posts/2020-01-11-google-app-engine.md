@@ -11,7 +11,7 @@ categories:
 tags:
    -
 ---
-When the big boys run websites they use Content Delivery Networks (<a title="CDN" href="http://en.wikipedia.org/wiki/CDN">CDN</a>) to host most of their content, especially images, stylesheets, files to download and other static content. The most famous CDN is probably <a title="Akamai" href="http://www.akamai.com/">Akamai</a>, that almost run their own parallel Internet. Akamai and other CDN providers (<a title="Amazon" href="http://www.amazon.com/"></a><a title="Amazon" href="http://aws.amazon.com/">Amazon</a><a rel="nofollow" href="http://aws.amazon.com/"></a>) cost big bucks though, so it is nothing for us mere mortals.
+When the big boys run websites they use Content Delivery Networks (<a rel="nofollow" title="CDN" href="http://en.wikipedia.org/wiki/CDN">CDN</a>) to host most of their content, especially images, stylesheets, files to download and other static content. The most famous CDN is probably <a rel="nofollow" title="Akamai" href="http://www.akamai.com/">Akamai</a>, that almost run their own parallel Internet. Akamai and other CDN providers (<a rel="nofollow" title="Amazon" href="http://www.amazon.com/"></a><a rel="nofollow" title="Amazon" href="http://aws.amazon.com/">Amazon</a><a rel="nofollow" href="http://aws.amazon.com/"></a>) cost big bucks though, so it is nothing for us mere mortals.
 
 <div>
 

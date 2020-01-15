@@ -11,7 +11,7 @@ categories:
 tags:
    -
 ---
-Outlook 2007 is nice enough to put all of its accounts into a single <code><a title="registry key" href="http://en.wikipedia.org/wiki/Windows_Registry">registry key</a></code>.
+Outlook 2007 is nice enough to put all of its accounts into a single <code><a rel="nofollow" title="registry key" href="http://en.wikipedia.org/wiki/Windows_Registry">registry key</a></code>.
 
 
 
@@ -19,7 +19,7 @@ Outlook 2007 is nice enough to put all of its accounts into a single <code><a ti
 
 
 
-Just export that key and import on a new machine and you will get all your accounts. Note that if you are using <a title="IMAP " href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol">IMAP </a>you don't even have to backup your email data. I use <code>IMAP </code>via Google and all the emails I ever need are safe.
+Just export that key and import on a new machine and you will get all your accounts. Note that if you are using <a rel="nofollow" title="IMAP " href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol">IMAP </a>you don't even have to backup your email data. I use <code>IMAP </code>via Google and all the emails I ever need are safe.
 
 
 
