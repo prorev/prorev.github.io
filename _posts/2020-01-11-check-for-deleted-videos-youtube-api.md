@@ -25,15 +25,13 @@ try {
 } catch (Zend_Gdata_App_HttpException $e) {
     $response = $e->getResponse();
     if ($response !== null) {
-        if ($response->getStatus() == 400 && $response->getBody() == 'Invalid id') {
+        if ($response->getStatus() == 400 
+        && $response->getBody() == 'Invalid id') {
         // the video requested does not exist or was deleted
         } else {
         // some other error
-
         }
-
     }
-
 }
 ```
 
