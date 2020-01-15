@@ -1,6 +1,6 @@
 ---
 id: 46
-title: What is the best way to stop MySQL injection in C#, PHP?
+title: What is the best way to stop MySQL injection in C# and PHP?
 date: 2011-02-28 16:48:59
 author: taimane
 layout: post
@@ -11,12 +11,16 @@ categories:
 tags:
    -
 ---
-The best way would be to use parameterized queries.
-SQL injection is well explained in http://en.wikipedia.org/wiki/SQL_injection. Here is the code sequence that is using parameterized queries in C# (ODBC connection):
-```
+I know [SQL injection](http://en.wikipedia.org/wiki/SQL_injection) is not related just to C# and PHP, however the general solution to all SQL injection problems is the same: 
+
+**use parameterized queries.**
+
+Here is how parameterized queries may look in C# (ODBC connection):
+```c#
 const string connectionString = "Driver={MySQL ODBC 5.1 Driver};
 Server=localhost;Database=testdb; User=root;Password=;Option=3;";
-// this is good because all input becomes a parameter and not part of the SQL statement
+// all input will become
+// a parameter (not part of the SQL statement)
 string cmdStr = "INSERT INTO `table1` (`title`, `source`,  `category`, `occasion`, `comment`, `image`, `note`) " + "VALUES(?, ?, '', '', ?, ?, ?)";
 using (OdbcConnection conn = new OdbcConnection(connectionString))
 using (OdbcCommand cmd = new OdbcCommand(cmdStr, conn))
@@ -36,8 +40,9 @@ catch (Exception ex)
 // your code here;
 }
 ```
-In PHP the best way to prevent MySQL injection would be to use parameterized queries too as explained here: http://us2.php.net/manual/en/pdo.prepared-statements.php
-```
+In PHP the best way to prevent MySQL injection would be again to use parameterized queries as explained [here](http://us2.php.net/manual/en/pdo.prepared-statements.php): 
+
+```php
 <?php
 $stmt = $dbh->prepare("INSERT INTO REGISTRY (name, value) VALUES (?, ?)");
 $stmt->bindParam(1, $name);
@@ -54,4 +59,6 @@ $value = 2;
 $stmt->execute();
 ?>
 ```
-Using parameterized queries is general solution for the SQL injection problem and it is even faster comparing to mysql_real_escape_string or mysql_escape_string functions. Note that <strong>mysql_real_escape_string</strong> and <strong>mysql_escape_string</strong> are escaping possible special characters in a string for use in an SQL statement.  
+Using parameterized queries is general solution for the SQL injection problem and it is even faster comparing to `mysql_real_escape_string` or `mysql_escape_string` functions. 
+
+>> Note that `mysql_real_escape_string` and `mysql_escape_string` are escaping possible special characters in a string for use in an SQL statement.  
