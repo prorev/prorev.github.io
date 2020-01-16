@@ -17,18 +17,16 @@ _Table of Contents:_
   - [Basic operations with strings](#basic-operations-with-strings)
 - [Concatenating Strings](#concatenating-strings)
   - [Special characters](#special-characters)
-  - [String concatenation is not perfect](#string-concatenation-is-not-perfect)
   - [String Interpolation](#string-interpolation)
-- [The string length](#the-string-length)
+- [The length of a String](#the-length-of-a-string)
 - [Split a string into an array](#split-a-string-into-an-array)
-  - [Split by single delimiter](#split-by-single-delimiter)
-    - [Empty subsequences](#empty-subsequences)
-  - [String split by multiple delimiters](#string-split-by-multiple-delimiters)
-  - [String split by word delimiter](#string-split-by-word-delimiter)
+  - [Split a string by single delimiter](#split-a-string-by-single-delimiter)
+  - [String splitting by multiple delimiters](#string-splitting-by-multiple-delimiters)
+  - [String splitting by word delimiter](#string-splitting-by-word-delimiter)
 
 ---
 
-> This article explains Swift String type. You can experiment and test this code on [swiftplayground](http://online.swiftplayground.run/){:rel="nofollow" target="_blank"}.
+> This article explains Swift String type. You can experiment and test this code on [swiftplayground](http://online.swiftplayground.run/){:rel="nofollow" target="_blank"}. All experiments are doable in Swift 5 and later.
 
 ## String Literals 
 
@@ -142,16 +140,22 @@ The following special characters can be used to append to a String variable.
 
 > **Double quotation mark** helps writing a double quote inside a string literal without closing the literal.
 
-
-For example you can concatenate a newline to a combined string literal as follows:
+_Example:_
 ```swift
-let output = "123 Street" + "\n" + "City"
+let force = "He said: \"May the Force be with you\"."
+print(force)
 ```
-### String concatenation is not perfect
+Output:
+```
+He said: "May the Force be with you".
+```
 
-* Several concatenation operations are needed to form complex strings
-* Concatenation works only for the String type. It is why we need String _interpolation_.
+Frequently you concatenate a newline to a string literal as follows:
+```swift
+let output = "123 Street" + "\n"
+```
 
+> Concatenation works only for the String type. It is why we need String _interpolation_ if we plan to add some other literal type such as Integer.
 
 ```swift
 let output = "123 Street" + 3
@@ -160,7 +164,9 @@ let output = "123 Street" + 3
 
 ### String Interpolation
 
-String interpolation is the process of inserting string literals or other kinds of data into an existing string literal. The syntax for string interpolation is a backslash followed by a set of parentheses -- `\()`. 
+String _interpolation_ is the process of inserting string literals or other data into an existing string literal. 
+
+The syntax for string interpolation is a backslash followed by a set of parentheses -- `\()`. 
 
 Anything inserted inside the parentheses are interpolated into the existing string literal.
 
@@ -181,17 +187,8 @@ _Example:_
 let str = "The year is \(2014) and Swift is at version \(1.2)"
 ```
 
-It is much easier to incorporate formatting, punctuation and whitespace into a string using interpolation over concatenation.
 
-_Example:_
-```swift
-// interpolation vs. concatenation
-let iout = "This is a string\nspread across multiple\nlines\twith some space included"
-let cout = "This is a string" + "\n" + "spread across multiple" + "\n" + "lines" + "\t" + "with some space included" 
-print(iout)
-print(cout)
-```
-## The string length
+## The length of a String
 
 We already mentioned the `count` method we can 
 _Example:_
@@ -206,7 +203,7 @@ Swift 1 used the global method `count(str)`
 
 ## Split a string into an array
 
-### Split by single delimiter
+### Split a string by single delimiter
 _Example:_
 ```swift
 let line = "We will explode the Swift string";
@@ -219,9 +216,12 @@ _Output_:
 ["We", "will", "explode", "the", "Swift", "string"]
 ["W", " will ", "xplod", " th", " Swift string"]
 ```
-#### Empty subsequences
 
-One another consideration is needed. What if we have multiple white spaces and we would like to split with the white space as separator? Well, usually we ignore the white spaces, but there is an optional parameter `omittingEmptySubsequences` we may set to `false`, and then the returned array will have empty space elements. By default, `omittingEmptySubsequences` is set to `true`.
+One another consideration is needed. What if we have multiple white spaces and we would like to split with the white space as separator? 
+
+Usually we ignore the white spaces, but there is an optional parameter `omittingEmptySubsequences`. If we may that to `false` the returned array will have empty space elements. 
+
+By default, `omittingEmptySubsequences` is set to `true`.
 
 _Example:_
 ```swift
@@ -235,7 +235,7 @@ _Output:_
 ["I", "", "", "don\'t", "", "", "need", "white", "spaces", "I", "need", "words!"]
 ```
 
-### String split by multiple delimiters
+### String splitting by multiple delimiters
 
 In Swift, `split` method works just for single character separator or delimiter. 
 
@@ -256,7 +256,7 @@ _Output:_
 We used [`import Foundation`](https://developer.apple.com/documentation/foundation){:rel="nofollow"}, because it contains the [CharacterSet class](https://developer.apple.com/documentation/foundation/characterset){:rel="nofollow"}.
 
 
-### String split by word delimiter
+### String splitting by word delimiter
 
 _Example:_
 ```swift
@@ -275,4 +275,16 @@ Code will break the line: `We program in Swift!` and we will get two parts:
 * "We program "
 * " Swift!"
 
-> String split by word (string split by string) special case is string split by character. In that special case the word will be a single character.
+> String split _by word_ when word is just _a single character_ is also a valid option.
+
+_Example:_
+```swift
+import Foundation
+let line = "We program in Swift!"
+let splits = line.components(separatedBy: "i")
+print(splits)
+```
+_Output:_
+```
+["We program ", "n Sw", "ft!"]
+```
