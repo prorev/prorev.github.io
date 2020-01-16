@@ -20,7 +20,7 @@ _Table of Contents:_
 
 ---
 
->> This text will explain connecting to GitHub using SSH protocol.
+> This text will explain connecting to GitHub using SSH protocol.
 
 You can connect and authenticate to remote servers and services using the SSH protocol. With SSH keys, no username or password are needed.
 
@@ -88,7 +88,7 @@ Identity added: C:\Users\dj\.ssh\id_rsa_intel C:\Users\dj\.ssh\id_rsa_intel)
 
 Note the _**uname**_ represents the actual **_user name_**.
 
->>_If you don't have SSH keys, you can [generate](https://help.github.com/en/enterprise/2.16/user/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) a new SSH key pair._
+>_If you don't have SSH keys, you can [generate](https://help.github.com/en/enterprise/2.16/user/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) a new SSH key pair._
 
 ```
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"

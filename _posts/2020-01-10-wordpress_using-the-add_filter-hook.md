@@ -16,7 +16,7 @@ The `add_filter` hooks are being used in WordPress themes, in WordPress plugins 
 
 **WordPress hooks** change how the WordPress behaves by introducing functions without needing to edit any actual WordPress code.
 
-(Apart from add_filter hooks there are also `add_action` hooks described here: [add_action hooks in WordPress](https://wordpress.programming-review.com/add_action/).
+(Apart from add_filter hooks there are also `add_action` hooks described here: [add_action hooks in WordPress](https://programming-review.com/add_action/).
 
 Here is the WordPress example for the add_filter hook.
 

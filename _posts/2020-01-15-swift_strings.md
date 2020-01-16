@@ -1,0 +1,253 @@
+---
+id: 12971
+title: Swift strings
+date: 2020-01-15
+author: taimani
+layout: post
+permalink: /swift/strings/
+published: true
+image: 
+categories:
+   - swift
+tags:
+   - strings
+---
+_Table of Contents:_
+- [String Literals](#string-literals)
+- [Concatenating Strings](#concatenating-strings)
+  - [Special characters](#special-characters)
+  - [String concatenation is not perfect](#string-concatenation-is-not-perfect)
+  - [String Interpolation](#string-interpolation)
+- [The string length](#the-string-length)
+- [Split a string into an array](#split-a-string-into-an-array)
+  - [Split by single delimiter](#split-by-single-delimiter)
+    - [Empty subsequences](#empty-subsequences)
+  - [String split by multiple delimiters](#string-split-by-multiple-delimiters)
+  - [String split by word delimiter](#string-split-by-word-delimiter)
+
+---
+
+> This article explains Swift String type. You can experiment and test this code on [swiftplayground](http://online.swiftplayground.run/){:rel="nofollow"}.
+
+## String Literals 
+
+The `String` type represents data in the form of text. To create a string literal you enclose text within a pair of double quotes.
+
+```swift
+"This is a string literal in Swift"
+```
+
+>In some programming languages you can use single quotes to create a string literal. This is still not possible in Swift.
+
+Let's run the next code:
+```swift
+var str = "This is a string literal in Swift"
+print(str)
+print(type(of: str))
+print(str.count)
+str.append(".")
+print(str.count)
+print(str)
+```
+Out:
+```
+This is a string literal in Swift
+String
+33
+34
+This is a string literal in Swift.
+```
+> The next code to get the string literal type will not work since Swift is very opinionated and requires named parameter `of:`.
+```swift
+print(type(str)) // will not work requires parameter name
+```
+This will work:
+```swift
+print(type(of: str)) // works
+```
+
+Once a string literal is created it needs to be assigned to a _constant_ or to a _variable_. If you don't assign, the compiler will ignore the string literal.
+
+In our case we assigned string literal to a variable `str`.
+
+```swift
+var str = "This is a string literal in Swift"
+```
+Similarly we could assign a string literal to a constant, but then we could not `append` the constant.
+
+```swift
+// just for assign
+let const = "This is a string literal in Swift"
+```
+If you try to append a value to a String constant you will get the error:
+
+```swift
+const.append(".")
+//error: cannot use mutating member on immutable value 
+//note: change 'let' to 'var' to make it mutable
+```
+
+## Concatenating Strings
+
+We already concatenated stings using the `append` method, however, concatenation is also possible using the _addition_ operator (`+`).
+
+``` swift
+let immutable_question = "How" + " are " + "you?"
+```
+
+> In Swift, strings are mutable. However, if you declare a string to be a constant (keyword `let`), then it is immutable.
+ 
+ 
+### Special characters
+
+The following special characters can be used to append to a String variable.
+
+
+| Char | Meaning                   |
+| ---- | ------------------------- |
+| \n   | Newline character         |
+| \r   | Carriage return character |
+| \t   | Tab character             |
+| \\"  | Double quotation mark     |
+| \\'  | Single quotation mark     |
+| \\\\ | Backslash character       |
+| \0   | Null character            |
+  
+
+
+> **Double quotation mark** helps writing a double quote inside a string literal without closing the literal.
+
+
+For example you can concatenate a newline to a combined string literal as follows:
+```swift
+let output = "123 Street" + "\n" + "City"
+```
+### String concatenation is not perfect
+
+* Several concatenation operations are needed to form complex strings
+* Concatenation works only for the String type. It is why we need String _interpolation_.
+
+
+```swift
+let output = "123 Street" + 3
+// error: binary operator '+' cannot be applied to operands of type 'String' and 'Int'
+```
+
+### String Interpolation
+
+String interpolation is the process of inserting string literals or other kinds of data into an existing string literal. The syntax for string interpolation is a backslash followed by a set of parentheses -- `\()`. 
+
+Anything inserted inside the parentheses are interpolated into the existing string literal.
+
+_Example:_
+```swift
+let pens = 3
+let out = "I have \(pens) pens."
+print(out)
+```
+_Output:_
+```
+I have 3 pens.
+```
+With string interpolation you can combine different data types to generate new string literals.
+
+_Example:_
+```swift
+let str = "The year is \(2014) and Swift is at version \(1.2)"
+```
+
+It is much easier to incorporate formatting, punctuation and whitespace into a string using interpolation over concatenation.
+
+_Example:_
+```swift
+// interpolation vs. concatenation
+let iout = "This is a string\nspread across multiple\nlines\twith some space included"
+let cout = "This is a string" + "\n" + "spread across multiple" + "\n" + "lines" + "\t" + "with some space included" 
+print(iout)
+print(cout)
+```
+## The string length
+
+We already mentioned the `count` method we can 
+_Example:_
+```swift
+var str = "This is a string literal in Swift"
+print(str.count)
+```
+However, this works in Swift 4+ and 5+
+
+Swift 2 and Swift 3 would use `str.characters.count`.
+Swift 1 used the global method `count(str)`
+
+## Split a string into an array
+
+### Split by single delimiter
+_Example:_
+```swift
+let line = "We will explode the Swift string";
+let res1 = line.split(separator: " ")
+let res2 = line.split(separator: "e")
+print(res1, res2)
+```
+_Output_:
+```
+["We", "will", "explode", "the", "Swift", "string"]
+["W", " will ", "xplod", " th", " Swift string"]
+```
+#### Empty subsequences
+
+One another consideration is needed. What if we have multiple white spaces and we would like to split with the white space as separator? Well, usually we ignore the white spaces, but there is an optional parameter `omittingEmptySubsequences` we may set to `false`, and then the returned array will have empty space elements. By default, `omittingEmptySubsequences` is set to `true`.
+
+_Example:_
+```swift
+let line = "I   don't   need white spaces I need words!"
+print(line.split(separator: " "))
+print(line.split(separator: " ", omittingEmptySubsequences: false))
+```
+_Output:_
+```
+["I", "don\'t", "need", "white", "spaces", "I", "need", "words!"]
+["I", "", "", "don\'t", "", "", "need", "white", "spaces", "I", "need", "words!"]
+```
+
+### String split by multiple delimiters
+
+In Swift, `split` method works just for single character separator or delimiter. 
+
+To split by multiple delimiters we will use `components`, from the `Foundation` framework:
+
+
+_Example:_
+```swift
+import Foundation
+let line = "Uh, smart explode Swift string";
+let res = line.components(separatedBy: CharacterSet(charactersIn: "aeiou"))
+print(res)
+```
+_Output:_
+```
+["Uh, sm", "rt ", "xpl", "d", " Sw", "ft str", "ng"]
+```
+We used `import Foundation` [Foundation framework](https://developer.apple.com/documentation/foundation){:rel="nofollow"}, because it contains the [CharacterSet class](https://developer.apple.com/documentation/foundation/characterset){:rel="nofollow"} we 
+
+
+### String split by word delimiter
+
+_Example:_
+```swift
+import Foundation
+let line = "We program in Swift!"
+
+let splits = line.components(separatedBy: "in")
+print(splits)
+```
+_Output:_
+```
+["We program ", " Swift!"]
+```
+
+Code will break the line: `We program in Swift!` and we will get two parts:
+* "We program "
+* " Swift!"
+
+> String split by word (string split by string) special case is string split by character. In that special case the word will be a single character.

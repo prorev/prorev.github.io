@@ -29,7 +29,7 @@ if(strlen($con)>0){
 ?>
 ```
 
->> Some web servers have this disabled.
+> Some web servers have this disabled.
 
 
 

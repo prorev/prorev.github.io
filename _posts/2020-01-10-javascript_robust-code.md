@@ -12,7 +12,7 @@ categories:
 tags:
    - code
 ---
->> JavaScript syntax is liberal since JavaScript developers can do all kinds of crazy and wonderful things at the same time. 
+> JavaScript syntax is liberal since JavaScript developers can do all kinds of crazy and wonderful things at the same time. 
 
 There are few tricks for writing robust JavaScript code.
 

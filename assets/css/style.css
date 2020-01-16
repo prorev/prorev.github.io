@@ -53,6 +53,18 @@ h4{
   background: #fafeff;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom:16px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
 p > code, li > code {
   color: #f4a;
   font-weight:bold;
@@ -61,13 +73,13 @@ blockquote{
   margin: 0;
 }
 
-blockquote>blockquote:before {
+blockquote:before {
   content: "Note:";
   text-transform: uppercase;
   color:gray;
 }
 
-blockquote>blockquote {
+blockquote {
   margin-bottom: 10px;
   padding: 10px;
   background-color:
@@ -76,21 +88,6 @@ blockquote>blockquote {
   #ffeb8e;
 }
 
-/* 
-blockquote>blockquote>blockquote:before {
-  content: "The goal:";
-  text-transform: uppercase;
-  color:gray;
-}
-
-blockquote>blockquote>blockquote {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color:
-  #fbf2d4;
-  border-left: 2px solid
-  #ffeb8e;
-} */
 
 /* monokai fix */
 .highlight {

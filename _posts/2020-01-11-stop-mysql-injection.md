@@ -65,4 +65,4 @@ $stmt->execute();
 ```
 Using parameterized queries is general solution for the SQL injection problem and it is even faster comparing to `mysql_real_escape_string` or `mysql_escape_string` functions. 
 
->> Note that `mysql_real_escape_string` and `mysql_escape_string` are escaping possible special characters in a string for use in an SQL statement.  
+> Note that `mysql_real_escape_string` and `mysql_escape_string` are escaping possible special characters in a string for use in an SQL statement.  

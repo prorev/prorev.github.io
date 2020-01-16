@@ -34,7 +34,7 @@ Let's name it "topmenu".
 <?php wp_nav_menu( array('menu' => 'topmenu' )); ?>
 ```
 
->> I added the code to the `header.php`, but this will work also from any theme file: `footer.php`, `sidebar.php`, `category.php`, `home.php`, `page-default.php`, ...
+> I added the code to the `header.php`, but this will work also from any theme file: `footer.php`, `sidebar.php`, `category.php`, `home.php`, `page-default.php`, ...
 
 
 
