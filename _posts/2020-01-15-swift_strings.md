@@ -228,7 +228,7 @@ _Output:_
 ```
 ["Uh, sm", "rt ", "xpl", "d", " Sw", "ft str", "ng"]
 ```
-We used `import Foundation` [Foundation framework](https://developer.apple.com/documentation/foundation){:rel="nofollow"}, because it contains the [CharacterSet class](https://developer.apple.com/documentation/foundation/characterset){:rel="nofollow"} we 
+We used [`import Foundation`](https://developer.apple.com/documentation/foundation){:rel="nofollow"}, because it contains the [CharacterSet class](https://developer.apple.com/documentation/foundation/characterset){:rel="nofollow"}.
 
 
 ### String split by word delimiter
