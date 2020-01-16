@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Swift strings
+title: Swift Strings
 date: 2020-01-15
 author: taimani
 layout: post
@@ -14,6 +14,7 @@ tags:
 ---
 _Table of Contents:_
 - [String Literals](#string-literals)
+  - [Basic operations with strings](#basic-operations-with-strings)
 - [Concatenating Strings](#concatenating-strings)
   - [Special characters](#special-characters)
   - [String concatenation is not perfect](#string-concatenation-is-not-perfect)
@@ -31,7 +32,7 @@ _Table of Contents:_
 
 ## String Literals 
 
-The `String` type represents data in the form of text. To create a string literal you enclose text within a pair of double quotes.
+The `String` literal in Swift is text within a pair of double quotes.
 
 ```swift
 "This is a string literal in Swift"
@@ -39,34 +40,58 @@ The `String` type represents data in the form of text. To create a string litera
 
 >In some programming languages you can use single quotes to create a string literal. This is still not possible in Swift.
 
-Let's run the next code:
+Once you have a string literal, it needs to be assigned to a _constant_ or to a _variable_. If you don't assign, the compiler will ignore the string literal.
+
+### Basic operations with strings
+
+_Example:_
 ```swift
+// assignment to a constant
+let const = "This is a string literal in Swift"
+
+// assignment to a variable
 var str = "This is a string literal in Swift"
+
+// printing the variable
 print(str)
+
+// get the number of characters
+print(str.count)
+
+// get the type of variable
 print(type(of: str))
-print(str.count)
+
+// appending to a variable
 str.append(".")
+
+// printing the new value
 print(str.count)
+
+// final variable print
 print(str)
 ```
-Out:
+_Output:_
 ```
 This is a string literal in Swift
-String
 33
+String
 34
 This is a string literal in Swift.
 ```
-> The next code to get the string literal type will not work since Swift is very opinionated and requires named parameter `of:`.
-```swift
-print(type(str)) // will not work requires parameter name
-```
-This will work:
+This code shows basic operations of assignment, printing, counting, and appending a string variable.
+
+> Don't forget that Swift is very opinionated and requires named parameter `of:` when getting the type.
+
+_This will work:_
+
 ```swift
 print(type(of: str)) // works
 ```
 
-Once a string literal is created it needs to be assigned to a _constant_ or to a _variable_. If you don't assign, the compiler will ignore the string literal.
+_This will not work:_
+```swift
+print(type(str)) // not working
+```
 
 In our case we assigned string literal to a variable `str`.
 
@@ -96,7 +121,7 @@ let immutable_question = "How" + " are " + "you?"
 ```
 
 > In Swift, strings are mutable. However, if you declare a string to be a constant (keyword `let`), then it is immutable.
- 
+
  
 ### Special characters
 
