@@ -190,7 +190,8 @@ let str = "The year is \(2014) and Swift is at version \(1.2)"
 
 ## The length of a String
 
-We already mentioned the `count` method we can 
+We already mentioned the `count` property.
+
 _Example:_
 ```swift
 var str = "This is a string literal in Swift"
