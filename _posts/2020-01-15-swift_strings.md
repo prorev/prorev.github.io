@@ -64,7 +64,7 @@ print(type(of: str))
 // appending to a variable
 str.append(".")
 
-// printing the new value
+// printing the new number of characters
 print(str.count)
 
 // final variable print
