@@ -23,6 +23,8 @@ _Table of Contents:_
   - [Split a string by single delimiter](#split-a-string-by-single-delimiter)
   - [String splitting by multiple delimiters](#string-splitting-by-multiple-delimiters)
   - [String splitting by word delimiter](#string-splitting-by-word-delimiter)
+- [Join the string from array of strings (characters)](#join-the-string-from-array-of-strings-characters)
+- [Reverse the string](#reverse-the-string)
 
 ---
 
@@ -290,4 +292,27 @@ print(splits)
 _Output:_
 ```
 ["We program ", "n Sw", "ft!"]
+```
+## Join the string from array of strings (characters)
+
+For this job in Swift you may use [`joined`](https://developer.apple.com/documentation/swift/collectionofone/3017722-joined){:rel="nofollow" target="_blank" } method from Swift Standard Library.
+
+```swift
+let array = ["May", "the", "force", "be", "with", "you", "!"]
+let joined = array.joined(separator: " ")
+print(joined)
+```
+
+## Reverse the string
+
+In Swift 4 and Sift 5, there is [`reversed`](https://developer.apple.com/documentation/swift/reversedcollection/1786680-reversed){:rel="nofollow" target="_blank" } collections method.
+
+```swift
+let str = "Reverse me!"
+var rev = String(str.reversed())
+print(reversed)
+```
+_Output:_
+```
+!dlrow ,olleH
 ```
