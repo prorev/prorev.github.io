@@ -15,12 +15,10 @@ tags:
 These are the Python useful tricks.
 
 ## Swapping two variables
-![swapping variables](/wp-content/uploads/2020/01/swaping-variables.jpg)
-
+![swapping variables](/wp-content/uploads/2020/01/swapping-variables.jpg)
 
 ## Show decimal number in hex, octal and binary form
 ![hex, octal, binary values](/wp-content/uploads/2020/01/hex-octal-number.jpg)
-
 
 ## Expand the string to array of chars.
 ![expand the string](/wp-content/uploads/2020/01/expand.jpg)
