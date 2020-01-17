@@ -230,7 +230,7 @@ Note how array elements are inside `[]` brackets.
 
 ### Array map
 
-There is also a `map` function you will use frequently with arrays. `map` applies a function to every element in array.
+There is also a `map` function you will use with arrays. `map` applies a function to every element in array.
 
 _Example:_
 ```swift
@@ -248,7 +248,7 @@ _Output:_
 
 ### Array Filter
 
-Filter returns the new array where the condition is `true`. In our case elements that are odd. `$0` represents the current element.
+Filter returns the new array where the condition inside the filter evaluates to `true`. In our case elements that are odd. `$0` represents the current element.
 
 _Example:_
 ```swift
