@@ -28,6 +28,8 @@ _Table of Contents:_
 
 > This article explains Swift String type. You can experiment and test this code on [swiftplayground](http://online.swiftplayground.run/){:rel="nofollow" target="_blank"}. All experiments are doable in Swift 5 and later.
 
+![Python Strings Literal](/wp-content/uploads/2020/01/python-string-literal.jpg)
+
 ## String Literals 
 
 The `String` literal in Swift is text within a pair of double quotes.
