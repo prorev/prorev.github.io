@@ -155,7 +155,7 @@ Frequently you concatenate a newline to a string literal as follows:
 let output = "123 Street" + "\n"
 ```
 
-> Concatenation works only for the String type. It is why we need String _interpolation_ if we plan to add some other literal type such as Integer.
+> Concatenation works only for the String type. It is why we need String _interpolation_ if we plan to add some other literal type such as Int.
 
 ```swift
 let output = "123 Street" + 3
@@ -220,7 +220,7 @@ _Output_:
 
 One another consideration is needed. What if we have multiple white spaces and we would like to split with the white space as separator? 
 
-Usually we ignore the white spaces, but there is an optional parameter `omittingEmptySubsequences`. If we may that to `false` the returned array will have empty space elements. 
+Usually we ignore the white spaces, but there is an optional parameter `omittingEmptySubsequences`. If we set that to `false` the returned array will have empty space elements. 
 
 By default, `omittingEmptySubsequences` is set to `true`.
 

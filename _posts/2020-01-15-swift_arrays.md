@@ -16,6 +16,15 @@ _Table of Contents:_
 
 ---
 
+
+Create an empty array
+```swift
+var intArray = [Int]()
+```
+
+
+
+
 > This article explains new things in Swift (major releases).
 
 ## Making arrays

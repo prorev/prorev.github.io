@@ -14,59 +14,101 @@ tags:
 ---
 _Table of Contents:_
 
-- [Objective C](#objective-c)
-- [What maters about Swift](#what-maters-about-swift)
-- [Calling C](#calling-c)
-- [Can we use Python scientific libraries from Swift?](#can-we-use-python-scientific-libraries-from-swift)
-- [Meat *var* and *let*](#meat-var-and-let)
-  - [Constants cannot be altered](#constants-cannot-be-altered)
-- [Arrays and dict](#arrays-and-dict)
-- [Functions](#functions)
-- [Can I try Swift fast?](#can-i-try-swift-fast)
+- [Swift is evolving fast](#swift-is-evolving-fast)
+- [Why Swift is fast?](#why-swift-is-fast)
+  - [ARC](#arc)
+  - [Swift insists on value types](#swift-insists-on-value-types)
+  - [Calling C](#calling-c)
+  - [Can we use Python scientific libraries from Swift?](#can-we-use-python-scientific-libraries-from-swift)
+  - [Meat *var* and *let*](#meat-var-and-let)
+    - [Constants cannot be altered](#constants-cannot-be-altered)
+  - [Arrays and dict](#arrays-and-dict)
+  - [Functions](#functions)
+  - [Can I try Swift fast?](#can-i-try-swift-fast)
 
 ---
+Chris Lattner, who created the LLVM compiler, created Swift in 2010 as an *ambitious* programming language.
 
+Swift was build as a low level programming language -- means you can deal with hardware and write bootloaders in it.
 
-https://github.com/apple/swift
+Apple drafted Swift in 2014 (Apple Swift) and released version Swift 1.2 to develop iOS and macOS applications with the trend that Swift should replace Objective C one day.  
 
-
->I will analyse Swift programming language and drop few lines how it connects to Python and C in here. This text is for those who haven't tried Swift before, but have some Python or C understanding. I will provide a brief overview of the basic Swift features, including variables, constants, arrays, and functions.
->The final note from this article you should have is: _Swift is the new C._
-
-
-Swift
-is a new language for the future of Apple software development
-feels familiar to Objective-C developers
-is friendly to new programmers
-is as expressive and enjoyable as a scripting language
-is optimized for development
-
-
-
-### Objective C
-
-
-If you are interested in Apple products and mobile application development, Swift is a good place to start. Announced by Apple in 2014, Swift is a relatively new programming language that is used to develop iOS and macOS applications. According to the Github State of Octoverse Report, Swift has grown rapidly, now it is ranked as the 13th most popular language by extraction request.
-
-Developers use Swift to create native, powerful and high-performance iOS, macOS and Linux applications. Swift is thought to be faster, more agile and easier to debug than its predecessor Objective-C. Once iOS development was developed, Objective-C is now considered outdated and dated by many developers. In contrast, Swift has been optimized for performance and built from scratch to adapt to the realities of modern iOS development.
-
-The development of Swift programming skills is a smart investment for aspiring software engineers. IOS not only runs on all iPhone and iPad, but it is also the basis for other operating systems such as watchOS (for Apple Watch) and tvOS (for Apple TV). In addition, Apple will not go anywhere, as the leader of the technology industry and iOS applications remain the most profitable in the mobile application market.
-
-
-
-
-### What maters about Swift
-
-Swift (Apple Swift) was built for performance. Chris Lattner* who created the LLVM compiler, created Swift in 2010 as an *ambitious* programming language.
-
-Swift is low level programming language - means you can deal with hardware and write bootloaders in it.
+> Today Swift is definite replacement for Objective-C. Also beside native iOS and macOS, you can create Linux applications in Swift, so Swift is growing as platform independent language.
 
 Recently, and to compete with PyTorch, Swift added Automatic Differentiation engine from Fortran. We can use that engine just by setting `@differentiable` keyword on any function.
 
-Here is the [full detailed guided tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html){:rel="nofollow"} to Swift.
+Here is the [full detailed guided tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html){:rel="nofollow" target="_blank} to Swift.
 
----
-> Chris Lattner later joined Google
+Original Swift inventor Chris Lattner later joined Google, to introduce S4TF (Swift for TensorFlow) carefully planned and possible future dominant machine learning platform.
+
+## Swift is evolving fast 
+
+In fact Swift is evolving so fast that online Swift information is frequently out-of-date.
+
+I wanted to provide Swift overview, focusing on Swift 5 and later version. 
+
+It is very real, Swift can easily become the most dominant language soon, with Python codding efficiency and C speed.
+
+## Why Swift is fast?
+
+The reasons why Swift is fast:
+* no garbage collection
+* smart usage of value types
+* immutable objects tracking
+* smart machine optimization module (LLVM)
+* no bounds checking mode
+* ARC -- Automatic Reference Counting
+
+> Swift can often get the same performance as carefully optimized C code.
+
+
+### ARC
+
+Automatic Reference Counting -- ARC -- "automatically frees up the memory used by class instances when those instances are no longer needed."
+
+>Reference counting is nothing new, it is used in Python -- interpreted language, but it was strange and rare for a compile time language.
+
+
+### Swift insists on value types
+
+Computer languages data types are either:
+
+* value types or
+* and reference types
+ 
+Swift uses _value types_, and _reference types_ according to [Wikipedia](https://en.wikipedia.org/wiki/Value_type_and_reference_type){:rel="nofollow" target="_blank"}
+
+Value types are:
+* all structures 
+  * booleans 
+  * characters
+  * integers (Int) numbers
+  * floating-point numbers
+  * fixed-point numbers
+  * immutable strings
+  * tuples
+  * lists
+  * dictionaries
+  * sets
+  * stacks
+  * queues
+* enumerations (optionals)
+
+Reference types are:
+* classes
+* functions
+* interfaces
+
+ARC is fundamental for both reference type objects and value type objects for sharing memory.
+
+> You may be familiar with C#. In C# `struct` will give _value type_,and `class` will give _reference type_.
+
+
+
+
+
+
+
 
 
 ### Calling C
