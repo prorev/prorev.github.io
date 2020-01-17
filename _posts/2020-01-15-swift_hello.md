@@ -183,12 +183,15 @@ let (s, c) = sc(1)
 
 To define an _empty array_ you need to set the type.
 ```swift
-var array = [] 
+var array = [] // won't work
 ```
 would simple output the error:
-_empty collection literal requires an explicit type_
+```
+empty collection literal requires an explicit type
+```
 
 This would be correct way to define an empty integer array:
+
 ```swift
 var array : [Int] = []
 ```
