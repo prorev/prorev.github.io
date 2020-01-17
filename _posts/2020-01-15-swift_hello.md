@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Breaf intro to Swift programming
+title: Fast intro to Swift programming
 date: 2020-01-15
 author: taimani
 layout: post
@@ -87,7 +87,7 @@ note: change 'let' to 'var' to make it mutable
 We already meat String literals. But there are also:
 * Int
 * Double
-* Flaot
+* Float
 * Boolean
 
 literals.
