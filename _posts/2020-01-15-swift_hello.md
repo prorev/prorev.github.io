@@ -151,7 +151,7 @@ _Example:_
 ```swift
 import Foundation
 func sc(val: Float) -> (Float, Float) {
-    return (sin(value), cos(value))
+    return (sin(val), cos(val))
 }
 print(sc(val: 1))
 ```
@@ -166,8 +166,8 @@ Note the parameter `val` we have to specify.
 We may omit the parameter if we use `_` like this:
 ```swift
 import Foundation
-func sc(_ value: Float) -> (Float, Float) {
-    return (sin(value), cos(value))
+func sc(_ val: Float) -> (Float, Float) {
+    return (sin(val), cos(val))
 }
 print(sc(1))
 ```
