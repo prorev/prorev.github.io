@@ -46,11 +46,11 @@ a and b: 1 and 3
 ```swift
 let π = Float.pi // constant
 var π_var = 3*π/2 + 1 // variable
-print("floats: ", π, π_var)
+print("floats:", π, π_var)
 ```
 _Output:_
 ```
-floats:  3.1415925 5.712389
+floats: 3.1415925 5.712389
 ```
 
 **`String` literals**
@@ -94,7 +94,7 @@ literals.
 
 You can check the type of the literal using `type` function.
 ```swift
-var fce : Float =  3
+var fce : Float = 3
 print(type(of: "👍"), type(of: 1), type(of: 3.0), type(of: fce), type(of: true))
 ```
 _Output:_
@@ -107,7 +107,7 @@ String Int Double Float Bool
 
 _Example:_
 ```swift
-var fce : Float =  1+2
+var fce : Float = 1 + 2
 print(fce)
 ```
 _Output:_
@@ -116,10 +116,11 @@ _Output:_
 ```
 
 ## Swift tuples
-Tuples exists also in Swift. 
+Tuples exists also in Swift.
+
 _Example:_
 ```swift
-let tuple = ("1",2, (Float)(1+2))
+let tuple = ("1", 2, (Float)(1+2))
 print(tuple)
 ```
 _Output:_
