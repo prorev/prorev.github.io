@@ -302,10 +302,28 @@ let array = ["May", "the", "force", "be", "with", "you", "!"]
 let joined = array.joined(separator: " ")
 print(joined)
 ```
+_Output:_
+```
+May the force be with you!
+```
+There is one interesting case to convert an array of characters to a string:
+
+_Example:_
+```swift
+let chars: [Character] = ["J", "o", "i", "n"]
+var string = String(chars)
+print(string)
+```
+Output:
+```
+Join
+```
+
+For this purpose, `joined` method is not needed.
 
 ## Reverse the string
 
-In Swift 4 and Sift 5, there is [`reversed`](https://developer.apple.com/documentation/swift/reversedcollection/1786680-reversed){:rel="nofollow" target="_blank" } collections method.
+In Swift 4 and later, there is [`reversed`](https://developer.apple.com/documentation/swift/reversedcollection/1786680-reversed){:rel="nofollow" target="_blank" } collections method.
 
 ```swift
 let str = "Reverse me!"
