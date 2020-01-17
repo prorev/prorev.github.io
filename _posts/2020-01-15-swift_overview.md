@@ -17,8 +17,11 @@ _Table of Contents:_
 - [Swift is evolving fast](#swift-is-evolving-fast)
 - [Why Swift is fast?](#why-swift-is-fast)
   - [ARC](#arc)
+  - [No garbage collection](#no-garbage-collection)
   - [Swift insists on value types](#swift-insists-on-value-types)
-  - [Calling C](#calling-c)
+  - [Immutable objects tracking](#immutable-objects-tracking)
+  - [No bounds checking mode](#no-bounds-checking-mode)
+  - [Calling into C](#calling-into-c)
   - [Can we use Python scientific libraries from Swift?](#can-we-use-python-scientific-libraries-from-swift)
   - [Meat *var* and *let*](#meat-var-and-let)
     - [Constants cannot be altered](#constants-cannot-be-altered)
@@ -27,19 +30,17 @@ _Table of Contents:_
   - [Can I try Swift fast?](#can-i-try-swift-fast)
 
 ---
-Chris Lattner, who created the LLVM compiler, created Swift in 2010 as an *ambitious* programming language.
+Chris Lattner, creator of [LLVM](https://llvm.org/){:rel="nofollow" target="_blank"} compiler, created Swift as an *ambitious* programming language. From the very start Swift was designed as a low level programming language -- to deal with hardware and to write bootloaders.
 
-Swift was build as a low level programming language -- means you can deal with hardware and write bootloaders in it.
+Apple drafted Swift in 2014 (Apple Swift) and released Swift version 1.2 to develop iOS and macOS applications with the plan that Swift should replace Objective C one day.  
 
-Apple drafted Swift in 2014 (Apple Swift) and released version Swift 1.2 to develop iOS and macOS applications with the trend that Swift should replace Objective C one day.  
+> Today Swift is definite replacement for Objective-C. Also beside native iOS and macOS, you can create Linux applications in Swift, or install it using conda on almost any system, so Swift is growing as platform independent language.
 
-> Today Swift is definite replacement for Objective-C. Also beside native iOS and macOS, you can create Linux applications in Swift, so Swift is growing as platform independent language.
-
-Recently, and to compete with PyTorch, Swift added Automatic Differentiation engine from Fortran. We can use that engine just by setting `@differentiable` keyword on any function.
+Recently, and to compete with PyTorch, Swift added Automatic Differentiation engine from Fortran, that can be used after setting `@differentiable` keyword on any function.
 
 Here is the [full detailed guided tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html){:rel="nofollow" target="_blank} to Swift.
 
-Original Swift inventor Chris Lattner later joined Google, to introduce S4TF (Swift for TensorFlow) carefully planned and possible future dominant machine learning platform.
+Swift creator Chris Lattner later joined Google team, to introduce S4TF (Swift for TensorFlow) carefully planned and possible future dominant machine learning platform.
 
 ## Swift is evolving fast 
 
@@ -47,26 +48,32 @@ In fact Swift is evolving so fast that online Swift information is frequently ou
 
 I wanted to provide Swift overview, focusing on Swift 5 and later version. 
 
-It is very real, Swift can easily become the most dominant language soon, with Python codding efficiency and C speed.
+Soon Swift can easily become the most dominant language, taking the Python codding efficiency and C speed.
 
 ## Why Swift is fast?
 
 The reasons why Swift is fast:
+* automatic reference counting
 * no garbage collection
 * smart usage of value types
 * immutable objects tracking
 * smart machine optimization module (LLVM)
 * no bounds checking mode
-* ARC -- Automatic Reference Counting
+
 
 > Swift can often get the same performance as carefully optimized C code.
 
 
 ### ARC
 
-Automatic Reference Counting -- ARC -- "automatically frees up the memory used by class instances when those instances are no longer needed."
+"Automatic Reference Counting -- ARC -- automatically frees up the memory used by class instances when those instances are no longer needed." -- <cite>The Swift Programming Language</cite> by Apple.
 
->Reference counting is nothing new, it is used in Python -- interpreted language, but it was strange and rare for a compile time language.
+Reference counting is nothing new, it is used in Python -- interpreted language, but it is _strange and rare_ for a compile time language.
+
+
+### No garbage collection
+
+Because Swift has automatic memory object reference counting implemented (ARC) no classical garbage collection is needed that would occur at a specific time. In fact you may call the reference counting as a specific type of garbage collection, but it is not. The Java or .Net garbage collection principles are fundamentally different.
 
 
 ### Swift insists on value types
@@ -103,19 +110,21 @@ ARC is fundamental for both reference type objects and value type objects for sh
 
 > You may be familiar with C#. In C# `struct` will give _value type_,and `class` will give _reference type_.
 
+### Immutable objects tracking
+
+Swift also tracks _immutable objects_, objects assigned with the `let` keyword. You can call it again _ARC procedure_, but it also involves LLVM complier work to avoid aliasing, which minimize the need for locking.
 
 
+### No bounds checking mode
+
+There is a special Swift mode when
 
 
-
-
-
-
-### Calling C
+### Calling into C
 
 Python has GIL (Global Interpreter Lock) problem. When Python code needs to call into C, it performs slow, and Swift is made to work with C-like languages _by design_.
 
-Swift can deal with C header files thanks to the _Clang engine_ part of [LLVM](https://llvm.org/){:rel="nofollow"}.
+Swift can deal with C header files thanks to the _Clang engine_ part of [LLVM](https://llvm.org/){:rel="nofollow" target="_blank"}.
 
 _Clang_ can deal with C/C++/Objective C and even CUDA. 
 
