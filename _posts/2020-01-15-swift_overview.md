@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Intro to Swift programming language
+title: Overview of Swift programming language
 date: 2020-01-08
 author: taimani
 layout: post
