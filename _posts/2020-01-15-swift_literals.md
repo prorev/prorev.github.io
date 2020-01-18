@@ -35,3 +35,21 @@ Swift supports emo
 
 var fColumnEqual : Float =  1+2
 print(fColumnEqual)
+
+_Example Optional type:_
+```swift
+var num: Int? = nil
+print(num)
+print(type(of: num))
+```
+_Output:_
+```
+nil
+Optional<Int>
+```
+
+Optional type is the special type that can hold a value but also a `nil` value (non-value).
+
+Optionals types are written by appending a ? to a  type. For instance `Int?`.
+
+

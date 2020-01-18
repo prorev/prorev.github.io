@@ -14,8 +14,18 @@ tags:
 ---
 _Table of Contents:_
 
+  - [What are collections](#what-are-collections)
+  - [Array](#array)
+  - [Dictionary](#dictionary)
+- [Set](#set)
+- [Range](#range)
+- [Collection methods](#collection-methods)
+
 ---
-### What are collections
+In Swift most common collections are: arrays, dictionaries, and sets.
+
+### What are collections?
+
 Collections in Swift are:
 * Arrays 
 * Dictionaries
@@ -28,16 +38,13 @@ Collections in Swift are:
 
 
 ### Array
-
+```swift
 let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+```
 
 ### Dictionary
 
-var responseMessages = [200: "OK",
-                        403: "Access forbidden",
-                        404: "File not found",
-                        500: "Internal server error"]
-
+.joined
 
 ## Set
 

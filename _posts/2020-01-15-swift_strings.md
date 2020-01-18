@@ -25,6 +25,7 @@ _Table of Contents:_
   - [String splitting by word delimiter](#string-splitting-by-word-delimiter)
 - [Join the string from array of strings (characters)](#join-the-string-from-array-of-strings-characters)
 - [Reverse the string](#reverse-the-string)
+- [Check if string contains the substring](#check-if-string-contains-the-substring)
 
 ---
 
@@ -333,4 +334,21 @@ print(reversed)
 _Output:_
 ```
 !dlrow ,olleH
+```
+
+## Check if string contains the substring
+
+One very useful thing operation in Swift would be to check if a substring is part of a string. For that Swift has the `contain` method.
+
+```swift
+import Foundation
+var force = "May the force be with you!"
+print(force.contains("yoda"))
+print(force.contains("force"))
+```
+
+_Output:_
+```
+false
+true
 ```
