@@ -123,7 +123,7 @@ We already concatenated stings using the `append` method, however, concatenation
 let immutable_question = "How" + " are " + "you?"
 ```
 
-> In Swift, strings are mutable. However, if you declare a string to be a constant (keyword `let`), then it is immutable.
+> In Swift, strings can be changed if you declare them with `var`. However, if you declare a string to be a constant (keyword `let`), then it cannot be changed.
 
  
 ### Special characters
@@ -343,7 +343,7 @@ One very useful thing operation in Swift would be to check if a substring is par
 ```swift
 import Foundation
 var force = "May the force be with you!"
-print(force.contains("yoda"))
+print(force.contains("Yoda"))
 print(force.contains("force"))
 ```
 
