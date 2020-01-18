@@ -105,22 +105,18 @@ Computer languages data types are either:
  
 Swift uses _value types_, and _reference types_ according to [Wikipedia](https://en.wikipedia.org/wiki/Value_type_and_reference_type){:rel="nofollow" target="_blank"}
 
-Value types are all structures: 
-  * booleans 
-  * characters
-  * integers (Int) numbers
-  * floating-point numbers
-  * fixed-point numbers
-  * immutable strings
-  * tuples
-  * lists
-  * dictionaries
-  * sets
-  * stacks
-  * queues
-* enumerations (optionals)
+**_Value types_** are all structures: 
 
-Reference types are:
+ []()  | []() | []() 
+---------|----------|---------
+ booleans | characters | Int numbers
+ floating point | fixed point | strings
+ tuples | lists |  dictionaries
+ sets | stacks | queues |
+ enumerations| ... |
+  
+
+**_Reference types_** are:
 * classes
 * functions
 * interfaces
