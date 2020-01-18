@@ -105,7 +105,7 @@ Computer languages data types are either:
  
 Swift uses _value types_, and _reference types_ according to [Wikipedia](https://en.wikipedia.org/wiki/Value_type_and_reference_type){:rel="nofollow" target="_blank"}
 
-Value types are all structures 
+Value types are all structures: 
   * booleans 
   * characters
   * integers (Int) numbers
