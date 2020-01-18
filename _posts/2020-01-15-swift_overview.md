@@ -105,8 +105,7 @@ Computer languages data types are either:
  
 Swift uses _value types_, and _reference types_ according to [Wikipedia](https://en.wikipedia.org/wiki/Value_type_and_reference_type){:rel="nofollow" target="_blank"}
 
-Value types are:
-* all structures 
+Value types are all structures 
   * booleans 
   * characters
   * integers (Int) numbers
@@ -261,6 +260,7 @@ Meaning you can add your own methods and operators on any type, your custom type
 
 ### Calling into Python from Swift
 
+_Example:_
 ```swift
 %include "EnableIPythonDisplay.swift"
 IPythonDisplay.shell.enable_matplotlib("inline")
@@ -276,32 +276,23 @@ plt.plot(nparray)
 plt.show()
 plt.close()
 ```
-Output:
-![import python](/wp-content/uploads/2020/01/import-python.jpg)
+_Output:_
+
+![import python](/wp-content/uploads/2020/01/import-python.jpg){: style="max-height:300px"}
 
 
 Yes, this is possible. Just import Python in Swift (`import Python`), and from there import all the libraries you use to work with.
 
 ### Calling into C from Swift
 
-Similar approach would be to call into C from Swift. 
+Similar approach would be to call into C from Swift. When Python code needs to call into C, it performs slow, because Python has GIL (Global Interpreter Lock) problem. Swift, on the other hand, is made to work with C-like languages _by design_.
 
-When Python code needs to call into C, it performs slow, and Swift is made to work with C-like languages _by design_.
-
-This is because Python has GIL (Global Interpreter Lock) problem. 
-
-Swift can deal with C header files thanks to the _Clang engine_ part of [LLVM](https://llvm.org/){:rel="nofollow" target="_blank"}.
-
-_Clang_ can deal with C/C++/Objective C and even CUDA.
-
-Long term, Swift is trying to subtract C/C++ code out of the picture, because Swift is the new C.
+Swift can deal with C header files thanks to the _Clang engine_ part of [LLVM](https://llvm.org/){:rel="nofollow" target="_blank"}. _Clang_ can deal with C/C++/Objective C and even CUDA. Long term, Swift is trying to subtract C/C++ code out of the picture, because Swift is the new C.
 
 ## Where can I try Swift fast?
 
-You can start using Swift from [Google Colab](https://colab.research.google.com/notebook#create=true&language=swift){:rel="nofollow" target="_blank"}
-
-The other resource is the [Online Swift Playground](http://online.swiftplayground.run/){:ref="nofollow" target="_blank"}
+You can start using Swift from [Google Colab](https://colab.research.google.com/notebook#create=true&language=swift){:rel="nofollow" target="_blank"}. The other resource is the [Online Swift Playground](http://online.swiftplayground.run/){:ref="nofollow" target="_blank"}.
 
 ## Tour of Swift
 
-Here is the [detailed guided tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html){:rel="nofollow" target="_blank} to Swift.
+Here is the [detailed guided tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html){:rel="nofollow" target="_blank"} to Swift.
