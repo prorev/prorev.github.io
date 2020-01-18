@@ -245,18 +245,17 @@ Output
 ```
 ![COW](/wp-content/uploads/2020/01/cow.jpg)
 
-As you may Swift knows objects a1, a2, a3 will have the same memory address. But at the specific moment, after using the mutating method `append` a3 will become different. This is why internally Swift creates a new copy for object a3, and the address of a3 will be different.
+Swift knows arrays a1, a2, a3 will have the same memory address at first. After using the mutating method `append` array a3 will be cloned and new memory address will be assigned for a3.
 
 
 ### Unsafe mode
 
-There is a special Swift unsafe mode where Swift doesn't check bounds of arrays, dicts, ranges. This mode is usually twice as fast as the safe mode, in some cases even more faster.
-
+There is a special Swift unsafe mode where Swift doesn't check bounds of arrays, dicts, or ranges. This mode is usually at least twice as fast as the safe mode.
 
 
 ## Swift is hackable
 
-Meaning you can add your own methods and operators on any type, your custom types or types from the standard library.
+This means Swift took gems from other programming langues. Also it meaning you can add your own methods and operators on any type -- your custom types or types from the standard library, or any library. This also means Swift can call into Python and C.
 
 
 ### Calling into Python from Swift
