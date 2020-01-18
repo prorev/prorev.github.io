@@ -21,7 +21,6 @@ _Table of Contents:_
   - [ARC](#arc)
   - [No garbage collection](#no-garbage-collection)
   - [Value type semantics for all structures](#value-type-semantics-for-all-structures)
-  - [Immutable objects tracking](#immutable-objects-tracking)
   - [Copy On Write (COW)](#copy-on-write-cow)
   - [Unsafe mode](#unsafe-mode)
 - [Swift is hackable](#swift-is-hackable)
@@ -72,7 +71,6 @@ Reasons why Swift is fast:
 * ARC
 * no garbage collection
 * smart usage of value types
-* immutable objects tracking
 * copy on write (COW)
 * smart machine optimization module (LLVM)
 * unsafe mode
@@ -201,10 +199,6 @@ This will provide the correct output, just as Swift.
 > You may be familiar with C#. In C# `struct` will give _value type_,and `class` will give _reference type_.
 
 > In Swift all `struct` types are _value types_.
-
-### Immutable objects tracking
-
-Swift also tracks _immutable objects_, objects assigned with the `let` keyword. You can call it again part of the _ARC procedure_, but it also involves LLVM complier work to avoid aliasing, to minimize locking.
 
 
 ### Copy On Write (COW)
