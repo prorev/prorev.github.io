@@ -30,6 +30,8 @@ _Table of Contents:_
 - [Where can I try Swift fast?](#where-can-i-try-swift-fast)
 - [Tour of Swift](#tour-of-swift)
 
+---
+
 Swift can easily become the most dominant language soon, beating the Python codding efficiency and the speed of C programming language.
 
 In here, I wanted to provide an overview, focusing on what is possible in Swift 5+.
