@@ -250,7 +250,7 @@ Swift knows arrays a1, a2, a3 will have the same memory address at first. After 
 
 ### Unsafe mode
 
-There is a special Swift unsafe mode where Swift doesn't check bounds of arrays, dicts, or ranges. This mode is usually at least twice as fast as the safe mode.
+There is a special Swift _unsafe mode_ where Swift doesn't check bounds of arrays, dicts, or ranges. This mode is considerable faster than the _safe mode_.
 
 
 ## Swift is hackable
