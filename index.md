@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Index
+description: Helps and makes your programming easier. 
 ---
 
 <form method="get" id="search-google" action="https://www.google.com/search" target="_blank">

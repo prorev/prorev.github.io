@@ -39,7 +39,7 @@ In here, I wanted to provide an overview, focusing on what is possible in Swift 
 
 Chris Lattner, creator of [LLVM](https://llvm.org/){:rel="nofollow" target="_blank"} compiler, created Swift as an *ambitious* programming language. 
 
-From the very start Swift was designed as full stack programming language, that is expressive, flexible, and fast at the same time, but also that can deal with hardware and low level system stuff. Yes, you can write bootloaders in Swift.
+From the very start Swift was designed as full stack programming language -- expressive, flexible, and fast -- and also capable to with hardware and low level system stuff. Yes, you can write _bootloaders_ in Swift.
 
 In 2014 Apple released Swift version 1.2 to develop iOS and macOS applications. The plan was that Swift should replace _Objective C_ one day.  
 
