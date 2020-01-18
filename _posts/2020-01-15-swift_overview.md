@@ -132,7 +132,6 @@ Let's compare Python and Swift working with integer.
 _Swift example:_
 ```swift
 // working with Int
-// working with Int
 var a=1
 var b=a
 a+=1
