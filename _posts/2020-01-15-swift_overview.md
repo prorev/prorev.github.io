@@ -76,7 +76,7 @@ Reasons why Swift is fast:
 * unsafe mode
 
 
-> Swift can often get the same performance as carefully optimized C code.
+> Swift can often get the same [performance](https://godbolt.org/)(:rel="nofollow" target="_blank") as carefully optimized C code.
 
 
 ### ARC
