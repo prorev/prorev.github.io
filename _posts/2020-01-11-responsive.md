@@ -25,8 +25,10 @@ _How a website may look friendly for multiple devices with different resolutions
 
 Some ideas already being practiced:
 * fluid layouts
-* media queries and
-* scripts that can reformat Web pages and mark-up effortlessly (or automatically)
+* media queries
+* flex layout
+* scripts 
+
 
 ### Flexible (responsible) images and video (fluid image technique)
 
