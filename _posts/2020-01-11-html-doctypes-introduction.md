@@ -8,9 +8,9 @@ permalink: /html/doctypes-introduction/
 redirect_from: /html-doctypes-introduction/
 published: true
 categories:
-   -
+   - html
 tags:
-   -
+   - doctype
 ---
 ### Q. What's the Doctype basic idea?
 
