@@ -1,6 +1,6 @@
 ---
 id: 2638
-title: Mysqldiff
+title: Mysqldiff why it may be used in WordPress
 date: 2016-01-24 01:39:29
 author: taimane
 layout: post
