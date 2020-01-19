@@ -22,7 +22,7 @@ If "in the WordPress Loop" use this code:
 $result = get_post_meta($post->ID, 'customField', true);
 ```
 
-If outside the Loop:
+If outside the Loop use this code:
 
 ```php
 global $wp_query;
