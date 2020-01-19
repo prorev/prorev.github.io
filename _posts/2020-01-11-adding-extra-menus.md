@@ -4,7 +4,8 @@ title: Adding secondary menus to WordPress
 date: 2011-06-07 12:34:27
 author: taimane
 layout: post
-permalink: /adding-extra-menus/
+permalink: /wordpress/extra-menus/
+redirect_from: /adding-extra-menus/
 published: true
 categories:
    -
@@ -35,7 +36,6 @@ Let's name it "topmenu".
 ```
 
 > I added the code to the `header.php`, but this will work also from any theme file: `footer.php`, `sidebar.php`, `category.php`, `home.php`, `page-default.php`, ...
-
 
 
 ### 3. Test the result from the front-end.
