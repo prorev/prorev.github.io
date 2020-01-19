@@ -86,7 +86,7 @@ margin-left:auto; margin-right:auto;}
 
  
 
-Now the container div C is a placeholder, and its childs A and B are siblings. Having the last tip in mind we can rewrite the title for this article to something like this:
+Now the container div C is a placeholder, and its child's A and B are siblings. Having the last tip in mind we can rewrite the title for this article to something like this:
 
 
 
