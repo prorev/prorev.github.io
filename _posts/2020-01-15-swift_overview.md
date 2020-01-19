@@ -109,9 +109,9 @@ Swift uses _value types_, and _reference types_ according to [Wikipedia](https:/
 
  []()  | []() | []() 
 ---------|----------|---------
- booleans | characters | Int numbers
+ booleans | characters | integers
  floating point | fixed point | strings
- tuples | lists |  dictionaries
+ tuples | arrays |  dictionaries
  sets | stacks | queues |
  enumerations| ... |
   
