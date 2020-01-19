@@ -4,7 +4,8 @@ title: Checking if file_get_contents works on Web server
 date: 2016-09-10 19:57:37
 author: taimane
 layout: post
-permalink: /checking-file_get_contents/
+permalink: /php/checking-file_get_contents/
+redirect_from: /checking-file_get_contents/
 published: true
 categories:
    -
