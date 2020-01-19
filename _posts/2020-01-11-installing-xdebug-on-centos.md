@@ -4,7 +4,8 @@ title: Installing Xdebug on CentOS
 date: 2012-05-27 21:07:57
 author: taimane
 layout: post
-permalink: /installing-xdebug-on-centos/
+permalink: /php/installing-xdebug/
+redirect_from: /installing-xdebug-on-centos/
 published: true
 categories:
    - linux
@@ -12,7 +13,7 @@ tags:
    - centos
    - xdebug
 ---
-Here are exact steps to follow:
+Here are exact steps to follow on CentOs:
 
 
 ### 1. Install PHP's devel package for PHP commands execution
