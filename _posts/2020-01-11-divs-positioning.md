@@ -186,8 +186,8 @@ text-align:center;
 }
 </style>
 <body>
-<div class="A">This will be allways on top </div>
-<div class="B">This will be allways at the bottom </div>
+<div class="A">This will be always on top </div>
+<div class="B">This will be always at the bottom </div>
 <pre>
 Text
 Text
@@ -264,7 +264,7 @@ background-color:blue; width:200px; height:200px;}
 
 You may notice that div C's red color is completely overlapped. Actually this is quite cool and this is what we will use because we want the div C as a placeholder for other divs. 
 
-In the <a href="https://programming-review.com/css/floating-divs/">next</a> article I will continue with the position: static and I will introduce divs floating, because divs floating works together with position: static (typically it is allways used with position static). 
+In the <a href="https://programming-review.com/css/floating-divs/">next</a> article I will continue with the position: static and I will introduce divs floating, because divs floating works together with position: static (typically it is always used with position static). 
 
 
 

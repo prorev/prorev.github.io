@@ -2,7 +2,7 @@
 id: 12971
 title: JavaScript classes
 date: 2020-01-10
-author: taimani
+author: taimane
 layout: post
 permalink: /javascript/classes
 published: true

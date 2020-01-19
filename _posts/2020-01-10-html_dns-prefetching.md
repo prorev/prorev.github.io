@@ -2,7 +2,7 @@
 id: 12971
 title: DNS prefetching
 date: 2020-01-10
-author: taimani
+author: taimane
 layout: post
 permalink: /html/dns-prefetching/
 redirect_from: /dns-prefetching/

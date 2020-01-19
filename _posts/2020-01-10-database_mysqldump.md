@@ -2,7 +2,7 @@
 id: 12971
 title: mysqldump smart database backups
 date: 2020-01-10
-author: taimani
+author: taimane
 layout: post
 permalink: /database/mysqldump/
 published: true

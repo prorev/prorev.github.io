@@ -2,7 +2,7 @@
 id: 12971
 title: struct vs. class in Swift
 date: 2020-01-15
-author: taimani
+author: taimane
 layout: post
 permalink: /swift/struct-class/
 published: false

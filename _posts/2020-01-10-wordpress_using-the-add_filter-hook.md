@@ -2,7 +2,7 @@
 id: 12971
 title: Using add_filter hook function in WordPress — a working example
 date: 2020-01-10
-author: taimani
+author: taimane
 layout: post
 permalink: /wordpress/add_filter-hook/
 redirect_from: /add_filter-hook/

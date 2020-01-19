@@ -2,7 +2,7 @@
 id: 12971
 title: Overview of Swift programming language
 date: 2020-01-08
-author: taimani
+author: taimane
 layout: post
 permalink: /swift/overview/
 published: true

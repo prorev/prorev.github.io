@@ -2,7 +2,7 @@
 id: 12971
 title: Swift programming
 date: 2020-01-15
-author: taimani
+author: taimane
 layout: post
 permalink: /swift/programming/
 published: false

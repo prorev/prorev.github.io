@@ -2,7 +2,7 @@
 id: 12971
 title: Global Restrictions to files starting with the dot
 date: 2020-01-10
-author: taimani
+author: taimane
 layout: post
 permalink: /nginx/disable-access-hidden-files
 published: true

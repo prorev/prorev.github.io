@@ -2,7 +2,7 @@
 id: 12971
 title: File extension, file name, file directory in C#?
 date: 2020-01-10
-author: taimani
+author: taimane
 layout: post
 permalink: /csharp/files/
 published: true

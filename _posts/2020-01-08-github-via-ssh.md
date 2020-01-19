@@ -2,7 +2,7 @@
 id: 12971
 title: Using GitHub via SSH
 date: 2020-01-08
-author: taimani
+author: taimane
 layout: post
 permalink: /github/using-github-via-ssh/
 published: true

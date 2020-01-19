@@ -2,7 +2,7 @@
 id: 12971
 title: How to write robust code in JavaScript?
 date: 2020-01-10
-author: taimani
+author: taimane
 layout: post
 permalink: /javascript/robust-code/
 published: true

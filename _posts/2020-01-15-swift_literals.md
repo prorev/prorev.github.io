@@ -2,7 +2,7 @@
 id: 12971
 title: Swift literals
 date: 2020-01-15
-author: taimani
+author: taimane
 layout: post
 permalink: /swift/literals/
 published: false

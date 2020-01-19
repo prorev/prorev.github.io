@@ -2,7 +2,7 @@
 id: 12971
 title: Python map 
 date: 2020-01-08
-author: taimani
+author: taimane
 layout: post
 permalink: /sr/python/map/
 published: true

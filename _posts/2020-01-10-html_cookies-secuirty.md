@@ -2,7 +2,7 @@
 id: 12971
 title: Website cookies security
 date: 2020-01-10
-author: taimani
+author: taimane
 layout: post
 permalink: /html/cookies-security
 published: true
