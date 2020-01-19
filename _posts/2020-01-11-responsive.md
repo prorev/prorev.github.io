@@ -4,7 +4,8 @@ title: Ways for achieving responsive layout
 date: 2014-05-14 11:25:41
 author: taimane
 layout: post
-permalink: /responsive/
+permalink: /css/responsive/
+redirect_from: /responsive/
 published: true
 categories:
    - html
@@ -34,9 +35,9 @@ It is very complicated to hold separate images for different resolution. A worka
 ```css
 img, object { max-width: 100%; }
 ```
-The max-width property in <abbr title="cascading stylesheets">CSS</abbr> is used to set the maximum width of a specified element.
+The `max-width` property in <abbr title="cascading stylesheets">CSS</abbr> is used to set the maximum width of a specified element.
 
-The `max-width` property overrides the `width` property, but `min-width` will always override `max-width` whether followed before or after width in your declaration.
+The `max-width` property overrides the `width` property, but `min-width` will always override `max-width` whether followed before or after width in your declaration.
 
 
 ### Filament Group's Responsive Images
@@ -165,9 +166,9 @@ $(document).ready(function(){
     var newWindowWidth = $(window).width();
     // If width width is below 600px, switch to the mobile stylesheet
     if(newWindowWidth < 600){
-      $("link[rel=stylesheet]").attr({href : "mobile.css"});                          
+      $("link[rel=stylesheet]").attr({href : "mobile.css"});
     }
-    // Else if width is above 600px, switch to the large stylesheet                         
+    // Else if width is above 600px, switch to the large stylesheet
     else if(newWindowWidth > 600){
       $("link[rel=stylesheet]").attr({href : "style.css"});
     }

@@ -52,7 +52,7 @@ text text text text text text text text text text text text text text text text 
 </html>
 ```
 
-In the case of journal layouts you must mix up your text with the markup. If you somehow manage to do the same without using "spaghetti markup" please let me know the technique. 
+In case of journal layouts you must mix up your text with the markup. If you somehow manage to do the same without using "spaghetti markup" please let me know the technique. 
 
 In the <a href="https://programming-review.com/offset/">next</a> article I will introduce you with the _mister Offset_.
 

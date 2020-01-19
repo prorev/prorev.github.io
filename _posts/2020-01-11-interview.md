@@ -101,7 +101,7 @@ public static void Main(string[] args) {
  Console.ReadKey(true);
 }
 ```
-In the case of a class you will get 200 as a result. In a case of struct you will have 100.
+In case of a class you will get 200 as a result. In a case of struct you will have 100.
 
 ## What is boxing in C#?
 

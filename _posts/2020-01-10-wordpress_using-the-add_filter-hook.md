@@ -58,7 +58,7 @@ I will list them here:
 [Here](https://adambrown.info/p/wp_hooks/hook/filters) is the list of all filter hooks:
 
 It would be very good to mention here that it is possible in WordPress to get the list of all functions for the particular hook.
-In the case of our `the_content` hook the result would be like this:
+In case of our `the_content` hook the result would be like this:
 ```php
 function get_filter_functions( $hook = '' ) {
     global $wp_filter;
