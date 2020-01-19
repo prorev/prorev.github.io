@@ -1,17 +1,18 @@
 ---
 id: 2638
-title: Mysqldiff why it may be used in WordPress
+title: Mysqldiff sync two tables
 date: 2016-01-24 01:39:29
 author: taimane
 layout: post
-permalink: /wordpress/mysqldiff/
+permalink: /database/mysqldiff/
 redirect_from: /mysqldiff/
 published: true
 categories:
-   - wordpress
+   - database
 tags:
    - diff
    - mysql
+   - wordpress
 ---
 MySQLDiff is command line utility from the set of MySQL <a rel="nofollow" href="http://dev.mysql.com/downloads/utilities/">utilities</a> that is perfect for web servers database analysis and Quality Insurance.
 
