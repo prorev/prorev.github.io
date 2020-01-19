@@ -11,6 +11,15 @@ categories:
 tags:
    -
 ---
+<a href="https://programming-review.com/css/automargin/">How to set the div in the center of a web browser using margins</a>
+<a href="https://programming-review.com/css/child-divs/">Adding child divs to a parent div</a>
+<a href="https://programming-review.com/css/divs-positioning/">Divs position</a>
+<a href="https://programming-review.com/css/floating-divs/">Floating divs</a>
+<a href="https://programming-review.com/css/journal-style/">Journal style for divs</a>
+<a href="https://programming-review.com/css/offset/">Understanding offsets</a>
+<a href="https://programming-review.com/css/2-columns/">Minimal 2-columns website layout</a>
+
+[[[]]]
 In this <a href="https://programming-review.com/cssdivs/">tutorial</a> so far I've tried not to use "spaghetti markup" code which looks like this:
 
 ```html
