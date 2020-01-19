@@ -4,7 +4,8 @@ title: Divs Positioning
 date: 2011-03-01 23:57:32
 author: taimane
 layout: post
-permalink: /divs-positioning/
+permalink: /css/divs-positioning/
+redirect_from: /divs-positioning/
 published: true
 categories:
    -
@@ -30,16 +31,16 @@ Let's start with the absolute position.
 <html>
 <head>
 <style type="text/css">
-   div#C {
+   div.C {
    background-color:red; width:200px; height:200px;}
-   div#A {
+   div.A {
    background-color:green; width:200px; height:200px;
    position:absolute; top: 50%; bottom: 0; left: 50%; right: 0;}
 </style>
 
 <body>
-<div id="C">
-<div id="A"></div>
+<div class="C">
+<div class="A"></div>
 </div>
 </body>
 </html>
@@ -59,16 +60,16 @@ Now you may notice that the container div C and the child div A are both positio
 <html>
 <head>
 <style type="text/css">
-div#C {
+div.C {
 background-color:red; width:200px; height:200px;
 }
-div#A{
+div.A{
 background-color:green; width:200px; height:200px;
 position:absolute; top: 50%; bottom: 0; left: 50%; right: 0;}
 </style>
 <body>
-<div id="C">
-<div id="A"></div>
+<div class="C">
+<div class="A"></div>
 </div>
 </body>
 </html>
@@ -98,14 +99,14 @@ Per purpose I've set the position relative after position:absolute because I wan
 <html>
 <head>
 <style type="text/css">
-div#C {
+div.C {
 background-color:red; width:200px; height:200px;}
-div#A {
+div.A {
 background-color:blue; width:200px; height:200px;
 position:relative; top: 50%; bottom: 0; left: 50%; right: 0;}
 </style>
 <body>
-<div id="C"><div id="A" >This is some text</div></div>
+<div class="C"><div class="A" >This is some text</div></div>
 </body>
 </html>
 ```
@@ -125,16 +126,16 @@ Let me show you the another example.
 ```html
 <html>
 <style type="text/css">
-div#C {
+div.C {
 background-color:red; width:200px; height:200px;
 position:relative; top: 50%; bottom: 0; left: 50%; right: 0;
 }
-div#A {
+div.A {
 background-color:blue; width:200px; height:200px;
 position:relative; top: 50%; bottom: 0; left: 50%; right: 0;}
 </style>
 <body>
-<div id="C"><div id="A" >This is some text</div></div>
+<div class="C"><div class="A" >This is some text</div></div>
 </body>
 </html>
 ```
@@ -162,13 +163,13 @@ Position: fixed concerns how a single div is positioned relative to the visible 
 <html>
 <head>
 <style type="text/css">
-div#A {
+div.A {
 background-color:red; width:100%; height:20px;
 position:fixed;
 top:0;
 text-align:center;
 }
-div#b {
+div.b {
 background-color:green; width:100%; height:20px;
 position:fixed;
 bottom:0;
@@ -176,8 +177,8 @@ text-align:center;
 }
 </style>
 <body>
-<div id="A">This will be allways on top </div>
-<div id="B">This will be allways at the bottom </div>
+<div class="A">This will be allways on top </div>
+<div class="B">This will be allways at the bottom </div>
 <pre>
 Text
 Text
@@ -207,14 +208,14 @@ For the divs static positioning is by default.
 <html>
 <head>
 <style type="text/css">
-div#C {
+div.C {
 background-color:red; width:200px; height:200px;}
-div#A {
+div.A {
 background-color:blue; width:200px; height:200px;}
 </style>
 <body>
-<div id="C"></div>
-<div id="A"></div>
+<div class="C"></div>
+<div class="A"></div>
 </body>
 </html>
 ```
@@ -235,13 +236,13 @@ But consider also the following:
 <html>
 <head>
 <style type="text/css">
-div#C {
+div.C {
 background-color:red; width:200px; height:200px;}
-div#A {
+div.A {
 background-color:blue; width:200px; height:200px;}
 </style>
 <body>
-<div id="C"><div id="A"></div></div>
+<div class="C"><div class="A"></div></div>
 </body>
 </html>
 ```
