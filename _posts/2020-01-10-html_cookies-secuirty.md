@@ -5,6 +5,7 @@ date: 2020-01-10
 author: taimane
 layout: post
 permalink: /html/cookies-security
+redirect_from: /cookies-security
 published: true
 image: 
 categories:
@@ -17,7 +18,8 @@ tags:
 **Website cookie** is name and value pair simplified. Developers uses cookies to store data on the client side. ...
 
 In PHP you would define cookie like this:
-```
+
+```php
 setcookie( name, value, expire, path, domain, secure, httponly);
 ```
 Cookies can be stolen via JavaScript if not safe. It depends. 
