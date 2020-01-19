@@ -21,7 +21,7 @@ With WordPress in mind on a web server you would typically use it like this:
 mysqldiff --server1=root:password@localhost  db1.wp_options:db2r.wp_options
 ```
 
-```mysql
+```
 --- db1.wp_options
 +++ db2.wp_options
 @@ -1,8 +1,8 @@
@@ -43,7 +43,7 @@ In here we use it to detect the MySQL engine and collate differences for the two
 
 The other implication may be to generate the equalizer script:
 
-```mysql
+```
 mysqldiff --server1=root:password@localhost  db1.wp_options:db2.wp_options --difftype=sql 
 ```
 
