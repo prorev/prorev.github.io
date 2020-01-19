@@ -235,7 +235,7 @@ Output
 ```
 ![COW](/wp-content/uploads/2020/01/cow.jpg)
 
-Swift knows arrays a1, a2, a3 will have the same memory address at first. After using the mutating method `append` array a3 will be cloned and new memory address will be assigned for a3.
+In Swift arrays a1, a2, a3 will have the same memory address at first. After using the mutating method `append` array a3 will be cloned and new memory address will be assigned for a3.
 
 
 ### Unsafe mode
