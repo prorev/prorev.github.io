@@ -8,9 +8,10 @@ permalink: /css/responsive/
 redirect_from: /responsive/
 published: true
 categories:
-   - html
+   - css
 tags:
    - responsive
+   - html
 ---
 _Table of content:_
 - [Flexible (responsible) images and video (fluid image technique)](#flexible-responsible-images-and-video-fluid-image-technique)
