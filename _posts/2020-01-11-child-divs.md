@@ -4,12 +4,13 @@ title: Adding child divs to a parent div
 date: 2011-03-01 23:53:14
 author: taimane
 layout: post
-permalink: /child-divs/
+permalink: /css/child-divs/
+redirect_from: /child-divs/
 published: true
 categories:
-   -
+   - css
 tags:
-   -
+   - 
 ---
 Second article from the <a href="https://programming-review.com/cssdivs/">tutorial </a>CSS website design using divs explaining divs hierarchy.
 
@@ -19,16 +20,16 @@ Inserting a div to a container div is simple.
 <html>
 <head>
 <style type="text/css">
-div#A {
+div.A {
 background-color:red; width:200px; height:200px; 
 margin-left:auto; margin-right:auto;}
-div#B {
+div.B {
 background-color:green; 
 margin-left:auto; margin-right:auto;}
 </style>
 <body>
-<div id="A">This is a red div A
-<div id="B">This is a green div B</div>
+<div class="A">This is a red div A
+<div class="B">This is a green div B</div>
 </div>
 </body>
 </html>
@@ -42,7 +43,7 @@ margin-left:auto; margin-right:auto;}
 You may notice the line:
 
 ```html
-<div id="A">This is a red div A<div id="B">This is a green div B</div></div>
+<div class="A">This is a red div A<div class="B">This is a green div B</div></div>
 ```
 
 
@@ -55,15 +56,15 @@ which I don't like, because this is typical "markup spaghetti" case. You may not
 <head>
 <style type="text/css">
 
-div#A {
+div.A {
 
 background-color:yellow; margin-left:auto; margin-right:auto;}
 
-div#B {
+div.B {
 
 background-color:green; margin-left:auto; margin-right:auto;}
 
-div#C {
+div.C {
 
 background-color:red; width:200px; height:200px; 
 
@@ -72,9 +73,9 @@ margin-left:auto; margin-right:auto;}
 </style>
 
 <body>
-<div id="C">
-<div id="A">This is a yellow div A</div>
-<div id="B">This is a green div B</div>
+<div class="C">
+<div class="A">This is a yellow div A</div>
+<div class="B">This is a green div B</div>
 </div>
 </body>
 </html>
@@ -93,6 +94,6 @@ Now the container div C is a placeholder, and its childs A and B are siblings. H
 
 Because this is a way to escape the markup spaghetti. Although, this may look like a minor tip, but I believe this is the most important organization idea we should follow when designing web layouts. I examined many professional web design layouts and all of them are using this idea.
 
-In the <a href="https://programming-review.com/divs-positioning/">next</a> example I will proived some killer div positioning tips.
+In the <a href="https://programming-review.com/divs-positioning/">next</a> example I will provide div positioning tips.
 
 
