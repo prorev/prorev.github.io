@@ -66,5 +66,4 @@ In case of journal layouts you must mix up your text with the markup. If you som
 
 In the <a href="https://programming-review.com/offset/">next</a> article I will introduce you with the _mister Offset_.
 
-  
 
