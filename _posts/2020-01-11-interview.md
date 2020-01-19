@@ -4,7 +4,8 @@ title: Csharp interview questions
 date: 2011-02-28 09:08:00
 author: taimane
 layout: post
-permalink: /charp/interview/
+permalink: /csharp/interview/
+redirect_from: /interview/
 published: true
 categories:
    - csharp
