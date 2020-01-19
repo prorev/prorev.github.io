@@ -4,7 +4,8 @@ title: Detect all links from all your posts
 date: 2015-05-26 09:06:12
 author: taimane
 layout: post
-permalink: /detect-all-links-from-all-your-posts/
+permalink: /wordpress/detect-post-linking-to/
+redirect_from: /detect-all-links-from-all-your-posts/
 published: true
 categories:
    -
@@ -15,7 +16,7 @@ Here is the script for reading all posts and then creating the links list.
 
 In there you can check out for possible problems.
 
-```
+```php
 <?php
 require_once("wp-load.php"); // Loads WP engine
 
