@@ -4,7 +4,8 @@ title: Using FSCapture from Linux
 date: 2011-11-29 17:23:57
 author: taimane
 layout: post
-permalink: /fscapture-on-linux/
+permalink: /linux/use-windows-exe
+redirect_from: /fscapture-on-linux/
 published: true
 categories:
    - linux
