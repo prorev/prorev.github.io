@@ -4,36 +4,31 @@ title: Customizing the customizer
 date: 2016-04-03 19:13:05
 author: taimane
 layout: post
-permalink: /customizing-the-customizer/
+permalink: /wordpress/customizing-the-customizer/
+redirect_from: /customizing-the-customizer/
 published: true
 categories:
    -
 tags:
    -
 ---
-<img class="size-full wp-image-2806 aligncenter" src="https://programming-review.com/wp-content/uploads/2016/04/customizer.png" alt="customizer" width="710" height="389" />
+Example adding new items to the WordpPess customize section:
 
-```
+```php
 $wp_customize->add_section( 'just_listed' , array(
     'title'      => __( 'Just Listed Settings', 'microformata' ),
     'priority'   => 53,
 	));
-
 	$lab = array("City, State", "Bed", "Bath", "From price", "To price");
-
 	$just = array();	
 	for($ii=0; $ii<5; $ii++){ $just[] = array( 'slug'=>'just' . $ii, 
 		  'default' => '',
 		  'label' => $lab[$ii%5],
 		);
-
 	}
-
 	foreach( $just as $e ) {
 
-
 		// SETTINGS
-
 		$wp_customize->add_setting(
 		$e['slug'], array(
 	      'default' => $e['default'],
@@ -41,7 +36,6 @@ $wp_customize->add_section( 'just_listed' , array(
 	      'capability' => 'edit_theme_options', 
 	      'transport'   => 'refresh',
       	)
-
       );
       
 		$wp_customize->add_control(
@@ -56,7 +50,5 @@ $wp_customize->add_section( 'just_listed' , array(
             )
         )
     	);
-
 	}//foreach
 ```	
-
