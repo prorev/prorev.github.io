@@ -5,7 +5,10 @@ date: 2020-01-10
 author: taimane
 layout: post
 permalink: /wordpress/add_filter-hook/
-redirect_from: /add_filter-hook/
+redirect_from: 
+   - /add_filter-hook/
+   - /wordpress/using-add_filter-hook/
+
 published: true
 image: 
 categories:
