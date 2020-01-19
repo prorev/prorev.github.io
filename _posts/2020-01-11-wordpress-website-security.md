@@ -4,7 +4,8 @@ title: WordPress website security
 date: 2011-05-12 08:43:46
 author: taimane
 layout: post
-permalink: /wordpress-website-security/
+permalink: /wordpress/website-security/
+redirect_from: /wordpress-website-security/
 published: true
 categories:
    -
@@ -17,7 +18,7 @@ I will cover some easy and common steps to ensure that your WordPress site is se
 * To secure WordPress installation
 * To install additional WordPress security plugins
 
-<h2>Securing the Apache web server</h2>
+## Securing the Apache web server
 <strong>1. Disallow bots from scanning the important Wordpress directories</strong>
 By using the Robots.txt file it is always a good idea to block the wp-content, wp-admin, etc... directories. This canbe done by adding the following line:
 <code>Disallow: /wp-*</code>
@@ -50,12 +51,12 @@ A lot of Wordpress installations are hosted on an Apache server. If your site is
 
 Find instructions and usage information on the 3G Blacklist <a rel="nofollow" href="http://perishablepress.com/press/2008/05/13/perishable-press-3g-blacklist/">here</a>.
 
-<h2>WORDPRESS SECURITY CONFIGURATION</h2>
+## WORDPRESS SECURITY CONFIGURATION
 
 <strong>1. Remove the Wordpress version number from the META tags</strong>
 Some hackers target specific versions of Wordpress because of known open venerability's.  An easy way to prevent your site from coming up as a target is to simply remove any indicators of the software version. In older version of wordpress your theme ?le would hav the following code in the header.php that generates a simple tag that outputs the current version:
 
-```
+```php
 <meta content="WordPress <?php bloginfo(’version’); ?>" name="generator" />
 ```
 
@@ -76,7 +77,7 @@ To prevent data being intercepted between your computer and the server hosting y
 Wordpress doesn’t require that you take advantage of their “security key” tool that better encrypts cookies, there by better protecting your passwords. Using security keys is a simple process where you generate a key and make some simple modifications to the wp-config.php file.
 You can generate Wordpress security keys on this website.
  
-<h2>WORDPRESS SECURITY PLUGINS</h2>
+## WORDPRESS SECURITY PLUGINS
 
 <strong>1. Login Lockdown Plugin</strong>
 This simple plugin will record the IP address of every failed login attempt. If there are too many failed attempts from one IP address the login function will be disabled for that IP range. This prevents brute force password break-ins. You can download the plugin here: http://www.bad-neighborhood.com/login-lockdown.html.
