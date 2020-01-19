@@ -18,6 +18,7 @@ Have you received the following dialog on your side? If you have WordPress files
 
 To eliminate the following dialog you need to write down this line.
 
+
 ```
 ; RedHat version
 chown -R apache wordpress-folder
