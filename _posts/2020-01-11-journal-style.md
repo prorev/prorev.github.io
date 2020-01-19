@@ -4,7 +4,8 @@ title: Journal style for the divs
 date: 2011-03-02 00:04:31
 author: taimane
 layout: post
-permalink: /journal-style/
+permalink: /css/journal-style/
+redirect_from: /journal-style/
 published: false
 categories:
    -
