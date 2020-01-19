@@ -92,7 +92,7 @@ It is _unique_ for a compile time language to have reference counting.
 
 ### No garbage collection
 
-Because Swift has ARC it doesn't need _garbage collection_. Garbage collection would occur at a specific time. In fact you may call the reference counting as a specific type of garbage collection, but it is not. Java or .NET garbage collection principles are fundamentally different.
+Because Swift has ARC it doesn't need _garbage collection_. Garbage collection would occur at a specific time. In fact you may call the reference counting as a specific type of garbage collection. However, Java or .NET garbage collection principles are fundamentally different.
 
 > .NET took Java garbage collection since early releases of .NET were nothing but Java cloning.
 
