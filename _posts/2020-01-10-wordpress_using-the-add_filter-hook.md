@@ -4,7 +4,8 @@ title: Using add_filter hook function in WordPress — a working example
 date: 2020-01-10
 author: taimani
 layout: post
-permalink: /wordpress/using-add_filter-hook
+permalink: /wordpress/add_filter-hook/
+redirect_from: /add_filter-hook/
 published: true
 image: 
 categories:
@@ -47,7 +48,7 @@ Now what are the other possible places different from the_content where we can s
 I will list them here:
 
 * `wp_title`: allows the _title_ tag to be altered or replaced
-* `the_title`: allows the “title” of the post or page to be altered or replaced
+* `the_title`: allows the "title" of the post or page to be altered or replaced
 * `the_content`: alters the content of the post or page
 * `wp_autop`: automatically turns line breaks into paragraph tags
 * `do_shortcodes`: processes short codes
