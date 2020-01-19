@@ -27,8 +27,8 @@ h4{
 .menu {
   float:left;
   width:20%;
-  text-align:center;
-  background:#7f7f7f;
+  text-align:center;  
+  margin-top:0
 }
 .menu a {
   background-color:#e5e5e5;
