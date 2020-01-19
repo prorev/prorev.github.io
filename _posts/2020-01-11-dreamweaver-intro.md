@@ -4,7 +4,8 @@ title: DreamWeaver intro
 date: 2011-05-27 14:10:47
 author: taimane
 layout: post
-permalink: /dreamweaver-intro/
+permalink: /dreamweaver/intro/
+redirect_from: /dreamweaver-intro/
 published: true
 categories:
    -
@@ -26,8 +27,6 @@ In Dreamweaver CS5 you can check your HTML and CSS code W3C quality via the Site
 
 
 Adobe Dreamweaver works as FTP (SFTP) client and it also can connect to databases successfully and works natively with XML, CSV, ... datasets. It has excellent built in code search and replace functionality not only for static web sites but also for the dynamic web sites built in PHP, ASP, or CF.
-
-
 
 Code coloring works like a charm for many programming languages.
 

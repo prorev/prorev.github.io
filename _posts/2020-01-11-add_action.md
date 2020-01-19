@@ -77,6 +77,3 @@ add_action('wp_head', 'add_metatags');
 ```
 
 Note, apart from the <code>add_action</code> hooks there are also <code>add_filter</code> hooks described <a href="https://programming-review.com/add_filter-hook/">here</a>.
-
-
-
