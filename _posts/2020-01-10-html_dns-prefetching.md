@@ -5,6 +5,7 @@ date: 2020-01-10
 author: taimani
 layout: post
 permalink: /html/dns-prefetching/
+redirect_from: /dns-prefetching/
 published: true
 image: 
 categories:
@@ -25,10 +26,12 @@ By doing this, the high latency domain name resolution process doesn't cause del
 Turning _prefetching_ **on** and **off**:
 
 Web server can opt out of DNS prefetching by serving content with the `x-dns-prefetch-control`: HTTP header set to **off**.
+
 ```
 <meta http-equiv="x-dns-prefetch-control" content="off">
 ```
 You can also set explicitly the dns-prefetching like this:
+
 ```
 <link rel="dns-prefetch" href="https://my-domain.com">
 ```
