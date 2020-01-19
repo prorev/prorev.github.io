@@ -5,6 +5,7 @@ date: 2011-03-01 23:38:51
 author: taimane
 layout: post
 permalink: /css/automargin/
+redirect_from: /automargin/
 published: true
 categories:
    -
@@ -35,10 +36,10 @@ Let's add a 200px fixed length square div and color it red.
 <html>
 <head>
 <style type="text/css">
-div#A {background-color:red; width:200px; height:200px;}
+div.A {background-color:red; width:200px; height:200px;}
 </style>
 <body>
-<div id="A">This is a red div</div>
+<div class="A">This is a red div</div>
 </body>
 </html>
 ```
@@ -51,12 +52,12 @@ Now here comes the trick. How to center it in the browser center, only by modify
 <html>
 <head>
 <style type="text/css">
-div#A {
+div.A {
 background-color:red; width:200px; height:200px;
 margin-left:auto; margin-right:auto;}
 </style>
 <body>
-<div id="A">This is a red div</div>
+<div class="A">This is a red div</div>
 </body>
 </html>
 ```
