@@ -5,6 +5,7 @@ date: 2020-01-10
 author: taimane
 layout: post
 permalink: /csharp/files/
+redirect_from: /system-io-path/
 published: true
 image: 
 categories:

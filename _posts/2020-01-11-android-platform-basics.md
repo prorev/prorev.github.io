@@ -4,7 +4,7 @@ title: Android platform basics
 date: 2014-01-09 22:25:54
 author: taimane
 layout: post
-permalink: /android/android-platform-basics/
+permalink: /android/platform-basics/
 redirect_from: 
    - /android-platform-basics/
    - /android-components/
