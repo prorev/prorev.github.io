@@ -6,7 +6,7 @@ author: taimane
 layout: post
 permalink: /css/journal-style/
 redirect_from: /journal-style/
-published: false
+published: true
 categories:
    -
 tags:
