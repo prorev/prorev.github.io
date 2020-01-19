@@ -4,7 +4,8 @@ title: Secure WordPress
 date: 2016-04-02 10:17:39
 author: taimane
 layout: post
-permalink: /secure-wordpress/
+permalink: /wordpress/secure/
+redirect_from: /secure-wordpress/
 published: true
 categories:
    -
@@ -12,8 +13,6 @@ tags:
    -
 ---
 You work exclusively work with VPS or dedicated hosting. This is a matter of choice, as you may use Docker and skip this step, but in general you don't like shared hosting.
-
-
 
 In there you follow some security rules presented on Linode web site
 
@@ -71,7 +70,4 @@ You don't use dynamic code analysis because these tools may took great resources
 
 So keeping the eye on plug-ins, and theme updates in automated way you are informed of possible risks and your WordPress is more secure.
 
-
-
-Thanks  
 
