@@ -4,7 +4,8 @@ title: Wordpress child menu items
 date: 2011-10-31 09:32:58
 author: taimane
 layout: post
-permalink: /child-menu-items/
+permalink: /wordpress/child-menu-items/
+redirect_from: /child-menu-items/
 published: true
 categories:
    -

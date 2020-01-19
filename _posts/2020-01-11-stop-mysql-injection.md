@@ -4,7 +4,8 @@ title: What is the best way to stop MySQL injection in C# and PHP?
 date: 2011-02-28 16:48:59
 author: taimane
 layout: post
-permalink: /stop-mysql-injection/
+permalink: /database/stop-mysql-injection/
+redirect_from: /stop-mysql-injection/
 published: true
 categories:
    -
