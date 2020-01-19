@@ -38,6 +38,11 @@ h4{
   width:100%;
   color:black;
 }
+
+.menu > p > em{
+  font-wight: 700;
+}
+
 .main {
   float:left;
   width:60%;
