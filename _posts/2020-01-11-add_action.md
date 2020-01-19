@@ -4,7 +4,8 @@ title: add_action hooks in WordPress
 date: 2011-02-28 09:15:54
 author: taimane
 layout: post
-permalink: /add_action/
+permalink: /wordpress/add_action/
+redirect_from: /add_action/
 published: true
 categories:
    - wordpress
@@ -27,13 +28,13 @@ add_action('wp_head', 'hello_header');
 The result adding this code to the <strong>functions.php</strong> file of my theme would be echoing "I'm in the header!" string.
 
 
-Here <code>wp_head</code> represents the moment before the “head” section for the page is ready. Some other moments you can use are:
+Here <code>wp_head</code> represents the moment before the "head" section for the page is ready. Some other moments you can use are:
 
 
 
 *   `init` — moment when creating a page, both front end and administration
 *   `admin_init` — the first thing done on every administration page
-*   `admin_head` — the last moment in the administration page’s “head” section
+*   `admin_head` — the last moment in the administration page's "head" section
 *   `admin_menu` — constructing the navigation menu in the administration pages
 *   `template_redirect` — occurs before the theme template file bas been chosen
 *   `wp_enqueue_scripts` — moment to eliminate duplicate scripts
