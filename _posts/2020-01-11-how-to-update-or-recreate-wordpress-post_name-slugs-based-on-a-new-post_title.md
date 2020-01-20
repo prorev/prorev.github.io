@@ -12,19 +12,19 @@ categories:
 tags:
    -
 ---
-WordPress wp_posts table that is stored in your WordPress MySQL database has post_title and post_name columns.
+WordPress uses `wp_posts` table to store `post_title` and `post_name` columns of the for any post.
 
-I needed to recreate post_name column for all posts based on updated post title values.
-
-
-I will name 2 solutions for the problem that I found:
+I needed to recreate `post_name` column for all posts based on THE updated post title values. Since manual update would be time consuming.
 
 
-<span style="font-size: 16px;">1. A PHP script from here http://pario.no/wp-content/uploads/2010/11/regenerate_post_slugs.txt</span>
+I will name 2 solutions:
 
 
+**Solution 1:** A PHP script from here http://pario.no/wp-content/uploads/2010/11/regenerate_post_slugs.txt
 
-I will just copy/paste the code here in case the link gets broken. In fact I haven’t tested this code because I dislike running non parametrized MySQL queries from PHP. For more info on parametrized MySQL queries visit this <a href="https://programming-review.com/php/what-is-the-best-way-to-stop-mysql-injection-in-c-php/">link</a>.
+I dislike running non parametrized MySQL queries from PHP so this post could be improved.
+
+For more info on parametrized MySQL queries visit this <a href="https://programming-review.com/php/what-is-the-best-way-to-stop-mysql-injection-in-c-php/">link</a>.
 
 ```php
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
@@ -44,7 +44,7 @@ mysql_close($db);
 ?>
 ```
 
-2. The following PHP script that uses WordPress API I adopted from http://wordpress.stackexchange.com/questions/3351/create-slugs-programmatically:
+**Solution 2:** The following PHP script that uses WordPress API:
 
 ```php
 require( 'wp-load.php' );
@@ -70,6 +70,5 @@ if ($allposts) {
 
 It takes ~ 1 minute to execute for 3000 posts, but the post names were perfect!
 
-The fastest solution is to use method #1.
+Also one minor point regarding the method #2. Each _updated_ post means adding an additional line to the `wp_posts` database table. If you have for instance 3000 posts and you execute the script additional 3000 rows will be added to the `wp_posts` table.
 
-Also one minor point regarding the method #2 is that each updated post means adding an additional line to the wp_posts database table. If you have for instance 3000 posts and you execute the script in the method #3 additional 3000 rows will be added to the wp_posts table.
