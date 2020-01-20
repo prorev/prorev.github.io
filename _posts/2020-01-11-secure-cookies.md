@@ -5,7 +5,9 @@ date: 2016-02-05 11:10:26
 author: taimane
 layout: post
 permalink: /php/secure-cookies/
-redirect_from: /secure-cookies/
+redirect_from: 
+   - /secure-cookies/
+   - /html/cookies-security
 published: true
 categories:
    -
