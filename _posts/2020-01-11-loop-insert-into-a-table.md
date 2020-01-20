@@ -4,7 +4,8 @@ title: Microsoft SQL Server insert into a table in a loop
 date: 2011-02-28 09:18:58
 author: taimane
 layout: post
-permalink: /loop-insert-into-a-table/
+permalink: /database/mssql-loop-insert/
+redirect_from: /loop-insert-into-a-table/
 published: true
 categories:
    -
@@ -13,7 +14,8 @@ tags:
 ---
 For Microsoft SQL Server here is how you can organize insert into a table in a loop:
 
-<pre>CREATE TABLE dbo.Test#1 (
+```sql
+CREATE TABLE dbo.Test#1 (
 blob varbinary(MAX) constraint FILESTREAM NULL
 )
 GO
@@ -28,8 +30,7 @@ begin
 	(cast(replicate('123345678901234567890',203) AS varbinary(MAX)));
 	SET @i = @i + 1;
 end;
-GO</pre>
-
-Thanks
+GO
+```
   
 

@@ -4,7 +4,8 @@ title: Make good thumbnails in WordPress
 date: 2016-03-30 18:38:36
 author: taimane
 layout: post
-permalink: /make-good-thumbnails-in-wordpress/
+permalink: /wordpress/thumbnails/
+redirect_from: /make-good-thumbnails-in-wordpress/
 published: true
 categories:
    -
@@ -13,7 +14,7 @@ tags:
 ---
 First thought. You would probable define the thumbnails and improve the image quality to use them later:
 
-```
+```php
 /*
 * add post thumbnails 
 */

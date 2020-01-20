@@ -5,7 +5,7 @@ date: 2012-11-02 10:22:38
 author: taimane
 layout: post
 permalink: /there-is-bundle-js-beta/
-published: true
+published: false
 categories:
    -
 tags:
