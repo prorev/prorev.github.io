@@ -4,16 +4,17 @@ title: Simple get URL content and extract non dynamic images
 date: 2013-12-20 21:25:46
 author: taimane
 layout: post
-permalink: /simple-get-url-content-and-extract-non-dynamic-images/
+permalink: /php/images-from-url/
+redirect_from: /simple-get-url-content-and-extract-non-dynamic-images/
 published: true
 categories:
    -
 tags:
    -
 ---
-This code loads the entire content of the URL and extracts the images from it.
+This code loads the entire content of the URL and **extracts** the images from it.
 
-```
+```php
 function get_content($url)
 {
     $ch = curl_init();
