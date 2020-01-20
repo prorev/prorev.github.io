@@ -5,7 +5,7 @@ date: 2012-11-22 21:31:32
 author: taimane
 layout: post
 permalink: /502-bad-gateway-http-error/
-published: true
+published: false
 categories:
    -
 tags:

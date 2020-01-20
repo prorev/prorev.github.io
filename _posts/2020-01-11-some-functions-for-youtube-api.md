@@ -4,7 +4,8 @@ title: Some functions for YouTube API
 date: 2013-05-25 18:34:04
 author: taimane
 layout: post
-permalink: /some-functions-for-youtube-api/
+permalink: /php/youtube-api/
+redirect_from: /some-functions-for-youtube-api/
 published: true
 categories:
    -
@@ -13,7 +14,7 @@ tags:
 ---
 This post is as is and may contain errors, or the future versions of YouTube API may not work well with this code:
 Getting the playlist title:
-```
+```php
 function get_playlist_title($pid){
 	$uri = 'http://gdata.youtube.com/feeds/api/playlists/'.$pid.'?v=2';
 	$data = file_get_contents($uri);
@@ -22,7 +23,7 @@ function get_playlist_title($pid){
 }
 ```
 Get some video data
-```
+```php
 function get_video_data($vid){
 	$uri = 'https://gdata.youtube.com/feeds/api/videos/'.$vid.'?v=2';
 	$data = file_get_contents($uri);
@@ -40,7 +41,7 @@ function get_video_data($vid){
 }
 ```
 Get array of video Id's in playlist 
-```
+```php
 function videos_in_playlist($playlist_id){ 
 	$si = 1; // start index
 	$cnt = 0; // videos counter
