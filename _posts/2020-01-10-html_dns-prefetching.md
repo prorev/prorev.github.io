@@ -27,6 +27,7 @@ By doing this, the high latency domain name resolution process doesn't cause del
 
 Web server can opt out of DNS prefetching by serving content with the `x-dns-prefetch-control`: HTTP header set to **off**.
 
+
 ```
 <meta http-equiv="x-dns-prefetch-control" content="off">
 ```
