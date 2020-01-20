@@ -5,7 +5,7 @@ date: 2012-07-05 15:53:30
 author: taimane
 layout: post
 permalink: /eliminating-eclipse-launching-index1-57-message/
-published: true
+published: false
 categories:
    -
 tags:

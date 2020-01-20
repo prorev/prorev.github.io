@@ -23,7 +23,3 @@ error_reporting (-1);
 require_once (dirname ( __FILE__ ) . "/wp-load.php");
 global $wpdb;
 ```
-
-
-<img class="alignnone size-full wp-image-3012" src="https://programming-review.com/wp-content/uploads/2016/08/wordpress.jpg" alt="" width="238" height="214" />  
-
