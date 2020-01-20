@@ -13,10 +13,6 @@ tags:
    - ubuntu
    - logs
 ---
-<a href="https://programming-review.com/wp-content/uploads/2016/08/ubuntu-2.png"><img class="alignnone size-full wp-image-3007" src="https://programming-review.com/wp-content/uploads/2016/08/ubuntu-2.png" alt="" width="238" height="149" /></a>
-
-
-
 By definition a logfile is a file:
 
 * that records operating system events
