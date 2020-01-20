@@ -28,10 +28,3 @@ To convert the video to mp4 format please us the following line:
 <code>ffmpeg -i out-1.ogv -c:a copy "OUTPUT.mp4"</code>
 
 
-
-Thanks
-
-
-
-  
-

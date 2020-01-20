@@ -5,7 +5,7 @@ date: 2014-01-21 11:07:51
 author: taimane
 layout: post
 permalink: /deferred-javascript-loading/
-published: true
+published: false
 categories:
    -
 tags:
@@ -38,6 +38,4 @@ Defer the loading of all javascripts added with wp_enqueue_scripts, using LABJS 
 Defer loading javascript for WordPress. Without any additional library.
 
 
-
-Thanks  
 
