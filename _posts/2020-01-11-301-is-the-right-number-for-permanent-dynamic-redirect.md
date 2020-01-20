@@ -4,7 +4,8 @@ title: 301 is the right number for permanent dynamic redirect
 date: 2013-05-18 15:48:33
 author: taimane
 layout: post
-permalink: /301-is-the-right-number-for-permanent-dynamic-redirect/
+permalink: /php/301-redirect/
+redirect_from: /301-is-the-right-number-for-permanent-dynamic-redirect/
 published: true
 categories:
    -
@@ -19,7 +20,7 @@ The 301 status code means that a page has permanently moved to a new location.
 
 PHP code in dynamic fashion (dynamically):
 
-```
+```php
 header("HTTP/1.1 301 Moved Permanently");
 header("Location: https://yourwebsite.com/$dynamicpart/");
 ```
