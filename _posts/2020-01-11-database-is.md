@@ -4,14 +4,15 @@ title: What is a database?
 date: 2013-03-27 20:32:47
 author: taimane
 layout: post
-permalink: /database-is/
+permalink: /database/is/
+redirect_from: /database-is/
 published: true
 categories:
    -
 tags:
    -
 ---
-Database is used to store information like your customer’s information – <em>first name, last names, email address, address, and etc</em>… Database is very useful on a dynamic website (<em>type of website that needs frequent change of content like news, e-commerce, blog, and etc…</em>), because you can easily retrieve, save, update, and delete data.
+Database is used to store information like your customer's information – <em>first name, last names, email address, address, and etc</em>… Database is very useful on a dynamic website (<em>type of website that needs frequent change of content like news, e-commerce, blog, and etc…</em>), because you can easily retrieve, save, update, and delete data.
 
 
 
@@ -29,11 +30,10 @@ The text in blue at the top of each column is called “<em>field name</em>“, 
 
 Suppose, we will store basic information of our client:
 
-
-<li>First Name</li>
-<li>Last Name</li>
-<li>Middle Name</li>
-<li>Email Address</li>
+* First Name
+* Last Name
+* Middle Name
+* Email Address
 
 
 
