@@ -15,6 +15,10 @@ tags:
 Gulp, Grunt, Brokoli, Brunch, Bower maybe you can forget.
 
 You can use directly npm command line scripts to get the same. These are the favorites scripts:
+
 ```
-autoprefixer, browser-sync, clean, eslint, imagemin-cli, node-sass, onchange, npm-run-all, postcss-cli, svgo, svg-sprite-generator, uglify-js
+autoprefixer, browser-sync, clean, 
+eslint, imagemin-cli, node-sass, 
+onchange, npm-run-all, postcss-cli,
+svgo, svg-sprite-generator, uglify-js
 ```
