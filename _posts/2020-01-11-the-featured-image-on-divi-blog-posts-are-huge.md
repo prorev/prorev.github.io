@@ -30,8 +30,5 @@ and comment these lines, and move the <code>single-project.php</code> to the web
 Else you may get very unclear pictures, based on the original images you uploaded for your project thumbnails.
 
 
-
-Thanks
-
   
 

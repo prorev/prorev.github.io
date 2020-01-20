@@ -79,9 +79,3 @@ Also check out this URL http://browserspy.dk/donottrack.php to get additional i
 
 
 
-Thanks
-
-
-
-&nbsp;  
-

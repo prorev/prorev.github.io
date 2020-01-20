@@ -5,7 +5,7 @@ date: 2016-03-29 12:28:40
 author: taimane
 layout: post
 permalink: /simple-wordpress-responsive-site-plugin/
-published: true
+published: false
 categories:
    -
 tags:
@@ -27,5 +27,5 @@ You need to make your old non responsive web site responsive. Wait no more. This
 
 
 
-Thanks  
+
 

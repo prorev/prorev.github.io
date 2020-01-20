@@ -5,7 +5,7 @@ date: 2012-07-11 14:06:27
 author: taimane
 layout: post
 permalink: /product-types-in-e-commerce/
-published: true
+published: false
 categories:
    -
 tags:
@@ -21,7 +21,7 @@ Products you may sell may be :
 
 * downloadable,
 
-Thanksubscription based.
+subscription based.
 
 
 
@@ -30,8 +30,6 @@ Probable in all cases you are facing with the fact that while you are in the "E-
 For instance for the piece of furniture you may set the color, shape, sizes, quantity and many other finer details.
 
 
-
-Thanks.
 
 
 

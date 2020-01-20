@@ -5,7 +5,7 @@ date: 2011-11-29 17:38:53
 author: taimane
 layout: post
 permalink: /latest-firefox-on-centos/
-published: true
+published: false
 categories:
    -
 tags:
@@ -29,5 +29,4 @@ After this step please create a symbolic link to your file /opt/firefox8/firefox
 
 <pre>ln -s /opt/firefox8/firefox /usr/bin/firefox</pre>
 
-Thanks  
 

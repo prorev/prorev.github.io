@@ -5,7 +5,7 @@ date: 2013-01-05 05:54:42
 author: taimane
 layout: post
 permalink: /some-other-wordpress-hooks-resources/
-published: true
+published: false
 categories:
    -
 tags:
@@ -31,5 +31,4 @@ Historical list of all WordPress hooks
 
 
 
-Thanks  
 

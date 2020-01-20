@@ -6,7 +6,7 @@ author: taimane
 layout: post
 permalink: /linux/install-git-centos/
 redirect_from: /install-git-on-centos/
-published: true
+published: false
 categories:
    -
 tags:
@@ -18,7 +18,7 @@ git --version
 ```
 Depending on the return value you can assume git has been installed or not. 
 
-<strong>Two ways to install:</strong>
+Two ways to install:
 
 ## I) Easy install on my side is via 
 
@@ -37,7 +37,7 @@ yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel
 4. Untar it to /usr/local/src (tar xvzf git-1.*.*.tar.gz)
 5. Goto folder where you extracted it cd git-1.*.*
 6. Configure/make/make install
-Thanks
+
 ```
 ./configure
 make

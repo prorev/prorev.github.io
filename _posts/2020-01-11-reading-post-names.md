@@ -4,19 +4,18 @@ title: Reading all post names WordPress and non WordPress way
 date: 2013-02-06 08:59:11
 author: taimane
 layout: post
-permalink: /reading-post-names/
+permalink: /wordpress/read-post-names/
 published: true
 categories:
    -
 tags:
    -
 ---
-For some WoredPress widgets you may need to list all post names for instance.
-Here are the two distinct ways to do that:
+For some WoredPress widgets you may need to list all post names for instance. Here are the two distinct ways to do that:
 
 
 ### Non WordPress way
-```
+```php
 $db = new mysqli( DB_HOST, DB_USER , DB_PASSWORD , DB_NAME );
 $result = $db->query( &quot;SELECT post_name FROM wp_posts WHERE post_type='post'&quot;);
 
@@ -34,7 +33,8 @@ $db->close();
 ```
 
 ### WordPress way
-```
+
+```php
 $args = array( 'numberposts' => -1 );
 $myposts = get_posts( $args );
 $readypostnames = array();
@@ -47,5 +47,3 @@ foreach($myposts as $post) {
 var_dump($readypostnames);
 ```
 
-Thanks
-  
