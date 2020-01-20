@@ -50,7 +50,7 @@ mysqldiff --server1=root:password@localhost  db1.wp_options:db2.wp_options --dif
 
 Where it will produce the `ALTER TABLE` instruction.
 
-```
+```sql
 ALTER TABLE `db1`.`wp_options` 
   DROP INDEX option_name, 
   DROP PRIMARY KEY, 
