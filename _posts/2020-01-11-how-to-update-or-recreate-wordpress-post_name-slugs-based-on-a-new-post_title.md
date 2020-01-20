@@ -1,6 +1,6 @@
 ---
 id: 37
-title: How to update or recreate WordPress post_name slugs based on a new post_title?
+title: How to update or recreate WordPress `post_name` slugs?
 date: 2010-12-28 09:21:56
 author: taimane
 layout: post
