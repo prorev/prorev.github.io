@@ -20,8 +20,6 @@ You will get a prompt. `>`
 
 Let's check where is the Unix Socket file so type:
 
-
-
 ```
 >status
 mysql  Ver 14.14 Distrib 5.5.46, for debian-linux-gnu (x86_64) using readline 6.2
@@ -49,51 +47,51 @@ Threads: 1  Questions: 7672  Slow queries: 0  Opens: 4818  Flush tables: 1  Open
 ## Common operations: 
 
 ### Show living users:
-```
+```sql
 SELECT User FROM mysql.user;
 ```
 ### Show variables: 
-```
+```sql
 SHOW variables;
 ```
 
 ### Show databases 
-```
+```sql
 SHOW databases;
 ```
 
 ### Show users 
-``` 
+``` sql
 SELECT User FROM mysql.user;
 ```
 
 ### Create database 
-```
+```sql
 CREATE DATABASE name;
 ```
 
 ### Drop database
-```
+```sql
 DROP DATABASE name;
 ```
 ### Select user
-```  
+``` sql 
 USE name;
 ```
 ### See an overview of the tables database contains 
-```
+```sql
 SHOW tables;
 ```
 
 ### Create user in MySQL
-```
+```sql
 CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
 ### Granting on database **blog** 
-```
+```sql
 CREATE DATABASE blog;
 GRANT ALL PRIVILEGES ON blog.* TO 'newuser' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
