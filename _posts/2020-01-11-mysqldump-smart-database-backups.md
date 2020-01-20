@@ -19,7 +19,6 @@ You just need to be careful in case of big databases to split inserts into separ
 ```
 mysqldump --user=myusername --password=mypassword --extended-insert=false 
 --databases mydatabasename > /backup/backup_databasename.sql
-
 ```
 Where:
 * --user=myusername = specific mysql user name
@@ -28,7 +27,7 @@ Where:
 * --databases mydatabasename > /backup/backup_databasename.sql = set specific database to sql file.
 
 Here is the shell script that you can cron
-```
+```bash
 #purpose = Backup of any database
 #created on Nov 20th 2012
 #author = programming-review.com
