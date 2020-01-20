@@ -4,7 +4,8 @@ title: Opacity for all browsers - resolved
 date: 2011-11-09 13:18:01
 author: taimane
 layout: post
-permalink: /opacity-for-all-browser/
+permalink: /css/opacity/
+redirect_from: /opacity-for-all-browser/
 published: true
 categories:
    -
@@ -20,7 +21,7 @@ opacity: 0.44;
 The problem is this won't work for all browsers so you need to set many CSS statements in order to work in different web browsers.
 
 Here is the more general approach for element transparency (opacity).
-```
+```css
 #elemenopacity{
 
     /* this one is for IE 5+. */
@@ -41,7 +42,7 @@ Here is the more general approach for element transparency (opacity).
 ```
 
 However if you are familiar with **jQuery** you can use this line of code:
-```
+```js
 jQuery(document).ready(function(){ 
     jQuery("#elementopacity").css('opacity','.44');
 });
