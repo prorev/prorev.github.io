@@ -18,7 +18,7 @@ Having some big folder with 100k of images and thumbnails stored in <code>thumbs
 ```
 find . -name thumbs -exec rm -rf {} \;
 zip -r  gallery.zip gallery
-
+```
 
 Here is how to test the content of the gallery.zip w/o unzipping...
 
