@@ -5,7 +5,7 @@ date: 2012-08-19 20:35:36
 author: taimane
 layout: post
 permalink: /open-id-and-oauth/
-published: true
+published: false
 categories:
    -
 tags:

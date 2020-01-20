@@ -5,7 +5,7 @@ date: 2012-11-23 13:42:36
 author: taimane
 layout: post
 permalink: /buddypress-few-important-settings/
-published: true
+published: false
 categories:
    -
 tags:
