@@ -5,7 +5,7 @@ date: 2014-05-30 21:38:50
 author: taimane
 layout: post
 permalink: /how-to-rate-your-browser/
-published: true
+published: false
 categories:
    -
 tags:
