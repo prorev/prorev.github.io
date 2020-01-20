@@ -25,7 +25,6 @@ In order to find the file name use this code:
 
 ```c#
 string fileName = System.IO.Path.GetFileName(fileLocation);
-
 ``` 
 In order to get a file directory use this code:
 ```c#
