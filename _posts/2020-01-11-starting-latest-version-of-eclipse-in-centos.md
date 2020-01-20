@@ -5,7 +5,7 @@ date: 2012-05-25 17:24:06
 author: taimane
 layout: post
 permalink: /starting-latest-version-of-eclipse-in-centos/
-published: true
+published: false
 categories:
    -
 tags:
