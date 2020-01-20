@@ -4,18 +4,20 @@ title: Secure cookies
 date: 2016-02-05 11:10:26
 author: taimane
 layout: post
-permalink: /secure-cookies/
+permalink: /php/secure-cookies/
+redirect_from: /secure-cookies/
 published: true
 categories:
    -
 tags:
    -
 ---
-Cookie is name and value pair simplified. Developer uses cookies to store data on the client side. This is handled using the programming language like PHP, Perl,...
+Cookie is name and value pair simplified. Developer uses cookies to store data on the client side. 
 
 In PHP you would define cookie like this:
 
-```setcookie( name, value, expire, path, domain, secure, httponly);
+```php
+setcookie( name, value, expire, path, domain, secure, httponly);
 ```
 
 
