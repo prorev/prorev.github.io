@@ -5,7 +5,7 @@ date: 2011-12-03 00:37:55
 author: taimane
 layout: post
 permalink: /flash-firefox-centos/
-published: true
+published: false
 categories:
    -
 tags:
@@ -19,19 +19,10 @@ The process of adding a Flash Plugin is simple downloading a tarball for Flash f
 
 The tarball has tar.gz format. In the tarball you will find the <code>libflashplayer.so</code>.
 
-Thanksall the Flash player you need to: 
+all the Flash player you need to: 
 
 1. Copy <code>libflashplayer.so</code> file to the plugins foder <code>/usr/lib/mozilla/plugins</code>
 
 2. Restart the Firefox.
-
-
-
-Thanks.
-
-
-
-
-
   
 
