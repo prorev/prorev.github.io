@@ -5,7 +5,7 @@ date: 2011-06-25 22:39:31
 author: taimane
 layout: post
 permalink: /php-creating-variables/
-published: true
+published: false
 categories:
    -
 tags:
@@ -47,5 +47,4 @@ The output for the last example will be: <code>blue, large, sphere, medium</code
 
 
 
-Thanks  
 

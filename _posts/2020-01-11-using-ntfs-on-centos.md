@@ -25,9 +25,3 @@ http://wiki.centos.org/AdditionalResources/Repositories/RPMForge
 
 
 
---Thanks
-
-
-
-  
-

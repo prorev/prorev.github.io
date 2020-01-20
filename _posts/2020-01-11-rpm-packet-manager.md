@@ -5,7 +5,7 @@ date: 2011-09-13 19:51:01
 author: taimane
 layout: post
 permalink: /rpm-packet-manager/
-published: true
+published: false
 categories:
    -
 tags:
@@ -34,7 +34,7 @@ To update:
 To query all files or to query configuration files:
 
 <pre># rpm -qa
-Thanks
+
 # rpm -qc</pre>
 
 To delete:
@@ -57,5 +57,5 @@ I don't want to confuse anyone, but just to give you another part of the picture
 
 
 
-Thanks.  
+
 

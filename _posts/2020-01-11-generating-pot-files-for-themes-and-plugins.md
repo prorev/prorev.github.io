@@ -5,7 +5,7 @@ date: 2013-12-08 19:31:11
 author: taimane
 layout: post
 permalink: /generating-pot-files-for-themes-and-plugins/
-published: true
+published: false
 categories:
    -
 tags:
@@ -53,5 +53,4 @@ Your trunk folder will contain the `.pot` template file.
 
 
 
-Thanks  
 

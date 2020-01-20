@@ -5,7 +5,7 @@ date: 2015-02-24 23:55:00
 author: taimane
 layout: post
 permalink: /object-is-not-a-function-message/
-published: true
+published: false
 categories:
    -
 tags:
@@ -48,4 +48,4 @@ The complain was "submit is not a function" when I dug deeper.
 ```
 Just I updated the id of the submit button to something like "btnsubmitt".
 
-Thanks  
+

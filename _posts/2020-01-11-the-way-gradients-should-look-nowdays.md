@@ -5,7 +5,7 @@ date: 2012-07-07 22:47:45
 author: taimane
 layout: post
 permalink: /the-way-gradients-should-look-nowdays/
-published: true
+published: false
 categories:
    -
 tags:
@@ -66,6 +66,4 @@ background-image: url(IMAGE_URL), linear-gradient(top, #222222, #999999); /* W3C
 Also you may use the <a rel="nofollow" href="http://www.colorzilla.com/gradient-editor/">Ulitmate generator</a>.
 
 
-
-Thanks  
 

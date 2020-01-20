@@ -5,7 +5,7 @@ date: 2014-03-08 13:12:04
 author: taimane
 layout: post
 permalink: /ubuntu-and-apache-some-cool-stuff/
-published: true
+published: false
 categories:
    -
 tags:
@@ -161,4 +161,3 @@ $cat /var/lib/dpkg/info/apache2.2-common.conffiles
 #or
 sudo apt-get install chkconfig
 sudo chkconfig nginx on</pre>
-Thanks  

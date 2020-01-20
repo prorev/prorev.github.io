@@ -27,7 +27,7 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 
 $cfg['Servers'][$i]['host'] = 'localhost';
 
-Thankservers'][$i]['connect_type'] = 'tcp';
+servers'][$i]['connect_type'] = 'tcp';
 
 $cfg['Servers'][$i]['compress'] = false;
 
@@ -42,6 +42,4 @@ $cfg['SaveDir'] = '';
 </pre>
 
 
-
-Thanks.  
 

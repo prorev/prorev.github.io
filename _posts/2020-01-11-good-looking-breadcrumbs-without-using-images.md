@@ -111,4 +111,4 @@ Finally the end result is like this:
 
 I took the idea from here http://css-tricks.com/triangle-breadcrumbs/ as a starting point.
 
-Thanks  
+

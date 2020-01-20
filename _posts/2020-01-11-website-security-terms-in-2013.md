@@ -19,9 +19,3 @@ Here is the list of security terms related to Web, Web servers, Web server softw
 
 
 
-Thanks
-
-
-
-  
-

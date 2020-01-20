@@ -4239,7 +4239,5 @@ Currently the result is 1890 - not bad.
 
 
 
-Thanks
-
   
 

@@ -5,7 +5,7 @@ date: 2013-12-31 18:11:55
 author: taimane
 layout: post
 permalink: /nginx-http-server-architecture/
-published: true
+published: false
 categories:
    -
 tags:
@@ -113,7 +113,4 @@ Worker connections variable in the events sections determine the max number of c
 
 <span style="font-size: 16px;">CONCLUSION : This is just the basic Nginx HTTP introductory info; with just few concepts. Many other info can be found </span><a style="font-size: 16px;" href="http://nginx.org/en/docs/">here</a><span style="font-size: 16px;">.</span>
 
-
-
-Thanks  
 

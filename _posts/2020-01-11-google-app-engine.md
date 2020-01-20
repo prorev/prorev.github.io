@@ -5,7 +5,7 @@ date: 2011-05-31 10:10:40
 author: taimane
 layout: post
 permalink: /google-app-engine/
-published: true
+published: false
 categories:
    -
 tags:
@@ -34,10 +34,4 @@ Google App Engine is free for anyone to join, all you need is a Google Account.Â
 You can check the statistics of your Google Application atÂ <a rel="nofollow" href="http://appengine.google.com/">appengine.google.com</a>. For example you can see how much bandwidth and disk space you are using. It will take quite a lot of files and usage for you to use up the resources you get for free, but if you have a super popular site then it is worth taking a look here every now and then.
 
 
-
-Thanks,
-
-
-
-</div>  
 

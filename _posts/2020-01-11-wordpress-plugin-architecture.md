@@ -5,7 +5,7 @@ date: 2012-07-10 21:39:26
 author: taimane
 layout: post
 permalink: /wordpress-plugin-architecture/
-published: true
+published: false
 categories:
    -
 tags:
@@ -53,5 +53,3 @@ There may be additional steps in the plugin development we haven't outlined here
 Please note; in some cases you may be using some additional tables together with the default WordPress tables. Try to avoid that if possible. I haven't mentioned working with the database here at all.
 
 Please read more from this URL: <a href="https://programming-review.com/review-of-the-wordpress-plugin-architecture/">Review of the WordPress plugin architecture</a>.
-
-Thanks  

@@ -102,5 +102,4 @@ After that
 
 went just fine. 
 
-Thanks  
 
