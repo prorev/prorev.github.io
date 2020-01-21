@@ -27,7 +27,7 @@ It also supports 500+ Google fonts and custom colors, custom site icon, custom h
 
 
 
-You can download it from this link: (<a href="https://programming-review.com/wp-content/uploads/2016/04/microformats.zip">microformats Wordpress theme</a>).
+You can download it from [this link](https://wordpress.org/themes/microformats/){:rel="nofollow" target="blank"}).
 
 
 
