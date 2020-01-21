@@ -6,7 +6,6 @@ author: taimane
 layout: post
 permalink: /wordpress/tinymce/
 published: true
-noindex: true
 categories:
    -
 tags:
