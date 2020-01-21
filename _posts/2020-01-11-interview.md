@@ -224,11 +224,12 @@ class Program {
 ```
 
 * Properties introduce `getters` and `setters` methods.
-* Properties can be _read-only_ or _write-only_.
+* Properties can be _read-only_, _write-only_, or _read_write_.
 
 ```c#
 public int Counter{ get; } //read-only
 public int Counter{ set; } //write-only
+public int Counter{ get; set;} // read-write
 ```
 When using fields you cannot set them write-only.
 Note that property setters and getters should execute as fast as possible. There should be no reading from a file or similar operations.
