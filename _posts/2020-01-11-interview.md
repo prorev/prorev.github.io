@@ -193,8 +193,8 @@ class Program{
   }
 }
 ```
-You my note that Counter is a property, that is bound to private int counter field.
-The advantage of properties becomes obvious from this example.
+You my note that `Counter` is a property, that is bound to `private int counter` field.
+The advantage of properties becomes obvious from this example:
 
 ```c#
 class PropertyExample {
@@ -223,14 +223,13 @@ class Program {
 }
 ```
 
-* Properties introduce getters and setters methods that can introduce intervening code such as a logic with DoLogCounterIsLow in the previous example. You have a control mechanism when the field is set or get.
-
-** The other improvement properties have comparing to fields is properties can be read-only or write-only
+* Properties introduce `getters` and `setters` methods.
+* Properties can be _read-only_ or _write-only_.
 
 ```c#
 public int Counter{ get; } //read-only
 public int Counter{ set; } //write-only
 ```
 When using fields you cannot set them write-only.
-Note that property setters and getters should execute as fast as possible. There should be no reading from a file or similar operations in them.
+Note that property setters and getters should execute as fast as possible. There should be no reading from a file or similar operations.
 

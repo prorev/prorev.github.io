@@ -4,8 +4,9 @@ title: TinyMCE in WordPress analysis
 date: 2013-08-08 10:58:55
 author: taimane
 layout: post
-permalink: /tinymce-in-wordpress-analysis/
+permalink: /wordpress/tinymce/
 published: true
+noindex: true
 categories:
    -
 tags:
