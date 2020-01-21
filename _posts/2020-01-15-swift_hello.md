@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Fast intro to Swift programming
+title: Fast intro to Swift
 date: 2020-01-15
 author: taimane
 layout: post
