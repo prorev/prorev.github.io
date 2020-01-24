@@ -28,7 +28,7 @@ tags:
 ## About Flask
 [Flask project on GitHub](https://github.com/pallets/flask){:rel="nofollow"} was created in April 2010. The original idea was to create framework for dealing with _simple_ web apps. 
 
-> Flask author original idea why they needed flask is to create a bulletin board in Python.
+> In early stage flask authors original idea was to create a bulletin board in Python.
 
 ## Flask original components
 I will list in here just the two to keep it simple:
@@ -173,7 +173,6 @@ It is hard to live without the examples. Here is the example content of the requ
 ```
 flask 
 requests
-# json
 dateparser
 gunicorn
 ```
