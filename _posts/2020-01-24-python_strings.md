@@ -299,7 +299,7 @@ _Example:_
 lst = [x for x in 'explode']
 print(lst)
 ```
-Output:
+_Output:_
 ```
 ['e', 'x', 'p', 'l', 'o', 'd', 'e']
 ```
@@ -308,13 +308,13 @@ Output:
 
 Programming tutorials usually have examples on how to reverse a string. This is easy in Python:
 
-Example:
+_Example:_
 ```python
 str = 'reverse'
 str = str[::-1]
 print(str)
 ```
-Output:
+_Output:_
 ```
 esrever
 ```
