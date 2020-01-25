@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Python get the html content
+title: Python strings
 date: 2020-01-22
 author: taimane
 layout: post
@@ -22,9 +22,9 @@ tags:
     - [Splitting by character](#splitting-by-character)
     - [Splitting by multiple characters](#splitting-by-multiple-characters)
     - [Splitting by word](#splitting-by-word)
-- [Joining list elements to a string](#joining-list-elements-to-a-string)
-- [String explosion to chars](#string-explosion-to-chars)
-- [Reverse string](#reverse-string)
+  - [Joining list elements to a string](#joining-list-elements-to-a-string)
+  - [String explosion to chars](#string-explosion-to-chars)
+  - [Reverse string](#reverse-string)
 - [Appendix : String Methods](#appendix--string-methods)
 
 ---
@@ -251,7 +251,7 @@ _Output:_
 ```
 ['May the ', ' be with you']
 ```
-## Joining list elements to a string
+### Joining list elements to a string
 
 _Example:_
 ```python
@@ -276,7 +276,7 @@ _Output:_
 Join list elements to a string
 ```
 
-## String explosion to chars
+### String explosion to chars
 
 In PHP there is `explode` method on strings. There is no such method in Python, instead you do the explosion like this:
 
@@ -290,7 +290,7 @@ Output:
 ['e', 'x', 'p', 'l', 'o', 'd', 'e']
 ```
 
-## Reverse string
+### Reverse string
 
 Programming tutorials usually have examples on how to reverse a string. This is easy in Python:
 
