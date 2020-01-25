@@ -106,7 +106,7 @@ This example used the Flask class `flask.app.Flask` that has the most important 
 
 Then we used `jsonify` method from flask to convert objects to json format.
 
-Mothod `request` is there in Flask also but usually if you used to do `import requests`, you may use `requests`.
+Method `request` is there in Flask also but usually if you used to do `import requests`, you may use `requests`.
 
 Very important method is the `render_template` where you can call into template, usually .html file with Jinja2 templates inside. 
 
