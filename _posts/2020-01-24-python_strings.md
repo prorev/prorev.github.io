@@ -95,8 +95,6 @@ In here the code point for the `👍` character is 128077
 
 > Python strings use three kind of chars: 1 byte char, 2 bytes char, and 4 bytes char.
 
-Python 3 _str_ type uses Unicode representation always, but internal representation for Unicode strings may be different.
-
 
 ## The size of the empty string
 
