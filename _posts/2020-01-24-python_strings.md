@@ -36,13 +36,15 @@ _Example:_
 ```python
 s = "string ☕"
 print(type(s))
+print(len(s))
 ```
 _Output:_
 ```
 <class 'str'>
+8
 ```
 
-If you create a simple string `s` you will get the class of string is _str_.
+If you create a simple string `s` you will get the class of string is _str_, and the length of string is 8 characters.
 
 This doesn't tell much. Let's create several examples nailing it down what strings really are.
 
