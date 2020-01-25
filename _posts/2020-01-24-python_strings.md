@@ -28,10 +28,19 @@ tags:
 - [Appendix : String Methods](#appendix--string-methods)
 
 ---
+![str](/wp-content/uploads/2020/01/string25_0.jpg)
 
 Let's start observing the Python strings.
 
-![str](/wp-content/uploads/2020/01/string25_1.jpg)
+_Example:_
+```python
+s = "string ☕"
+print(type(s))
+```
+_Output:_
+```
+<class 'str'>
+```
 
 If you create a simple string `s` you will get the class of string is _str_.
 
