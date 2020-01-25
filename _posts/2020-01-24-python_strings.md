@@ -321,6 +321,7 @@ esrever
 
 
 ## Appendix : String Methods
+
 | []()       | []()         | []()       
 | ---------- | ------------ | ---------- 
 | capitalize | casefold     | center     
