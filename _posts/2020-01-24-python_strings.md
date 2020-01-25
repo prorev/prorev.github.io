@@ -26,6 +26,7 @@ tags:
   - [String explosion to chars](#string-explosion-to-chars)
   - [Reverse string](#reverse-string)
 - [Appendix : String Methods](#appendix--string-methods)
+- [String literals notation](#string-literals-notation)
 
 ---
 ![str](/wp-content/uploads/2020/01/string25_0.jpg)
@@ -34,7 +35,7 @@ Let's start observing the Python strings.
 
 _Example:_
 ```python
-s = "string ☕"
+s = 'string ☕'
 print(type(s))
 print(len(s))
 ```
@@ -75,7 +76,7 @@ What!?
 
 _Why there is a difference? Isn't `a` the same as `а`?_
 
-They are not. The first `a` uses 1 byte per char, and the `ord` function returns the code point for `a` is 97. The second `а` code point is 1072. 
+They are not. The first _a_ uses 1 byte per char, and the `ord` function returns the code point for _a_ is 97. The second _а_ code point is 1072. 
 
 _Example:_
 ```python
@@ -103,6 +104,7 @@ Another paradox:
 
 _Example:_
 ```python
+import sys
 str  = ''
 sys.getsizeof(str)
 ```
@@ -114,6 +116,7 @@ _Output:_
 
 _Example:_
 ```python
+import sys
 str  = ' '
 sys.getsizeof(str)
 ```
@@ -135,7 +138,7 @@ Python empty strings takes more space than the simple space string. It's true.
 When working with short strings, python may internally memorize the same character under the same memory address. This is called _string interning_.
 
 ```python
-s = "the example"
+s = 'the example'
 print(s)
 print(s[2], s[4], s[10])
 id(s[1]), id(s[4]), id(s[10])
@@ -151,7 +154,7 @@ In here the characters _e_ from the word _"example"_ point to the same memory ad
 Things get more evident in the next example:
 _Example:_
 ```python
-s = "eee"
+s = 'eee'
 print(s)
 print(s[0], s[1], s[2])
 id(s[0]), id(s[1]), id(s[2])
@@ -173,7 +176,7 @@ Let's create a string of first 99 numbers:
 
 _Example:_
 ```python
-s=""
+s = ''
 for x in range(1,100):
   s=s+str(x)
   
@@ -212,8 +215,8 @@ Python `split()` is one of the finest splitting methods in the world. It works o
 
 _Example:_
 ```python
-txt = "May the force be with you"
-spl = txt.split("a")
+txt = 'May the force be with you'
+spl = txt.split('a')
 print(spl) 
 ```
 
@@ -225,7 +228,7 @@ _By default_ if you don't provide any argument to `split()` it will split by any
 
 _Example:_
 ```python
-txt = "May the force be with you"
+txt = 'May the force be with you'
 spl = txt.split()
 print(spl) 
 ```
@@ -253,8 +256,8 @@ _Output:_
 
 _Example:_
 ```python
-txt = "May the force be with you"
-spl = txt.split("force")
+txt = 'May the force be with you'
+spl = txt.split('force')
 print(spl) 
 ```
 
@@ -293,7 +296,7 @@ In PHP there is `explode` method on strings. There is no such method in Python, 
 
 _Example:_
 ```python
-lst = [x for x in "explode"]
+lst = [x for x in 'explode']
 print(lst)
 ```
 Output:
@@ -307,7 +310,7 @@ Programming tutorials usually have examples on how to reverse a string. This is 
 
 Example:
 ```python
-str = "reverse"
+str = 'reverse'
 str = str[::-1]
 print(str)
 ```
@@ -336,3 +339,18 @@ split | splitlines | startswith |
 strip | swapcase | title | 
 translate | upper | zfill
 
+## String literals notation
+
+You can use both of the notations using single quotes `''` or double quotes `""`.
+
+However, for printing Python uses single quotes.
+
+_Example:_
+```python
+l= ["string" , 'string']
+print(l)
+```
+_Output:_
+```
+['string', 'string']
+```
