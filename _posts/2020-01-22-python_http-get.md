@@ -19,7 +19,7 @@ tags:
 
 ## Using `urllib` 
 
-You will probable ignore to use it to get HTTP content, since there is newer module called `requests` for that. However, if you need to use _urllib_, here is the tip:
+You will probable ignore to use `urllib` to get HTTP content from the web page, since there is newer module called `requests` for that. However, if you need to use _urllib_, here is the tip:
 
 _Example:_
 ```python
