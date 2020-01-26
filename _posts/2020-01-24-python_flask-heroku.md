@@ -208,7 +208,7 @@ This is normal flask operation in single-threaded mode. It is also possible to r
 app.run(host=HOST, port=PORT, threaded=True)
 ```
 
-Still some prefer [gunicorn](https://gunicorn.org/){: rel="nofollow" target="_blank"}, Python WSGI HTTP server since it is more advanced. 
+Still some prefer [gunicorn](https://gunicorn.org/){: rel="nofollow" target="_blank"}, Python WSGI HTTP server since it even better than flask _threaded=True_.
 
 
 
