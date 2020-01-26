@@ -171,11 +171,10 @@ import requests
 url = "https://programming-review.com"
 try:
     r = requests.get(url) # requests.models.Response
-    print(r.content)
+    print(r.text) # print(r.content) if you need bytes
 except:
     print("Error with the request")
 ```
-
 
 ## Appendix HTML response codes
 

@@ -5,7 +5,7 @@ date: 2020-01-22
 author: taimane
 layout: post
 permalink: /python/lists
-published: true
+published: false
 image: 
 categories: 
    - python
