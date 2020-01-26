@@ -14,6 +14,8 @@ tags:
    - https
    - get request
 ---
+![get content](/wp-content/uploads/2020/01/request26_0.jpg)
+
 
 ## Using `urllib` 
 
