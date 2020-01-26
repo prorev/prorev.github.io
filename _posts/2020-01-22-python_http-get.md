@@ -35,7 +35,7 @@ _Output:_
 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8"> ... '
 ```
 
-> urllib2 is not present anymore. It has been split to _urllib.request_ and _urllib.error_.
+> There urllib, urllib2 and urllib2. ~~urllib2~~ is not present anymore, it has been split to _urllib.request_ and _urllib.error_. _urllib_ you may forget, since there is newer _urllib3_, part of the _requests_. In other words, just use _requests_.
 
 ## Using `requests`
 
