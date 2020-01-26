@@ -19,7 +19,7 @@ tags:
 
 ## Using `urllib` 
 
-You will probable ignore to use it since there is better module for that called `requests`. However, if you need to use _urllib_, here is the example:
+You will probable ignore to use it to get HTTP content, since there is newer module called `requests` for that. However, if you need to use _urllib_, here is the tip:
 
 _Example:_
 ```python
@@ -29,7 +29,13 @@ r = urllib.request.urlopen(url)
 b = r.read()
 print(b)
 ```
-> urllib2 is not present any more. It has been split to _urllib.request_ and _urllib.error_.
+
+_Output:_
+```
+b'<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8"> ... '
+```
+
+> urllib2 is not present anymore. It has been split to _urllib.request_ and _urllib.error_.
 
 ## Using `requests`
 
@@ -158,6 +164,17 @@ We usually need _requests.models.Response_ `r.text` property.
 
 >_r.content.decode()_ is equivalent to _r.text_
 
+To finalize this would be the code to get the content from the web page using _requests_.
+
+```python
+import requests
+url = "https://programming-review.com"
+try:
+    r = requests.get(url) # requests.models.Response
+    print(r.content)
+except:
+    print("Error with the request")
+```
 
 
 ## Appendix HTML response codes
