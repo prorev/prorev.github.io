@@ -10,6 +10,8 @@ image:
 categories: 
    - python
 tags:
+   - date
+   - time
    - string
 ---
 
