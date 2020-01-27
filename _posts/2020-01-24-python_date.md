@@ -14,9 +14,10 @@ tags:
 ---
 
 - [Meet datetime](#meet-datetime)
-  - [Getting date and time from datetime](#getting-date-and-time-from-datetime)
   - [Create datetime from year, month, date ...](#create-datetime-from-year-month-date)
   - [Create datetime from timestamp](#create-datetime-from-timestamp)
+  - [Getting date and time from datetime](#getting-date-and-time-from-datetime)
+  - [Combine date and time to datetime](#combine-date-and-time-to-datetime)
 - [Convert string to datetime](#convert-string-to-datetime)
 - [Convert datetime to string](#convert-datetime-to-string)
 - [Using the `dateparser` library](#using-the-dateparser-library)
@@ -95,21 +96,6 @@ utcoffset | return self.tzinfo.utcoffset(self).
 utctimetuple | return UTC time tuple
 weekday | return the day of the week represented by the date.
 
-### Getting date and time from datetime
-
-Call the methods 
-
-_Example:_
-```python
-import datetime
-dt = datetime.datetime.now()
-d = dt.date()
-t = dt.time()
-print(d) # 2020-01-27
-print(t) # 21:22:26.005131
-print(t.strftime("%H:%M:%S")) # 21:22:26
-```
-
 ### Create datetime from year, month, date ...
 
 _Example:_
@@ -130,6 +116,36 @@ timestamp = 1580099322
 dt = datetime.datetime.fromtimestamp(timestamp)
 print(dt) # 2020-01-27 05:28:42
 ```
+
+### Getting date and time from datetime
+
+Call the methods `date()` and `time()` to get date and time part respectively.
+
+_Example:_
+```python
+import datetime
+dt = datetime.datetime.now()
+d = dt.date()
+t = dt.time()
+print(d) # 2020-01-27
+print(t) # 21:22:26.005131
+print(t.strftime("%H:%M:%S")) # 21:22:26
+```
+
+### Combine date and time to datetime
+
+This would be an easy showcase to combine date and time parts to datetime format.
+
+_Example:_
+```python
+import datetime
+d = datetime.datetime.now().date()
+t = datetime.datetime.now().time()
+dt = datetime.datetime.combine(d,t)
+print(dt)
+```
+
+
 
 ## Convert string to datetime
 
