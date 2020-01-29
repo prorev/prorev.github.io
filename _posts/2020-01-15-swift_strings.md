@@ -338,7 +338,7 @@ _Output:_
 
 ## Check if string contains the substring
 
-One very useful thing operation in Swift would be to check if a substring is part of a string. For that Swift has the `contain` method.
+One very useful thing operation in Swift would be to check if a substring is part of a string. For that Swift has the `contains` method.
 
 ```swift
 import Foundation
