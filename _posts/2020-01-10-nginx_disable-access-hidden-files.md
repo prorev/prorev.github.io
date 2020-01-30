@@ -5,6 +5,7 @@ date: 2020-01-10
 author: taimane
 layout: post
 permalink: /nginx/disable-access-hidden-files
+redirect_from: /nginx-disable-access-to-htaccess-file/
 published: true
 image: 
 categories:

@@ -17,7 +17,6 @@ Disallow: /page/5/
 Disallow: /page/
 Disallow: /open-id-and-oauth/
 Disallow: /node-js-grunt-tool-installing-troubleshoot/
-Disallow: /nginx-disable-access-to-htaccess-file/
 Disallow: /linux-error-codes/
 Disallow: /install-git-on-centos/
 Disallow: /http2/
