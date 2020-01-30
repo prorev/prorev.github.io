@@ -13,7 +13,7 @@ categories:
 tags:
    - htaccess
 ---
-How to customize Nginx config to disable access to _.htaccess_ file, and other hidden files (starting with the dot)
+How to customize Nginx config to disable access to _.htaccess_ file, and other hidden files (starting with the dot)?
 
 
 Global Restrictions to files starting with the _dot_ (.) would be like this:
