@@ -12,7 +12,7 @@ categories:
 tags:
    - promoted link
 ---
-CNN in a [special edition](https://edition.cnn.com/travel/article/worlds-safest-airlines-2020-airlineratings/index.html) ranked the world most secure airlines based on [airline ratings](https://www.airlineratings.com).
+CNN in a [special edition](https://edition.cnn.com/travel/article/worlds-safest-airlines-2020-airlineratings/index.html){:rel="nofollow"} ranked the world most secure airlines based on [airline ratings](https://www.airlineratings.com){:rel="nofollow"}.
 
 
 **_Qantas_ was ranked as number one most secured airline**.
@@ -35,7 +35,7 @@ _Qantas promo_
 ![qantas japan](/wp-content/uploads/2020/02/qantas.japan.jpg)
 _Qantas promo_
 
-## [STO QANTAS](https://sto.qantas){:rel="nofollow"} 
+## [STO QANTAS] 
 **Staff Travel Online**  (just for stuff)
 
 ![sto qantas](/wp-content/uploads/2020/02/sto.qantas.jpg)
