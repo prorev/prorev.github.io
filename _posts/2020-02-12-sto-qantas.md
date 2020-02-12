@@ -35,7 +35,7 @@ _Qantas promo_
 ![qantas japan](/wp-content/uploads/2020/02/qantas.japan.jpg)
 _Qantas promo_
 
-## [STO QANTAS] 
+## [STO QANTAS](https://sto.qantas.com){:rel="nofollow"} 
 **Staff Travel Online**  (just for stuff)
 
 ![sto qantas](/wp-content/uploads/2020/02/sto.qantas.jpg)
