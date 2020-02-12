@@ -26,18 +26,19 @@ You can check on [twitter](https://twitter.com/Qantas) this year they celebrate,
 ![qantas twitter](/wp-content/uploads/2020/02/qantas.twitter.jpg)
 _Photo from Twitter_
 
-## Promotion
+## How to find Qantas promotion?
+
+### Spirit
+![qantas spirit](/wp-content/uploads/2020/02/qantas.spirit.jpg)
+[_promotion_](https://www.qantas.com/au/en/promotions/spirit.html)
 
 ![qantas perth](/wp-content/uploads/2020/02/qantas.perth.jpg)
-_Qantas promo_
-
+[_promotion_](https://www.qantas.com/au/en/promotions/spirit.html)
 
 ![qantas japan](/wp-content/uploads/2020/02/qantas.japan.jpg)
-_Qantas promo_
+[_promotion_](https://www.qantas.com/au/en/promotions/spirit.html)
 
 ## [STO QANTAS](https://sto.qantas.com){:rel="nofollow"} 
 **Staff Travel Online**  (just for stuff)
 
 ![sto qantas](/wp-content/uploads/2020/02/sto.qantas.jpg)
-
-
