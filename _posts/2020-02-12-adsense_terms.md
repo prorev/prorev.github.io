@@ -5,7 +5,7 @@ date: 2020-02-12
 author: taimane
 layout: post
 permalink: /adsense/terms
-published: true
+published: false
 image: 
 categories: 
    - adsense
