@@ -17,7 +17,7 @@ CNN in a [special edition](https://edition.cnn.com/travel/article/worlds-safest-
 
 **_Qantas_ was ranked as number one most secured airline**.
 
-Qantas is Australia most popular airline, founded in Winton, Queensland on 16 November 1920. They had no fatal accidents almost 70 years.
+Qantas is Australia most popular airline, founded in Winton, Queensland on November 16th 1920. They had no fatal accidents _**almost 70 years**_.
 
 ![qantas plain](/wp-content/uploads/2020/02/qantas.jpg)
 _Photo from CNN_
