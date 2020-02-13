@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=21" }}">
+    <link rel="stylesheet" href="{{ "/assets/css/monokai.css?v=21" }}">
+    <meta name="description" content="{{ page.description }}"/>
+
+    
+    <title> Page Not Found  </title>
+    
+    
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>    
+    <![endif]-->
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35562836-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-35562836-1');
+    </script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header>
+        <a href="/">
+        <img class="logo" src="/assets/img/logo.png" alt="Programming Review" height="90px">
+        </a>
+        
+      </header>
+      <article class="row mb-0">
+        <h1>Sorry, this page could not be found.</h1>
+    
+        <div class="content">
+            <p>Sorry! The page you are looking for doesn't exist or no longer exists. Some options for how to find it:</p>
+    
+            <ol>
+                <li>If you typed in a URL... make sure the spelling, cApitALiZaTiOn, and punctuation are correct. Then try reloading the page.</li>
+                <li>Start over again at the <a href="https://programming-review.com/">homepage</a>.</li>
+                <li>Search for it:
+                    <form method="get" id="search-google" action="https://www.google.com/search" target="_blank">
+                        <input type="hidden" name="sitesearch" value="programming-review.com" />
+                        <input type="text" name="q" maxlength="255" value="" placeholder="Google search" class="form-control" />
+                        <button type="submit" form="search-google" value="Submit">GO</button>
+                    </form>
+                </li>
+            </ol>
+        </div>
+    </article>
+      
+    </div>
+    
+  </body>
+</html>
+
+
