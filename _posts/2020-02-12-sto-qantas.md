@@ -22,7 +22,7 @@ Qantas is Australia most popular airline, founded in Winton, Queensland on 16 No
 ![qantas plain](/wp-content/uploads/2020/02/qantas.jpg)
 _Photo from CNN_
 
-You can check on [twitter](https://twitter.com/Qantas) this year they celebrate, 100 years of service, precisely 16 November 2020.
+You can check on [twitter](https://twitter.com/Qantas) this year they celebrate, 100 years of service, precisely at November 16th 2020.
 ![qantas twitter](/wp-content/uploads/2020/02/qantas.twitter.jpg)
 _Photo from Twitter_
 
