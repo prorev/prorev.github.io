@@ -12,6 +12,8 @@ categories:
 tags:
    - terms
 ---
+When Adsense terms are in question terminology matters. These would be the most precious Adsense terms outlined:
+
 ![pageviews](/wp-content/uploads/2020/02/gad1.jpg)
 ![clicks](/wp-content/uploads/2020/02/gad2.jpg)
 ![ctr](/wp-content/uploads/2020/02/gad3.jpg)
@@ -21,4 +23,6 @@ tags:
 ![ad requests](/wp-content/uploads/2020/02/gad7.jpg)
 ![coverage](/wp-content/uploads/2020/02/gad8.jpg)
 ![top performing units](/wp-content/uploads/2020/02/gad9.jpg)
-336x280, 300x250, 728x90, 160x600
+Historically these are the most performing ads:
+336x280, 300x250, 728x90, 160x600.
+However, responsive ads should perform be even better. 
