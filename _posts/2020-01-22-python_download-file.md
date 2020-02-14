@@ -43,6 +43,7 @@ def download(url, out=None, bar=bar_adaptive):
 
 ## Using `requests`
 
+_Example_:
 ```python
 import requests
 url = 'https://files.pythonhosted.org/packages/68/75/d1d7b7340b9eb6e0388bf95729e63c410b381eb71fe8875cdfd949d8f9ce/setuptools-45.2.0.zip'
@@ -53,6 +54,7 @@ with open('file.zip', 'wb') as handle:
 
 If you need a progress bar:
 
+_Example_:
 ```python
 from tqdm import tqdm
 import requests
@@ -76,4 +78,13 @@ def get(url, params=None, **kwargs):
     :return: :class:`Response <Response>` object
     :rtype: requests.Response
     """
+```
+
+Here is how to unzip file after the download (in case of zip file):
+
+_Example_:
+```python
+import zipfile
+with zipfile.ZipFile('file.zip', 'r') as h:
+    h.extractall('folder')
 ```
