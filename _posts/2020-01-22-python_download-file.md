@@ -45,8 +45,9 @@ def download(url, out=None, bar=bar_adaptive):
 
 ```python
 import requests
+url = 'https://files.pythonhosted.org/packages/68/75/d1d7b7340b9eb6e0388bf95729e63c410b381eb71fe8875cdfd949d8f9ce/setuptools-45.2.0.zip'
 response = requests.get(url, allow_redirects=True) # nostream
-with open('f4.zip', 'wb') as handle:
+with open('file.zip', 'wb') as handle:
     handle.write(response.content)
 ```
 
@@ -55,8 +56,7 @@ If you need a progress bar:
 ```python
 from tqdm import tqdm
 import requests
-
-url = "http://download.thinkbroadband.com/10MB.zip"
+url = 'https://files.pythonhosted.org/packages/68/75/d1d7b7340b9eb6e0388bf95729e63c410b381eb71fe8875cdfd949d8f9ce/setuptools-45.2.0.zip'
 response = requests.get(url, stream=True)
 
 with open('file.zip', 'wb') as handle:
