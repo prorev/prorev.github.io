@@ -13,7 +13,7 @@ tags:
    - download
    - file   
 ---
-To download file in Python you can do many things. Here are some options.
+To download a file in Python you can do many things. Here are some options.
 
 ## Using `wget`
 
