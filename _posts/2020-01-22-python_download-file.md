@@ -16,7 +16,7 @@ tags:
 _Table of contents_:
 - [Using `wget` to download file](#using-wget-to-download-file)
 - [Using `requests` to download file](#using-requests-to-download-file)
-  - [Download file with progress bar:](#download-file-with-progress-bar)
+  - [Download file with progress bar](#download-file-with-progress-bar)
 - [Unzip a file after download](#unzip-a-file-after-download)
 
 To download a file in Python you can do many things. Here are some options:
@@ -58,7 +58,7 @@ with open('file.zip', 'wb') as handle:
     handle.write(response.content)
 ```
 
-### Download file with progress bar:
+### Download file with progress bar
 
 _Example_:
 ```python
