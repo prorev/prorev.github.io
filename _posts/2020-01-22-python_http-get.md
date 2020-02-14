@@ -6,7 +6,6 @@ author: taimane
 layout: post
 permalink: /python/html-get/
 published: true
-image: 
 categories: 
    - python
 tags:
@@ -16,8 +15,12 @@ tags:
 ---
 ![get content](/wp-content/uploads/2020/01/request26_0.jpg)
 
+- [Get html content using `urllib`](#get-html-content-using-urllib)
+- [Get HTML content using `requests`](#get-html-content-using-requests)
+- [HTTP response codes](#http-response-codes)
 
-## Using `urllib` 
+
+## Get html content using `urllib` 
 
 You will probable ignore to use `urllib` to get HTTP content from the web page, since there is newer module called `requests` for that. However, if you need to use _urllib_, here is the tip:
 
@@ -37,7 +40,7 @@ b'<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8"> ... '
 
 > urllib, urllib2 and urllib3 story: ~~urllib2~~ is not present anymore, it has been split to _urllib.request_ and _urllib.error_. _urllib_ you may forget, since there is newer _urllib3_, part of the _requests_. In other words, just use _requests_.
 
-## Using `requests`
+## Get HTML content using `requests`
 
 First you need to install _requests_ from the command line:
 ```
@@ -176,7 +179,7 @@ except:
     print("Error with the request")
 ```
 
-## Appendix HTML response codes
+## HTTP response codes
 
 While you create http requests to get the URL content and expect _200	OK_ it is nice to have this overview of the response status codes you may also get in some cases.
 

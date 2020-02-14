@@ -13,9 +13,15 @@ tags:
    - download
    - file   
 ---
-To download a file in Python you can do many things. Here are some options.
+_Table of contents_:
+- [Using `wget` to download file](#using-wget-to-download-file)
+- [Using `requests` to download file](#using-requests-to-download-file)
+  - [Download file with progress bar:](#download-file-with-progress-bar)
+- [Unzip a file after download](#unzip-a-file-after-download)
 
-## Using `wget`
+To download a file in Python you can do many things. Here are some options:
+
+## Using `wget` to download file
 
 You will need to install wget first:
 `pip install wget` since wget is not in standard library.
@@ -41,7 +47,7 @@ def download(url, out=None, bar=bar_adaptive):
     """
 ```
 
-## Using `requests`
+## Using `requests` to download file
 
 _Example_:
 ```python
@@ -52,7 +58,7 @@ with open('file.zip', 'wb') as handle:
     handle.write(response.content)
 ```
 
-If you need a progress bar:
+### Download file with progress bar:
 
 _Example_:
 ```python
@@ -79,8 +85,9 @@ def get(url, params=None, **kwargs):
     :rtype: requests.Response
     """
 ```
+## Unzip a file after download
 
-Here is how to unzip file after the download (in case of zip file):
+Here is how to unzip file after file download (in case of zip file):
 
 _Example_:
 ```python
