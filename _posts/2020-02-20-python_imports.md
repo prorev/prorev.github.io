@@ -1,0 +1,45 @@
+---
+id: 12971
+title: Python `imports` like a pro
+date: 2020-02-20
+author: taimane
+layout: post
+permalink: /python/imports
+published: false
+image: 
+categories: 
+   - python
+tags:
+   - imports
+---
+- [What is Python imports?](#what-is-python-imports)
+- [What can be imported?](#what-can-be-imported)
+- [Relative and abolute imports](#relative-and-abolute-imports)
+- [Example](#example)
+
+To master Python `imports` like a pro you need to experiment with these three imports:
+
+* Import a Python **standard library**
+* Import Python **third party package**
+* Import from **local** packages
+
+ You’ve learned the best practices for writing import statements, and you know the difference between absolute and relative imports.
+
+You will also need to understand that most frequent imports are:
+*  **package** import 
+*  **subpackage** import 
+*  **module** import 
+*  **class** and
+*  **function** import
+
+But you can also import a **constant**.
+
+Finally you need to make practice in both **relative** and **absolute** import style.
+
+## What is Python imports?
+
+
+## What can be imported?
+## Relative and abolute imports
+## Example 
+
