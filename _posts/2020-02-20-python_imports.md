@@ -13,6 +13,7 @@ tags:
    - imports
 ---
 - [What is Python imports?](#what-is-python-imports)
+- [Importing a package](#importing-a-package)
 - [What can be imported?](#what-can-be-imported)
 - [Relative and abolute imports](#relative-and-abolute-imports)
 - [Example](#example)
@@ -38,6 +39,9 @@ Finally you need to make practice in both **relative** and **absolute** import s
 
 ## What is Python imports?
 
+## Importing a package
+
+Importing a package means to import the package's __init__.py file as a module.
 
 ## What can be imported?
 ## Relative and abolute imports
