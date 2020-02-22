@@ -24,7 +24,7 @@ _Table of contents:_
     - [error_bad_lines=False](#errorbadlinesfalse)
   - [Read dataframe from the CSV file](#read-dataframe-from-the-csv-file)
   - [Read dataframe from URL](#read-dataframe-from-url)
-  - [Read dataframe from HTML](#read-dataframe-from-html)
+  - [Read dataframe from HTML page](#read-dataframe-from-html-page)
 
 ![pandas](/wp-content/uploads/2020/02/pandas.jpg)
 
@@ -344,7 +344,23 @@ c=pd.read_csv(io.StringIO(s.decode('utf-8')))
 _Output:_
 ![loaded data](/wp-content/uploads/2020/02/pandas3.jpg)
 
-### Read dataframe from HTML
+### Read dataframe from HTML page
 
+If there is a table on a web page page, pandas can read that. 
 
+_Example:_
+```python
+import pandas as pd
+df = pd.read_html(r"https://en.wikipedia.org/wiki/Comparison_of_web_browsers")[0]
+df
+```
+This is equivalent to:
+```python
+url = 'https://en.wikipedia.org/wiki/Comparison_of_web_browsers'
+html_data = requests.get(url)
+df = pd.read_html(html_data.text)[0]
+df
+```
 
+_Output:_
+![browsers](/wp-content/uploads/2020/02/pandas4.jpg)
