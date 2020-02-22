@@ -337,7 +337,7 @@ _Example:_
 import pandas as pd
 import io
 import requests
-url="https://programming-review.com/wp-content/uploads/cities.csv"
+url='https://programming-review.com/wp-content/uploads/cities.csv'
 s=requests.get(url).content
 c=pd.read_csv(io.StringIO(s.decode('utf-8')))
 ```
@@ -351,7 +351,7 @@ If there is a table on a web page page, pandas can read that.
 _Example:_
 ```python
 import pandas as pd
-df = pd.read_html(r"https://en.wikipedia.org/wiki/Comparison_of_web_browsers")[0]
+df = pd.read_html('https://en.wikipedia.org/wiki/Comparison_of_web_browsers')[0]
 df
 ```
 This is equivalent to:
