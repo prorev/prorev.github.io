@@ -23,7 +23,7 @@ _Table of contents:_
     - [New line as a separator](#new-line-as-a-separator)
     - [error_bad_lines=False](#errorbadlinesfalse)
   - [Read dataframe from the CSV file](#read-dataframe-from-the-csv-file)
-  - [Read dataframe from URL](#read-dataframe-from-url)
+  - [Read dataframe from remote csv file](#read-dataframe-from-remote-csv-file)
   - [Read dataframe from HTML page](#read-dataframe-from-html-page)
 
 ![pandas](/wp-content/uploads/2020/02/pandas.jpg)
@@ -326,7 +326,7 @@ Usually **utf-8** encoding, should cover the non-standard characters. If this do
 
 In some cases you may get the parsing errors. If this is the case, use the **engine='python'** option.
 
-### Read dataframe from URL
+### Read dataframe from remote csv file
 
 Again, the same `read_csv` function works. This time we will use the `requests` package.
 
