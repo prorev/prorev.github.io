@@ -139,6 +139,7 @@ Date and time is:
 ## Command line arguments
 
 ### Basic switches:
+
 []() | []() 
 ---------|----------
  -h, --help           |  show this help message and exit
