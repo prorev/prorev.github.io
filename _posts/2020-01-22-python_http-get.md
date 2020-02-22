@@ -16,7 +16,10 @@ tags:
 ![get content](/wp-content/uploads/2020/01/request26_0.jpg)
 
 - [Get html content using `urllib`](#get-html-content-using-urllib)
-- [Get HTML content using `requests`](#get-html-content-using-requests)
+- [Get html content using `requests`](#get-html-content-using-requests)
+- [Get a text file using requests](#get-a-text-file-using-requests)
+- [Get a binary file using requests](#get-a-binary-file-using-requests)
+- [Get any file using wget](#get-any-file-using-wget)
 - [HTTP response codes](#http-response-codes)
 
 
@@ -40,7 +43,7 @@ b'<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8"> ... '
 
 > urllib, urllib2 and urllib3 story: ~~urllib2~~ is not present anymore, it has been split to _urllib.request_ and _urllib.error_. _urllib_ you may forget, since there is newer _urllib3_, part of the _requests_. In other words, just use _requests_.
 
-## Get HTML content using `requests`
+## Get html content using `requests`
 
 First you need to install _requests_ from the command line:
 ```
@@ -178,6 +181,51 @@ try:
 except:
     print("Error with the request")
 ```
+## Get a text file using requests
+
+Here is how to download a file using requests.
+
+_Example:_
+```python
+import pandas as pd
+import io
+import requests
+url="https://programming-review.com/wp-content/uploads/cities.csv"
+bytes_data =requests.get(url).content
+text =bytes_data.decode('utf-8') 
+
+with open('cities.csv', 'w') as file:
+    file.write(text)
+#dataframe=pd.read_csv(io.StringIO(text))
+dataframe=pd.read_csv('cities.csv')
+dataframe
+```
+_Output:_
+![loaded data](/wp-content/uploads/2020/02/pandas3.jpg)
+
+## Get a binary file using requests
+
+_Example:_
+```python
+import requests
+url="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+r = requests.get(url)
+with open('google.logo.png', 'wb') as f:
+    f.write(r.content)
+```
+
+## Get any file using wget
+
+_Example:_
+```python
+import wget
+url = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
+try:
+    wget.download(url, 'google.logo.png')
+except:
+  print("An exception occurred") 
+```
+
 
 ## HTTP response codes
 

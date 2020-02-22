@@ -1,10 +1,10 @@
 ---
 id: 12971
-title: Python Pandas basic stuff
+title: Pandas load data
 date: 2020-01-22
 author: taimane
 layout: post
-permalink: /python/pandas
+permalink: /python/pandas-load-data
 published: false
 image: 
 categories: 
@@ -12,374 +12,339 @@ categories:
 tags:
    - pandas
    - string
-   - tables
+   - load
 ---
 _Table of contents:_
-- [The size of a single character](#the-size-of-a-single-character)
-- [The size of the empty string](#the-size-of-the-empty-string)
-- [Tricky interning](#tricky-interning)
-- [String operations](#string-operations)
-  - [Concatenation](#concatenation)
-  - [Splitting strings](#splitting-strings)
-    - [Splitting by character](#splitting-by-character)
-    - [Splitting by multiple characters](#splitting-by-multiple-characters)
-    - [Splitting by word](#splitting-by-word)
-    - [Splitting using splitlines()](#splitting-using-splitlines)
-  - [Joining list elements to a string](#joining-list-elements-to-a-string)
-  - [String explosion to chars](#string-explosion-to-chars)
-  - [Reverse string](#reverse-string)
-- [Appendix : String Methods](#appendix--string-methods)
-- [String literals notation](#string-literals-notation)
+- [Creating a dataframe](#creating-a-dataframe)
+  - [Read textual dataframe](#read-textual-dataframe)
+    - [Comma separator](#comma-separator)
+    - [Space as separator](#space-as-separator)
+    - [More than 1 spaces as separator](#more-than-1-spaces-as-separator)
+    - [New line as a separator](#new-line-as-a-separator)
+    - [error_bad_lines=False](#errorbadlinesfalse)
+  - [Read dataframe from the CSV file](#read-dataframe-from-the-csv-file)
+  - [Read dataframe from URL](#read-dataframe-from-url)
+  - [Read dataframe from HTML](#read-dataframe-from-html)
 
----
-![str](/wp-content/uploads/2020/01/string25_0.jpg)
+![pandas](/wp-content/uploads/2020/02/pandas.jpg)
 
-Let's start observing the Python strings.
+## Creating a dataframe
+
+Let's create a dataframe in pandas. Dataframe is **a table**. To create a table we just need the table size.
 
 _Example:_
 ```python
-s = 'string ☕'
-print(type(s))
-print(len(s))
+df = pd.DataFrame(index=range(14),columns=range(7))
+print(df)
 ```
 _Output:_
-```
-<class 'str'>
-8
-```
+![pandas dataframe](/wp-content/uploads/2020/02/pandas1.jpg)
 
-If you create a simple string `s` you will get the class of string is _str_, and the length of string is 8 characters.
+In here we set the 7 columns and 14 rows. Note how in python pandas the start index is always 0
 
-This doesn't tell much. Let's create several examples nailing it down what strings really are.
-
-## The size of a single character
+To create a dataframe you my provide the column names and row index names.
 
 _Example:_
 ```python
-s  = 'a'
-takes_bytes = sys.getsizeof(s+s)-sys.getsizeof(s)
-print(takes_bytes)
-print(ord(s))
-
-s  = 'а'
-takes_bytes = sys.getsizeof(s+s)-sys.getsizeof(s)
-print(takes_bytes)
-print(ord(s))
+import pandas as pd 
+df = pd.DataFrame(index=['a', 'b', 'c'], columns=['time', 'date', 'name'])
+print(df)
+print(df.values)
 ```
 
 _Output:_
 ```
-1
-97
-2
-1072
+  time date name
+a  NaN  NaN  NaN
+b  NaN  NaN  NaN
+c  NaN  NaN  NaN
+[[nan nan nan]
+ [nan nan nan]
+ [nan nan nan]]
 ```
+As yuo may mark in the output when we called `print(df.values)`. What is this. It looks like a list.
 
-What!?
+Actually if we check the type of that object we will get `type(df.values)` is *numpy.ndarray*.
 
-_Why there is a difference? Isn't `a` the same as `а`?_
+> Like Don Quixote is on ass, Pandas is on Numpy.
 
-They are not. The first _a_ uses 1 byte per char, and the `ord` function returns the code point for _a_ is 97. The second _а_ code point is 1072. 
+<big>Does this just menas we need Numpy array to provide data to pandas dataframe?</big>
+
+Yes, but pandas is smart. Consider this example:
 
 _Example:_
 ```python
-str  = '👍'
-takes_bytes = sys.getsizeof(str+str)-sys.getsizeof(str)
-print(takes_bytes)
-print(ord(str))
+
+data = pd.DataFrame([[10, 11, 12, 13, 14],
+                   [22, 23, 24, 25, 26], 
+                   [31, 32, 33, 34, 35]])
+print(data)
 ```
 _Output:_
 ```
-4
-128077
+    0   1   2   3   4
+0  10  11  12  13  14
+1  22  23  24  25  26
+2  31  32  33  34  35
+```
+In here we haven't provided any Numpy arrays, the input data for the DataFrame was list of lists.
+
+<big>What will happen infernally?</big>
+```
+import numpy as np
+ll = [[10, 11, 12, 12, 14],
+      [22, 23, 21, 22, 23], 
+      [31, 35, 32, 34, 34]]
+npa = np.asarray(ll)      
+data = pd.DataFrame(npa)
+print(data)
 ```
 
-In here the code point for the `👍` character is 128077
+This will also work:
 
-> Python strings use three kind of chars: 1 byte char, 2 bytes char, and 4 bytes char.
+```
+data = pd.DataFrame({'Col1': [10, 11, 12, 13, 14],
+                  'Col2': [22, 23, 24, 25, 26], 
+                  'Col3': [31, 32, 33, 34, 35]})
+print(data)
+```
 
+_Output:_
+```
+   Col1  Col2  Col3
+0    10    22    31
+1    11    23    32
+2    12    24    33
+3    13    25    34
+4    14    26    35
+```
 
-## The size of the empty string
+If we plan to set the row names, this would be also possible:
 
-Another paradox:
+_Example:_
+```
+data = pd.DataFrame({'Col1': [10, 11, 12, 13, 14],
+                  'Col2': [22, 23, 24, 25, 26], 
+                  'Col3': [31, 32, 33, 34, 35]},
+                  index=['row1', 'row2', 'row3', 'row4', 'row5'])
+print(data)
+```
+Output:
+```
+      Col1  Col2  Col3
+row1    10    22    31
+row2    11    23    32
+row3    12    24    33
+row4    13    25    34
+row5    14    26    35
+```
+### Read textual dataframe 
+
+#### Comma separator
+
+First example will use the `read_csv()` function to read a multiline text. CSV means _Comma Separated Values_. Using csv format is very frequent in pandas.
 
 _Example:_
 ```python
-import sys
-str  = ''
-sys.getsizeof(str)
+import pandas as pd
+import io
+
+text=u"""asdf,333
+asdf,444
+asdf,555"""
+
+df=pd.read_csv(io.StringIO(text), 
+               sep=r',', 
+               header=None, 
+               engine='python', 
+               encoding = "iso-8859-1")
+print(df)
+```
+_Output:_
+```
+      0    1
+0  asdf  333
+1  asdf  444
+2  asdf  555
+```
+> Default `read_csv` separator is `sep=r','`.
+
+
+#### Space as separator
+
+Let's now use the same function but **space as a separator**.
+
+```python
+import pandas as pd
+import io
+
+temp=u"""
+NSW     VIC
+6718023   5023203
+6735528 5048207
+6742690  5061266
+6766133     5083593
+6786160 5103965"""
+
+df=pd.read_csv(io.StringIO(temp), 
+                sep=r'\s{1,}', # one or more spaces
+                engine='python', 
+                encoding = "iso-8859-1")
+print(df)
 ```
 
 _Output:_
 ```
-51
+       NSW      VIC
+0  6718023  5023203
+1  6735528  5048207
+2  6742690  5061266
+3  6766133  5083593
+4  6786160  5103965
 ```
+#### More than 1 spaces as separator
+
+The next example will have NEW YORK as the index name, however, this should still be the single index name.
 
 _Example:_
 ```python
-import sys
-str  = ' '
-sys.getsizeof(str)
+import pandas as pd
+import io
+
+s=u"""      one  two  three  four
+INDIANA     0    1      2     3
+COLORADO    4    5      6     7
+NEW YORK    8    9     10    11
+"""
+
+df =pd.read_csv(io.StringIO(s), 
+                sep=r'\s{2,}', # one or more spaces
+                engine='python', 
+                encoding="iso-8859-1")
+print(df)
 ```
+The solution in here is to use two spaces as a separator.
 
 _Output:_
 ```
-50
+          one  two  three  four
+INDIANA     0    1      2     3
+COLORADO    4    5      6     7
+NEW YORK    8    9     10    11
 ```
 
-What!?
+In here the dataframe index names are:
+* INDIANA
+* COLORADO
+* NEW YORK 
 
-Python empty strings takes more space than the simple space string. It's true.
+#### New line as a separator
 
-> Python strings will take initially 50+ bytes to store information such as: length, length in bytes, hash, the encoding, and different string flags.
-
-
-## Tricky interning
-
-When working with short strings, python may internally memorize the same character under the same memory address. This is called _string interning_.
-
-```python
-s = 'the example'
-print(s)
-print(s[2], s[4], s[10])
-id(s[1]), id(s[4]), id(s[10])
-```
-_Output:_
-```
-the example
-e e e
-(2172370743728, 2172340813616, 2172340813616)
-```
-In here the characters _e_ from the word _"example"_ point to the same memory address. This saves memory.
-
-Things get more evident in the next example:
-_Example:_
-```python
-s = 'eee'
-print(s)
-print(s[0], s[1], s[2])
-id(s[0]), id(s[1]), id(s[2])
-```
-_Output:_
-```
-eee
-e e e
-2172340813616, 2172340813616, 2172340813616 
-```
-
-
-## String operations
-
-
-### Concatenation
-
-Let's create a string of first 99 numbers:
+Very similar example, but now, we use the new line as a separator.
 
 _Example:_
 ```python
-s = ''
-for x in range(1,100):
-  s=s+str(x)
-  
-print s
-```
-_Output:_
-```
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+from io import StringIO
+import pandas as pd
+
+text="""The lion (Panthera leo) is a species in the family Felidae.
+It is a muscular, deep-chested cat with a short, rounded head.
+A reduced neck and round ears, and a hairy tuft at the end of its tail. 
+The lion males are larger than females.
+A typical weight range of 150 to 250 kg (330 to 550 lb) for males and 120 to 182 kg (265 to 400 lb) for females."""
+df =pd.read_csv(StringIO(text),
+                sep=r'\n', 
+                header=None, 
+                engine='python', 
+                encoding = "iso-8859-1", 
+                names=["cname"])
+print(df)
+print("size:", df.size)
 ```
 
-What we just did in here? We used the string concatenation operator `+`, and we converted each integer number from the range 1..100 into a string with the `str()` function.
+Output:
+![loaded data](/wp-content/uploads/2020/02/pandas2.jpg)
 
-Next we should use the `*` operator on strings.
+#### error_bad_lines=False
+
+One special option to read so called **bad lines**, where the code execution will fail is the `error_bad_lines=False`.
+
+_Example:_
+```
+import pandas as pd
+import io
+
+s=u"""      one  two  three  four
+INDIANA     0    1      2     3
+COLORADO    4    5      6     7
+NEW YORK    8    9     10    11
+"""
+
+df =pd.read_csv(io.StringIO(s), 
+                sep=r'\s{1,}', # one or more spaces
+                engine='python', 
+                error_bad_lines=False,
+                encoding = "iso-8859-1")
+print(df)
+```
+In here the NEW YORK row will fail, because it has extra column. If we use the `error_bad_lines=False` option we will ignore this problem.
+
+Output:
+```
+          one  two  three  four
+INDIANA     0    1      2     3
+COLORADO    4    5      6     7
+
+Skipping line 4: Expected 5 fields in line 4, saw 6. Error could possibly be due to quotes being ignored when a multi-char delimiter is used.
+```
+
+
+### Read dataframe from the CSV file
+
+Another approach would be to read the CSV on disk file.
+
+Again we will use `read_csv` function which is [almost identical](https://github.com/pandas-dev/pandas/blob/master/pandas/io/parsers.py#L681){:rel="nofollow"} as the `read_table` function. The only difference is: 
+* `read_csv` uses comma separator
+* `read_table` uses tab as separator
+
+Usually the code to read the csv file will be short as this:
+
+```python
+import pandas as pd 
+dataframe = pd.read_csv("test.csv") 
+```
+<big>Problems when loading csv files:</big>
+
+First if there is no file you may get the `FileNotFoundError`. Frequent problem is the `UnicodeDecodeError`, where you should first to understand the encoding of your file. To get the encoding of a file on Linux you may run `file -i` command and use that. If you think the things will work with the **utf-8** encoding, you may use this trick:
+
+* Read the text from a file
+* Decode the text with `text.decode('utf-8')`
+
+Usually **utf-8** encoding, should cover the non-standard characters. If this doesn't work try with the **utf-16** encoding. 
+
+> To fix the encoding problems you may use your editor and save csv file to particular encoding.
+
+In some cases you may get the parsing errors. If this is the case, use the **engine='python'** option.
+
+### Read dataframe from URL
+
+Again, the same `read_csv` function works. This time we will use the `requests` package.
+
+<sub>Check here -> [how to use requests package](https://programming-review.com/python/html-get/).</sub>
 
 _Example:_
 ```python
-'string'*3
-```
-
-_Output:_
-```
-'stringstringstring'
-```
-
-This would be again concatenation.
-
-> Note in Python strings do not have the `append()` method like in Java. In Python the `append` function works on lists.
-
-
-### Splitting strings 
-
-Python `split()` is one of the finest splitting methods in the world. It works on characters, special characters or on words.
-
-#### Splitting by character
-
-
-_Example:_
-```python
-txt = 'May the force be with you'
-spl = txt.split('a')
-print(spl) 
-```
-
-_Output:_
-```
-['M', 'y the force be with you']
-```
-_By default_ if you don't provide any argument to `split()` it will split by any whitespace including regular space, non breaking space, new line, tabulator, etc.
-
-_Example:_
-```python
-txt = 'May the force be with you'
-spl = txt.split()
-print(spl) 
+import pandas as pd
+import io
+import requests
+url="https://programming-review.com/wp-content/uploads/cities.csv"
+s=requests.get(url).content
+c=pd.read_csv(io.StringIO(s.decode('utf-8')))
 ```
 _Output:_
-```
-['May', 'the', 'force', 'be', 'with', 'you']
-```
+![loaded data](/wp-content/uploads/2020/02/pandas3.jpg)
 
-#### Splitting by multiple characters
-
-_Example:_
-```python
-import re
-res = re.split('[aeiou]', 'May the force be with you.')
-print(res)
-```
-
-_Output:_
-```
-['M', 'y th', ' f', 'rc', ' b', ' w', 'th y', '', '.']
-```
+### Read dataframe from HTML
 
 
-#### Splitting by word
 
-_Example:_
-```python
-txt = 'May the force be with you'
-spl = txt.split('force')
-print(spl) 
-```
-
-_Output:_
-```
-['May the ', ' be with you']
-```
-
-#### Splitting using splitlines()
-
-In some cases we need to split the text into lines first. For that we use `splitlines()`.
-
-_Example:_
-```python
-text='''file1.txt 2012 How to split text with success?
-file2.txt 2013 How do we stop splitting?
-file3.txt 2020 Example maxsplit and splitlines'''
-
-list =[]
-
-for line in text.splitlines():
-    list.append(line.split(' ', maxsplit=2))
-    
-list 
-```
-_Output:_
-```
-[['file1.txt', '2012', 'How to split text with success?'],
- ['file2.txt', '2013', 'How do we stop splitting?'],
- ['file3.txt', '2020', 'Example of maxsplit and splitlines']]
-```
-
-
-### Joining list elements to a string
-
-_Example:_
-```python
-lst = ['Join', 'list', 'elements', 'to', 'a', 'string']
-s = ''.join(lst)
-print(s)
-```
-_Output:_
-```
-Joinlistelementstoastring
-```
-
-That's strange! With an additional improvement we will fix it.
-_Example:_
-```python
-lst = ['Join', 'list', 'elements', 'to', 'a', 'string']
-s = ' '.join(lst)
-print(s)
-```
-_Output:_
-```
-Join list elements to a string
-```
-
-### String explosion to chars
-
-In PHP there is `explode` method on strings. There is no such method in Python, instead you do the explosion like this:
-
-_Example:_
-```python
-lst = [x for x in 'explode']
-print(lst)
-```
-_Output:_
-```
-['e', 'x', 'p', 'l', 'o', 'd', 'e']
-```
-
-### Reverse string
-
-Programming tutorials usually have examples on how to reverse a string. This is easy in Python:
-
-_Example:_
-```python
-str = 'reverse'
-str = str[::-1]
-print(str)
-```
-_Output:_
-```
-esrever
-```
-
-
-## Appendix : String Methods
-
-| []()       | []()         | []()       
-| ---------- | ------------ | ---------- 
-| capitalize | casefold     | center     
-| count      | encode       | endswith   
-| expandtabs | find         | format     
-| format_map | index        | isalnum    
-| isalpha    | isascii      | isdecimal  
-| isdigit    | isidentifier | islower    
-| isnumeric  | isprintable  | isspace    
-| istitle    | isupper      | join       
-| ljust      | lower        | lstrip     
-| maketrans  | partition    | replace    
-| rfind      | rindex       | rjust      
-| rpartition | rsplit       | rstrip     
-| split      | splitlines   | startswith 
-| strip      | swapcase     | title      
-| translate  | upper        | zfill      
-
-
-## String literals notation
-
-You can use both of the notations using single quotes `''` or double quotes `""`.
-
-However, for printing Python uses single quotes.
-
-_Example:_
-```python
-l= ["string" , 'string']
-print(l)
-```
-_Output:_
-```
-['string', 'string']
-```
