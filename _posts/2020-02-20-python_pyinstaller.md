@@ -112,18 +112,26 @@ You can edit the `getdatetime.spec` file and name your output executable other w
 
 There is another way. You can run PyInstaller with this command:
 ```
-pyinstaller getdatetime.py
+pyinstaller --onedir getdatetime.py
 ```
-This time we don't use `--onefile` switch. Inside the dist folder we now have **different output**. Recall that with the `--onefile` option we had just a **single file** output.
+This time we use `--onedir` switch. Inside the dist folder we now have **different output**. Recall that with the `--onefile` option we had just a **single file** output.
 
 ![list of files](/wp-content/uploads/2020/02/pyinstaller2.jpg)
 
-To run the executable and to get the output we should call from the command line:
+
+> There are many `.so` files inside our **dist** folder. Files with `.so` extension are _Shared Objects_ files. In Windows these would be `.dll`s. Under Linux you can get some feedback on `.so` files using `ldd` command.
+
+
+To run the final executable and to get the output we should call from the command line:
 ```
 /content/dist/getdatetime/getdatetime
 ```
 
-> There are many `.so` files inside our **dist** folder. Files with `.so` extension are _Shared Objects_ files. In Windows these would be `.dll`s. Under Linux you can get some feedback on `.so` files using `ldd` command.
+_Output:_
+```
+Date and time is: 
+2020-02-22 12:02:15
+```
 
 
 ## List of switches (command line arguments)
