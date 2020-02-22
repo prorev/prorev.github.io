@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Python `imports` like a pro
+title: Master Python `imports` like a pro
 date: 2020-02-20
 author: taimane
 layout: post
@@ -33,7 +33,7 @@ You will also need to understand that most frequent imports are:
 *  **class** and
 *  **function** import
 
-But you can also import a **constant**.
+, but you can also import a **constant**.
 
 Finally you need to make practice in both **relative** and **absolute** import style.
 
