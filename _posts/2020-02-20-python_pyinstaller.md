@@ -6,7 +6,7 @@ author: taimane
 layout: post
 permalink: /python/pyinstaller
 published: true
-image: https://realpython.com/pyinstaller-python/
+image: 
 categories: 
    - python
 tags:
@@ -19,7 +19,9 @@ _Table of contents:_
 - [Experiment: creating the installation](#experiment-creating-the-installation)
 - [What will PyInstaller do?](#what-will-pyinstaller-do)
 - [When PyInstaller output is not a single file](#when-pyinstaller-output-is-not-a-single-file)
-- [List of switches (command line arguments)](#list-of-switches-command-line-arguments)
+- [Command line arguments](#command-line-arguments)
+  - [Basic switches:](#basic-switches)
+  - [Output to generate:](#output-to-generate)
 
 Thanks to **PyInstaller** it is now _easy_ to create the installation for a Python based project you distribute to: Linux, Windows or MacOS. In here I will examine the **PyInstaller on Linux**.
 
@@ -110,7 +112,7 @@ You can edit the `getdatetime.spec` file and name your output executable other w
 
 ## When PyInstaller output is not a single file
 
-There is another way. You can run PyInstaller with this command:
+There is another way. You can run PyInstaller with [this command](#output-to-generate):
 ```
 pyinstaller --onedir getdatetime.py
 ```
@@ -134,9 +136,9 @@ Date and time is:
 ```
 
 
-## List of switches (command line arguments)
+## Command line arguments
 
-**Basic switches:**
+### Basic switches:
 []() | []() 
 ---------|----------
  -h, --help           |  show this help message and exit
@@ -148,7 +150,7 @@ Date and time is:
 --clean               |Clean PyInstaller cache and remove temporary files before building.
 --log-level LEVEL     |Amount of detail in build-time console messages. LEVEL may be one of TRACE, DEBUG, INFO, WARN, ERROR, CRITICAL (default: INFO).
 
-**What to generate:**
+### Output to generate:
 
 []() | []() 
 ---------|----------
