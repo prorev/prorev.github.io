@@ -22,6 +22,7 @@ tags:
     - [Splitting by character](#splitting-by-character)
     - [Splitting by multiple characters](#splitting-by-multiple-characters)
     - [Splitting by word](#splitting-by-word)
+    - [Splitting using splitlines()](#splitting-using-splitlines)
   - [Joining list elements to a string](#joining-list-elements-to-a-string)
   - [String explosion to chars](#string-explosion-to-chars)
   - [Reverse string](#reverse-string)
@@ -263,6 +264,32 @@ _Output:_
 ```
 ['May the ', ' be with you']
 ```
+
+#### Splitting using splitlines()
+
+In some cases we need to split the text into lines first. For that we use `splitlines()`.
+
+_Example:_
+```
+text='''file1.txt 2012 How to split text with success?
+file2.txt 2013 How do we stop splitting?
+file3.txt 2020 Example of maxsplit and splitlines'''
+
+list =[]
+
+for line in text.splitlines():
+    list.append(line.split(' ', maxsplit=2))
+    
+list 
+```
+_Output:_
+```
+[['file1.txt', '2012', 'How to split text with success?'],
+ ['file2.txt', '2013', 'How do we stop splitting?'],
+ ['file3.txt', '2020', 'Example of maxsplit and splitlines']]
+```
+
+
 ### Joining list elements to a string
 
 _Example:_
