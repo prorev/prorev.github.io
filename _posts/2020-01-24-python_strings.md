@@ -273,7 +273,7 @@ _Example:_
 ```python
 text='''file1.txt 2012 How to split text with success?
 file2.txt 2013 How do we stop splitting?
-file3.txt 2020 Example of maxsplit and splitlines'''
+file3.txt 2020 Example maxsplit and splitlines'''
 
 list =[]
 
