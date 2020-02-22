@@ -14,6 +14,7 @@ tags:
    - installer
    - linux
 ---
+_Table of contents:_
 - [Install the PyInstaller](#install-the-pyinstaller)
 - [Experiment: creating the installation](#experiment-creating-the-installation)
 - [What will PyInstaller do?](#what-will-pyinstaller-do)
@@ -148,3 +149,4 @@ What to generate:
 -n NAME, --name NAME  |Name to assign to the bundled app and spec file (default: first script's basename)
 
 
+<!-- https://github.com/pyinstaller/pyinstaller/wiki/Supported-Packages -->
