@@ -1,18 +1,20 @@
 ---
 id: 12971
-title: Python strings
+title: Python Pandas basic stuff
 date: 2020-01-22
 author: taimane
 layout: post
-permalink: /python/strings
-published: true
+permalink: /python/pandas
+published: false
 image: 
 categories: 
    - python
 tags:
+   - pandas
    - string
+   - tables
 ---
-
+_Table of contents:_
 - [The size of a single character](#the-size-of-a-single-character)
 - [The size of the empty string](#the-size-of-the-empty-string)
 - [Tricky interning](#tricky-interning)
@@ -271,8 +273,8 @@ In some cases we need to split the text into lines first. For that we use `split
 
 _Example:_
 ```python
-text='''file1.txt 2012 How to split text into lines?
-file2.txt 2013 How do we stop splitting after several splits?
+text='''file1.txt 2012 How to split text with success?
+file2.txt 2013 How do we stop splitting?
 file3.txt 2020 Example maxsplit and splitlines'''
 
 list =[]
