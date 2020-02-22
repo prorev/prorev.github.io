@@ -128,6 +128,7 @@ To run the executable and to get the output we should call from the command line
 
 ## List of switches (command line arguments)
 
+**Basic switches:**
 []() | []() 
 ---------|----------
  -h, --help           |  show this help message and exit
@@ -139,7 +140,7 @@ To run the executable and to get the output we should call from the command line
 --clean               |Clean PyInstaller cache and remove temporary files before building.
 --log-level LEVEL     |Amount of detail in build-time console messages. LEVEL may be one of TRACE, DEBUG, INFO, WARN, ERROR, CRITICAL (default: INFO).
 
-What to generate:
+**What to generate:**
 
 []() | []() 
 ---------|----------
