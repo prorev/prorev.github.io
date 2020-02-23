@@ -14,6 +14,8 @@ tags:
    - string
    - load
 ---
+Pandas is a a great package for **data analysis**. It is required by packages such as: xarray, seaborn, pymc3, plotnine, magenta, google-colab, featuretools, fastai, and others. In here the we discuss how to load data into pandas dataframe.
+
 _Table of contents:_
 - [Creating a dataframe](#creating-a-dataframe)
   - [Read textual dataframe](#read-textual-dataframe)
@@ -66,7 +68,7 @@ From the output when we printed `print(df.values)` we got something that looks l
 
 Actually if we check the type of `type(df.values)` object we will find this is *numpy.ndarray*.
 
-> Like Don Quixote is on ass, Pandas is on Numpy.
+> Pandas requires numpy, python-dateutil and pytz packages. Confirm that with `pip show pandas`.
 
 <big>Does this just mean we need **Numpy array** to provide data to pandas dataframe?</big>
 
