@@ -70,7 +70,7 @@ Actually if we check the type of `type(df.values)` object we will find this is *
 
 > Pandas requires numpy, python-dateutil and pytz packages. Confirm that with `pip show pandas`.
 
-<big>Does this just mean we need **Numpy array** to provide data to pandas dataframe?</big>
+<big>Does this just mean we need **numpy array** to provide data to pandas dataframe?</big>
 
 No, because pandas is smart. Consider this example:
 
@@ -89,9 +89,9 @@ _Output:_
 1  22  23  24  25  26
 2  31  32  33  34  35
 ```
-In here we haven't provided Numpy arrays, instead the input data for the DataFrame is _list of lists_.
+In here we haven't provided numpy arrays, instead the input data for the DataFrame is _list of lists_.
 
-<big>What will happen internally?</big> Internally, pandas will convert the list of lists to Numpy array. 
+<big>What will happen internally?</big> Internally, pandas will convert the list of lists to numpy array. 
 
 _Example:_
 ```python
