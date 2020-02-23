@@ -268,10 +268,10 @@ _Output:_
 
 #### error_bad_lines=False
 
-One special option to read so called **bad lines**, where the code execution will fail is the `error_bad_lines=False`.
+One special option to read *bad lines*, would be `error_bad_lines=False`.
 
 _Example:_
-```
+```python
 import pandas as pd
 import io
 
