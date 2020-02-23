@@ -30,7 +30,7 @@ _Table of contents:_
 
 ## Creating a dataframe
 
-Let's create a dataframe in pandas. Dataframe is **a table**. To create a table we just need the table size.
+Let's create a dataframe in pandas. Simplified a **dataframe** is **a table**. To create a table we just need the table size.
 
 _Example:_
 ```python
