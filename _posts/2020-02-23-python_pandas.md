@@ -14,7 +14,7 @@ tags:
    - string
    - load
 ---
-Pandas is a a great package for **data analysis**. It is required by packages such as: xarray, seaborn, pymc3, plotnine, magenta, google-colab, featuretools, fastai, and others. In here the we discuss how to load data into pandas dataframe.
+Pandas is a a great package for **data analysis**. It is required by packages such as: xarray, seaborn, pymc3, plotnine, magenta, google-colab, featuretools, fastai, and others. In here we discuss how to load data into pandas dataframe.
 
 _Table of contents:_
 - [Creating a dataframe](#creating-a-dataframe)
@@ -132,7 +132,7 @@ data = pd.DataFrame({'Col1': [10, 11, 12, 13, 14],
                   index=['row1', 'row2', 'row3', 'row4', 'row5'])
 print(data)
 ```
-Output:
+_Output:_
 ```
       Col1  Col2  Col3
 row1    10    22    31
