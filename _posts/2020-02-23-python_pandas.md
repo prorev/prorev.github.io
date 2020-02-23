@@ -40,9 +40,9 @@ print(df)
 _Output:_
 ![pandas dataframe](/wp-content/uploads/2020/02/pandas1.jpg)
 
-In here we set the 7 columns and 14 rows. Note how in python pandas the start index is always 0
+In here we set the 7 columns and 14 rows. Note how in python pandas the start index is always 0.
 
-To create a dataframe you my provide the column names and row index names.
+To create a dataframe you may also provide _the column names and row index names_.
 
 _Example:_
 ```python
@@ -62,15 +62,15 @@ c  NaN  NaN  NaN
  [nan nan nan]
  [nan nan nan]]
 ```
-As yuo may mark in the output when we called `print(df.values)`. What is this. It looks like a list.
+From the output when we printed `print(df.values)` we got something that looks like a list. What is this?
 
-Actually if we check the type of that object we will get `type(df.values)` is *numpy.ndarray*.
+Actually if we check the type of `type(df.values)` object we will find this is *numpy.ndarray*.
 
 > Like Don Quixote is on ass, Pandas is on Numpy.
 
-<big>Does this just menas we need Numpy array to provide data to pandas dataframe?</big>
+<big>Does this just mean we need **Numpy array** to provide data to pandas dataframe?</big>
 
-Yes, but pandas is smart. Consider this example:
+No, because pandas is smart. Consider this example:
 
 _Example:_
 ```python
@@ -87,10 +87,12 @@ _Output:_
 1  22  23  24  25  26
 2  31  32  33  34  35
 ```
-In here we haven't provided any Numpy arrays, the input data for the DataFrame was list of lists.
+In here we haven't provided Numpy arrays, instead the input data for the DataFrame is _list of lists_.
 
-<big>What will happen infernally?</big>
-```
+<big>What will happen internally?</big> Internally, pandas will convert the list of lists to Numpy array. 
+
+_Example:_
+```python
 import numpy as np
 ll = [[10, 11, 12, 12, 14],
       [22, 23, 21, 22, 23], 
@@ -100,9 +102,8 @@ data = pd.DataFrame(npa)
 print(data)
 ```
 
-This will also work:
-
-```
+Another example:
+```python
 data = pd.DataFrame({'Col1': [10, 11, 12, 13, 14],
                   'Col2': [22, 23, 24, 25, 26], 
                   'Col3': [31, 32, 33, 34, 35]})
@@ -122,7 +123,7 @@ _Output:_
 If we plan to set the row names, this would be also possible:
 
 _Example:_
-```
+```python
 data = pd.DataFrame({'Col1': [10, 11, 12, 13, 14],
                   'Col2': [22, 23, 24, 25, 26], 
                   'Col3': [31, 32, 33, 34, 35]},
@@ -262,7 +263,7 @@ print(df)
 print("size:", df.size)
 ```
 
-Output:
+_Output:_
 ![loaded data](/wp-content/uploads/2020/02/pandas2.jpg)
 
 #### error_bad_lines=False
@@ -289,7 +290,7 @@ print(df)
 ```
 In here the NEW YORK row will fail, because it has extra column. If we use the `error_bad_lines=False` option we will ignore this problem.
 
-Output:
+_Output:_
 ```
           one  two  three  four
 INDIANA     0    1      2     3
