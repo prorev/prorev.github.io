@@ -14,8 +14,9 @@ tags:
    - string
    - load
 ---
-![pandas](/wp-content/uploads/2020/02/pandas.jpg)
 Pandas is a a great package for **data analysis**. It is required by packages such as: _xarray_, _seaborn_, _pymc3_, _plotnine_, _magenta_, _google-colab_, _featuretools_, _fastai_, and others. In here we discuss how to load data into pandas dataframe.
+
+![pandas](/wp-content/uploads/2020/02/pandas.jpg)
 
 _Table of contents:_
 - [Creating a dataframe](#creating-a-dataframe)
