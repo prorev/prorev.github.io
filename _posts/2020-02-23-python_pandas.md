@@ -26,9 +26,9 @@ _Table of contents:_
   - [More than 1 spaces as separator](#more-than-1-spaces-as-separator)
   - [New line as a separator](#new-line-as-a-separator)
   - [error_bad_lines=False](#errorbadlinesfalse)
-  - [Read dataframe from the CSV file](#read-dataframe-from-the-csv-file)
-  - [Read dataframe from remote csv file](#read-dataframe-from-remote-csv-file)
-  - [Read dataframe from HTML page](#read-dataframe-from-html-page)
+- [Read dataframe from the CSV file](#read-dataframe-from-the-csv-file)
+- [Read dataframe from remote csv file](#read-dataframe-from-remote-csv-file)
+- [Read dataframe from HTML page](#read-dataframe-from-html-page)
 
 
 
@@ -304,7 +304,7 @@ Skipping line 4: Expected 5 fields in line 4, saw 6. Error could possibly be due
 ```
 
 
-### Read dataframe from the CSV file
+## Read dataframe from the CSV file
 
 Another approach would be to read the CSV on disk file.
 
@@ -331,7 +331,7 @@ Usually **utf-8** encoding, should cover the non-standard characters. If this do
 
 In some cases you may get the parsing errors. If this is the case, use the **engine='python'** option.
 
-### Read dataframe from remote csv file
+## Read dataframe from remote csv file
 
 Again, the same `read_csv` function works. This time we will use the `requests` package.
 
@@ -349,9 +349,9 @@ c=pd.read_csv(io.StringIO(s.decode('utf-8')))
 _Output:_
 ![loaded data](/wp-content/uploads/2020/02/pandas3.jpg)
 
-### Read dataframe from HTML page
+## Read dataframe from HTML page
 
-If there is a table on a web page page, pandas can read that. 
+If there is a table (`<table>`) on a web page page, pandas can read that. Note, this doesn't work for divs.
 
 _Example:_
 ```python
