@@ -14,21 +14,22 @@ tags:
    - string
    - load
 ---
+![pandas](/wp-content/uploads/2020/02/pandas.jpg)
 Pandas is a a great package for **data analysis**. It is required by packages such as: _xarray_, _seaborn_, _pymc3_, _plotnine_, _magenta_, _google-colab_, _featuretools_, _fastai_, and others. In here we discuss how to load data into pandas dataframe.
 
 _Table of contents:_
 - [Creating a dataframe](#creating-a-dataframe)
-  - [Read textual dataframe](#read-textual-dataframe)
-    - [Comma separator](#comma-separator)
-    - [Space as separator](#space-as-separator)
-    - [More than 1 spaces as separator](#more-than-1-spaces-as-separator)
-    - [New line as a separator](#new-line-as-a-separator)
-    - [error_bad_lines=False](#errorbadlinesfalse)
+- [Read textual dataframe](#read-textual-dataframe)
+  - [Comma separator](#comma-separator)
+  - [Space as separator](#space-as-separator)
+  - [More than 1 spaces as separator](#more-than-1-spaces-as-separator)
+  - [New line as a separator](#new-line-as-a-separator)
+  - [error_bad_lines=False](#errorbadlinesfalse)
   - [Read dataframe from the CSV file](#read-dataframe-from-the-csv-file)
   - [Read dataframe from remote csv file](#read-dataframe-from-remote-csv-file)
   - [Read dataframe from HTML page](#read-dataframe-from-html-page)
 
-![pandas](/wp-content/uploads/2020/02/pandas.jpg)
+
 
 ## Creating a dataframe
 
@@ -141,9 +142,9 @@ row3    12    24    33
 row4    13    25    34
 row5    14    26    35
 ```
-### Read textual dataframe 
+## Read textual dataframe 
 
-#### Comma separator
+### Comma separator
 
 First example will use the `read_csv()` function to read a multiline text. CSV means _Comma Separated Values_. Using csv format is very frequent in pandas.
 
@@ -173,7 +174,7 @@ _Output:_
 > Default `read_csv` separator is `sep=r','`.
 
 
-#### Space as separator
+### Space as separator
 
 Let's now use the same function but **space as a separator**.
 
@@ -205,7 +206,7 @@ _Output:_
 3  6766133  5083593
 4  6786160  5103965
 ```
-#### More than 1 spaces as separator
+### More than 1 spaces as separator
 
 The next example will have NEW YORK as the index name, however, this should still be the single index name.
 
@@ -241,7 +242,7 @@ In here the dataframe index names are:
 * COLORADO
 * NEW YORK 
 
-#### New line as a separator
+### New line as a separator
 
 Very similar example, but now, we use the new line as a separator.
 
@@ -268,7 +269,7 @@ print("size:", df.size)
 _Output:_
 ![loaded data](/wp-content/uploads/2020/02/pandas2.jpg)
 
-#### error_bad_lines=False
+### error_bad_lines=False
 
 One special option to read *bad lines*, would be `error_bad_lines=False`.
 
