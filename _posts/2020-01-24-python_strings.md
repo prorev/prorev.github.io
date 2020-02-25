@@ -26,6 +26,7 @@ tags:
   - [Joining list elements to a string](#joining-list-elements-to-a-string)
   - [String explosion to chars](#string-explosion-to-chars)
   - [Reverse string](#reverse-string)
+  - [String replace](#string-replace)
 - [Appendix : String Methods](#appendix--string-methods)
 - [String literals notation](#string-literals-notation)
 
@@ -343,6 +344,43 @@ _Output:_
 ```
 esrever
 ```
+
+### String replace
+
+The easy way would be to use `str.replace`.
+
+_Example:_
+```python
+str = 'eldorada'
+print(str)
+
+str = str.replace('da', 'do')
+print(str)
+```
+_Output:_
+```
+eldorada
+eldorado
+```
+Note that string replace operation is irreversible. 
+
+The other way would be to use the `re` regular expressions. 
+
+_Example:_
+```python
+import re
+s = "Exaample String"
+print(s)
+s = re.sub('a+', 'a', s)
+print(s)
+```
+_Output:_
+```
+Exaample String
+Example String
+```
+
+ 
 
 
 ## Appendix : String Methods
