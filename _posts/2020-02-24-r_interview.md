@@ -130,13 +130,15 @@ ls()
 
 No. Prefix dot in R specifies a hidden object that cannot be accessed directly through ls unless you use `ls(all.names = TRUE)`. 
 
-**What is a preferred way to assign a variable in R?**
+**What is the preferred way to assign a variable in R?**
 
-1) `x <- 9`
-2) `9 -> x`
-3) `x = 9`
+```r
+`x <- 9` # 1
+`9 -> x` # 2 
+`x = 9` # 3
+```
 
-Non of the assignments `x <- 9`, `9 -> x`, `x = 9` is forbidden. Meaning you can use any of these based on your personal preference. Still, there are [assignment operators differences](https://stackoverflow.com/a/51564252/5884955){:rel="nofollow"}.
+Non of the assignments `x <- 9`, `9 -> x`, `x = 9` is forbidden. Meaning you can use any of these based on your personal preference. Still, there are [assignment operators differences](https://stackoverflow.com/a/51564252/5884955){:rel="nofollow"} and some think the #1 approach (from right to left) is the best way to go.
 
 **To glue "hello" and "world" what would you use?**
 
