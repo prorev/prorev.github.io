@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Data Analyst Interview Questions (R)
+title: Data Analyst Interview Questions in R
 date: 2020-02-24
 author: taimane
 layout: post
@@ -25,7 +25,7 @@ tags:
 
 ## What is R used for?
 
-R is a programming language designed for **data manipulation** and **data visualization**. It is natural to use R for data science. Part of the R legacy R's unmatched graphing quality. To create R graphs check [R for Data Science](https://r4ds.had.co.nz/data-visualisation.html){:rel="nofollow"} on data visualization.
+R is a programming language used for **data manipulation** and **data visualization**. Part of the R legacy is its excellent graphing quality. To create R graphs check [R for Data Science](https://r4ds.had.co.nz/data-visualisation.html){:rel="nofollow"} on data visualization.
 
 ## What is RStudio?
 
@@ -45,7 +45,7 @@ RStudio is also the name of the organization behind RStudio tools.
 
 **What is the difference between Data Mining and Data Analysis?**
 
-Data Mining is a process of collecting the data where data analysis is a process of understanding (interpreting) the data in some way.
+Data Mining is a process of collecting the data where Data Analysis is a process of understanding (interpreting) the data in some way.
 
 **What are three major Machine Learning types?**
 
@@ -56,7 +56,9 @@ Data Mining is a process of collecting the data where data analysis is a process
 
 **What is the output of `data()` command?**
 
-This command will list all the datasets from the package 'datasets'. These are also called **preloaded datasets**.
+This command will list all the datasets from the package **datasets**, same as `data(package="datasets")`. 
+
+These datasets are also called **preloaded datasets**.
 
 As I am using at the moment RStudio version 3.6.2 (nickname _Dark and Stormy Night_), here is the list of the datasets.
 
@@ -235,7 +237,7 @@ To make an example in R for others to reproduce, you need to set:
 
 ## Tidyverse
 
-**Wat id tidy data?**
+**What is tidy data?**
 
 It is a way to organize your data with the **tidyverse** package:
 
@@ -257,7 +259,7 @@ You get the answer to this question with this request:
 ```r
 help(package="tidyverse")
 ```
-_Search for the output where it reads Imports:_
+_Search for the text where it reads Imports:_
 ```
 Imports: 
 broom (>= 0.5.2), cli (>= 1.1.0), crayon (>=1.3.4), dbplyr (>= 1.4.2), dplyr (>= 0.8.3), forcats (>= 0.4.0), ggplot2 (>= 3.2.1), haven (>=2.2.0), hms (>= 0.5.2), httr (>= 1.4.1), jsonlite(>= 1.6), lubridate (>= 1.7.4), magrittr (>= 1.5),modelr (>= 0.1.5), pillar (>= 1.4.2), purrr (>=0.3.3), readr (>= 1.3.1), readxl (>= 1.3.1), reprex(>= 0.3.0), rlang (>= 0.4.1), rstudioapi (>= 0.10),rvest (>= 0.3.5), stringr (>= 1.4.0), tibble (>=2.1.3), tidyr (>= 1.0.0), xml2 (>= 1.2.2)
