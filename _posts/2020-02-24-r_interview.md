@@ -164,6 +164,7 @@ Arrays can have any number of dimensions while matrices are two dimensional.
 In dataframe separate columns can be of different type. Matrix on the other side has the same type for all elements.
 
 > Create dataframs using `data.frame()` function.
+
 ```
 age height sex
 23  183    m
