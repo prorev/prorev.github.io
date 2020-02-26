@@ -29,9 +29,7 @@ R is a programming language used for **data manipulation** and **data visualizat
 
 ## What is RStudio?
 
-From Wikipedia: _RStudio is an integrated development environment for R._
-
-There are two forms or RStudio:
+RStudio is an integrated development environment for R. There are two forms or RStudio:
 * RStudio Desktop
 * RStudio Server (accessed from a web browser)
 
