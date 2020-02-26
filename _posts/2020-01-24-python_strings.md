@@ -347,7 +347,7 @@ esrever
 
 ### String replace
 
-The easy way would be to use `str.replace`.
+The easy way would be to use `str.replace()`.
 
 _Example:_
 ```python
@@ -371,7 +371,7 @@ _Example:_
 import re
 s = "Exaample String"
 print(s)
-s = re.sub('a+', 'a', s)
+s = re.sub(r'a+', r'a', s)
 print(s)
 ```
 _Output:_
