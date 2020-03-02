@@ -13,7 +13,7 @@ tags:
    - string
 ---
 
-- [What are lists](#what-are-lists)
+- [What are lists?](#what-are-lists)
 - [What is list comprehension?](#what-is-list-comprehension)
 - [Creating random elements in a list](#creating-random-elements-in-a-list)
 - [Remove single element from a list](#remove-single-element-from-a-list)
@@ -26,7 +26,7 @@ tags:
 - [Slow `min` `max` functions.](#slow-min-max-functions)
 
 ---
-## What are lists
+## What are lists?
 
 Lists are incredible powerful in Python. Use [] to create them:
 
@@ -141,7 +141,7 @@ _Output:_
 ## List combinations and permutations
 
 _Example:_
-```Python
+```python
 import itertools as it
 l = [1,1,3]
 p = it.permutations(l,len(l))
