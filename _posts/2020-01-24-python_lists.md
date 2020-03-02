@@ -29,7 +29,7 @@ tags:
 - [List maximums](#list-maximums)
 - [Another list counter](#another-list-counter)
 - [Reverse the list](#reverse-the-list)
-- [Slow `min` `max` functions.](#slow-min-max-functions)
+- [Slow `min` `max` functions](#slow-min-max-functions)
 
 ---
 ## What are lists?
@@ -76,6 +76,7 @@ _Output:_
 ```
 
 We can add an element to the end of the list with `append` like this:
+
 _Example:_
 ```python
 l = [1,2,3]
@@ -175,6 +176,7 @@ _Output:_
 Removing **by position** goes like this:
 
 _Example:_
+
 ```python
 del l[0] # removes the first element
 del l[-1] # removes just before the last
@@ -507,7 +509,7 @@ eno ylno eb nac erehT
 ```
 
 
-## Slow `min` `max` functions.
+## Slow `min` `max` functions
 
 Here is one example that brings the same note for lits, and dicts. `min` and `max` functions not fast.
 
