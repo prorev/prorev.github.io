@@ -14,12 +14,18 @@ tags:
 ---
 
 - [What are lists?](#what-are-lists)
+- [Adding to the list](#adding-to-the-list)
+- [Sort the list](#sort-the-list)
 - [What is list comprehension?](#what-is-list-comprehension)
 - [Creating random elements in a list](#creating-random-elements-in-a-list)
 - [Remove single element from a list](#remove-single-element-from-a-list)
 - [Creating a matrix](#creating-a-matrix)
 - [List combinations and permutations](#list-combinations-and-permutations)
 - [Get unique elements of a list](#get-unique-elements-of-a-list)
+- [Product of two lists](#product-of-two-lists)
+- [List accumulation](#list-accumulation)
+- [How to sum two lists?](#how-to-sum-two-lists)
+- [Get max of several lists](#get-max-of-several-lists)
 - [List maximums](#list-maximums)
 - [Another list counter](#another-list-counter)
 - [Reverse the list](#reverse-the-list)
@@ -51,6 +57,65 @@ _Output:_
 [1, 2, 3] 4 [1, 2, 3, 4]
 ```
 > To combine two lists use the **+** operator like this: **[1,2,3]+[4]**
+
+## Adding to the list
+
+Already we saw the **+** operator to combine two lists together. This would be same as the `extend` method:
+
+_Example:_
+
+```python
+l = [1,2,3]
+le = [4,5]
+l.extend(le)
+print(l)
+```
+_Output:_
+```
+[1, 2, 3, 4, 5]
+```
+
+We can add an element to the end of the list with `append` like this:
+_Example:_
+```python
+l = [1,2,3]
+l.append(4)
+print(l)
+```
+_Output:_
+```
+[1, 2, 3, 4]
+```
+
+Introducing the `insert` method to add an element to the arbitrary point:
+
+_Example:_
+```python
+l = [1,2,3]
+l.insert(0,2)
+l
+```
+_Output:_
+```
+[2, 1, 2, 3]
+```
+> We can also add the element with `l.insert(-1,2)` just before the last element. To add to the very last position we may use `l.insert(len(l),2)`
+
+## Sort the list
+
+_Example:_
+```python
+l = [3,4,4,2,3]
+l.sort()
+print(l)
+```
+
+_Output:_
+```
+[2, 3, 3, 4, 4]
+```
+> With `l.sort(revers=True)` we do reverse sort.
+
 
 
 ## What is list comprehension?
@@ -89,6 +154,10 @@ a = [r.randint(1, 10) for p in range(0, 10000)]
 
 ## Remove single element from a list
 
+You remove elements from the list by value or by position. 
+
+> When you remove list element **by value**, python removes only the first element.
+
 _Example:_
 ```python
 a=[1,2,2,3]
@@ -102,6 +171,17 @@ _Output:_
 [1, 2, 3]
 [1, 3]
 ```
+
+Removing **by position** goes like this:
+
+_Example:_
+```python
+del l[0] # removes the first element
+del l[-1] # removes just before the last
+del l[1:3] # removes second and third element
+```
+
+
 
 ## Creating a matrix
 
@@ -142,8 +222,7 @@ _Output:_
 
 _Example:_
 ```python
-import itertools as it
-l = [1,1,3]
+c
 p = it.permutations(l,len(l))
 c = it.combinations(l,len(l))
 print(*p)
@@ -162,7 +241,7 @@ _Output:_
 
 ## Get unique elements of a list
 
-In the previous example you could do eliminate duplicates from the list:
+In the previous example you could do eliminate duplicates from the list if you use `set`
 
 _Example:_
 ```python
@@ -197,6 +276,131 @@ This time we print only unique permutations.
 {(1, 1, 3), (1, 3, 1), (3, 1, 1)}
 ```
 
+## Product of two lists
+
+This would be again to use itertools.
+_Example:_
+```python
+import itertools as it
+l1 = [1,2]
+l2 = ['a','b',3]
+p = it.product(l1,l2)
+list(p)
+```
+
+In here the first list **l1** and second list **l2** contribute to the product with the first and second element of each tuple.
+_Output:_
+```
+[(1, 'a'), (1, 'b'), (1, 3), (2, 'a'), (2, 'b'), (2, 3)]
+```
+
+If we would have more lists:
+_Example:_
+```python
+import itertools as it
+l1 = [1,2]
+l2 = ['a','b',3]
+p = it.product(l1,l2,l1)
+list(p)
+```
+The product would have more elements.
+_Output:_
+```
+[(1, 'a', 1),
+ (1, 'a', 2),
+ (1, 'b', 1),
+ (1, 'b', 2),
+ (1, 3, 1),
+ (1, 3, 2),
+ (2, 'a', 1),
+ (2, 'a', 2),
+ (2, 'b', 1),
+ (2, 'b', 2),
+ (2, 3, 1),
+ (2, 3, 2)]
+```
+
+
+
+## List accumulation
+
+If we have moonlit list, consisting of only numbers, or only strings, we may accumulate the list with itertools.
+
+_Example:_
+```python
+import itertools as it
+l = [1,1,3]
+a = it.accumulate(l)
+print(list(a))
+```
+_Output:_
+```
+[1, 2, 5]
+```
+
+Another accumulation may be with the `operator.mul`.
+
+_Example:_
+```python
+import itertools as it
+import operator
+l = [4,3,5]
+a = it.accumulate(l, operator.mul)
+print(list(a))
+```
+_Output:_
+```
+[4, 12, 60]
+```
+
+> With accumulate you can also have running maximum like this: `list(it.accumulate([4,3,5], max)) `
+
+
+_Example:_
+```python
+import itertools as it
+l = ['a','b','c']
+a = it.accumulate(l)
+print(list(a))
+```
+
+_Output:_
+```
+['a', 'ab', 'abc']
+```
+
+## How to sum two lists?
+
+Use map(sum,zip(l1,l2))
+_Example:_
+```python
+l1= [1,2,3]
+l2 = [2,3,4]
+list(map(sum,zip(l1,l2)))
+```
+
+_Output:_
+```
+[3, 5, 7]
+```
+> `zip` is used to create list of tuples, in our case for **l1** and **l2** tuples would be [(1,2),(2,3),(3,4)]. Then we use `map` and instruct the `sum` operation.
+
+
+## Get max of several lists
+
+One interesting way to get max of two lists:
+_Example:_
+```python
+l1= [4,2,3]
+l2 = [2,3,4]
+l3 = [3,4,6]
+import operator
+list(map(max,zip(l1,l2,l3)))
+```
+_Output:_
+```
+[4, 4, 6]
+```
 
 ## List maximums
 
