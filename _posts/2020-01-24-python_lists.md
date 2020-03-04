@@ -29,7 +29,9 @@ tags:
 - [List maximums](#list-maximums)
 - [Another list counter](#another-list-counter)
 - [Reverse the list](#reverse-the-list)
+- [Check if list contains list](#check-if-list-contains-list)
 - [Slow `min` `max` functions](#slow-min-max-functions)
+- [Speed of `insert` and `pop`](#speed-of-insert-and-pop)
 
 ---
 ## What are lists?
@@ -508,6 +510,30 @@ _Output:_
 eno ylno eb nac erehT
 ```
 
+## Check if list contains list
+
+_Example:_
+```python
+a, l = [2,2,5],[2, 5, 8, 5, 15, 25]
+# check if l contains a
+def contains(l,a):
+    c = l.copy()
+    for e in a:
+        try:
+            c.remove(e)
+        except:
+            return False
+    return True
+contains(l,a)
+```
+In here we don't use `set` because lists may contain single element multiple times. We do create the copy of the list `c` because `c.remove(e)` actually removes the element from the list.
+
+If we would know that all elements are unique we could use set and `sa & sl  == sa` condition would return `True` if **sa** is inside **sl**.
+
+```python
+sa, sl = {2, 5},{2, 5, 8, 5, 15, 25}
+sa & sl  == sa
+```
 
 ## Slow `min` `max` functions
 
@@ -581,6 +607,7 @@ The program returns -1, (or some very big number close to 100.000). This time to
 
 We could use dictionary instead.
 
+_Example:_
 ```python
 from random import randint
 x = 10000
@@ -602,6 +629,47 @@ match_10000_elements(x, a)
 ```
 
 If we would use **min** or **max** functions on dictionary `max(d.values())` we would be slow again.
+
+## Speed of `insert` and `pop`
+
+Consider the following example where we create a list with 10000 elements from the end:
+
+_Example:_
+```python
+from timeit import default_timer as timer
+s='1'*10000
+l=list(s)
+start = timer()
+for i in range (0,10000):
+    l = l[0:-1]
+end = timer()
+print(end - start)
+```
+
+_Output:_
+```
+0.17339429998537526
+```
+
+Now, we remove all elements from the very end of the list using `pop`.
+
+_Example:_
+```python
+from timeit import default_timer as timer
+s='1'*10000
+l=list(s)
+start = timer()
+for i in range (0,10000):
+    l.pop()
+end = timer()
+print(end - start)
+```
+_Output:_
+```
+0.0014796000032220036
+```
+This is much faster as you may see. The note is to use list predefined methods `insert` and `pop` as these methods work **faster** _than list indexing_.
+
 
 
 
