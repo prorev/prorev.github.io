@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Some favorite algorithms in Python
+title: Some algorithms in Python
 date: 2020-03-05
 author: taimane
 layout: post
@@ -85,4 +85,171 @@ def solution(a):
         ms=max(m,ms)
     return ms
 solution(a)
+```
+
+## Factors
+
+```python
+from functools import reduce
+
+# find all the factors
+def factors(n):    
+    return set(reduce(list.__add__, 
+                ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0)))
+
+
+# number of divisors
+def nod(n):
+    i=1
+    d=0
+    while(i*i<n):
+        if n%i==0:
+            d+=2
+        i+=1
+    if(i*i==n):
+        d+=1
+    return d
+
+# prime number test
+def prm(n):
+    i=2    
+    while(i*i<n):
+        if n%i==0:
+            return False
+        i+=1
+    return True
+
+# returns how many times 
+# n is divisible by 2 and 5
+def div2and5(n):
+    f= {2:0, 5:0}
+    while(n%2==0):
+        f[2]+=1
+        n = n/2
+    while(n%5==0):
+        f[5]+=1
+        n = n/5
+    return f
+```
+
+## Casino
+
+```python
+n,k =8, 0
+n,k =18, 2
+n,k =10, 10 
+
+# ideal sequence
+def iseq(n, k):
+    z = k # zeros left
+    s = ''
+    while(n>2):
+        if n%2==1:
+            s=s+'1'
+            n=n-1
+        else:
+            if(z>0):
+                s=s+'0'
+                n=n/2
+                z=z-1
+            else:                
+                s=s+'1'*int(n-1)
+                return s[::-1]
+            
+    if(n==2):
+        s=s+'1'
+        
+    if(n==3):
+        s=s+'11'        
+        
+    return s[::-1]
+
+
+
+def solution(n,k):
+    b = iseq(n, k)
+    print(b)    
+    return len(b)
+
+solution(21, 2)  
+```
+
+## Passwords
+
+```python
+s = "zxcasdqwe123"
+
+import re
+
+def a(s):
+    m = re.match(r"^[a-zA-Z0-9]+$", s)
+    if(m==None):
+        return False
+    else: 
+        return True
+    
+def l(s):
+    l = re.findall(r'[a-zA-Z]', s)
+    s = "".join(str(i) for i in l)
+    print(len(s))
+    return len(s)
+    
+def d(s):
+    d = re.findall(r'[0-9]+', s) 
+    s = "".join(str(i) for i in d)
+    return len(s)
+   
+
+def solution(s):
+    nws = []
+    ws = s.split() 
+    #print(ws)
+    for w in ws:
+        if a(w) and l(w)%2==0 and d(w)%2==1:            
+            nws.append(w)        
+
+    print(nws)
+            
+    if(len(nws)==0):
+        return -1
+    mx = max(set(nws), key=len)
+    return (len(mx))
+```
+
+
+## Appendix
+
+### Counter
+```python
+from collections import defaultdict
+from collections import Counter
+a = [3,3,4,2,3,3,34,5,6]
+c = Counter(a)
+print("c[3] = ", c[3])
+print([(k,v) for k,v in c.items()])
+print(c.most_common(1))
+print(c.most_common(1)[0][1])
+```
+
+### Random int
+
+```python
+from random import randint
+a = [randint(-10000, 10000) for p in range(0, 10000)] 
+#−2,147,483,648..2,147,483,647
+```
+
+### Random string
+```python
+import random
+s = [random.choice(['a', 's', 'df']) for p in range(0, 10)]
+print(s)
+```
+
+### Random shuffled
+
+```python
+import random
+a = [i for i in range(1, 50000+1)]
+random.shuffle(a)
 ```
