@@ -72,6 +72,7 @@ le = [4,5]
 l.extend(le)
 print(l)
 ```
+
 _Output:_
 ```
 [1, 2, 3, 4, 5]
@@ -85,6 +86,7 @@ l = [1,2,3]
 l.append(4)
 print(l)
 ```
+
 _Output:_
 ```
 [1, 2, 3, 4]
@@ -98,6 +100,7 @@ l = [1,2,3]
 l.insert(0,2)
 l
 ```
+
 _Output:_
 ```
 [2, 1, 2, 3]
@@ -122,6 +125,7 @@ _Output:_
 
 
 ## What is list comprehension?
+
 _Example:_
 ```python
 a=[1,2,3]
@@ -178,7 +182,6 @@ _Output:_
 Removing **by position** goes like this:
 
 _Example:_
-
 ```python
 del l[0] # removes the first element
 del l[-1] # removes just before the last
@@ -203,6 +206,7 @@ Note how we can calculate the number of rows as `len(M)`, and number of columns 
 
 The next showcase used [**pandas**](https://programming-review.com/python/pandas-load-data) to print the matrix.
 
+_Example:_
 ```python
 from pandas import DataFrame
 M = [[5,4,4], [4,3,4], [3,2,4], [2,2,2], [3,3,4], [1,4,4], [4,1,1]]
@@ -283,6 +287,7 @@ This time we print only unique permutations.
 ## Product of two lists
 
 This would be again to use itertools.
+
 _Example:_
 ```python
 import itertools as it
@@ -293,12 +298,14 @@ list(p)
 ```
 
 In here the first list **l1** and second list **l2** contribute to the product with the first and second element of each tuple.
+
 _Output:_
 ```
 [(1, 'a'), (1, 'b'), (1, 3), (2, 'a'), (2, 'b'), (2, 3)]
 ```
 
 If we would have more lists:
+
 _Example:_
 ```python
 import itertools as it
@@ -308,6 +315,7 @@ p = it.product(l1,l2,l1)
 list(p)
 ```
 The product would have more elements.
+
 _Output:_
 ```
 [(1, 'a', 1),
