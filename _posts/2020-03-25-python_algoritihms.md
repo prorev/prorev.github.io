@@ -1,7 +1,7 @@
 ---
 id: 12971
 title: Some favorite algorithms in Python
-date: 2020-01-22
+date: 2020-03-05
 author: taimane
 layout: post
 permalink: /python/algorithms
@@ -17,7 +17,7 @@ tags:
 
 ## MaxProfit
 
-In here we have an array of prices at particular day such as this one `a = [5,4,3,2,3,4,5,6,5,4,5,6,7,1]` and we would like to find the maximum jump `mj` (Michael Jordan) or maximum profit we may get.
+In here we have an array of prices at particular day such as this one `a = [5,4,3,2,3,4,5,6,5,4,5,6,7,1]` and we would like to find the maximum jump `mj` or maximum profit we may get.
 
 Local jump `lj` is non negative local jumps, and sj is single jumps `sj` may be negative.
 
