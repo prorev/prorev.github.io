@@ -632,7 +632,7 @@ If we would use **min** or **max** functions on dictionary `max(d.values())` we 
 
 ## Speed of `insert` and `pop`
 
-Consider the following example where we create a list with 10000 elements from the end:
+Consider the following example where we create a list with 10000 elements and remove one by one from the end:
 
 _Example:_
 ```python
