@@ -65,7 +65,7 @@ solution(a)
 
 ##  MaxSliceSum
 
-This problem should search in array to find the slice with max sum. In the next case this is 1.
+This problem should search in array to find the slice with max sum.
 
 `m` and `ms` do represent local and final max sum.
 For instance:
