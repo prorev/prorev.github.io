@@ -5,7 +5,7 @@ date: 2020-03-05
 author: taimane
 layout: post
 permalink: /python/algorithms
-published: false
+published: true
 image: 
 categories: 
    - python
