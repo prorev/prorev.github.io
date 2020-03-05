@@ -132,6 +132,70 @@ def div2and5(n):
     return f
 ```
 
+
+## MinPerimeterRectangle
+
+```python
+def solution(n):
+    i=1
+    d=0
+    f=[]
+    while(i*i<n):
+        if n%i==0:
+            f.append(i)
+            f.append(n//i)
+        i+=1
+    if(i*i==n):
+        f.append(i)
+        return 2*(i+i)
+    else:
+        return 2*(f[-1]+f[-2])
+```
+
+## Flags
+
+```python
+a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
+
+def fp(a):
+    n = len(a)
+    p = [0]*n
+    for i in range (1,n-1):
+        if a[i-1] < a[i] and a[i]>a[i+1]:
+            p[i]=1
+    return p
+
+def ck(a,x):
+    n = len(a)    
+    f=x
+    pos=0    
+    while f>0 and pos<n:
+        if a[pos]==1:
+            f-=1
+            pos+=x
+        else:
+            pos+=1
+    return f==0    
+
+def solution(a):
+    p = fp(a)
+    mf = 0
+    i = 1
+    while ck(p,i):
+        i*=2
+    print(i)
+    
+    for j in range (i, 0, -1):
+        if (ck(p,j)):
+            mf = j
+            break
+    return mf
+    
+    
+solution(a)   
+
+```
+
 ## Casino
 
 ```python
@@ -252,4 +316,65 @@ print(s)
 import random
 a = [i for i in range(1, 50000+1)]
 random.shuffle(a)
+```
+
+### Find sign of increase and decrease in array
+
+```python
+def fsid(a):
+    n = len(a)
+    ida = [0]*n
+    for i in range (1,n):
+        if a[i-1]<a[i]:
+            ida[i]=1
+        else:
+            ida[i]=-1
+    return ida
+a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
+fid(a)
+#[0, 1, -1, 1, -1, 1, -1, 1, 1, 1, 1, -1]
+```
+
+
+### Find increase and decrease in array
+
+```python
+def fid(a):
+    n = len(a)
+    ida = [0]*n
+    for i in range (1,n):
+        dif = a[i]-a[i-1]
+        ida[i]=dif
+    return ida
+a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
+fid(a)
+#[0, 4, -2, 1, -1, 1, -3, 1, 1, 1, 2, -4]
+```
+
+### Find peaks of array
+
+```python
+def fp(a):
+    n = len(a)
+    p = [0]*n
+    for i in range (1,n-1):
+        if a[i-1] < a[i] and a[i]>a[i+1]:        
+            p[i]=1
+    return p
+
+a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
+fp(a)
+#[0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0]
+```
+
+### Find peak differences
+
+```python
+def positions(a,el):
+    d = [i for i,e in enumerate(a) if e==el]
+    return d
+
+a=[0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0]
+positions(a,1)
+#[0,2,2,5]
 ```
