@@ -14,6 +14,7 @@ tags:
 ---
 
 - [What are lists?](#what-are-lists)
+- [List operations](#list-operations)
 - [Adding to the list](#adding-to-the-list)
 - [Sort the list](#sort-the-list)
 - [What is list comprehension?](#what-is-list-comprehension)
@@ -59,6 +60,19 @@ _Output:_
 [1, 2, 3] 4 [1, 2, 3, 4]
 ```
 > To combine two lists use the **+** operator like this: **[1,2,3]+[4]**
+
+## List operations
+
+```python
+lst.append(e) # append single element e to the end
+lst.index(e) # get the index of element e
+lst.extend(l) # extend the list with another list l
+lst.insert(idx, e) # insert e at index
+lst.remove(e) # remove fist element e
+lst.pop(idx) # returns value e at index idx
+lst.sort() # sort lst inplace
+lst.reverse() # reverse sort list inplace
+```
 
 ## Adding to the list
 
