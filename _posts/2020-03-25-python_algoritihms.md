@@ -352,23 +352,225 @@ solution(a)
 ## Prefix Sums
 
 ### PassingCars [painless]✓
+
+Scores 100%. Don't forget the 1000000000 limit.
+
+```python
+def solution(a):
+    pc=0
+    fz=0
+    
+    for e in a:
+        if pc>1000000000:
+            return -1
+        if e==0:
+            fz+=1
+        else:
+            pc+=fz           
+    
+    return pc
+```
+
 ### GenomicRangeQuery [respectable]✓
+
+Scores 100%
+
+```python
+def solution(s,p,q):
+    n = len(p)
+    r = [0]*n
+    
+    for i in range(n):
+        pi=p[i]
+        qi=q[i]+1
+        ts=s[pi:qi]        
+        if 'A' in ts:            
+            r[i]=1
+        elif 'C' in ts:
+            r[i]=2
+        elif 'G' in ts:
+            r[i]=3
+        elif 'T' in ts:
+            r[i]=4
+    return r
+
+s,p,q = 'CAGCCTA', [2, 5, 0], [4, 5, 6]
+solution(s,p,q)
+```
+
 ### MinAvgTwoSlice [respectable]✓
+
+```python
+```
+
+
 ### CountDiv [respectable]✓
+
+```python
+```
+
 
 ## Sorting
 
 ### Triangle [painless]✓
+
+```python
+```
+
+
 ### Distinct [painless]✓
+
+```python
+```
+
+
 ### MaxProductOfThree [painless]✓
+
+```python
+```
+
 ### NumberOfDiscIntersections [ambitious]✗
+
+```python
+```
 
 ## Stacks and Queues
 
 ### Brackets [painless]✓
+
+Recursive brackets. Scores 50%, O(3**N).
+
+```python
+def rc(s):
+    if (len(s)%2 ==1 ):
+        return 0
+    if s=='' or s=='()' or s=='[]' or s=='{}':
+        return 1
+    for _ in range(2, len(s),2):                
+        if rc(s[0:_])==True and rc(s[_:])==True:            
+            return 1
+    if (s[0]=='{' and s[-1]=='}') or (s[0]=='[' and s[-1]==']') or (s[0]=='(' and s[-1]==')'):
+        #print(f"{s[0]}{s[-1]}")
+        return rc(s[1:-1])
+    return 0
+
+def solution(s):
+    return rc(s)
+```
+
+
+Stack based brackets. Scores 100%.
+```python
+import random
+# s = ''.join([random.choice(['{'*100000, '}'*100000]) for p in range(0, 2)])
+#s = '{'*100000 + '}'*100000
+#s = '([)()]'
+#s = '{{{{'
+
+def solution(s):
+    if len(s)%2==1: return 0
+    st = [] # stack
+    pu = ['[', '{', '('] # elelment to push on stack
+    po = {']':'[', '}':'{', ')':'('}
+    
+    for e in s:
+        if e in pu:
+            st.append(e) # push
+        if e in po.keys():
+            if(len(st)==0):
+                return 0
+            if (st[-1] == po[e]):
+                st.pop()
+            else:
+                return 0
+                
+    if len(st) == 0:
+        return 1
+    else:
+        return 0
+```
+
+
+
 ### Nesting [painless]✓
+
+Same as Brackets task. See [Brackets](#brackets-painless%e2%9c%93).
+
 ### StoneWall [respectable]✓
+
+Recursive StoneWall scores: 71, O(N**2)
+
+```python
+a = [8, 8, 5, 7, 9, 8, 7, 4, 8]
+def rec(a):
+    if(len(a)==0 or (len(a)==1 and a[0]==0)):
+        return 0
+    if(len(a)==1):
+        return 1
+    stones = 0
+    m = min(a) # min
+    if m>0:
+        a = [e-m for e in a]
+        stones+=1
+    izr = a.index(0)
+    stones = stones + rec(a[:izr]) + rec(a[izr+1:])
+    return stones  
+
+def solution(a):
+    r = rec(a)
+    return r
+    
+solution(a)
+```
+
 ### Fish [respectable]✓
+
+Scores 87%, directly updating a and b.
+
+```python
+from random import randint
+def solution(a,b):
+    i = 0 # index
+    while(len(a)>i+1):
+        if (b[i] > b[i+1]): # opposite direction
+            if a[i]> a[i+1]:
+                a.pop(i+1)
+                b.pop(i+1)
+            else:
+                a.pop(i)
+                b.pop(i)
+                i=i-1
+        else:
+            i=i+1
+
+    return len(a)
+    
+a,b = [randint(-10000, 10000) for p in range(0, 100000)], [randint(0, 1) for p in range(0, 100000)]  
+#a,b = [4, 3, 2, 1, 5], [0, 1, 1, 0, 0]
+solution(a,b)
+```
+
+Scores 100%. Single stack.
+
+```python
+def solution(a, b):
+    l = 0 # left
+    s = [] # stack
+    for i in range(len(a)):
+        if b[i]==1: # fish moving upwards
+            s.append(a[i]) # to the stack
+        else: # eat fish mowing downwards.
+            while len(s)>0:
+                if s[-1]<a[i]:
+                    s.pop() # eat from the stack
+                else:
+                    break
+            else:
+                l+=1
+    l+=len(s)
+    return l
+```
+
 
 ## Leader
 
@@ -379,7 +581,7 @@ solution(a)
 
 ### MaxProfit [painless]✓
 
-In here we have an array of prices at particular day such as this one `a = [5,4,3,2,3,4,5,6,5,4,5,6,7,1]` and we would like to find the maximum jump `mj` or maximum profit we may get.
+Scores 100%. In here we have an array of prices at particular day such as this one `a = [5,4,3,2,3,4,5,6,5,4,5,6,7,1]` and we would like to find the maximum jump `mj` or maximum profit we may get.
 
 Local jump `lj` is non negative local jumps, and sj is single jumps `sj` may be negative.
 
@@ -404,7 +606,7 @@ jump(a)
 
 ### MaxSliceSum [painless]✓
 
-This problem should search in array to find the slice with max sum.
+Scores 100%. This problem should search in array to find the slice with max sum. 
 
 `m` and `ms` do represent local and final max sum.
 For instance:
@@ -430,6 +632,7 @@ solution(a)
 
 Another problem from [codility](https://app.codility.com/programmers/lessons/9-maximum_slice_problem/){:rel="nofollow"}
 
+Scores 100%
 
 ```python
 a=[3,2,6,-1, 4, 5, -1, 2]
