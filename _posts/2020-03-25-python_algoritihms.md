@@ -400,13 +400,77 @@ solution(s,p,q)
 
 ### MinAvgTwoSlice [respectable]✓
 
+The standard solution will not perform well so you can get only 50%.
+
 ```python
+def solution(a):
+    n = len(a)
+    mi = 0 #index
+    tm = max(a) #temp min
+    cm = max(a) #current min
+    for i in range (0, n):
+        for j in range (i+2, n+1):
+            tm = sum(a[i:j])/(j-i)
+            if tm<cm:
+                     cm = tm
+                     mi = i
+    return mi
+```
+
+The trick is to use ignore slices with more than 3 elements. 
+
+```python
+def solution(a):
+    n = len(a)
+    mi = 0 #index
+    tm = max(a) #temp min
+    cm = max(a) #current min
+    for i in range (0, n):
+        for j in range (i+2, n+1):
+            if(j-i>3): continue
+            print(a[i:j])
+            tm = sum(a[i:j])/(j-i)
+            if tm<cm:
+                     cm = tm
+                     mi = i
+    return mi
+```
+
+However, for loops are slow. This will bring just 60%.
+The next trick is to avoid for loop.
+
+```python
+def solution(a):
+    n = len(a)
+    mi = 0
+    cm = max(a)
+ 
+    for idx in range(0, n-1):
+        p = (a[idx] + a[idx+1])/2.0
+        if p < cm:
+            mi = idx
+            cm = p
+        if idx < n-2:
+            t = (a[idx] + a[idx+1] + a[idx+2])/3.0
+            if t < cm:
+                mi = idx
+                cm = t
+ 
+    return mi
 ```
 
 
 ### CountDiv [respectable]✓
 
+Scores 100%. We first get the first possible value using the // and * trick. If the f is bigger than b, we need to return 0, else we find the distance b-f.
+
 ```python
+def solution(a, b, k):
+    f =  ((a + k -1) // k) * k # first    
+    if f > b:
+      return 0
+ 
+    return ((b - f) // k) + 1
 ```
 
 
