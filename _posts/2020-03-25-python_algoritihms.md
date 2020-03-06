@@ -15,69 +15,69 @@ tags:
    - programming
 ---
 - [Iterations](#iterations)
-  - [BinaryGap [painless]✓](#binarygap-painless%e2%9c%93)
+  - [BinaryGap](#binarygap)
 - [Arrays](#arrays)
-  - [CyclicRotation [painless]✓](#cyclicrotation-painless%e2%9c%93)
-  - [OddOccurrencesInArray [painless]✓](#oddoccurrencesinarray-painless%e2%9c%93)
+  - [CyclicRotation](#cyclicrotation)
+  - [OddOccurrencesInArray](#oddoccurrencesinarray)
 - [Time Complexity](#time-complexity)
-  - [PermMissingElem [painless]✓](#permmissingelem-painless%e2%9c%93)
-  - [FrogJmp [painless]✓](#frogjmp-painless%e2%9c%93)
-  - [TapeEquilibrium [painless]✓](#tapeequilibrium-painless%e2%9c%93)
+  - [PermMissingElem](#permmissingelem)
+  - [FrogJmp](#frogjmp)
+  - [TapeEquilibrium](#tapeequilibrium)
 - [Counting Elements](#counting-elements)
-  - [FrogRiverOne [painless]✓](#frogriverone-painless%e2%9c%93)
-  - [MaxCounters [respectable]✓](#maxcounters-respectable%e2%9c%93)
-  - [MissingInteger [respectable]✓](#missinginteger-respectable%e2%9c%93)
-  - [PermCheck [painless]✓](#permcheck-painless%e2%9c%93)
+  - [FrogRiverOne](#frogriverone)
+  - [MaxCounters](#maxcounters)
+  - [MissingInteger](#missinginteger)
+  - [PermCheck](#permcheck)
 - [Prefix Sums](#prefix-sums)
-  - [PassingCars [painless]✓](#passingcars-painless%e2%9c%93)
-  - [GenomicRangeQuery [respectable]✓](#genomicrangequery-respectable%e2%9c%93)
-  - [MinAvgTwoSlice [respectable]✓](#minavgtwoslice-respectable%e2%9c%93)
-  - [CountDiv [respectable]✓](#countdiv-respectable%e2%9c%93)
+  - [PassingCars](#passingcars)
+  - [GenomicRangeQuery](#genomicrangequery)
+  - [MinAvgTwoSlice](#minavgtwoslice)
+  - [CountDiv](#countdiv)
 - [Sorting](#sorting)
-  - [Triangle [painless]✓](#triangle-painless%e2%9c%93)
-  - [Distinct [painless]✓](#distinct-painless%e2%9c%93)
-  - [MaxProductOfThree [painless]✓](#maxproductofthree-painless%e2%9c%93)
-  - [NumberOfDiscIntersections [ambitious]✗](#numberofdiscintersections-ambitious%e2%9c%97)
+  - [Triangle](#triangle)
+  - [Distinct](#distinct)
+  - [MaxProductOfThree](#maxproductofthree)
+  - [NumberOfDiscIntersections](#numberofdiscintersections)
 - [Stacks and Queues](#stacks-and-queues)
-  - [Brackets [painless]✓](#brackets-painless%e2%9c%93)
-  - [Nesting [painless]✓](#nesting-painless%e2%9c%93)
-  - [StoneWall [respectable]✓](#stonewall-respectable%e2%9c%93)
-  - [Fish [respectable]✓](#fish-respectable%e2%9c%93)
+  - [Brackets](#brackets)
+  - [Nesting](#nesting)
+  - [StoneWall](#stonewall)
+  - [Fish](#fish)
 - [Leader](#leader)
-  - [Dominator [painless]✓](#dominator-painless%e2%9c%93)
-  - [EquiLeader [painless]✓](#equileader-painless%e2%9c%93)
+  - [Dominator](#dominator)
+  - [EquiLeader](#equileader)
 - [Maximum Slice Problem](#maximum-slice-problem)
-  - [MaxProfit [painless]✓](#maxprofit-painless%e2%9c%93)
-  - [MaxSliceSum [painless]✓](#maxslicesum-painless%e2%9c%93)
-  - [MaxDoubleSliceSum [respectable]✓](#maxdoubleslicesum-respectable%e2%9c%93)
+  - [MaxProfit](#maxprofit)
+  - [MaxSliceSum](#maxslicesum)
+  - [MaxDoubleSliceSum](#maxdoubleslicesum)
 - [Prime and composite numbers](#prime-and-composite-numbers)
-  - [MinPerimeterRectangle [painless]✓](#minperimeterrectangle-painless%e2%9c%93)
-  - [CountFactors [painless]✓](#countfactors-painless%e2%9c%93)
-  - [Peaks [respectable]✓](#peaks-respectable%e2%9c%93)
-  - [Flags [ambitious]](#flags-ambitious)
+  - [MinPerimeterRectangle](#minperimeterrectangle)
+  - [CountFactors](#countfactors)
+  - [Peaks](#peaks)
+  - [Flags](#flags)
 - [Sieve or Eratosthenes](#sieve-or-eratosthenes)
-  - [CountSemiprimes [painless]✓](#countsemiprimes-painless%e2%9c%93)
-  - [CountNonDivisible [respectable]✓](#countnondivisible-respectable%e2%9c%93)
+  - [CountSemiprimes](#countsemiprimes)
+  - [CountNonDivisible](#countnondivisible)
 - [Euclidean Algorithm](#euclidean-algorithm)
-  - [ChocolatesByNumbers [painless]✓](#chocolatesbynumbers-painless%e2%9c%93)
-  - [CommonPrimeDivisors [respectable]✓](#commonprimedivisors-respectable%e2%9c%93)
+  - [ChocolatesByNumbers](#chocolatesbynumbers)
+  - [CommonPrimeDivisors](#commonprimedivisors)
 - [Fibonacci Numbers](#fibonacci-numbers)
-  - [FibFrog [respectable]✓](#fibfrog-respectable%e2%9c%93)
-  - [Ladder [respectable]✓](#ladder-respectable%e2%9c%93)
+  - [FibFrog](#fibfrog)
+  - [Ladder](#ladder)
 - [Binary Search](#binary-search)
-  - [MinMaxDivision [respectable]✓](#minmaxdivision-respectable%e2%9c%93)
-  - [NailingPlanks [respectable]✓](#nailingplanks-respectable%e2%9c%93)
+  - [MinMaxDivision](#minmaxdivision)
+  - [NailingPlanks](#nailingplanks)
 - [Caterpillar method](#caterpillar-method)
-  - [AbsDistinct [painless]✓](#absdistinct-painless%e2%9c%93)
-  - [CountDistinctSlices [respectable]✓](#countdistinctslices-respectable%e2%9c%93)
-  - [CountTriangles [respectable]✓](#counttriangles-respectable%e2%9c%93)
-  - [MinAbsSumOfTwo [ambitious]✓](#minabssumoftwo-ambitious%e2%9c%93)
+  - [AbsDistinct](#absdistinct)
+  - [CountDistinctSlices](#countdistinctslices)
+  - [CountTriangles](#counttriangles)
+  - [MinAbsSumOfTwo](#minabssumoftwo)
 - [Greedy algorithms](#greedy-algorithms)
-  - [TieRopes [painless]✓](#tieropes-painless%e2%9c%93)
-  - [MaxNonoverlappingSegments [painless]✓](#maxnonoverlappingsegments-painless%e2%9c%93)
+  - [TieRopes](#tieropes)
+  - [MaxNonoverlappingSegments](#maxnonoverlappingsegments)
 - [Dynamic Programming](#dynamic-programming)
-  - [NumberSolitaire [respectable]✓](#numbersolitaire-respectable%e2%9c%93)
-  - [MinAbsSum [ambitious]✗](#minabssum-ambitious%e2%9c%97)
+  - [NumberSolitaire](#numbersolitaire)
+  - [MinAbsSum✗](#minabssum%e2%9c%97)
 - [Challenges](#challenges)
   - [LongestPassword](#longestpassword)
   - [Casino](#casino)
@@ -101,7 +101,7 @@ tags:
 
 ## Iterations
 
-### BinaryGap [painless]✓
+### BinaryGap
 
 Returns 100%
 ```python
@@ -124,7 +124,7 @@ def solution(n):
 ```
 ## Arrays
 
-### CyclicRotation [painless]✓
+### CyclicRotation 
 
 Scores 100%, check for the len of 0.
 
@@ -137,7 +137,7 @@ def solution(a,k):
     a=a[n-k:]+a[0:n-k]
     return a
 ```
-### OddOccurrencesInArray [painless]✓
+### OddOccurrencesInArray 
 
 Scores 100%, the `defaultdict` is not needed, simple `e in d` can do it. Note how we used `d.items()` to get both keys and values.
 
@@ -160,7 +160,7 @@ def solution(a):
 ## Time Complexity
 
 
-### PermMissingElem [painless]✓
+### PermMissingElem 
 
 Returns 100%, the key is to sort the array.
 
@@ -179,7 +179,7 @@ def solution(a):
 
 ```
 
-### FrogJmp [painless]✓
+### FrogJmp 
 
 Scores 100%. We first subtract and then use `math.ceil` operation.
 
@@ -194,7 +194,7 @@ def solution(x,y,d):
     return c   
 ```
 
-### TapeEquilibrium [painless]✓
+### TapeEquilibrium 
 
 Solution with 53%
 ```python
@@ -236,7 +236,7 @@ def solution(a):
 
 ## Counting Elements
 
-### FrogRiverOne [painless]✓
+### FrogRiverOne 
 
 This is probable the best task on codility, since it teaches you to use `len` instead of `max`.
 
@@ -251,7 +251,7 @@ def solution(x, a):
             return i   
     return -1
 ```
-### MaxCounters [respectable]✓
+### MaxCounters 
 
 Scores 66%
 ```python
@@ -306,7 +306,7 @@ def solution(n, a):
             r[v-1] = r[v-1]+1
         return r
 ```
-### MissingInteger [respectable]✓
+### MissingInteger 
 
 Scores 100%
 ```python
@@ -319,7 +319,7 @@ def solution(a):
     return 
 ```
 
-### PermCheck [painless]✓
+### PermCheck 
 
 Scores 100% 
 
@@ -351,7 +351,7 @@ solution(a)
 
 ## Prefix Sums
 
-### PassingCars [painless]✓
+### PassingCars 
 
 Scores 100%. Don't forget the 1000000000 limit.
 
@@ -371,7 +371,7 @@ def solution(a):
     return pc
 ```
 
-### GenomicRangeQuery [respectable]✓
+### GenomicRangeQuery 
 
 Scores 100%
 
@@ -383,8 +383,8 @@ def solution(s,p,q):
     for i in range(n):
         pi=p[i]
         qi=q[i]+1
-        ts=s[pi:qi]        
-        if 'A' in ts:            
+        ts=s[pi:qi]
+        if 'A' in ts:
             r[i]=1
         elif 'C' in ts:
             r[i]=2
@@ -398,7 +398,7 @@ s,p,q = 'CAGCCTA', [2, 5, 0], [4, 5, 6]
 solution(s,p,q)
 ```
 
-### MinAvgTwoSlice [respectable]✓
+### MinAvgTwoSlice 
 
 The standard solution will not perform well so you can get only 50%.
 
@@ -460,7 +460,7 @@ def solution(a):
 ```
 
 
-### CountDiv [respectable]✓
+### CountDiv 
 
 Scores 100%. We first get the first possible value using the // and * trick. If the f is bigger than b, we need to return 0, else we find the distance b-f.
 
@@ -476,31 +476,31 @@ def solution(a, b, k):
 
 ## Sorting
 
-### Triangle [painless]✓
+### Triangle 
 
 ```python
 ```
 
 
-### Distinct [painless]✓
+### Distinct 
 
 ```python
 ```
 
 
-### MaxProductOfThree [painless]✓
+### MaxProductOfThree 
 
 ```python
 ```
 
-### NumberOfDiscIntersections [ambitious]✗
+### NumberOfDiscIntersections
 
 ```python
 ```
 
 ## Stacks and Queues
 
-### Brackets [painless]✓
+### Brackets 
 
 Recursive brackets. Scores 50%, O(3**N).
 
@@ -555,11 +555,11 @@ def solution(s):
 
 
 
-### Nesting [painless]✓
+### Nesting 
 
 Same as Brackets task. See [Brackets](#brackets-painless%e2%9c%93).
 
-### StoneWall [respectable]✓
+### StoneWall 
 
 Recursive StoneWall scores: 71, O(N**2)
 
@@ -586,7 +586,7 @@ def solution(a):
 solution(a)
 ```
 
-### Fish [respectable]✓
+### Fish 
 
 Scores 87%, directly updating a and b.
 
@@ -637,12 +637,12 @@ def solution(a, b):
 
 ## Leader
 
-### Dominator [painless]✓
-### EquiLeader [painless]✓
+### Dominator 
+### EquiLeader 
 
 ## Maximum Slice Problem
 
-### MaxProfit [painless]✓
+### MaxProfit 
 
 Scores 100%. In here we have an array of prices at particular day such as this one `a = [5,4,3,2,3,4,5,6,5,4,5,6,7,1]` and we would like to find the maximum jump `mj` or maximum profit we may get.
 
@@ -667,7 +667,7 @@ def jump(a):
 jump(a)
 ```
 
-### MaxSliceSum [painless]✓
+### MaxSliceSum 
 
 Scores 100%. This problem should search in array to find the slice with max sum. 
 
@@ -691,7 +691,7 @@ def solution(a):
 solution(a)
 ```
 
-### MaxDoubleSliceSum [respectable]✓
+### MaxDoubleSliceSum 
 
 Another problem from [codility](https://app.codility.com/programmers/lessons/9-maximum_slice_problem/){:rel="nofollow"}
 
@@ -717,7 +717,7 @@ solution(a)
 
 ## Prime and composite numbers
 
-### MinPerimeterRectangle [painless]✓
+### MinPerimeterRectangle 
 
 ```python
 def solution(n):
@@ -737,8 +737,8 @@ def solution(n):
 ```
 
 
-### CountFactors [painless]✓
-### Peaks [respectable]✓
+### CountFactors 
+### Peaks 
 
 
 ```python
@@ -787,7 +787,7 @@ def solution(a):
 
 
 
-### Flags [ambitious]
+### Flags
 
 ```python
 a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
@@ -829,7 +829,7 @@ def solution(a):
 
 ## Sieve or Eratosthenes
 
-### CountSemiprimes [painless]✓
+### CountSemiprimes 
 
 Scores 55% 
 
@@ -873,7 +873,7 @@ solution(n,p,q)
 ```
 
 
-### CountNonDivisible [respectable]✓
+### CountNonDivisible 
 Scores 55%
 ```python
 def cnt(n, a):
@@ -895,7 +895,7 @@ def solution(a):
 
 ## Euclidean Algorithm
 
-### ChocolatesByNumbers [painless]✓
+### ChocolatesByNumbers 
 
 ```python
 def gcdm(a, b):
@@ -914,7 +914,7 @@ def solution(n, m):
 
 
 
-### CommonPrimeDivisors [respectable]✓
+### CommonPrimeDivisors 
 
 Scored 84%
 ```python
@@ -954,11 +954,11 @@ solution(a,b)
 
 ## Fibonacci Numbers
 
-### FibFrog [respectable]✓
+### FibFrog 
 
 
 
-### Ladder [respectable]✓
+### Ladder 
 
 ```python
 def fib(n=50):
@@ -992,19 +992,19 @@ def solution(a,b):
 
 ## Binary Search
 
-### MinMaxDivision [respectable]✓
-### NailingPlanks [respectable]✓
+### MinMaxDivision 
+### NailingPlanks 
 
 ## Caterpillar method
 
-### AbsDistinct [painless]✓
-### CountDistinctSlices [respectable]✓
-### CountTriangles [respectable]✓
-### MinAbsSumOfTwo [ambitious]✓
+### AbsDistinct 
+### CountDistinctSlices 
+### CountTriangles 
+### MinAbsSumOfTwo
 
 ## Greedy algorithms
 
-### TieRopes [painless]✓
+### TieRopes 
 
 Scores 100%
 ```python
@@ -1027,12 +1027,12 @@ def solution(k,a):
     return gek
 ```
 
-### MaxNonoverlappingSegments [painless]✓
+### MaxNonoverlappingSegments 
 
 ## Dynamic Programming
 
-### NumberSolitaire [respectable]✓
-### MinAbsSum [ambitious]✗
+### NumberSolitaire 
+### MinAbsSum✗
 
 
 ## Challenges
