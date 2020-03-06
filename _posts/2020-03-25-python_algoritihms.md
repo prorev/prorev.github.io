@@ -15,7 +15,7 @@ tags:
    - programming
 ---
 - [Iterations](#iterations)
-- [BinaryGap [painless]✓](#binarygap-painless%e2%9c%93)
+  - [BinaryGap [painless]✓](#binarygap-painless%e2%9c%93)
 - [Arrays](#arrays)
   - [CyclicRotation [painless]✓](#cyclicrotation-painless%e2%9c%93)
   - [OddOccurrencesInArray [painless]✓](#oddoccurrencesinarray-painless%e2%9c%93)
@@ -24,10 +24,10 @@ tags:
   - [FrogJmp [painless]✓](#frogjmp-painless%e2%9c%93)
   - [TapeEquilibrium [painless]✓](#tapeequilibrium-painless%e2%9c%93)
 - [Counting Elements](#counting-elements)
-  - [PermCheck [painless]✓](#permcheck-painless%e2%9c%93)
   - [FrogRiverOne [painless]✓](#frogriverone-painless%e2%9c%93)
   - [MaxCounters [respectable]✓](#maxcounters-respectable%e2%9c%93)
   - [MissingInteger [respectable]✓](#missinginteger-respectable%e2%9c%93)
+  - [PermCheck [painless]✓](#permcheck-painless%e2%9c%93)
 - [Prefix Sums](#prefix-sums)
   - [PassingCars [painless]✓](#passingcars-painless%e2%9c%93)
   - [GenomicRangeQuery [respectable]✓](#genomicrangequery-respectable%e2%9c%93)
@@ -101,7 +101,7 @@ tags:
 
 ## Iterations
 
-## BinaryGap [painless]✓
+### BinaryGap [painless]✓
 
 Returns 100%
 ```python
@@ -123,6 +123,7 @@ def solution(n):
     return mz
 ```
 ## Arrays
+
 ### CyclicRotation [painless]✓
 
 Scores 100%, check for the len of 0.
@@ -235,10 +236,118 @@ def solution(a):
 
 ## Counting Elements
 
-### PermCheck [painless]✓
 ### FrogRiverOne [painless]✓
+
+This is probable the best task on codility, since it teaches you to use `len` instead of `max`.
+
+```python
+def solution(x, a):
+    l = len(a)  
+    s = set() 
+    r = -1 # return
+    for i,e in enumerate(a):
+        s.add(e)     
+        if(len(s)==x):
+            return i   
+    return -1
+```
 ### MaxCounters [respectable]✓
+
+Scores 66%
+```python
+def solution(n, a):
+    r = [0]*n
+    for v in a:
+        if (v==n+1):
+            m = max(r)
+            r = [m]*n
+        else:
+            r[v-1] = r[v-1]+1
+            
+    return r
+```
+
+Scores 100%
+
+```python
+from collections import Counter
+def maxrep(a):
+    if(len(a)==0):
+        return 0
+    c = Counter(a)
+    return c.most_common(1)[0][1]
+    
+def solution(n, a):
+    ll=[[]]# split to multiple lists
+    b = 0 # index for the next sublist
+    for i in range(0,len(a)):
+        if (a[i]== n+1): # break
+            b=b+1
+            ll.append([])
+        else:
+            ll[b].append(a[i])
+
+    c = [] # list of max repeat counters
+    for l in ll:
+        c.append(maxrep(l))
+
+    s = sum(c[:-1])
+    r = [s]* n
+    if (c[-1]==0):
+        return r
+    else:
+        # get index of last (n+1)
+        if(n+1 in a):
+            lin = len(a) - a[::-1].index(n+1)
+        else:
+            lin =0
+        
+        for v in a[lin:]:
+            r[v-1] = r[v-1]+1
+        return r
+```
 ### MissingInteger [respectable]✓
+
+Scores 100%
+```python
+def solution(a):
+    a = set(a)
+    for i in range(1,1000000+1):
+        if i not in a:
+            return i
+    
+    return 
+```
+
+### PermCheck [painless]✓
+
+Scores 100% 
+
+```python
+# permutation
+
+from random import randint
+a = [randint(1, 1000000000) for p in range(0, 100000)]
+
+def missing(a):
+    a = set(a)
+    for i in range(1,1000000+1):
+        if i not in a:
+            return i
+
+def solution(a):
+    m = max(a)
+    if(m!=len(a)):
+        return 0
+    if(missing(a) <= m ):
+        return 0
+    return 1
+
+a = [1,3,2,4]
+solution(a)   
+```
+
+
 
 ## Prefix Sums
 
