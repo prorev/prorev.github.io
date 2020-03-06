@@ -14,10 +14,15 @@ tags:
    - logic
    - programming
 ---
+- [Iterations](#iterations)
+- [BinaryGap [painless]✓](#binarygap-painless%e2%9c%93)
+- [Arrays](#arrays)
+  - [CyclicRotation [painless]✓](#cyclicrotation-painless%e2%9c%93)
+  - [OddOccurrencesInArray [painless]✓](#oddoccurrencesinarray-painless%e2%9c%93)
 - [Time Complexity](#time-complexity)
-  - [TapeEquilibrium [painless]✓](#tapeequilibrium-painless%e2%9c%93)
-  - [FrogJmp [painless]✓](#frogjmp-painless%e2%9c%93)
   - [PermMissingElem [painless]✓](#permmissingelem-painless%e2%9c%93)
+  - [FrogJmp [painless]✓](#frogjmp-painless%e2%9c%93)
+  - [TapeEquilibrium [painless]✓](#tapeequilibrium-painless%e2%9c%93)
 - [Counting Elements](#counting-elements)
   - [PermCheck [painless]✓](#permcheck-painless%e2%9c%93)
   - [FrogRiverOne [painless]✓](#frogriverone-painless%e2%9c%93)
@@ -93,11 +98,140 @@ tags:
   - [lcd based on gcd](#lcd-based-on-gcd)
   - [first 50 fibs](#first-50-fibs)
 
+
+## Iterations
+
+## BinaryGap [painless]✓
+
+Returns 100%
+```python
+def solution(n):
+    b=bin(n)[2:]
+    s1=False
+    tz=0 # temp zeros
+    mz=0 # max zeros 
+    for e in b:
+        if e=='1':
+            mz=max(tz,mz)
+            tz=0
+            s1=True
+        else:
+            if(s1==True):
+                tz+=1
+            
+            
+    return mz
+```
+## Arrays
+### CyclicRotation [painless]✓
+
+Scores 100%, check for the len of 0.
+
+```python
+def solution(a,k):
+    n=len(a)
+    if(n==0):
+        return []
+    k=k%n
+    a=a[n-k:]+a[0:n-k]
+    return a
+```
+### OddOccurrencesInArray [painless]✓
+
+Scores 100%, the `defaultdict` is not needed, simple `e in d` can do it. Note how we used `d.items()` to get both keys and values.
+
+```python
+def solution(a):
+    d = {}
+    for e in a:
+        if (e in d):
+            d[e]+=1
+        else:
+            d[e]=1
+        
+    for k,v in d.items():
+        if(v%2==1):
+            return k
+```
+
+
+
 ## Time Complexity
 
-### TapeEquilibrium [painless]✓
-### FrogJmp [painless]✓
+
 ### PermMissingElem [painless]✓
+
+Returns 100%, the key is to sort the array.
+
+```python
+def solution(a):
+    if (len(a)==0): 
+        return 1
+    if(max(a) == len(a)):
+        return len(a)+1
+    
+    a.sort() 
+    for _ in range(1, len(a)+1):
+        if _ != a[_-1]:
+            return _
+
+
+```
+
+### FrogJmp [painless]✓
+
+Scores 100%. We first subtract and then use `math.ceil` operation.
+
+```python
+import math
+
+def solution(x,y,d):    
+    r = y-x
+    if(r==0): return 0
+    
+    c = math.ceil(r/d)
+    return c   
+```
+
+### TapeEquilibrium [painless]✓
+
+Solution with 53%
+```python
+def solution(a):
+    m = None # min sum
+    l = len(a)  
+    
+    for p in range(1,l):
+        print("p", p)
+        ab = abs(sum(a[:p])-sum(a[p:l+1]))
+        if (m == None):
+            m = ab
+        if (m > ab):
+            m = ab
+            
+    return m 
+```
+
+Solution with 100%
+```python
+def solution(a):
+    l=len(a)
+    ms=None # min sum
+    sl=0 # sum left
+    sr=sum(a)
+    
+    for p in range(0,l-1):
+        sl=sl+a[p]
+        sr=sr-a[p]
+        ab=abs(sl-sr)        
+        if (ms==None):
+            ms=ab
+        if (ms>ab):
+            ms=ab
+    return ms
+```
+
+
 
 ## Counting Elements
 
