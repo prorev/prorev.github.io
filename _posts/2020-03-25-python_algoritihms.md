@@ -465,7 +465,6 @@ import random
 # s = ''.join([random.choice(['{'*100000, '}'*100000]) for p in range(0, 2)])
 #s = '{'*100000 + '}'*100000
 #s = '([)()]'
-#s = '{{{{'
 
 def solution(s):
     if len(s)%2==1: return 0
