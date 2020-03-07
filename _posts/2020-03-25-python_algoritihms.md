@@ -14,89 +14,16 @@ tags:
    - logic
    - programming
 ---
-- [Iterations](#iterations)
-  - [BinaryGap](#binarygap)
-- [Arrays](#arrays)
-  - [CyclicRotation](#cyclicrotation)
-  - [OddOccurrencesInArray](#oddoccurrencesinarray)
-- [Time Complexity](#time-complexity)
-  - [PermMissingElem](#permmissingelem)
-  - [FrogJmp](#frogjmp)
-  - [TapeEquilibrium](#tapeequilibrium)
-- [Counting Elements](#counting-elements)
-  - [FrogRiverOne](#frogriverone)
-  - [MaxCounters](#maxcounters)
-  - [MissingInteger](#missinginteger)
-  - [PermCheck](#permcheck)
-- [Prefix Sums](#prefix-sums)
-  - [PassingCars](#passingcars)
-  - [GenomicRangeQuery](#genomicrangequery)
-  - [MinAvgTwoSlice](#minavgtwoslice)
-  - [CountDiv](#countdiv)
-- [Sorting](#sorting)
-  - [Triangle](#triangle)
-  - [Distinct](#distinct)
-  - [MaxProductOfThree](#maxproductofthree)
-  - [NumberOfDiscIntersections](#numberofdiscintersections)
-- [Stacks and Queues](#stacks-and-queues)
-  - [Brackets](#brackets)
-  - [Nesting](#nesting)
-  - [StoneWall](#stonewall)
-  - [Fish](#fish)
-- [Leader](#leader)
-  - [Dominator](#dominator)
-  - [EquiLeader](#equileader)
-- [Maximum Slice Problem](#maximum-slice-problem)
-  - [MaxProfit](#maxprofit)
-  - [MaxSliceSum](#maxslicesum)
-  - [MaxDoubleSliceSum](#maxdoubleslicesum)
-- [Prime and composite numbers](#prime-and-composite-numbers)
-  - [MinPerimeterRectangle](#minperimeterrectangle)
-  - [CountFactors](#countfactors)
-  - [Peaks](#peaks)
-  - [Flags](#flags)
-- [Sieve or Eratosthenes](#sieve-or-eratosthenes)
-  - [CountSemiprimes](#countsemiprimes)
-  - [CountNonDivisible](#countnondivisible)
-- [Euclidean Algorithm](#euclidean-algorithm)
-  - [ChocolatesByNumbers](#chocolatesbynumbers)
-  - [CommonPrimeDivisors](#commonprimedivisors)
-- [Fibonacci Numbers](#fibonacci-numbers)
-  - [FibFrog](#fibfrog)
-  - [Ladder](#ladder)
-- [Binary Search](#binary-search)
-  - [MinMaxDivision](#minmaxdivision)
-  - [NailingPlanks](#nailingplanks)
-- [Caterpillar method](#caterpillar-method)
-  - [AbsDistinct](#absdistinct)
-  - [CountDistinctSlices](#countdistinctslices)
-  - [CountTriangles](#counttriangles)
-  - [MinAbsSumOfTwo](#minabssumoftwo)
-- [Greedy algorithms](#greedy-algorithms)
-  - [TieRopes](#tieropes)
-  - [MaxNonoverlappingSegments](#maxnonoverlappingsegments)
-- [Dynamic Programming](#dynamic-programming)
-  - [NumberSolitaire](#numbersolitaire)
-  - [MinAbsSum✗](#minabssum%e2%9c%97)
-- [Challenges](#challenges)
-  - [LongestPassword](#longestpassword)
-  - [Casino](#casino)
-- [Appendix](#appendix)
-  - [Primes](#primes)
-  - [Counter](#counter)
-  - [Random int](#random-int)
-  - [Random string](#random-string)
-  - [Random shuffled](#random-shuffled)
-  - [All factors](#all-factors)
-  - [Find sign of increase and decrease in array](#find-sign-of-increase-and-decrease-in-array)
-  - [Find increase and decrease in array](#find-increase-and-decrease-in-array)
-  - [Find peaks of array](#find-peaks-of-array)
-  - [Find peak differences](#find-peak-differences)
-  - [Prime numbers](#prime-numbers)
-  - [gcd substract](#gcd-substract)
-  - [gcd using %](#gcd-using)
-  - [lcd based on gcd](#lcd-based-on-gcd)
-  - [first 50 fibs](#first-50-fibs)
+- [a = [5,4,3,2,3,4,5,6,5,4,5,6,7,1]](#a--54323456545671)
+- [ideal sequence](#ideal-sequence)
+- [recursive paint neighbors](#recursive-paint-neighbors)
+- [return next to paint](#return-next-to-paint)
+- [find all the divisors](#find-all-the-divisors)
+- [number of divisors](#number-of-divisors)
+- [prime number test](#prime-number-test)
+- [returns how many times](#returns-how-many-times)
+- [n is divisible by 2 and 5](#n-is-divisible-by-2-and-5)
+- [[0, 0, 1, 1, 0, 1, 0, 1, 0, 0]](#0-0-1-1-0-1-0-1-0-0)
 
 
 ## Iterations
@@ -635,9 +562,228 @@ def solution(a, b):
 ```
 
 
-## Leader
+## EquiLeader
 
-### Dominator 
+66% with O(n**2) is the best we can get with calling leader inside for loop. We also have the function that check the leader for the whole array at first, since if there is no leader for the whole array, then we cannot have equileader.
+
+```python
+def leader(a):
+    n=len(a)
+    if (n==0):
+        return None
+    if (n==1):
+        return a[0]
+    if (n==2 and a[0]==a[1]):
+        return a[0]
+    
+    d=sorted(a)[n//2]
+    
+    dn=0
+    for e in a:
+        if e==d:
+            dn+=1 
+    
+    if dn > n//2:
+        return d
+    else:
+        return None
+def solution(a):
+    n = len(a)
+    l = leader(a)
+   
+    if None==l:
+        return 0
+    if 1==n:
+        return 0
+    if 2==n:
+        return 1
+    cnt=0
+    for i in range(0, n-1):
+        l1 = a[:i+1]
+        l2 = a[i+1:]
+             
+        l1v = leader(l1)
+        l2v = leader(l2)
+        if (l1v == l2v and l1v!=None):
+            cnt+=1
+    return cnt
+```
+The provided example would create lists like this:
+```
+[4] [3, 4, 4, 4, 2]
+[4, 3] [4, 4, 4, 2]
+[4, 3, 4] [4, 4, 2]
+[4, 3, 4, 4] [4, 2]
+[4, 3, 4, 4, 4] [2]
+```
+and check as separate. The improvident would be to not to call leader checker inside the loop for each list.
+
+The next solution scores 100%.
+
+```python
+def leader(a):
+    n=len(a)
+    if (n==0):
+        return None
+    if (n==1):
+        return a[0]
+    if (n==2 and a[0]==a[1]): 
+        return a[0]
+
+    d=sorted(a)[n//2]
+    dn=0
+    for e in a:
+        if e==d:
+            dn+=1 
+    if dn > n//2:
+        return d
+    else:
+        return None
+    
+def solution(a):
+    n = len(a)
+    l = leader(a)
+   
+    if None==l:
+        return 0
+    if 1==n:
+        return 0
+    if 2==n:
+        return 1
+    
+    cnt=0
+  
+    dl,dr = {},{}
+    for i in range(n): #init dr
+        if a[i] not in dr:
+            dr[a[i]]=1
+        else:
+            dr[a[i]]+= 1
+    ld = a[0] # leader
+
+    for i in range(n): 
+        if a[i] not in dl:
+            dl[a[i]]=1
+        else:
+            dl[a[i]]+=1
+
+        dr[a[i]]-=1
+
+        if dl[ld] < dl[a[i]]:
+            ld = a[i] # new leader from dl
+
+        if (i+1) // 2 < dl[ld] and (n - (i+1)) // 2 < dr[ld]:
+            cnt += 1
+    return cnt
+```
+Note we don't have to sort dictionary elements, because the first list `dl` at the very start has 1 element as leader. Later we check every next element if it has greater value than that leader.
+
+We also don't need to check the the leader for the second dictionary, so no need for this code:
+
+```python
+print(max(dl, key=dl.get))
+print(dl)
+print(max(dr, key=dr.get))
+print(dr)
+print('ld', ld)
+print('~~~')
+```
+because we increase the counter just based on the fact that the same leader for both the dicts has more than half elements.
+
+Another important thing is to check at the very start if the list we got as input has the leader. Without that we will loose some percentage.
+
+> Note it is not needed to sort the dictionary also:
+
+```python
+print(sorted(dr.items(), key=lambda x: x[1], reverse=True ))
+```
+
+
+Slightly more elegant solution would be to use **defaultdict** from **collections**, also scores 100%.
+
+```python
+from collections import defaultdict
+
+def leader(a):
+    n=len(a)   
+    if (n==0): 
+        return None
+    if (n==1): 
+        return a[0]
+    if (n==2 and a[0]==a[1]): 
+        return a[0]    
+    
+    d=sorted(a)[n//2]
+    
+    dn=0
+    for e in a:
+        if e==d:
+            dn+=1 
+    
+    if dn > n//2:
+        return d
+    else:
+        return None    
+    
+def solution(a):
+    n = len(a)
+    l = leader(a)
+   
+    if None==l:
+        return 0
+    if 1==n:
+        return 0
+    if 2==n:
+        return 1
+    
+    cnt=0  
+    dl,dr = defaultdict(lambda : 0),defaultdict(lambda : 0)
+    
+    
+    for i in range(n): #init dr
+        dr[a[i]]+= 1
+
+    ld = a[0] # leader
+    for i in range(n): 
+        dl[a[i]]+=1
+        dr[a[i]]-=1
+        
+        if dl[ld] < dl[a[i]]:
+            ld = a[i] # new leader from dl
+            
+           
+        if (i+1) // 2 < dl[ld] and (n - (i+1)) // 2 < dr[ld]:
+            cnt += 1
+    return cnt
+```
+
+
+
+### Dominator
+
+Scores 83%
+
+```python
+from collections import Counter
+
+def solution(a):
+    l = len(a)
+    if (l==0): 
+        return -1
+
+    c = Counter(a)    
+    d = c.most_common(1)[0][1] # dominator
+    e = c.most_common(1)[0][0] # element
+    if (d<=l//2):
+        # not dominator
+        return -1
+    else:
+        # d is dominator
+        if (e in a):
+            return a.index(e)
+
+```
+
 ### EquiLeader 
 
 ## Maximum Slice Problem
@@ -1032,7 +1178,7 @@ def solution(k,a):
 ## Dynamic Programming
 
 ### NumberSolitaire 
-### MinAbsSum✗
+### MinAbsSum
 
 
 ## Challenges
@@ -1123,8 +1269,66 @@ solution(21, 2)
 ```
 
 
+## Number of countries
 
+```python
+from pandas import DataFrame
 
+l = [[5,4,4], [4,3,4], [3,2,4], [2,2,2], [3,3,4], [1,4,4], [4,1,1]]
+lr = len(l)
+lc = len(l[0])
+print (DataFrame(l))
+nl =  [[0 for j in range(lc)] for i in range(lr)]   
+
+# recursive paint neighbors
+def pn(i,j, c, lv):
+    
+    if(i<0 or j<0 or j>=lc or i>=lr): 
+        return
+
+    # don't paint already painted i,j 
+    if(nl[i][j]!=0):
+        return   
+    
+    # stop the recursion if 
+    if(l[i][j]!=lv):
+        return
+
+    nl[i][j]= c
+    
+    pn(i+1, j, c, lv)
+    pn(i-1, j, c, lv)
+    pn(i, j+1, c, lv)
+    pn(i, j-1, c, lv)
+    
+    return
+    
+# return next to paint
+def rn(l):
+    lr = len(l)
+    lc = len(l[0])
+    for i in range(lr):
+        for j in range(lc):
+            if l[i][j]==0:
+                return(i,j)
+    return None # nothing to paint
+
+def solution(l):
+    c=1 # country counter
+    lv = l[0][0] # old value
+    pn(0, 0, c, lv)
+
+    while None!=rn(nl):
+        i,j = rn(nl)
+        c = c+1
+        lv = l[i][j]
+        pn(i,j, c, lv)
+
+    return max(max(nl) )
+
+m = solution(l)
+DataFrame(nl)
+```
 
 
 
