@@ -43,9 +43,9 @@ tags:
   - [Nesting](#nesting)
   - [StoneWall](#stonewall)
   - [Fish](#fish)
-- [EquiLeader](#equileader)
+- [Leader](#leader)
   - [Dominator](#dominator)
-  - [EquiLeader](#equileader-1)
+  - [EquiLeader](#equileader)
 - [Maximum Slice Problem](#maximum-slice-problem)
   - [MaxProfit](#maxprofit)
   - [MaxSliceSum](#maxslicesum)
@@ -635,7 +635,38 @@ def solution(a, b):
 ```
 
 
-## EquiLeader
+## Leader
+
+
+
+
+
+### Dominator
+
+Scores 83%
+
+```python
+from collections import Counter
+
+def solution(a):
+    l = len(a)
+    if (l==0): 
+        return -1
+
+    c = Counter(a)    
+    d = c.most_common(1)[0][1] # dominator
+    e = c.most_common(1)[0][0] # element
+    if (d<=l//2):
+        # not dominator
+        return -1
+    else:
+        # d is dominator
+        if (e in a):
+            return a.index(e)
+
+```
+
+### EquiLeader 
 
 66% with O(n**2) is the best we can get with calling leader inside for loop. We also have the function that check the leader for the whole array at first, since if there is no leader for the whole array, then we cannot have equileader.
 
@@ -829,35 +860,6 @@ def solution(a):
             cnt += 1
     return cnt
 ```
-
-
-
-### Dominator
-
-Scores 83%
-
-```python
-from collections import Counter
-
-def solution(a):
-    l = len(a)
-    if (l==0): 
-        return -1
-
-    c = Counter(a)    
-    d = c.most_common(1)[0][1] # dominator
-    e = c.most_common(1)[0][0] # element
-    if (d<=l//2):
-        # not dominator
-        return -1
-    else:
-        # d is dominator
-        if (e in a):
-            return a.index(e)
-
-```
-
-### EquiLeader 
 
 ## Maximum Slice Problem
 
