@@ -557,7 +557,7 @@ def solution(s):
 
 ### Nesting 
 
-Same as Brackets task. See [Brackets](#brackets-painless%e2%9c%93).
+Same as Brackets task. See [Brackets](#brackets).
 
 ### StoneWall 
 
@@ -586,6 +586,40 @@ def solution(a):
 solution(a)
 ```
 
+This solution scores 100%
+
+```python
+def lss(s): # last el of stack
+    if len(s)>0:
+        return s[-1]
+    else: 
+        return 0
+        
+def solution(a):
+    n=len(a)
+    s=[]#stack    
+    cnt=0    
+    for e in a:
+        if e>lss(s):
+            s.append(e)
+        elif e==lss(s):
+            continue
+        else: # e<lss(s)
+            while lss(s)!=0 and lss(s)>e:
+                s.pop()
+                cnt+=1
+            if(e!=lss(s)):
+                s.append(e)
+            
+    cnt+=len(s)
+    return cnt
+```
+We always deal with stones >0. If new element is bigger than the last on the stack, then add that to the stack, if it is a same size do nothing and process the next element of the array of stones.
+
+If the new element is smaller, then every time we pop we increase the counter, and repeat that for all stack. If we get to the same stone size in the stack with the new stone size, we should not `pop` nor update the counter `cnt`.
+
+If the stone size is different than what is on stack, just append the stack. 
+
 ### Fish 
 
 Scores 87%, directly updating a and b.
@@ -613,7 +647,7 @@ a,b = [randint(-10000, 10000) for p in range(0, 100000)], [randint(0, 1) for p i
 solution(a,b)
 ```
 
-Scores 100%. Single stack.
+Scores 100% with single stack.
 
 ```python
 def solution(a, b):
@@ -663,7 +697,26 @@ def solution(a):
         # d is dominator
         if (e in a):
             return a.index(e)
+```
 
+Scores 100%
+```python
+from collections import defaultdict
+
+def solution(a):
+    n = len(a)
+    if n==0: return -1
+
+    d=defaultdict(lambda: 0)
+    dm = a[0] # dominator
+    for e in a:
+        d[e]+=1        
+        if d[dm]<d[e]:
+            dm = e
+    if(d[dm]> n//2):
+        return a.index(dm)
+    else:
+        return -1
 ```
 
 ### EquiLeader 
