@@ -614,6 +614,7 @@ def solution(a):
     cnt+=len(s)
     return cnt
 ```
+
 We always deal with stones >0. If new element is bigger than the last on the stack, then add that to the stack, if it is a same size do nothing and process the next element of the array of stones.
 
 If the new element is smaller, then every time we pop we increase the counter, and repeat that for all stack. If we get to the same stone size in the stack with the new stone size, we should not `pop` nor update the counter `cnt`.
