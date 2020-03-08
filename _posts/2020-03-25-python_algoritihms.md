@@ -1172,6 +1172,8 @@ def solution(a):
 
 ### ChocolatesByNumbers 
 
+Scores 100% 
+
 ```python
 def gcdm(a, b):
     if a % b == 0:
