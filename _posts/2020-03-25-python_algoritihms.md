@@ -1306,6 +1306,74 @@ def solution(k,a):
 
 ### MaxNonoverlappingSegments 
 
+This solution scores 60%:
+
+We create list `c` of segment sizes. The idea is to add the minimum length sizes first, because this will make more room for the other segments. If we would add the biggest segment first, this will not be smart. We also have the dict `d` where we check what has been left.
+
+Function `tta` is try to add segment t to dict d if possible then return 1 if you add else 0 if you cannot add. Adding a segment t is based on values form the segment start and end.
+
+```python
+def tta(d, t):
+    _,a,b = t
+    none=True
+    for i in range(a,b+1):
+        if d[i]==1:
+            none=False
+            
+    if none==True:
+        for i in range(a,b+1):
+            d[i]=1
+        return 1
+    else:
+        return 0
+
+def solution(a,b):
+    n=len(a)
+    if n==0:
+        return 0
+    c=[]
+    for i in range(n):
+        c.append(b[i]-a[i])
+    
+    d = dict(zip([i for i in range(min(a), max(b)+1)], iter(lambda:0,1)))
+    s = sorted(zip(c,a,b)) # array of sorted segments
+    
+    cnt =0
+    for c,a,b in sorted(zip(c,a,b)):
+        cnt+=tta(d,(c,a,b))
+    return cnt
+```
+
+This algorithm is not 100% correct, even though it scores 100% for correctness. We can see that from one example from the performance tests, got 26 expected 27. This is because, even though we add segments sorted by size, and then by end...
+
+```python
+sorted(zip(c,a,b))
+# is equivalent to because originals was already sorted by end
+sorted(zip(c,a,b), key=lambda _:(_[0], _[2]))
+```
+
+better would be to deal segments as presented (sorted by end); not even sorted by size. Since this problem requires greedy algorithm, let's provide one.
+
+```python
+def solution(a,b):
+    n=len(a)
+    if n==0:
+        return 0
+     
+    cnt=1
+    e = b[0]
+    for i in range(1, n):
+        if a[i]>e:
+            cnt+=1
+            e=b[i]
+
+    return cnt
+```
+
+We count the first segment and traverse all the segments marking the end `e` each time. We use that end `e` to check if our new segment can fit.
+
+
+
 ## Dynamic Programming
 
 ### NumberSolitaire 
