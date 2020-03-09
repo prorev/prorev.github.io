@@ -1306,7 +1306,7 @@ def solution(k,a):
 
 ### MaxNonoverlappingSegments 
 
-This solution scores 60%:
+This solution scores 60%.
 
 We create list `c` of segment sizes. The idea is to add the minimum length sizes first, because this will make more room for the other segments. If we would add the biggest segment first, this will not be smart. We also have the dict `d` where we check what has been left.
 
