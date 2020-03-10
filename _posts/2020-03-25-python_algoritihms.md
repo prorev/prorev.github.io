@@ -1064,6 +1064,8 @@ def solution(a):
 
 ### Flags
 
+Returns 100% 
+
 ```python
 a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
 
@@ -1275,7 +1277,81 @@ def solution(a,b):
 ## Caterpillar method
 
 ### AbsDistinct 
+
+Returns 100%
+
+```python
+def solution(a):
+    a = [abs(i) for i in a]
+    return len(set(a))
+```
+
+You can also use map function
+
+```python
+def solution(a):
+    return len(set(map(abs,a)))
+```
+
+
 ### CountDistinctSlices 
+
+This solution will get you 70%
+
+```python
+
+def solution(m,a):   
+    n = len(a)    
+    m = max(a)
+    c=0 #counter
+    for i in range(0,n):
+        j=i
+        while len(set(a[i:j+1]))==j-i+1: 
+            c+=1
+            j=j+1
+    return c
+```
+
+This will get 100%
+
+```python
+def solution(m, a):
+    n = len(a)
+    m = max(a)
+    c = 0
+    mask = [0]*(m+1)
+    
+    l,r=0,0 # left and right slice indices    
+    while (l<=r< n):
+        while (r < n and mask[a[r]] != 1):
+            c += (r-l+1)
+            mask[a[r]] = 1
+            r += 1
+            print(l,r,mask, c)
+        else:
+            while r < n and l < n and a[l] != a[r]:
+                mask[a[l]] = 0
+                l += 1
+            mask[a[l]] = 0
+            l += 1
+            print(l,r,mask, c)
+    return min(c, 1000000000) 
+
+a =[3, 4, 5, 5, 2]
+solution(5,a)
+```
+
+| l   | r   | mask               | c   |
+| --- | --- | ------------------ | --- |
+| 0   | 1   | [0, 0, 0, 1, 0, 0] | 1   |
+| 0   | 2   | [0, 0, 0, 1, 1, 0] | 3   |
+| 0   | 3   | [0, 0, 0, 1, 1, 1] | 6   |
+| 3   | 3   | [0, 0, 0, 0, 0, 0] | 6   |
+| 3   | 4   | [0, 0, 0, 0, 0, 1] | 7   |
+| 3   | 5   | [0, 0, 1, 0, 0, 1] | 9   |
+| 4   | 5   | [0, 0, 1, 0, 0, 0] | 9   |
+
+
 ### CountTriangles 
 ### MinAbsSumOfTwo
 

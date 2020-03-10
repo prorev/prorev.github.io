@@ -21,6 +21,7 @@ tags:
 - [How to remove elements with specific keys, values?](#how-to-remove-elements-with-specific-keys-values)
 - [Get dictionary keys and values](#get-dictionary-keys-and-values)
 - [Convert two sequences (lists) into dictionary](#convert-two-sequences-lists-into-dictionary)
+- [Sorting a dictionary](#sorting-a-dictionary)
 
 ---
 Dictionaries are created using `{}` like this or using `dict()`.
@@ -192,5 +193,28 @@ _Output:_
 ```
 {'a': 5, 'b': 9, 'c': -1}
 ```
+
+## Sorting a dictionary
+
+While it is not possible to sort a dictionary, since dictionaries are orderless, it is possible to use list comprehension to create new dictionary sorted the way we like. Plain simple `sorted` can be used for that.
+
+_Example:_
+```python
+d ={'a':5, 'b':9, 'c':-1}
+nd = {k:v for k, v in sorted(d.items(), key=lambda _: _[1])}
+print(nd)
+```
+
+_Output:_
+```
+{'c': -1, 'a': 5, 'b': 9}
+```
+
+The trick is, the way we inserted items to the dictionary is how they will be presented with `print`.
+
+
+
+
+
 
 
