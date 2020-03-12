@@ -79,6 +79,7 @@ tags:
   - [NumberSolitaire](#numbersolitaire)
   - [MinAbsSum](#minabssum)
 - [Challenges](#challenges)
+  - [FloodDepth](#flooddepth)
   - [LongestPassword](#longestpassword)
   - [Casino](#casino)
 - [Number of countries](#number-of-countries)
@@ -94,10 +95,12 @@ tags:
   - [Find peaks of array](#find-peaks-of-array)
   - [Find peak differences](#find-peak-differences)
   - [Prime numbers](#prime-numbers)
-  - [gcd substract](#gcd-substract)
-  - [gcd using %](#gcd-using)
-  - [lcd based on gcd](#lcd-based-on-gcd)
-  - [first 50 fibs](#first-50-fibs)
+  - [GCD substract](#gcd-substract)
+  - [GCD using %](#gcd-using)
+  - [LCD based on GCD](#lcd-based-on-gcd)
+  - [First 50 fibs](#first-50-fibs)
+  - [Nice looking matrix](#nice-looking-matrix)
+  - [Random matrix](#random-matrix)
 
 ## Iterations
 
@@ -1458,6 +1461,81 @@ We count the first segment and traverse all the segments marking the end `e` eac
 
 ## Challenges
 
+### FloodDepth
+
+Scores 100%
+
+```python
+import operator
+def peaks2(a):
+    n=len(a)
+    p=[0]*n #peaks
+    if a[0]>a[1]:
+        p[0]=1 # peak
+    if a[-1]>a[-2]:
+        p[-1]=1 # peak
+        
+    for i in range (1,n-1):
+        if a[i-1]<a[i]>a[i+1]:
+            p[i]=1
+        if a[i-1] < a[i] and a[i]==a[i+1]:
+            p[i]=1 #also peak
+        if a[i-1] == a[i] and a[i]>a[i+1]:
+            p[i]=1 # also peak
+            
+    return p
+    
+def solution(a):    
+    n=len(a) 
+    if n<2:
+        return 0
+    p2=peaks2(a)
+    p=list(map(operator.mul, p2,a))
+    np=[0]*n # new value
+    lv=0
+
+    for i in range (0,n):
+        if p[i]>1 and p[i]>lv:
+            lv= p[i]
+            np[i]=p[i]
+    lv=0
+    for i in range (n-1, -1, -1):
+        if p[i]>1 and p[i]>lv:
+            lv= p[i]
+            np[i]=p[i]
+
+    wd=[0]*n # water level
+    s=[np[i] for i in range(0,n) if np[i]>0 ]
+
+    for i in range(0, len(s)-1):
+        s[i]=min(s[i],s[i+1])
+
+    j=-1
+    for i in range (0,n):
+        if np[i]>1:
+            j+=1
+        elif j<len(s)-1 and j!=-1:
+                wd[i]=s[j]
+
+    m=0 # max flood deep
+    for i in range (0,n):
+        if wd[i]>0:
+            m=max(m,wd[i]-a[i])
+    return m
+```
+
+We first calculate the peaks.
+
+![peaks](/wp-content/uploads/2020/03/algorithm-peaks1.jpg)
+
+But then from these calculated peaks only some will be important to hold the level of the water.
+To find them we go from left to right finding increasing and from right to left finding increasing peaks. All other peaks will be removed.
+
+Once we have the valid peaks the water level will be min(p1, p2) between two valid peaks.
+
+We may not use `import operator` trick if we update the **peaks2** function to return real values instead one and zero.
+
+
 ### LongestPassword
 
 ```python
@@ -1803,7 +1881,7 @@ print(primes(1000)[0:10])
 # [0, 0, 1, 1, 0, 1, 0, 1, 0, 0]
 ```
 
-### gcd substract
+### GCD substract
 
 ```python
 def gcds(a,b):
@@ -1815,7 +1893,7 @@ def gcds(a,b):
         return gcds(a, b - a)
 ```
 
-### gcd using %
+### GCD using %
 ```python
 def gcdm(a,b):
     if a%b==0:
@@ -1823,7 +1901,7 @@ def gcdm(a,b):
     else:
         return gcdm(b,a%b)
 ```
-### lcd based on gcd
+### LCD based on GCD
 
 ```python
 def lcd(a,b):
@@ -1831,7 +1909,7 @@ def lcd(a,b):
 ```
 
 
-### first 50 fibs
+### First 50 fibs
 
 ```python
 def fib(n=50):
@@ -1845,3 +1923,27 @@ def fib(n=50):
 f = fib(n=50)
 print(f, len(f))
 ```
+
+### Nice looking matrix
+
+```python
+import pandas as pd
+a= [[9, 9, 7], [9, 7, 2], [6, 9, 5], [9, 1, 2]]
+df = pd.DataFrame(a) 
+df
+```
+
+![matrix](/wp-content/uploads/2020/03/algorithm-matrix1.jpg)
+
+
+### Random matrix
+```python
+from random import randint
+a =  [[ randint(1, 9) for c in range(0, 10)] for r in range (0,10)] 
+print(a)
+import pandas as pd
+df = pd.DataFrame(a) 
+df
+```
+
+![matrix](/wp-content/uploads/2020/03/algorithm-matrix2.jpg)
