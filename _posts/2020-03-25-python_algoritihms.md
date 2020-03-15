@@ -1542,9 +1542,55 @@ solution(a)
 You can track arrays `a` and index `i` down below. How it works? If it is a positive number or 0 we take this number and increase the sum. If it is all negative numbers in the slice of 6 numbers, we take the last max, no matter where it is placed. This may lead to non optimal solutions, but it scores 50%.
 
 
+Perfect score of 100% if we use dynamic programming. We calculate a map that holds the max values.
+
+```python
+def solution(a):
+    n=len(a)    
+    m = [a[0]]*(n + 6) # map
+    # print(m)
+    for i in range(1, n):
+        m[i+6] = max(m[i:i+6])+a[i]
+        #print ('i:',i, 'a[i]', a[i] , ' m[6:]', m[6:])
+    return m[-1]
+```
+
+`m[i:i+6]` is array slice meaning last 6 values of the map. `m` is a map that we calculate dynamically.
+
+For example if we have `a=[1, -1, -2, -3, -4, -5, -6, 2]` there is how the map is progressing.
+```
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+i: 1 a[i] -1  m[6:] [1, 0, 1, 1, 1, 1, 1, 1]
+i: 2 a[i] -2  m[6:] [1, 0, -1, 1, 1, 1, 1, 1]
+i: 3 a[i] -3  m[6:] [1, 0, -1, -2, 1, 1, 1, 1]
+i: 4 a[i] -4  m[6:] [1, 0, -1, -2, -3, 1, 1, 1]
+i: 5 a[i] -5  m[6:] [1, 0, -1, -2, -3, -4, 1, 1]
+i: 6 a[i] -6  m[6:] [1, 0, -1, -2, -3, -4, -5, 1]
+i: 7 a[i] 2  m[6:] [1, 0, -1, -2, -3, -4, -5, 2]
+```
 
 
 ### MinAbsSum
+
+With the simplest possible solution you will get 27% already.
+
+```python
+def solution(a):
+    n=len(a)
+    ms=0
+    for i in range (0,n):
+        if ms>0:
+            s=-1
+        else:
+            s=1
+        if a[i]<0:
+            s=-s
+        ms+=s*a[i]
+    return abs(ms)
+```
+
+To solve it in [golder way](https://codility.com/media/train/solution-min-abs-sum.pdf){:ref="nofollow"} you will get 100% 
+
 
 
 ## Challenges
