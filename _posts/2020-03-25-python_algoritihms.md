@@ -1401,6 +1401,56 @@ def solution(a):
 
 ### MinAbsSumOfTwo
 
+This solution is 100% but it is slow so you will get 36% overall. 
+```python
+def solution(a):
+    n=len(a)
+    if n==1:
+        return abs(a[0]+a[0])
+    m = 2000000000
+    for i in range(n):
+        for j in range(n):
+            m=min(m,abs(a[i]+a[j]))
+    return m
+```
+
+The improvement is to sort the array and use caterpillars. 
+This solution will bring 100%. We sort the array and start with from array top-left and top-right positions.
+If the sum of two elements from these positions is >0 then we move the right index to the left, this should make the sum smaller. Case the sum is negative, we increase the left index, this should make the sum bigger, or close to 0.
+
+```python
+def solution(a):
+    n=len(a)
+    
+    if n==1:
+        return abs(a[0]+a[0])
+
+    a.sort()
+    #print(a)
+    
+    l=0 # first
+    r=n-1 # last 
+    m = 2000000000
+
+    while l<=r:
+        dif= a[l]+a[r] 
+        
+        #print('dif:', dif, 'a[l]:', a[l], 'a[r]:', a[r],'l:', l, 'r:', r)
+        if dif==0:
+            return 0
+        
+        m = min(m,abs(dif))
+        if dif>0:
+            r=r-1
+        else:
+            l=l+1
+
+    return m
+```
+
+
+
+
 ## Greedy algorithms
 
 ### TieRopes 
