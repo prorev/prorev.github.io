@@ -1356,6 +1356,49 @@ solution(5,a)
 
 
 ### CountTriangles 
+
+Next solution returns 63%, it is 100% correct but not preferment.
+
+```python
+def solution(a):
+    n=len(a)
+    if n<3:
+        return 0
+    
+    a.sort()
+    c=0 # counter
+    for i in range(0, n-2):
+        for j in range(i+1, n-1):
+            for k in range( j+1, n):
+                if a[i]+a[j]>a[k] and a[j]+a[k]>a[i] and a[k]+a[i]>a[j]:
+                    c+=1
+                else:
+                    continue
+    return c
+```
+
+This is 100% solution:
+
+```python
+def solution(a):
+    n=len(a)
+    a.sort()
+    c=0
+    for p in range(0, n-2):
+        q=p+1
+        r=p+2
+        while r<n:
+            if a[p]+a[q]>a[r]:
+                c+=r-q
+                r+=1
+            elif q<r-1:
+                q+=1
+            else:
+                r+=1
+                q+=1
+    return c
+```
+
 ### MinAbsSumOfTwo
 
 ## Greedy algorithms
@@ -1456,6 +1499,51 @@ We count the first segment and traverse all the segments marking the end `e` eac
 ## Dynamic Programming
 
 ### NumberSolitaire 
+
+This solution is not perfect but it will bring 50%.
+```python
+'find smart index'
+def max6(a,i,j):
+    n=len(a)
+    
+    for k in range (i,min(n,j+1)):
+        if a[k]>=0:
+            return k
+    
+    if i<=n and j>=n:
+        return n-1
+    
+    ima=i    
+    for k in range (i,j+1):
+        if a[k]>=a[ima]:
+            ima=k
+    return ima
+
+a=[-1, -2, -3, -4, -5, -1, -1, -1, -2, -3, -4, -5, -1, -1, -1, -2, -3, -4, -5, -1, -1]
+i=[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+a=[1, -2, 0, 9, -1, -2]
+i=[0,  1, 2, 3,  4,  5]
+def solution(a):
+    n=len(a)
+    s=a[0]
+    ind=0
+    
+    while ind!=n-1:
+        ind = max6(a, ind+1, ind+6)
+        print(':', len(a), ind+1, ind+6)
+        print('ind',ind)
+        s=s+a[ind]
+        
+    return s
+
+solution(a)
+```
+
+You can track arrays `a` and index `i` down below. How it works? If it is a positive number or 0 we take this number and increase the sum. If it is all negative numbers in the slice of 6 numbers, we take the last max, no matter where it is placed. This may lead to non optimal solutions, but it scores 50%.
+
+
+
+
 ### MinAbsSum
 
 
