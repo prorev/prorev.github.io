@@ -102,6 +102,8 @@ tags:
   - [Nice looking matrix](#nice-looking-matrix)
   - [Random matrix](#random-matrix)
   - [List contains another list](#list-contains-another-list)
+  - [Rotate matrix clockwise](#rotate-matrix-clockwise)
+  - [Rotate matrix counterclockwise](#rotate-matrix-counterclockwise)
 
 ## Iterations
 
@@ -2356,4 +2358,18 @@ def contains(L,a):
             return False
     return True
 contains(L,a)
+```
+
+### Rotate matrix clockwise
+
+```python
+m= [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10,11,12]]
+n = [[m[j][i] for j in range(len(m)-1,-1,-1)] for i in range(len(m[0]))]
+```
+
+### Rotate matrix counterclockwise
+
+```python
+m= [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10,11,12]]
+n = [[m[j][i] for j in range(len(m))] for i in range(len(m[0])-1,-1,-1)]
 ```
