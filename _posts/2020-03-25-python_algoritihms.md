@@ -540,7 +540,57 @@ def solution(a):
 
 ### NumberOfDiscIntersections
 
+This solution will bring 56%, and it doesn't use sorting.
+
 ```python
+def s(a, i,j):
+    if(abs(i-j) <= a[i]+a[j]):
+        return True
+    else:
+        return False
+
+def fc10000000(a):
+    s = 0
+    for e in a:
+        s = s+e
+        if s>10000000:
+            return True 
+    return False
+    
+    
+def solution(a):
+    c = 0
+    if fc10000000(a):
+        return -1
+    for i1 in range(0, len(a)):
+        for i2 in range(i1+1, len(a)):
+            if(s(a, i1, i2)):
+                c+=1
+                if c>10000000:
+                    return -1
+    return c
+```
+
+With sorting you can get 100%
+
+```python
+def solution(A):
+    e = [] # endpoints
+    for i, a in enumerate(A):
+        e += [(i-a, 1), (i+a, 0)]
+    e.sort(key=lambda x: (x[0], not x[1]))
+    c=0 # count of intersections
+    ac=0 # active circles
+ 
+    for _, start in e:
+        if start:
+            c+=ac
+            ac+= 1
+        else:
+            ac-= 1
+        if c > 10000000:
+            return -1 
+    return c
 ```
 
 ## Stacks and Queues
@@ -555,8 +605,8 @@ def rc(s):
         return 0
     if s=='' or s=='()' or s=='[]' or s=='{}':
         return 1
-    for _ in range(2, len(s),2):                
-        if rc(s[0:_])==True and rc(s[_:])==True:            
+    for _ in range(2, len(s),2):
+        if rc(s[0:_])==True and rc(s[_:])==True:
             return 1
     if (s[0]=='{' and s[-1]=='}') or (s[0]=='[' and s[-1]==']') or (s[0]=='(' and s[-1]==')'):
         #print(f"{s[0]}{s[-1]}")
