@@ -1330,6 +1330,39 @@ solution(a,b)
 
 ### FibFrog 
 
+```python
+
+This solution will get 83%
+
+def fib(n=50):
+    # there are 26 numbers smaller than 100k
+    f = [0] * (n)    
+    f[1] = 1
+    for i in range(2, n):
+        f[i] = f[i - 1] + f[i - 2]
+    return f
+
+def solution(a):
+    a.insert(0, 1)
+    a.append(1)
+    n=len(a)
+    steps = [0]+[n]*(n-1)
+    
+    for p in range(1, len(steps)): # position
+        s_min = n
+        for jump in fib():
+            prev_leaf = p - jump
+            if prev_leaf >= 0:
+                if a[prev_leaf] == 1 and steps[prev_leaf] + 1 < s_min:
+                    s_min = steps[prev_leaf] + 1
+            else:
+                break
+        steps[p] = s_min
+    
+    return steps[-1] if steps[-1] != n else -1
+
+
+```
 
 
 ### Ladder 
@@ -1367,7 +1400,71 @@ def solution(a,b):
 ## Binary Search
 
 ### MinMaxDivision 
+
+I took the solution from [Martin's blog](https://www.martinkysel.com/codility-minmaxdivision-solution/). 
+We know that `max(a)` is the minimum value we can achieve, at the same time the `sum(a)` is the max value, so the value we search form must be in between. We use `//` operation to evaluate the new value.
+
+This returns 100%:
+```python
+def chk(a, c, s):
+    ts = 0 # temp sum
+    tc = 0 # temp cnt
+ 
+    for e in a:
+        if ts + e > s:
+            ts = e
+            tc += 1
+        else:
+            ts += e
+        if tc >= c:
+            return False
+
+    return True
+ 
+def bs(a, m):
+    n=len(a)
+    l = max(a) # smallest value
+    u = sum(a) # max value
+
+    if m == 1: return u
+    if m >= n: return l
+
+    while l <= u:
+        nv=(l+u)//2 # new value
+        if chk(a, m, nv):
+            u=nv-1
+        else:
+            l=nv+1
+ 
+    return l
+ 
+def solution(k,m,a):
+    return bs(a,k) # binary search
+```
+
+This solution doesn't tell you anything on grouping but based on the information we achieve, we can create the grouping later.
+
 ### NailingPlanks 
+
+This solution will return 50% with 100% correct approach.
+```python
+def solution (a,b,c):
+    n=len(a)
+    ab=list((zip(a,b)))
+    m=dict() #[0]*n
+    
+    for i,e in enumerate(c):
+         for j,f in enumerate(ab):
+            if f[0]<=e<=f[1]:
+                m[j]=1
+                #print(i, e, j, f[0], f[1], len(m), m)
+                if len(m)==n:
+                    return i+1
+    return -1
+```
+
+For the performance improvement check [Martin's blog](https://www.martinkysel.com/codility-nailingplanks-solution/){:rel="nofollow"} and even further improvements [Dragan's blog](http://draganbozanovic.blogspot.com/2016/04/codility-nailingplanks-linear-complexity.html){:rel="nofollow"}.
+
 
 ## Caterpillar method
 
@@ -1539,8 +1636,6 @@ def solution(a):
 
     return m
 ```
-
-
 
 
 ## Greedy algorithms
