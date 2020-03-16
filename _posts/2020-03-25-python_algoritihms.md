@@ -2219,6 +2219,28 @@ fp(a)
 #[0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0]
 ```
 
+Even better peaks:
+
+```python
+def peaks2(a):
+    n=len(a)
+    p=[0]*n #peaks
+    if a[0]>a[1]:
+        p[0]=1 # peak
+    if a[-1]>a[-2]:
+        p[-1]=1 # peak
+        
+    for i in range (1,n-1):
+        if a[i-1]<a[i]>a[i+1]:
+            p[i]=1
+        if a[i-1] < a[i] and a[i]==a[i+1]:
+            p[i]=1 #also peak
+        if a[i-1] == a[i] and a[i]>a[i+1]:
+            p[i]=1 # also peak
+            
+    return p
+```
+
 ### Find peak differences
 
 ```python
