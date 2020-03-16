@@ -487,7 +487,35 @@ def solution(a, b, k):
 
 ### Distinct 
 
+Returns 100%. Very simple implementation in python.
+
 ```python
+def solution(a):
+    return len(set(a))
+```
+
+Also 100% but with using dictionary.
+
+_Example:_
+```python
+def solution(a):
+    d=dict()
+    for e in a:        
+        if e in d:
+            d[e]+=1
+        else:
+            d[e]=1
+    #print(d)
+    return len(d)
+
+a=[1,1,1,2,2,4,5]
+solution(a)
+```
+
+_Output:_
+```
+{1: 3, 2: 2, 4: 1, 5: 1}
+4
 ```
 
 
