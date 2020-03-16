@@ -104,6 +104,7 @@ tags:
   - [List contains another list](#list-contains-another-list)
   - [Rotate matrix clockwise](#rotate-matrix-clockwise)
   - [Rotate matrix counterclockwise](#rotate-matrix-counterclockwise)
+  - [Transpose matrix](#transpose-matrix)
 
 ## Iterations
 
@@ -2372,4 +2373,11 @@ n = [[m[j][i] for j in range(len(m)-1,-1,-1)] for i in range(len(m[0]))]
 ```python
 m= [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10,11,12]]
 n = [[m[j][i] for j in range(len(m))] for i in range(len(m[0])-1,-1,-1)]
+```
+
+### Transpose matrix
+
+```python
+m= [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10,11,12]]
+n = [[m[j][i] for j in range(len(m))] for i in range(len(m[0]))]
 ```
