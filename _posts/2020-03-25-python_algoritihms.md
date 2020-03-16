@@ -571,7 +571,7 @@ def solution(a):
     return c
 ```
 
-With sorting you can get 100%
+With sorting you can get 100%. Note we cannot use `e.sort()` in here, instead we sort fist by `x[0]` and reverse sort by `x[1]`.
 
 ```python
 def solution(A):
