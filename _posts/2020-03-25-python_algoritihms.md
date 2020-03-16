@@ -481,7 +481,16 @@ def solution(a, b, k):
 
 ### Triangle 
 
+Returns 100% 
+
 ```python
+def solution(a):
+    n=len(a)
+    a.sort()
+    for i in range(n-2):
+        if a[i]+a[i+1]>a[i+2]:
+            return 1
+    return 0
 ```
 
 
@@ -521,7 +530,12 @@ _Output:_
 
 ### MaxProductOfThree 
 
+Returns 100%
+
 ```python
+def solution(a):
+    a.sort()
+    return max(a[0] * a[1] * a[-1], a[-1] * a[-2] * a[-3])
 ```
 
 ### NumberOfDiscIntersections
