@@ -101,6 +101,7 @@ tags:
   - [First 50 fibs](#first-50-fibs)
   - [Nice looking matrix](#nice-looking-matrix)
   - [Random matrix](#random-matrix)
+  - [List contains another list](#list-contains-another-list)
 
 ## Iterations
 
@@ -2340,3 +2341,19 @@ df
 ```
 
 ![matrix](/wp-content/uploads/2020/03/algorithm-matrix2.jpg)
+
+### List contains another list
+
+```python
+a, L = [2,2,5],[5, 8, 5, 15, 25]
+# check if L contains a
+def contains(L,a):
+    l = L.copy()
+    for e in a:
+        try:
+            l.remove(e)
+        except:
+            return False
+    return True
+contains(L,a)
+```
