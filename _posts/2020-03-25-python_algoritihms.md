@@ -79,6 +79,7 @@ tags:
   - [NumberSolitaire](#numbersolitaire)
   - [MinAbsSum](#minabssum)
 - [Challenges](#challenges)
+  - [DreamTeam](#dreamteam)
   - [MaxPathFromTheLeftTopCorner](#maxpathfromthelefttopcorner)
   - [FloodDepth](#flooddepth)
   - [LongestPassword](#longestpassword)
@@ -1831,13 +1832,42 @@ def solution(a):
     return abs(ms)
 ```
 
-To solve it in [golder way](https://codility.com/media/train/solution-min-abs-sum.pdf){:ref="nofollow"} you will get 100% 
+To solve it in [golden way](https://codility.com/media/train/solution-min-abs-sum.pdf){:ref="nofollow"} you will get 100% 
 
 
 
 ## Challenges
 
+
+### DreamTeam
+
+Returns 100%:
+
+```python
+def solution (a,b,f):
+    n=len(a)
+   
+    c=[0]*n
+    for i in range (n):
+        c[i] = a[i]-b[i] 
+   
+    sz = sorted(zip(c,a,b), reverse=True)
+   
+    s=0    
+    for tri in sz:
+        if f>0:
+            s+=tri[1]
+            f-=1
+        else:
+            s+=tri[2]
+    return s
+```
+
+
+
 ### MaxPathFromTheLeftTopCorner
+
+Scores 77% 
 
 ```python
 def re(a, i,j): # recursive function on point (i,j)
