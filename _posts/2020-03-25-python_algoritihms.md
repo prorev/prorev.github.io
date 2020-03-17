@@ -79,6 +79,7 @@ tags:
   - [NumberSolitaire](#numbersolitaire)
   - [MinAbsSum](#minabssum)
 - [Challenges](#challenges)
+  - [MaxPathFromTheLeftTopCorner](#maxpathfromthelefttopcorner)
   - [FloodDepth](#flooddepth)
   - [LongestPassword](#longestpassword)
   - [Casino](#casino)
@@ -1835,6 +1836,47 @@ To solve it in [golder way](https://codility.com/media/train/solution-min-abs-su
 
 
 ## Challenges
+
+### MaxPathFromTheLeftTopCorner
+
+```python
+def re(a, i,j): # recursive function on point (i,j)
+    rn = len(a)
+    cn = len(a[0])
+    
+    # if we must go right
+    if j+1 >= cn and i+1 < rn:
+        return str(a[i][j]) + re(a,i+1,j)
+    
+    # if we must go down
+    if j+1 < cn and i+1 >= rn:
+        return str(a[i][j]) + re(a,i,j+1)
+    
+    # if we can go either way
+    if j+1 < cn and i+1 < rn:
+        
+        # if both options have the same value
+        if a[i][j+1] == a[i+1][j]:
+            return str(a[i][j]) + max(re(a,i+1,j),re(a,i,j+1))
+        
+        if a[i][j+1] > a[i+1][j]: # bigger is to the right
+            return str(a[i][j]) + re(a,i,j+1)            
+        else: # bigger is to down
+            return str(a[i][j]) +re(a,i+1,j)
+        
+    if i==rn-1 and j== cn-1:
+        return str(a[i][j])
+
+
+def solution(a):
+    rn = len(a)
+    cn = len(a[0])
+    r = re(a, 0,0)
+    return r
+```
+
+
+
 
 ### FloodDepth
 
