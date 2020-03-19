@@ -79,6 +79,8 @@ tags:
   - [NumberSolitaire](#numbersolitaire)
   - [MinAbsSum](#minabssum)
 - [Challenges](#challenges)
+  - [SheepAndSunshades](#sheepandsunshades)
+  - [DifferentCharacters](#differentcharacters)
   - [DreamTeam](#dreamteam)
   - [MaxPathFromTheLeftTopCorner](#maxpathfromthelefttopcorner)
   - [FloodDepth](#flooddepth)
@@ -1552,7 +1554,7 @@ solution(5,a)
 
 ### CountTriangles 
 
-Next solution returns 63%, it is 100% correct but not preferment.
+Next solution returns 63%, it is 100% correct but not fast.
 
 ```python
 def solution(a):
@@ -1837,6 +1839,96 @@ To solve it in [golden way](https://codility.com/media/train/solution-min-abs-su
 
 
 ## Challenges
+
+### SheepAndSunshades
+
+This will get you 50% with 100% correct answer. In here you fist define the **mp** function which is the difference between two points.
+
+```python
+def mp(p1,p2):
+    return max(abs(p1[0]-p2[0]), abs(p1[1]-p2[1]))
+
+def solution(a,b):
+    n=len(a)
+    m = 1000000
+    for i in range(n-1):
+        for j in range(i+1,n):
+            p1=a[i],b[i] 
+            p2=a[j],b[j] 
+            m = min(m,mp(p1,p2))
+    return m//2
+```
+
+But how to make it even faster? This will return 85%, but in fact should be 100%.
+
+```python
+def mp(p1,p2):
+    return max(abs(p1[0]-p2[0]), abs(p1[1]-p2[1]))
+    
+def solution(a,b):
+    n=len(a)
+    z = sorted(zip(a,b))
+        
+    m=1000000
+    for i in range(n-1):
+        p1=z[i][0],z[i][1]
+        p2=z[i+1][0],z[i+1][1]
+        m = min(m,mp(p1,p2))
+    
+    z = sorted(zip(b,a))
+    for i in range(n-1):
+        p1=z[i][0],z[i][1]
+        p2=z[i+1][0],z[i+1][1]
+        m = min(m,mp(p1,p2))
+
+    return m//2
+```
+
+
+
+### DifferentCharacters
+
+```python
+def solution(s,k):
+    n=len(s)   
+    d=dict()
+    ds=dict()# start position
+    de=dict() # end position
+    for i in range(n):
+            if not s[i] in ds:
+                ds[s[i]]=i
+            if not s[n-1-i] in de:
+                de[s[n-1-i]]=n-1-i
+    for e in s:        
+        if not e in d:
+            d[e]=1            
+        else:
+            d[e]+=1
+    ne = len(d)    
+    dd=dict() # diff
+    for e in de:
+        dd[e]=de[e]-ds[e]
+    
+    r=0
+    if k>=ne:
+        return -1
+    else:
+        r=ne-k    
+    
+    ltr = sorted(dd.items(), key=lambda x: x[1] )[:r]
+    
+    minmin, maxmax= n,0
+    for e in ltr:
+        minmin=min(minmin, ds[e[0]])
+        maxmax=max(maxmax, de[e[0]])
+        
+    su = 1+ maxmax-minmin
+    
+    if su==n:
+        return -1
+    return su
+```
+
 
 
 ### DreamTeam
