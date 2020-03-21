@@ -79,6 +79,7 @@ tags:
   - [NumberSolitaire](#numbersolitaire)
   - [MinAbsSum](#minabssum)
 - [Challenges](#challenges)
+  - [Buckets](#buckets)
   - [SheepAndSunshades](#sheepandsunshades)
   - [DifferentCharacters](#differentcharacters)
   - [DreamTeam](#dreamteam)
@@ -133,6 +134,33 @@ def solution(n):
             
     return mz
 ```
+
+Algorithm 2 returns 100%
+```python
+def solution(n):
+    b=bin(n)[2:] 
+    print(b)
+    g=0
+    j=-1
+    j2=-1
+    n=-1
+    
+    for i in range(len(b)):
+        #print(i, b[i])
+        
+        if b[i]=='1' and j>-1 and n>j:
+            j2=i            
+            g=max(g,j2-j-1)
+        
+        if b[i]=='1':
+            j=i
+            
+        if b[i]=='0':
+            n=i
+            
+    return g
+```
+
 ## Arrays
 
 ### CyclicRotation 
@@ -1839,6 +1867,29 @@ To solve it in [golden way](https://codility.com/media/train/solution-min-abs-su
 
 
 ## Challenges
+
+### Buckets
+
+Returns 100%
+
+```python
+def solution(n, q, b, c):
+    if q==1:
+        return 0
+    
+    dd={} # dict of dicts
+    for i in range (n):
+        dd[i]={}
+    
+    for i in range (len(b)):        
+        if not c[i] in dd[b[i]]:
+            dd[b[i]][c[i]]=1
+        else:
+            dd[b[i]][c[i]]+=1
+            if dd[b[i]][c[i]]==q:
+                return i
+    return -1
+```
 
 ### SheepAndSunshades
 
