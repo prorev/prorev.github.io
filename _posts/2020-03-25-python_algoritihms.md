@@ -85,6 +85,8 @@ tags:
   - [DreamTeam](#dreamteam)
   - [MaxPathFromTheLeftTopCorner](#maxpathfromthelefttopcorner)
   - [FloodDepth](#flooddepth)
+  - [PascalTriangles](#pascaltriangles)
+  - [CoverBuildings](#coverbuildings)
   - [LongestPassword](#longestpassword)
   - [Casino](#casino)
 - [Number of countries](#number-of-countries)
@@ -2125,6 +2127,110 @@ Once we have the valid peaks the water level will be min(p1, p2) between two val
 
 We may not use `import operator` trick if we update the **peaks2** function to return real values instead one and zero.
 
+### PascalTriangles
+
+This solution is 100% correct but 50% is the final result because it is not performing.
+
+```python
+def solution(a):
+    
+    s=0    
+    a=[int(e) for e in a]
+    s=sum(a)
+    
+    while(len(a)>1):
+        a=[a[i] or a[i+1] for i in range(len(a)-1)]
+        s+=sum(a)    
+    
+    return s
+```
+
+This would bring 100%
+
+```python
+def sumg(n):
+    return int(n*(n+1)/2)
+
+def solution(a):
+    m=1000000000
+    b=''.join(['1' if e==True else '0' for e in a ])    
+    n=len(a)    
+    s=sumg(n)
+    l=b.split('1')
+    for e in l:
+        if len(e)>0:
+            s-=sumg(len(e))
+            
+    if s>m:
+        return m
+    else:
+        return s
+```
+
+### CoverBuildings
+
+50% and 100% correct
+
+```python
+import operator
+def peaks2(a):
+    n=len(a)
+    p=[0]*n #peaks
+    if a[0]>a[1]:
+        p[0]=1 # peak
+    if a[-1]>a[-2]:
+        p[-1]=1 # peak
+        
+    for i in range (1,n-1):
+        if a[i-1]<a[i]>a[i+1]:
+            p[i]=1
+        if a[i-1] < a[i] and a[i]==a[i+1]:
+            p[i]=1 #also peak
+        if a[i-1] == a[i] and a[i]>a[i+1]:
+            p[i]=1 # also peak
+            
+    return p
+def solution(a):
+    n=len(a)
+    if n==1:
+        return a[0]
+    
+    p2=peaks2(a)
+    p=list(map(operator.mul, p2,a))
+    print(p)
+
+    m=max(a)
+    
+    # max index
+    mis=[i for i in range(n) if a[i] in p and a[i] > 0]
+    print(mis)
+    
+    ms=m*n # max sum
+    print(ms)
+    
+    for mi in mis:
+        
+        al=a[:mi]
+        ad=a[mi:]
+        if len(ad)>0 and len(al)>0:
+            mal=max(al)
+            mad=max(ad)
+            ms=min(ms, mal*len(al)+mad*len(ad))
+            print(1,al,ad,mal,mad,ms)
+        
+        if mi+1<n:
+            mi+=1    
+            al=a[:mi]
+            ad=a[mi:]
+            print(2,al,ad)
+            if len(ad)>0 and len(al)>0:
+                mal=max(al)
+                mad=max(ad)
+                ms=min(ms, mal*len(al)+mad*len(ad))
+                print(1,al,ad,mal,mad,ms)
+
+    return ms
+```
 
 ### LongestPassword
 
