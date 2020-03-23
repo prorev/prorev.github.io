@@ -2129,7 +2129,7 @@ We may not use `import operator` trick if we update the **peaks2** function to r
 
 ### PascalTriangles
 
-This solution is 100% correct but 50% is the final result because it is not performing.
+This solution is 100% correct but 50% is the final result because it is not performing fast.
 
 ```python
 def solution(a):
