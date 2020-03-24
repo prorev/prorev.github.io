@@ -85,6 +85,7 @@ tags:
   - [DreamTeam](#dreamteam)
   - [MaxPathFromTheLeftTopCorner](#maxpathfromthelefttopcorner)
   - [FloodDepth](#flooddepth)
+  - [BeautifulPassword](#beautifulpassword)
   - [PascalTriangles](#pascaltriangles)
   - [CoverBuildings](#coverbuildings)
   - [LongestPassword](#longestpassword)
@@ -2126,6 +2127,38 @@ To find them we go from left to right finding increasing and from right to left 
 Once we have the valid peaks the water level will be min(p1, p2) between two valid peaks.
 
 We may not use `import operator` trick if we update the **peaks2** function to return real values instead one and zero.
+
+
+
+
+### BeautifulPassword
+
+100% correct but scores 50% overall
+
+```python
+def chk(l):
+    for e in l:
+        if e%2==1:
+            return False
+    return True
+
+def solution(s):
+    n=len(s)
+    
+    from collections import Counter
+    c = Counter(s)
+    m=0 # max
+    
+    for i in range(n-1):
+        for j in range(i+1,n):
+            c=Counter(s[i:j+1])
+            l=list(c.values())
+            if chk(l)==True:
+                m=max(m,sum(l))
+    return m
+```
+
+ 
 
 ### PascalTriangles
 
