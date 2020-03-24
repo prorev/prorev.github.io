@@ -85,6 +85,7 @@ tags:
   - [DreamTeam](#dreamteam)
   - [MaxPathFromTheLeftTopCorner](#maxpathfromthelefttopcorner)
   - [FloodDepth](#flooddepth)
+  - [TheaterTickets](#theatertickets)
   - [BeautifulPassword](#beautifulpassword)
   - [PascalTriangles](#pascaltriangles)
   - [CoverBuildings](#coverbuildings)
@@ -2128,6 +2129,26 @@ Once we have the valid peaks the water level will be min(p1, p2) between two val
 
 We may not use `import operator` trick if we update the **peaks2** function to return real values instead one and zero.
 
+### TheaterTickets
+
+This is 100% correct but 58% at the end. Not performing fast.
+
+```python
+def solution(a):
+    n=len(a)
+    if n<2:
+        return 0
+    d=dict()
+    for i in range(n-2):
+        for j in range (i+1, n-1):
+            for k in range(j+1, n):
+                d[i,j,k]=(a[i],a[j],a[k])
+    #print(d)
+    
+    s = set(d.values())
+    #print(s)
+    return len(s)
+```
 
 
 
