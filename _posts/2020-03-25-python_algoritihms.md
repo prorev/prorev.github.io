@@ -85,7 +85,9 @@ tags:
   - [DreamTeam](#dreamteam)
   - [MaxPathFromTheLeftTopCorner](#maxpathfromthelefttopcorner)
   - [FloodDepth](#flooddepth)
+  - [MaxZeroProduct](#maxzeroproduct)
   - [TheaterTickets](#theatertickets)
+  - [Conoeist](#conoeist)
   - [BeautifulPassword](#beautifulpassword)
   - [PascalTriangles](#pascaltriangles)
   - [CoverBuildings](#coverbuildings)
@@ -2129,6 +2131,37 @@ Once we have the valid peaks the water level will be min(p1, p2) between two val
 
 We may not use `import operator` trick if we update the **peaks2** function to return real values instead one and zero.
 
+### MaxZeroProduct
+
+This is 100% correct solution but with TIMEOUT ERROR, and this all brings 55% result.
+
+```python
+def hmz(s): # how many zeros
+    s=str(s)
+    n=len(s)
+    c=0
+    for i in range(n-1, -1, -1):
+        if s[i]=='0':
+            c+=1
+        else:
+            break
+    return c
+
+def solution(a):
+    n=len(a)
+    if n<2:
+        return 0
+    d=dict()
+    for i in range(n-2):
+        for j in range (i+1, n-1):
+            for k in range(j+1, n):
+                d[i,j,k]=a[i]*a[j]*a[k]
+    m=0
+    for v in d.values():
+        m=max(m,hmz(v))
+    return m
+```
+
 ### TheaterTickets
 
 This is 100% correct but 58% at the end. Not performing fast.
@@ -2150,7 +2183,34 @@ def solution(a):
     return len(s)
 ```
 
+### Conoeist
 
+```python
+from collections import deque
+
+def solution(a,k):
+    n=len(a)
+    s=deque()
+    f=deque()
+    for i in range(n-1):
+        if a[i]+ a[-1]<=k:
+            s.append(a[i])
+        else:
+            f.append(a[i])    
+    f.append(a[-1])   
+    
+    c=0
+    while s or f:
+        if len(s)>0:
+            s.pop()
+        f.pop()        
+        c+=1        
+        if (not f and s):
+            f.append(s.pop())
+        while(len(f) > 1 and f[-1] + f[0] <=k):
+            s.append(f.popleft())
+    return c
+```
 
 ### BeautifulPassword
 
