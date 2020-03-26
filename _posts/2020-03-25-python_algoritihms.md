@@ -81,6 +81,7 @@ tags:
 - [Challenges](#challenges)
   - [Buckets](#buckets)
   - [SheepAndSunshades](#sheepandsunshades)
+  - [Rivers](#rivers)
   - [DifferentCharacters](#differentcharacters)
   - [DreamTeam](#dreamteam)
   - [MaxPathFromTheLeftTopCorner](#maxpathfromthelefttopcorner)
@@ -1965,7 +1966,68 @@ def solution(a,b):
     return m//2
 ```
 
+### Rivers
 
+```python
+def gun(i,j,a,v): # get unvisited neighbors
+    n=[] 
+    if i>0 and not v[i-1][j]:
+        n.append([i-1,j])
+                 
+    if i<len(a)-1 and not v[i+1][j]:
+        n.append([i+1,j])
+                 
+    if j>0 and not v[i][j-1]:
+        n.append([i,j-1])         
+   
+    if j<len(a[0])-1 and not v[i][j+1]:
+        n.append([i,j+1])
+                 
+    return n
+
+def cel(i,j, a,v,s): # check every cell    
+    
+    c = 0 # river size counter
+    ns=[[i,j]] # node stack contains single river
+
+    while len(ns):
+        cn = ns.pop() # current node
+        i,j=cn[0],cn[1]
+        #print(ns)        
+        
+        if v[i][j]:
+            continue
+            
+        v[i][j]=True
+        
+        if a[i][j]==0:
+            continue
+            
+        c+=1
+
+        un = gun(i,j,a,v) # get unv. n.
+        for n in un:
+            ns.append(n)
+            
+    if c>0:
+        s.append(c)
+
+    
+
+def solution(a):    
+    s=[] # sizes
+    v=[[ False for r in a] for c in a[0] ]# visited
+
+    for i in range(len(a)):
+        for j in range(len(a[0])):            
+            cel(i,j, a,v,s) # check every cel
+
+    return s
+
+a=[[1,0,0,1,0],[1,0,1,0,0],[0,0,1,0,1],[1,0,1,0,1],[1,0,1,1,0]]
+r=solution(a)
+print(r)
+```
 
 ### DifferentCharacters
 
