@@ -116,6 +116,8 @@ tags:
   - [Rotate matrix clockwise](#rotate-matrix-clockwise)
   - [Rotate matrix counterclockwise](#rotate-matrix-counterclockwise)
   - [Transpose matrix](#transpose-matrix)
+  - [Smart factoriel](#smart-factoriel)
+  - [Number of combinations](#number-of-combinations)
 
 ## Iterations
 
@@ -1077,6 +1079,28 @@ def jump(a):
     return mj
 
 jump(a)
+```
+
+General case max profit:
+```python
+# max profit with k transactions
+def solution(a,k):
+    n=len(a)
+    if n==0:
+        return 0
+    # profits   
+    p = [[0 for d in a] for t in range(k+1)] 
+    print(p)
+
+    for t in range(1,k+1):
+        m = float("-inf")
+        for d in range(1, len(a)): 
+            m=max(m,p[t-1][d-1]-a[d-1]) 
+            print(m)
+            p[t][d]=max(p[t][d-1],m+a[d]) 
+    
+    print(p)
+    return p[-1][-1]
 ```
 
 ### MaxSliceSum 
@@ -2815,4 +2839,29 @@ n = [[m[j][i] for j in range(len(m))] for i in range(len(m[0])-1,-1,-1)]
 ```python
 m= [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10,11,12]]
 n = [[m[j][i] for j in range(len(m))] for i in range(len(m[0]))]
+```
+
+
+### Smart factoriel
+
+```python
+F=[1]
+
+#smart factoriel
+def f(b):  
+    global F
+    n=len(F)
+        
+    while n<=b:
+        F.append(n*F[-1])
+        n+=1
+    return F[b]
+```
+
+### Number of combinations
+
+```python
+# uses previous f function
+def comb(n,k):
+    return f(n) // (f(n)*f(n-k))
 ```
