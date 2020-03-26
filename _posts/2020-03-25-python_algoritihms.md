@@ -2629,6 +2629,8 @@ def prm(n):
 # n is divisible by 2 and 5
 def div2and5(n):
     f= {2:0, 5:0}
+    if n==0:
+        return f
     while(n%2==0):
         f[2]+=1
         n = n/2
