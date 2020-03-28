@@ -94,7 +94,9 @@ tags:
   - [CoverBuildings](#coverbuildings)
   - [LongestPassword](#longestpassword)
   - [Casino](#casino)
-- [Number of countries](#number-of-countries)
+  - [Number of countries](#number-of-countries)
+  - [Number Of Means](#number-of-means)
+  - [Shortest Complate List](#shortest-complate-list)
 - [Appendix](#appendix)
   - [Primes](#primes)
   - [Counter](#counter)
@@ -2518,7 +2520,7 @@ solution(21, 2)
 ```
 
 
-## Number of countries
+### Number of countries
 
 ```python
 from pandas import DataFrame
@@ -2580,13 +2582,65 @@ DataFrame(nl)
 ```
 
 
+### Number Of Means
 
+```python
+def amean(a):
+    return int(sum(a)/len(a))
+    
+def solution(a,m):
+    n=len(a)
+    print(n)
+    am=amean(a)    
+    print(am)
+    c=0
+    for k in range (1,n+1):
+        for i in range(0, n-k+1):
+            s=a[i:i+k]
+            if amean(s)==m:
+                c+=1
+    return c
 
+a,m= [2, 4, 0], 2
+solution(a,m)
+```
 
+### Shortest Complate List
 
+In here we need to find the length of the shortest sublist with all elements inside.
 
-
-
+```python
+def solution(a):
+    n=len(a)    
+    l=len(set(a))
+    d=dict()
+    m=n # maximal
+    i=0 # ind
+    
+    while i<n: # till the end of the array
+        d[a[i]]=True
+        
+        if len(d)==l:
+            si=i # saved i
+            d.clear()
+            for j in range(i,-1,-1):
+                d[a[j]]=True
+                print(d)
+                if len(d)==l:
+                    d.clear()
+                    break
+            print(i,j)
+            m=min(m,i-j+1)
+            i=si
+        else:
+            i+=1
+            
+            
+    return m
+    
+a= [2, 1, 1, 3, 2, 1, 1, 3]
+solution(a)
+```
 
 
 
