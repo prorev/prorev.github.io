@@ -119,7 +119,7 @@ tags:
   - [Rotate matrix clockwise](#rotate-matrix-clockwise)
   - [Rotate matrix counterclockwise](#rotate-matrix-counterclockwise)
   - [Transpose matrix](#transpose-matrix)
-  - [Smart factoriel](#smart-factoriel)
+  - [Smart factorial](#smart-factorial)
   - [Number of combinations](#number-of-combinations)
 
 ## Iterations
@@ -2591,7 +2591,7 @@ def amean(a):
 def solution(a,m):
     n=len(a)
     print(n)
-    am=amean(a)    
+    am=amean(a)
     print(am)
     c=0
     for k in range (1,n+1):
@@ -2960,12 +2960,12 @@ n = [[m[j][i] for j in range(len(m))] for i in range(len(m[0]))]
 ```
 
 
-### Smart factoriel
+### Smart factorial
 
 ```python
 F=[1]
 
-#smart factoriel
+#smart factorial
 def f(b):  
     global F
     n=len(F)
@@ -2981,5 +2981,5 @@ def f(b):
 ```python
 # uses previous f function
 def comb(n,k):
-    return f(n) // (f(n)*f(n-k))
+    return f(n) // (f(k)*f(n-k))
 ```
