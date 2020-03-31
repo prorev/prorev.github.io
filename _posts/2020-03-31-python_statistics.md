@@ -96,6 +96,9 @@ _Output:_
 7.0
 ```
 
+> Mean is more sensitive to outliers than the median. This is why we may use median in some cases, or some other techniques to remove the outliers and then to calculate the mean.
+
+
 ## Maximum distance
 
 It is really easy to interpret the distance. Just divide maximum and minimum element of the list.
