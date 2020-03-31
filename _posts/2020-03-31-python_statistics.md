@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Calculating basic statistics forumlas in Python
+title: Calculating basic statistics formulas in Python
 date: 2020-01-22
 author: taimane
 layout: post
@@ -26,9 +26,9 @@ _Table of contents:_
 - [Standard deviation](#standard-deviation)
 - [Covariance](#covariance)
 - [Correlation](#correlation)
-- [Appendix 1](#appendix-1)
+- [Appendix](#appendix)
   - [What can we say using correlation?](#what-can-we-say-using-correlation)
-  - [Absolute deviation](#absolute-deviation)
+  - [Absolute deviation is used not so often](#absolute-deviation-is-used-not-so-often)
 
 
 ## Creating the data first
@@ -264,7 +264,7 @@ correlation(a, b)
 
 And again we must not divide with 0.
 
-## Appendix 1
+## Appendix
 
 ### What can we say using correlation?
 
@@ -311,7 +311,7 @@ _Output:_
 0.0
 ```
 
-### Absolute deviation
+### Absolute deviation is used not so often
 
 Just because standard deviation or variance is more in use this doesn't mean absolute deviation isn't my favorite measure to calculate the deviation.
 
