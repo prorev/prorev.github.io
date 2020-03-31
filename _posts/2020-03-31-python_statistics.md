@@ -166,7 +166,8 @@ statistics.stdev(a)
 ```
 
 ## Standard deviation
-```
+
+```python
 def std(a): 
     n=len(a)
     m=sum(a)/len(a)
@@ -313,7 +314,7 @@ _Output:_
 
 ### Absolute deviation is used not so often
 
-Just because standard deviation or variance is more in use this doesn't mean absolute deviation isn't my favorite measure to calculate the deviation.
+Just because _standard deviation_ is more in use this doesn't mean _absolute deviation_ isn't my favorite measure to calculate the deviation.
 
 You would implement that like this:
 ```python
@@ -335,4 +336,4 @@ _Output:_
 2.0
 ```
 
-It is less heavy to compute vs. standard deviation.
+It is less heavy to compute compared to standard deviation.
