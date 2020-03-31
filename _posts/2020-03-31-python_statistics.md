@@ -281,10 +281,8 @@ _Output:_
 0.9999999999999999
 ```
 
-We can say two functions are linearly dependent if correlation is close to 1 or -1
+We can say two functions are linearly dependent if correlation is close to 1 or -1.
 
-
-Or we can say
 ```python
 a = [-2, -1, 0, 1, 2]
 b = [2, 1, 0, -1, -2]
