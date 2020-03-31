@@ -27,7 +27,7 @@ _Table of contents:_
 - [Covariance](#covariance)
 - [Correlation](#correlation)
 - [Appendix](#appendix)
-  - [What can we say using correlation?](#what-can-we-say-using-correlation)
+  - [What can we say about correlation?](#what-can-we-say-about-correlation)
   - [Absolute deviation is used not so often](#absolute-deviation-is-used-not-so-often)
 
 
@@ -270,7 +270,7 @@ And again we must not divide with 0.
 
 ## Appendix
 
-### What can we say using correlation?
+### What can we say about correlation?
 
 _Example1:_
 ```python
