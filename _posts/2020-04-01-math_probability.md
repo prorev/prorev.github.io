@@ -37,10 +37,9 @@ If we have $N$ the number of options, then entropy will be $log_2 N$.
 _Example: Tossing a coin_
 
 
+$$H(X) = −∑_{i=1}^n P(x_i)log_b ⁡P (x_i) = − ∑_{i=1}^2 {1\over2} log_2 \frac 12 = − ∑_{i=1}^2 \frac 12 -(1)=1 $$
 
-$$H ( X ) = − ∑_{i=1}^n P(x_i)log_b ⁡P (x_i) = − ∑_{i=1}^2 1 2 log_2 ⁡ 1/2 = − ∑_{i=1 2 1 2} ⋅ ( − 1 ) = 1$$
-
-
+In here we are having the probability $P(x_i)=\frac12$, equal probability for the head and tail.
 
 
 

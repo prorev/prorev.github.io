@@ -12,6 +12,7 @@ categories:
 tags:
    - formulas
 ---
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 This would be MathJax basic tutorial and reference you may need frequently dealing with formulas:
 
 - [Use of `$` and `$$`](#use-of--and)
