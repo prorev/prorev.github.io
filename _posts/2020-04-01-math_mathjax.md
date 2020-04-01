@@ -35,10 +35,14 @@ This would be MathJax basic tutorial and reference you may need frequently deali
 
 ## Use of `$` and `$$`
 
-You enclose inline formulas just with pair of `$inline$`, else use double dollars for centering formulas: `$$center$$`.
+You enclose inline formulas just with `$` (dollar sign): 
+
+```
+$inline$
+$$center$$
+```
 
 $inline$
-
 $$center$$
 
 ## Superscripts and Subscripts
