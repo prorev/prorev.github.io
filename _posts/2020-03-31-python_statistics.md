@@ -29,6 +29,7 @@ _Table of contents:_
 - [Appendix](#appendix)
   - [What can we say about correlation?](#what-can-we-say-about-correlation)
   - [Absolute deviation is used not so often](#absolute-deviation-is-used-not-so-often)
+  - [Pandas statistic methods](#pandas-statistic-methods)
 
 
 ## Creating the data first
@@ -338,3 +339,19 @@ _Output:_
 ```
 
 It is less heavy to compute compared to standard deviation.
+
+### Pandas statistic methods
+
+```python
+df.describe() 
+df.mean() 
+df.median()
+df.max() 
+df.min() 
+df.count() # count of all elements
+df.std() # standard deviation
+df.mad() # mean absolute deviation
+df.var() # variance
+df.cov() # covariance
+df.corr() # correlation
+```
