@@ -136,7 +136,7 @@ Ref: [link for further investigation](https://math.meta.stackexchange.com/questi
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      inlineMath: [ ['$','$'] ],
       processEscapes: true
     }
   });
