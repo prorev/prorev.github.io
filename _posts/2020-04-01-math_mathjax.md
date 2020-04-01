@@ -137,7 +137,8 @@ Ref: [link for further investigation](https://math.meta.stackexchange.com/questi
   MathJax.Hub.Config({
     tex2jax: {
       inlineMath: [ ['$','$'] ],
-      processEscapes: true
+      processEscapes: true,
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]  
     }
   });
 </script>
