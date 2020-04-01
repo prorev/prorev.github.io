@@ -356,6 +356,6 @@ df.cov() # covariance
 df.corr() # correlation
 ```
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
+$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$ -->
