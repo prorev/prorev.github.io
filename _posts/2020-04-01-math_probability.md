@@ -34,13 +34,23 @@ The entropy will be equal to 1 when there is no causality, or in another words, 
 
 If we have $N$ the number of options, then entropy will be $log_2 N$.
 
-_Example: Tossing a coin_
+_Example: Tossing a coin with equal probability_
 
+Let we have $P(x_i)=\Large{\frac12}$, equal probability for the head and tail.
 
 $$H(X) = −∑_{i=1}^n P(x_i)log_b ⁡P (x_i) = − ∑_{i=1}^2 {1\over2} log_2 \frac 12 = − ∑_{i=1}^2 \frac 12 -(1)=1 $$
 
-In here we are having the probability $P(x_i)=\frac12$, equal probability for the head and tail.
 
+We should recall that the entropy is maximal and equals 1 when we have equal probabilities for all possible options.
+
+
+_Example: Tossing a coin with non equal probability_
+
+Let we have $P(x_{head})=\Large{\frac13}$, and $P(x_{tail})=\Large{\frac23}$ for the head and tail.
+
+$H(X) = − P(x_{head})log_b ⁡P (x_{head})  − P(x_{tail})log_b ⁡P (x_{tail}) = − {1\over3} log_2 \frac 13− {2\over2} log_2 \frac 23 = 0.9182958340544896$
+
+Note how this time the 
 
 
 ## Markov chain
