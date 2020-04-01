@@ -12,6 +12,16 @@ categories:
 tags:
    - formulas
 ---
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 This would be MathJax basic tutorial and reference you may need frequently dealing with formulas:
 
 - [Use of `$` and `$$`](#use-of--and)
@@ -22,6 +32,7 @@ This would be MathJax basic tutorial and reference you may need frequently deali
 - [Appendix](#appendix)
   - [Getting the formula from other website:](#getting-the-formula-from-other-website)
   - [Greek letters](#greek-letters)
+  - [Injecting MathJax on webpage](#injecting-mathjax-on-webpage)
 
 ## Use of `$` and `$$`
 
@@ -119,3 +130,16 @@ for lowercase and
 for uppercase greek letters.
 
 Ref: [link for further investigation](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference){:rel="nofollow"}
+
+### Injecting MathJax on webpage
+```js
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+```
