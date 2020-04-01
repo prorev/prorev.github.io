@@ -120,8 +120,6 @@ Use:
 
 for lowercase and 
 
-* \Alpha => $\Alpha$
-* \Beta => $\Beta$
 * \Gamma => $\Gamma$ 
 * \Delta => $\Delta$ 
 * \Omega => $\Omega$
