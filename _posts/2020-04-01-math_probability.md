@@ -14,10 +14,19 @@ tags:
    - markov chain
    - probability distributions
 ---
-
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 _Table of contents:_
 - [Entropy](#entropy)
+  - [Case when N>2](#case-when-n2)
 - [Markov chain](#markov-chain)
 
 ## Entropy
@@ -30,9 +39,8 @@ If units of entropy are bits than $b=2$.
 
 Entropy is a measure of the unpredictability of the state, or equivalently, of its average information content.
 
-The entropy will be equal to 1 when there is no causality, or in another words, when all the options are equally possible.
+The entropy will be maximal 1 when there is no causality, or in another words, when all the options are equally possible.
 
-If we have $N$ the number of options, then entropy will be $log_2 N$.
 
 _Example: Tossing a coin with equal probability_
 
@@ -50,7 +58,39 @@ Let we have $P(x_{head})=\Large{\frac13}$, and $P(x_{tail})=\Large{\frac23}$ for
 
 $H(X) = − P(x_{head})log_b ⁡P (x_{head})  − P(x_{tail})log_b ⁡P (x_{tail}) = − {1\over3} log_2 \frac 13− {2\over2} log_2 \frac 23 = 0.9182958340544896$
 
-Note how this time the 
+Note how this time the entropy is less than 1.
+
+It can be proved for $N=2$ maximum entropy is 1:
+
+$H(X) = -P(x_1)log_2 P(x_1) - P(x_2)log_2 P(x_2)$
+
+and for $P(x_1)=p, P(x_2)=1-p$
+
+$S = -p\ log_2 \ p - (1-p) \ log_2(1-p)$
+
+and ${dS \over dp }= 0$
+
+We get:
+
+$log_2 (1-p) = log_2 \ p$
+
+$1-p =p$ 
+
+$p=\frac12$
+
+### Case when N>2
+
+Similarly it can be shown that maximal entropy for the case of $N$, is $log_2 N$. This is the case for $p=\frac 1N$
+
+Example for case of $N=100$ we get 6.643856189774725
+
+```python
+import math
+math.log(100,2)
+# 6.643856189774725
+```
+
+
 
 
 ## Markov chain
