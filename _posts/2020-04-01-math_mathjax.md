@@ -19,8 +19,16 @@ tags:
       processEscapes: true
     }
   });
+  MathJax.Hub.Config({
+   jax: ["input/TeX","output/HTML-CSS", "output/PreviewHTML"],
+   extensions: ["tex2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],   
+   TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+   }
+});
 </script>
 <script async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 
 This would be MathJax basic tutorial and reference you may need frequently dealing with formulas:
 
@@ -133,14 +141,12 @@ Ref: [link for further investigation](https://math.meta.stackexchange.com/questi
 
 ### Injecting MathJax on webpage
 ```js
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'] ],
-      processEscapes: true,
-      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]  
-    }
-  });
-</script>
+MathJax.Hub.Config({
+  jax: ["input/TeX","output/HTML-CSS", "output/PreviewHTML"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  }
+});
 <script async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 ```
