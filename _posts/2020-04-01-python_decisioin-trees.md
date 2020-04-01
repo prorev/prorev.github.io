@@ -18,7 +18,7 @@ We mentioned and defined the [entropy](...).
 _Table of contents:_
 - [What are Decision Trees?](#what-are-decision-trees)
 - [What we can do with Trees](#what-we-can-do-with-trees)
-- [asd](#asd)
+- [Scikit-learn](#scikit-learn)
 
 ## What are Decision Trees?
 
@@ -26,7 +26,11 @@ _Table of contents:_
 
 ## What we can do with Trees
 
-## asd
+## Scikit-learn
+
+You can use scikit-learn many decision tree models. It also has an ensemble module that includes a RandomForestClassifier as well as other ensemble methods.
+
+
 
 
 

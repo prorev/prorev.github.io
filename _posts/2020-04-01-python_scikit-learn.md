@@ -24,5 +24,7 @@ _Table of contents:_
 
 ## ABCD
 
+scikit-learn has many Decision Tree models. It also has an ensemble module that
+includes a RandomForestClassifier as well as other ensemble methods
 
 
