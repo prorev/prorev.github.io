@@ -37,7 +37,7 @@ This would be MathJax basic tutorial and reference you may need frequently deali
 
 ## Use of `$` and `$$`
 
-You enclose inline formulas just with pair of `\$...\$`, else use double dollars for centering formulas: ``\$$...\$$``.
+You enclose inline formulas just with pair of `$inline$`, else use double dollars for centering formulas: `$$center$$`.
 
 $inline$
 
