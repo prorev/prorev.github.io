@@ -19,9 +19,8 @@ tags:
         inlineMath: [['$','$']]
       }
     });
-  </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" type="text/javascript"></script>
-
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 This would be MathJax basic tutorial and reference you may need frequently dealing with formulas:
 
 - [Use of `$` and `$$`](#use-of--and)
