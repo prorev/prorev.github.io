@@ -43,6 +43,7 @@ $$center$$
 ```
 
 $inline$
+
 $$center$$
 
 ## Superscripts and Subscripts
