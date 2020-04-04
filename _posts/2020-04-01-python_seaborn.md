@@ -473,7 +473,19 @@ ax = sns.heatmap(df)
 
 ![heatmap](/wp-content/uploads/2020/04/heatmap.jpg)
 
+In some cases for some older versions of matplotlib use this:
 ```python
+bottom, top = ax.get_ylim()
+ax.set_ylim(bottom + 0.5, top - 0.5)
+```
+
+You can use heatmaps to display correlation, but this works just for the numberic features.
+
+```python
+import seaborn as sns
+iris = sns.load_dataset("tips")
+plt.figure(figsize=(25,10))
+ax = sns.heatmap(iris.corr(), annot=True)
 bottom, top = ax.get_ylim()
 ax.set_ylim(bottom + 0.5, top - 0.5)
 ```
