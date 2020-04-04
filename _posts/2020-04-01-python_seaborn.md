@@ -5,7 +5,7 @@ date: 2020-01-22
 author: taimane
 layout: post
 permalink: /python/seaborn
-published: false
+published: true
 image: 
 categories: 
    - python
