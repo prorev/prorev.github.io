@@ -24,8 +24,8 @@ tags:
     });
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-Sometimes **mathplotlib** is just not the best fit.
-You can do nice things smarter if you use seaborn that is based on mathplotlib and numpy.
+Sometimes **mathplotlib** is not the best fit.
+You can do nice things smarter if you use **seaborn** that is based on mathplotlib and numpy.
 
 _Table of contents:_
 - [How to start?](#how-to-start)
