@@ -271,7 +271,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="st
 
 
 #### kind="swarm"
-```
+```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
 ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="swarm")
@@ -281,7 +281,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="sw
 
 
 #### kind="box"
-```
+```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
 ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="box")
@@ -290,7 +290,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="bo
 
 
 #### kind="violin"
-```
+```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
 ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="violin")
@@ -300,7 +300,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="vi
 
 
 #### kind="boxen"
-```
+```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
 ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="boxen")
@@ -310,7 +310,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="bo
 
 
 #### kind="point"
-```
+```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
 ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="point")
@@ -346,7 +346,7 @@ ax = sns.catplot(x="sex", hue="smoker", col="time", data=tips, kind="count")
 
 Displot() is matplotlib **hist** with auto bin size. It can also fit scipy.stats distributions and plot the estimated PDF over the data.
 
-```
+```python
 import seaborn as sns
 import numpy as np
 x = np.random.randn(1000)
@@ -369,7 +369,7 @@ ax = sns.kdeplot(y)
 
 You can use kdeplot to plot both x and y.
 
-```
+```python
 ax = sns.kdeplot(x, y)
 ax = sns.kdeplot(x, y, shade=True)
 ```
