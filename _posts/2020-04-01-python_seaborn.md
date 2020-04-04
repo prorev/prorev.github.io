@@ -139,7 +139,7 @@ g = sns.relplot(x="total_bill", y="tip", hue="day", data=tips)
 #### lineplot()
 
 ```python
-import seaborn as sns; sns.set()
+import seaborn as sns
 fmri = sns.load_dataset("fmri")
 ax = sns.lineplot(x="timepoint", y="signal", data=fmri)
 ```
@@ -149,7 +149,7 @@ ax = sns.lineplot(x="timepoint", y="signal", data=fmri)
 #### scatterplot
 
 ```python
-import seaborn as sns; sns.set()
+import seaborn as sns
 tips = sns.load_dataset("tips")
 ax = sns.scatterplot(x="total_bill", y="tip", data=tips)
 ```
@@ -364,7 +364,7 @@ ax = sns.distplot(x)
 
 ```python
 import numpy as np; np.random.seed(10)
-import seaborn as sns; 
+import seaborn as sns
 mean, cov = [0, 2], [(1, .5), (.5, 1)]
 x, y = np.random.multivariate_normal(mean, cov, size=50).T
 ax = sns.kdeplot(x)
@@ -389,7 +389,7 @@ Plot datapoints in an array as sticks on an axis.
 
 ```python
 import numpy as np; np.random.seed(10)
-import seaborn as sns; 
+import seaborn as sns
 mean, cov = [0, 2], [(1, .5), (.5, 1)]
 x, y = np.random.multivariate_normal(mean, cov, size=50).T
 ax = sns.rugplot(x, axis='x')
@@ -405,7 +405,8 @@ ax = sns.kdeplot(x, y)
 ### regplot()
 
 ```python
-import seaborn as sns; sns.set(color_codes=True)
+import seaborn as sns
+sns.set(color_codes=True)
 tips = sns.load_dataset("tips")
 ax = sns.regplot(x="total_bill", y="tip", data=tips)
 ```
@@ -427,7 +428,7 @@ ax = sns.lmplot(x="total_bill", y="tip", fit_reg=True, data=tips)
 Then we can have hue parameter to to distinct on smoker or not:
 
 ```python
-import seaborn as sns; 
+import seaborn as sns 
 tips = sns.load_dataset("tips")
 ax = sns.lmplot(x="total_bill", y="tip", hue="smoker", fit_reg=True, data=tips)
 ```
@@ -463,7 +464,7 @@ ax = sns.residplot(x="total_bill", y="tip", robust=True, data=tips)
 ### heatmap()
 
 ```python
-import seaborn as sns; 
+import seaborn as sns
 sns.reset_defaults()
 a =  [[ randint(1, 10) for c in range(0, 10)] for r in range (0,10)] 
 df = pd.DataFrame(a) 
@@ -480,7 +481,8 @@ ax.set_ylim(bottom + 0.5, top - 0.5)
 ### clustermap()
 
 ```python
-import seaborn as sns; sns.set(color_codes=True)
+import seaborn as sns
+sns.set(color_codes=True)
 iris = sns.load_dataset("iris")
 species = iris.pop("species")
 ax = sns.clustermap(iris)
@@ -516,7 +518,7 @@ ax = sns.jointplot("sepal_width", "petal_length", data=iris, kind="kde", space=0
 It returns histograms on diagonal, else scatterplot.
 
 ```python
-import seaborn as sns;
+import seaborn as sns
 iris = sns.load_dataset("iris")
 ax = sns.pairplot(iris)
 ```
