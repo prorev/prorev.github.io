@@ -15,6 +15,15 @@ tags:
    - mathplotlib
    - pyplot
 ---
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 Sometimes **mathplotlib** is just not the best fit.
 You can do nice things smarter if you use seaborn that is based on mathplotlib and numpy.
 
@@ -34,14 +43,14 @@ _Table of contents:_
     - [Multivariate Boxplot](#multivariate-boxplot)
   - [Swarmplot](#swarmplot)
   - [Catplot (category plots)](#catplot-category-plots)
-    - [**kind="strip"**:](#kind%22strip%22)
-    - [**kind="swarm"**:](#kind%22swarm%22)
-    - [**kind="box"**](#kind%22box%22)
-    - [**kind="violin"**](#kind%22violin%22)
-    - [**kind="boxen"**](#kind%22boxen%22)
-    - [**kind="point"**](#kind%22point%22)
-    - [**kind="bar"**](#kind%22bar%22)
-    - [**kind="count"**](#kind%22count%22)
+    - [kind="strip"](#kind%22strip%22)
+    - [kind="swarm"](#kind%22swarm%22)
+    - [kind="box"](#kind%22box%22)
+    - [kind="violin"](#kind%22violin%22)
+    - [kind="boxen"](#kind%22boxen%22)
+    - [kind="point"](#kind%22point%22)
+    - [kind="bar"](#kind%22bar%22)
+    - [kind="count"](#kind%22count%22)
 - [Distribution plots](#distribution-plots)
   - [displot()](#displot)
   - [kdeplot()](#kdeplot)
@@ -251,7 +260,7 @@ Estimate plots:
 * countplot() (with kind="count")
 
 
-#### **kind="strip"**:
+#### kind="strip"
 
 ```python
 import seaborn as sns
@@ -261,7 +270,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="st
 ![catplot](/wp-content/uploads/2020/04/stripplot.jpg)
 
 
-#### **kind="swarm"**:
+#### kind="swarm"
 ```
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -271,7 +280,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="sw
 ![catplot](/wp-content/uploads/2020/04/cat-kindisswarm.jpg)
 
 
-#### **kind="box"**
+#### kind="box"
 ```
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -280,7 +289,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="bo
 ![catplot](/wp-content/uploads/2020/04/cat-kindisbox.jpg)
 
 
-#### **kind="violin"**
+#### kind="violin"
 ```
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -290,7 +299,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="vi
 ![catplot](/wp-content/uploads/2020/04/cat-kinisviolin.jpg)
 
 
-#### **kind="boxen"**
+#### kind="boxen"
 ```
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -300,7 +309,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="bo
 ![catplot](/wp-content/uploads/2020/04/cat-kindisboxen.jpg)
 
 
-#### **kind="point"**
+#### kind="point"
 ```
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -309,7 +318,7 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="po
 
 ![catplot](/wp-content/uploads/2020/04/cat-kindispoint.jpg)
 
-#### **kind="bar"**
+#### kind="bar"
 
 ```python
 import seaborn as sns
@@ -319,7 +328,7 @@ ax = sns.catplot(x="sex", hue="smoker", col="time", data=tips, kind="bar")
 ![catplot](/wp-content/uploads/2020/04/cat-kindisbar.jpg)
 
 
-#### **kind="count"**
+#### kind="count"
 
 ```python
 import seaborn as sns
