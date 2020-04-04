@@ -121,10 +121,7 @@ There are few commands for the style control:
 * Distribution plots (like distplot)
 * Regression plots (like regplot)
 * Matrix plots (like heatmap)
-* Multi-plots
-  * Facet grids
-  * Pair grids
-  * Joint grids
+* Multi-plots grids (facet,pair, joint)
 
 
 ## Relational plots
