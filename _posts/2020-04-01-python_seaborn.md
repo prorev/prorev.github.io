@@ -265,7 +265,8 @@ Estimate plots:
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="strip")
+ax = sns.catplot(x="sex", y="tip", hue="smoker", 
+col="time", data=tips, kind="strip")
 ```
 ![catplot](/wp-content/uploads/2020/04/stripplot.jpg)
 
@@ -274,7 +275,8 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="st
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="swarm")
+ax = sns.catplot(x="sex", y="tip", hue="smoker", 
+col="time", data=tips, kind="swarm")
 ```
 
 ![catplot](/wp-content/uploads/2020/04/cat-kindisswarm.jpg)
@@ -284,7 +286,8 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="sw
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="box")
+ax = sns.catplot(x="sex", y="tip", hue="smoker", 
+col="time", data=tips, kind="box")
 ```
 ![catplot](/wp-content/uploads/2020/04/cat-kindisbox.jpg)
 
@@ -293,7 +296,8 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="bo
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="violin")
+ax = sns.catplot(x="sex", y="tip", hue="smoker", 
+col="time", data=tips, kind="violin")
 ```
 
 ![catplot](/wp-content/uploads/2020/04/cat-kinisviolin.jpg)
@@ -303,7 +307,8 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="vi
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="boxen")
+ax = sns.catplot(x="sex", y="tip", hue="smoker", 
+col="time", data=tips, kind="boxen")
 ```
 
 ![catplot](/wp-content/uploads/2020/04/cat-kindisboxen.jpg)
@@ -313,7 +318,8 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="bo
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="point")
+ax = sns.catplot(x="sex", y="tip", hue="smoker", 
+col="time", data=tips, kind="point")
 ```
 
 ![catplot](/wp-content/uploads/2020/04/cat-kindispoint.jpg)
@@ -323,7 +329,8 @@ ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="po
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", hue="smoker", col="time", data=tips, kind="bar")
+ax = sns.catplot(x="sex", hue="smoker", 
+col="time", data=tips, kind="bar")
 ```
 ![catplot](/wp-content/uploads/2020/04/cat-kindisbar.jpg)
 
@@ -333,7 +340,8 @@ ax = sns.catplot(x="sex", hue="smoker", col="time", data=tips, kind="bar")
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", hue="smoker", col="time", data=tips, kind="count")
+ax = sns.catplot(x="sex", hue="smoker", 
+col="time", data=tips, kind="count")
 ```
 ![catplot](/wp-content/uploads/2020/04/cat-kindiscount.jpg)
 
