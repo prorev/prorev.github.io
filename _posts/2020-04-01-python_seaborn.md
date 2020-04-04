@@ -238,7 +238,8 @@ To dupe the boxplot we may set: **kind="box"**.
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
-ax = sns.catplot(x="sex", y="tip", hue="smoker", col="time", data=tips, kind="box")
+ax = sns.catplot(x="sex", y="tip", hue="smoker", 
+col="time", data=tips, kind="box")
 ```
 
 ![catplot](/wp-content/uploads/2020/04/catplot.jpg)
