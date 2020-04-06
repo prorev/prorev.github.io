@@ -411,7 +411,10 @@ Cumulative Distribution Function (CDF) represents how fast the area below PDF re
 
 ## What is characteristic function?
 
-The characteristic function provides an alternative way for describing a random variable, or in other words it is a function that completely describes probability distribution. You can find for instance standard normal distribution characteristic function which is simply the Fourier transform in [here](https://math.stackexchange.com/questions/86041/characteristic-function-of-a-standard-normal-random-variable){:rel="nofollow"} and [here](https://web.ma.utexas.edu/users/gordanz/notes/characteristic.pdf){:rel="nofollow"}
+The characteristic function provides an alternative way for describing a random variable, or in other words it is a function that completely describes probability distribution. You can find for instance standard normal distribution characteristic function which is simply the Fourier transform.
+
+Ref:
+[1](https://math.stackexchange.com/questions/86041/characteristic-function-of-a-standard-normal-random-variable){:rel="nofollow"} [2](https://web.ma.utexas.edu/users/gordanz/notes/characteristic.pdf){:rel="nofollow"}.
 
 
 
@@ -491,13 +494,13 @@ t-distribution, and also comparisons of many means using ANOVA.
 ### StatsModels
 
 Statistical models is very advanced GitHub repo for statistical modeling and econometrics in Python.
-You can reach the documentation from https://www.statsmodels.org/stable/index.html.
+You can reach the documentation from (https://www.statsmodels.org/stable/index.html){:rel="nofollow"}.
 
 It is a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.
 
 ### OpenStax Introductionary statistics?
 
-This is a great textbook you can download from https://openstax.org/details/books/introductory-statistics
+This is a [great textbook](https://openstax.org/details/books/introductory-statistics){:rel="nofollow"} you can download from openstax.org website.
 
 
 
