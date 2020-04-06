@@ -211,14 +211,14 @@ For instance flipping a coin. $E1$ is the first flip, $E2$ is the second flip. I
 
 But if we define the event $E2$ different, saying $E2$ is at least one head in two flips, then $E1$ and $E2$ are dependent.
 
-$$P(E2,E1) = P(E2|E1)\cdot P(E1)$$
+$$P(E2,E1) = P(E2∣E1)\cdot P(E1)$$
 
 This reverts to independent case when:
-$P(E2|E1)= P(E2)$
+$P(E2∣E1)= P(E2)$
 
 We could rewrite the dependent form as:
 
-$$P(E2|E1) = P(E2,E1)/P(E1)$$
+$$P(E2∣E1) = P(E2,E1)/P(E1)$$
 
 
 
@@ -236,25 +236,25 @@ $P(B)$ - both
 
 $P(L)$ - at least one
 
-$P(B | L)=P(B, L)/P(L)$
+$P(B ∣ L)=P(B, L)/P(L)$
 
 $P(L)=\frac34$ because {HH, **HT, TH, TT**}
 
-$P(B | L)=P(B)/P(L)={\frac14 / \frac34 = \frac 13}$
+$P(B ∣ L)=P(B)/P(L)={\frac14 / \frac34 = \frac 13}$
 
 
 
 ## Bayesian low
 
-$$ P(S|M) = {P(M|S)*P(S) \over P(M)} $$
+$$ P(S∣M) = {P(M∣S)*P(S) \over P(M)} $$
 
 
 Replace:
-$P(M)= P(S)P(M|S) + P( \neg S)P(M| \neg S)$
+$P(M)= P(S)P(M∣S) + P( \neg S)P(M∣ \neg S)$
 
 Lead to:
 
-$$ P(S|M) = {P(M|S)\cdot P(S) \over P(S)P(M|S) + P( \neg S)P(M| \neg S)} $$
+$$ P(S∣M) = {P(M∣S)\cdot P(S) \over P(S)P(M∣S) + P( \neg S)P(M∣ \neg S)} $$
 
 _Example:_
 **Rain**.
@@ -268,29 +268,29 @@ We know:
 
 $P(S)=0.4$
 
-$P(M|S)=0.1$
+$P(M∣S)=0.1$
 
-$P(M|\neg S)=0.8$
+$P(M∣\neg S)=0.8$
 
 We conclude:
 
 $P(\neg S)=0.6$
 
-$P(\neg M|S)=0.9$
+$P(\neg M∣S)=0.9$
 
-$P(\neg M|\neg S)=0.2$
+$P(\neg M∣\neg S)=0.2$
 
 To calculate the $P(M)$ we use the replace rule:
 
-$P(M)= P(S)P(M|S) + P( \neg S)P(M| \neg S)$
+$P(M)= P(S)P(M∣S) + P( \neg S)P(M∣ \neg S)$
 
 $P(M)= 0.4 \cdot 0.1 + 0.6 \cdot 0.8 = 0.52$
 
 Then we use Bayesian rule:
 
-$P(S|M) = {P(M|S)*P(S) \over P(M)}$
+$P(S∣M) = {P(M∣S)*P(S) \over P(M)}$
 
-$P(S|M) ={0.1 \cdot 0.4 \over 0.52}=0.0769$
+$P(S∣M) ={0.1 \cdot 0.4 \over 0.52}=0.0769$
 
 
 
@@ -299,7 +299,7 @@ $P(S|M) ={0.1 \cdot 0.4 \over 0.52}=0.0769$
 
 We can use the Bayesian formula:
 
-$$ P(spam|words) = {P(words|spam)* P(spam) \over P(words)}$$
+$$ P(spam∣words) = {P(words∣spam)* P(spam) \over P(words)}$$
 
 To train the bayesian filtering model with many words $w_1, w_2, ..., w_n$.
 
@@ -319,7 +319,7 @@ Let $V$ is the event when email contains the word _viagra_.
 
 Then Bayes's theorem tells us that the probability that the message is spam conditional on containing the word _viagra_ is:
 
-$P(S|V) = \Large {P(V|S)\cdot P(S) \over P(V|S)\cdot P(S)+P(V|\neg S)\cdot P(¬S)}$
+$P(S∣V) = \Large {P(V∣S)\cdot P(S) \over P(V∣S)\cdot P(S)+P(V∣\neg S)\cdot P(¬S)}$
 
 _Numerator meaning:_
 message is spam and contains viagra
@@ -329,15 +329,15 @@ probability that a message contains viagra or $P(V)$ written in another form.
 
 This calculation is simply representing the proportion of viagra messages that are spam.
 
-If we would have collection of email we know are spam, and collection of email that are not spam, then we can know calculate $P(V|S)$ and $P(V| \neg S)$
+If we would have collection of email we know are spam, and collection of email that are not spam, then we can know calculate $P(V∣S)$ and $P(V∣ \neg S)$
 
 We can assume equal case $P(S) = P(\neg S) = 0.5$,
 
-$$P (S| V) = {P( V| S) \over P(V, S) + P (V| \neg S)}$$
+$$P (S∣ V) = {P( V∣ S) \over P(V, S) + P (V∣ \neg S)}$$
 
 This then lead to the following conclusion:
 
-If we know $P(V|S)=0.5$, half of all spam messages have the word _viagra_, and 1% of non spam messages have the same word $P(V|\neg S)=0.01$, then the then the email is spam if the word _viagra_ is in it is: $\frac{0.5}{0.51} =0.98$.
+If we know $P(V∣S)=0.5$, half of all spam messages have the word _viagra_, and 1% of non spam messages have the same word $P(V∣\neg S)=0.01$, then the then the email is spam if the word _viagra_ is in it is: $\frac{0.5}{0.51} =0.98$.
 
 
 ## Problem of the Naive Bayes model
