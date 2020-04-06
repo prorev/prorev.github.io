@@ -47,14 +47,11 @@ In here I will ask and answer many machine learning questions.
 - [What is power (statistics)?](#what-is-power-statistics)
 - [What is p-hacking?](#what-is-p-hacking)
 - [What is p-value?](#what-is-p-value)
-  - [What is OpenIntro Statistics?](#what-is-openintro-statistics)
-  - [What is modern analyst (modernanalyst.com)?](#what-is-modern-analyst-modernanalystcom)
-- [What is StatsModels](#what-is-statsmodels)
-  - [What hat is OpenStax Introductionary statistics?](#what-hat-is-openstax-introductionary-statistics)
-- [We tossed a coin 1000 times and we get 525 heads. Is the coin fair?](#we-tossed-a-coin-1000-times-and-we-get-525-heads-is-the-coin-fair)
-- [What is the `N(50,5)` where N is normal distribution?](#what-is-the-n505-where-n-is-normal-distribution)
-- [Is B(100,0.5) == N(50,5)?](#is-b10005--n505)
-- [What is continous correction?](#what-is-continous-correction)
+- [Books and materials](#books-and-materials)
+  - [OpenIntro Statistics?](#openintro-statistics)
+  - [Modern analyst (modernanalyst.com)?](#modern-analyst-modernanalystcom)
+  - [StatsModels](#statsmodels)
+  - [OpenStax Introductionary statistics?](#openstax-introductionary-statistics)
 
 
 ## What is regression?
@@ -465,8 +462,9 @@ It indicates strong evidence against the null hypothesis.
 
 If p-value < 0.05 We may reject the null hypothesis, and accept the alternative hypothesis.
 
+## Books and materials
 
-### What is OpenIntro Statistics?
+### OpenIntro Statistics?
 
 This is a [special online book](http://www.tf.uns.ac.rs/~omorr/radovan_omorjan_003_prII/r-examples/os3.pdf){:ref="nofollow"} with many topics about statistics and direct link to YouTube videos.
 
@@ -484,20 +482,19 @@ t-distribution, and also comparisons of many means using ANOVA.
 
 
 
-### What is modern analyst (modernanalyst.com)?
+### Modern analyst (modernanalyst.com)?
 
 [Modern analyst](https://modernanalyst.com/){:rel="nofollow"} is a great website covering interview questions: Search Google on "site:https://www.modernanalyst.com/Careers/InterviewQuestions/"
 
 
-## What is StatsModels
+### StatsModels
 
-Statistical models is very advanced GitHub repo for 
-statistical modeling and econometrics in Python.
+Statistical models is very advanced GitHub repo for statistical modeling and econometrics in Python.
 You can reach the documentation from https://www.statsmodels.org/stable/index.html.
 
 It is a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.
 
-### What hat is OpenStax Introductionary statistics?
+### OpenStax Introductionary statistics?
 
 This is a great textbook you can download from https://openstax.org/details/books/introductory-statistics
 
@@ -505,16 +502,15 @@ This is a great textbook you can download from https://openstax.org/details/book
 
 
 <!-- 
-## We tossed a coin 1000 times and we get 525 heads. Is the coin fair?
+We tossed a coin 1000 times and we get 525 heads. Is the coin fair?
 
 
-## What is the `N(50,5)` where N is normal distribution?
+What is the `N(50,5)` where N is normal distribution?
 
 This is often the case 
-## Is B(100,0.5) == N(50,5)?
+Is B(100,0.5) == N(50,5)?
 
-
-## What is continous correction?
+What is continous correction?
  -->
 
 
