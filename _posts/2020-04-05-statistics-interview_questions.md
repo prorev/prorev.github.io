@@ -236,11 +236,11 @@ $P(B)$ - both
 
 $P(L)$ - at least one
 
-$P(B|L)=P(B, L)/P(L)$
+$P(B | L)=P(B, L)/P(L)$
 
 $P(L)=\frac34$ because {HH, **HT, TH, TT**}
 
-$P(B|L)=P(B)/P(L)={\frac14 / \frac34 = \frac 13}$
+$P(B | L)=P(B)/P(L)={\frac14 / \frac34 = \frac 13}$
 
 
 
