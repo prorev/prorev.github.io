@@ -29,7 +29,7 @@ In here I will ask and answer many questions from statistics.
 - [What is Information?](#what-is-information)
 - [What is entropy?](#what-is-entropy)
 - [How to maximize the entropy?](#how-to-maximize-the-entropy)
-- [What is Cross-entropy?](#what-is-cross-entropy)
+- [What is cross-entropy?](#what-is-cross-entropy)
 - [Cross-Entropy as Loss Function](#cross-entropy-as-loss-function)
 - [Probability of an Event](#probability-of-an-event)
 - [Bayesian low](#bayesian-low)
@@ -148,9 +148,9 @@ $Entropy(X) = -[\frac39\cdot log₂\frac39 + \frac39 \cdot log₂ \frac39 + \fra
 Entropy will be maximized if uncertainty of any element is maximized.
 
 
-## What is Cross-entropy?
+## What is cross-entropy?
 
-Cross-entropy measures the relative entropy between two probability distributions $B1$ and $B2$ over the same set of events.
+Cross-entropy measures the relative entropy between two probability distributions L1 and L2 over the same set of events.
 
 Let's consider two bins with the labels:
 
