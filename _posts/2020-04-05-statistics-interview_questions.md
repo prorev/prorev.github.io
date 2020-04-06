@@ -73,9 +73,9 @@ $$I(x)=-log₂1=0$$
 
 There is no information.
 
-There is information if probability of the occurrence x is less than 1, or as Shannon defined: Information quantifies the uncertainty in one single event.
+There is information if probability of the occurrence $x$ is less than 1. This is why Shannon defined: Information quantifies the uncertainty in one single event.
 
-The more we are uncertain of the more information:
+The more we are uncertain of the more information.
 
 In a fair coin toss game probability for the coin head is 0.5. Let's calculate the information.
 
