@@ -43,14 +43,14 @@ _Table of contents:_
     - [Multivariate Boxplot](#multivariate-boxplot)
   - [Swarmplot](#swarmplot)
   - [Catplot (category plots)](#catplot-category-plots)
-    - [kind="strip"](#kind%22strip%22)
-    - [kind="swarm"](#kind%22swarm%22)
-    - [kind="box"](#kind%22box%22)
-    - [kind="violin"](#kind%22violin%22)
-    - [kind="boxen"](#kind%22boxen%22)
-    - [kind="point"](#kind%22point%22)
-    - [kind="bar"](#kind%22bar%22)
-    - [kind="count"](#kind%22count%22)
+    - [kind=strip](#kindstrip)
+    - [kind=swarm](#kindswarm)
+    - [kind=box](#kindbox)
+    - [kind=violin](#kindviolin)
+    - [kind=boxen](#kindboxen)
+    - [kind=point](#kindpoint)
+    - [kind=bar](#kindbar)
+    - [kind=count](#kindcount)
 - [Distribution plots](#distribution-plots)
   - [displot()](#displot)
   - [kdeplot()](#kdeplot)
@@ -258,7 +258,7 @@ Estimate plots:
 * countplot() (with kind="count")
 
 
-#### kind="strip"
+#### kind=strip
 
 ```python
 import seaborn as sns
@@ -269,7 +269,7 @@ col="time", data=tips, kind="strip")
 ![catplot](/wp-content/uploads/2020/04/stripplot.jpg)
 
 
-#### kind="swarm"
+#### kind=swarm
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -280,7 +280,7 @@ col="time", data=tips, kind="swarm")
 ![catplot](/wp-content/uploads/2020/04/cat-kindisswarm.jpg)
 
 
-#### kind="box"
+#### kind=box
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -290,7 +290,7 @@ col="time", data=tips, kind="box")
 ![catplot](/wp-content/uploads/2020/04/cat-kindisbox.jpg)
 
 
-#### kind="violin"
+#### kind=violin
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -301,7 +301,7 @@ col="time", data=tips, kind="violin")
 ![catplot](/wp-content/uploads/2020/04/cat-kinisviolin.jpg)
 
 
-#### kind="boxen"
+#### kind=boxen
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -312,7 +312,7 @@ col="time", data=tips, kind="boxen")
 ![catplot](/wp-content/uploads/2020/04/cat-kindisboxen.jpg)
 
 
-#### kind="point"
+#### kind=point
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -322,7 +322,7 @@ col="time", data=tips, kind="point")
 
 ![catplot](/wp-content/uploads/2020/04/cat-kindispoint.jpg)
 
-#### kind="bar"
+#### kind=bar
 
 ```python
 import seaborn as sns
@@ -333,7 +333,7 @@ col="time", data=tips, kind="bar")
 ![catplot](/wp-content/uploads/2020/04/cat-kindisbar.jpg)
 
 
-#### kind="count"
+#### kind=count
 
 ```python
 import seaborn as sns
