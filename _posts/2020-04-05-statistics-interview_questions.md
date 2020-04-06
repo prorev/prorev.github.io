@@ -38,7 +38,7 @@ In here I will ask and answer many questions from statistics.
 - [The Law of Large Numbers (LLN)](#the-law-of-large-numbers-lln)
 - [Central Limit Theorem](#central-limit-theorem)
 - [What is SE (Standard Error)](#what-is-se-standard-error)
-- [What is called `erf` statistics, math?](#what-is-called-erf-statistics-math)
+- [What is called `erf` in statistics (math)?](#what-is-called-erf-in-statistics-math)
 - [Draw normal PDF. What is below the curve?](#draw-normal-pdf-what-is-below-the-curve)
 - [Draw normal CDF, what is below the curve?](#draw-normal-cdf-what-is-below-the-curve)
 - [What is characteristic function?](#what-is-characteristic-function)
@@ -379,7 +379,7 @@ $σ$ is the standard deviation of the population.
 
 $n$ is number of observations of the sample.
 
-## What is called `erf` statistics, math?
+## What is called `erf` in statistics (math)?
 
 This is a Gauss error function connected to Gauss or normal distribution. 
 
