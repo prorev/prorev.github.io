@@ -247,7 +247,7 @@ $P(B ∣ L)=P(B)/P(L)={\frac14 / \frac34 = \frac 13}$
 ## Bayesian low
 Expressed as:
 
-$$ P(S∣M) = {P(M∣S)*P(S) \over P(M)} $$
+$$ P(S∣M) = {P(M∣S) \cdot P(S) \over P(M)} $$
 
 
 Replace:
