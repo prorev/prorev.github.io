@@ -48,10 +48,10 @@ In here I will ask and answer many questions from statistics.
 - [What is p-hacking?](#what-is-p-hacking)
 - [What is p-value?](#what-is-p-value)
 - [Books and materials](#books-and-materials)
-  - [OpenIntro Statistics?](#openintro-statistics)
-  - [Modern analyst (modernanalyst.com)?](#modern-analyst-modernanalystcom)
+  - [OpenIntro Statistics](#openintro-statistics)
+  - [Modern analyst (modernanalyst.com)](#modern-analyst-modernanalystcom)
   - [StatsModels](#statsmodels)
-  - [OpenStax Introductionary statistics?](#openstax-introductionary-statistics)
+  - [OpenStax Introductionary statistics](#openstax-introductionary-statistics)
 
 
 ## What is regression?
@@ -468,7 +468,7 @@ If p-value < 0.05 We may reject the null hypothesis, and accept the alternative 
 
 ## Books and materials
 
-### OpenIntro Statistics?
+### OpenIntro Statistics
 
 This is a [special online book](http://www.tf.uns.ac.rs/~omorr/radovan_omorjan_003_prII/r-examples/os3.pdf){:ref="nofollow"} with many topics about statistics and direct link to YouTube videos.
 
@@ -486,7 +486,7 @@ t-distribution, and also comparisons of many means using ANOVA.
 
 
 
-### Modern analyst (modernanalyst.com)?
+### Modern analyst (modernanalyst.com)
 
 [Modern analyst](https://modernanalyst.com/){:rel="nofollow"} is a great website covering interview questions: Search Google on "site:https://www.modernanalyst.com/Careers/InterviewQuestions/"
 
@@ -498,7 +498,7 @@ You can reach the documentation from (https://www.statsmodels.org/stable/index.h
 
 It is a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.
 
-### OpenStax Introductionary statistics?
+### OpenStax Introductionary statistics
 
 This is a [great textbook](https://openstax.org/details/books/introductory-statistics){:rel="nofollow"} you can download from openstax.org website.
 
