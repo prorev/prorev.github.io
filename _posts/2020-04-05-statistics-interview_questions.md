@@ -63,23 +63,21 @@ In here I will ask and answer many questions from statistics.
 
 Claude Shannon defined information as:
 
-$$I(x) = -log₂P(x)$$ 
+$I(x) = -log₂P(x)$, where $P(x)$ is probability of occurrence of the variable $x$.
 
-where $P(x)$ is probability of occurrence of $x$.
+If $P(x)=1$, or if we are absolutely certain then:
 
-If $P(x)=1$, or we are absolutely certain then:
+$I(x)=-log₂1=0$, then there is no information.
 
-$$I(x)=-log₂1=0$$
+There is information if probability of the occurrence $x$ is less than 1. 
 
-There is no information.
-
-There is information if probability of the occurrence $x$ is less than 1. This is why Shannon defined: Information quantifies the uncertainty in one single event.
+This is why Shannon defined: _Information quantifies the uncertainty in one single event_.
 
 The more we are uncertain of the more information.
 
 In a fair coin toss game probability for the coin head is 0.5. Let's calculate the information.
 
-$$I(x) = -log₂P(x)=-log₂\frac12=1$$
+$I(x) = -log₂P(x)=-log₂\frac12=1$
 
 Information is 1 bit.
 
@@ -87,15 +85,13 @@ For the rolling dice problem the probability we get 1, is $\frac 16$.
 
 The information we will get 1 will then be:
 
-$$I(x) = -log₂P(x)=-log₂\frac16=2.58491$$
+$I(x) = -log₂P(x)=-log₂\frac16=2.58491$
 
 This tells use the information in bits.
 
 If we would have $P(x)=0$, 
 
-$$I(x) = -log₂P(x)=-log₂0=∞$$
-
-Information would be = $∞$ bits.
+$I(x) = -log₂P(x)=-log₂0=∞$. Information would be = $∞$ bits.
 
 
 ## What is entropy?
@@ -203,7 +199,7 @@ This is the same equation for maximum likelihood estimation. -->
 We use $P(E)$ to express probability associated with an event $E$.
 
 If we have two events and following is true:
-$$P(E1,E2) = P(E1)\cdot P(E2)$$
+$P(E1,E2) = P(E1)\cdot P(E2)$
 
 Then we say events $E1$ and $E2$ are **independent**.
 
@@ -211,20 +207,19 @@ For instance flipping a coin. $E1$ is the first flip, $E2$ is the second flip. I
 
 But if we define the event $E2$ different, saying $E2$ is at least one head in two flips, then $E1$ and $E2$ are dependent.
 
-$$P(E2,E1) = P(E2∣E1)\cdot P(E1)$$
+$P(E2,E1) = P(E2∣E1)\cdot P(E1)$
 
 This reverts to independent case when:
 $P(E2∣E1)= P(E2)$
 
 We could rewrite the dependent form as:
 
-$$P(E2∣E1) = P(E2,E1)/P(E1)$$
+$P(E2∣E1) = P(E2,E1)/P(E1)$
 
 
+~~
 
-
-_Example:_ 
-**Flipping the coin.** 
+_Example:_ **Flipping the coin.** 
 
 What is probability of both heads in two consecutive flips if at least one flip is head?
 
@@ -242,20 +237,24 @@ $P(L)=\frac34$ because {HH, **HT, TH, TT**}
 
 $P(B ∣ L)=P(B)/P(L)={\frac14 / \frac34 = \frac 13}$
 
+~~
 
 
 ## Bayesian low
 Expressed as:
 
-$$ P(S∣M) = {P(M∣S) \cdot P(S) \over P(M)} $$
+$P(S∣M) = \Large {P(M∣S) \cdot P(S) \over P(M)}$
 
 
-Replace:
+Replacement:
+
 $P(M)= P(S)P(M∣S) + P( \neg S)P(M∣ \neg S)$
 
-Lead to:
+Leads to:
 
-$$ P(S∣M) = {P(M∣S)\cdot P(S) \over P(S)P(M∣S) + P( \neg S)P(M∣ \neg S)} $$
+$P(S∣M) = \Large {P(M∣S)\cdot P(S) \over P(S)P(M∣S) + P( \neg S)P(M∣ \neg S)}$
+
+~~
 
 _Example:_
 **Rain**.
@@ -293,7 +292,7 @@ $P(S∣M) = {P(M∣S)*P(S) \over P(M)}$
 
 $P(S∣M) ={0.1 \cdot 0.4 \over 0.52}=0.0769$
 
-
+~~
 
 
 ## Bayesian spam filer (naive bayes)
@@ -310,6 +309,7 @@ It works based on the fact that some words have a higher chance of appearing in 
 
 > Inside scikit-learn python package there is a BernoulliNB model that implements the Naive Bayes algorithm.
 
+~~
 
 _Example:_ **Simple filter for the word _viagra_**
 
@@ -340,6 +340,7 @@ This then lead to the following conclusion:
 
 If we know $P(V∣S)=0.5$, half of all spam messages have the word _viagra_, and 1% of non spam messages have the same word $P(V∣\neg S)=0.01$, then the then the email is spam if the word _viagra_ is in it is: $\frac{0.5}{0.51} =0.98$.
 
+~~
 
 ## Problem of the Naive Bayes model
 
@@ -369,15 +370,9 @@ The Central Limit Theorem say for any distribution if we take samples of equal s
 
 ## What is SE (Standard Error)
 
-The Standard Error (SE) considers taking multiple n-samples from probability distribution, and recording of the means obtained in repeat. For Gauss or normal distribution it should be:
+The Standard Error (SE) considers taking multiple n-samples from probability distribution, and recording of the means obtained in repeat. For Gauss or normal distribution it should be: $\Large  \frac {\sigma }{\sqrt {n}}$
 
-$$\frac {\sigma }{\sqrt {n}}$$
-
-where:
-
-$σ$ is the standard deviation of the population.
-
-$n$ is number of observations of the sample.
+where: $\Large σ$ is the standard deviation of the population, $\Large n$ is number of observations of the sample.
 
 ## What is called `erf` in statistics (math)?
 
