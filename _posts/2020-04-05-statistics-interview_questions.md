@@ -65,11 +65,11 @@ Claude Shannon defined information as:
 
 $I(x) = -log₂P(x)$, where $P(x)$ is probability of occurrence of the variable $x$.
 
-If $P(x)=1$, or if we are absolutely certain then:
+If $P(x)=1$, or if we are absolutely certain: 
 
-$I(x)=-log₂1=0$, then there is no information.
+$I(x)=-log₂1=0$, there is **no information**.
 
-There is information if probability of the occurrence $x$ is less than 1. 
+There is information if $P(x)<1$ (probability of the occurrence is less than 1). 
 
 This is why Shannon defined: _Information quantifies the uncertainty in one single event_.
 
