@@ -804,7 +804,7 @@ With linear regression we are trying to solve the problem of fitting scattered p
 
 This is why we need a line:
 
-$$ y = ax + b $$
+$y = ax + b$
 
 where:
 
