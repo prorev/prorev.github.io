@@ -82,7 +82,7 @@ In here I will ask and answer many machine learning questions.
   - [Loss functions used for regression vs. loss functions for classification](#loss-functions-used-for-regression-vs-loss-functions-for-classification)
   - [Machine learning types](#machine-learning-types)
   - [Linear regression](#linear-regression)
-  - [NLP core labeling tasks are there?](#nlp-core-labeling-tasks-are-there)
+  - [NLP core labeling tasks](#nlp-core-labeling-tasks)
 
 ## 1. Who created the first mathematical model of the neural network?
 
@@ -873,7 +873,7 @@ The more uncertain the event is the more information we get.
 
 
 
-### NLP core labeling tasks are there?
+### NLP core labeling tasks
 
 There are 8 core NLP labeling tasks:
 * **POS** Part-of-speech tagging is the syntactic task of assigning tags such as noun, verb, adjective, etc. to individual tokens. 
