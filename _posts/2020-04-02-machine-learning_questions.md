@@ -82,6 +82,8 @@ In here I will ask and answer many machine learning questions.
   - [Loss functions used for regression vs. loss functions for classification](#loss-functions-used-for-regression-vs-loss-functions-for-classification)
   - [Machine learning types](#machine-learning-types)
   - [Linear regression](#linear-regression)
+- [Logistic regression?](#logistic-regression)
+- [What is information?](#what-is-information)
   - [NLP core labeling tasks](#nlp-core-labeling-tasks)
 
 ## 1. Who created the first mathematical model of the neural network?
@@ -425,7 +427,7 @@ In other words, softmax returns probabilities, especially maximizing just one.
 
 ## 31. Find the intruder?
 1) Adagrad 
-2) madam
+2) **madam**
 3) Adam 
 4) Eve
 
@@ -833,7 +835,7 @@ $y' = b + w_1x_1 + w_2x_2 + w_3x_3$
 
 Having multiple features we can say we have multiple regression case.
 
-##$ Logistic regression?
+## Logistic regression?
 
 With logistic regression we are trying to predict True or False, or 0 and 1. If we would use linear regression for the same we would possible end with probabilities less or greater than 1, and less and greater than 0.
 
@@ -848,7 +850,7 @@ where $y'_i=p(y_i)=p_i$
 
 > Log Loss (related to cross-entropy) measures the performance of a classification model where the prediction input is a probability value between 0 and 1.
 
-What is information?
+## What is information?
 
 >_Information quantifies the uncertainty in one single event._ 
 Claude Shannon 
