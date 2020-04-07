@@ -812,11 +812,11 @@ $a$ is the slope of the line, and $b$ is the y-intercept.
 
 In machine learning, we use **weights** and **biases** so:
 
-$$ y' = w_1x_1 + b$$
+$y' = w_1x_1 + b$
 
 or in general case:
 
-$$ y' = \bold Wx + \bold B$$
+$y' = Wx$
 
 where:
 
@@ -829,7 +829,7 @@ $x_1$ is a feature (a known input), and $\bold W$ and $\bold B$ are vector repre
 
 General model on three features might look as follows:
 
-$$y' = b + w_1x_1 + w_2x_2 + w_3x_3$$ 
+$y' = b + w_1x_1 + w_2x_2 + w_3x_3$ 
 
 Having multiple features we can say we have multiple regression case.
 
@@ -839,9 +839,9 @@ With logistic regression we are trying to predict True or False, or 0 and 1. If 
 
 So we need a special loss function for logistic regression:
 
-$$Log Loss=\sum_{x,y \in D} -y \cdot log \ y'  -(1-y) \cdot log(1-y')$$ 
+$Log Loss=\sum_{x,y \in D} -y \cdot log \ y'  -(1-y) \cdot log(1-y')$ 
 or 
-$$Log Loss=- \frac{1}{N} \sum_{i=1}^N y_{i} \log \, p_{i} + (1 - y_{i}) \log \, (1 - p_{i}).$$
+$Log Loss=- \frac{1}{N} \sum_{i=1}^N y_{i} \log \, p_{i} + (1 - y_{i}) \log \, (1 - p_{i}).$
 
 where $y'_i=p(y_i)=p_i$
 
@@ -855,7 +855,7 @@ Claude Shannon
 
 To define these words we use the following math:
 
-$$I(x) = -log_₂P(x)$$
+$I(x) = -log_₂P(x)$
 
 Here $P(x)$ is probability of occurrence of $x$.
 
