@@ -4,96 +4,115 @@ title: Samsung android ODIN tool
 date: 2020-04-06
 author: taimane
 layout: post
-permalink: /android/samsung
-published: false
+permalink: /android/samsung-odin
+published: true
 image: 
 categories: 
    - android
 tags:
+   - samsung
 ---
-Make sure you have OEM unlock option set, else you will get FAP lock ON set during the boot time.
+What you can do with ODIN3 tool? 
+
+You may root your device. Once you rooted your device, make sure you have OEM unlock option set if you have the rooted phone, else you will get FAP lock ON message during the boot time.
 
 
-## Odin tool components
+## ODIN3 tool components
+
+This tool is actually made by Samsung. It should have
 
 * BL: Bootloader
 * AP: Android partition (OS)
 * CP: modern firmware
 * CSC: Consumer software customization
 
+You can even create and use PIT (Partition Information Table), this way you can create your own partitions.
 
-## WHAT IS ADB/FASTBOOT?
+### What is PIT?
 
-ADB and fastboot are different protocols used through PC to perform command line operations.
+PIT stands for Partition Information Table.
 
-**Android Debugging Bridge** is basically used by developers to identify and fix bugs in OS (ROM). ADB works both in ROM and recovery mode.
+A PIT file is basically a set of instructions defining the phone partition layout. You should use a it if you want to re-partition the phone with ODIN3.
 
-**Fastboot** works in bootloader mode when phone is not switched on in recovery or ROM (when Android isn't installed on phone)
+You only need this file when repartitioning the device.
+
+There are tools that can generate PIT files using ADB commands.
+
+REF: mhttps://www.droidviews.com/need-know-samsung-pit-files/
+
+
+## Heimdall
+
+Alternative for ODIN3 is [Heimdall](https://gitlab.com/BenjaminDobell/Heimdall){:rel="nofollow"}.
+
+Heimdall is a cross-platform open-source tool suite used to flash firmware (aka ROMs) onto Samsung mobile devices.
+
+Heimdall connects to a mobile device over USB and interacts with low-level software running on the device, known as **Loke**. Loke and Heimdall communicate via the custom Samsung-developed protocol typically referred as the 'Odin 3 protocol'.
+
+
+## How to access bootloader on Samsung phones?
 
 Bootloader is accessed by:
 
+```
 Power + Vol. Down + ( Home ). 
-
-ADB mode has more flexibility than fastboot as it supports more types of flashable files to be flashed.
-
-ADB also supports backing up Apps and Data. ADB/fastboot commands can be used to flash recovery and boot images. 
-
-It can also flash ROMs and mods like rooting solutions and XPOSED by booting into recovery. 
-
-And above all, it is the only way to unlock bootloader without which the device functionality is too limited. 
-
-Read here why we need to unlock bootloader: https://forum.xda-developers.com/showpost.php?p=71782262&postcount=1.
-
-In bootloader mode, usually boot logo or fastboot logo appears on device screen.
-
-## How to change fastboot logo?
+```
 
 
-## Samsung firmware naming convention and explanation
+To enter the other options use:
 
+```
+Power + Vol. Up + ( Home ) 
+```
+
+## Samsung firmware naming convention and modification
+
+Read about in here:  
 https://forum.xda-developers.com/showthread.php?t=1356325
 
 
 https://android.stackexchange.com/questions/132521/samsung-firmware-modifying
 
 
-## Install ADB
 
-Download platform tools:
+##  Samsung Smart Switch
 
+This is why this application is usually useless.
+
+Now it only has Emergency mode, but you need to have emergency code first to use it.
+
+
+
+## Sammobile.com
+
+This is the [web site](https://www.sammobile.com){:rel="nofollow"} where you can search for your Samsung model and find exact version to download and flash your phone using ODIN3.
+
+For instance, if you model SM-J510FN and if it is based for EU market you need this file: is https://www.sammobile.com/samsung/galaxy-j5-2016/firmware/SM-J510FN/SEE/download/J510FNXXS3BSH2/291252/
+
+## Appendix 
+
+### WHAT IS ADB/FASTBOOT?
+
+ADB and fastboot are different protocols used through PC to perform command line operations. These tools work best with rooted phone.
+
+**Android Debugging Bridge** ADB is basically used by developers to identify and fix bugs in OS (ROM). ADB works both in ROM and recovery mode.
+
+**Fastboot** works in bootloader mode when phone is not switched on in recovery or ROM (when Android isn't installed on phone)
+
+### Install ADB
+
+Download platform tools and install them from:
 
 https://developer.android.com/studio/releases/platform-tools
 
-## magisk
+<!-- 
+Rooting Samsung Galaxy using TWRP
 
-https://www.androidinfotech.com/magisk-versions-download/
+TWRP
+https://www.mediafire.com/file/844c26g346r2f5n/TWRP_3.0.2_SM_J5_2016_Nougat_7.1.1.tar/file
 
-## Best 
+Super SU
+http://www.mediafire.com/file/vjcjh24gx80g01y/SuperSU-v2.82-20170528234214.zip/file
 
-https://www.androidinfotech.com/root-samsung-galaxy-j5-2016-sm-j510f-gn-k-s-nougat/
-
-### PIT
-
-
-https://www.droidviews.com/need-know-samsung-pit-files/
-PIT stands for Partition Information Table
-
-
-
-PIT stands for Partition Information Table. A PIT file is basically a set of instructions defining the phone partition layout. You should use a it if you want to re-partition the phone with Odin.
-
-You only need this file when repartitioning the device and you don't need to repartition it unless you mess up the partition table to begin with, or when downgrading/upgrading.
-
-There are tools (commercial) that can genarate PIT files using ADB commands.
-
-
-##  Samsung Smart Switch
-Samsung Smart Switch
-Emergency mode...
-
-
-## https://www.sammobile.com/samsung/galaxy-j5-2016/firmware/SM-J510FN/SEE/download/J510FNXXS3BSH2/291252/
-
-
-
-
+Procedure
+https://www.youtube.com/watch?v=aCeSV7dMylI -->
