@@ -147,8 +147,10 @@ ax1.scatter(t,a,c='c')
 ax2=fig.add_subplot(3,3,2)
 ax2.title.set_text('Second Plot')
 ax2.set_xlabel('second xlabel')
-ax2.set_ylabel('second ylabel', labelpad=-7)
+ax2.set_ylabel('second ylabel')
 ax2.scatter(t,a,c='g')
+
+plt.tight_layout()
 plt.show()
 ```
 ![subplots label](/wp-content/uploads/2020/04/subplot-labels.jpg)
