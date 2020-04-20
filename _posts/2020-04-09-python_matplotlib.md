@@ -21,6 +21,7 @@ tags:
 - [Different scatter color](#different-scatter-color)
 - [Different scatter size](#different-scatter-size)
 - [Multiple subplots](#multiple-subplots)
+- [Pcolor and Pcolormesh](#pcolor-and-pcolormesh)
 
 What would be the crucial knowledge to successfully create matplotlib based graphs?
 
@@ -324,4 +325,41 @@ ax4.scatter(t,a,c='m')
 plt.show()
 ```
 ![3 subplots](/wp-content/uploads/2020/04/3scatter.jpg)
+
+## Pcolor and Pcolormesh
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+Z = np.random.rand(6, 10)
+fig, (ax0) = plt.subplots(1, 1)
+c = ax0.pcolor(Z)
+ax0.set_title('pcolor')
+plt.show()
+```
+
+We can just have the random values and using **pcolor** or **pcolormesh** we can draw the mesh.
+
+![pcolor](/wp-content/uploads/2020/04/pcolor.jpg)
+
+However, the more realistic is to create the grid.
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+dx, dy = 0.05, 0.05
+y, x = np.mgrid[slice(1, 5 + dy, dy),
+                slice(1, 5 + dx, dx)]
+z = np.sin(x)**10 + np.cos(10 + y*x) * np.cos(x)
+fig, (ax0) = plt.subplots(1, 1)
+c = ax0.pcolormesh(x,y,z)
+ax0.set_title('pcolormesh')
+plt.show()
+```
+
+![pcolormesh](/wp-content/uploads/2020/04/pcolormesh.jpg)
+
+Note how we added a little noise using the **extra** variable.
 
