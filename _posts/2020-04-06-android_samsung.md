@@ -87,7 +87,7 @@ Now it only has Emergency mode, but you need to have emergency code first to use
 
 This is the [web site](https://www.sammobile.com){:rel="nofollow"} where you can search for your Samsung model and find exact version to download and flash your phone using ODIN3.
 
-For instance, if you model SM-J510FN and if it is based for EU market you need this file: is https://www.sammobile.com/samsung/galaxy-j5-2016/firmware/SM-J510FN/SEE/download/J510FNXXS3BSH2/291252/
+For instance, if you model SM-J510FN and if it is based for EU market you need [this file](https://www.sammobile.com/samsung/galaxy-j5-2016/firmware/SM-J510FN/SEE/download/J510FNXXS3BSH2/291252/){:rel="nofollow"}.
 
 ## Appendix 
 
@@ -101,9 +101,8 @@ ADB and fastboot are different protocols used through PC to perform command line
 
 ### Install ADB
 
-Download platform tools and install them from:
-
-https://developer.android.com/studio/releases/platform-tools
+Download platform tools and install them from
+[https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)}{:rel="nofollow"}
 
 <!-- 
 Rooting Samsung Galaxy using TWRP
