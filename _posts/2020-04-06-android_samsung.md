@@ -68,10 +68,8 @@ Power + Vol. Up + ( Home )
 ## Samsung firmware naming convention and modification
 
 Read about in here:  
-https://forum.xda-developers.com/showthread.php?t=1356325
-
-
-https://android.stackexchange.com/questions/132521/samsung-firmware-modifying
+* https://forum.xda-developers.com/showthread.php?t=1356325
+* https://android.stackexchange.com/questions/132521/samsung-firmware-modifying
 
 
 
@@ -102,7 +100,7 @@ ADB and fastboot are different protocols used through PC to perform command line
 ### Install ADB
 
 Download platform tools and install them from
-[https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)}{:rel="nofollow"}
+[https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools){:rel="nofollow"}
 
 <!-- 
 Rooting Samsung Galaxy using TWRP
