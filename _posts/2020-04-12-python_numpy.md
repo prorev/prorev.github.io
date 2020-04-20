@@ -16,7 +16,8 @@ tags:
 - [Tensors (arrays)](#tensors-arrays)
 - [Inspectors](#inspectors)
 - [Creating tensors](#creating-tensors)
-- [Copy](#copy)
+- [Copy related items](#copy-related-items)
+- [Grids](#grids)
 - [Tensor operation](#tensor-operation)
   - [Transpose](#transpose)
   - [Flatten and Ravel](#flatten-and-ravel)
@@ -25,6 +26,8 @@ tags:
   - [Append, Insert, Delete](#append-insert-delete)
   - [Packing](#packing)
   - [Split tensors](#split-tensors)
+
+
 ## Data Types
 
 ```python
@@ -97,8 +100,8 @@ type: int32
 np.zeros((2,3))    # matrix of zeros 
 np.ones((2,3,4))   # tensor of ones
 
-e = np.arange(10,125,5)     # evenly spaced values
-e = np.linspace(1,10,9)     # evenly spaced values
+e = np.arange(10,125,5)     # evenly spaced values from 10 to 125
+e = np.linspace(1,10,9)     # evenly spaced 9 values
 
 c = np.full((2,2),7)        # constant array
 i = np.eye(2)               # 2X2 identity matrix
@@ -120,12 +123,76 @@ _Output:_
  100 105 110 115 120]
 [ 1.     2.125  3.25   4.375  5.5    6.625  7.75   8.875 10.   ]
 ```
-## Copy
+## Copy related items
 
 ```python
 h = a.view()       # view of the array
 h = np.copy(a)     # copy of the array
 h = a.copy()       # deep copy
+```
+
+
+
+## Grids
+
+Often to create grids you use **meshgid** function.
+
+_Example:_
+```python
+import numpy as np
+x1,y1 = np.meshgrid(np.arange(1, 11, 2), np.arange(-12, -3, 3))
+x1,y1
+```
+_Output:_
+```
+(array([[1, 3, 5, 7, 9],
+        [1, 3, 5, 7, 9],
+        [1, 3, 5, 7, 9]]), array([[-12, -12, -12, -12, -12],
+        [ -9,  -9,  -9,  -9,  -9],
+        [ -6,  -6,  -6,  -6,  -6]]))
+```
+
+Second function is the **mgrid**
+
+_Example:_
+```python
+import numpy as np
+x2,y2 = np.mgrid[1:11:2, -12:-3:3]
+x2,y2
+```
+
+_Output:_
+```
+(array([[1, 1, 1],
+        [3, 3, 3],
+        [5, 5, 5],
+        [7, 7, 7],
+        [9, 9, 9]]), array([[-12,  -9,  -6],
+        [-12,  -9,  -6],
+        [-12,  -9,  -6],
+        [-12,  -9,  -6],
+        [-12,  -9,  -6]]))
+```
+> The returned **x1** and **x2** are transposed, as well is the case for **y1** and **y2**.
+
+Often you use **meshgrid**  with **np.array**.
+
+_Example:_
+```python
+x = np.array([1, 2, 3])
+y = np.array([10, 20, 30]) 
+xx,yy = np.meshgrid(x, y)
+xx,yy
+```
+
+or **np.linespace**:
+
+_Example:_
+```python
+x = np.linspace(2.0, 3.0, num=5)
+y = np.linspace(5.0, 7.0, num=5)
+xx,yy = np.meshgrid(x, y)
+xx,yy
 ```
 
 ## Tensor operation
