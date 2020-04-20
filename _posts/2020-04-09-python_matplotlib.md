@@ -361,5 +361,3 @@ plt.show()
 
 ![pcolormesh](/wp-content/uploads/2020/04/pcolormesh.jpg)
 
-Note how we added a little noise using the **extra** variable.
-
