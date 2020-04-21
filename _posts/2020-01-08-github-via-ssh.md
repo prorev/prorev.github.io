@@ -125,7 +125,9 @@ Click <kbd>New SSH key</kbd> button and add upload the key with the extension `.
 ## Cloning the repo
 From now on, you can open your terminal and clone GitHub repos in SSH style like 
 this:
+
 ```
 $ git clone git@github.com:uname/pname.github.io.git
 ```
+
 where **uname** and **pname** are _username_ and _project name_.
