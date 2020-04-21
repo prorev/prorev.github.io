@@ -47,6 +47,7 @@ Mode                LastWriteTime         Length Name
 `id_rsa` and `id_rsa.pub` are typical names for the private and the public keys, although you can rename it to anything you like.
 
 Similar on Linux and Mac from the terminal you can check if you have any keys with this _one-liner_:
+
 ```
 $ ls -al ~/.ssh
 ```
