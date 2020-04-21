@@ -36,7 +36,7 @@ On Windows :
 
 
 ```
-> dir C:\Users\uname\.ssh
+$ dir C:\Users\uname\.ssh
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a----        12/3/2019  11:17 AM           3389 id_rsa
@@ -48,7 +48,7 @@ Mode                LastWriteTime         Length Name
 
 Similar on Linux and Mac from the terminal you can check if you have any keys with this _one-liner_:
 ```
-ls -al ~/.ssh
+$ ls -al ~/.ssh
 ```
 
 If you already have keys (these `ide_rsa` files) add them to the agent: `ssh-agent`.
@@ -59,8 +59,11 @@ The procedure on Windows:
 
 Ensure first the `ssh-agent` is enabled. Check like this:
 
-`Get-Service ssh-agent`
+```
+$ Get-Service ssh-agent
+```
 
+_Output:_
 ```
 Status   Name               DisplayName
 ------   ----               -----------
@@ -71,16 +74,13 @@ If the agent is stopped you need to start it. You can start the `ssh-agent` serv
 
 <img alt="ssh3" src="https://programming-review.com/wp-content/uploads/2020/01/ssh3.jpg">
 
-## How to list keys added to ssh-agent with ssh-add?
-
-Use the **-l** option to **ssh-add** to list them by fingerprint.
+To start the service:
 
 ```
-ssh-add -l
+$ Start-Service ssh-agent
 ```
 
-`Start-Service ssh-agent`
-
+_Output:_
 ```
 Status   Name               DisplayName
 ------   ----               -----------
@@ -90,7 +90,7 @@ Running  ssh-agent          OpenSSH Authentication Agent
 
 Then 
 ```
-ssh-add C:\Users\uname\.ssh\id_rsa_intel
+$ ssh-add C:\Users\uname\.ssh\id_rsa_intel
 Identity added: C:\Users\dj\.ssh\id_rsa_intel C:\Users\dj\.ssh\id_rsa_intel)
 ```
 
@@ -100,6 +100,14 @@ Note the _**uname**_ represents the actual **_user name_**.
 
 ```
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+## How to list keys added to ssh-agent with ssh-add?
+
+Use the **-l** option to **ssh-add** to list them by fingerprint.
+
+```
+$ ssh-add -l
 ```
 
 ## Adding a new SSH key to your GitHub account
@@ -120,4 +128,3 @@ this:
 git clone git@github.com:uname/pname.github.io.git
 ```
 where **uname** and **pname** are _username_ and _project name_.
-
