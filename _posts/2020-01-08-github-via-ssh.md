@@ -113,7 +113,7 @@ $ ssh-add -l
 
 ## Adding a new SSH key to your GitHub account
 
-To configure your GitHub account to use your new (or existing) SSH keyS, you'll also need to add _the public key_ to your GitHub account.
+To configure your GitHub account to use your new (or existing) SSH keys, you'll also need to add _the public key_ to your GitHub account.
 
 Go to the your GitHub account [settings](https://github.com/settings/profile). _You need to be logged in._
 
