@@ -14,7 +14,8 @@ tags:
 ---
 _Table of Contents:_
 
-- [Adding ssh keys to the `ssh-agent`](#adding-ssh-keys-to-the-ssh-agent)
+- [Adding ssh keys to the ssh-agent](#adding-ssh-keys-to-the-ssh-agent)
+- [How to list keys added to ssh-agent with ssh-add?](#how-to-list-keys-added-to-ssh-agent-with-ssh-add)
 - [Adding a new SSH key to your GitHub account](#adding-a-new-ssh-key-to-your-github-account)
 - [Cloning the repo](#cloning-the-repo)
 
@@ -52,7 +53,7 @@ ls -al ~/.ssh
 
 If you already have keys (these `ide_rsa` files) add them to the agent: `ssh-agent`.
 
-## Adding ssh keys to the `ssh-agent`
+## Adding ssh keys to the ssh-agent
 
 The procedure on Windows:
 
@@ -70,6 +71,13 @@ If the agent is stopped you need to start it. You can start the `ssh-agent` serv
 
 <img alt="ssh3" src="https://programming-review.com/wp-content/uploads/2020/01/ssh3.jpg">
 
+## How to list keys added to ssh-agent with ssh-add?
+
+Use the **-l** option to **ssh-add** to list them by fingerprint.
+
+```
+ssh-add -l
+```
 
 `Start-Service ssh-agent`
 
