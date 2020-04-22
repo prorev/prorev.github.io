@@ -175,7 +175,7 @@ This will update your git config file to something like this:
 	fetch = +refs/heads/*:refs/remotes/upstream/*
 ```
 
-This way you don't need to alter per user config file **~\.ssh\config** with the **IdentityFile **information. I think this is the old school:
+This way you don't need to alter per user config file **~\.ssh\config** with the **IdentityFile**  information. This would be the old school:
 
 ```
 Host github.com
