@@ -75,7 +75,13 @@ If the agent is stopped you need to start it. You can start the `ssh-agent` serv
 
 <img alt="ssh3" src="https://programming-review.com/wp-content/uploads/2020/01/ssh3.jpg">
 
-To start the service:
+Alternatively you can do the same with the command line:
+
+```
+$ Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+```
+
+You can start the service from the command line:
 
 ```
 $ Start-Service ssh-agent
