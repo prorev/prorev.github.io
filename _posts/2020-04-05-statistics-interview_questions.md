@@ -7,7 +7,7 @@ layout: post
 permalink: /statistics/questions
 published: true
 image: 
-categories: 
+categories:
    - statistics
 tags:
    - questions
