@@ -10,7 +10,7 @@ image:
 categories: 
    - statistics
 tags:
-   - questions   
+   - questions
    - probability
    - theory
 ---
@@ -96,11 +96,7 @@ $I(x) = -log₂P(x)=-log₂0=∞$. Information would be = $∞$ bits.
 
 ## What is entropy?
 
-Let's consider a simple 9 balls bin:
-
-L = {2 red, 3 green, 4 blue}
-
-You pick one ball at random. What is the expected amount of information you will receive with a pick?
+Let's consider a simple 9 balls bin: {2 red, 3 green, 4 blue}. You pick one ball at random. What is the expected amount of information you will receive with a single pick?
 
 We can say ball picking is random variable $X$.
 
