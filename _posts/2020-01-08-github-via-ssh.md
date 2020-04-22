@@ -18,6 +18,7 @@ _Table of Contents:_
 - [How to list keys added to ssh-agent with ssh-add?](#how-to-list-keys-added-to-ssh-agent-with-ssh-add)
 - [Adding a new SSH key to your GitHub account](#adding-a-new-ssh-key-to-your-github-account)
 - [Cloning the repo](#cloning-the-repo)
+- [Make sure repo uses the correct identity file](#make-sure-repo-uses-the-correct-identity-file)
 
 ---
 
@@ -137,3 +138,47 @@ $ git clone git@github.com:uname/pname.github.io.git
 ```
 
 where **uname** and **pname** are _username_ and _project name_.
+
+## Make sure repo uses the correct identity file
+
+If you will be using the identity file **id_rsa** just for the single project you can control your project config file to always include the corect file with this line
+
+```
+$ git config core.sshCommand "ssh -i ~/.ssh/id_rsa -F /dev/null"
+```
+
+This will update your git config file to something like this:
+
+```
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	sshCommand = ssh -i ~/.ssh/id_rsa -F /dev/null
+[submodule]
+	active = .
+[remote "origin"]
+	url = git@github.com:aaa/aaa.github.io.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[user]
+	name = aaa
+	email = your@gmail.com
+
+[remote "upstream"]
+	url = https://github.com/pages-themes/minimal.git
+	fetch = +refs/heads/*:refs/remotes/upstream/*
+```
+
+This way you don't need to alter per user config file **~\.ssh\config** with the **IdentityFile **information. I think this is the old school:
+
+```
+Host github.com
+  IdentitiesOnly yes
+  IdentityFile  ~\.ssh\id_rsa
+```
