@@ -17,11 +17,13 @@ tags:
 - [Inspectors](#inspectors)
 - [Creating tensors](#creating-tensors)
 - [Copy related items](#copy-related-items)
+- [Creating tensors with np.where()](#creating-tensors-with-npwhere)
 - [Grids](#grids)
 - [Tensor operation](#tensor-operation)
   - [Transpose](#transpose)
   - [Flatten and Ravel](#flatten-and-ravel)
   - [Reshape](#reshape)
+  - [Reshape(-1, 1) trick](#reshape-1-1-trick)
   - [Resize](#resize)
   - [Append, Insert, Delete](#append-insert-delete)
   - [Packing](#packing)
@@ -42,6 +44,8 @@ np.unicode_      # Fixed-length unicode type
 ```
 
 ## Tensors (arrays)
+
+_Example:_
 ```python
 a = np.array([1,2,3])
 print(a, a.shape)
@@ -96,6 +100,7 @@ type: int32
 
 ## Creating tensors
 
+_Example:_
 ```python
 np.zeros((2,3))    # matrix of zeros 
 np.ones((2,3,4))   # tensor of ones
@@ -125,11 +130,43 @@ _Output:_
 ```
 ## Copy related items
 
+_Example:_
 ```python
 h = a.view()       # view of the array
 h = np.copy(a)     # copy of the array
 h = a.copy()       # deep copy
 ```
+
+
+## Creating tensors with np.where()
+
+One another approach when we create new tensors based on other tensors and where condition:
+
+_Example:_
+```
+import numpy as np
+from matplotlib import pyplot as plt
+n=200
+np.random.seed(13)
+x = np.random.rand(n)
+y = np.random.rand(n)
+t = np.where(x>y, 1, 0)
+plt.figure(figsize=(8, 6), dpi=100)
+plt.scatter(x,y, c=t)
+plt.show()
+```
+
+_Output:_
+
+![np.where](/wp-content/uploads/2020/04/np-where.jpg)
+
+In here the tensor **t** are color values 0 and 1.
+
+```
+t = array([0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0,...])
+```
+
+
 
 
 
@@ -199,6 +236,7 @@ xx,yy
 
 ### Transpose
 
+_Example:_
 ```python
 a = np.empty((3,2))
 print(a)
@@ -206,6 +244,7 @@ t = np.transpose(a)  # permute array dimensions
 print(t)
 ```
 
+_Output:_
 ```
 [[1   3. ]
  [5.  2. ]
@@ -218,6 +257,7 @@ print(t)
 
 **flatten** would return a copy, **ravel** would return a view.
 
+_Example:_
 ```python
 t = np.array([[1,  5., 4. ], [3., 2.,  6. ]])
 print(t)
@@ -227,6 +267,7 @@ r = t.ravel()
 print(r)
 ```
 
+_Output:_
 ```
 [[1. 5. 4.]
  [3. 2. 6.]]
@@ -238,6 +279,7 @@ print(r)
 
 ### Reshape
 
+_Example:_
 ```python
 t = np.array([[1,  5., 4. ], [3., 2.,  6. ]])
 print(t)
@@ -247,6 +289,7 @@ r = t.reshape(3,2)
 print(r)
 ```
 
+_Output:_
 ```python
 [[1. 5. 4.]
  [3. 2. 6.]]
@@ -255,6 +298,26 @@ print(r)
  [4. 3.]
  [2. 6.]]
 ```
+
+### Reshape(-1, 1) trick
+
+If we have unspecified dimension such as **np.empty(4,)**, we can convert the missing dimension to 1 with the **reshape(-1,1)** trick:
+
+_Example:_
+```python
+e = np.empty(4,)
+print(e.shape)
+e = e.reshape(-1,1)
+print(e.shape)
+```
+
+_Output:_
+```
+(4,)
+(4, 1)
+```
+
+**-1** means in here means all other dimensions except the last one.
 
 ### Resize
 

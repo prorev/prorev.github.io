@@ -74,7 +74,8 @@ Stopped  ssh-agent          OpenSSH Authentication Agent
 
 If the agent is stopped you need to start it. You can start the `ssh-agent` service when you set _service **Startup type**_ to: **_Manual_**.
 
-<img alt="ssh3" src="https://programming-review.com/wp-content/uploads/2020/01/ssh3.jpg">
+![ssh3](/wp-content/uploads/2020/01/ssh3.jpg)
+
 
 Alternatively you can do the same with the command line:
 
