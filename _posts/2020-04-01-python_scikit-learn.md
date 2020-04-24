@@ -5,7 +5,7 @@ date: 2020-04-01
 author: taimane
 layout: post
 permalink: /python/sklearn
-published: true
+published: false
 image: 
 categories: 
    - python
