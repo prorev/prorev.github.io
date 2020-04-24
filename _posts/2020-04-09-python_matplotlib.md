@@ -79,6 +79,8 @@ a = np.sin(t)
 fig, (ax) = plt.subplots(ncols=2, nrows=2)
 plt.rcParams["figure.figsize"] = (9,6)
 plt.rcParams["figure.dpi"] = 200
+# or plt.figure(figsize=(9, 6), dpi=200)
+
 ax1=ax[0][0]
 ax2=ax[0][1]
 ax3=ax[1][0]
