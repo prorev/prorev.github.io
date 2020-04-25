@@ -29,6 +29,7 @@ _Table of contents:_
 - [Dependencies](#dependencies)
 - [Mission](#mission)
 - [Splitting the train and test set](#splitting-the-train-and-test-set)
+- [Datasets](#datasets)
 - [Metrics](#metrics)
   - [Classification metrics](#classification-metrics)
     - [f1_score](#f1score)
@@ -147,6 +148,28 @@ _Output:_
 (67, 10) (67,)
 (33, 10) (33,)
 ```
+
+## Datasets
+
+Origianlly you can load [any predefined dataset](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets){:rel="nofollow"}.
+
+_Example wine dataset:_
+```python
+from sklearn.datasets import load_wine
+data = load_wine()
+data.target[[10, 80, 140]]
+
+list(data.target_names)
+```
+
+_Output:_
+```
+['class_0', 'class_1', 'class_2']
+```
+
+
+
+
 
 ## Metrics
 
@@ -333,7 +356,7 @@ _Output:_
 
 ### Cross Validation
 
-Once we have the **prediction model** we need to evaluate model precision on unseen data. While training, we don't have unseen date in advance and is a common practice to hold out part of the available data known as a _test set_. 
+Once we have the **prediction model** we need to evaluate model precision on unseen data. While training, we don't have unseen data in advance and is a common practice to hold out part of the available data known as a _test set_. 
 
 This can be done true the technique of Cross Validation that is applied together with the prediction model.
 
@@ -365,7 +388,7 @@ _Output:_
 
 ## Decision Trees
 
-You use decision trees 
+You use decision trees forms often:
 
 ```python
 from sklearn.tree import DecisionTreeRegressor
@@ -413,6 +436,7 @@ _Output:_
 
 ### Random Forests
 
+The following RF are frequent in use:
 ```python
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import RandomForestRegressor
