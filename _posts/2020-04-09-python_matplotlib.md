@@ -21,6 +21,7 @@ tags:
 - [Different scatter color](#different-scatter-color)
 - [Different scatter size](#different-scatter-size)
 - [Multiple subplots](#multiple-subplots)
+- [Lines](#lines)
 - [Pcolor and Pcolormesh](#pcolor-and-pcolormesh)
 
 What would be the crucial knowledge to successfully create matplotlib based graphs?
@@ -327,6 +328,27 @@ ax4.scatter(t,a,c='m')
 plt.show()
 ```
 ![3 subplots](/wp-content/uploads/2020/04/3scatter.jpg)
+
+## Lines
+
+_Example:_
+```python
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize = (7,5), dpi=150 )
+ax.vlines(5,1,2,colors='r')
+ax.vlines(3,1,2,colors='r')
+ax.vlines(4,0,3,colors='r')
+ax.hlines(5,1,2,colors='g')
+ax.hlines(2,0,3,colors='g')
+ax.hlines(3,1,2,colors='g')
+x1, y1 = [-1, 5], [1, 4]
+ax.plot(x1, y1, marker = 'o')
+plt.show()
+```
+
+_Output:_
+![lines](/wp-content/uploads/2020/04/lines.jpg)
+
 
 ## Pcolor and Pcolormesh
 
