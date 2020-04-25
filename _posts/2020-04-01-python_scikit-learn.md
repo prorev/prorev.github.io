@@ -151,7 +151,7 @@ _Output:_
 
 ## Datasets
 
-Origianlly you can load [any predefined dataset](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets){:rel="nofollow"}.
+Originally you can load [predefined dataset](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets){:rel="nofollow"}.
 
 _Example wine dataset:_
 ```python
