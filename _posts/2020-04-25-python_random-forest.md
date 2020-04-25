@@ -5,7 +5,7 @@ date: 2020-04-25
 author: taimane
 layout: post
 permalink: /python/random-forest-example
-published: true
+published: false
 image: 
 categories: 
    - python
@@ -26,8 +26,6 @@ In here I took the example from [Tyler White](http://structuringtheunstructured.
 
 _Examples:_
 ```
-%matplotlib inline
-
 import numpy as np
 import pandas as pd
 import math
@@ -57,7 +55,33 @@ _Output:_
 
 ## Random forest
 
+We will train the **DecisionTreeRegressor** (fit method) and then we will create 50x50 grid where we will **predict** values for eachgrid node.
+
+```python
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.tree import DecisionTreeRegressor
+
+dtr = DecisionTreeRegressor(random_state=13, max_depth=30, criterion='mse', splitter='best')
+dtr = dtr.fit(X, Y)
+
+x = np.linspace(0, 1.0, num=50)
+y = np.linspace(0, 1.0, num=50)
+xx,yy = np.meshgrid(x, y)
+xx,yy
+
+fig, ax = plt.subplots(figsize = (7,7), dpi=150 )
+
+Z = dtr.predict(np.c_[xx.ravel(), yy.ravel()])
+Z = Z.reshape(xx.shape)
+# ax.contourf(xx, yy, Z)
+ax.scatter(xx,yy, c=Z)
+```
+
+![random forest](/wp-content/uploads/2020/04/random-forest2.jpg)
+
 ## Modified data
+
+Now we need to draw the coutures of the ...
 
 ## Theoretical background
 
