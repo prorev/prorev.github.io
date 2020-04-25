@@ -167,6 +167,26 @@ _Output:_
 ['class_0', 'class_1', 'class_2']
 ```
 
+_Example Boston dataset 1:_
+
+```python
+from sklearn.datasets import load_boston
+X,y = load_boston(return_X_y=True)
+X,y
+```
+
+In here you will get **X** features and **y** target.
+
+_Example Boston dataset 2:_
+
+```python
+from sklearn.datasets import load_boston
+X = load_boston(return_X_y=False)
+X['data'],X['feature_names'], X['DESCR']
+```
+
+In here you will get feature names and description.
+
 There is also a list of [generator datasets](https://scikit-learn.org/stable/modules/classes.html#samples-generator){:rel="nofollow"}:
 
 _Example:_
@@ -336,7 +356,7 @@ _Output:_
 
 ## Models
 
-Example models that are often used are: **LogisticRegression**, that is a classifier model itself, and **LinearRegression** that is a regression model.
+Example models that are often used are: **LogisticRegression**, that is a **_classifier model itself_**, and **LinearRegression** that is a regression model.
 
 ![linear models](/wp-content/uploads/2020/04/linear-models.jpg)
 
