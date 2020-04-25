@@ -167,6 +167,30 @@ _Output:_
 ['class_0', 'class_1', 'class_2']
 ```
 
+There is also a list of [generator datasets](https://scikit-learn.org/stable/modules/classes.html#samples-generator){:rel="nofollow"}:
+
+_Example:_
+
+```python
+from sklearn.datasets import make_classification
+X, y = make_classification(n_samples=10, n_features=4,n_informative=2, n_redundant=0, random_state=0, shuffle=False)
+X,y
+```
+
+Output:
+```
+(array([[-2.24080141,  0.50054121, -0.34791215,  0.15634897],
+        [-1.60020786, -0.51203824,  1.23029068,  1.20237985],
+        [-2.3748206 ,  0.82768797, -0.38732682, -0.30230275],
+        [-1.43411205,  1.50037656, -1.04855297, -1.42001794],
+        [-0.98740462,  0.99958558, -1.70627019,  1.9507754 ],
+        [-1.19536732,  1.27804656, -0.50965218, -0.4380743 ],
+        [ 0.29484027, -0.79249401, -1.25279536,  0.77749036],
+        [ 0.6476239 , -0.81753611, -1.61389785, -0.21274028],
+        [ 2.38363567,  1.56914464, -0.89546656,  0.3869025 ],
+        [ 1.51783379,  1.22140561, -0.51080514, -1.18063218]]),
+ array([0, 0, 0, 1, 1, 1, 0, 0, 1, 1]))
+```
 
 
 
