@@ -18,6 +18,9 @@ tags:
 - [Creating tensors](#creating-tensors)
 - [Copy related items](#copy-related-items)
 - [Creating tensors with np.where()](#creating-tensors-with-npwhere)
+- [np.c_ and np.r_](#npc-and-npr)
+  - [np.c_](#npc)
+  - [np.r_](#npr)
 - [Grids](#grids)
 - [Tensor operation](#tensor-operation)
   - [Transpose](#transpose)
@@ -166,8 +169,62 @@ In here the tensor **t** are color values 0 and 1.
 t = array([0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0,...])
 ```
 
+## np.c_ and np.r_
+
+### np.c_ 
 
 
+Is used to combine arrays:
+
+```python
+np.c_[np.array([1,2,3]), np.array([4,5,6])]
+```
+_Output:_
+```
+array([[1, 4],
+       [2, 5],
+       [3, 6]])
+```
+
+### np.r_
+
+This is a simple way to build up arrays quickly. There are two use cases.
+
+* If the index expression contains comma separated arrays, then stack them along their first axis.
+
+* If the index expression contains slice notation or scalars then create a 1-D array with a range indicated by the slice notation.
+
+
+```python
+np.r_['0,2,0', [1,2,3], [4,5,6]]
+```
+
+_Output:_
+```
+array([[1],
+       [2],
+       [3],
+       [4],
+       [5],
+       [6]])
+```
+```python
+np.r_['1,2,0', [1,2,3], [4,5,6]]
+```
+
+_Output:_
+```
+array([[1, 4],
+       [2, 5],
+       [3, 6]])
+```
+
+Using 'r' or 'c' as a first string argument:
+
+```python
+np.r_['r',[1,2,3], [4,5,6]]
+# matrix([[1, 2, 3, 4, 5, 6]])
+```
 
 
 ## Grids
