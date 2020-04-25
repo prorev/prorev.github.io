@@ -12,6 +12,7 @@ categories:
 tags:
    - examples
    - data analysis
+   - machine learning
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -59,7 +60,7 @@ pip install -U scikit-learn
 
 and the correct way to import is:
 ```
-import sklearn;
+import sklearn
 ```
 
 The `scikit-learn` and `sklearn` are synonyms.
