@@ -5,7 +5,7 @@ date: 2020-01-22
 author: taimane
 layout: post
 permalink: /python/scipy-examples
-published: false
+published: true
 image: 
 categories: 
    - python
@@ -268,4 +268,4 @@ Warnings:
 ```
 
 
-https://scipy-lectures.org/packages/statistics/index.html#sample-t-test-testing-the-value-of-a-population-mean
+<!-- https://scipy-lectures.org/packages/statistics/index.html#sample-t-test-testing-the-value-of-a-population-mean -->
