@@ -47,11 +47,9 @@ _Output:_
 
 ![dots](/wp-content/uploads/2020/04/dots.jpg)
 
-We have 200 points ( **n=200** ) and we classified as 0 or 1 points based on features $x1$ and $x2$.
-
+We have 200 points ( **n=200** ) and we classified as 1 points $x1$ and $x2$ based on target $y$:
 
 ${\displaystyle y=\left\{{\begin{array}{rl}1,&{\text{if }}x_1 > x_2\\0,&{\text{else }}\end{array}}\right.}$
-
 
 
 We will try different techniques to create a prediction model that we fit with our 200 samples.
