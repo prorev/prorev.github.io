@@ -121,9 +121,9 @@ Built with OpenMP: True
 
 Scikit-learn mission is to provide simple and efficient solutions to machine learning problems that are accessible to everybody and reusable in various contexts.
 
-You may consider the scikit-learn as a reference model defining different machine learning subjects and entities.
+You may consider the scikit-learn as a reference of machine learning models and terms.
 
-Although similar machine operations may be present in other Python packages, for instance you can create correlation matrix from features, but this can be done in scikit-learn as well. You can do split into train and test set from PyTorch or TensorFlow but as well you can do this with **sklearn.model_selection** > **train_test_split**.
+Although similar machine operations may be present in other Python packages, for instance you can create correlation matrix from features using **Pandas**, this can be done in scikit-learn as well. You can split train and test set in PyTorch or TensorFlow, but this can be done with **sklearn.model_selection** > **train_test_split**.
 
 ## Splitting the train and test set
 
