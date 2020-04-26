@@ -5,7 +5,7 @@ date: 2020-04-25
 author: taimane
 layout: post
 permalink: /machine-learning/examples
-published: true
+published: true 
 image: 
 categories: 
    - machine-learning
