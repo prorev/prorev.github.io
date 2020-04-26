@@ -6,13 +6,10 @@ author: taimane
 layout: post
 permalink: /math/probability-distributions
 published: true
-image: 
 categories: 
    - math
 tags:
    - probability
-   - markov chain
-   - probability distributions
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -25,14 +22,14 @@ tags:
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 _Table of contents:_
-- [How to start](#how-to-start)
+- [How to start?](#how-to-start)
 - [Division of distributions](#division-of-distributions)
 - [Continuos distributions](#continuos-distributions)
   - [Uniform distribution](#uniform-distribution)
   - [Normal distribution](#normal-distribution)
 - [Discrete distributions](#discrete-distributions)
 
-## How to start
+## How to start?
 
 If you check from the Wikipedia you may find good results:
 
