@@ -49,10 +49,9 @@ _Output:_
 
 We have 200 points ( **n=200** ) and we classified as 1 points $x1$ and $x2$ based on target $y$:
 
-$y = {
-1 & \text{if } x_1>x_2
-0 & \text{else }
-}$
+```
+y = np.where(x1>x2, 1, 0) 
+```
 
 
 We will try different techniques to create a prediction model that we fit with our 200 samples.
@@ -275,8 +274,6 @@ ax.contourf(xx, yy, Z)
 ## Conclusion
 
 In here we provided an overview for the simple classification problem with two features $x_1,x_2$. 
-
-${\displaystyle y=\left\{{\begin{array}{rl}1,&{\text{if }}x_1 > x_2\\0,&{\text{else }}\end{array}}\right.}$
 
 We found out that **LogisticRegression** model is the best fit for this problem.
 
