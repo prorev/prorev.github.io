@@ -152,7 +152,7 @@ This is continuos distribution. For the list of other continuos distributions ch
 
 [From Wikipedia](https://en.wikipedia.org/wiki/Normal_distribution){:rel="nofollow"} you may see the normal distribution PDF:
 
-$PDF: f(x)=\frac { e^{\small -\frac 12 ({{x-\mu} \over  \sigma})^2}}
+$PDF: f(x)=\frac { e^{\small -\frac 12 ({{ x- \mu} \over  \sigma})^2}}
 {\sigma \sqrt{2\pi}}$
 
 or, when $\sigma=1$, and $\mu=0:$
