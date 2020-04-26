@@ -14,6 +14,16 @@ tags:
    - multiple regression
    - logistic regression
 ---
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 **Notation:**
 
 **Predictors** or **covariates** or **features** are columns with the data. You don't predict them, but you use them to predict. They are also called independent variables.
