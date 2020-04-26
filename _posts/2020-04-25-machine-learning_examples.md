@@ -49,7 +49,10 @@ _Output:_
 
 We have 200 points ( **n=200** ) and we classified as 1 points $x1$ and $x2$ based on target $y$:
 
-${\displaystyle y=\left\{{\begin{array}{rl}1,&{\text{if }}x_1 > x_2\\0,&{\text{else }}\end{array}}\right.}$
+$y = {
+1 & \text{if } x_1>x_2
+0 & \text{else }
+}$
 
 
 We will try different techniques to create a prediction model that we fit with our 200 samples.
