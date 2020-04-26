@@ -33,7 +33,7 @@ The predictant: the column(s) you predict. Sometimes called **outcome variable**
 
 _Table of contents:_
 - [Example Linear Regression](#example-linear-regression)
-- [Multilayer perceptrons regression vs. ordinary least squares linear regression (statistical approach).](#multilayer-perceptrons-regression-vs-ordinary-least-squares-linear-regression-statistical-approach)
+- [Multilayer perceptrons regression vs. ordinary least squares (OLS) linear regression (statistical approach).](#multilayer-perceptrons-regression-vs-ordinary-least-squares-ols-linear-regression-statistical-approach)
 - [Logistic regression](#logistic-regression)
   - [How to deal with missing values?](#how-to-deal-with-missing-values)
 - [Linear regression](#linear-regression)
@@ -91,7 +91,7 @@ The **lreg.coef_** value is close to 2 and **lreg.intercept_** is close to 3 as 
 
 
 
-## Multilayer perceptrons regression vs. ordinary least squares linear regression (statistical approach).
+## Multilayer perceptrons regression vs. ordinary least squares (OLS) linear regression (statistical approach).
 
 Multilayer perceptrons or **deep neural networks** predictions should improve over least square linear regression.
 
