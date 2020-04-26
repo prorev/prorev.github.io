@@ -8,7 +8,7 @@ permalink: /machine-learning/markov-chains
 published: true
 image: 
 categories: 
-   - math
+   - machine-learning
 tags:
    - probability
    - markov chain
@@ -23,9 +23,7 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-- [Markov chain model](#markov-chain-model)
 <!-- ## Entropy
-
 Entropy **Η** (letter eta) in the information theory was first introduced by Shannon in 1948 paper: _A Mathematical Theory of Communication_.
 
 $H(X)=−∑_i P_X ( x_i ) log_b ⁡ P_X ( x_i ) = ∑_i P_X ( x_i ) I_X ( x_i ) = E ⁡ [ I_X ]$
