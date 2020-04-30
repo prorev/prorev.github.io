@@ -25,9 +25,9 @@ In pandas you will deal with Series and DataFrames.
 _Table of contents:_
 - [Loading pandas](#loading-pandas)
 - [The DataFrame and the Series object](#the-dataframe-and-the-series-object)
-- [Create the dataframe using the constructor](#create-the-dataframe-using-the-constructor)
-- [Load the dataframe multiple ways](#load-the-dataframe-multiple-ways)
-- [Get info about the dataframe](#get-info-about-the-dataframe)
+- [Create the DataFrame using the constructor](#create-the-dataframe-using-the-constructor)
+- [Load the DataFrame multiple ways](#load-the-dataframe-multiple-ways)
+- [Get info about the DataFrame](#get-info-about-the-dataframe)
   - [Statistical methods on a DataFrame](#statistical-methods-on-a-dataframe)
   - [Histogram](#histogram)
   - [Correlation](#correlation)
@@ -65,14 +65,14 @@ import numpy as np
 
 Alternative name for any row is an instance, or an observation.
 
-![pandas dataframe and series](/wp-content/uploads/2020/04/pandasopen.jpg)
+![pandas DataFrame and Series](/wp-content/uploads/2020/04/pandasopen.jpg)
 
-## Create the dataframe using the constructor
+## Create the DataFrame using the constructor
 
 We covered already the [Pandas load data](https://programming-review.com/python/pandas-load-data), and now we will dig into operations we can call on a **DataFrame** or **Series**. 
 
 
-Let's create single empty dataframe first filled with NaN values:
+Let's create single empty DataFrame first filled with NaN values:
 
 _Example:_
 
@@ -81,11 +81,11 @@ df = pd.DataFrame(index=range(14),columns=range(7))
 print(df)
 ```
 _Output:_
-![pandas dataframe](/wp-content/uploads/2020/02/pandas1.jpg)
+![pandas DataFrame](/wp-content/uploads/2020/02/pandas1.jpg)
 
 In here we set the 7 columns and 14 rows. Note how in python pandas the start index is always 0.
 
-To create a dataframe you may also provide _the column names and row index names_.
+To create a DataFrame you may also provide _the column names and row index names_.
 
 _Example:_
 ```python
@@ -107,7 +107,7 @@ c  NaN  NaN  NaN
 ```
 
 
-Let's create a mini dataframe based on a simple Python matrix:
+Let's create a mini DataFrame based on a simple Python matrix:
 
 _Example:_
 ```python
@@ -125,7 +125,7 @@ _Output:_
 
 As we can see, we have two rows 0,1 and three columns 0,1,2.
 
-Let's create a dataframe from named columns:
+Let's create a DataFrame from named columns:
 
 _Example:_
 
@@ -163,7 +163,7 @@ i2 	4 	4 	4
 i3 	5 	6 	7
 ```
 
-## Load the dataframe multiple ways
+## Load the DataFrame multiple ways
 
 There are several cases where we load the DataFrame from text, or from textual file or from CSV file or from remote URL.
 
@@ -297,9 +297,9 @@ _Output:_
 ```
 
 
-## Get info about the dataframe
+## Get info about the DataFrame
 
-Let's load the dataframe as in the previous example:
+Let's load the DataFrame as in the previous example:
 ```python
 url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
@@ -326,7 +326,7 @@ class           150 non-null object
 dtypes: float64(4), object(1)
 memory usage: 6.0+ KB
 ```
-As you can see **df.info()** method explains the columns. If the number of columns is large, we can call:
+As you can see **df.info()** method explains the columns. If the number of columns is large, we can call first:
 
 ```python
 df.columns
@@ -339,8 +339,7 @@ df['sepal-length'].describe()
 ```
 
 To get info on particular column.
-
-Method that provides statistical info for the DataFrame is:
+Mentioned method **describe()** can also provide statistical info for the DataFrame:
 
 ```python
 df.describe()
@@ -369,7 +368,7 @@ df['sepal length'].unique()
 df['sepal length'].nunique()
 ```
 
-**value_counts** will return data for the histogram:
+**value_counts** will return data for the histogram (frequency per unique values):
 ```
 5.0    10
 6.3     9
@@ -415,7 +414,7 @@ array([5.1, 4.9, 4.7, 4.6, 5. , 5.4, 4.4, 4.8, 4.3, 5.8, 5.7, 5.2, 5.5,
        6.2, 6.8, 7.1, 7.6, 7.3, 7.2, 7.7, 7.4, 7.9])
 ```
 
-**nunique** will return how many unique values:
+**nunique** will return the the number of unique values:
 
 ```
 35
@@ -434,7 +433,7 @@ df.std()
 df.corr()
 ```
 
-To get more feedback on each method run for example:
+To get more feedback on each method run **help**, for instance:
 
 ```
 help(df.mean)
@@ -443,9 +442,9 @@ help(df.mean)
 
 ### Histogram
 
-We mentioned the histogram. Let's show how histagram is called in **pandas**.
+We mentioned the histogram. Let's show how histogram is called in **pandas**.
 
-For this experiment I will load the iris dataset from URL and call**hist()**.
+For this experiment I will load the iris dataset from URL and call **hist()**.
 
 
 ```python
@@ -503,7 +502,7 @@ ax.set_ylim(bottom + 0.5, top - 0.5)
 
 ### Scatter matrix
 
-To create really important scatter matrix you would use this code:
+To create scatter matrix you would use this code:
 
 ```python
 from pandas import plotting
@@ -516,24 +515,24 @@ sm=plotting.scatter_matrix(df, figsize=(12,9), marker='+', hist_kwds={'bins':10}
 ## Column types
 
 
-There are just a couple column types in Pnadas.
+There are just a couple most frequent column types in pandas.
 
 * Numerical
   * float
   * int
 * Categorical
-  * string
+  * string (read:object)
   * ordered string
   * boolean
 
-Ordered strings for instance for the type of education:
+Ordered strings are strings with some grade semantics:
 
 * elementary school
 * middle school
 * university
 * after graduate ...
 
-> Often we have just two values for teh single column like: 'No','Yes' ili 0,1 ili False,True. 
+> Often we have just two values for the single column like: 'No','Yes' or 0, 1 or False, True. 
 
 
 ## Read and write data
@@ -547,7 +546,7 @@ import pandas as pd
 df = pd.DataFrame(np.random.rand(100, 100))
 ```
 
-The best method to add a single value to a DataFrame are **iat** and **at**:
+The best methods to add a single value to a DataFrame are **iat** and **at**:
 
 ```python
 %timeit df.iat[50,50]=50
@@ -558,7 +557,7 @@ The best method to add a single value to a DataFrame are **iat** and **at**:
 
 > Methods **iat** and **iloc** are using column index number while method **at** and **loc** are using column names. For the previous example these are the same.
 
-The best methods to set multiple values to a dataframe are **iloc** and **loc**.
+The best methods to set multiple values to a DataFrame are **iloc** and **loc**.
 
 To read single value we would use:
 **iat** or **at** and to read multiple values we would use **iloc** and **loc**. 
@@ -567,20 +566,25 @@ To read single value we would use:
 
 ## Add and remove columns
 
-Example:
+If we use the previous iris DataFrame we may create two new columns: 
+
+_Example:_
 
 ```python
 df['slen_plus_plen']=df['sepal-length']+df['petal-length']
 df['auto'] = np.where(df['petal-width']==0.2, 'Good', 'Bad')
 df
 ```
-To drop a column we would use:
+
+To drop a column we would use **drop** method:
 
 ```python
 df=df.drop(columns=['slen_plus_plen'])
 ```
 
 ## Indexing
+
+Pandas indexing means getting the elements from the DataFrame.
 
 In here we show just the two columns
 ```python
