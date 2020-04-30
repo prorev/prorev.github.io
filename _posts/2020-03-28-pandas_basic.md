@@ -17,13 +17,13 @@ tags:
    - distribution
 ---
 Pandas is a a great package for **data analysis**.
-In Pandas you will deal with Series and DataFrames.
+In pandas you will deal with Series and DataFrames.
 
 
 ![pandas](/wp-content/uploads/2020/02/pandas.jpg)
 
 _Table of contents:_
-- [Loading Pandas](#loading-pandas)
+- [Loading pandas](#loading-pandas)
 - [The DataFrame and the Series object](#the-dataframe-and-the-series-object)
 - [Create the dataframe using the constructor](#create-the-dataframe-using-the-constructor)
 - [Load the dataframe multiple ways](#load-the-dataframe-multiple-ways)
@@ -41,9 +41,9 @@ _Table of contents:_
 - [groupby](#groupby)
 - [Check the version](#check-the-version)
 
-## Loading Pandas
+## Loading pandas
 
-To load the Pandas library you just execute:
+To load the pandas library you just execute:
 
 ```python
 import pandas as pd
@@ -51,7 +51,7 @@ import pandas as pd
 
 I never saw any other alias for pandas except `pd`.
 
-Pandas runs on Numpy. Still we may load the Numpy alias as well.
+Pandas runs on numpy. Still we may load the Numpy alias as well.
 
 ```python
 import numpy as np
@@ -59,9 +59,9 @@ import numpy as np
 
 ## The DataFrame and the Series object
 
-**DataFrame** in Pandas is the second name for the table with named columns and named rows.
+**DataFrame** in pandas is the second name for the table with named columns and named rows.
 
-**Series** object in Pandas represent a single column. Alternative name for the column is **feature**.
+**Series** object in pandas represent a single column. Alternative name for the column is **feature**.
 
 Alternative name for any row is an instance, or an observation.
 
@@ -232,7 +232,7 @@ _Output:_
 ```
  	Gender 	FSIQ 	VIQ 	PIQ 	Weight 	Height 	MRI_Count
 1 	Female 	133 	132 	124 	118 	64.5 	816932
-2 	Male 	140 	150 	124 	.		72.5 	1001121
+2 	Male 	140 	150 	124 	. 	72.5 	1001121
 3 	Male 	139 	123 	150 	143 	73.3 	1038437
 4 	Male 	133 	129 	128 	172 	68.8 	965353
 5 	Female 	137 	132 	134 	147 	65.0 	951545
@@ -269,7 +269,7 @@ _Output:_
 4 	Myla 	26.0 	False
 ```
 
-Note we used so far teh **pd.read_csv** method. We will use it again to read from the remote URL.
+Note we used so far the pandas **read_csv** method. We will use it again to read from the remote URL.
 
 _Example:_
 
@@ -708,7 +708,7 @@ Name: petal-width, dtype: float64
 
 ## Check the version
 
-You can check for the version of Pandas you are using like this:
+You can check for the version of pandas you are using like this:
 
 ```python
 pd.show_versions()
