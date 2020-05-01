@@ -53,6 +53,8 @@ _Table of contents:_
 
 Scikit-learn (also known as sklearn) is the first association for "Machine Learning in Python". This package helps solving and analyzing different classification, regression, clustering problems. It includes SVM, and interesting subparts like decision trees, random forests, gradient boosting, k-means, KNN and [other algorithms](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html){:rel="nofollow"}. It uses NumPy and SciPy as core dependencies.
 
+![scikit-learn](/wp-content/uploads/2020/04/scikit-learn.jpg)
+
 
 ## Installation
 
