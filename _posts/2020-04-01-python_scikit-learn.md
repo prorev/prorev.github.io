@@ -27,9 +27,11 @@ _Table of contents:_
 - [What can we do with Sckikit-learn?](#what-can-we-do-with-sckikit-learn)
 - [Installation](#installation)
 - [Dependencies](#dependencies)
-- [Mission](#mission)
+- [Mission as a reference](#mission-as-a-reference)
 - [Splitting the train and test set](#splitting-the-train-and-test-set)
 - [Datasets](#datasets)
+- [Estimators](#estimators)
+- [Pipeline](#pipeline)
 - [Metrics](#metrics)
   - [Classification metrics](#classification-metrics)
     - [f1_score](#f1score)
@@ -49,7 +51,7 @@ _Table of contents:_
 
 ## What can we do with Sckikit-learn?
 
-Scikit-learn (also known as sklearn) is the first association for "Machine Learning in Python". This package helps solving and analyzing different classification, regression, clustering problems. It includes SVM, and interesting subparts like decision trees, random forests, gradient boosting, k-means, KNN and other algorithms. It uses NumPy and SciPy as core dependencies.
+Scikit-learn (also known as sklearn) is the first association for "Machine Learning in Python". This package helps solving and analyzing different classification, regression, clustering problems. It includes SVM, and interesting subparts like decision trees, random forests, gradient boosting, k-means, KNN and [other algorithms](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html){:rel="nofollow"}. It uses NumPy and SciPy as core dependencies.
 
 
 ## Installation
@@ -117,13 +119,13 @@ matplotlib: 3.2.1
 Built with OpenMP: True
 ```
 
-## Mission
+## Mission as a reference
 
-Scikit-learn mission is to provide simple and efficient solutions to machine learning problems that are accessible to everybody and reusable in various contexts.
+Scikit-learn mission is to provide simple and efficient solutions for some machine learning problems that are nice documented and easy to use.
 
-You may consider the scikit-learn as a reference of machine learning models and terms.
+You may consider the scikit-learn as a **reference** of machine learning models, estimators, and terms.
 
-Although similar machine learning tools may be present in other Python packages, for instance you can create correlation matrix from features using **Pandas**, this can be done in scikit-learn as well. You can split train and test set in PyTorch or TensorFlow, but this can be done with **sklearn.model_selection** > **train_test_split**.
+For instance, you can split train and test set in PyTorch or TensorFlow, but this can be done with **sklearn.model_selection** > **train_test_split**.
 
 ## Splitting the train and test set
 
@@ -211,6 +213,71 @@ Output:
         [ 1.51783379,  1.22140561, -0.51080514, -1.18063218]]),
  array([0, 0, 0, 1, 1, 1, 0, 0, 1, 1]))
 ```
+## Estimators
+
+An estimator is an object that learns from data using the **fit** method. It can be either classification, regression or clustering type of the process or even a transform operation on data. (extracts some columns from the data).
+
+An estimator may take parameters. The base class for all the estimators is [BaseEstimator](https://scikit-learn.org/stable/modules/generated/sklearn.base.BaseEstimator.html){:rel="nofollow"}.
+
+
+## Pipeline
+
+To combine multiple estimators into one use a pipeline. The Pipeline is a list of key-value pairs.
+
+For example:
+
+```python
+estimators = [('reduce_dim', PCA()), ('clf', SVC())]
+pipe = Pipeline(estimators)
+```
+
+> With the pipeline you modify just the features **X** or the data. The target **y** should not be modified with pipeline technique.
+
+For example feature selection, normalization and classification may be in a pipeline.
+
+All estimators in a pipeline, except the last one, must have a transform method (transformers). 
+
+Check last estimator type with his **_estimator_type** attribute of type string.
+
+```python
+pipe[-1]._estimator_type
+```
+
+
+> Transform estimators do not have **_estimator_type** attribute.
+
+**make_pipeline** is a shortcut to create pipeline with auto keys. It fills the names automatically.
+
+_Example:_
+
+```python
+from sklearn.pipeline import make_pipeline
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.preprocessing import Binarizer
+make_pipeline(Binarizer(), MultinomialNB())
+p
+```
+
+_Output:_
+```
+Pipeline(memory=None,
+         steps=[('binarizer', Binarizer(copy=True, threshold=0.0)),
+                ('multinomialnb',
+                 MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True))],
+         verbose=False)
+```
+
+you index into estomator with 
+
+```python
+p[0]
+```
+_Output:_
+```
+Binarizer(copy=True, threshold=0.0)
+```
+
+
 
 
 ## Metrics
@@ -224,7 +291,7 @@ There are following metrics:
 * Biclustering metrics
 * Pairwise metrics
 
-In here we will briefly cover the common used classification and regression metrics.
+In here we briefly cover the common examples on classification and regression metrics.
 
 ### Classification metrics
 
@@ -239,7 +306,7 @@ f1 = 2pr/(p+r)
 ```
 
 _Example:_
-```
+```python
 from sklearn.metrics import f1_score
 y_true = [0, 1, 2, 0, 1, 2]
 y_pred = [0, 2, 1, 0, 0, 1]
