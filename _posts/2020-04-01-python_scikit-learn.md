@@ -125,7 +125,7 @@ Built with OpenMP: True
 
 Scikit-learn mission is to provide simple and efficient solutions for some machine learning problems that are nice documented and easy to use.
 
-You may consider the scikit-learn as a **reference** of machine learning models, estimators, and terms.
+You may consider the scikit-learn as a **reference** of machine learning models, estimators, and [terms](https://scikit-learn.org/stable/glossary.html){:rel="nofollow"}.
 
 For instance, you can split train and test set in PyTorch or TensorFlow, but this can be done with **sklearn.model_selection** > **train_test_split**.
 
@@ -219,7 +219,15 @@ Output:
 
 An estimator is an object that learns from data using the **fit** method. It can be either classification, regression or clustering type of the process or even a transform operation on data. (extracts some columns from the data).
 
+
+> Special case of estimator is called transofrm estimator or transformer if it supports either **transform** or **fit_transform** methods.
+
 An estimator may take parameters. The base class for all the estimators is [BaseEstimator](https://scikit-learn.org/stable/modules/generated/sklearn.base.BaseEstimator.html){:rel="nofollow"}.
+
+An estimator which takes another estimator as a parameter is called meta-estimator.
+
+One such meta-estimator is a pipeline.Pipeline.
+
 
 
 ## Pipeline
