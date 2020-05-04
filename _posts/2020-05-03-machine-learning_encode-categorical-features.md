@@ -18,17 +18,30 @@ In machine learning when you deal with pandas datasets you often have to convert
 
 In case we have our data as pandas DataFrame, we **encode** categorical features (read:columns) of a DataFrame. For conversion you can use pandas and scikit-learn methods:
 
-* using pandas **get_dummies** method
-* using **LabelEncoder** from **sklearn.preprocessing**
-* using **OneHotEncoder** from **sklearn.preprocessing** 
-* using **OrdinalEncoder** from 
-**sklearn.preprocessing.**
-* using **DictVectorizer** from **sklearn.feature_extraction**
+- [The **get_dummies** method](#the-getdummies-method)
+- [**LabelEncoder** method](#labelencoder-method)
+- [**OneHotEncoder** method](#onehotencoder-method)
+- [**OrdinalEncoder** method](#ordinalencoder-method)
+- [**DictVectorizer** method](#dictvectorizer-method)
 
-> All scikit-learn methods are know as transformers.
+
+> All mentioned scikit-learn methods are called transformers.
 
 
 Let's use a subset from Kaggle [wine-reviews](https://www.kaggle.com/zynicide/wine-reviews){:rel="nofollow"} dataset:
+
+
+<!-- python
+import os
+import pandas as pd
+os.environ['KAGGLE_USERNAME'] = "uname" # username from the .json file
+os.environ['KAGGLE_KEY'] = "kry..." # key from the .json file
+!kaggle datasets download -d zynicide/wine-reviews
+df=pd.read_csv("winemag-data_first150k.csv",
+                sep=r',', 
+                engine='python',
+                index_col=0)
+-->
 
 ```python
 import pandas as pd
@@ -58,17 +71,6 @@ df=pd.read_csv(io.StringIO(text),
 print(df)
 ```
 
-<!-- ```python
-import os
-import pandas as pd
-os.environ['KAGGLE_USERNAME'] = "uname" # username from the .json file
-os.environ['KAGGLE_KEY'] = "kry..." # key from the .json file
-!kaggle datasets download -d zynicide/wine-reviews
-df=pd.read_csv("winemag-data_first150k.csv",
-                sep=r',', 
-                engine='python',
-                index_col=0)
-``` -->
 
 First we identify categorical features (columns).
 
@@ -82,7 +84,7 @@ _Output:_
 ['country', 'region_1', 'variety', 'winery']
 ```
 
-## Remove the NaN values
+**Remove the NaN values first**
 
 You do machine learning algorithms, but in case on NaN values you have options. One of the options is to remove rows with the NaN. 
 
@@ -130,7 +132,7 @@ Output:
        dtype='object'))
 ```
 
-## Using **LabelEncoder**
+## **LabelEncoder** method
 
 _Example:_
 
@@ -170,7 +172,7 @@ However, it may be used for encoding the X if we insist, although better methods
 This is why we use **OneHotEncoder**.
 
 
-### Using **OneHotEncoder**
+## **OneHotEncoder** method
 
 **OneHotEncoder** works almost exactly like **dummy_encoder** function 
 
@@ -269,7 +271,7 @@ ct.fit_transform(df)
 
 And of course we can use sparse columns.
 
-## Using **OrdinalEncoder**
+## **OrdinalEncoder** method
 
 This type of encoder can be use on categorical features that involve graduation such as education. It also works for prices
 
@@ -303,7 +305,7 @@ If you note the original data:
 ```
 
 
-## Using DictVectorizer
+## **DictVectorizer** method
 
 DictVectorized need to be applied on a dict, so we need to convert the DataFrame to a dict first.
 
@@ -381,3 +383,4 @@ array([[  0.,   0.,   1.,  96., 235.,   0.,   0.,   1.,   0.,   0.,   1.,
        [  0.,   1.,   0.,  95.,  73.,   0.,   0.,   0.,   1.,   0.,   0.,
           0.,   0.,   0.,   1.,   0.,   0.,   0.,   0.,   1.,   0.]])
 ```
+
