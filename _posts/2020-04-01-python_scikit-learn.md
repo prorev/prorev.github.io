@@ -217,7 +217,7 @@ Output:
 ```
 ## Estimators
 
-An estimator is an object that learns from data using the **fit** method. It can be either classification, regression or clustering type of the process or even a transform operation on data. (extracts some columns from the data).
+Estimator is scikit-learn terminology for the model. An estimator is an object that learns from data using the **fit** method. It can be either classification, regression or clustering type of the process or even a transform operation on data. (extracts some columns from the data).
 
 
 > Special case of estimator is called transofrm estimator or transformer if it supports either **transform** or **fit_transform** methods.
