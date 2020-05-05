@@ -517,7 +517,7 @@ from sklearn.tree import DecisionTreeClassifier
 ```
 
 _Example:_
-```
+```python
 import numpy as np
 from matplotlib import pyplot as plt
 
