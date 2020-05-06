@@ -33,6 +33,7 @@ _Table of contents:_
 - [Read dataframe from HTML page](#read-dataframe-from-html-page)
 - [Missing values fix](#missing-values-fix)
 - [Convert string to categories](#convert-string-to-categories)
+- [What machine learning algorithms need?](#what-machine-learning-algorithms-need)
 
 
 
@@ -491,4 +492,33 @@ Index(['elementary school', 'middle school', 'high schol'], dtype='object')
 ```
 
 Else the output would be alphabetical which is not what we may plan.
+
+## What machine learning algorithms need?
+
+What the machine learning algorithm cannot expect are strings. The upper method of conversion to category **astype('category')** will at the end provide this data:
+
+_Example:_
+```python
+from pandas.api.types import is_string_dtype, is_numeric_dtype, is_categorical_dtype
+
+df = pd.DataFrame({'col1' : [1, 2, 3], 'col2' : ['elementary school', 'high schol', 'middle school']})
+for k,v in df.items():
+        if is_string_dtype(v): df[k] = v.astype('category')
+
+df.col2.cat.set_categories(['elementary school', 'middle school', 'high schol'], ordered=True, inplace=True)
+df.col2.cat.codes
+```
+
+
+_Output:_
+```
+0    0
+1    2
+2    1
+dtype: int8
+```
+
+where in the right hand side column **0**  stands for elementary school, **1** stands for the middle school and **2** for the high school.
+
+
 
