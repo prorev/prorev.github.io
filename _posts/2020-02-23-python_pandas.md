@@ -518,7 +518,7 @@ _Output:_
 dtype: int8
 ```
 
-where in the right hand side column **0**  stands for elementary school, **1** stands for the middle school and **2** for the high school.
+where in the column to the right  **0**  stands for elementary school, **1** stands for the middle school and **2** for the high school.
 
 
 
