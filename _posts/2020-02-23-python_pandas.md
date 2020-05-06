@@ -419,17 +419,26 @@ In here column **col** should be a numeric type. This can be done even more robu
 _Example:_
 ```python
 from pandas.api.types import is_string_dtype, is_numeric_dtype, is_categorical_dtype
+import os
 import numpy as np
 
 df = pd.DataFrame({'col1' : [1, np.nan, 3], 'col2' : ['elementary school', 'high school', 'middle school']})
-#df
+
 def add_missing(df, cn):
-    if is_numeric_dtype(cn) and pd.isnull(cn).sum():
-        df[cn+'_na']=pd.isnull(cn)
+    if is_numeric_dtype(df[cn]) and df[cn].isnull().sum():
+        df[cn+'_na']=df[cn].isnull()
     df[cn].fillna(df[cn].median(), inplace=True)
     
 add_missing(df ,'col1')
 df
+```
+
+_Output:_
+```
+ 	col1 	col2 	col1_na
+0 	1.0 	elementary school 	False
+1 	2.0 	high school 	True
+2 	3.0 	middle school 	False
 ```
 
 **Output:**
