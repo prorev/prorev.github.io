@@ -34,6 +34,7 @@ _Table of contents:_
 - [Missing values fix](#missing-values-fix)
 - [Convert string to categories](#convert-string-to-categories)
 - [What machine learning algorithms need?](#what-machine-learning-algorithms-need)
+- [Fast save and load DataFrame in pandas](#fast-save-and-load-dataframe-in-pandas)
 
 
 
@@ -495,7 +496,7 @@ Else the output would be alphabetical which is not what we may plan.
 
 ## What machine learning algorithms need?
 
-What the machine learning algorithm cannot expect are strings. The upper method of conversion to category **astype('category')** will at the end provide this data:
+What the machine learning algorithms do not expect are raw strings. The upper method of conversion to category **astype('category')** will at the end provide code:
 
 _Example:_
 ```python
@@ -521,4 +522,24 @@ dtype: int8
 where in the column to the right  **0**  stands for elementary school, **1** stands for the middle school and **2** for the high school.
 
 
+## Fast save and load DataFrame in pandas
 
+When dealing with big DataFrames (100M rows) you may find **to_feather** and **read_feather** as an excellent choice:
+
+_Example:_
+
+```python
+os.makedirs('tmp', exist_ok=True)
+df.to_feather('tmp/row') # !pip install pyarrow
+```
+
+To load the data you use:
+
+_Example:_
+
+```python
+df=pd.read_feather('tmp/row')
+df
+```
+
+This actually reads pandas memory and saves it to a disc and reads from disk to pandas memory.
