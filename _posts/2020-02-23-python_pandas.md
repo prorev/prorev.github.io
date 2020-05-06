@@ -31,7 +31,7 @@ _Table of contents:_
 - [Read dataframe from the CSV file](#read-dataframe-from-the-csv-file)
 - [Read dataframe from remote csv file](#read-dataframe-from-remote-csv-file)
 - [Read dataframe from HTML page](#read-dataframe-from-html-page)
-- [Missing values fix](#missing-values-fix)
+- [Fixing missing values](#fixing-missing-values)
 - [Convert string to categories](#convert-string-to-categories)
 - [What machine learning algorithms need?](#what-machine-learning-algorithms-need)
 - [Fast save and load DataFrame in pandas](#fast-save-and-load-dataframe-in-pandas)
@@ -406,17 +406,48 @@ _Output:_
 ![browsers](/wp-content/uploads/2020/02/pandas4.jpg)
 
 
-## Missing values fix
+## Fixing missing values 
 
-At times you may have the missing values for some columns. It depends on a column, but most case you may go with this command:
+At times, you may have the missing values for some columns. It depends on a column, but often use this command:
 
 ```python
-df.fillna(df.mean(), inplace=True)
-
-## or in case of a single column
-
-df['col'].fillna((df['col'].mean()), inplace=True)
+df['col'].fillna((df['col'].median()), inplace=True)
 ```
+
+In here column **col** should be a numeric type. This can be done even more robust:
+
+_Example:_
+```python
+from pandas.api.types import is_string_dtype, is_numeric_dtype, is_categorical_dtype
+import numpy as np
+
+df = pd.DataFrame({'col1' : [1, np.nan, 3], 'col2' : ['elementary school', 'high school', 'middle school']})
+#df
+def add_missing(df, cn):
+    if is_numeric_dtype(cn) and pd.isnull(cn).sum():
+        df[cn+'_na']=pd.isnull(cn)
+    df[cn].fillna(df[cn].median(), inplace=True)
+    
+add_missing(df ,'col1')
+df
+```
+
+**Output:**
+```
+ 	col1 	col2
+0 	1.0 	elementary school
+1 	2.0 	high school
+2 	3.0 	middle school
+```
+
+While at first we had **NaN** special value.
+```
+ 	col1 	col2
+0 	1.0 	elementary school
+1 	NaN 	high school
+2 	3.0 	middle school
+```
+
 
 ## Convert string to categories
 
@@ -479,17 +510,17 @@ _Example:_
 ```python
 from pandas.api.types import is_string_dtype, is_numeric_dtype, is_categorical_dtype
 
-df = pd.DataFrame({'col1' : [1, 2, 3], 'col2' : ['elementary school', 'high schol', 'middle school']})
+df = pd.DataFrame({'col1' : [1, 2, 3], 'col2' : ['elementary school', 'high school', 'middle school']})
 for k,v in df.items():
         if is_string_dtype(v): df[k] = v.astype('category')
 
-df.col2.cat.set_categories(['elementary school', 'middle school', 'high schol'], ordered=True, inplace=True)
+df.col2.cat.set_categories(['elementary school', 'middle school', 'high school'], ordered=True, inplace=True)
 df.col2.cat.categories
 ```
 
 _Output:_
 ```
-Index(['elementary school', 'middle school', 'high schol'], dtype='object')
+Index(['elementary school', 'middle school', 'high school'], dtype='object')
 ```
 
 Else the output would be alphabetical which is not what we may plan.
@@ -502,11 +533,11 @@ _Example:_
 ```python
 from pandas.api.types import is_string_dtype, is_numeric_dtype, is_categorical_dtype
 
-df = pd.DataFrame({'col1' : [1, 2, 3], 'col2' : ['elementary school', 'high schol', 'middle school']})
+df = pd.DataFrame({'col1' : [1, 2, 3], 'col2' : ['elementary school', 'high school', 'middle school']})
 for k,v in df.items():
         if is_string_dtype(v): df[k] = v.astype('category')
 
-df.col2.cat.set_categories(['elementary school', 'middle school', 'high schol'], ordered=True, inplace=True)
+df.col2.cat.set_categories(['elementary school', 'middle school', 'high school'], ordered=True, inplace=True)
 df.col2.cat.codes
 ```
 
