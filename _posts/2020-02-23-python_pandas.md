@@ -469,3 +469,26 @@ If you print the **df** you cannot change the difference, because the output wil
 The change looks small, but beneath in pandas the difference is that we may now use machine learning algorithms on the non string data.
 
 To check some other forms of converting string data to numerical formats you may check the [Encode Categorical Features](/machine-learning/encode-categorical) article.
+
+It is also possible to set your order of categories like this:
+
+_Example:_
+
+```python
+from pandas.api.types import is_string_dtype, is_numeric_dtype, is_categorical_dtype
+
+df = pd.DataFrame({'col1' : [1, 2, 3], 'col2' : ['elementary school', 'high schol', 'middle school']})
+for k,v in df.items():
+        if is_string_dtype(v): df[k] = v.astype('category')
+
+df.col2.cat.set_categories(['elementary school', 'middle school', 'high schol'], ordered=True, inplace=True)
+df.col2.cat.categories
+```
+
+_Output:_
+```
+Index(['elementary school', 'middle school', 'high schol'], dtype='object')
+```
+
+Else the output would be alphabetical which is not what we may plan.
+
