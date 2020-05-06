@@ -26,9 +26,13 @@ _Table of contents:_
   - [More than 1 spaces as separator](#more-than-1-spaces-as-separator)
   - [New line as a separator](#new-line-as-a-separator)
   - [error_bad_lines=False](#errorbadlinesfalse)
+- [When the load is slow](#when-the-load-is-slow)
+- [Parse as a date type](#parse-as-a-date-type)
 - [Read dataframe from the CSV file](#read-dataframe-from-the-csv-file)
 - [Read dataframe from remote csv file](#read-dataframe-from-remote-csv-file)
 - [Read dataframe from HTML page](#read-dataframe-from-html-page)
+- [Missing values fix](#missing-values-fix)
+- [Convert string to categories](#convert-string-to-categories)
 
 
 
@@ -303,6 +307,35 @@ COLORADO    4    5      6     7
 Skipping line 4: Expected 5 fields in line 4, saw 6. Error could possibly be due to quotes being ignored when a multi-char delimiter is used.
 ```
 
+## When the load is slow
+
+Suppose you have 100 million of rows inside your DataFrame. You may run out of memory unless you set the **dtype** parameter:
+
+```
+dtype: Type name or dict of column -> type, optional
+
+    Data type for data or columns. E.g. {'a': np.float64, 'b': np.int32, 'c': ‘Int64’} Use str or object together with suitable na_values settings to preserve and not interpret dtype. If converters are specified, they will be applied INSTEAD of dtype conversion.
+```
+
+Because pandas will try to understand the column type by analyzing all the data inside any column.
+
+In other words, by setting the column types within **read_csv**  you will save some memory.
+
+
+## Parse as a date type
+
+When reading using **read_csv** method in case pandas cannot recognize the data type columns we may set the following:
+
+
+```python
+df = pd.read_csv(f'{path}file.csv', 
+                sep=r',',
+                parse_dates=['dc1', 'dc2'])
+```
+In here the **dc1** and **dc2** are column names.
+
+
+
 
 ## Read dataframe from the CSV file
 
@@ -369,3 +402,70 @@ df
 
 _Output:_
 ![browsers](/wp-content/uploads/2020/02/pandas4.jpg)
+
+
+## Missing values fix
+
+At times you may have the missing values for some columns. It depends on a column, but most case you may go with this command:
+
+```python
+df.fillna(df.mean(), inplace=True)
+
+## or in case of a single column
+
+df['col'].fillna((df['col'].mean()), inplace=True)
+```
+
+## Convert string to categories
+
+Often when we load data we like to convert strings types to categories. 
+
+
+_Example:_
+
+```python
+from pandas.api.types import is_string_dtype, is_numeric_dtype, is_categorical_dtype
+
+df = pd.DataFrame({'col1' : [1, 2, 3], 'col2' : ['a', 'b', 'c']})
+
+for k,v in df.items():
+        if is_string_dtype(v): df[k] = v.astype('category').cat.as_ordered()# as_unordered
+            
+df.col2.cat.categories
+```
+
+_Output:_
+```
+#Index(['a', 'b', 'c'], dtype='object')
+```
+
+With this process we converted the **col2** column into type category from type object. **df.info()** yields:
+
+
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3 entries, 0 to 2
+Data columns (total 2 columns):
+col1    3 non-null int64
+col2    3 non-null category
+dtypes: category(1), int64(1)
+memory usage: 259.0 bytes
+```
+
+Before it was:
+
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3 entries, 0 to 2
+Data columns (total 2 columns):
+col1    3 non-null int64
+col2    3 non-null object
+dtypes: int64(1), object(1)
+memory usage: 176.0+ bytes
+```
+
+If you print the **df** you cannot change the difference, because the output will be the same in both the cases.
+
+The change looks small, but beneath in pandas the difference is that we may now use machine learning algorithms on the non string data.
+
+To check some other forms of converting string data to numerical formats you may check the [Encode Categorical Features](/machine-learning/encode-categorical) article.
