@@ -5,7 +5,7 @@ date: 2020-05-03
 author: taimane
 layout: post
 permalink: /machine-learning/logistic-regression
-published: false
+published: true
 image: 
 categories: 
    - machine-learning
