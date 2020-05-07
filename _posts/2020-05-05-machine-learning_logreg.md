@@ -46,7 +46,7 @@ This is a **sigmoid function** used in Logistic Regression classification task.
 
 If we have a default classification task, where we classify $Y$ (the outcome) to have values either **0** (No) and **1** (Yes).
 
-If we predict $\hat Y > 0.5$, this means we predict the Yes answer, else we predicted No answer (red dotted line).
+If we predict $\hat Y > 0.5$, this means we predict the **Yes** answer, else we predicted **No** answer. The red dotted line is the separator.
 
 We can use for probability notation $Pr(Y=1 \vert X=x)$ a short form $P(X)$.
 
@@ -71,7 +71,7 @@ $l(\beta_0, \beta_1)=\displaystyle \prod_{i:y_i=1} p(x_i)\prod_{i:y_i=0} (1-p(x_
 
 > In 1922 R. A. Fisher introduced the method of maximum likelihood. He first presented the numerical procedure in 1912.
 
-## Solve LogisticRegression programmatically?
+## How to solve LogisticRegression programmatically?
 
 
 In R you can use the **glm** function for this, because just a simple linear model works. In scikit-learn use **LogisticRegression** from **sklearn.linear_model** and play with the additional parameters.
