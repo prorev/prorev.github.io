@@ -48,7 +48,7 @@ If we have a default classification task, where we classify $Y$ (the outcome) to
 
 If we predict $\hat Y > 0.5$, this means we predict the Yes answer, else we predicted No answer (red dotted line).
 
-We can use for $Pr(Y=1|X)$ just $P(X)$.
+We can use for probability notation $Pr(Y=1 \vert X=x)$ a short form $P(X)$.
 
 
 In which case we can write:
