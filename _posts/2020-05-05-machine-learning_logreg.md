@@ -74,7 +74,7 @@ $l(\beta_0, \beta_1)=\displaystyle \prod_{i:y_i=1} p(x_i)\prod_{i:y_i=0} (1-p(x_
 ## Solve LogisticRegression programmatically?
 
 
-In R you can use the **glm** function for this, and in scikit-learn use **LogisticRegression** from **sklearn.linear_model**.
+In R you can use the **glm** function for this, because just a simple linear model works. In scikit-learn use **LogisticRegression** from **sklearn.linear_model** and play with the additional parameters.
 
 ## Coefficient names
 
