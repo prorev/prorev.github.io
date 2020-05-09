@@ -21,6 +21,8 @@ _Table of contents:_
 - [Creating the data first](#creating-the-data-first)
 - [Finding the mean of the data](#finding-the-mean-of-the-data)
 - [Calculating the median](#calculating-the-median)
+- [Quantile](#quantile)
+- [Interquartile Range (IQR)](#interquartile-range-iqr)
 - [Maximum distance](#maximum-distance)
 - [Variance](#variance)
 - [Standard deviation](#standard-deviation)
@@ -98,6 +100,56 @@ _Output:_
 ```
 
 > Mean is more sensitive to outliers than the median. This is why we may use median in some cases, or some other techniques to remove the outliers and then to calculate the mean.
+
+## Quantile
+
+A generalization of the median is called **quantile**. The median represents the value less than which 50% of the data lies. Quantile represents the value less than which a certain percentile of the data lies.
+
+_Formula:_
+
+```python
+def quantile(a, p):# p is percent <1
+    n=len(a)
+    i = int(p*n) # i is index
+    return sorted(a)[i]
+```
+
+_Example:_
+```python
+from random import randint
+import pandas as pd
+a = [randint(-100, 100) for p in range(0, 100)] 
+df=pd.DataFrame({'a':a})
+quantile(a,0.25), quantile(a,0.5), quantile(a,0.75)
+```
+
+_Output:_
+```
+(-55, -9, 54)
+```
+> Note `np.percentile(a, 25, interpolation='higher')` would be same as `quantile(a,0.25)`. By default **np.percentile** interpolation is _linear_.
+
+Quantile helps describing the distribution of the data. 0.5 percent should describes the middle of the data, also known as median.
+
+.25 and .75 are the upper/lower quarter of the data. You can get an idea of how skew your data is.
+
+If the mean is lower/higher than the median, this means the data is left/right skewed.
+
+
+## Interquartile Range (IQR)
+
+**Quantiles** which are particularly useful are the **quartiles** of the distribution. 
+
+The quartiles divide the distribution into **four** equal parts, called fourths.
+
+The IQR describes the middle 50% of values when ordered from lowest to highest.
+
+To calculate interquartile range we calculate 0.75 and 0,25 quartile ranges.
+
+```python
+def interquartile_range(a):
+  return quantile(a, 0.75) - quantile(a, 0.25)
+```
 
 
 ## Maximum distance
