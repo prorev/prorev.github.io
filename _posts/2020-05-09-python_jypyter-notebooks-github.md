@@ -16,27 +16,24 @@ tags:
 
 These notebooks are very important in everyday routine of the data analyst.
 
-Here it will be explained how to open the notebook from GitHub and how to fast save the notebook to the GitHub.
+Here it will be explained how to open the notebook from GitHub and how to save the notebook as GitHub gist.
 
 ## Save the notebook from the GitHub to local environment
 
-1. Open the GitHub URL such as this [PyTorch example](https://gist.github.com/dejanbatanjac/16b3db27fe81fa58564565fb2ab52cd2). 
-2. Open the [**Raw URL**](https://gist.githubusercontent.com/dejanbatanjac/16b3db27fe81fa58564565fb2ab52cd2/raw/9fe6bcf53a4eb672cc1d3e1d5349eccb2d391aca/Sum.ipynb).
-3. Save the text to a file on your local computer
+**1**> Open the GitHub URL such as this [PyTorch example](https://gist.github.com/dejanbatanjac/16b3db27fe81fa58564565fb2ab52cd2). 
+**2**> Open the [**Raw URL**](https://gist.githubusercontent.com/dejanbatanjac/16b3db27fe81fa58564565fb2ab52cd2/raw/9fe6bcf53a4eb672cc1d3e1d5349eccb2d391aca/Sum.ipynb).
+**3**> Save the text to a file on your local computer. 
+In case of the Windows environment you can check the **!dir** command inside the Jupyter to understand where the file should be saved. In case of Mac or Linux try **!ls**
 
-In case of the Windows environment you can check the **!dir** command inside the Jupyter to understand where the file should be saved. In case of Mac or Linux try **!ls**.
-
-4. Once you save the file you open it from Jupyter command palette menu **File > Open**.
-
-
+**4**> Once you save the file you open it from Jupyter command palette menu **File > Open**.
 
 
 
 ## Read the notebook from the GitHub and save it to local environment
 
 You can do it in the next slightly more elegant way.
-1. Copy the [**Raw URL**](https://gist.githubusercontent.com/dejanbatanjac/16b3db27fe81fa58564565fb2ab52cd2/raw/9fe6bcf53a4eb672cc1d3e1d5349eccb2d391aca/Sum.ipynb) to clipboard.
-2. Download file using Python:
+**1**> Copy the [**Raw URL**](https://gist.githubusercontent.com/dejanbatanjac/16b3db27fe81fa58564565fb2ab52cd2/raw/9fe6bcf53a4eb672cc1d3e1d5349eccb2d391aca/Sum.ipynb) to clipboard.
+**2**> Download file using Python:
 
 ```python
 import requests
@@ -46,7 +43,7 @@ response = requests.get(url, allow_redirects=True) # nostream
 with open('sum.ipynb', 'wb') as handle:
     handle.write(response.content)
 ```
-3. Open the file from Jupyter command palette menu **File > Open**
+**3**> Open the file from Jupyter command palette menu **File > Open**
 
 
 ## Save the notebook to Gist
