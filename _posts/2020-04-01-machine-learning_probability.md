@@ -23,6 +23,7 @@ tags:
 
 _Table of contents:_
 - [How to start?](#how-to-start)
+  - [Random variable](#random-variable)
 - [Division of distributions](#division-of-distributions)
 - [Continuos distributions](#continuos-distributions)
   - [Uniform distribution](#uniform-distribution)
@@ -77,9 +78,25 @@ weibull(a[, size]) |Draw samples from a Weibull distribution.
 zipf(a[, size]) |Draw samples from a Zipf distribution.
 
 
+### Random variable
+
+For each distribution there is a generator function. In statistics and probability theory there is a term called **random variable**.
+
+This random variable (sometimes random quantity or stochastic variable) is associated with some random phenomenon. Random variable takes values based on on that phenomenon.
+
+Once we have a random variable, we can understand the probability distribution based on the PDF (Probability Density Function) and Cumulative Distribution Function (CDF).
+
+We can also analyse Inverse Cumulative Distribution Function or Quantile function. 
+
+We can also specify set probability distribution using the moment-generating function of a real-valued random variable.
+
+> The Cauchy distribution has no moment generating function. 
+
+
+
 ## Division of distributions
 
-I would like to create division of distributions.
+I would like to outline these simple distribution types.
 
 First, based on the **data type**:
 
