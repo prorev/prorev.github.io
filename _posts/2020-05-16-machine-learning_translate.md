@@ -89,13 +89,12 @@ Each model is ~ 300MB, and there are [~ 1000 models](the https://huggingface.co/
 
 Models were trained using the [Marian C++ library](https://marian-nmt.github.io/){:rel="nofollow"}.
 
-All models are transformer based very similar to **BartForConditionalGeneration**.
+All models are transformer based very similar to **BartForConditionalGeneration** with the few differences in config including:
 
-The few differences in config include:
+* **MarianConfig.static_position_embeddings=True**
+* **MarianConfig.add_bias_logits=True**
+* **MarianConfig.normalize_embedding=False** 
+* pad_token_id should be 0
 
-* MarianConfig.static_position_embeddings=True
-* MarianConfig.add_bias_logits=True
-* MarianConfig.normalize_embedding=False 
-* pad_token_id = 0
-
-Bart uses `</s>` to pad.
+Bart uses `</s>` to pad (not 0).
+In other words Helsinki models doesn't use LayerNomrs and add certain bias to logits (probabilities out of softmax).
