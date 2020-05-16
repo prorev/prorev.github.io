@@ -11,8 +11,9 @@ categories:
    - machine-learning
 tags:
    - marijan
+   - transformers
 ---
-Machine learning stepped the era of machine translation. Here is the example:
+Machine learning stepped the era of machine translation. Here is the example how to do translation using the transformers.
 
 First install the transformers library:
 
