@@ -24,7 +24,11 @@ tags:
 
 ## Sigmoid function inside
 
-Let's have a function that looks like this:
+Let's have a function 
+
+$Sig(x)=\Large{\frac{e^x}{1 + e^{x}}}$
+
+that looks like this:
 
 ![logistic regression](/wp-content/uploads/2020/05/logistic-regression.jpg)
 
@@ -51,9 +55,9 @@ If we predict $\hat Y > 0.5$, this means we predict the **Yes** answer, else we 
 We can use for probability notation $Pr(Y=1 \vert X=x)$ a short form $P(X)$.
 
 
-In which case we can write:
+So we can write:
 
-$P(X) = \Large{\frac{e^{\beta_0+\beta_1X}}{1 + e^{\beta_0+\beta_1X}}}$, where sigmoid function $Sig(x)=\Large{\frac{e^x}{1 + e^{x}}}$.
+$P(~~X~~) = \Large{\frac{e^{\beta_0+\beta_1X}}{1 + e^{\beta_0+\beta_1X}}}$ 
 
 ## Logit trick
 
