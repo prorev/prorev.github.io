@@ -96,15 +96,15 @@ _Example:_
 text = """
 Question:What does increased oxygen concentrations in the patient’s lungs displace?
 Context:Hyperbaric (high-pressure) medicine uses special oxygen chambers to 
-increasethe partial pressure of O 2 around the patient and, when needed, the 
+increase the partial pressure of O 2 around the patient and, when needed, the 
 medical staff.Carbon monoxide poisoning, gas gangrene, and decompression sickness 
-(the ’bends’)are sometimes treated using these devices.  Increased O 2 
-concentration in thelungs helps to displace carbon monoxide from the heme group 
-of hemoglobin.  Oxygengas is poisonous to the anaerobic bacteria that cause gas 
-gangrene, so increasingits partial pressure helps kill them.  Decompression 
-sickness occurs in diverswho decompress too quickly after a dive, resulting in 
-bubbles of inert gas, mostlynitrogen and helium, forming in their blood.  
-Increasing the pressure of O 2 assoon as possible is part of the treatment."""
+(the ’bends’)are sometimes treated using these devices.  Increased O2 
+concentration in the lungs helps to displace carbon monoxide from the heme group 
+of hemoglobin.  Oxygen gas is poisonous to the anaerobic bacteria that cause gas 
+gangrene, so increasing its partial pressure helps kill them.  Decompression 
+sickness occurs in divers who decompress too quickly after a dive, resulting in 
+bubbles of inert gas, mostly nitrogen and helium, forming in their blood.  
+Increasing the pressure of O 2 as soon as possible is part of the treatment."""
 
 input_ids = tokenizer.encode(text, return_tensors='pt')
 outputs = model.generate(input_ids=input_ids)
