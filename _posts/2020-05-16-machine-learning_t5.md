@@ -119,3 +119,9 @@ _Output:_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eKqWC577WlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Finetuning T5
+
+The finetunning task is the what we do after the initial training. You may check the [process of fintetuing in this colab](https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/master/notebooks/t5-trivia.ipynb#scrollTo=zSeyoqE7WMwu){rel="nofollow"}.
+
+
+
