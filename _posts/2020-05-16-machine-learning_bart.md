@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: T5
+title: BART
 date: 2020-05-16
 author: taimane
 layout: post
