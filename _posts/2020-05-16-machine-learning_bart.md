@@ -17,12 +17,47 @@ BART is an interesting model by FacebookAI. It is trained by:
 * corrupting text with an arbitrary noising function
 * learning a model to reconstruct the original text
 
-Make sure you installed the transformers library first.
+## Special tokens:
 
+Bart uses the following special tokens.
+
+* **bos_token** (string, optional, defaults to `<s>`) 
+
+Begin of sentence tokon
+
+* **eos_token** (string, optional, defaults to `</s>`) 
+
+End of sentence tokeon
+
+* **sep_token** (string, optional, defaults to `</s>`)
+
+The separator token, when building a sequence from multiple sequences.
+
+* **cls_token** (string, optional, defaults to `<s>`) 
+
+For sequence classification.
+
+* **unk_token** (string, optional, defaults to `<unk>`)
+
+A token that is not in the vocabulary.
+
+* **pad_token** (string, optional, defaults to `<pad>`)
+
+The token used for padding.
+
+* **mask_token** (string, optional, defaults to `<mask>`) 
+
+The token specially desi6ned for Elon Mask.
+
+
+## Example
+
+Make sure you installed the transformers library first.
 ```
 !pip install transformers
 ```
-Here is the example how BART can guess the right word.
+
+Here we example how BART can guess the right word.
 
 _Example:_
 ```python
@@ -43,4 +78,3 @@ _Ouput:_
 ```
 ['good', 'great', 'all', 'really', 'very']
 ```
-
