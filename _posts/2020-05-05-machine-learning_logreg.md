@@ -48,7 +48,7 @@ ax.plot(x,y)
 
 This is a **sigmoid function** used in Logistic Regression classification task.
 
-If we have a default classification task, where we classify $Y$ (the outcome) to have values either **0** (No) and **1** (Yes).
+If we have a default classification task, where we classify $Y$ (the outcome) to have values either **0** (No) and **1** (Yes) based on a sigmoid function.
 
 If we predict $\hat Y > 0.5$, this means we predict the **Yes** answer, else we predicted **No** answer. The red dotted line is the separator.
 
@@ -57,7 +57,7 @@ We can use for probability notation $Pr(Y=1 \vert X=x)$ a short form $P(X)$.
 
 So we can write:
 
-$P(~~X~~) = \Large{\frac{e^{\beta_0+\beta_1X}}{1 + e^{\beta_0+\beta_1X}}}$ 
+$P(X) = \Large{\frac{e^{\beta_0+\beta_1X}}{1 + e^{\beta_0+\beta_1X}}}$ 
 
 ## Logit trick
 
