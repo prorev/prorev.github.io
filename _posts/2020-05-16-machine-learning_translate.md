@@ -97,4 +97,4 @@ The few differences in config include:
 * MarianConfig.normalize_embedding=False 
 * pad_token_id = 0
 
-Bart uses </s> to pad.
+Bart uses `</s>` to pad.
