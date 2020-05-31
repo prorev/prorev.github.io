@@ -160,7 +160,7 @@ $H(L1, L2) = 1.58$
 
 ## Cross-Entropy as Loss Function
 
-In machine learning uses cross-entropy as a loss function. How this works?
+In machine learning we use _cross-entropy_ as a loss function. How this works?
 
 If we have classes: C1, C2, C3.
 
