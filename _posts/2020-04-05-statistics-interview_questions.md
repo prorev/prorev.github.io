@@ -87,7 +87,7 @@ The information we will get 1 will then be:
 
 $I(x) = -log₂P(x)=-log₂\frac16=2.58491$
 
-This tells use the information in bits.
+This tells us the information in bits.
 
 If we would have $P(x)=0$, 
 
