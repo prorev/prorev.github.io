@@ -428,7 +428,7 @@ Alternative hypothesis would be man are favored (or woman are favored).
 
 ## What is T-testing?
 
-T-test is any statistical hypothesis test in which the test statistic follows a Student's t-distribution under the null hypothesis. 
+T-test is any statistical hypothesis test in which the test statistic follows Student's t-distribution under the null hypothesis. 
 
 A t-test is most commonly applied when the test statistic would follow a normal distribution.
 
