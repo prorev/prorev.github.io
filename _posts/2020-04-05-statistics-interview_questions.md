@@ -122,7 +122,7 @@ For a single ball entropy $E[X]$=1.53 bits.
 
 > Information entropy is typically measured in bits (or  "shannons") corresponding to base 2 in the above equation.
 
-> If we with $log_e$ these will be **natural units** or **nats**.
+> If we use $log_e$ these will be **natural units** or **nats**.
 
 >If we mesure it with $log_{10}$ these are called:
 >* **dits**
