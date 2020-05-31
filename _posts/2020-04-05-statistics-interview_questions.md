@@ -37,7 +37,7 @@ In here I will ask and answer many questions from statistics.
 - [Problem of the Naive Bayes model](#problem-of-the-naive-bayes-model)
 - [The Law of Large Numbers (LLN)](#the-law-of-large-numbers-lln)
 - [Central Limit Theorem](#central-limit-theorem)
-- [What is SE (Standard Error)](#what-is-se-standard-error)
+- [What is SE (Standard Error)?](#what-is-se-standard-error)
 - [What is called `erf` in statistics (math)?](#what-is-called-erf-in-statistics-math)
 - [Draw normal PDF. What is below the curve?](#draw-normal-pdf-what-is-below-the-curve)
 - [Draw normal CDF, what is below the curve?](#draw-normal-cdf-what-is-below-the-curve)
@@ -362,9 +362,13 @@ We can reach that number with large number of observations. This is LLN.
 
 ## Central Limit Theorem
 
-The Central Limit Theorem say for any distribution if we take samples of equal sizes, these sample means will have the normal distribution as long as the sample size is greater than 30 samples.
+The Central Limit Theorem say for any distribution if we take multiple samples of equal size, sample means will have the normal distribution as long as the sample size is greater than 30 samples.
 
-## What is SE (Standard Error)
+Or: 
+
+Given a sufficiently large sample size, the sampling distribution of the mean for a variable will approximate a normal distribution regardless of that variable's distribution in the population.
+
+## What is SE (Standard Error)?
 
 The Standard Error (SE) considers taking multiple n-samples from probability distribution, and recording of the means obtained in repeat. For Gauss or normal distribution it should be: $\Large  \frac {\sigma }{\sqrt {n}}$
 
