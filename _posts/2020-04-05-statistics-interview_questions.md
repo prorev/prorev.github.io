@@ -51,7 +51,7 @@ In here I will ask and answer many questions from statistics.
   - [OpenIntro Statistics](#openintro-statistics)
   - [Modern analyst (modernanalyst.com)](#modern-analyst-modernanalystcom)
   - [StatsModels](#statsmodels)
-  - [OpenStax Introductionary statistics](#openstax-introductionary-statistics)
+  - [OpenStax Introductionary Statistics](#openstax-introductionary-statistics)
 
 
 ## What is regression?
@@ -493,7 +493,7 @@ You can [reach the documentation here](https://www.statsmodels.org/stable/index.
 
 It is a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.
 
-### OpenStax Introductionary statistics
+### OpenStax Introductionary Statistics
 
 This is a [great textbook](https://openstax.org/details/books/introductory-statistics){:rel="nofollow"} you can download from openstax.org website.
 
