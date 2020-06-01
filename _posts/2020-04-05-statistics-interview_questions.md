@@ -489,7 +489,7 @@ t-distribution, and also comparisons of many means using ANOVA.
 ### StatsModels
 
 Statistical models is very advanced GitHub repo for statistical modeling and econometrics in Python.
-You can reach the documentation from (https://www.statsmodels.org/stable/index.html){:rel="nofollow"}.
+You can [reach the documentation here](https://www.statsmodels.org/stable/index.html){:rel="nofollow"}.
 
 It is a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.
 
