@@ -16,6 +16,7 @@ _Table of Contents:_
 
 - [Adding ssh keys to the ssh-agent](#adding-ssh-keys-to-the-ssh-agent)
 - [How to list keys added to ssh-agent with ssh-add?](#how-to-list-keys-added-to-ssh-agent-with-ssh-add)
+- [Removing all the keys](#removing-all-the-keys)
 - [Adding a new SSH key to your GitHub account](#adding-a-new-ssh-key-to-your-github-account)
 - [Cloning the repo](#cloning-the-repo)
 - [Make sure repo uses the correct identity file](#make-sure-repo-uses-the-correct-identity-file)
@@ -119,6 +120,14 @@ Use the **-l** option to **ssh-add** to list them by fingerprint.
 
 ```
 $ ssh-add -l
+```
+
+## Removing all the keys
+
+To remove all the keys use the `-D` (uppercase) option
+
+```
+$ ssh-add -D
 ```
 
 ## Adding a new SSH key to your GitHub account
