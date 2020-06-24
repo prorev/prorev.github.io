@@ -186,7 +186,7 @@ Host github.com
   IdentityFile  ~\.ssh\id_rsa
 ```
 
-## Using the command line
+## Using the command line 
 
 You can explicitly set the user to push with:
 
