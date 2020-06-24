@@ -19,6 +19,7 @@ _Table of Contents:_
 - [Adding a new SSH key to your GitHub account](#adding-a-new-ssh-key-to-your-github-account)
 - [Cloning the repo](#cloning-the-repo)
 - [Make sure repo uses the correct identity file](#make-sure-repo-uses-the-correct-identity-file)
+- [Using the command line](#using-the-command-line)
 
 ---
 
@@ -87,6 +88,7 @@ You can start the service from the command line:
 
 ```
 $ Start-Service ssh-agent
+$ Get-Service ssh-agent
 ```
 
 _Output:_
@@ -183,3 +185,14 @@ Host github.com
   IdentitiesOnly yes
   IdentityFile  ~\.ssh\id_rsa
 ```
+
+## Using the command line
+
+You can explicitly set the user to push with:
+
+```
+git add .
+git commit -m "Message"
+git push git@github.com:username/project.git
+```
+
