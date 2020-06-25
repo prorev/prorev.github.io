@@ -21,6 +21,7 @@ _Table of Contents:_
 - [Cloning the repo](#cloning-the-repo)
 - [Make sure repo uses the correct identity file](#make-sure-repo-uses-the-correct-identity-file)
 - [Using the command line](#using-the-command-line)
+- [The process of debugging for problems](#the-process-of-debugging-for-problems)
 
 ---
 
@@ -124,11 +125,13 @@ $ ssh-add -l
 
 ## Removing all the keys
 
-To remove all the keys use the `-D` (uppercase) option
+To remove all the keys use `-D` (uppercase D) option
 
 ```
 $ ssh-add -D
 ```
+
+This will remove each identity from the list.
 
 ## Adding a new SSH key to your GitHub account
 
@@ -204,4 +207,16 @@ git add .
 git commit -m "Message"
 git push git@github.com:username/project.git
 ```
+
+## The process of debugging for problems
+
+It should be very easy to debug the communication with Github.
+
+```
+ssh -vT git@github.com
+```
+
+
+
+
 
