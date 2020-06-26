@@ -106,7 +106,7 @@ Running  ssh-agent          OpenSSH Authentication Agent
 Then 
 ```
 $ ssh-add C:\Users\uname\.ssh\id_rsa_intel
-Identity added: C:\Users\dj\.ssh\id_rsa_intel C:\Users\dj\.ssh\id_rsa_intel)
+Identity added: C:\Users\dj\.ssh\id_rsa_intel 
 ```
 
 Note the _**uname**_ represents the actual **_user name_**.
@@ -114,7 +114,7 @@ Note the _**uname**_ represents the actual **_user name_**.
 >_If you don't have SSH keys, you can [generate](https://help.github.com/en/enterprise/2.16/user/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) a new SSH key pair._
 
 ```
-$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f folder 
 ```
 
 ## How to list keys added to ssh-agent with ssh-add?
