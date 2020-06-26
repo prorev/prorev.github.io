@@ -11,6 +11,7 @@ categories:
    - github
 tags:
    - ssh
+   - windows
 ---
 _Table of Contents:_
 
@@ -22,6 +23,7 @@ _Table of Contents:_
 - [Make sure repo uses the correct identity file](#make-sure-repo-uses-the-correct-identity-file)
 - [Using the command line](#using-the-command-line)
 - [The process of debugging for problems](#the-process-of-debugging-for-problems)
+- [Summing up](#summing-up)
 
 ---
 
@@ -216,7 +218,34 @@ It should be very easy to debug the communication with Github.
 ssh -vT git@github.com
 ```
 
+## Summing up
 
+You may know that the content of the `~/.ssh` folder my not have identities at all. In your project `/.git/config` using the `sshCommand` line point to the identity file. Here is an example of the config file:
+
+```
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true	
+	sshCommand = ssh -i "C:/Users/dj/.ssh-swift/id_rsa" -F /dev/null
+[remote "origin"]
+	url = git@github.com:apple/swift.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+```
+
+In Windows the identity will usually by default be inside the `~/.ssh/` folder when you use the `ssh-keygen`.
+
+There is the `-f` option where you can set the output folder for the `ssh-keygen`.
+
+Lastly make sure your public key has been added to the GitHub with read/write access if you plan to use it for both read and write.
+
+![Write access](/wp-content/uploads/2020/write-access.jpg)
 
 
 
