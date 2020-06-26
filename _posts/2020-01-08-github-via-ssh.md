@@ -212,11 +212,13 @@ git push git@github.com:username/project.git
 
 ## The process of debugging for problems
 
-It should be very easy to debug the communication with Github.
+It may be handy to use the verbose `-v` option to debug for the connection problems. 
 
 ```
 ssh -vT git@github.com
 ```
+
+There is also the `-vvvT` switch for additional verbose details.
 
 ## Summing up
 
