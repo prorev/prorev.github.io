@@ -24,7 +24,7 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 _Table of contents:_
-- [What can we do with Sckikit-learn?](#what-can-we-do-with-sckikit-learn)
+- [What can we do with Scikit-learn?](#what-can-we-do-with-scikit-learn)
 - [Installation](#installation)
 - [Dependencies](#dependencies)
 - [Mission as a reference](#mission-as-a-reference)
@@ -34,12 +34,12 @@ _Table of contents:_
 - [Pipeline](#pipeline)
 - [Metrics](#metrics)
   - [Classification metrics](#classification-metrics)
-    - [f1_score](#f1score)
-    - [accuracy_score](#accuracyscore)
+    - [f1_score](#f1_score)
+    - [accuracy_score](#accuracy_score)
   - [Regression metrics](#regression-metrics)
-    - [mean_absolute_error](#meanabsoluteerror)
-    - [mean_squared_error](#meansquarederror)
-    - [mean_squared_log_error](#meansquaredlogerror)
+    - [mean_absolute_error](#mean_absolute_error)
+    - [mean_squared_error](#mean_squared_error)
+    - [mean_squared_log_error](#mean_squared_log_error)
 - [Models](#models)
   - [Cross Validation](#cross-validation)
 - [Decision Trees](#decision-trees)
@@ -49,7 +49,7 @@ _Table of contents:_
   - [GradientBoosting](#gradientboosting)
   - [Bagging](#bagging)
 
-## What can we do with Sckikit-learn?
+## What can we do with Scikit-learn?
 
 Scikit-learn (also known as sklearn) is the first association for "Machine Learning in Python". This package helps solving and analyzing different classification, regression, clustering problems. It includes SVM, and interesting subparts like decision trees, random forests, gradient boosting, k-means, KNN and [other algorithms](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html){:rel="nofollow"}. It uses NumPy and SciPy as core dependencies.
 
