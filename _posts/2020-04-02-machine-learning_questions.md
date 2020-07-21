@@ -51,7 +51,7 @@ In here I will ask and answer many machine learning questions.
 - [23. You use the Hinge loss function to calculate the error. What kind of a model you are most likely having?](#23-you-use-the-hinge-loss-function-to-calculate-the-error-what-kind-of-a-model-you-are-most-likely-having)
 - [24. A multilayer perceptron (MLP) and support vector machines (SVM) systems use the same principles beneath?](#24-a-multilayer-perceptron-mlp-and-support-vector-machines-svm-systems-use-the-same-principles-beneath)
 - [25. Find the wrong type of regression?](#25-find-the-wrong-type-of-regression)
-- [26. How you can reduce the input dimensionality to a NN?](#26-how-you-can-reduce-the-input-dimensionality-to-a-nn)
+- [26. How can you reduce the input dimensionality of a NN?](#26-how-can-you-reduce-the-input-dimensionality-of-a-nn)
 - [27. Convolutional Neural Networks, Deep Belief Networks, Deep Auto-Encoders, Recurrent Neural Networks, Generative Adversarial Networks are:](#27-convolutional-neural-networks-deep-belief-networks-deep-auto-encoders-recurrent-neural-networks-generative-adversarial-networks-are)
 - [28. To recognize images you would typically use?](#28-to-recognize-images-you-would-typically-use)
 - [29. Name the loss function that leads to better probability estimation:](#29-name-the-loss-function-that-leads-to-better-probability-estimation)
@@ -72,7 +72,7 @@ In here I will ask and answer many machine learning questions.
 - [44. In TensorFlow using tf.estimator dramatically lowers the number of lines of code?](#44-in-tensorflow-using-tfestimator-dramatically-lowers-the-number-of-lines-of-code)
 - [45. When Ai system performs as high-human this means it performs:](#45-when-ai-system-performs-as-high-human-this-means-it-performs)
 - [46. What is R-CNN?](#46-what-is-r-cnn)
-- [47. Generative adversarial networks (GANs) are close to something called "machine dreaming "?](#47-generative-adversarial-networks-gans-are-close-to-something-called-%22machine-dreaming-%22)
+- [47. Generative adversarial networks (GANs) are close to something called "machine dreaming "?](#47-generative-adversarial-networks-gans-are-close-to-something-called-machine-dreaming-)
 - [48. Which one is fastest NN recognizing 2D objects regions?](#48-which-one-is-fastest-nn-recognizing-2d-objects-regions)
 - [49. AI can create music?](#49-ai-can-create-music)
 - [50. Find the intruder:](#50-find-the-intruder)
@@ -365,7 +365,7 @@ Use the logistic function to model a binary dependent variables. Binary regressi
 
 
 
-## 26. How you can reduce the input dimensionality to a NN?
+## 26. How can you reduce the input dimensionality of a NN?
 1) PCA
 2) Isomap
 3) LLE
