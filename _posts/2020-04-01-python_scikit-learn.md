@@ -479,7 +479,7 @@ _Output:_
 
 Once we have the **prediction model** we need to evaluate model precision on unseen data. While training, we don't have unseen data in advance and is a common practice to hold out part of the available data known as a _test set_. 
 
-This can be done true the technique of cross validation that is applied together with the prediction model.
+This can be done with cross validation applied together with the prediction model.
 
 Here are some common imports for cross validation:
 
