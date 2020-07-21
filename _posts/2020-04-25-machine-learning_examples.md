@@ -47,7 +47,7 @@ _Output:_
 
 ![dots](/wp-content/uploads/2020/04/dots.jpg)
 
-We have 200 points ( **n=200** ) and we classified as 1 points $x1$ and $x2$ based on target $y$:
+We have 200 points ( **n=200** ) and we classified as 1 points $x1$ > $x2$ for the target $y$:
 
 ```
 y = np.where(x1>x2, 1, 0) 
