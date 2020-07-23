@@ -42,7 +42,7 @@ In here I will ask and answer many questions from statistics.
 - [Draw normal PDF. What is below the curve?](#draw-normal-pdf-what-is-below-the-curve)
 - [Draw normal CDF, what is below the curve?](#draw-normal-cdf-what-is-below-the-curve)
 - [What is characteristic function?](#what-is-characteristic-function)
-- [What is a hypothesis?](#what-is-a-hypothesis)
+- [What is hypothesis testing?](#what-is-hypothesis-testing)
 - [What is T-testing?](#what-is-t-testing)
 - [What is power (statistics)?](#what-is-power-statistics)
 - [What is p-hacking?](#what-is-p-hacking)
@@ -413,12 +413,11 @@ Ref:
 
 
 
-## What is a hypothesis?
+## What is hypothesis testing?
 
-A hypothesis test is a formal approach for evaluating 
-a research question.
+A hypothesis test is a formal approach for evaluating a research question.
 
-We analyze the data to evaluate whether wither some hypothesis is true. For instance, whiter man or women are promoted more often.
+We analyze the data to evaluate if hypothesis is true. For instance, whiter man or women are promoted more often.
 
 **Null hypothesis** would be, gender do not influence promotion recommendation. In this case we should evidence gender rates are about the same.
 
