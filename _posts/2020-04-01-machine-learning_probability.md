@@ -158,7 +158,7 @@ _Output:_
 We have 10 bins for the arrays **a100** and **a50**. The y axis denotes the number of elements, and the x axis denotes the 10 beans.
 
 Uniform distribution means flat at the top.
-For the random numbers we expect the uniform distribution. It is not perfectly uniform but it is almost perfect.
+For the random numbers we expect the uniform distribution.
 
 
 ### Normal distribution
