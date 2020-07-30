@@ -130,7 +130,7 @@ import random
 random.random()
 #0.6447902854472809
 ```
-We can check and see all the values will be inside $[0, 1]$ range.
+We can check and see all the values will be inside $[0, 1)$ range.
 
 
 _Example:_
@@ -201,7 +201,7 @@ plt.show()
 
 scipy.stats.norm gives us parameters such as **loc** and **scale**. It also has a variety of methods and we explored **rvs**, **cdf**, **sf**, **ppf**, **interval**, and **isf** in this article.
 
-Matplotlib gives us easy but extensive tools to change minute details of a figure including 3D.
+Matplotlib gives us easy and extensive tools to change details of a figure including 3D.
 
 
 ## Discrete distributions
@@ -210,7 +210,7 @@ Matplotlib gives us easy but extensive tools to change minute details of a figur
 
 The previous list is what I found for [Python scipy](https://docs.scipy.org/doc/scipy-0.16.0/reference/stats.html){:rel="nofollow"} library.
 
-We should mention is the **randint**, random number generator. This is the same as **random.randint** from **import random** uniform distribution.
+We should mention the **randint**, random number generator. This is the same as **random.randint** from **import random** uniform distribution.
 
 Then if we analyse the Bernoulli trials (or binomial trials) with exactly two possible outcomes **success** and **failure** for the experiment.
 
