@@ -16,6 +16,8 @@ In OAuth 1, requests can be made in both HTTP and HTTPS, while in OAuth 2.0 requ
 
 In OAuth 1 to grab the access token, a public and private string are needed. The private string is used when signing the request, and never sent across the wire.
 
+![oauth 2](/wp-content\uploads\2020\11\oauth2.jpg)
+
 *Bearer Token* is OAuth 2 API **single string** which acts as the authentication of the API request, sent as part of HTTP *Authorization* header. The string is meaningless to clients, and may vary in length.
 
 Bearer tokens are easy to implement when making API requests, comparing to cryptographic signing of each request.
