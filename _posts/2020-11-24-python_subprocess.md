@@ -267,7 +267,6 @@ This means running the commands with `Popen()` is asynchronous.
 ## Another way of parallel execution
 
 ```python
-from subprocess import Popen, PIPE
 from concurrent.futures import ThreadPoolExecutor
 import time
 
