@@ -142,6 +142,7 @@ fh = open(tmp,'w+')
 p = Popen(["ls","-all"], universal_newlines=True, stdout=fh, stderr=PIPE)
 out, err = p.communicate()
 print(out, err) 
+fh.close()
 ```
 *Out:*
 ```
