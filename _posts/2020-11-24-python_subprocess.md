@@ -186,7 +186,7 @@ print(r)
 
 ## Using `getoutput()`
 
-This method returns both teh output and the error.
+This method returns both the output in case no error and the error in case of error.
 
 *Example:* Returns the output
 ```python
