@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Python strings
+title: Python subprocess
 date: 2020-11-24
 author: taimane
 layout: post
