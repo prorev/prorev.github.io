@@ -1,11 +1,11 @@
 ---
 id: 12971
 title: Python strings
-date: 2020-01-22
+date: 2020-11-24
 author: taimane
 layout: post
 permalink: /python/subprocess
-published: false
+published: true
 image: 
 categories: 
    - python
