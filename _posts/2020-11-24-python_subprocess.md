@@ -24,6 +24,7 @@ tags:
 - [Using `getoutput()`](#using-getoutput)
 - [Run two commands in parallel](#run-two-commands-in-parallel)
 - [Run arbitrary many commands in parallel](#run-arbitrary-many-commands-in-parallel)
+- [Another way of parallel execution](#another-way-of-parallel-execution)
 ![str](/wp-content/uploads/2020/11/subprocess-art.jpg)
 
 
@@ -261,3 +262,58 @@ Wall time: 2.63 s
 
 In here we executed the command `sleep 2` for 100 times and that took 2.63 seconds.
 This means running the commands with `Popen()` is asynchronous.
+
+
+## Another way of parallel execution
+
+```python
+from subprocess import Popen, PIPE
+from concurrent.futures import ThreadPoolExecutor
+import time
+
+def exec_(cmd):
+    '''
+    single command run
+    command must be prepared as subprocess.call
+    '''
+    ret = subprocess.call(cmd)
+    if ret== 0:
+        print("success...")
+    else:
+        print("error")
+
+
+def pull_run(parallel_jobs, cmds):
+    '''
+    run pull of jobs
+    input:
+        parallel_jobs: integer, how many jobs at once
+        cmds: list of commands
+    '''
+    with ThreadPoolExecutor(max_workers=parallel_jobs) as executor:
+        futures = executor.map(exec_, cmds)
+```
+
+We will run 10 times 'sleep 2' but the max number of parallel jobs will be 4.
+
+```python
+%%time
+cmds = [['sleep', '2'] for i in range(10)]
+pull_run(4, cmds)
+```
+
+*Out:*
+```
+success...
+success...
+success...
+success...
+success...
+success...
+success...
+success...
+success...
+success...
+CPU times: user 19.4 ms, sys: 57.5 ms, total: 76.8 ms
+Wall time: 6.07 s
+```
