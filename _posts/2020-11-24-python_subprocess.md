@@ -294,7 +294,7 @@ def pull_run(parallel_jobs, cmds):
         futures = executor.map(exec_, cmds)
 ```
 
-We will run 10 times 'sleep 2' but the max number of parallel jobs will be 4.
+We will run 10 times `sleep 2` but the max number of parallel jobs will be 4.
 
 ```python
 %%time
