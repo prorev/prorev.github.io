@@ -22,6 +22,8 @@ tags:
   - [Waiting for the subprocess to finish](#waiting-for-the-subprocess-to-finish)
 - [Using `check_output()`](#using-check_output)
 - [Using `getoutput()`](#using-getoutput)
+- [Run two commands in parallel](#run-two-commands-in-parallel)
+- [Run arbitrary many commands in parallel](#run-arbitrary-many-commands-in-parallel)
 ![str](/wp-content/uploads/2020/11/subprocess-art.jpg)
 
 
@@ -57,7 +59,6 @@ import subprocess
 subprocess.call(["ls", "-all"])
 # returns 0 (success)
 ```
-
 
 ## Using `subprocess.run()`
 
@@ -226,6 +227,37 @@ print(r)
 ```
 ls: cannot access 'soprano': No such file or directory
 ```
+## Run two commands in parallel
+
+```python
+from subprocess import Popen
+commands = ['command1', 'command2']
+procs = [ Popen(i) for i in commands ]
+for p in procs:
+   p.wait()
+```
 
 
+## Run arbitrary many commands in parallel
 
+```python
+%%time
+from subprocess import Popen
+from subprocess import PIPE
+cmds_list = []
+for s in range(100):
+    cmds_list.append(['sleep', str(2)])
+
+procs_list = [Popen(cmd, stdout=PIPE, stderr=PIPE) for cmd in cmds_list]
+for proc in procs_list:
+    proc.wait()
+```
+
+*Out:*
+```
+CPU times: user 60.3 ms, sys: 303 ms, total: 363 ms
+Wall time: 2.63 s
+```
+
+In here we executed the command `sleep 2` for 100 times and that took 2.63 seconds.
+This means running the commands with `Popen()` is asynchronous.
