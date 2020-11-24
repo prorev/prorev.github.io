@@ -19,7 +19,7 @@ tags:
   - [Get the process id of the command](#get-the-process-id-of-the-command)
   - [Get the output and standard error](#get-the-output-and-standard-error)
   - [Write out to to a file based on file handle](#write-out-to-to-a-file-based-on-file-handle)
-  - [`Popen()` waiting for the subprocess to finish](#popen-waiting-for-the-subprocess-to-finish)
+  - [Waiting for the subprocess to finish](#waiting-for-the-subprocess-to-finish)
 - [Using `check_output()`](#using-check_output)
 - [Using `getoutput()`](#using-getoutput)
 ![str](/wp-content/uploads/2020/11/subprocess-art.jpg)
@@ -160,7 +160,7 @@ drwxr-xr-x 1 root root 4096 Nov 13 17:33 baritone
 drwxr-xr-x 1 root root 4096 Nov 13 17:33 bass
 ```
 
-### `Popen()` waiting for the subprocess to finish
+### Waiting for the subprocess to finish
 
 By default, calls to `Popen()` creates a subprocess in the background and don't wait for it to terminate. You can wait for the subprocess to finish like this:
 
