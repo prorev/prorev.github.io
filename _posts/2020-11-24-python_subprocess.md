@@ -43,9 +43,9 @@ Clearly `call()` and `run()`  and `Popen()` are the often used methods.
 
 `subprocess.call()` can run a subprocess and get just the return code. 
 
-`subprocess.run()` is more powerful, it can return the output.
+`subprocess.run()` is more powerful than `call()`, it can return the return code, the output and the error.
 
-`subprocess.Popen()` is even more powerful that `run()`.
+`subprocess.Popen()` is even more powerful that `run()`, it can return whatever `run()` and additional items such as process PID.
 
 
 ## Using `subprocess.call()`
