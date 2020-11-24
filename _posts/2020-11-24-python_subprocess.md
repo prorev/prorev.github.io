@@ -180,7 +180,7 @@ r = subprocess.check_output(["ls", "-all"], universal_newlines=True)
 print(r)
 ```
 
-<sub>Works only for the output, check the next method that works for bout output and error.</sub>
+<sub>Works only for the output, check the next method that works for both output and error.</sub>
 
 
 ## Using `getoutput()`
