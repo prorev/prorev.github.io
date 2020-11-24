@@ -180,7 +180,19 @@ r = subprocess.check_output(["ls", "-all"], universal_newlines=True)
 print(r)
 ```
 
-<sub>Works only for the output, check the next method that works for both output and error.</sub>
+This function can also throw the exception in which case you may use `try` and `except` like this:
+
+*Example:*
+
+```python
+try:
+    result = subprocess.check_output(cmd, shell=True)
+    print(result) 
+except subprocess.CalledProcessError as error:
+    print(error)
+```
+
+<sub>This method returns only the output, check the next method that works for both output and error.</sub>
 
 
 ## Using `getoutput()`
