@@ -45,7 +45,7 @@ Clearly `call()` and `run()`  and `Popen()` are the often used methods.
 
 `subprocess.run()` is more powerful than `call()`, it can return the return code, the output and the error.
 
-`subprocess.Popen()` is even more powerful that `run()`, it can return whatever `run()` and additional items such as process PID.
+`subprocess.Popen()` is even more powerful that `run()`, it can return whatever `run()` and additional items such as process PID, it can redirect the output to a file, etc.
 
 
 ## Using `subprocess.call()`
@@ -103,7 +103,6 @@ print(cp.stderr)
 2
 
 ls: cannot access 'soprano': No such file or directory
-
 ```
 
 
