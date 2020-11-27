@@ -1,9 +1,9 @@
 title: PROGRAMMING REVIEW
 logo: /assets/img/logo.png
-description: Slow catching up the latest programming trends.
+description: Catching the latest programming trends.
 lang: en
 theme: minima
-footer: © PROGRAMMING REVIEW 2010-2020
+footer: © <a href="https://programming-review.com">PROGRAMMING REVIEW 2010-2020</a>
 markdown: kramdown
 kramdown:
   input: GFM
