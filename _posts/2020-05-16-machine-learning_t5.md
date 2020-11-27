@@ -121,7 +121,8 @@ _Output:_
 
 ## Finetuning T5
 
-The finetunning task is the what we do after the initial training. You may check the [process of fintetuing in this colab](https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/master/notebooks/t5-trivia.ipynb#scrollTo=zSeyoqE7WMwu){rel="nofollow"} .
+The finetunning task is the what we do after the initial training. You may check the [process of fintetuing in this colab](https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/master/notebooks/t5-trivia.ipynb#scrollTo=zSeyoqE7WMwu){:rel="nofollow" target="_blank"}.
+
 
 
 
