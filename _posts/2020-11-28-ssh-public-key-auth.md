@@ -37,7 +37,7 @@ And you need to create (have) both.
 
 ## Generate SSH keys on Windows
 
-Since I am on Windows here is how to generate the keys:
+Since I am on Windows, here is how to generate the keys on Windows:
 
 ```
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f folder 
@@ -49,7 +49,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f folder
 -a----        11/6/2020  12:45 AM            401 id_rsa.pub
 ```
 
-If you cannot recall the full line you can just run:
+Or just run the defaults:
 
 ```
 $ ssh-keygen
@@ -58,7 +58,7 @@ $ ssh-keygen
 
 ## Move public key to VPN (Linux server)
 
-Keep the private key secret and store it on your Windows computer from where you connect to the remote VPN server. Public key is to be set inside:
+Keep the private key secret and store it on your Windows computer from where you connect to the remote VPN server. Public key is to be set inside Linux:
 ```
 ~/.ssh/authorized_keys
 ```
