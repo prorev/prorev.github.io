@@ -1,6 +1,6 @@
 ---
 id: 2987
-title: Public key authentication (Example) from Windows to Linux
+title: Public key authentication from Windows to Linux
 date: 2016-07-29 14:02:58
 author: taimane
 layout: post
