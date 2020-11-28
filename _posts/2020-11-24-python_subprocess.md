@@ -25,8 +25,8 @@ tags:
 - [Run two commands in parallel](#run-two-commands-in-parallel)
 - [Run arbitrary many commands in parallel](#run-arbitrary-many-commands-in-parallel)
 - [Another way of parallel execution](#another-way-of-parallel-execution)
-![str](/wp-content/uploads/2020/11/subprocess-art.jpg)
 
+![str](/wp-content/uploads/2020/11/subprocess-art.jpg)
 
 ## What is subprocess?
 
