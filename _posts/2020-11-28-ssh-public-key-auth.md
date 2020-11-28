@@ -1,6 +1,6 @@
 ---
 id: 2987
-title: Public key authentication from Windows to Linux
+title: Public Key Authentication from Windows to Linux
 date: 2016-07-29 14:02:58
 author: taimane
 layout: post
@@ -13,18 +13,18 @@ tags:
    - ssh
    - vpn
 ---
-- [About Public Key Authentication)](#about-public-key-authentication)
+- [About Public Key Authentication (PKA)](#about-public-key-authentication-pka)
 - [Generate SSH keys on Windows](#generate-ssh-keys-on-windows)
 - [Move public key to VPN (Linux server)](#move-public-key-to-vpn-linux-server)
 - [Disable username password authentication](#disable-username-password-authentication)
 - [Appendix: Typical `sshd` commands](#appendix-typical-sshd-commands)
 - [Appendix: Setting Putty to use PKA](#appendix-setting-putty-to-use-pka)
 
-## About Public Key Authentication)
+## About Public Key Authentication (PKA)
 
 Public key authentication to connect to VPN Linux server means you don't have to use passwords anymore when using `ssh`. 
 
-You can fully disable username password authentication later.
+Once you set PKA, you can fully disable username password authentication.
 
 ![Public Key Authentication](/wp-content/uploads/2020/11/pka.jpg)
 
@@ -52,7 +52,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f folder
 If you cannot recall the full line you can just run:
 
 ```
-ssh-keygen
+$ ssh-keygen
 ```
 
 
