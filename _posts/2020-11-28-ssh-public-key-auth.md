@@ -113,9 +113,15 @@ service sshd restart
 
 ## Appendix: Setting Putty to use PKA
 
-You need to have two more files inside username/
+You need to have two more files inside `.ssh` folder on Windows generated based on 
+`id_rsa` and `id_rsa.pub`.
 
 ```
 -a----        11/6/2020   1:38 AM           1464 private.putty.ppk
 -a----        11/6/2020   1:36 AM            477 public.putty.ppk
 ```
+
+Create them using PuttyGen. Steps:
+* Conversions => Import Key => `id_rsa` key on you computer
+* Click "Save Private Key" without a passphrase
+* Choose folder for `.ppk` keys same as for `id_rsa` and `id_rsa.pub`.
