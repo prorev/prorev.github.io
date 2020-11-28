@@ -19,7 +19,7 @@ It may be done in many ways but I love this three step process:
 
 1. Download the speed test 
 ```
-> wget https://raw.github.com/sivel/speedtest-cli/master/speedtest.pywget https://raw.github.com/
+> wget https://raw.github.com/
 sivel/speedtest-cli/master/speedtest.py
 ```
 
