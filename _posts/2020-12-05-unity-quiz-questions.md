@@ -99,7 +99,7 @@ The Main Camera is the viewport through which the player sees the scene. It's no
 
 ☑ **Use tags**    ☐ Use layers
 
-Using tags you can address groups of game objects from once effectively. There is a handy function FindGameObjectsWithTag you may use.
+Using tags you can address groups of game objects from once effectively. There is a handy function `FindGameObjectsWithTag()` you may use.
 
 Layers doesn't have such functionality. Their main purpose is to reduce the processing load.
 
@@ -137,7 +137,7 @@ If the parent of a Rect Transform is also a Rect Transform, the child Rect Trans
 
 ☐ YES    ☑ **NO**
 
-At first you can assume ""Save Project"" would save everything in the project, including the scene you are working on.
+At first you can assume _Save Project_ would save everything in the project, including the scene you are working on.
 
 However, this is not true. It actually saves everything in the project except for the current scene, such as assets or overall project settings.
 
@@ -187,7 +187,11 @@ Sport light is the intruder. There is no such light in Unity. The following ligh
 
 ☑ **triangles**    ☐ lines    ☐ quads    ☐ squares 
 
-All 3D game object shapes are fundamentally made up of interconnected triangles called polygons. Each polygon is defined by its three sides (or edges), and the points where these edges meet, called vertices or verts. The mesh is the collection of polygons making up the 3D geometry of a game object.
+All 3D game object shapes are fundamentally made up of interconnected _triangles_ called _polygons_. 
+
+Each polygon is defined by its three sides (or edges), and the points where these edges meet, called _vertices_ or verts. 
+
+The _mesh_ is the collection of polygons making up the 3D geometry of a game object.
 
 
 
@@ -203,7 +207,7 @@ If you move the parent object, the child objects will maintain that relative pos
 
 ☐ YES    ☑ **NO**
 
-The order in which the game objects' `Awake()` function is called is random, so you would not want to use the `Awake()`  function for passing information from one object to another as the receiving object might not be ready yet..
+The order in which the game objects' `Awake()` function is called is random, so you would not want to use the `Awake()`  function for passing information from one object to another as the receiving object might not be ready yet.
 
 
 
@@ -381,7 +385,7 @@ For instance, you can create the animation for the Main Camera game object to cr
 
 ☐ Rigidbody    ☑ **Avatar**    ☐ Skeleton    ☐ Bones
 
-An **avatar** is a simplified humanoid bone structure that Mecanim understands how to animate.
+An **Avatar** is a simplified humanoid bone structure that Mecanim animate.
 
 
 ## 32. To define input axes and game actions for your project you need?
