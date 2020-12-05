@@ -68,7 +68,7 @@ tags:
 
 ## 1. Who created the initial version of Unity?
 
-☐ David Helgason  |  ☐ Joachim Ante  |  ☐ Nicholas Francis  |  ☑ **All mentioned**
+☐ David Helgason  ☐ Joachim Ante  ☐ Nicholas Francis  ☑ **All mentioned**
 
 
 The initial product launched on June 6, 2005.
@@ -78,7 +78,7 @@ The goal was to create an affordable game engine with professional tools for ama
 
 ## 2. Is Scripting editor part of Unity?
 
-☐ YES  |  ☑ **NO**
+☐ YES  ☑ **NO**
 
 Scripting Editor is where you will write the actual code for your game objects to interact. This may be MonoDevelop, Microsoft Visual Studio, Sublime, or some other editor.
 
@@ -88,7 +88,7 @@ Unity (or Unity Studio) is the visual environment where you interact with the ga
 
 ## 3. When you create a new scene, it will contain?
 
-☐ Empty game object | ☐ Main Camera game object | ☐ Light and Main Camera game object |  ☑ **It depends**
+☐ Empty game object☐ Main Camera game object☐ Light and Main Camera game object ☑ **It depends**
 
 If you create a 2D scene it will have just the Main Camera game object, if you create a new 3D scene it will have Main Camera game object and the Light.
 
@@ -97,7 +97,7 @@ The Main Camera is the viewport through which the player sees the scene. It's no
 
 ## 4. You would like to address all enemy objects in your game?
 
-☑ **Use tags**  | ☐ Use layers
+☑ **Use tags** ☐ Use layers
 
 Using tags you can address groups of game objects from once effectively. There is a handy function FindGameObjectsWithTag you may use.
 
@@ -109,7 +109,7 @@ Layers can restrict raycasting or rendering operations, when applied to the rele
 
 ## 5. Scripts are components?
 
-☑ **True** | ☐ False
+☑ **True**☐ False
 
 Scripts are components. They affect the look, behavior, or interaction of game objects.
 
@@ -118,14 +118,14 @@ Scripts are essentially custom components that you create for the unique require
 
 ## 6. What is the name of the component that every 3D game object must have?
 
-☑ **Transform** | ☐ RectTransform | ☐ NetworkTransform | ☐ Mesh
+☑ **Transform**☐ RectTransform☐ NetworkTransform☐ Mesh
 
 Transform component is one component that every 3D game object must have. Even the empty one.
 
 
 ## 7. What is the 2D version of Transform component?
 
-☑ **Rect Transform** | ☐ Transform2D |  ☐ PlaneTransform | ☐ Transform
+☑ **Rect Transform**☐ Transform2D ☐ PlaneTransform☐ Transform
 
 The Rect Transform component is the 2D layout counterpart of the Transform component.
 
@@ -135,7 +135,7 @@ If the parent of a Rect Transform is also a Rect Transform, the child Rect Trans
 
 ## 8. Unity File->Save Project will also save the current working scene?
 
-☐ YES | ☑ **NO**
+☐ YES☑ **NO**
 
 At first you can assume ""Save Project"" would save everything in the project, including the scene you are working on.
 
@@ -145,7 +145,7 @@ As with anything involving a computer, it is a good habit to save your work freq
 
 ## 9. Components govern ... of the game objects?
 
-☐ the look | ☐ the behavior | ☐ the interaction  | ☑ **all true**
+☐ the look☐ the behavior☐ the interaction ☑ **all true**
 
 A game is made up of scenes, a scene is made up of game objects, a game object is made up of components, and components have properties that are governed by their internal functions.
 
@@ -155,7 +155,7 @@ Scripts are essentially custom components that you create for the unique require
 
 ## 10. An asset type that allows you to store game objects and create multiple instances later is called?
 
-☑ **Prefab**  | ☐ Package  | ☐ Asset Store  | ☐ Serialized
+☑ **Prefab** ☐ Package ☐ Asset Store ☐ Serialized
 
 The prefab acts as a template from which you can create new game object instances in the scene.
 
@@ -170,7 +170,7 @@ Serialization is the automatic process of transforming data structures or object
 
 ## 11. Find the intruder?
 
-☐ Directional light |  ☑ **Sport light** | ☐ Point light | ☐  Area light 
+☐ Directional light ☑ **Sport light**☐ Point light☐  Area light 
 
 Sport light is the intruder. There is no such light in Unity. The following lightning sources are possible:
 
@@ -185,7 +185,7 @@ Sport light is the intruder. There is no such light in Unity. The following ligh
 
 ## 12. All 3D game object shapes are made up of interconnected ...?
 
-☑ **triangles** | ☐ lines | ☐ quads | ☐ squares 
+☑ **triangles**☐ lines☐ quads☐ squares 
 
 All 3D game object shapes are fundamentally made up of interconnected triangles called polygons. Each polygon is defined by its three sides (or edges), and the points where these edges meet, called vertices or verts. The mesh is the collection of polygons making up the 3D geometry of a game object.
 
@@ -193,7 +193,7 @@ All 3D game object shapes are fundamentally made up of interconnected triangles 
 
 ## 13. When you move the game object on the scene what will happen with the child game object?
 
-☑ **will move with parent** | ☐ will not move with the parent
+☑ **will move with parent**☐ will not move with the parent
 
 When game objects have a child relationship to a parent object, their Transform position becomes relative to the parent (instead of world zero).
 
@@ -201,7 +201,7 @@ If you move the parent object, the child objects will maintain that relative pos
 
 ## 14. Can you use Awake() function to pass information from one object to another.
 
-☐ YES | ☑ **NO**
+☐ YES☑ **NO**
 
 The order in which the game objects' `Awake()` function is called is random, so you would not want to use the `Awake()`  function for passing information from one object to another as the receiving object might not be ready yet..
 
@@ -209,7 +209,7 @@ The order in which the game objects' `Awake()` function is called is random, so 
 
 ## 15. How you can pause the game?
 
-☑ **Time.timeScale = 0;** | ☐ time.deltaTime = 0; | ☐ Time.fixedDeltaTime = 0  | ☐ Time.time
+☑ **Time.timeScale = 0;**☐ time.deltaTime = 0;☐ Time.fixedDeltaTime = 0 ☐ Time.time
 
 `Time.timeScale = 0;` is the correct one.
 
@@ -219,7 +219,7 @@ The order in which the game objects' `Awake()` function is called is random, so 
 
 ## 16. To make your camera point at an object as it moves what method you need to use:
 
-☑ **LookAt()** | ☐ Follow() | ☐ No method exists | ☐ You need to make camera child of object
+☑ **LookAt()**☐ Follow()☐ No method exists☐ You need to make camera child of object
 
 The `LookAt()` method will do just that.
 
@@ -230,7 +230,7 @@ In your camera script you will have code like this:
 
 ## 17. Main Camera is game object?
 
-☐ True | ☑ **False**
+☐ True☑ **False**
 
 Like any game object it is same for Main Camera. You can move it, apply scripts to it, and do anything else that applies to game objects in general.
 
@@ -241,7 +241,7 @@ The Main Camera is the viewport through which the player sees the scene.
 
 ## 18. You can debug Unity game from Visual Studio or MonoDevelop?
 
-☑ **True** | ☐ False
+☑ **True**☐ False
 
 From Visual Studio or MonoDevelop you can setting breakpoints, step over the code, and inspect variables and expressions.
 
@@ -249,7 +249,7 @@ From Visual Studio or MonoDevelop you can setting breakpoints, step over the cod
 
 ## 19. Which method executes first in MonoBehaviour?
 
-☑ **Awake()** | ☐ onEnable() | ☐ Start() | ☐ Update()
+☑ **Awake()**☐ onEnable()☐ Start()☐ Update()
 
 The next list is the MonoBehaviour Event Execution Order:
 ```
@@ -269,7 +269,7 @@ OnDestroy()  // game objects objects being destroyed
 
 ## 20. Game objects without Rigidbody component are considered?
 
-☑ **Static colliders** | ☐ Gismo colliders
+☑ **Static colliders**☐ Gismo colliders
 
 The Rigidbody component is an essential component when adding physical interactions between objects.
 
@@ -284,7 +284,7 @@ Term ""Gizmos"" is used to give visual debugging or setup aids in the scene view
 
 
 ## 21. To check if your bullet hits the target you use:
-**Raycasting** | ☐ Trajectory Simulation
+**Raycasting**☐ Trajectory Simulation
 
 Raycasting is a very useful and powerful tool available on the physics engine.
 
@@ -299,7 +299,7 @@ You call it with `Physics.Raycast()`.
 
 ## 22. In Unity to make games you can use?
 
-☐ Scripts | ☐ Managed Plugins | ☐ Native plugins | ☑ **All mentioned**
+☐ Scripts☐ Managed Plugins☐ Native plugins☑ **All mentioned**
 
 In Unity, you normally use scripts to create functionality, but you can also include code created outside Unity in the form of a Plugin.
 
@@ -312,12 +312,12 @@ Native plugins are platform-specific native code libraries. They can access feat
 
 
 ## 23. What is required for the game to play?
-☐ Tags | ☑ **Layers**
+☐ Tags☑ **Layers**
 
 Unlike Tags, the first seven layers are required by Unity and you are limited to a total of 31 layers.
 
 ## 24. What is the default script editor in Unity?
-☑ **MonoDevelop** | ☐ Visual Studio 
+☑ **MonoDevelop**☐ Visual Studio 
 
 MonoDevelop is the integrated development environment (IDE) supplied with Unity.
 
@@ -326,7 +326,7 @@ An IDE combines the familiar operation of a text editor with additional features
 ![Unity](/wp-content/uploads/2020/12/unity2.jpg)
 
 ## 25. What is the name of Unity animation system?
-☐ Blender  | ☑ **Mecanim**  | ☐ Skeletal  | ☐ Maya
+☐ Blender ☑ **Mecanim** ☐ Skeletal ☐ Maya
 
 Mecanim is Unity's animation system.
 
@@ -335,7 +335,7 @@ Mecanim allows you to take an animation from one character model and re-target i
 
 ## 26. Creating the three-dimensional shape game object is called:
 
-☑ **Modeling** | ☐ Rigging | ☐ Bones | ☐ Skinning
+☑ **Modeling**☐ Rigging☐ Bones☐ Skinning
 
 Modeling is the process of creating the three-dimensional shape of the game object, where this shape is made up of a number of triangles typically referred to as polygons.
 
@@ -344,7 +344,7 @@ Bones are used to control the movement of the character. Rigging is the creation
 
 ## 27. What is the name of the component used to connect animation clips (animations) with particular game object?
 
-☐ State Machine | ☐ Clips Controller | ☑ **Animator Controller** | ☐ Animator
+☐ State Machine☐ Clips Controller☑ **Animator Controller**☐ Animator
 
 The Animator Controller is a component used to glue animation clips to the game object.
 
@@ -359,14 +359,14 @@ Animator (Window -> Animator) is a Window from where the Animator Controller is 
 
 ## 28. In the Animator Controller one state must be default. It is represented in what color?
 
-☑ **Orange** | ☐ Gray | ☐ Turquoise | ☐ White
+☑ **Orange**☐ Gray☐ Turquoise☐ White
 
 Orange is correct.
 
 
 ## 29. To make a transition not interruptible by other transitions make it:
 
-☐ condition | ☑ **atomic** | ☐ solo | ☐ mute
+☐ condition☑ **atomic**☐ solo☐ mute
 
 You should make the transition atomic.
 Mute and Solo are the debugging options.
@@ -378,7 +378,7 @@ Transitions are often in control by parameters from the Animator controller. The
 
 ## 30. Animation window is not the same as Animator Window?
 
-☑ **True** | ☐ False
+☑ **True**☐ False
 
 The Animation Window (view) allows you to build and customize your own animations within Unity.
 
@@ -387,14 +387,14 @@ For instance, you can create the animation for the Main Camera game object to cr
 
 ## 31. A simplified humanoid bone structure that Mecanim understands how to animate is called?
 
-☐ Rigidbody | ☑ **Avatar** | ☐ Skeleton | ☐ Bones
+☐ Rigidbody☑ **Avatar**☐ Skeleton☐ Bones
 
 An avatar is a simplified humanoid bone structure that Mecanim understands how to animate.
 
 
 ## 32. To define input axes and game actions for your project you need?
 
-☑ **Input Manager** | ☐ Physics Manager | ☐ PresetManager | ☐ PlayerSettings
+☑ **Input Manager**☐ Physics Manager☐ PresetManager☐ PlayerSettings
 
 Input Manager (Edit->Project Settings->Input) is correct.
 
@@ -406,7 +406,7 @@ This solves a particular challenge for dealing with different platform user inpu
 
 ## 33. What component game object need to have to be considered by the Unity physics engine?
 
-☐ Collider | ☐ Physics Raycaster | ☑ **Rigidbody** | ☐ Transform
+☐ Collider☐ Physics Raycaster☑ **Rigidbody**☐ Transform
 
 A game object must have a Rigidbody component for the physics engine to recognize it.
 
@@ -417,7 +417,7 @@ While you could change the Transform itself, this might interfere with the game 
 
 ## 34. To make rotational movement to Rigidbody you would use:
 
-☐ AddForce() | ☑ **AddTorque()**
+☐ AddForce()☑ **AddTorque()**
 
 `AddForce()` and `AddTorque()` are the functions you use in scripts to apply forces to a Rigidbody.
 
@@ -426,14 +426,14 @@ Torque is a type of force that results in a rotational movement.
 
 ## 35. What is the name of the component that enables a game object to react when it comes into contact with other game objects?
 
-☐ Rigidbody | ☑ **Collider**
+☐ Rigidbody☑ **Collider**
 
 Collider component enables a game object to react when it comes into contact with other game objects.
 
 
 
 ## 36. Find the intruder?
-☑ **Game Collider** | ☐ Mesh Collider | ☐ Sphere Collider | ☐ Capsule Collider
+☑ **Game Collider**☐ Mesh Collider☐ Sphere Collider☐ Capsule Collider
 
 There is no Game Collider.
 
@@ -447,13 +447,13 @@ When compound colliders are not accurate enough you can use also the Mesh Collid
 
 
 ## 37. Colliders are visible during the game?
-☐ YES | ☑ **NO**
+☐ YES☑ **NO**
 
 Colliders are invisible during the game.
 
 ## 38. The size of the collider must match the game object?
 
-☐ True | ☑ **False**
+☐ True☑ **False**
 
 You can offset the collider from the game object.
 
@@ -463,7 +463,7 @@ The size doesn't have to be the same as the game object.
 
 ## 39. What update method should be used when applying forces, torques, or other physics-related functions?
 
-☐ Update()  |  ☑ **FixedUpdate()**
+☐ Update()  ☑ **FixedUpdate()**
 
 `Update()` runs once per frame.
 
@@ -474,7 +474,7 @@ The size doesn't have to be the same as the game object.
 
 ## 40. With Unity you can create all game genres (Action, Adventure, Strategy, Sports, Simulation, Puzzles)?
 
-☑ **True** | ☐ False
+☑ **True**☐ False
 
 There are absolutely no limitations for creating any game in Unity base on type.
 
@@ -484,7 +484,7 @@ Action, Adventure, Strategy, Sports, Simulation, Puzzles games are possible.
 
 ## 41. What is bad choice for texture dimension?
 
-☐ 2 | ☐ 8 | ☐ 16 | ☑ **30**
+☐ 2☐ 8☐ 16☑ **30**
 
 Textures should have dimensions based on powers of 2, as in 2, 4, 8, 16 and so on.
 
@@ -497,7 +497,7 @@ Another optimization approach is to use a compressed texture file format to redu
 
 `transform.position.x = 10;`
 
-☐ YES | ☑ **NO**
+☐ YES☑ **NO**
 
 The issue is that you cannot modify the position from a transform directly.
 
@@ -511,14 +511,14 @@ transform.position = newPos;`
 
 ## 43. Cube, Sphere, Capsule, Cylinder, Plane and Quad are called?
 
-☑ **Primitive game objects**  | ☐ Poligon game objects
+☑ **Primitive game objects** ☐ Poligon game objects
 
 These are primitive object types that can be created directly within Unity, namely the `Cube, Sphere, Capsule, Cylinder, Plane and Quad.`
 
 
 ## 44. Unity supports only C# out of the box?
 
-☐ True | ☑ **False**
+☐ True☑ **False**
 
 One can use any one of the following three scripting languages:
 JavaScript, C#, Boo.
@@ -526,7 +526,7 @@ JavaScript, C#, Boo.
 
 ## 45. To preserve the game objects for on a scene transition you use?
 
-☑ **DontDestroyOnLoad()** | ☐ They will not be destroyed
+☑ **DontDestroyOnLoad()**☐ They will not be destroyed
 
 When loading a new level all objects in the scene are destroyed, then the objects in the new level are loaded.
 
@@ -535,7 +535,7 @@ In order to preserve an object during level loading call `DontDestroyOnLoad` on 
 
 ## 46. Unity coroutines have nothing to do with threading?
 
-☑ **True** | ☐ False
+☑ **True**☐ False
 
 Coroutines are state machines sometimes connected with the generator functions. They are not `async await`.
 
@@ -543,7 +543,7 @@ Coroutines are state machines sometimes connected with the generator functions. 
 
 ## 47. When you draw a game to the screen frame-by-frame this is called:
 
-☑ **Rendering** | ☐ Screening | ☐ Shooting  |  ☐ Tracing
+☑ **Rendering**☐ Screening☐ Shooting  ☐ Tracing
 
 To render a game means to draw it to the screen, frame by frame, at a rate fast enough to provide this same illusion of movement in the game.
 
@@ -554,7 +554,7 @@ The Unity game engine calculates game object position and lighting frame-by-fram
 
 ## 48. To improve Unity skills you can:
 
-☐ Attend game jams | ☐ Create your own games | ☐ Read books about Unity | ☑ **All mentioned**
+☐ Attend game jams☐ Create your own games☐ Read books about Unity☑ **All mentioned**
 
 Game jams are great way to improve your skills in a super-fun high-intensity happening.
 
@@ -566,7 +566,7 @@ Teams are formed from the participants at the start of the game jam. Their goal 
 
 
 ## 49. Unity can publish games for the web?
-☑ True | ☐ False
+☑ True☐ False
 Unity supports over 25 platforms including web.
 
 Example platforms: iOS, Android, Windows desktop, Mac OS desktop, Linux desktop, WebGL, Unity Web Player, ...
@@ -575,7 +575,7 @@ Example platforms: iOS, Android, Windows desktop, Mac OS desktop, Linux desktop,
 
 
 ## 50. To represent rotations Unity uses:
-☑ **Quaternions**  | ☐ Torque  | ☐ Vectors  |  ☐ Spherical coordinates
+☑ **Quaternions** ☐ Torque ☐ Vectors  ☐ Spherical coordinates
 
 Unity internally uses Quaternions to represent all rotations.
 
