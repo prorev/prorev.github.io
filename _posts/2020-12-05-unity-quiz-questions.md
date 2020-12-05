@@ -68,7 +68,7 @@ tags:
 
 ## 1. Who created the initial version of Unity?
 
-☐ David Helgason    ☐ Joachim Ante    ☐ Nicholas Francis    ☑ **All mentioned**
+☐ David Helgason    ☐ Joachim Ante    ☐ Nicholas Francis      ☑ **All mentioned**
 
 
 The initial product launched on June 6, 2005.
@@ -78,7 +78,7 @@ The goal was to create an affordable game engine with professional tools for ama
 
 ## 2. Is Scripting editor part of Unity?
 
-☐ YES    ☑ **NO**
+☐ YES      ☑ **NO**
 
 Scripting Editor is where you will write the actual code for your game objects to interact. This may be MonoDevelop, Microsoft Visual Studio, Sublime, or some other editor.
 
@@ -88,7 +88,7 @@ Unity (or Unity Studio) is the visual environment where you interact with the ga
 
 ## 3. When you create a new scene, it will contain?
 
-☐ Empty game object    ☐ Main Camera game object    ☐ Light and Main Camera game object   ☑ **It depends**
+☐ Empty game object    ☐ Main Camera game object    ☐ Light and Main Camera game object     ☑ **It depends**
 
 If you create a 2D scene it will have just the Main Camera game object, if you create a new 3D scene it will have Main Camera game object and the Light.
 
@@ -135,7 +135,7 @@ If the parent of a Rect Transform is also a Rect Transform, the child Rect Trans
 
 ## 8. Unity File->Save Project will also save the current working scene?
 
-☐ YES  ☑ **NO**
+☐ YES    ☑ **NO**
 
 At first you can assume ""Save Project"" would save everything in the project, including the scene you are working on.
 
@@ -145,7 +145,7 @@ As with anything involving a computer, it is a good habit to save your work freq
 
 ## 9. Components govern ... of the game objects?
 
-☐ the look    ☐ the behavior    ☐ the interaction   ☑ **all true**
+☐ the look    ☐ the behavior    ☐ the interaction     ☑ **all true**
 
 A game is made up of scenes, a scene is made up of game objects, a game object is made up of components, and components have properties that are governed by their internal functions.
 
@@ -170,7 +170,7 @@ Serialization is the automatic process of transforming data structures or object
 
 ## 11. Find the intruder?
 
-☐ Directional light   ☑ **Sport light**    ☐ Point light    ☐  Area light 
+☐ Directional light     ☑ **Sport light**    ☐ Point light    ☐  Area light 
 
 Sport light is the intruder. There is no such light in Unity. The following lightning sources are possible:
 
@@ -201,7 +201,7 @@ If you move the parent object, the child objects will maintain that relative pos
 
 ## 14. Can you use Awake() function to pass information from one object to another.
 
-☐ YES  ☑ **NO**
+☐ YES    ☑ **NO**
 
 The order in which the game objects' `Awake()` function is called is random, so you would not want to use the `Awake()`  function for passing information from one object to another as the receiving object might not be ready yet..
 
@@ -229,7 +229,7 @@ In your camera script you will have code like this: `transform.LookAt(object);`
 
 ## 17. Main Camera is game object?
 
-☐ True  ☑ **False**
+☐ True    ☑ **False**
 
 Like any game object it is same for Main Camera. You can move it, apply scripts to it, and do anything else that applies to game objects in general.
 
@@ -298,7 +298,7 @@ You call it with `Physics.Raycast()`.
 
 ## 22. In Unity to make games you can use?
 
-☐ Scripts    ☐ Managed Plugins    ☐ Native plugins  ☑ **All mentioned**
+☐ Scripts    ☐ Managed Plugins    ☐ Native plugins    ☑ **All mentioned**
 
 In Unity, you normally use scripts to create functionality, but you can also include code created outside Unity in the form of a Plugin.
 
@@ -311,7 +311,7 @@ _Native plugins_ are platform-specific native code libraries. They can access fe
 
 
 ## 23. What is required for the game to play?
-☐ Tags  ☑ **Layers**
+☐ Tags    ☑ **Layers**
 
 Unlike Tags, the first seven layers are required by Unity and you are limited to a total of 31 layers.
 
@@ -326,7 +326,7 @@ An IDE combines the familiar operation of a text editor with additional features
 ![Unity](/wp-content/uploads/2020/12/unity2.jpg)
 
 ## 25. What is the name of Unity animation system?
-☐ Blender   ☑ **Mecanim**    ☐ Skeletal    ☐ Maya
+☐ Blender     ☑ **Mecanim**    ☐ Skeletal    ☐ Maya
 
 _Mecanim_ is Unity's animation system.
 
@@ -344,7 +344,7 @@ _Bones_ are used to control the movement of the character. _Rigging_ is the crea
 
 ## 27. What is the name of the component used to connect animation clips (animations) with particular game object?
 
-☐ State Machine    ☐ Clips Controller  ☑ **Animator Controller**    ☐ Animator
+☐ State Machine    ☐ Clips Controller    ☑ **Animator Controller**    ☐ Animator
 
 The _Animator Controller_ is a component used to glue animation clips to the game object.
 
@@ -366,7 +366,7 @@ Orange is correct.
 
 ## 29. To make a transition not interruptible by other transitions make it:
 
-☐ condition  ☑ **atomic**    ☐ solo    ☐ mute
+☐ condition    ☑ **atomic**    ☐ solo    ☐ mute
 
 You should make the transition **atomic**.
 **Mute** and **Solo** are the debugging options.
@@ -387,7 +387,7 @@ For instance, you can create the animation for the Main Camera game object to cr
 
 ## 31. A simplified humanoid bone structure that Mecanim understands how to animate is called?
 
-☐ Rigidbody  ☑ **Avatar**    ☐ Skeleton    ☐ Bones
+☐ Rigidbody    ☑ **Avatar**    ☐ Skeleton    ☐ Bones
 
 An **avatar** is a simplified humanoid bone structure that Mecanim understands how to animate.
 
@@ -406,7 +406,7 @@ This solves a particular challenge for dealing with different platform user inpu
 
 ## 33. What component game object need to have to be considered by the Unity physics engine?
 
-☐ Collider    ☐ Physics Raycaster  ☑ **Rigidbody**    ☐ Transform
+☐ Collider    ☐ Physics Raycaster    ☑ **Rigidbody**    ☐ Transform
 
 A game object must have a Rigidbody component for the physics engine to recognize it.
 
@@ -417,7 +417,7 @@ While you could change the Transform itself, this might interfere with the game 
 
 ## 34. To make rotational movement to Rigidbody you would use:
 
-☐ AddForce()  ☑ **AddTorque()**
+☐ AddForce()    ☑ **AddTorque()**
 
 `AddForce()` and `AddTorque()` are the functions you use in scripts to apply forces to a Rigidbody.
 
@@ -426,7 +426,7 @@ Torque is a type of force that results in a rotational movement.
 
 ## 35. What is the name of the component that enables a game object to react when it comes into contact with other game objects?
 
-☐ Rigidbody  ☑ **Collider**
+☐ Rigidbody    ☑ **Collider**
 
 **Collider** component enables a game object to react when it comes into contact with other game objects.
 
@@ -447,13 +447,13 @@ When compound colliders are not accurate enough you can use also the Mesh Collid
 
 
 ## 37. Colliders are visible during the game?
-☐ YES  ☑ **NO**
+☐ YES    ☑ **NO**
 
 Colliders are invisible during the game.
 
 ## 38. The size of the collider must match the game object?
 
-☐ True  ☑ **False**
+☐ True    ☑ **False**
 
 You can offset the collider from the game object.
 
@@ -463,7 +463,7 @@ The size doesn't have to be the same as the game object.
 
 ## 39. What update method should be used when applying forces, torques, or other physics-related functions?
 
-☐ Update()    ☑ **FixedUpdate()**
+☐ Update()      ☑ **FixedUpdate()**
 
 `Update()` runs once per frame.
 
@@ -484,7 +484,7 @@ Action, Adventure, Strategy, Sports, Simulation, Puzzles games are possible.
 
 ## 41. What is bad choice for texture dimension?
 
-☐ 2    ☐ 8    ☐ 16  ☑ **30**
+☐ 2    ☐ 8    ☐ 16    ☑ **30**
 
 Textures should have dimensions based on powers of 2, as in 2, 4, 8, 16 and so on.
 
@@ -497,7 +497,7 @@ Another optimization approach is to use a compressed texture file format to redu
 
 `transform.position.x = 10;`
 
-☐ YES  ☑ **NO**
+☐ YES    ☑ **NO**
 
 The issue is that you cannot modify the position from a transform directly.
 
@@ -518,7 +518,7 @@ These are primitive object types that can be created directly within Unity, name
 
 ## 44. Unity supports only C# out of the box?
 
-☐ True  ☑ **False**
+☐ True    ☑ **False**
 
 One can use any one of the following three scripting languages:
 JavaScript, C#, Boo.
@@ -554,7 +554,7 @@ The Unity game engine calculates game object position and lighting frame-by-fram
 
 ## 48. To improve Unity skills you can:
 
-☐ Attend game jams    ☐ Create your own games    ☐ Read books about Unity  ☑ **All mentioned**
+☐ Attend game jams    ☐ Create your own games    ☐ Read books about Unity    ☑ **All mentioned**
 
 Game jams are great way to improve your skills in a super-fun high-intensity happening.
 
