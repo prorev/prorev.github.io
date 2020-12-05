@@ -127,7 +127,7 @@ Transform component is one component that every 3D game object must have. Even t
 
 ☑ **Rect Transform**    ☐ Transform2D    ☐ PlaneTransform    ☐ Transform
 
-The Rect Transform component is the 2D layout counterpart of the Transform component.
+The _Rect Transform_ component is the 2D layout counterpart of the _Transform_ component.
 
 Where Transform represents a single point, Rect Transform represent a rectangle that a UI element can be placed inside.
 
@@ -213,7 +213,7 @@ The order in which the game objects' `Awake()` function is called is random, so 
 
 ## 15. How you can pause the game?
 
-☑ **Time.timeScale = 0;**    ☐ time.deltaTime = 0;    ☐ Time.fixedDeltaTime = 0    ☐ Time.time
+☑ **Time.timeScale = 0**    ☐ time.deltaTime = 0;    ☐ Time.fixedDeltaTime = 0    ☐ Time.time
 
 `Time.timeScale = 0;` is the correct one.
 `Time.smoothDeltaTime, Time.time, Time.unscaledDeltaTime, Time.deltaTime` are read only.
