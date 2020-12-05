@@ -7,9 +7,10 @@ layout: post
 permalink: /csharp/unity/
 published: true
 categories:
-   - unity
+   - csharp
 tags:
    - quiz
+   - unity
 ---
 - [1. Who created the initial version of Unity?](#1-who-created-the-initial-version-of-unity)
 - [2. Is Scripting editor part of Unity?](#2-is-scripting-editor-part-of-unity)
