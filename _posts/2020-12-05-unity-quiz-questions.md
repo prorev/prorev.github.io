@@ -285,7 +285,7 @@ Term ""Gizmos"" is used to give visual debugging or setup aids in the scene view
 ## 21. To check if your bullet hits the target you use:
 **Raycasting**  ☐ Trajectory Simulation
 
-Raycasting is a very useful and powerful tool available on the physics engine.
+_Raycasting_ is a very useful and powerful tool available on the physics engine.
 
 It allows us to fire a ray on a certain direction with a certain length and it will let us know if it hit something.
 
@@ -304,9 +304,9 @@ In Unity, you normally use scripts to create functionality, but you can also inc
 
 There are two kinds of plugins you can use in Unity: Managed plugins and Native plugins.
 
-Managed plugins are managed .NET assemblies. They contain only .NET code which means that they cannot access any features that are not supported by the .NET libraries.
+_Managed plugins_ are managed .NET assemblies. They contain only .NET code which means that they cannot access any features that are not supported by the .NET libraries.
 
-Native plugins are platform-specific native code libraries. They can access features like OS calls and third-party code libraries that would otherwise not be available to Unity.
+_Native plugins_ are platform-specific native code libraries. They can access features like OS calls and third-party code libraries that would otherwise not be available to Unity.
 
 
 
@@ -316,9 +316,10 @@ Native plugins are platform-specific native code libraries. They can access feat
 Unlike Tags, the first seven layers are required by Unity and you are limited to a total of 31 layers.
 
 ## 24. What is the default script editor in Unity?
+
 ☑ **MonoDevelop**  ☐ Visual Studio 
 
-MonoDevelop is the integrated development environment (IDE) supplied with Unity.
+_MonoDevelop_ is the integrated development environment (IDE) supplied with Unity.
 
 An IDE combines the familiar operation of a text editor with additional features for debugging and other project management tasks.
 
@@ -327,7 +328,7 @@ An IDE combines the familiar operation of a text editor with additional features
 ## 25. What is the name of Unity animation system?
 ☐ Blender   ☑ **Mecanim**  ☐ Skeletal  ☐ Maya
 
-Mecanim is Unity's animation system.
+_Mecanim_ is Unity's animation system.
 
 Mecanim allows you to take an animation from one character model and re-target it onto another, rather than having to create an entirely new animation sequence for the second character.
 
@@ -336,20 +337,20 @@ Mecanim allows you to take an animation from one character model and re-target i
 
 ☑ **Modeling**  ☐ Rigging  ☐ Bones  ☐ Skinning
 
-Modeling is the process of creating the three-dimensional shape of the game object, where this shape is made up of a number of triangles typically referred to as polygons.
+_Modeling_ is the process of creating the three-dimensional shape of the game object, where this shape is made up of a number of triangles typically referred to as polygons.
 
-Bones are used to control the movement of the character. Rigging is the creation of joint hierarchy. Skinning is connecting the mesh to the bones of the joint hierarchy.
+_Bones_ are used to control the movement of the character. _Rigging_ is the creation of joint hierarchy. _Skinning_ is connecting the mesh to the bones of the joint hierarchy.
 
 
 ## 27. What is the name of the component used to connect animation clips (animations) with particular game object?
 
 ☐ State Machine  ☐ Clips Controller  ☑ **Animator Controller**  ☐ Animator
 
-The Animator Controller is a component used to glue animation clips to the game object.
+The _Animator Controller_ is a component used to glue animation clips to the game object.
 
-The various animations are called <b>states</b>.
+The various animations are called **states**.
 
-For example, when a character is idle, it is in the "Idle state". Moving from one state to another is called a transition.
+For example, when a character is idle, it is in the "**Idle state**". Moving from one state to another is called a transition.
 
 The compilation of states and transitions that you design for Animator Controller represent what is called a state machine.
 
@@ -367,8 +368,8 @@ Orange is correct.
 
 ☐ condition  ☑ **atomic**  ☐ solo  ☐ mute
 
-You should make the transition atomic.
-Mute and Solo are the debugging options.
+You should make the transition **atomic**.
+**Mute** and **Solo** are the debugging options.
 
 Transition condition is what will specify the transition to run.
 
@@ -388,14 +389,14 @@ For instance, you can create the animation for the Main Camera game object to cr
 
 ☐ Rigidbody  ☑ **Avatar**  ☐ Skeleton  ☐ Bones
 
-An avatar is a simplified humanoid bone structure that Mecanim understands how to animate.
+An **avatar** is a simplified humanoid bone structure that Mecanim understands how to animate.
 
 
 ## 32. To define input axes and game actions for your project you need?
 
 ☑ **Input Manager**  ☐ Physics Manager  ☐ PresetManager  ☐ PlayerSettings
 
-Input Manager (Edit->Project Settings->Input) is correct.
+**Input Manager** (Edit->Project Settings->Input) is correct.
 
 The Input Manager is where you define all the different input axes and game actions for your project.
 
@@ -427,7 +428,7 @@ Torque is a type of force that results in a rotational movement.
 
 ☐ Rigidbody  ☑ **Collider**
 
-Collider component enables a game object to react when it comes into contact with other game objects.
+**Collider** component enables a game object to react when it comes into contact with other game objects.
 
 
 
