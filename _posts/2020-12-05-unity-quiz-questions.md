@@ -19,7 +19,7 @@ tags:
 - [6. What is the name of the component that every 3D game object must have?](#6-what-is-the-name-of-the-component-that-every-3d-game-object-must-have)
 - [7. What is the 2D version of Transform component?](#7-what-is-the-2d-version-of-transform-component)
 - [8. Unity File->Save Project will also save the current working scene?](#8-unity-file-save-project-will-also-save-the-current-working-scene)
-- [9. Components govern ____ of the game objects?](#9-components-govern-____-of-the-game-objects)
+- [9. Components govern ... of the game objects?](#9-components-govern--of-the-game-objects)
 - [10. An asset type that allows you to store game objects and create multiple instances later is called?](#10-an-asset-type-that-allows-you-to-store-game-objects-and-create-multiple-instances-later-is-called)
 - [11. Find the intruder?](#11-find-the-intruder)
 - [12. All 3D game object shapes are made up of interconnected ___?](#12-all-3d-game-object-shapes-are-made-up-of-interconnected-___)
@@ -141,7 +141,7 @@ However, this is not true. It actually saves everything in the project except fo
 
 As with anything involving a computer, it is a good habit to save your work frequently.
 
-## 9. Components govern ____ of the game objects?
+## 9. Components govern ... of the game objects?
 
 _the look | the behavior | the interaction  | **all true**_
 
