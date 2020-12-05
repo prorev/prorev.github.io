@@ -68,7 +68,7 @@ tags:
 
 ## 1. Who created the initial version of Unity?
 
-_David Helgason  |  Joachim Ante  |  Nicholas Francis  |  **All mentioned**_
+☐ David Helgason  |  ☐ Joachim Ante  |  ☐ Nicholas Francis  |  ☑ **All mentioned**
 
 
 The initial product launched on June 6, 2005.
@@ -78,7 +78,7 @@ The goal was to create an affordable game engine with professional tools for ama
 
 ## 2. Is Scripting editor part of Unity?
 
-_YES  |  **NO**_
+☐ YES  |  ☑ **NO**
 
 Scripting Editor is where you will write the actual code for your game objects to interact. This may be MonoDevelop, Microsoft Visual Studio, Sublime, or some other editor.
 
