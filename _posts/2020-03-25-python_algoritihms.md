@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Codility lessons
+title: 70+ Codility Problems solved in Python
 date: 2020-03-05
 author: taimane
 layout: post
@@ -110,7 +110,7 @@ tags:
   - [Find peak differences](#find-peak-differences)
   - [Prime numbers](#prime-numbers)
   - [GCD substract](#gcd-substract)
-  - [GCD using %](#gcd-using)
+  - [GCD using %](#gcd-using-)
   - [LCD based on GCD](#lcd-based-on-gcd)
   - [First 50 fibs](#first-50-fibs)
   - [Nice looking matrix](#nice-looking-matrix)
@@ -122,6 +122,7 @@ tags:
   - [Smart factorial](#smart-factorial)
   - [Number of combinations](#number-of-combinations)
 
+This document has 
 ## Iterations
 
 ### BinaryGap
