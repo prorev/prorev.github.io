@@ -62,12 +62,14 @@ tags:
 - [49. Unity can publish games for the web?](#49-unity-can-publish-games-for-the-web)
 - [50. To represent rotations Unity uses:](#50-to-represent-rotations-unity-uses)
 
+
 ![Unity](/wp-content/uploads/2020/12/unity1.jpg)
 
 
 ## 1. Who created the initial version of Unity?
 
 _David Helgason  |  Joachim Ante  |  Nicholas Francis  |  **All mentioned**_
+
 
 The initial product launched on June 6, 2005.
 
@@ -168,7 +170,7 @@ Serialization is the automatic process of transforming data structures or object
 
 ## 11. Find the intruder?
 
-_Directional light |  **Sport light** |  Point light |  Area light_
+_ Directional light |  **Sport light** |  Point light |  Area light _
 
 Sport light is the intruder. There is no such light in Unity. The following lightning sources are possible:
 
@@ -183,7 +185,7 @@ Sport light is the intruder. There is no such light in Unity. The following ligh
 
 ## 12. All 3D game object shapes are made up of interconnected ...?
 
-_**triangles** |  lines |  quads |  squares_
+_ **triangles** |  lines |  quads |  squares _
 
 All 3D game object shapes are fundamentally made up of interconnected triangles called polygons. Each polygon is defined by its three sides (or edges), and the points where these edges meet, called vertices or verts. The mesh is the collection of polygons making up the 3D geometry of a game object.
 
