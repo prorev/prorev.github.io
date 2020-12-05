@@ -174,13 +174,13 @@ Serialization is the automatic process of transforming data structures or object
 
 Sport light is the intruder. There is no such light in Unity. The following lightning sources are possible:
 
-_Directional light_: Acts like sunlight to illuminate every game object in the scene, though it does not come from a single point source.
+**Directional light**: Acts like sunlight to illuminate every game object in the scene, though it does not come from a single point source.
 
-_Spot light_: Cone-shaped area of light from a single point that acts like a spotlight or flashlight.
+**Spot light**: Cone-shaped area of light from a single point that acts like a spotlight or flashlight.
 
-_Point light_: Acts like a light bulb, shining in all directions from a central point.
+**Point light**: Acts like a light bulb, shining in all directions from a central point.
 
-_Area light_: Used for baking into lightmaps.
+**Area light**: Used for baking into lightmaps.
 
 
 ## 12. All 3D game object shapes are made up of interconnected ...?
