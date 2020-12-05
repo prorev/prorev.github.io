@@ -22,7 +22,7 @@ tags:
 - [9. Components govern ... of the game objects?](#9-components-govern--of-the-game-objects)
 - [10. An asset type that allows you to store game objects and create multiple instances later is called?](#10-an-asset-type-that-allows-you-to-store-game-objects-and-create-multiple-instances-later-is-called)
 - [11. Find the intruder?](#11-find-the-intruder)
-- [12. All 3D game object shapes are made up of interconnected ___?](#12-all-3d-game-object-shapes-are-made-up-of-interconnected-___)
+- [12. All 3D game object shapes are made up of interconnected ...?](#12-all-3d-game-object-shapes-are-made-up-of-interconnected-)
 - [13. When you move the game object on the scene what will happen with the child game object?](#13-when-you-move-the-game-object-on-the-scene-what-will-happen-with-the-child-game-object)
 - [14. Can you use Awake() function to pass information from one object to another.](#14-can-you-use-awake-function-to-pass-information-from-one-object-to-another)
 - [15. How you can pause the game?](#15-how-you-can-pause-the-game)
@@ -181,7 +181,7 @@ Sport light is the intruder. There is no such light in Unity. The following ligh
 4- Area light: Used for baking into lightmaps.
 
 
-## 12. All 3D game object shapes are made up of interconnected ___?
+## 12. All 3D game object shapes are made up of interconnected ...?
 
 _**triangles** |  lines |  quads |  squares_
 
