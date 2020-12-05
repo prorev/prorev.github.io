@@ -212,7 +212,6 @@ The order in which the game objects' `Awake()` function is called is random, so 
 ☑ **Time.timeScale = 0;**    ☐ time.deltaTime = 0;    ☐ Time.fixedDeltaTime = 0    ☐ Time.time
 
 `Time.timeScale = 0;` is the correct one.
-
 `Time.smoothDeltaTime, Time.time, Time.unscaledDeltaTime, Time.deltaTime` are read only.
 
 
@@ -273,17 +272,16 @@ OnDestroy()  // game objects objects being destroyed
 The Rigidbody component is an essential component when adding physical interactions between objects.
 
 Game objects which don't have a Rigidbody component are considered static colliders.
-
-When moving a game object, it is good to add a Rigidbody to it for efficiency.
+When moving a game object, it is good to add a Rigidbody to it for efficiency. 
 
 If you want to control its movement directly, you simply need to mark it as kinematic on its Rigidbody properties.
 
-Term ""Gizmos"" is used to give visual debugging or setup aids in the scene view. Gismo colliders do not exist. They are fake.
+Term _Gizmos_ is used to give visual debugging or setup aids in the scene view. Gismo colliders do not exist. They are fake.
 
 
 
 ## 21. To check if your bullet hits the target you use:
-**Raycasting**    ☐ Trajectory Simulation
+☑ **Raycasting**    ☐ Trajectory Simulation
 
 _Raycasting_ is a very useful and powerful tool available on the physics engine.
 
@@ -348,13 +346,9 @@ _Bones_ are used to control the movement of the character. _Rigging_ is the crea
 
 The _Animator Controller_ is a component used to glue animation clips to the game object.
 
-The various animations are called **states**.
+The various animations are called **states**. For example, when a character is idle, it is in the *Idle state*. Moving from one state to another is called a transition.
 
-For example, when a character is idle, it is in the "**Idle state**". Moving from one state to another is called a transition.
-
-The compilation of states and transitions that you design for Animator Controller represent what is called a state machine.
-
-Animator (Window -> Animator) is a Window from where the Animator Controller is controlled.
+The compilation of states and transitions that you design for Animator Controller represent what is called a state machine. Animator (Window -> Animator) is a Window from where the Animator Controller is controlled.
 
 
 ## 28. In the Animator Controller one state must be default. It is represented in what color?
@@ -371,9 +365,7 @@ Orange is correct.
 You should make the transition **atomic**.
 **Mute** and **Solo** are the debugging options.
 
-Transition condition is what will specify the transition to run.
-
-Transitions are often in control by parameters from the Animator controller. There can be multiple conditions per transition.
+Transition condition is what will specify the transition to run. Transitions are often in control by parameters from the Animator controller. There can be multiple conditions per transition.
 
 
 ## 30. Animation window is not the same as Animator Window?
@@ -566,9 +558,10 @@ Teams are formed from the participants at the start of the game jam. Their goal 
 
 
 ## 49. Unity can publish games for the web?
-☑ True    ☐ False
-Unity supports over 25 platforms including web.
 
+☑ True    ☐ False
+
+Unity supports over 25 platforms including web.
 Example platforms: iOS, Android, Windows desktop, Mac OS desktop, Linux desktop, WebGL, Unity Web Player, ...
 
 
