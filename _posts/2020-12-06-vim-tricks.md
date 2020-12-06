@@ -114,9 +114,9 @@ Using `x` you will delete the single character under the cursor when in normal m
 
 ☐ :di   ☐ :reg    ☐ :display   ☑ **all would work**
 
-You can use either `:di`, `:display`, `:reg` or `:registers` to display what is in Vim registers.
+You can use either `:di`, `:display`, `:reg` or `:registers` to display what's inside Vim registers.
 
-Note: When you delete, copy or cut stuff, it gets saved to registers. You can pull stuff from registers at a later time.
+> When you delete, copy or cut stuff, it gets saved to registers. You can pull stuff from registers later time.
 
 Here is how it works to directly write/append to register `a`:
 `""ayy` will replace register `a` with the current line.
