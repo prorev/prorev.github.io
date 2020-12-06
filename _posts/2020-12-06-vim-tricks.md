@@ -69,7 +69,9 @@ tags:
 ## 1. Who created Vi?
 ☑ **Bill Joy** ☐  Bram Moolenaar ☐  Chuck Haley ☐  Vi Emacs
 
-The original code for Vi was written by Bill Joy in 1976. Chuck Haleyex is known for writing Ex editor. Bram Moolenaar is known for making (Vi improved) or Vim editor.
+The original code for Vi was written by Bill Joy in 1976. 
+
+Chuck Haleyex is known for writing Ex editor. Bram Moolenaar is known for making (Vi improved) or Vim editor.
 
 
 ## 2. Is this true?
