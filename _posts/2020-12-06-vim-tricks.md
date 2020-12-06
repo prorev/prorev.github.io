@@ -33,7 +33,7 @@ tags:
 - [19. If you start Vim with `-Z` option this will?](#19-if-you-start-vim-with--z-option-this-will)
 - [20. What will happen if you write `:new` in Vim?](#20-what-will-happen-if-you-write-new-in-vim)
 - [21. You have multiple opened buffers inside Vim. You would like to close them all and save the changes if possible. What you will write?](#21-you-have-multiple-opened-buffers-inside-vim-you-would-like-to-close-them-all-and-save-the-changes-if-possible-what-you-will-write)
-- [22. You are inside the Vim help. What will the ` ctrl-] ` command do?](#22-you-are-inside-the-vim-help-what-will-the-ctrl--command-do)
+- [22. You are inside the Vim help. What will the `ctrl-]` command do?](#22-you-are-inside-the-vim-help-what-will-the-ctrl--command-do)
 - [23. You would like to run the `pwd` Linux command from Vim. What you should type?](#23-you-would-like-to-run-the-pwd-linux-command-from-vim-what-you-should-type)
 - [24. Which command will substitute word `cat` with word `dog` through the entire opened buffer?](#24-which-command-will-substitute-word-cat-with-word-dog-through-the-entire-opened-buffer)
 - [25. You would like to select the block of text and substitute all occurrences of the word `cat` with the word `dog` inside that block. What would you use?](#25-you-would-like-to-select-the-block-of-text-and-substitute-all-occurrences-of-the-word-cat-with-the-word-dog-inside-that-block-what-would-you-use)
@@ -183,7 +183,7 @@ Just `vim hello` works.
 
 ☐ :set numbers ☑ **:set number** ☐ :set num   ☐ :set ln
 
-Just `:set number` ( `singular` ) will work.
+Just `:set number` will work.
 
 `:set numbers `, `:set num` or `:set ln` will not work.
 
@@ -279,15 +279,15 @@ Note: All opened files are associated with a buffer, but there are also buffers 
 
 If buffers do not have the name there is a problem. Use `:w name` to save individual buffers to a file.
 
-## 22. You are inside the Vim help. What will the ` ctrl-] ` command do?
+## 22. You are inside the Vim help. What will the `ctrl-]` command do?
 
 ☑ **Will follow the link under the cursor** ☐  Nothing since you should use :tag {link} ☐  Nothing since ctrl-] is the default Telnet command ☐  Undefined
 
-`ctrl-] ` will jump to the definition of the keyword under the cursor.
+`ctrl-]` will jump to the definition of the keyword under the cursor.
 
 Same as you type `:tag {link}`, where {link} is the keyword under or after cursor.
 
-`ctrl-] ` is the default telnet escape key but this is not related to Vim.
+`ctrl-]` is the default telnet escape key but this is not related to Vim.
 
 If you type `:set mouse=a` you can use mouse to jump.
 
