@@ -187,16 +187,16 @@ Just `vim hello` works.
 
 Just `:set number` will work.
 
-`:set numbers `, `:set num` or `:set ln` will not work.
+`:set numbers`, `:set num` or `:set ln` will not work.
 
 
 ## 12. How to enable syntax highlighting in Vim?
 
 ☑ **:syntax on** ☐  :syntax off ☐  :set syntax ☐  :set syntaxon
 
-Just `:syntax on ` will work.
+Just `:syntax on` will work.
 
-` :syntax off`, ` :set syntax` or ` :set syntaxon` are wrong.
+` :syntax off`, `:set syntax` or `:set syntaxon` are wrong.
 
 
 ## 13. Vim supports coloring schemes?
@@ -205,7 +205,7 @@ Just `:syntax on ` will work.
 Vim supports multiple color schemes. The default color scheme is called `default`.
 
 To get the list of all coloring schemes you type:
-` :colorscheme [space] [tab] `
+`:colorscheme [space] [tab]`
 
 ## 14. How to get the list of items you can preset using the `set` command?
 
@@ -313,11 +313,11 @@ Wrong would be to use any of these:
 
 ☑ **:%s/cat/dog/g** ☐  :substitute/cat/dog/g ☐ :s/cat/dog  ☐  :s/cat/dog/g 
 
-Just the command ` :%s/cat/dog/g ` works.
+Just the command `:%s/cat/dog/g` works.
 When doing substitutions Vim traverses line by line.
 
-`%s ` at the very beginning means to substitute through the opened buffer.
-`/g ` at the end of the command means replace all occurrences inside a line.
+`%s` at the very beginning means to substitute through the opened buffer.
+`/g` at the end of the command means replace all occurrences inside a line.
 
 `:s` is equal to `:substitute` however, this will work only for the line under the cursor. This is why we need to use `:%s` to work for all lines.
 
@@ -328,7 +328,7 @@ When doing substitutions Vim traverses line by line.
 Yes, you would use the Vim visual mode.
 
 To enter Vim visual mode do `V` command while in Normal mode.
-You can also use ` ctrl-v ` to enter `visual block mode` or ` shift-v ` to enter the `visual line mode` if this works.
+You can also use `ctrl-v` to enter `visual block mode` or `shift-v` to enter the `visual line mode` if this works.
 
 Then you can issue the command: `:'<,'>s/cat/dog/g`.
 
@@ -362,7 +362,7 @@ The `p` command means `paste` and it will paste to the right from the current cu
 ☑ **Write :help asdf** ☐  Use vimtutor program ☐  Read the manual ☐  all true
 
 The correct way would be:
-`:help asdf `.
+`:help asdf`.
 
 If you cannot recall the exact command `asdf` use `:helpgrep asdf`.
 
@@ -412,7 +412,7 @@ They will list all the buffers in Vim. This list is called a **buffer list**.
 
 `:bdelete 1` would be incorrect.
 
-The actual syntax for `:bdelete ` allows also deleting by name.
+The actual syntax for `:bdelete` allows also deleting by name.
 
 Delete by name: `:bdelete name1 name2`.
 
@@ -492,7 +492,7 @@ In the Vim visual mode `u` means `make highlighted text lowercase`.
 
 Visual mode is flexible and easy way to select a block of text.
 
-You can enter this mode with `ctrl-v`, ` v ` or ` V `.
+You can enter this mode with `ctrl-v`, `v` or `V`.
 
 `ctrl-v` is the only way to select a block of text.
 `v` is blockwise visual mode.
@@ -516,7 +516,7 @@ There are few `:map` variants.
 
 ☑ **ctrl-v** ☐  V ☐  v☐  gv
 
-Get out of insert mode with [Esc], hit ` ctrl-v ` and you should see the selected text highlighted.
+Get out of insert mode with [Esc], hit `ctrl-v` and you should see the selected text highlighted.
 
 The other options have the meaning:
 
@@ -589,7 +589,7 @@ Here is the list of all jump motions:
 
 If you make the cursor jump with one of these commands, the position of the cursor before the jump is remembered.
 
-You can return to that position with the ` ' ` and ```` command, unless the line containing that position was changed or deleted.
+You can return to that position with the `'` and ```` command, unless the line containing that position was changed or deleted.
 
 ## 47. You need to select the whole buffer text in Vim. What is the correct solution?
 
@@ -605,8 +605,6 @@ Even to append `.vimrc` file with that map.
 Other commands do copy all text, not just select:
 `:%y+`
 `gg""+yG`
-
-
 
 
 
