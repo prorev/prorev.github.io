@@ -623,7 +623,7 @@ You can also traverse the history if you use `: ↑` or `: ↓` (arrow keys).
 
 ## 49. You would like to view file in hexadecimal notation in Linux. What would be correct?
 
-☑ **:%!xxd **   ☐ :%!hex
+☑ **:%!xxd**   ☐ :%!hex
 
 `:%!xxd` is correct.
 
