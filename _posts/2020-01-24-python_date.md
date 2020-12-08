@@ -25,8 +25,6 @@ tags:
 - [Strftime](#strftime)
 
 ---
-![find grep](/wp-content/uploads/2020/12/datetime.jpg)
-
 Working with _date_ and _time_ in python is important, and it should be fun and easy, but if you know how.
 
 ## Meet datetime
@@ -261,4 +259,5 @@ Code | Example
 %X | 07:06:05
 
 
+![date time](/wp-content/uploads/2020/12/datetime.jpg)
 
