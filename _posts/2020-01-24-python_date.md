@@ -14,8 +14,6 @@ tags:
    - time
    - string
 ---
-![find grep](/wp-content/uploads/2020/12/datetime.jpg)
-
 - [Meet datetime](#meet-datetime)
   - [Create datetime from year, month, date ...](#create-datetime-from-year-month-date-)
   - [Create datetime from timestamp](#create-datetime-from-timestamp)
@@ -27,6 +25,8 @@ tags:
 - [Strftime](#strftime)
 
 ---
+![find grep](/wp-content/uploads/2020/12/datetime.jpg)
+
 Working with _date_ and _time_ in python is important, and it should be fun and easy, but if you know how.
 
 ## Meet datetime
