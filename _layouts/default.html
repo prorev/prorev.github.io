@@ -10,7 +10,7 @@
     {% if post.title == "" %}
       <title> {{site.title | upcase}}  </title>
     {% else %}    
-      <title> {{page.title }} - {{site.title | upcase}}  </title>
+      <title> {{page.title | upcase }} — {{site.title | upcase}}  </title>
     {% endif %}  
     
     <meta property="og:locale" content="en_US" />
