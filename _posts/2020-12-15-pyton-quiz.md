@@ -23,7 +23,6 @@ blockquote:before {
 blockquote {
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #886688;
   border-left: 2px solid #ffeb8e;
 }
 </style>

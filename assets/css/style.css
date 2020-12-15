@@ -70,7 +70,7 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 
-p > code, li > code {
+p code, li code {
   color: #f4a;
   font-weight:bold;
 }
