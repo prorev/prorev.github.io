@@ -17,7 +17,7 @@ blockquote:before {
   content: "answers:";
   font-size:10px;
   text-transform: uppercase;
-  color:gray;
+  color:ffffff;
 }
 
 blockquote {
