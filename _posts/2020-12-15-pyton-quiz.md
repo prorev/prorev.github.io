@@ -12,6 +12,21 @@ tags:
    - quiz
    - questions
 ---
+<style>
+blockquote:before {
+  content: "Question:";
+  font-size:10px;
+  text-transform: uppercase;
+  color:gray;
+}
+
+blockquote {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #886688;
+  border-left: 2px solid #ffeb8e;
+}
+</style>
 - [1. Who created Python?](#1-who-created-python)
 - [2. In Python strings, Unicode strings, lists, tuples, buffers, and xrange objects are called:](#2-in-python-strings-unicode-strings-lists-tuples-buffers-and-xrange-objects-are-called)
 - [3. What is the output?](#3-what-is-the-output)
@@ -500,13 +515,21 @@ For example:
 
 ## 31. Let `a = [1, 2, 3, 4, 5]` then which of the following is correct?
 
-a[:] => [1,2,3,4] / a[0:] => [2,3,4,5] / **a[:100] => [1,2,3,4,5]** / a[-1:] => [1,2]
+> a[:] => [1,2,3,4] 
+> 
+> a[0:] => [2,3,4,5] 
+> 
+> **a[:100] => [1,2,3,4,5]** 
+> 
+> a[-1:] => [1,2]
 
 There is logic behind the string range slicing for the first and for the second argument.
 
+```
 [1  2  3  4  5]
  0  1  2  3  4   # first argument index
 -5 -4 -3 -2 -1   # second argument index
+```
 
 If we omit the arguments [:] we will get the full list so a[:] => [1,2,3,4] is not correct - it should take the whole list.
 
@@ -518,7 +541,13 @@ a[:100] => [1,2,3,4,5] would be the correct answer.
 
 `n = '5'`
 
-int / **string** / tuple / operator
+> int 
+> 
+> **string** 
+> 
+> tuple 
+> 
+> operator
 
 Use Python interpreter to type this:
 
