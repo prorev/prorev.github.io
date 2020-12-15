@@ -28,7 +28,6 @@ blockquote {
 
 p code, li code {
   color: #f4a;
-  font-weight:bold;
 }
 </style>
 - [1. Who created Python?](#1-who-created-python)
@@ -798,7 +797,7 @@ result = lambda x: x * x
 print(result(5))
 ```
 
-> `lambda x: x*x` 
+> lambda x: x*x 
 > 
 > 10 
 > 
@@ -838,13 +837,13 @@ We have created a tuple by concatenation of two tuples, not two strings.
 
 ## 53. What is used to concatenate two strings in Python?
 
-> . operator 
+> `.` operator 
 > 
-> **+ operator** 
+> **`+` operator** 
 > 
-> strcat() function 
+> `strcat()` function 
 > 
-> ^ operator
+> `^` operator
 
 
 In order to merge two strings into a single object, we use the + operator.
