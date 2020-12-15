@@ -12,22 +12,28 @@ categories:
 tags:
    - ssh
 ---
-Here are some JavaScript simple tips.
+- [In JavaScript there are `true` and `false`](#in-javascript-there-are-true-and-false)
+- [There are no classes in JavaScript, only objects](#there-are-no-classes-in-javascript-only-objects)
+- [Forget about `new Object()`](#forget-about-new-object)
+- [How to create an anonymous function and execute it?](#how-to-create-an-anonymous-function-and-execute-it)
 
-### In JavaScript there are `true` and `false`
+Here are few JavaScript simple tips.
+
+## In JavaScript there are `true` and `false`
 
 These all will *eval* to `false`:
 
-```
+```js
 undefined
 null
 false
 0
 NaN
 ```
+
 All these will be `true`:
 
-```
+```js
 true
 1
 123 // any number
@@ -36,31 +42,40 @@ true
 {} // even empty objects, except null
 ```
 
-### There are no classes in JavaScript, only objects
+## There are no classes in JavaScript, only objects
 
 You can use the following shorthand to create object.
 
-    var obj = new Object();
+```js
+var obj = new Object();
+```
 
 
-### How not to  use `new Object()`
+## Forget about `new Object()`
 You can forget the syntax `var obj = new Object();` if you use `{}` like this:
 
-    var obj = {};
+```js
+var obj = {};
+```
 
 Similar no need to use `var arr = new Array();`
 
-    var arr = []; 
+```js
+var arr = []; 
+```
 
 looks more compact.
 
 You can use `var regex = new RegExp('something');` alternative:
 
-    var regex = /something/;
+```js
+var regex = /something/;
+```
 
+## How to create an anonymous function and execute it?    
 
-### How to create an anonymous function and execute it?    
-
-    (function(){})();
+```js
+(function(){})();
+```
 
 This single-liner first defines anonymous function in JavaScript `function(){}` and then executes it `()`. Currently this function does nothing, but you can set _something_ inside the `{}`.    

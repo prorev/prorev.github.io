@@ -13,7 +13,7 @@ categories:
 tags:
    - dns
 ---
-**DNS prefetching** is browser feature where the browser proactively performs domain name resolution on both links that the user may choose to follow as well as URLs for items referenced by the document, including images, CSS, JavaScript, and so forth.
+**DNS prefetching** is browser _feature_ where the browser proactively performs domain name resolution on both links that the user may choose to follow as well as URLs for items referenced by the document, including images, CSS, JavaScript, and so forth.
 
 This prefetching is performed in the background, so that the DNS is likely to already have been resolved by the time the referenced items are actually needed. This reduces latency when, for example, the user actually clicks a link.
 
@@ -28,12 +28,12 @@ By doing this, the high latency domain name resolution process doesn't cause del
 Web server can opt out of DNS prefetching by serving content with the `x-dns-prefetch-control`: HTTP header set to **off**.
 
 
-```
+```html
 <meta http-equiv="x-dns-prefetch-control" content="off">
 ```
 
 You can also set explicitly the dns-prefetching like this:
 
-```
+```html
 <link rel="dns-prefetch" href="https://my-domain.com">
 ```
