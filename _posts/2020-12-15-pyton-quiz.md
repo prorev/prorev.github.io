@@ -235,7 +235,7 @@ In certain cases, multiline comments are better option. Multiline comments start
 >
 > 1234 
 > 
-> **1*2*3*4** 
+> **1\*2\*3\*4** 
 > 
 > 24
 
