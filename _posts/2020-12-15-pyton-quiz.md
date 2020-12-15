@@ -14,7 +14,7 @@ tags:
 ---
 <style>
 blockquote:before {
-  content: "Question:";
+  content: "answers:";
   font-size:10px;
   text-transform: uppercase;
   color:gray;
