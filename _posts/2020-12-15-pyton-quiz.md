@@ -1,7 +1,7 @@
 ---
 id: 2987
 title: Python Quiz Questions
-date: 2020-12-10 14:02:58
+date: 2020-12-15 
 author: taimane
 layout: post
 permalink: /python/quiz
