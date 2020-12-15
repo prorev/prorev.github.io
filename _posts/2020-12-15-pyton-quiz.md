@@ -25,6 +25,11 @@ blockquote {
   padding: 10px;
   border-left: 2px solid #ffeb8e;
 }
+
+p code, li code {
+  color: #f4a;
+  font-weight:bold;
+}
 </style>
 - [1. Who created Python?](#1-who-created-python)
 - [2. In Python strings, Unicode strings, lists, tuples, buffers, and xrange objects are called:](#2-in-python-strings-unicode-strings-lists-tuples-buffers-and-xrange-objects-are-called)
