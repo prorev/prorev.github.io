@@ -24,6 +24,7 @@ blockquote {
   margin-bottom: 10px;
   padding: 10px;
   border-left: 2px solid #ffeb8e;
+  background-color: #ddd;
 }
 
 p code, li code {
