@@ -5,7 +5,7 @@ date: 2016-07-29 14:02:58
 author: taimane
 layout: post
 permalink: /python/email
-published: true
+published: false
 categories:
    - python
 tags:

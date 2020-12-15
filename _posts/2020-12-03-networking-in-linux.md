@@ -5,7 +5,7 @@ date: 2016-07-29 14:02:58
 author: taimane
 layout: post
 permalink: /linux/networking/
-published: true
+published: false
 categories:
    - linux
 tags:
