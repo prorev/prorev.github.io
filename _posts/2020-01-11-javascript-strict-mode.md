@@ -121,9 +121,8 @@ myFunction();
 
 ### Literal "use strict" must be at the beginning of a script, function or module
 
-*Example:* Error
+*Example:* Strict mode not working
 ```js
-"use strict";
 function myFunction() {
   e = 2.71;  
   "use strict";
@@ -132,10 +131,10 @@ function myFunction() {
 myFunction();
 ```
 
-*Example:* No error
+*Example:* Error because of strict mode
 
 ```js
-var e
+//var e
 function myFunction() {
   "use strict";
   e = 2.71;
