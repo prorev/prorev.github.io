@@ -1089,13 +1089,19 @@ or
 
 A return statement ends the execution of the function call and "returns" the result.
 
-If there is no return statement, the special value None is returned.
+If there is no return statement, the special value **None** is returned.
 
 
 
 ## 67. Suppose a list with name test, contains 10 elements. You can get the 5th element from the test list using:
 
-> test[5] / **test[4]** / test['5'] / test['4']
+> test[5] 
+> 
+> **test[4]** 
+> 
+> test['5'] 
+> 
+> test['4']
 
 Because the list indexing starts from 0, the 5th element will be test[4].
 
