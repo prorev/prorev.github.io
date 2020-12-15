@@ -61,7 +61,7 @@ blockquote {
 - [32. What is `n`?](#32-what-is-n)
 - [33. To install Python on Windows you will typically need:](#33-to-install-python-on-windows-you-will-typically-need)
 - [34. To get help on any built-in Python function you can call?](#34-to-get-help-on-any-built-in-python-function-you-can-call)
-- [35. To start Python interpreter in Windows you type _____?](#35-to-start-python-interpreter-in-windows-you-type-_____)
+- [35. To start Python interpreter in Windows you type?](#35-to-start-python-interpreter-in-windows-you-type)
 - [36. Most Linux distributions have Python installed by default?](#36-most-linux-distributions-have-python-installed-by-default)
 - [37. Can you append a string to a tuple like this?](#37-can-you-append-a-string-to-a-tuple-like-this)
 - [38. Python can automatically convert a number from one type to another if it needs?](#38-python-can-automatically-convert-a-number-from-one-type-to-another-if-it-needs)
@@ -561,14 +561,14 @@ Python will tell you the type of `n` is a string:
 
 ## 33. To install Python on Windows you will typically need:
 
-**Less than 5 minutes** / More than 5 minutes
+> **Less than 5 minutes** / More than 5 minutes
 
 Typically you will search for the latest Python version, download it and start the installation process which is very quick.
 
 
 ## 34. To get help on any built-in Python function you can call?
 
-**help()** / doc()
+> **help()** / doc()
 
 Calling `help()` at the Python prompt starts an interactive help session.
 
@@ -576,9 +576,9 @@ Calling `help(thing)` prints help for the python object 'thing'.
 
 
 
-## 35. To start Python interpreter in Windows you type _____?
+## 35. To start Python interpreter in Windows you type?
 
-**Either py or python** /  Py /  Python
+> **Either py or python** / Py / Python
 
 
 If Python installation set the PATH variable in Windows either `py`, `python`, `Py`, `Python` should work. Windows is case insensitive.
@@ -591,7 +591,7 @@ Type "help", "copyright", "credits" or "license" for more information.`
 
 ## 36. Most Linux distributions have Python installed by default?
 
-**True** / False
+> **True** / False
 
 Red Hat Enterprise Linux and its close relatives (Fedora, CentOS, Scientific Linux, Oracle Linux...) will always have Python installed since the installer and many core tools are written in Python.
 
@@ -606,7 +606,7 @@ b = '2'
 c = a + b
 
 ```
-YES / **NO**
+> YES / **NO**
 
 This will not work. The output from the interpreter would be:
 
@@ -623,7 +623,7 @@ c = a + b
 
 ## 38. Python can automatically convert a number from one type to another if it needs?
 
-**YES** / NO
+> **YES** / NO
 
 Data conversion in Python can happen in two ways: either you tell the compiler to convert a data type to some other type explicitly, or the compiler understands this by itself and does it for you.
 
@@ -647,7 +647,7 @@ The example of the implicit conversion would be:
 
 ## 39. What is not a standard Python data type?
 
-**Class** / String /  List /  Dictionary
+> **Class** / String /  List /  Dictionary
 
 Most standard data types would be all the numbers (int, long, float, complex) and of course strings, list, tuple, dictionary.
 
@@ -655,21 +655,21 @@ Class is not a data type. There is also the 'class' keyword in Python used to cr
 
 ## 40. What is `type(5.0)`?
 
-int / **float**
+> int / **float**
 
 
 It will be `float` because the notation `5.0` represents the float number. The `type(5)` would return `int`.
 
 ## 41. Find the intruder?
 
-int / float / **tuple** / complex
+> int / float / **tuple** / complex
 
 In here int, float, and complex are Python numbers, while tuple is a serial data type.
 
 
 ## 42. Complex numbers are not supported in Python by default?
 
-YES / **NO**
+> YES / **NO**
 
 
 No, complex numbers are supported in Python right out of the box. Here is what Python supports:
@@ -684,7 +684,7 @@ a = -1+3.14j (complex)
 ## 43. Is this OK to write in Python?
 `a=-.0+.1j+1-.0-j`
 
-**YES** / NO
+> **YES** / NO
 
 Yes, the following is an expression that would eval to a complex number:
 
@@ -693,7 +693,7 @@ Yes, the following is an expression that would eval to a complex number:
 
 ## 44. Select mutable type?
 
-**list** / tuple
+> **list** / tuple
 
 
 Mutable means the elements in a list we are able to update after the assignment. On the other side, tuples are not mutable. You cannot update tuple elements once you assign a tuple.
@@ -701,7 +701,13 @@ Mutable means the elements in a list we are able to update after the assignment.
 
 ## 45. In Python which is the correct method to import a module?
 
-include math / **import math** / #include<math.h> // using math
+> include math 
+> 
+> **import math** 
+> 
+> #include<math.h> 
+> 
+> using math
 
 
 Different languages have different syntax. Python way to load a module would be like:
@@ -712,7 +718,7 @@ The same keyword like in Java programming language.
 
 ## 46. A function is a block of code that performs a specific task.
 
-**True** / False
+> **True** / False
 
 Functions provide better modularity for your application and a way to reuse code.
 
@@ -727,7 +733,13 @@ def printSingleTextLine(text):
 printSingleTextLine('Python')
 ```
 
-Python / **Python is awesome.** / Pythonis awesome./ text is awesome.
+> Python 
+> 
+> **Python is awesome.** 
+> 
+> Pythonis awesome. 
+> 
+> text is awesome.
 
 
 The actual result of this would be:
@@ -742,10 +754,15 @@ Note in here the default separator for the `print()` function with multiple argu
 def greetPerson(*name):
   print('Hello', name)
 
-greetPerson('Mam', 'Dad')`
+greetPerson('Mam', 'Dad')
 ```
 
-Hello Mam / Hello Dad, Hello ('Mam', 'Dad') / **Hello Mam** / Dad
+> Hello Mam 
+> 
+> Hello Mam, Dad
+> 
+> **Hello ('Mam', 'Dad')**
+
 
 You may need to process a function for more arguments than you specified while defining the function. These arguments are called variable-length arguments and are not named in the function definition, unlike required and default arguments.
 
@@ -754,13 +771,15 @@ When an asterisk (*) is placed before the variable name this will hold the value
 
 ## 49. What is a recursive function?
 
-There is no recursive functions in Python / **A function that calls itself**
+> There is no recursive functions in Python 
+> 
+> **A function that calls itself**
 
 Python supports recursive functions.
 
 For example, here is the sum function that will evaluate the sum of all the numbers lower or equal to n:
 
-```
+```python
 def sum(n):
   if n == 1:
     return 1
@@ -775,7 +794,13 @@ result = lambda x: x * x
 print(result(5))
 ```
 
-lambda x: x*x / 10 / **25** / 5*5
+> lambda x: x*x 
+> 
+> 10 
+> 
+> **25** 
+> 
+> 5*5
 
 We used the anonymous or the lambda function. These functions are not declared in the standard way using the `def:` keyword.
 
@@ -784,7 +809,13 @@ Lambda functions cannot contain commands or multiple expressions. They return ju
 
 ## 51. Suppose a tuple test contains 5 elements. How can you set the 3rd element of the tuple to 'Python'?
 
-test[2] = 'Python' / test(2) = 'Python' / test[3] = 'Python' / **Elements of tuple cannot be changed**
+> test[2] = 'Python' 
+> 
+> test(2) = 'Python' 
+> 
+> test[3] = 'Python' 
+> 
+> **Elements of tuple cannot be changed**
 
 Tuples are immutable. We cannot update them.
 
@@ -794,14 +825,22 @@ Tuples are immutable. We cannot update them.
 print((1, 2) + (3, 4))
 ```
 
-(1, 2) (3, 4) / **(1, 2, 3, 4)**
+> (1, 2) (3, 4) 
+> 
+> **(1, 2, 3, 4)**
 
 
 We have created a tuple by concatenation of two tuples, not two strings.
 
 ## 53. What is used to concatenate two strings in Python?
 
-. operator / **+ operator** / strcat() function / ^ operator
+> . operator 
+> 
+> **+ operator** 
+> 
+> strcat() function 
+> 
+> ^ operator
 
 
 In order to merge two strings into a single object, we use the + operator.
@@ -813,14 +852,22 @@ The newly created string is completely new object, since strings are immutable.
 ```python
 print('cat'*3)
 ```
-cat3 / **catcatcat**
+> cat3 
+> 
+> **catcatcat**
 
 The operator * on strings will multiply the strings for number of times.
 
 
 ## 55. Which of the following statement is true?
 
-A set is an unordered collection of items / Set elements are unique / You can change elements of a set unlike tuple / **All are correct**
+> A set is an unordered collection of items 
+> 
+> Set elements are unique 
+> 
+> You can change elements of a set unlike tuple 
+> 
+> **All are correct**
 
 
 The set is unordered collection of unique elements. Common uses include membership testing, removing duplicates from a sequence, and computing standard math operations on sets such as intersection, union, difference, and symmetric difference.
@@ -832,7 +879,13 @@ n = [x * x for x in range(4)]
 print(n)
 ```
 
-[0, 1, 2, 3] / **[0, 1, 4, 9]** / [1, 4, 9, 16] / [1, 2, 3, 4]
+> [0, 1, 2, 3] 
+> 
+> **[0, 1, 4, 9]** 
+> 
+> [1, 4, 9, 16] 
+> 
+> [1, 2, 3, 4]
 
 
 The `range(4)` is the same as `range(0, 4)`. For example:
@@ -861,15 +914,27 @@ into
 num = {'one': 1, 'two': 2 }
 ```
 
-num[2] = 'two' / num[1] = 'two' / **num['two'] = 2** / num['two'] = '2'
+> num[2] = 'two' 
+> 
+> num[1] = 'two' 
+> 
+> **num['two'] = 2** 
+> 
+> num['two'] = '2'
 
 Only the `num['two'] = 2` is correct since we update the dictionary element by using the key 'two' and we need to set the integer value 2.
 
 
 ## 58. Which operator is used in Python to import modules from packages?
 
-. operator / **\* operator** / -> symbol / , operator
-2
+> . operator 
+> 
+> **\* operator** 
+> 
+> -> symbol 
+> 
+> , operator
+
 
 
 `from my_package_name import * ` is the way to import all the modules from the **my_package_name** package.
@@ -878,7 +943,13 @@ This allows using variables, classes, methods, ... from the module without prefi
 
 ## 59. Opening a file in 'a' mode opens a file for
 
- reading / writing / **appending at the end of the file** / exclusive creation
+> reading 
+> 
+> writing 
+> 
+> **appending at the end of the file** 
+> 
+> exclusive creation
 
 
 Mode 'a' is short for the appending mode.
@@ -888,14 +959,20 @@ Mode 'a' is short for the appending mode.
 
 `f = open('test.txt')`
 
-Opens a file for both reading and writing / **Opens a file for reading only** / Opens a file for writing only / Opens a file in god mode
+> Opens a file for both reading and writing 
+> 
+> **Opens a file for reading only** 
+> 
+> Opens a file for writing only 
+> 
+> Opens a file in god mode
 
 In Python the default mode is open a file for reading only. The file pointer is placed at the beginning of the file.
 
 
 ## 61. What will happen if you try to open a file that is not present?
 
-A new file will be created / Nothing / **An exception is raised** / Something else
+> A new file will be created / Nothing / **An exception is raised** / Something else
 
 When we try to open a file, but a file is not present the exception `FileNotFoundError` will be raised.
 
@@ -962,10 +1039,16 @@ Then `a()` will return 'Hello' string.
 
 ## 65. Suppose you need to print `pi` constant defined in `math` module. Which of the following code can do this task?
 
-print(math.pi) ,  print(pi) ,  from math import pi
-print(pi), from math import pi
-print(math.pi)
-3
+> print(math.pi) 
+> 
+> print(pi) 
+> 
+> **from math import pi**;
+> **print(pi)** 
+> 
+> from math import pi;
+> print(math.pi)
+
 
 This would be two correct ways:
 ```python
@@ -983,8 +1066,14 @@ or
 
 ## 66. If return statement is not used inside the function, the function will return:
 
-0, Null object,  None object, Error! Functions in Python must have a return statement.
-3
+> 0
+> 
+> Null object
+> 
+> **None object**
+> 
+> Error! Functions in Python must have a return statement.
+
 
 A return statement ends the execution of the function call and "returns" the result.
 
