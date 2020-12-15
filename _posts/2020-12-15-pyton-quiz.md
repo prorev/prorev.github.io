@@ -834,13 +834,13 @@ We have created a tuple by concatenation of two tuples, not two strings.
 
 ## 53. What is used to concatenate two strings in Python?
 
-> `.` operator 
+> . operator 
 > 
-> **`+` operator** 
+> **+ operator** 
 > 
-> `strcat()` function 
+> strcat() function 
 > 
-> `^` operator
+> ^ operator
 
 
 In order to merge two strings into a single object, we use the + operator.
