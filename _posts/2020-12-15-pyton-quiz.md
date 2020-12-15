@@ -1122,11 +1122,11 @@ The `__init__` method represents a constructor in Python.
 
 When you call `o1 = Foo()` Python should create an object for you.
 
-'Initializes the class for use' is wrong because classes are definitions, they are not initialized.
+_Initializes the class for use_ is wrong because classes are definitions, they are not initialized.
 
-'Initializes all the data attributes to zero when called' is also not true, because attributes may be initialized to non zero value.
+_Initializes all the data attributes to zero when called_ is also not true, because attributes may be initialized to non zero value.
 
-'This function is called when a new object is instantiated' would be OK.
+**This function is called when a new object is instantiated** would be OK.
 
 
 ## 69.  If your class is derived from two different classes this is called:
