@@ -17,7 +17,7 @@ blockquote:before {
   content: "answers:";
   font-size:10px;
   text-transform: uppercase;
-  color:ffffff;
+  color:#ffffff;
 }
 
 blockquote {
@@ -177,7 +177,7 @@ abs() dict() help() min() setattr() all() dir() hex() next() slice() any() divmo
 
 ## 7. In Python which keyword is used to define a function?
 
-> function / **def** / try / import
+> `function` / **`def`** / `try` / `import`
 
 
 A function in Python is defined by a `def` statement. Here is the example:
@@ -239,7 +239,7 @@ The function `print` can take a parameter `sep`. That would insert the `sep` bet
 
 ## 11. What is used to take the keyboard input in Python?
 
-> scanf() / **input()**
+> `scanf()` / **`input()`**
 
 
 Python provides the function `input()`. That function has an optional parameter, which is the prompt string.
@@ -346,7 +346,7 @@ In Python, like in almost any programming language indexing starts from 0. This 
 
 ## 20. To return the ASCII code of the character in Python you need?
 
-> chr() / **ord()**
+> `chr()` / **`ord()`**
 
 The function `ord()` is a built in that returns the ASCII character for the character we ask.
 
@@ -701,13 +701,13 @@ Mutable means the elements in a list we are able to update after the assignment.
 
 ## 45. In Python which is the correct method to import a module?
 
-> include math 
+> `include math` 
 > 
-> **import math** 
+> **`import math`** 
 > 
-> #include<math.h> 
+> `#include<math.h>` 
 > 
-> using math
+> `using math`
 
 
 Different languages have different syntax. Python way to load a module would be like:
@@ -794,7 +794,7 @@ result = lambda x: x * x
 print(result(5))
 ```
 
-> lambda x: x*x 
+> `lambda x: x*x` 
 > 
 > 10 
 > 
@@ -834,13 +834,13 @@ We have created a tuple by concatenation of two tuples, not two strings.
 
 ## 53. What is used to concatenate two strings in Python?
 
-> . operator 
+> `.` operator 
 > 
-> **+ operator** 
+> **`+` operator** 
 > 
-> strcat() function 
+> `strcat()` function 
 > 
-> ^ operator
+> `^` operator
 
 
 In order to merge two strings into a single object, we use the + operator.
@@ -972,7 +972,13 @@ In Python the default mode is open a file for reading only. The file pointer is 
 
 ## 61. What will happen if you try to open a file that is not present?
 
-> A new file will be created / Nothing / **An exception is raised** / Something else
+> A new file will be created 
+> 
+> Nothing 
+> 
+> **An exception is raised** 
+> 
+> Something else
 
 When we try to open a file, but a file is not present the exception `FileNotFoundError` will be raised.
 
@@ -981,7 +987,13 @@ When we try to open a file, but a file is not present the exception `FileNotFoun
 ## 62. What does the following code do?
 `os.listdir()`
 
-> Prints the current working directory / Prints all directories (not files) inside the given directory / **Prints all directories and files inside the given directory** / Makes a new directory
+> Prints the current working directory 
+> 
+> Prints all directories (not files) inside the given directory 
+> 
+> **Prints all directories and files inside the given directory** 
+> 
+> Makes a new directory
 
 
 The method `listdir()` returns a list containing the names of the entries in the directory given by path. The list is in arbitrary order. It does not include the special entries '.' and '..' even if they are present in the directory.
@@ -1039,15 +1051,15 @@ Then `a()` will return 'Hello' string.
 
 ## 65. Suppose you need to print `pi` constant defined in `math` module. Which of the following code can do this task?
 
-> print(math.pi) 
+> `print(math.pi)` 
 > 
-> print(pi) 
+> `print(pi)` 
 > 
-> **from math import pi**;
-> **print(pi)** 
+> **`from math import pi`**;
+> **`print(pi)`** 
 > 
-> from math import pi;
-> print(math.pi)
+> `from math import pi`;
+> `print(math.pi)`
 
 
 This would be two correct ways:
@@ -1146,7 +1158,7 @@ class MultiDerived(Base1, Base2):
 
 > defines a list and initializes it
 > 
-> **defines a function** which does nothing
+> **defines a function which does nothing**
 > 
 > defines a function, which passes its parameters through
 > 
@@ -1160,9 +1172,9 @@ There is no return from this function so it will return the default "None" objec
 
 ## 71. What are the method(s) that iterator object must implement?
 
-> __iter__()
+> `__iter__()`
 > 
-> **__iter__() and __next__()**
+> **`__iter__()` and `__next__()`**
 
 
 An iterator is an object that implements `__next__()`, which is expected to return the next element of the iterable object that returned it.
