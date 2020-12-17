@@ -81,7 +81,7 @@ Out:
 Array [ "asdf", "asdf" ]
 ```
 
-> Before `let` keyword (ES6) there was `var` in older releases. 
+> Before `let` keyword (ES6) there was `var` in older releases, that is present still. 
 
 > To define constants `const` keyword will suffice `const PI = 3.141593`.
 
