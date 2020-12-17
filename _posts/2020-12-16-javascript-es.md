@@ -4,8 +4,8 @@ title: ECMAScript Basics
 date: 2020-12-16 
 author: taimane
 layout: post
-permalink: /javascript/es
-published: false
+permalink: /javascript/es/
+published: true
 categories:
    - javascript
 tags:
