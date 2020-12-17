@@ -51,7 +51,7 @@ European Computer Manufacturers Association last standalone version was ES3, aft
 
 ## ES6 (ES2015)
 
-Since ES6 currently is very popular (**widely supported**). This release brought:
+ES6 currently is very popular (**widely supported**). This release brought:
 
 * `for...of` loops, before that we had C style `for` loops
 * Python-style generators
