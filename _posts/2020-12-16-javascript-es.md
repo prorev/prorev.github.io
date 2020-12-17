@@ -110,8 +110,6 @@ method | desc
 `filter()` | Creates a new array with all elements that pass the test implemented by the provided function
 `every()` | Tests whether all elements in the array pass the test implemented by the provided function
 `foreach()` | Executes a provided function once per array element 
-|
-
 
 
 ### Object
@@ -264,8 +262,8 @@ _Example: Iterator_
 
 Iterator is any JavaScript object that implements `next()` method and returns an object with two properties **value** and **done**.
 
-`value` means the next value in the iteration.sequence.
-`done` is true if the last value in the sequence has already been consumed, else false.
+**value** means the next value in the iteration.sequence.
+**done** is true if the last value in the sequence has already been consumed, else false.
 
 
 ```js
@@ -341,8 +339,6 @@ for/in | loops through the properties of an object
 for/of | loops through the values of an iterable object
 while | loops through a block of code while a specified condition is true
 do/while | also loops through a block of code while a specified condition is true
-|
-
 
 
 ## ES2017
@@ -447,7 +443,7 @@ method | desc
 `toLowerCase()` | Converts a string to lowercase letters
 `toUpperCase()` | Converts a string to uppercase letters
 `valueOf()` | Returns the primitive value of a String object 
-|
+
 
 
 ### Global Methods
@@ -467,4 +463,3 @@ method | desc
 `parseFloat()` | Parses a string and returns a floating point number
 `parseInt()` | Parses a string and returns an integer
 `String()` | Converts an object's 
-|
