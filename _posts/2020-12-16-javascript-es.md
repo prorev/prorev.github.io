@@ -253,8 +253,6 @@ hello = 42
 53 = world
 ```
 
-So far we explained what is new in ES6 compared to eS5 except we haven't explained ES6 Promises. The next section will cover that inside async/await section.
-
 ### `for...of` loops
 
 Iterators and Generators bring the concept of iteration into JavaScript. You can iterate them using `for...of` loops.
@@ -341,6 +339,8 @@ for/of | loops through the values of an iterable object
 while | loops through a block of code while a specified condition is true
 do/while | also loops through a block of code while a specified condition is true
 
+
+So far we explained what is new in ES6 compared to eS5 except we haven't explained ES6 Promises. The next section will cover promises inside async/await section.
 
 ## ES2017
 
