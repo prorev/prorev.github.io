@@ -53,8 +53,8 @@ European Computer Manufacturers Association last standalone version was ES3, aft
 
 ES6 currently is very popular (**widely supported**). This release brought:
 
-* `for...of` loops, before that we had C style `for` loops
-* Python-style generators
+* `for...of` loops
+* Python-style iterators, generators
 * arrow function expression `(() => {...})`
 * `let` keyword for local declarations 
 * `const` keyword for constant local declarations
