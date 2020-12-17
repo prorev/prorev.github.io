@@ -406,19 +406,23 @@ async function f() {
 }
 ```
 
+`await` keyword goes with `async` and works only inside `async`.
+When we call `await` this pauses the function execution until the promise returns.
+
 _Example: Promise_
 
 ```js
-// promise p
-let p = new Promise(function(myResolve, myReject) {
-  setTimeout(function() { myResolve("I love You !!"); }, 3000);
-});
-
-myPromise.then(function(value) {
-  document.getElementById("demo").innerHTML = value;
-});
+async function f() {
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+  });
+  let result = await promise; // wait until the promise resolves (*)
+  alert(result); // "done!"
+}
+f();
 ```
-
+In here we used a Promise. The Promise is JavaScript **object**.
+Promise is designed to process asynchronous operation until success or failure (resolve or reject callbacks).
 
 ## Appendix
 
