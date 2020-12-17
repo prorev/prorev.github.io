@@ -43,7 +43,7 @@ There was a problem with the language name _JavaScript_, because _Sun Microsyste
 
 You can find ECMAScript short name is ES, but we all simple use JavaScript.
 
-The two major impact releases of ES were ES5 (2010) and ES6 (2015). After ES6 we had: ES2016, ES2017, ES2018, ES2019, and ES2020. The trend may continue...
+The two major impact releases of ES were ES5 (2010) and ES6 (2015). After ES6 we had: ES2016, ES2017, ES2018, ES2019, and ES2020.
 
 [New ES releases](https://en.wikipedia.org/wiki/ECMAScript){:rel="nofollow"} should bring new features and better security with improved simplicity. At least this is the idea.
 
