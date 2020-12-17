@@ -70,6 +70,7 @@ Use `console.log()` method to print.
 
 Arrays were part of JavaScript from the early days, but in here we use the new ES6 `let` and `const` keywords to define them.
 
+_Example: Array_
 ```js
 let a=[]
 a.push("asdf")
@@ -86,7 +87,7 @@ Array [ "asdf", "asdf" ]
 > To define constants `const` keyword will suffice `const PI = 3.141593`.
 
 
-Most frequent property is `.length`. You would use it like: `a.length`.
+Most frequently used Array property is `.length`. You would use it like: `a.length` in our example.
 
 Core Array methods:
 
