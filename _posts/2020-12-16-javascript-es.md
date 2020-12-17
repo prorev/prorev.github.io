@@ -39,7 +39,7 @@ _Mozilla Firefox_ was the first browser ever, but at that time it was called _Ne
 
 Netscape created _JavaScript_ first version, and they submit the language to ECMA (European Computer Manufacturers Association) for standardization.
 
-There was a problem with the language name _JavaScript_, because _Sun Microsystems_ (now Oracle) created language Java, so they had to use the name it **ECMAScript** instead.
+There was a problem with the language name _JavaScript_, because _Sun Microsystems_ (now Oracle) created language Java, so they had to name it **ECMAScript** instead.
 
 You can find ECMAScript short name is ES, but we all simple use JavaScript.
 
