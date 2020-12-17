@@ -169,7 +169,7 @@ length: 3
 
 ### Function
 
-A function are block of JavaScript code we invoke.
+A function is block of JavaScript code we invoke.
 
 ```js
 const square = function(x){
@@ -179,13 +179,13 @@ const square = function(x){
 
 ### Arrow Function
 
-This is new ES6 feature. The same function from above can be achieved using the alternative function syntax (arrow function syntax):
+This is new ES6 feature. The same function from above can be achieved using arrow function syntax:
 
 ```js
 const square = (x) => x*x
 ```
 
-Typically, I avoid using the arrow function from the same reason I avoid the lambda functions in Python, but they are possible.
+> I avoid using the arrow function from the same reason I avoid the lambda functions in Python, but they are possible.
 
 
 ### Class
