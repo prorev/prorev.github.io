@@ -14,8 +14,57 @@ tags:
    - gateways
    - bridges
 ---
+- [Networking commands](#networking-commands)
+- [Hostname](#hostname)
+- [Check your IP Address](#check-your-ip-address)
+  - [Private IP Address ranges](#private-ip-address-ranges)
+  - [Ipcalc](#ipcalc)
+  - [`/24` subnet](#24-subnet)
+  - [DNS](#dns)
+- [Ping](#ping)
+- [Route command](#route-command)
+  - [Bridges (let the two become one)](#bridges-let-the-two-become-one)
+  - [Gateways (outgoing networking paths)](#gateways-outgoing-networking-paths)
+- [`dig`](#dig)
+- [`arp`](#arp)
+- [`netstat`](#netstat)
+- [`tcpdump`](#tcpdump)
+- [`traceroute`](#traceroute)
+- [`nslookup`](#nslookup)
+- [Appending (OpenVPN)](#appending-openvpn)
+![2,3,4, and 5 levels of protocols](/wp-content/uploads/2020/11/ipsec.jpg)
 
-![Protocols](/wp-content/uploads/2020/11/ipsec.jpg)
+## Networking commands
+One can argue that to understand a network you just need few commands to ask:
+
+command | description
+--- | ---
+hostname | Display the name of the local system
+ip | Display and configure network interfaces
+dig | DNS lookup utility
+ping | Perform a simple network connectivity test
+arp | Display or modify the IP-to-MAC address-translation tables
+netstat | Network usage statistics
+route | Display or modify the static routing tables
+traceroute | Determine the route to a specified target host
+tcpdump | Dump network traffic (not just the tcp protocol)
+nslookup | IP address-to-hostname lookup and other translations by DNS
+
+
+In here we will explain in some detail some of these commands to create a big picture.
+
+## Hostname
+
+`hostname` actually is used to set or display the system's name. It goes in tandem with other similar commands:
+
+command | description
+--- | ---
+hostname | Show or set the system's host name
+domainname | Show or set the system's NIS/YP domain name
+ypdomainname | Show or set the system's NIS/YP domain name
+nisdomainname | Show or set the system's NIS/YP domain name
+dnsdomainname | Show the system's DNS domain name
+
 
 ## Check your IP Address
 
@@ -33,7 +82,7 @@ cat /sys/class/net/eth0/operstate
 
 ### Private IP Address ranges
 
-IP addresses (IPv4) vary from 0.0.0.0 to 255.255.255.255 but not all are meant to be public. Next are the IP addresses of *Private Internet*:
+IP addresses (IPv4) vary from 0.0.0.0 to 255.255.255.255 but not all are meant to be public. There is so called *Private Internet*:
 
     10.0.0.0/8
     from 10.0.0.0 to 10.255.255.255
@@ -97,7 +146,7 @@ Broadcast: 192.168.1.255        11000000.10101000.00000001. 11111111
 Hosts/Net: 254                   Class C, Private Internet
 ```
 
-## DNS
+### DNS
 
 Domain Name System (DNS) means there are:
 
@@ -141,14 +190,10 @@ programming-review.com. 299     IN      A       172.67.133.194
 ;; MSG SIZE  rcvd: 99
 ```
 
-
-
-Linux DNS client has a file called `resolv.conf`. This file contains the names of DNS servers, client should ask for help.
-
-Typical `resolv.conf` may look like:
+Linux DNS client has a file called `resolv.conf`. This file contains the names of DNS servers in use.
+If you don't know what to put inside `resolv.conf` set famous Google DNS servers:
 
 ```
-# Famous Google DNS servers
 nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
@@ -157,91 +202,155 @@ nameserver 8.8.4.4
 
 > You may also add IPv6 DNS servers into `resolv.conf`
 
-## What is inside rc.local?
+
+## Ping
+
+`ping` command sends `ICMP ECHO_REQUEST` to network hosts checking if they are alive.
+
+```
+ping www.google.com
+```
 
 
-## Routers
 
-Display routes
+## Route command
 
+`route` command shows or alter the kernel the IP routing table. 
+
+To list the routing table you may use these variations:
 ```
 route -n
+; route -rn
+; ip route list
 ```
-Kernel IP routing table. Destination Gateway Genmask Flags Metric Ref Use Iface. ...
+> To make sure you after the restart you keep the routing instruction put your routing commands into `rc.local`.
+> 
+> By default `rc.local` is empty. This script is executed at the end of each multiuser runlevel at boot time. It's the last script that will run as part of the startup process.
+
+
+### Bridges (let the two become one)
+
+A bridge is a way to connect two _ethernet_ segments together in a protocol independent way. Packets are forwarded based on ethernet (MAC) address, rather than IP address.
+
+This means packets are forwarded like in a router. To create bridges you need to use `brctl` commands found in bridge-utils package:
 
 ```
-netstat -rn. 
+# debian based
+apt install bridge-utils
 ```
 
-```
-ip route list
-```
+`brctl` is used to set up, maintain, and inspect the ethernet bridge configuration in the linux kernel.
 
-192.168.0.0/24 dev eth0 proto kernel scope link src 192.168.0.103.
+An ethernet bridge is a device commonly used to connect different networks of ethernets together, so that these ethernets will appear as one ethernet to the participants.
 
-## Bridges
+### Gateways (outgoing networking paths)
 
-## Gateways 
-
-How to get default gateway (def-gw) ?
-```
-ip route show
-```
-*Out:*
+If you use `route -n` command you may noticed the gateway column. Similarly the `ip route show` command. The part after _via_ is the gateway.
 
 ```
+# ip route show
+
 default via 85.80.130.1 dev eth0
 85.80.130.0/24 dev eth0 proto kernel scope link src 85.80.130.120
 ```
 
-### Default gateways
+> You probable heard for the _default gateway_. A default gateway is the IP of the router that sits between your home network and rest of the Internet. It is the IP address where all the traffic is directed.
 
-## DNS querying 
+## `dig`
 
-`dig` is a command line DNS querying to get info about domain name resolution.
-It is standard DNS tool part of *Bind DNS server*.
+`dig` is a command line DNS querying to get info about domain name resolution. It is standard DNS tool part of *Bind DNS server*.
 
-To install it:
+To install:
 ```
 apt install dnsutils
 ```
-
 > On Centos search for *bind-utils*.
 
+## `arp`
+
+ARP stands for Address Resolution Protocol, which is used to find the MAC address of a network host sitting on a given IPv4 address.
+
+`arp` command can add entries to the table, delete one or display the current ARP table. 
+
+## `netstat`
+
+`netstat` command is to monitor system TCP/IP network activity. It provides data about network activity and can provide a summary information for the recent past.
+
+Without arguments, `netstat` lists all active network connections on a host. This can be a quite long list so you usually use pipes.
 
 
+To get a summary of the network interfaces:
+```
+netstat -i
+```
+To get statistics for each network protocol (cumulative since the last boot):
 
-## Subnets
+```
+netstat -s
+```
+
+## `tcpdump`
+
+`tcpdump` has long been the industry-standard sniffer, and allows you to examine the headers of TCP/IP packets. 
+
+Tools like Wireshark or TShark tools are just more advanced tcpdump based tools.
+
+Using `tcpdump` you can find traffic by:
+* Source or Destination IP / IPv6 
+* Network
+* Port (port ranges)
+* Protocol
+* Port Ranges
+* Packet Size
+* TCP Flags
+* HTTP request fields
+* ...
+
+_Example:_
+```
+tcpdump -i eth0 -nn -s0 -v port 22
+```
+
+_Comments:_
+
+`-i` : interface select
+
+`-nn` : do not resolve hostnames and ports (fast)
+
+`-s0` : snap length to unlimited 
+
+`-v` : verbose, use `-vv` for more verbose
+
+`port 22` : just this port
+
+## `traceroute`
+
+Use the `traceroute` to:
+
+* discover routing paths on your network
+* get how many hops does it take to reach your destination IP
+* find in-between routers 
+* identify bottlenecks
+* detect if website is multihomed
+
+_Example:_
+
+```
+traceroute google.com
+```
+
+## `nslookup`
+
+Use Nslookup ("Name Server Lookup") toget info from DNS server. 
+
+_Example:_
+
+```
+nslookup google.com
+```
 
 
- 	Addresses 	Hosts 	Netmask 	Amount of a Class C
-/ 30 	4 	2 	255.255.255.252 	1 / 64
-/ 29 	8 	6 	255.255.255.248 	1 / 32
-/ 28 	16 	14 	255.255.255.240 	1 / 16
-/ 27 	32 	30 	255.255.255.224 	1 / 8
-/ 26 	64 	62 	255.255.255.192 	1 / 4
-/ 25 	128 	126 	255.255.255.128 	1 / 2
-/ 24 	256 	254 	255.255.255.0 	1
-/ 23 	512 	510 	255.255.254.0 	2
-/ 22 	1024 	1022 	255.255.252.0 	4
-/ 21 	2048 	2046 	255.255.248.0 	8
-/ 20 	4096 	4094 	255.255.240.0 	16
-/ 19 	8192 	8190 	255.255.224.0 	32
-/ 18 	16384 	16382 	255.255.192.0 	64
-/ 17 	32768 	32766 	255.255.128.0 	128
-/ 16 	65536 	65534 	255.255.0.0 	256
-
-
-
-### Subnet mask 255.255.255.255
-
-### Subnet mask 255.255.255.192
-
-A network with a subnet mask of 255.255.255.255 puts each device inside its own subnet, forcing them to communicate with the router before communicating with any other device.
-
-A network with a subnet mask of 255.255.255.255 means just a single computer.
-
-## OpenVPN
+## Appending (OpenVPN)
 
 The holy ~~grale~~ grape of networking is OpenVPN. At least I would say if you can configure OpenVPN both client end server you reached the milestone.
 
