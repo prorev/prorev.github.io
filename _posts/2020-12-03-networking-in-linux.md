@@ -1,6 +1,6 @@
 ---
 id: 2987
-title: Linux networking terms
+title: Linux networking terms and commands
 date: 2016-07-29 14:02:58
 author: taimane
 layout: post
