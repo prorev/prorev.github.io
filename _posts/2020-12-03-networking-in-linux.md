@@ -22,16 +22,16 @@ tags:
   - [`/24` subnet](#24-subnet)
   - [DNS](#dns)
 - [Ping](#ping)
-- [Route command](#route-command)
+- [Route](#route)
   - [Bridges (let the two become one)](#bridges-let-the-two-become-one)
   - [Gateways (outgoing networking paths)](#gateways-outgoing-networking-paths)
-- [`dig`](#dig)
-- [`arp`](#arp)
-- [`netstat`](#netstat)
-- [`tcpdump`](#tcpdump)
-- [`traceroute`](#traceroute)
-- [`nslookup`](#nslookup)
-- [Appending (OpenVPN)](#appending-openvpn)
+- [Dig](#dig)
+- [Arp](#arp)
+- [Netstat](#netstat)
+- [Tcpdump](#tcpdump)
+- [Traceroute](#traceroute)
+- [Nslookup](#nslookup)
+- [Appendix (OpenVPN)](#appendix-openvpn)
 ![2,3,4, and 5 levels of protocols](/wp-content/uploads/2020/11/ipsec.jpg)
 
 ## Networking commands
@@ -213,7 +213,7 @@ ping www.google.com
 
 
 
-## Route command
+## Route 
 
 `route` command shows or alter the kernel the IP routing table. 
 
@@ -256,7 +256,7 @@ default via 85.80.130.1 dev eth0
 
 > You probable heard for the _default gateway_. A default gateway is the IP of the router that sits between your home network and rest of the Internet. It is the IP address where all the traffic is directed.
 
-## `dig`
+## Dig
 
 `dig` is a command line DNS querying to get info about domain name resolution. It is standard DNS tool part of *Bind DNS server*.
 
@@ -266,13 +266,13 @@ apt install dnsutils
 ```
 > On Centos search for *bind-utils*.
 
-## `arp`
+## Arp
 
 ARP stands for Address Resolution Protocol, which is used to find the MAC address of a network host sitting on a given IPv4 address.
 
 `arp` command can add entries to the table, delete one or display the current ARP table. 
 
-## `netstat`
+## Netstat
 
 `netstat` command is to monitor system TCP/IP network activity. It provides data about network activity and can provide a summary information for the recent past.
 
@@ -289,7 +289,7 @@ To get statistics for each network protocol (cumulative since the last boot):
 netstat -s
 ```
 
-## `tcpdump`
+## Tcpdump
 
 `tcpdump` has long been the industry-standard sniffer, and allows you to examine the headers of TCP/IP packets. 
 
@@ -323,7 +323,7 @@ _Comments:_
 
 `port 22` : just this port
 
-## `traceroute`
+## Traceroute
 
 Use the `traceroute` to:
 
@@ -339,7 +339,7 @@ _Example:_
 traceroute google.com
 ```
 
-## `nslookup`
+## Nslookup
 
 Use Nslookup ("Name Server Lookup") toget info from DNS server. 
 
@@ -350,7 +350,7 @@ nslookup google.com
 ```
 
 
-## Appending (OpenVPN)
+## Appendix (OpenVPN)
 
 The holy ~~grale~~ grape of networking is OpenVPN. At least I would say if you can configure OpenVPN both client end server you reached the milestone.
 
