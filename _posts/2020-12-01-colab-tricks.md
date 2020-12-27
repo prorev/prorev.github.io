@@ -221,14 +221,14 @@ except:
 
 ## 15. Use Conda without installing
 
-For some project you need to have Conda, and then to install these projects you need to have `conda install` which takes time.
+For some project you need to have Conda, and then to install these projects you need to run `conda install`.
 
-To save some time you can specify the directory for conda to install to using:
+To save some time you can specify the directory to install Conda in on Google drive:
 
 ```
 conda install -p path_to_your_dir
 ```
-So, you can just mount your Google drive and use Conda without installing.
+So, you can just mount your Google drive and use Conda without installing each time.
 
 
 ## 16. Combine two audio files together
