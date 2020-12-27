@@ -1,6 +1,6 @@
 ---
 id: 2987
-title: Browser Fingerprinting basics
+title: Browser Fingerprinting Basics
 date: 2020-12-15 
 author: taimane
 layout: post
@@ -11,55 +11,55 @@ categories:
 tags:
    - javascript
 ---
-<style>
-blockquote:before {
-  content: "answers:";
-  font-size:10px;
-  text-transform: uppercase;
-  color:#ffffff;
-}
+- [What is browser fingerprinting?](#what-is-browser-fingerprinting)
+- [Canvas fingerprinting](#canvas-fingerprinting)
+- [WebRTC](#webrtc)
+- [CanvasFingerprinting](#canvasfingerprinting)
+- [](#)
 
-blockquote {
-  margin-bottom: 10px;
-  padding: 10px;
-  border-left: 2px solid #ffeb8e;
-  background-color: #ddd;
-}
 
-p code, li code {
-  color: #f4a;
-}
-</style>
+![fingerprinting](/wp-content/uploads/2020/12/fingerprinting.jpg)
 
-![fingerprinting](/wp-content/uploads/2020/12/python-quiz.jpg)
+Browsers are becoming increasingly sophisticated platforms. Almost at the level of operating system.
 
+HTML5 brought **canvas** element for drawing into 2D and 3D. There is also WebGL 3D graphics, datastore, cache and history databases, geolocation capabilities, audio and video support. And not so long ago we just had cookies.
+
+Nowadays, now evercookies exist that are hard to delete, and zombicookies that can reappear even if you delete them (these are Flash based).
+
+The browser fingerprinting game started to be very complicated.
 ## What is browser fingerprinting?
 
-It is a way to track a specific browser when surfing the Internet.
+It's a way to track a specific browser when surfing the Internet.
 
-There are common fingerprinting types:
+There are some fingerprinting ways:
 
-* font fingerprinting
-* canvas fingerprinting
-* webRTC fingerprinting
+* Font fingerprinting
+* Canvas fingerprinting
+* WebRTC fingerprinting
 * DOMRect fingerprinting
-* audio fingerprinting
-* mouse fingerprinting
-* screen fingerprinting
-* user-agent fingerprinting
-* navigator object fingerprinting
+* Audio fingerprinting
+* Mouse fingerprinting
+* Screen fingerprinting
+* HTTP fingerprinting (user-agent, etc.)
+* Navigator object fingerprinting
 * WebGL fingerprinting
 * HTML5 fingerprinting
 * TLS Fingerprint
+* ...
 
-Different API fingerprinting:
 
-* SpeechSynthesis
-* Web Aidio
-* Web Bluetooth API
-* Network Information API
+Almost all these fingerprinting ways are based on JavaScript and use some JavaScrip API
 
-Usually all these techniques are possible based on JavaScript.
+## Canvas fingerprinting
+
+The story began I think with Canvas fingerprinting in 2012 with the paper "Pixel Perfect: Fingerprinting Canvas in HTML5".
+
+How it works? When HTML5 defined the Canvas. As it goes, if you draw element 
+
+Canvas fingerprinting ...
+
+
+
 
 ## WebRTC
 
@@ -70,7 +70,41 @@ Findings
 
 We found WebRTC being used to discover local IP addresses on 715 of the top 1 million sites. The vast majority of these instances were caused by third-party trackers.
 
-## F
+## CanvasFingerprinting
+
+
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="100" height="100"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const context = canvas.getContext("2d");
+const fingerprintText = "BrowserLeaks,com <canvas> 10";
+canvas.width = 220;
+canvas.height = 30;
+context.textBaseline = "top";
+context.font = "14px 'Arial'";
+context.textBaseline = "alphabetic";
+context.fillStyle = "#f60";
+context.fillRect(125, 1, 62, 20);
+context.fillStyle = "#069";
+context.fillText(fingerprintText, 2, 15);
+context.fillStyle = "rgba(102, 204, 0, 0.7)";
+context.fillText(fingerprintText, 4, 17);
+		
+</script>
+
+</body>
+</html>
+```
 
 
 ## 
@@ -78,3 +112,8 @@ We found WebRTC being used to discover local IP addresses on 715 of the top 1 mi
 WebGL is a JavaScript API for rendering interactive 3D graphics within any compatible web browser without the use of plug-ins. WebGL apps consist of a control code written in JavaScript and special effects code that is executed on a computer's GPU. WebGL elements can be mixed with other HTML elements and composited with other parts of the page or page background.
 
 WebGL Browser Report checks WebGL support in your web browser, produce WebGL Device Fingerprinting, and shows the other WebGL and GPU capabilities more or less related web browser identity.
+
+
+Zombie cookies
+
+Most people aren't even aware that Flash stores cookies!
