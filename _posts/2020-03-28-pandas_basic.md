@@ -505,10 +505,17 @@ ax.set_ylim(bottom + 0.5, top - 0.5)
 > * Spearman
 > 
 > Pearson measures linear correlation and Spearman measures rank order correlation.
+> There is also [Kendall](https://www.statisticssolutions.com/correlation-pearson-kendall-spearman/){:rel="nofollow"} correlation.
 
 You can specify the correlation type using the `method` parameter: `df.corr(method='spearman')`.
 
-You can use Pearson for the features that have normal PDF, else Spearman type. 
+You can use Pearson just in specific case else use Spearman type.
+
+For the Pearson correlation both variable:
+
+* should be normally distributed  
+* should have straight line relationship (linearity)
+* data should be equally distributed about the regression line (homoscedasticity).
 
 ### Scatter matrix
 
