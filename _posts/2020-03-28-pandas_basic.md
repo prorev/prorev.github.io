@@ -500,6 +500,16 @@ ax.set_ylim(bottom + 0.5, top - 0.5)
 
 ![correlation](/wp-content/uploads/2020/04/correlation.jpg)
 
+> There are two major correlation types in use:
+> * Pearson
+> * Spearman
+> 
+> Pearson measures linear correlation and Spearman measures rank order correlation.
+
+You can specify the correlation type using the `method` parameter: `df.corr(method='spearman')`.
+
+You can use Pearson for the features that have normal PDF, else Spearman type. 
+
 ### Scatter matrix
 
 To create scatter matrix you would use this code:
