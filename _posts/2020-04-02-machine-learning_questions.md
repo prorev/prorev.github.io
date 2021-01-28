@@ -238,7 +238,7 @@ Overfitting can happen if one parameter dominates the formula. Regularization is
 ## 15. You haven't trained your neural network. Can you still expect it will work correctly?
 
 1) Yes, because some neural networks may not be trained. 
-2) No, all neural networks should be trained
+2) **No, all neural networks should be trained**
 
 
 The neural networks should be trained first to reach the level of accuracy we plan.
