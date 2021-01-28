@@ -260,7 +260,7 @@ Experts agree 80% of the overall data should be used to train, and 20% of the ov
    
 These are popular open source machine learning frameworks.
 
-TensorFlow developed by the Google Brain team is an open-source software written in C++ and Python. It is a symbolic math library used for machine learning applications.
+TensorFlow developed by the Google Brain team is an open-source software written in C++ and Python. 
 
 PyTorch is an open source machine learning library for Python, based on Torch, used for applications such as natural language processing. It is primarily developed by Facebook's artificial-intelligence research group.
 
@@ -268,6 +268,7 @@ PyTorch is an open source machine learning library for Python, based on Torch, u
 ## 18. ReLU is probably the most used?
 1) **activation function**
 2) loss function
+3) cost function
 
 
 ReLU (Rectified Linear Unit) is probable the most used activation function in NN. This function is simple.
@@ -444,7 +445,7 @@ Adam stands for adaptive moment estimation, and is another way of using past gra
 
 ## 32. Which method is not used to suppress overfitting?
 1) normalization 
-2) regularization  
+2) regularization 
 3) data augmentation 
 4) **backpropagation**
 
@@ -530,7 +531,7 @@ You should use categorical cross entropy in this case. When your targets are int
 
 Anything perceives its environment by sensors and acts upon an environment by effectors are known as Agent. Agents includes robots, humans and programs.
 
-
+Agents are well known term in one particular machine learning branch called **reinforcement learning**.
 
 
 ## 39. We update the weights of our NN directly based on the:
