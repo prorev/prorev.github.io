@@ -417,7 +417,7 @@ Ref:
 
 A hypothesis test is a formal approach for evaluating a research question.
 
-We analyze the data to evaluate if hypothesis is true. For instance, whiter man or women are promoted more often.
+We analyze the data to evaluate if hypothesis is true. For instance, whether man or women are promoted more often.
 
 **Null hypothesis** would be, gender do not influence promotion recommendation. In this case we should evidence gender rates are about the same.
 
