@@ -225,8 +225,8 @@ We need the activation function to be differentiable to effectively learn the ne
 ## 14. Machine learning practitioners are always afraid of:
 
 1) **overfitting**
-2) **gradient descent**
-3) **gradient ascent**
+2) gradient descent
+3) gradient ascent
 
 
 Overfitting means that your model predicts well on the data that you used to train, but performs poorly on new data it hasn't seen before.
