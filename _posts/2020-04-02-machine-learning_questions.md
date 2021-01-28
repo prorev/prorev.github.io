@@ -827,7 +827,7 @@ $b$ is the bias (the y-intercept), sometimes referred to as $w_0$.
 
 $w_1$ is the weight of feature 1. Weight is the same concept as the "slope" $a$ in the traditional equation of a line.
 
-$x_1$ is a feature (a known input), and $\bold W$ and $\bold B$ are vector representations for weights and bias if we generalize.
+$x_1$ is a feature (a known input), and $\bf W$ and $\bf B$ are vector representations for weights and bias if we generalize.
 
 General model on three features might look as follows:
 
