@@ -735,10 +735,11 @@ We can express the L1 and L2 corresponding errors as:
 
 MAE (mean absolute error) formula would be:
 
-$$ MAE = \frac{1}{N} \sum_{(x,y)\in D} |\  {y - prediction(x)\ |}$$ 
+$$MAE = \frac{1}{N} \sum_{(x,y)\in D} |\  {y - prediction(x)\ |}$$ 
 
 MSE (means squared error) formula: 
-$$ MSE = \frac{1}{N} \sum_{(x,y)\in D} (y - prediction(x))^2 $$ 
+
+$$MSE = \frac{1}{N} \sum_{(x,y)\in D} (y - prediction(x))^2$$ 
 
 where $N$ is the number of elements or $x,y$ pairs.
 
