@@ -108,9 +108,10 @@ $\alpha_1 \theta^{\alpha_1-1}(1-\theta)^{\alpha_0}-\alpha_0 \theta^{\alpha_1}(1-
 $\theta = \Large \frac{\alpha_1}{\alpha_1+ \alpha_0}$
 
 This means:
+<div>
 
 $\hat{\theta}^{M L E}=\arg \max _{\theta} P(D \mid \theta)=\Large \frac{\alpha_{1}}{\alpha_{1}+\alpha_{0}}$
-
+</div>
 
 ### MAP
 
@@ -127,12 +128,16 @@ Now we need to choose the prior distribution $P(\theta)$.
 $P(\theta)=\operatorname{Beta}\left(\beta_{0}, \beta_{1}\right)=\frac{\theta^{\beta_{1}-1}(1-\theta)^{\beta_{0}-1}}{B\left(\beta_{0}, \beta_{1}\right)}$
 
 In which case:
+<div>
 
 $\hat{\theta}^{M A P}=\arg \max _{\theta} \theta^{\alpha_{1}+\beta_{1}-1}(1-\theta)^{\alpha_{0}+\beta_{0}-1}$
-
+</div>
 Similar as for MLE:
 
+<div>
+
 $\hat{\theta}^{M A P}=\arg \max _{\theta} P(D \mid \theta) P(\theta)=\frac{\left(\alpha_{1}+\beta_{1}-1\right)}{\left(\alpha_{1}+\beta_{1}-1\right)+\left(\alpha_{0}+\beta_{0}-1\right)}$
+</div>
 
 ## Conclusion
 
