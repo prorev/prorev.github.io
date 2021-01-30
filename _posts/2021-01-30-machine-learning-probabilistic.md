@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Probabilistic Inference
+title: Probabilistic Inference on coin flipping example
 date: 2020-11-24
 author: taimane
 layout: post
