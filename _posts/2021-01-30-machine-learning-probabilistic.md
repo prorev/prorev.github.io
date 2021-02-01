@@ -4,7 +4,7 @@ title: Probabilistic Inference on coin flipping example
 date: 2020-11-24
 author: taimane
 layout: post
-permalink: /machine-learning/probabilistic
+permalink: /mathematicschine-learning/probabilistic
 published: true
 image: 
 categories: 
