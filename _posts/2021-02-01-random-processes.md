@@ -8,7 +8,7 @@ permalink: /math/random
 published: true
 image: 
 categories: 
-   - machine-learning
+   - math
 tags:
    - probabilistic
 ---
