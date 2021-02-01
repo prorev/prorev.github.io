@@ -110,7 +110,7 @@ ${X}$ is called simple random walk with parameter $p$ if:
 Partial sums are defined as:
 
 
-$\begin{aligned}X_n = \sum_{i=1}^n U_i, \quad n \in \N\end{aligned}$
+$\begin{aligned}X_n = \sum_{i=1}^n U_i, \quad n \in N\end{aligned}$
 
 
 ## Brownian motion 
