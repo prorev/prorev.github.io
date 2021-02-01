@@ -30,14 +30,17 @@ tags:
 - [Random walks](#random-walks)
 - [Brownian motion](#brownian-motion)
 
-![functions and classes advanced](/wp-content/uploads/2021/01/flipping.png)
 
 
 ## Random sample
 
 A **random sample** is a sequence of random variables. Random variables should be independent and identically distributed (IID). 
 
+
 ## Bernoulli trials
+
+![functions and classes advanced](/wp-content/uploads/2021/01/flipping.png)
+
 
 Bernoulli trials is **random processes**. The process consists of:
 * two outcomes
