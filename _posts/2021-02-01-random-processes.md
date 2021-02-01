@@ -95,6 +95,9 @@ Markov processes are the natural stochastic analogs of the deterministic process
 Markov process with a discrete state space is called a Markov chain.
 
 
+![markov-chain](/wp-content/uploads/2021/02/markov-chain.png)
+_Example of Markov Chain_
+
 ## Random walks
 
 Karl Pearson coined the term **random walk** while solving a problem describing a random walk on the plane.
@@ -175,3 +178,4 @@ plt.show()
 ```
 
 ![brownian process ](/wp-content/uploads/2021/02/brownian.png)
+_Example of Brownian motion_
