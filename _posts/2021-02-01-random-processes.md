@@ -120,8 +120,6 @@ $\begin{aligned}X_n = \sum_{i=1}^n U_i, \quad n \in N\end{aligned}$
 
 Brownian motion is a stochastic process. It is called Wiener process also. 
 
-Brownian motion can be described by a continuous-time stochastic process where each step $t$ depends on previous step $t-1$.
-
 Let $X(t)$ is a random variable that depends on $t$ where $t \in [0, \infin]$. We can write simple $X(t) = X_t$
 
 We can describe the process as:
@@ -177,5 +175,5 @@ for k in range(m):
 plt.show()
 ```
 
-![brownian process ](/wp-content/uploads/2021/02/brownian.png)
+![brownian process](/wp-content/uploads/2021/02/brownian.png)
 _Example of Brownian motion_
