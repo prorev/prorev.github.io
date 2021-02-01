@@ -120,7 +120,7 @@ $\begin{aligned}X_n = \sum_{i=1}^n U_i, \quad n \in N\end{aligned}$
 
 Brownian motion is a stochastic process. It is called Wiener process also. 
 
-Let $X(t)$ is a random variable that depends on $t$ where $t \in [0, \infin]$. We can write simple $X(t) = X_t$
+Let $X(t)$ is a random variable that depends on $t$ where $t \in [0, \infty)$. We can write simple $X(t) = X_t$
 
 We can describe the process as:
 
