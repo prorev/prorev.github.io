@@ -139,7 +139,7 @@ Dropout switches off some neurons in a layer so that they do not contribute any 
 
 Dropout this way reduces the input sum for the neurons of the next level that we usually compensate with the factor of $p$.
 
-To explain dropout to a kid. Imagine classroom an all the time the same two kids answers the teacher questions. Well teacher will ignore them for a while and ask other kids as well. Other kids may answer wrongly but teacher will correct them and this way the whole class learns better.
+To explain dropout to a kid. Imagine classroom and all the time **the same two kids** answers the teacher questions. Well teacher will ignore them for a while and ask other kids as well. Other kids may answer wrongly but teacher will correct them and this way the whole class learns better.
 
 #### Batch norm
 
