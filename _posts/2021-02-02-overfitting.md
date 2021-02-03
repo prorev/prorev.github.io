@@ -29,6 +29,8 @@ tags:
     - [Cross-validation](#cross-validation)
     - [Dropout](#dropout)
     - [Batch norm](#batch-norm)
+    - [Large Batch size](#large-batch-size)
+    - [Half precision](#half-precision)
   - [2. Regularization based on network architecture methods](#2-regularization-based-on-network-architecture-methods)
     - [Bagging](#bagging)
     - [Boosting](#boosting)
@@ -143,7 +145,18 @@ To explain dropout to a kid. Imagine classroom and all the time **the same two k
 
 #### Batch norm
 
-Batch norm idea is to reshape the input distribution to a new distribution $\mathcal N(0, 1)$. This helps greatly to create deep network architectures. It effectively controls the data because the neuron activations should ideally be around 0 with the variance of 1.
+Batch norm is a network layer. The idea is to reshape the input distribution to a new distribution $\mathcal N(0, 1)$. This helps greatly to create deep network architectures. It effectively controls the data because the neuron activations should ideally be around 0 with the variance of 1.
+
+#### Large Batch size
+
+Using a larger batch size, may add a a regularization effect so in some cases you may even remove the the dropout. A nice example may be found [here](https://myrtle.ai/learn/how-to-train-your-resnet-3-regularisation/){:rel="nofollow".}. 
+
+#### Half precision
+
+Converting a model to half precision for instance in PyTorch improves the regularization. 
+
+
+> Few last regularization techniques we may add also to a section _2. Regularization based on network architecture_.
 
 
 ### 2. Regularization based on network architecture methods
