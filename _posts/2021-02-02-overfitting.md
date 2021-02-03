@@ -24,20 +24,20 @@ tags:
 
 - [Detecting overfitting](#detecting-overfitting)
 - [General division of regularization techniques](#general-division-of-regularization-techniques)
-  - [Regularization based on data methods](#regularization-based-on-data-methods)
+  - [1. Regularization based on data methods](#1-regularization-based-on-data-methods)
     - [Data augmentation](#data-augmentation)
     - [Cross-validation](#cross-validation)
     - [Dropout](#dropout)
     - [Batch norm](#batch-norm)
-  - [2. Network architecture methods](#2-network-architecture-methods)
+  - [2. Regularization based on network architecture methods](#2-regularization-based-on-network-architecture-methods)
     - [Bagging](#bagging)
     - [Boosting](#boosting)
-  - [3. Error function methods](#3-error-function-methods)
+  - [3. Regularization based on error function methods](#3-regularization-based-on-error-function-methods)
   - [4. Regularization term $R$ methods](#4-regularization-term-r-methods)
     - [L1 regularization](#l1-regularization)
     - [L2 regularization](#l2-regularization)
     - [Early stopping](#early-stopping)
-  - [5. optimization function $arg \ min$](#5-optimization-function-arg--min)
+  - [5. Regularization based on optimization function $arg \ min$](#5-regularization-based-on-optimization-function-arg--min)
 
 
 > Machine learning engineers are afraid of overfitting.
@@ -107,7 +107,7 @@ Regularization can be based:
 Here we review all these:
 
 
-### Regularization based on data methods
+### 1. Regularization based on data methods
 
 #### Data augmentation
 
@@ -146,7 +146,7 @@ To explain dropout to a kid. Imagine classroom an all the time the same two kids
 Batch norm idea is to reshape the input distribution to a new distribution $\mathcal N(0, 1)$. This helps greatly to create deep network architectures. It effectively controls the data because the neuron activations should ideally be around 0 with the variance of 1.
 
 
-### 2. Network architecture methods
+### 2. Regularization based on network architecture methods
 
 One common network architecture trick would be to use ensembles.
 
@@ -183,7 +183,7 @@ Bagging and boosting approaches are different:
 > Bagging uses complex base models and tries to **average** their predictions.
 
 
-### 3. Error function methods
+### 3. Regularization based on error function methods
 
 The error function $E$ typical examples are mean squared error (regularization) or cross-entropy (classification). 
 
@@ -261,6 +261,6 @@ Early stopping implementation uses one data set for training, one statistically 
 The model is trained until performance on the test set no longer improves and then applied to the validation set. 
 
 
-### 5. optimization function $arg \ min$
+### 5. Regularization based on optimization function $arg \ min$
 
 This basically means we should try different optimization functions as they may have different regularization effect depending on our problem.
