@@ -42,6 +42,7 @@ tags:
 
 > Machine learning engineers are afraid of overfitting.
 
+
 First they detect overfitting and then they try to avoid it. Here are the common techniques to prevent overfitting.
 
 ## Detecting overfitting
@@ -66,18 +67,16 @@ Our aim is to make the validation loss as low as possible. Some overfitting is n
 
 We know neural network is a functions:
 
-$$f_{w}: x \mapsto y$$
- and $w \in W$ are trainable weights. 
+$f_{w}: x \mapsto y$
+
+and $w \in W$ are trainable weights. 
 
 Training the network means finding a weights by minimizing the objective (loss) function $\mathcal{L}: W \rightarrow \mathbb{R}$ as follows:
-$$
-w^{*}=\underset{w}{\arg \min } \mathcal \ {L}(w)
-$$
+
+$w^{*}=\underset{w}{\arg \min } \mathcal \ {L}(w)$
 
 We can express the loss function as the **expected risk**:
-$$
-\mathcal{L}=\mathbb{E}_{(x, t) \sim P}\left[E\left(f_{w}(x), t\right)+R(\ldots)\right]
-$$
+$\mathcal{L}=\mathbb{E}_{(x, t) \sim P}\left[E\left(f_{w}(x), t\right)+R(\ldots)\right]$
 
 Where:
 
