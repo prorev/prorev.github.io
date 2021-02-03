@@ -102,6 +102,8 @@ Regularization can be based:
 5. optimization function $arg \ min$
 
 
+![regularization points](/wp-content/uploads/2021/02/eliminate-overfitting-points.png)
+
 Here we review all these:
 
 
@@ -201,7 +203,7 @@ L1 name is given by L1 weights vector norm which is a sum:
 
 <div>
 
-$\|\mathbf{w}\|_{1}=\left|w_{1}\right|+\left|w_{2}\right|+\ldots+\left|w_{N}\right|$
+$\|\mathbf{w}\|_{1}=\left|w_{1}\right|+\left|w_{2}\right|+\ldots+|w_{N}|$
 </div>
 
 The loss function is this:
