@@ -40,7 +40,7 @@ tags:
   - [5. optimization function $arg \ min$](#5-optimization-function-arg--min)
 
 
-> Machine learning engineers are afraid of overfitting anymore.
+> Machine learning engineers are afraid of overfitting.
 
 First they detect overfitting and then they try to avoid it. Here are the common techniques to prevent overfitting.
 
