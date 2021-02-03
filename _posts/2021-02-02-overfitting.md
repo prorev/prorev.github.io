@@ -67,16 +67,17 @@ Our aim is to make the validation loss as low as possible. Some overfitting is n
 
 We know neural network is a functions:
 
-$f_{w}: x \mapsto y$
-
-and $w \in W$ are trainable weights. 
+$f_{w}: x \mapsto y$, where $w \in W$ are trainable weights. 
 
 Training the network means finding a weights by minimizing the objective (loss) function $\mathcal{L}: W \rightarrow \mathbb{R}$ as follows:
 
 $w^{*}=\underset{w}{\arg \min } \mathcal \ {L}(w)$
 
 We can express the loss function as the **expected risk**:
-$\mathcal{L}=\mathbb{E}_{(x, t) \sim P}\left[E\left(f_{w}(x), t\right)+R(\ldots)\right]$
+
+
+$$\mathcal{L}=\mathbb{E}_{(x, t) \sim P}\left[E\left(f_{w}(x), t\right)+R(\ldots)\right]$$
+
 
 Where:
 
