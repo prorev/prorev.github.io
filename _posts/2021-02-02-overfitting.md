@@ -264,3 +264,10 @@ The model is trained until performance on the test set no longer improves and th
 ### 5. Regularization based on optimization function $arg \ min$
 
 This basically means we should try different optimization functions as they may have different regularization effect depending on our problem.
+
+---
+
+Reference: 1. Regularization for Deep Learning: A Taxonomy 
+(Jan Kukačka, Vladimir Golkov, and Daniel Cremers)
+
+---
