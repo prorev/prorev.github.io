@@ -199,7 +199,10 @@ A regression model that uses L1 regularization technique is called sometimes Las
 
 L1 name is given by L1 weights vector norm which is a sum:
 
+<div>
+
 $\|\mathbf{w}\|_{1}=\left|w_{1}\right|+\left|w_{2}\right|+\ldots+\left|w_{N}\right|$
+</div>
 
 The loss function is this:
 
@@ -213,7 +216,10 @@ It works well with models having large (read: huge) number of features since it 
 
 Also called weight decay. The name was given by L2 norm of weights vector:
 
+<div>
+
 $\|\mathbf{w}\|_{2}=\left(\left|w_{1}\right|^{2}+\left|w_{2}\right|^{2}+\ldots+\left|w_{N}\right|^{2}\right)^{\frac{1}{2}}$
+</div>
 
 And the loss function is:
 
