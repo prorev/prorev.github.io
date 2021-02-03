@@ -210,7 +210,7 @@ The loss function is this:
 
 $\mathcal L = f(\hat y, y) + \lambda * \sum { \mid w \mid }$, where $\lambda$ is our constant.
 
-L1 adds absolute weights penalties to the loss function. This in effect shrinks the less important features coefficient to zero (read: removes less some features).
+L1 adds absolute weights penalties to the loss function. This in effect shrinks the less important features coefficient to zero (read: removes less important features).
 
 It works well with models having large (read: huge) number of features since it is made to ignore the less important features.
 
