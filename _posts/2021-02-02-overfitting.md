@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: How to prevent overfitting | Regularization
+title: How to prevent the overfitting | Regularization
 date: 2020-05-03
 author: taimane
 layout: post
@@ -85,7 +85,7 @@ Where:
 * $R$ is the regularizer part
 * $t$ are targets
 
-We don't know the data distribution $P$ in general case, but we know the data set $D$.
+We don't know the data distribution $P$ in general case, but we know the data set $\mathcal D$.
 
 So the expected risk is:
 
