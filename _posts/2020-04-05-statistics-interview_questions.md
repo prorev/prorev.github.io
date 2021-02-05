@@ -29,6 +29,7 @@ In here I will ask and answer many questions from statistics.
 - [What is Information?](#what-is-information)
 - [What is entropy?](#what-is-entropy)
 - [How to maximize the entropy?](#how-to-maximize-the-entropy)
+- [12 balls in a bin entropy](#12-balls-in-a-bin-entropy)
 - [What is cross-entropy?](#what-is-cross-entropy)
 - [Cross-Entropy as Loss Function](#cross-entropy-as-loss-function)
 - [Probability of an Event](#probability-of-an-event)
@@ -100,10 +101,11 @@ Let's consider a simple 9 balls bin: {2 red, 3 green, 4 blue}. You pick one ball
 
 We can say ball picking is random variable $X$.
 
-> A random variable is a variable whose possible values have an associated probability distribution.
+> A random variable is a variable whose possible values have an associated probability distribution and sample space from where the values are taken.
 
-We need the entropy $E[X]$ of this random variable. 
+We need the entropy $E(X)$ of this random variable. 
 
+> Don't confuse entropy of a random variable with the expected value of the random value $\mathbb E[X]$.
 
 First we align probabilities and associated information values:
 
@@ -118,7 +120,7 @@ Entropy is weighted sum of **all** the information, where the weights are the co
 $Entropy(X) = -[\frac29\cdot log₂\frac29 + \frac39 \cdot log₂ \frac39 + \frac49 \cdot log₂\frac49]$
 = 1.53 bits.
 
-For a single ball entropy $E[X]$=1.53 bits.
+For a single ball entropy $E(X)$=1.53 bits.
 
 > Information entropy is typically measured in bits (or  "shannons") corresponding to base 2 in the above equation.
 
@@ -143,6 +145,22 @@ $Entropy(X) = -[\frac39\cdot log₂\frac39 + \frac39 \cdot log₂ \frac39 + \fra
 
 Entropy will be maximized if uncertainty of any element is maximized.
 
+## 12 balls in a bin entropy
+
+Case when we have 12 balls in a bin, equal number of the same colors.
+L1 = {12}, $E(X) = log_2 1$
+
+L2 = {6,6}, , $E(X) = log_2 2$
+
+L3 = {4,4,4}, $E(X) = log_2 3$
+
+L4 = {3,3,3,3} $E(X) = log_2 4$
+
+L5 = {2,2,2,2,2,2} $E(X) = log_2 6$
+
+L6 = {1,1,1,1, 1,1,1,1, 1,1,1,1} $E(X) = log_2 12$
+
+We may note entropy will increase if there are more color groups.
 
 ## What is cross-entropy?
 
@@ -166,7 +184,7 @@ If we have classes: C1, C2, C3.
 
 Let L1 be the true label distribution and L2 be the predicted label distribution. 
 
-Let the only label for one sample is C2 and our classifier predicts probabilities for C, C2, C3 as (0.15, 0.60, 0.25).
+Let the only label for one sample is C2 and our classifier predicts probabilities for C1, C2, C3 as (0.15, 0.60, 0.25).
 
 Cross-entropy $H(L1, L2)$ will be:
 
@@ -174,7 +192,7 @@ $H(L1, L2) = -[0 * log₂(0.15) + 1 * log₂(0.6) + 0 * log₂(0.25)] = 0.736$
 
 On the other hand, if our classifier is more confident and predicts probabilities as (0.05, 0.90, 0.05), we would get cross-entropy value is **0.152**, which is lower than the above example.
 
-Now our aim is tu maximize the cross-entropy in this case.
+Now our aim is to maximize the cross-entropy in this case.
 
 <!-- 
 ## Relation to Maximum Likelihood
