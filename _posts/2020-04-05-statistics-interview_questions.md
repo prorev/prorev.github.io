@@ -103,7 +103,7 @@ We can say ball picking is random variable $X$.
 
 > A random variable is a variable whose possible values have an associated probability distribution and sample space from where the values are taken.
 
-We need the entropy $E(X)$ of this random variable. 
+We need the entropy $E[X]$ of this random variable. 
 
 > Don't confuse entropy of a random variable with the expected value of the random value $\mathbb E[X]$.
 
@@ -120,7 +120,7 @@ Entropy is weighted sum of **all** the information, where the weights are the co
 $Entropy(X) = -[\frac29\cdot log₂\frac29 + \frac39 \cdot log₂ \frac39 + \frac49 \cdot log₂\frac49]$
 = 1.53 bits.
 
-For a single ball entropy $E(X)$=1.53 bits.
+For a single ball entropy $E[X]$=1.53 bits.
 
 > Information entropy is typically measured in bits (or  "shannons") corresponding to base 2 in the above equation.
 
@@ -131,6 +131,7 @@ For a single ball entropy $E(X)$=1.53 bits.
 >* **bans** or
 >* **hartleys**
 
+Instead of writing $E[X]$ for the entropy of $X$ more frequent notation is to use $H[X]$.
 
 ## How to maximize the entropy?
 
