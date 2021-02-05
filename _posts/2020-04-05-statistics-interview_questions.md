@@ -148,9 +148,10 @@ Entropy will be maximized if uncertainty of any element is maximized.
 ## 12 balls in a bin entropy
 
 Case when we have 12 balls in a bin, equal number of the same colors.
+
 L1 = {12}, $E(X) = log_2 1$
 
-L2 = {6,6}, , $E(X) = log_2 2$
+L2 = {6,6}, $E(X) = log_2 2$
 
 L3 = {4,4,4}, $E(X) = log_2 3$
 
