@@ -60,14 +60,14 @@ Depending of our metrics, we may find out:
 
 > If validation loss is much bigger than the training loss we call it **overfitting**.
 
-Our aim is to make the validation loss as low as possible. Some overfitting is nearly always a good thing. All that matters in the end is: is the validation loss as low as you can get it.
+Our aim is to make the validation loss as low as possible. Some overfitting is nearly always a good thing. All that matters in the end is: **the validation loss as low as you can get it**.
 
 > **Regularization** is any technique that aims at making the model generalize better, that produces better results on the test set.
 
 
 ## General division of regularization techniques
 
-We know neural network is a functions:
+We know neural network is a function:
 
 $f_{w}: x \mapsto y$, where $w \in W$ are trainable weights. 
 
@@ -115,9 +115,9 @@ Here we review all these:
 
 Data augmentation simple idea is to train with more data. There are some problems with this approach in many cases, because you may not have the data, or you can get it but very expensive, time consuming.
 
-This is why you may try to make some transformations on the data if this is possible. This works for images, simple image flip should work for some classification problems.
+This is why you may try to make some transformations on the data if this is possible. This works for images, simple image flip for instance.
 
-A way around the problem may be to generate the probability distribution fist (GANs), and then GANs may create new data for you out of this distribution.
+A way around the problem may be to generate the probability distribution fist (i.e. GANs), and then to generate new unseen data from this distribution.
 
 
 #### Cross-validation
@@ -139,9 +139,9 @@ The test set is called **the holdout**.
 
 Dropout switches off some neurons in a layer so that they do not contribute any information or learn any information during those updates.
 
-Dropout this way reduces the input sum for the neurons of the next level that we usually compensate with the factor of $p$.
+Dropout reduces the input sum for the neurons of the next level that we usually compensate with the factor of $p$.
 
-To explain dropout to a kid. Imagine classroom and all the time **the same two kids** answers the teacher questions. Well teacher will ignore them for a while and ask other kids as well. Other kids may answer wrongly but teacher will correct them and this way the whole class learns better.
+To explain dropout to a kid. Imagine classroom and all the time **the same two kids** answers the teacher questions. Teacher will ignore them for a while and ask other kids as well. Other kids may answer wrongly, but teacher will correct them and this way the whole class learns better.
 
 #### Batch norm
 
@@ -153,8 +153,7 @@ Using a larger batch size, may add a a regularization effect so in some cases yo
 
 #### Half precision
 
-Converting a model to half precision for instance in PyTorch improves the regularization. 
-
+Converting a model to half precision for instance in PyTorch improves the regularization.
 
 > Few last regularization techniques we may add also to a section _2. Regularization based on network architecture_.
 
@@ -200,9 +199,9 @@ Bagging and boosting approaches are different:
 
 The error function $E$ typical examples are mean squared error (regularization) or cross-entropy (classification). 
 
-Different error function we select have a regularizing effect.
+Different error function we select have a regularizing effect in comparison to others.
 
-Error function is dependent on targets $t$.
+> Error function is dependent on targets $t$.
 
 ### 4. Regularization term $R$ methods
 
