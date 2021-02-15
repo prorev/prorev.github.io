@@ -137,9 +137,11 @@ The test set is called **the holdout**.
 
 #### Dropout
 
-Dropout switches off some neurons in a layer so that they do not contribute any information or learn any information during those updates.
+Dropout switches off some neurons in a layer so that they do not contribute any information or learn any information during forward step.
 
-Dropout reduces the input sum for the neurons of the next level that we usually compensate with the factor of $p$.
+It works **while training only**.
+
+There is $p$ probability to zero elements of the input tensor, defined by Bernoulli distribution. Based on Bernoulli distributions the outputs are scaled by $\frac{1}{1-p}$.
 
 To explain dropout to a kid. Imagine classroom and all the time **the same two kids** answers the teacher questions. Teacher will ignore them for a while and ask other kids as well. Other kids may answer wrongly, but teacher will correct them and this way the whole class learns better.
 
