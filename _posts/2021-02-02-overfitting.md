@@ -73,7 +73,7 @@ $f_{w}: x \mapsto y$, where $w \in W$ are trainable weights.
 
 Training the network means finding a weights by minimizing the objective (loss) function $\mathcal{L}: W \rightarrow \mathbb{R}$ as follows:
 
-$w^{*}=\underset{w}{\arg \min } \mathcal \ {L}(w)$
+$$w^{*}=\underset{w}{\arg \min } \mathcal \ {L}(w)$$
 
 We can express the loss function as the **expected risk**:
 
@@ -83,7 +83,7 @@ $$\mathcal{L}=\mathbb{E}_{(x, t) \sim P}\left[E\left(f_{w}(x), t\right)+R(\ldots
 
 Where:
 
-* $\mathbb{E}$ is the error function
+* $E$ is the error function
 * $R$ is the regularizer part
 * $t$ are targets
 
