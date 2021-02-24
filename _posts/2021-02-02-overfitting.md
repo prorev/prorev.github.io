@@ -24,7 +24,7 @@ tags:
 
 - [Detecting overfitting](#detecting-overfitting)
 - [General division of regularization techniques](#general-division-of-regularization-techniques)
-  - [1. Regularization based on data methods](#1-regularization-based-on-data-methods)
+  - [1. Regularization based on data](#1-regularization-based-on-data)
     - [Data augmentation](#data-augmentation)
     - [Cross-validation](#cross-validation)
     - [Dropout](#dropout)
@@ -109,7 +109,7 @@ Regularization can be based:
 Here we review all these:
 
 
-### 1. Regularization based on data methods
+### 1. Regularization based on data
 
 #### Data augmentation
 
@@ -128,7 +128,6 @@ Cross-validation idea is this:
 * each split has training and validation parts
 
 If we instead just one split (two parts), create k parts we call it **k-fold cross-validation**
-
 
 This means we have data into k subsets, called folds. Then, we train the algorithm on k-1 folds while using the remaining fold as the test set.
 
