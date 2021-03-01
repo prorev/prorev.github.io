@@ -124,9 +124,11 @@ $$
 b) $\operatorname{var}\left(Y_{n}\right)=n p(1-p)$
 
 $\operatorname{var}\left(X_{i}\right)=p(1-p)$ for each $i$. Hence from the additive property of variance for independent variables:
+<div>
 
 $$
 \operatorname{var}\left(Y_{n}\right)=\sum_{i=1}^{n} \operatorname{var}\left(X_{i}\right)=\sum_{i=1}^{n} p(1-p)=n p(1-p)
 $$
+</div>
 
 
