@@ -34,6 +34,7 @@ tags:
   - [2. Regularization based on network architecture methods](#2-regularization-based-on-network-architecture-methods)
     - [Bagging](#bagging)
     - [Boosting](#boosting)
+    - [Stacking](#stacking)
   - [3. Regularization based on error function methods](#3-regularization-based-on-error-function-methods)
   - [4. Regularization term $R$ methods](#4-regularization-term-r-methods)
     - [L1 regularization](#l1-regularization)
@@ -164,8 +165,9 @@ Converting a model to half precision for instance in PyTorch improves the regula
 One common network architecture trick would be to use ensembles.
 
 Ensembles are combined separate models. The most well know are:
-*  bagging ensembles and 
-*  boosting ensembles
+* bagging ensembles and 
+* boosting ensembles
+* stacked ensembles
 
 #### Bagging
 
@@ -195,6 +197,16 @@ Bagging and boosting approaches are different:
 
 > Bagging uses complex base models and tries to **average** their predictions.
 
+#### Stacking
+
+Stacking was invented in 1992 by Wolpert. 
+
+Stacking 4 steps:
+* Create train and validation sets (splitting)
+* **Train** based models on **train set**
+* **Predict** using based models on **validation set**
+* Stack predictions of base models to train high level models (**meta models**)
+ 
 
 ### 3. Regularization based on error function methods
 
