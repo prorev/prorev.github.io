@@ -152,4 +152,48 @@ $$
 $$
 </div>
 
+## Bernoulli trial
+
+**Bernoulli trial** or **binomial trial** is a random experiment with exactly two possible outcomes:
+
+* success
+* failure
+ 
+Where the probability of success is constant during the experiment.
+
+It is named after Jacob Bernoulli from Swiss.
+
+![bernoulli](/wp-content/uploads/2021/03/ber2.jpg)
+
+
+## Negative binomial distribution
+
+It is very close to binomial distribution. Both distributions are based on binomial trial.
+
+The difference is:
+
+>Random variable $Y$ is the number of trials until observed the $r$-th success is observed. In this case, we keep increasing the number of trials until we reach $r$ successes. 
+
+
+The possible values of $Y$ are $r$, $r+1$, $r+2$, ... with no upper bound. 
+
+The Negative Binomial can also be defined in terms of the number of failures until the $r$-th success and this is why it is called **negative binomial**.
+
+
+## Summary
+
+Binomial:
+
+* formula $B(n,p)$
+* fixed number of trials ($n$)
+* fixed probability of success ($p$)
+* number of successes is random variable $X$
+
+
+Negative Binomial:
+
+* formula $NB(r,p)$
+* fixed number of successes (r)
+* fixed probability of success (p)
+* number of trials is random variable $Y$ until we reach the $r$-th success
 
