@@ -90,7 +90,7 @@ plot(success,dbinom(success,size=30,prob=.5),
 
 ![binomial coin toss](/wp-content/uploads/2021/03/binomial3.png)
 
-> Note how the **mode** of the distribution is at 15.
+> Note how the [**mode**](https://en.wikipedia.org/wiki/Mode_(statistics)){:rel="nofollow"} of the distribution is at 15.
 
 
 R code for binomial distribution calculus is this:
