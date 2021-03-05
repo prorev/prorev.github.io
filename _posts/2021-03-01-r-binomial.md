@@ -25,11 +25,15 @@ tags:
 
 The **binomial distribution** with parameters $n$ and $p$ is the discrete probability distribution.
 
+>You can write $B(n,p)$, where $n$ is the number of trials, and $p$ is the probability of success. For the binomial distribution, the random variable is $K$, the number of successes, and it has expected value $μ=np$ and variance $σ^2=np(1−p)$. 
+
+
 It can be represented with this formula:
 
 $\mathbb P(X=x)={ }^{n} C_{x} p^{x}(1-p)^{n-x}$
 
 
+## Pre requisites
 We can use Binomial distribution if the following pre requisites are meat:
 
 * There are **two potential outcomes** per trial 
@@ -70,6 +74,23 @@ plot(success,dbinom(success,size=3,prob=.5),
 ```
 
 ![binomial coin toss](/wp-content/uploads/2021/03/binomial2.png)
+
+Same example but now $n=30$ to get a nice graph of a discrete variable.
+
+```R
+success <- 0:50
+plot(success,dbinom(success,size=30,prob=.5),
+     type='h',
+     main='Binomial Distribution (n=30, p=0.5)',
+     col='yellow',
+     ylab='Probability',
+     xlab ='# Successes',
+     lwd=10)
+```
+
+![binomial coin toss](/wp-content/uploads/2021/03/binomial3.png)
+
+> Note how the **mode** of the distribution is at 15.
 
 
 R code for binomial distribution calculus is this:
