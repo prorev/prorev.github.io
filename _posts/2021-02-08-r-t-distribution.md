@@ -34,7 +34,7 @@ We use t-distribution when the number of samples is relatively small say $n<30$ 
 
 > If we would have $\sigma$ we would probable use z-distribution.
 
-## How t-distribution and z-distributions match
+## How z-distribution and t-distribution match
 
 ```R
 t.values <- seq(-4,4,.1)
@@ -63,6 +63,9 @@ pt(q, df, ncp, lower.tail = TRUE, log.p = FALSE)
 qt(p, df, ncp, lower.tail = TRUE, log.p = FALSE)
 rt(n, df, ncp)
 ```
+
+Since $S$ brings uncertainty, unless $n$ is big enough (where we usually assume $\sigma \approx S$) we decrease the degrees of freedom for the t-distribution:
+
 
 $$
 \frac{\bar{X}-\mu}{\sigma / \sqrt{n}} \sim z \longrightarrow \frac{\bar{X}-\mu}{S / \sqrt{n}} \sim t_{\mathrm{n}-1}
