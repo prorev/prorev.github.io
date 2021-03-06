@@ -20,9 +20,17 @@ _Table of contents:_
 - [What we can do with Trees](#what-we-can-do-with-trees)
 - [Scikit-learn](#scikit-learn)
 
+Long list of ensemble methods
+
+* Averaging (or blending) 
+* Weighted averaging 
+* Conditional averaging 
+* Bagging 
+* Boosting 
+* Stacking 
 ## What are Decision Trees?
 
-...
+Decision trees are ensemble methods using bagging.
 
 ## What we can do with Trees
 
