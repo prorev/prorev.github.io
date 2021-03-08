@@ -25,6 +25,12 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+
+It was developed by English statistician William Gosset when he worked for Guinness (famous for world records). Guinness didn't wanted people get the idea this brilliant statistician mind worked for him so he published his work under the pseudonym "Student".
+
+> Guinness didn't wonted the competitors to hire statisticians knowing how impactful and useful they are.
+
+
 T-distribution PDF:
 
 $$
