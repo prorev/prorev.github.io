@@ -4,7 +4,8 @@ title: t-distribution | Examples
 date: 2020-05-03
 author: taimane
 layout: post
-permalink: /statistics/t-distribution
+permalink: /r/t-distribution
+redirect_from: /statistics/t-distribution
 published: true
 image: 
 categories: 
