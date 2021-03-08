@@ -21,7 +21,7 @@ tags:
 <a href="https://programming-review.com/css/2-columns/">Minimal 2-columns website layout</a>
 
 [[[]]]
-This is 3-rd. article from the <a href="https://programming-review.com/cssdivs">tutorial</a> “CSS website design using divs” explaining the CSS <strong>position </strong>keyword.
+This is 3-rd. article from the <a href="https://programming-review.com/cssdivs">tutorial</a> "CSS website design using divs" explaining the CSS <strong>position </strong>keyword.
 
 
 
