@@ -1,17 +1,18 @@
 ---
 id: 12971
-title: Binomial distribution
+title: Binomial distribution in R | Examples
 date: 2020-05-03
 author: taimane
 layout: post
-permalink: /statistics/binomial
+permalink: /r/binomial
+redirect_from: /statistics/binomial
 published: true
 image: 
 categories: 
-   - statistics
+   - r
 tags:
    - binomial
-   - r
+   - statistics
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
