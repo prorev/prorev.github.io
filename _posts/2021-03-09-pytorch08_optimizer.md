@@ -29,7 +29,7 @@ tags:
 
 `torch.optim` is a package implementing various optimization algorithms in PyTorch. 
 
->If you use PyTorch you can create your own optimizers in Python, no need to dig deeper.
+>If you use PyTorch you can create your own optimizers in Python.
 
 PyTorch has default optimizers. Most famous is `torch.optim.SGD`, followed by `torch.optim.Adam` or 
 `torch.optim.AdamW`.
