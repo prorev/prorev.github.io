@@ -40,7 +40,7 @@ Recently very popular is also `torch.optim.LBFGS` inspired by a matlab function 
 
 
 It is really easy to create custom PyTorch optimizer. This is just a Python class.
-It need to have a constructor `__init__`, it need to have a state dict `__state_dict__` or the state.
+It need to have a constructor `__init__`, it need to have a state dict (`__state_dict__`) also called **the state**.
 
 ## Instantiate optimizers
 
@@ -113,4 +113,7 @@ This optimizer has:
 
 The state holds the step number, gradient average and Hadamar grad average in this case.
 
+<!-- Explain params and param groups -->
+
 > You probable won't write your optimizes, but you will use the existing ones.
+
