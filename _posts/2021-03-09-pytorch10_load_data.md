@@ -35,8 +35,8 @@ You need to have something to start with machine learning. The data.
 
 There are two major classes in PyTorch data loading pipeline:
 
-* [`Dataset`](https://pytorch.org/docs/stable/data.html?highlight=dataset#torch.utils.data.Dataset)
-* [`DataLoader`](https://pytorch.org/docs/stable/data.html?highlight=dataset#torch.utils.data.DataLoader)
+* [`Dataset`](https://pytorch.org/docs/stable/data.html?highlight=dataset#torch.utils.data.Dataset){:rel="nofollow"}
+* [`DataLoader`](https://pytorch.org/docs/stable/data.html?highlight=dataset#torch.utils.data.DataLoader){:rel="nofollow"}
 
 Dataset is very general term. It can be anything (tabular data, text, audio, images, videos, etc.)
 
@@ -119,7 +119,7 @@ To write a custom dataset inherit the abstract class `torch.utils.data.Dataset`.
 
 ## Creating `ConcatDataset`
 
-We can use this [Linux notebook](https://colab.research.google.com/drive/1LWV0pGw7gScb2cmcmDlNt7d8Y23PC2C0?usp=sharing) 
+We can use this [Linux notebook](https://colab.research.google.com/drive/1LWV0pGw7gScb2cmcmDlNt7d8Y23PC2C0?usp=sharing) {:rel="nofollow"}
 to practice concatenating two datasets together. In here we used CIFAR10 dataset training and validation sets.
 
 The `ds_train` and `ds_valid` variables are enclosed in a simple python list and we create the `ds` dataset.
@@ -134,7 +134,7 @@ ds = torch.utils.data.ConcatDataset([ds_train, ds_valid])
 
 Labeled datasets are data and the labels. 
 
-In PyTorch all the predefined datasets are labeled datasets. We can get the classes from Dataloader. The [notebook](https://colab.research.google.com/drive/1LWV0pGw7gScb2cmcmDlNt7d8Y23PC2C0?usp=sharing#scrollTo=6skAfXXGslqS) code has the following fragment to print all the classes:
+In PyTorch all the predefined datasets are labeled datasets. We can get the classes from Dataloader. The [notebook](https://colab.research.google.com/drive/1LWV0pGw7gScb2cmcmDlNt7d8Y23PC2C0?usp=sharing#scrollTo=6skAfXXGslqS){:rel="nofollow"} code has the following fragment to print all the classes:
 
 ```python
 print(len(dl_train))
@@ -229,10 +229,11 @@ def pil_loader(path):
         return img.convert('RGB')
 
 # with DatasetFolder we can set the extensions
-ds = torchvision.datasets.DatasetFolder(r'/content/imgs', 
-                                        loader=pil_loader, 
-                                        extensions=('.png'), 
-                                        transform=t) 
+ds = torchvision.datasets.DatasetFolder(
+    r'/content/imgs', 
+    loader=pil_loader, 
+    extensions=('.png'), 
+    transform=t) 
 
 print(ds)
 ```
