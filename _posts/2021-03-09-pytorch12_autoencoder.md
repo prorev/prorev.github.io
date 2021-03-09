@@ -225,7 +225,7 @@ class CAutoencoder(nn.Module):
         return x
 ```
 
-There is a special type of Autoencoders called Variational Autoencoders (VAE), appeared in the work of [Diederik P Kingma and Max Welling](https://arxiv.org/abs/1312.6114){rel="nofollow"}.
+There is a special type of Autoencoders called Variational Autoencoders (VAE), appeared in the work of [Diederik P Kingma and Max Welling](https://arxiv.org/abs/1312.6114){:rel="nofollow"}.
 
 One very useful usage of VAE may be **image denoising**.
 
