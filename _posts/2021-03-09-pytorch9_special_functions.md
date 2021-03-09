@@ -5,7 +5,7 @@ date: 2021-03-09 23:57:32
 author: taimane
 layout: post
 permalink: /pytorch/special
-published: false
+published: true
 categories:
    - pytorch
 tags:
