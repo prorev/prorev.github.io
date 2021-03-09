@@ -319,9 +319,10 @@ Next we will show how to create a dataset from the `torchvision.datasets.Dataset
 ```python
 set_seed(13)
 
-t = transforms.Compose([transforms.RandomHorizontalFlip(),
-                       transforms.ToTensor() ])
-                    #  transforms.Normalize( mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)) ])
+t = transforms.Compose(
+    [transforms.RandomHorizontalFlip(),
+    transforms.ToTensor() ])
+#  transforms.Normalize( mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)) ])
     
 # this function will be used to load images from disk
 def pil_loader(path):    
