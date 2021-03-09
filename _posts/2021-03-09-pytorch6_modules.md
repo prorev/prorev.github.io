@@ -321,6 +321,19 @@ The purpose of 2D convolution is to extract certain features from the image.
 
 Check for [the details on convolution](https://dejanbatanjac.github.io/2019/07/15/convolution.html).
 
+Thanks to the E. Young we have the [convolution-visualizer](https://ezyang.github.io/convolution-visualizer/index.html){:rel="nofollow"} project on GitHub.
+
+This interactive visualization demonstrates how various convolution parameters affect shapes and data dependencies between the input, weight and output matrices.
+
+Convolution detects objects invariant to position since it can detects the features irrelevant to object location. This works for objects that are not rotated.
+
+For instance, if you work on MNIST dataset you may notice all the images are centered. 
+
+The [`torch.nn.Conv2d`](https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html) model trained on MNIST will still work on brand new test images where cipher is outside of the center area. The model will still predict correct. 
+
+Linear layers won't. If you train MNIST on `torch.nn.Linear`, it would detect purly objects (chipres) outside of the center area. This is because all MNIST images are centered.
+
+
 ### nn.BatchNorm2d()
 
 Batch normalization is the regularization technique for neural networks presented for the first time in 2015 in [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167){:rel="nofollow"}  paper.
