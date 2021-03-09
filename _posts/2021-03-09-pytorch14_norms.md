@@ -41,7 +41,7 @@ $W$ is matrix of size m×n, where m≠n in general case.
 4. Finally $\sigma(W) \approx {\boldsymbol{u}}^{\mathrm{T}} W {\boldsymbol{v}}$
 
 **Note**: this algorithm works well with gradient descent in cases gradient descent makes "small" updates of the $W$.
-The [paper](https://arxiv.org/pdf/1802.05957.pdf) explain this in detail.
+The [paper](https://arxiv.org/pdf/1802.05957.pdf){:rel="nofollow"} explain this in detail.
 
 ```python
 # Spectral Norm paper https://arxiv.org/pdf/1802.05957.pdf
@@ -125,7 +125,7 @@ Before we apply the spectral norm we don't have our singular values that are clo
 
 This is what we actually wanted. Note that singular values don't have to be exactly 1.0, since this method is not exact. Note that `u_weight`, and `v_weight` vectors correspond to vectors $\boldsymbol u$ and $\boldsymbol v$. 
 
-The actual [implementation](https://github.com/pytorch/pytorch/blob/bfa94487b968ccb570ef8cd9547029b967e76ed0/torch/nn/utils/spectral_norm.py#L28) of spectral normalization.
+The actual [implementation](https://github.com/pytorch/pytorch/blob/bfa94487b968ccb570ef8cd9547029b967e76ed0/torch/nn/utils/spectral_norm.py#L28){:rel="nofollow"} of spectral normalization.
 
 **Note**: By limiting the spectral norm of the weight matrices we control the Lipschitz constant of the function we minimize/maximize (objective function).
 
@@ -276,7 +276,7 @@ tensor([[0., 1., 2.],
 tensor(14.2829)
 ```
 
-Here is the equivalent code in python.
+Equivalent code in python:
 
 ```python
 s=0
