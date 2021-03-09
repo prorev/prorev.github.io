@@ -23,7 +23,6 @@ tags:
 
 - [About PyTorch Optimizers](#about-pytorch-optimizers)
 - [Present optimizers](#present-optimizers)
-- [Optimizers](#optimizers)
 - [Creating a custom optimizer](#creating-a-custom-optimizer)
 
 ## About PyTorch Optimizers
@@ -39,9 +38,6 @@ It is really easy to create custom PyTorch optimizer. This is just a Python clas
 It need to have a constructor `__init__`, it need to have a state dict `__state_dict__` or the state.
 
 ## Present optimizers
-
-## Optimizers
-
 
 PyTorch has a well-debugged optimizers you can consider.
 
