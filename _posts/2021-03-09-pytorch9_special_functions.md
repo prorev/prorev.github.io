@@ -85,7 +85,7 @@ tensor(78)
 tensor([2, 9, 0, 0, 7, 2, 3, 8, 1, 4, 9, 0, 4, 2, 4, 2])
 ```
 
-`argmax` may also take the [`dim` parameter](https://pytorch.org/docs/stable/generated/torch.argmax.html){:rel="nofollow"}, and if `dim` is `None` then the `input` parameters is flattened and single index is returned.
+`argmax` may also take the [`dim`](https://pytorch.org/docs/stable/generated/torch.argmax.html){:rel="nofollow"} parameter, and if `dim` is `None` then the `input` parameters is flattened and single index is returned.
 
 In the example above when the `dim` is -1 we have 16 outputs. When the `dim=1` this is equivalent.
 
