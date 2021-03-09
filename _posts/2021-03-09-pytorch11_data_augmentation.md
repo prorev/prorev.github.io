@@ -240,17 +240,17 @@ And then once you have the composed transformation `t`
 ds = torchvision.datasets.CIFAR10('/data/cifar10', download=True, train=True, transform=t)
 ```
 
-[Here](https://pytorch.org/docs/stable/torchvision/transforms.html) is the list of common transforms:
+[Here](https://pytorch.org/docs/stable/torchvision/transforms.html){:rel="nofollow"} is the list of common transforms:
 
-* [`RandomCrop`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomCrop)
-* [`RandomGrayscale`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomGrayscale)
-* [`RandomHorizontalFlip`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomHorizontalFlip)
-* [`RandomPerspective`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomPerspective)
-* [`RandomRotation`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomRotation)
-* [`Resize`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Resize)
-* [`Scale`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Scale)
-* [`Normalize`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Normalize)
-* [`ToTensor`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.ToTensor)
+* [`RandomCrop`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomCrop){:rel="nofollow"}
+* [`RandomGrayscale`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomGrayscale){:rel="nofollow"}
+* [`RandomHorizontalFlip`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomHorizontalFlip){:rel="nofollow"}
+* [`RandomPerspective`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomPerspective){:rel="nofollow"}
+* [`RandomRotation`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.RandomRotation){:rel="nofollow"}
+* [`Resize`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Resize){:rel="nofollow"}
+* [`Scale`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Scale){:rel="nofollow"}
+* [`Normalize`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Normalize){:rel="nofollow"}
+* [`ToTensor`](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.ToTensor){:rel="nofollow"}
 
 
 ## Resizing Images
@@ -260,7 +260,7 @@ For instance, in case of ImageNet dataset not all images are 224×224.
 
 There are two options:
 
-* [Resize](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Resize) transform: 
+* [Resize](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Resize){:rel="nofollow"} transform: 
 
 ```python
 torchvision.transforms.Resize(size, interpolation=2)
@@ -268,7 +268,7 @@ torchvision.transforms.Resize(size, interpolation=2)
 
 Where size is a pair of integers (H, W). Unfortunately, this way aspect ratio is gone.
 
-* [Resize](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Resize) followed by [CenterCrop](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.CenterCrop)
+* [Resize](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Resize){:rel="nofollow"} followed by [CenterCrop](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.CenterCrop){:rel="nofollow"}
 
 Resize takes the single integer (in case of ImageNet 224). The smaller from the two edges matches that size, aspect ratio is kept and the bugger edge is suppressed using CenterCrop. 
 
