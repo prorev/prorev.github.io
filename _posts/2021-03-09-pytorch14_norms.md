@@ -140,17 +140,24 @@ In the initialization step:
 * start with random initialization $W$ , $b$ 
 * for each unit in the **first layer** compute output before nonlinearity
 
-> $\mathbf t = W\mathbf x+b$
+$$
+\mathbf t = W\mathbf x+b
+$$
 
 * compute $\mu[t]$ and $\sigma[t]$ of that output 
 * rescale original weight and bias
 
-> $W \leftarrow \dfrac{1}{\sigma[t]}\small W$, $b \leftarrow \dfrac{b-\mu[t]}{\sigma[t]}$
+$$W\leftarrow \dfrac{1}{\sigma[t]}\small W$$
+
+$$b \leftarrow \dfrac{b-\mu[t]}{\sigma[t]}$$
 
 After the initialization step you will get:
 
-> $y = \phi(W\mathbf x+b) = \phi( \frac{1}{\sigma[t]}\small W \mathbf x + \frac{b-\mu[t]}{\sigma[t]} ) 
-= \phi (\frac{1}{\sigma[t]}(W \mathbf x + b-\mu[t]) ) = \phi (\frac{1}{\sigma[t]}(\mathbf t-\mu[t]) )$
+$$\begin{aligned}y &= \phi(W\mathbf x+b) \\
+&= \phi( \frac{1}{\sigma[t]}\small W \mathbf x + \frac{b-\mu[t]}{\sigma[t]} ) 
+\\
+&= \phi (\frac{1}{\sigma[t]}(W \mathbf x + b-\mu[t]) ) \\
+&= \phi (\frac{1}{\sigma[t]}(\mathbf t-\mu[t]))\end{aligned}$$
 
 Or in other words we will have the output of standard deviation of 1 and mean of 0.
 
