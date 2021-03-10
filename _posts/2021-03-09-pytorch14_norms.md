@@ -115,7 +115,7 @@ l_u_weight tensor([-0.6609, -0.7505])
 l_v_weight tensor([ 0.5971, -0.6719,  0.4382])
 ```
 
-We used `torch.svd`to calculate the `u`, `s`, and `v`. These are singular value decomposition results. 
+We used `torch.svd` to calculate the `u`, `s`, and `v`. These are singular value decomposition results. 
 `u` and `v` are left and right singular vectors, and `s` is regular diagonal matrix. Diagonal values of matrix `s` are called singular values.
 
 Before we apply the spectral norm we don't have our singular values that are close to 1 or -1 (0.6741, 0.3147). After the spectral norm this changes:
@@ -167,7 +167,7 @@ In reparametrization step:
 
 * express weights as function of new parameters
 
-> $\mathbf w  = \large\frac{g}{\|{\mathbf v} \|} \small \mathbf v$
+$$\mathbf w  = \large\frac{g}{\|{\mathbf v} \|} \small \mathbf v$$
     
 * minimize the loss w.r.t. $\mathbf v$, $b$, $g$  
 
@@ -253,7 +253,7 @@ OrderedDict([('bias', tensor([-0.0917,  0.4735, -0.4258, -0.3572])), ('weight', 
 
 ## Frobenius norm
 
-Frobenius norm is a scalar. To calculate this norm for a matrix you simple square each element, sum them alll, and take the square root of all that. 
+Frobenius norm is a scalar. To calculate this norm for a matrix you simple square each element, sum them all, and take the square root of all that. 
 
 <sub>\* This is the same as Euclidian norm of a tensor.</sub>
 
