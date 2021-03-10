@@ -45,7 +45,7 @@ Since `Dataset` is an abstract class you will be using some other classes on top
 * [Predefined datases](https://pytorch.org/docs/stable/torchvision/datasets.html){:rel="nofollow"} (MNIST, CIFAR10, CIFAR100, EMNIST, ...)
 * Custom dataset (class inherited from `Dataset`)
 * [`ConcatDataset`](https://pytorch.org/docs/stable/data.html?highlight=concatdataset#torch.utils.data.ConcatDataset){:rel="nofollow"} (two datasets mixed into one)
-* [`DatasetFolder`](https://pytorch.org/docs/stable/torchvision/datasets.html#datasetfolder) (a folder of different files){:rel="nofollow"}
+* [`DatasetFolder`](https://pytorch.org/docs/stable/torchvision/datasets.html#datasetfolder){:rel="nofollow"} (a folder of different files)
 
 ## Predefined datases
 
