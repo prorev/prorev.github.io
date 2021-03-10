@@ -119,7 +119,7 @@ To write a custom dataset inherit the abstract class `torch.utils.data.Dataset`.
 
 ## Creating `ConcatDataset`
 
-We can use this [Linux notebook](https://colab.research.google.com/drive/1LWV0pGw7gScb2cmcmDlNt7d8Y23PC2C0?usp=sharing) {:rel="nofollow"}
+We can use this [Linux notebook](https://colab.research.google.com/drive/1LWV0pGw7gScb2cmcmDlNt7d8Y23PC2C0?usp=sharing){:rel="nofollow"}
 to practice concatenating two datasets together. In here we used CIFAR10 dataset training and validation sets.
 
 The `ds_train` and `ds_valid` variables are enclosed in a simple python list and we create the `ds` dataset.
