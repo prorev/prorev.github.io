@@ -27,7 +27,7 @@ tags:
 
 ## Reproducibility trick
 
-How to achieve perfect reproducibility in PyTorch? Here is the function you may before anything.
+How to achieve perfect reproducibility in PyTorch? Here is the function you may run before anything.
 
 ```python
 import torch
