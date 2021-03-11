@@ -33,8 +33,8 @@ tags:
 
 PyTorch hooks are great and powerful. There are three main types: 
 
-* forward hooks and 
-* backward hooks
+* forward hooks
+* backward hooks and
 * state dict hooks
 
 In here I will just explain forward hooks. There are two types of forward hooks:
