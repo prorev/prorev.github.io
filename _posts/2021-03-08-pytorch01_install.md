@@ -24,7 +24,7 @@ In short PyTorch is a Python based machine learning library maintained by Facebo
 
 In practice, PyTorch works really well together with `numpy`, `scikit-learn`, and `Pandas`.
 
-Originally, PyTorch grew up from [Torch library](https://en.wikipedia.org/wiki/Torch_(machine_learning){:rel="nofollow"} made for the Lua programming language.
+Originally, PyTorch grew up from [Torch library](https://en.wikipedia.org/wiki/Torch_(machine_learning)){:rel="nofollow"} made for the Lua programming language.
 
 ## Install PyTorch 
 
