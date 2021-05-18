@@ -119,7 +119,7 @@ plt.imshow(t) # matplotlib show
 
 ## Cropping images
 
-We ware using in here just the regular numpy indexing. `im=im[:,:,::-1]` means invert the non-spatial dimension.
+We were using in here just the regular numpy indexing. `im=im[:,:,::-1]` means invert the non-spatial dimension.
 
 
 **Example**: Cropping the image using CV2
