@@ -16,8 +16,8 @@ tags:
 - [Print a line](#print-a-line)
 - [Comments](#comments)
 - [Import Packages](#import-packages)
-- [Exported variables](#exported-variables)
 - [Define variables](#define-variables)
+- [Exported variables](#exported-variables)
 - [Constants](#constants)
 - [Types](#types)
 - [Reflect types](#reflect-types)
@@ -97,14 +97,6 @@ import (
 )
 ```
 
-
-
-## Exported variables
-
-There is a simple rule in Go. A name is exported if it begins with a capital letter. For example, Pi is exported from the `math` package.
-
-After you import a package, you can refer only to package exported names. 
-
 ## Define variables
 
 ```go
@@ -134,6 +126,11 @@ Variables declared without an explicit initial value are by default set to zero:
 * `""` (the empty string) for strings.
 
 
+## Exported variables
+
+There is a simple rule in Go. A name is exported if it begins with a capital letter. For example, Pi is exported from the `math` package.
+
+After you import a package, you can refer only to package exported names. 
 
 ## Constants
 
