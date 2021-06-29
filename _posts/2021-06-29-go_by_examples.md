@@ -111,11 +111,11 @@ After you import a package, you can refer only to package exported names.
 ## Define variables
 
 ```go
-    var a = "apple"
-    var b, c int = 1, 2
-    var d = true
-    var e int
-    f := "apple"
+var a = "apple"
+var b, c int = 1, 2
+var d = true
+var e int
+f := "apple"
 ```
 
 The `:=` syntax will declare and initialize a variable, equivalent to:
