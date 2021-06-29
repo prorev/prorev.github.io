@@ -101,12 +101,9 @@ import (
 
 ## Exported variables
 
-There is a simple rule in Go. A name is exported if it begins with a capital letter. 
-
-For example, Pi is exported from the "math" package.
+There is a simple rule in Go. A name is exported if it begins with a capital letter. For example, Pi is exported from the `math` package.
 
 After you import a package, you can refer only to package exported names. 
-
 
 ## Define variables
 
