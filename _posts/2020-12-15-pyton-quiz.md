@@ -1164,7 +1164,7 @@ class MultiDerived(Base1, Base2):
 
 
 ## 70. What does the following code do?
-` def a(b, c, d): pass`
+`def a(b, c, d): pass`
 
 > defines a list and initializes it
 > 
