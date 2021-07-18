@@ -173,6 +173,18 @@ def solution(n):
     return g
 ```
 
+Algorithm 3 returns 100%
+
+```python
+def solution(n):
+    # bin representation of N
+    b = bin(n)[2:]
+    # trim zeros from the right
+    b = b.strip("0")
+    l = b.split("1")    
+    return len(max(l, key=len))
+```
+
 ## Arrays
 
 ### CyclicRotation 
@@ -676,7 +688,7 @@ import random
 def solution(s):
     if len(s)%2==1: return 0
     st = [] # stack
-    pu = ['[', '{', '('] # elelment to push on stack
+    pu = ['[', '{', '('] # element to push on stack
     po = {']':'[', '}':'{', ')':'('}
     
     for e in s:
@@ -691,6 +703,39 @@ def solution(s):
                 return 0
                 
     if len(st) == 0:
+        return 1
+    else:
+        return 0
+```
+
+Another solution without using the dict
+
+```python
+def solution(a):    
+    s = [] # stack
+    if a=="":
+        return 1
+    n = len(a)
+    for e in a:        
+        if e in ['(', '[', '{']:
+            s.append(e)
+        else:
+            if(len(s)==0):
+                return 0
+            
+            if e == ')' and s[-1] == '(':
+                s.pop()
+                continue
+                
+            if e == ']' and s[-1] == '[':
+                s.pop()
+                continue
+                
+            if e == '}' and s[-1] == '{':
+                s.pop()
+                continue
+            
+    if len(s)==0:
         return 1
     else:
         return 0
@@ -2773,16 +2818,20 @@ fid(a)
 ### Find increase and decrease in array
 
 ```python
-def fid(a):
+def fsid(a):    
     n = len(a)
     ida = [0]*n
     for i in range (1,n):
-        dif = a[i]-a[i-1]
-        ida[i]=dif
+        if a[i-1]<a[i]:
+            ida[i]=1
+        elif a[i-1]==a[i]:
+            ida[i]=0
+        else:
+            ida[i]=-1
     return ida
-a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
-fid(a)
-#[0, 4, -2, 1, -1, 1, -3, 1, 1, 1, 2, -4]
+a=[1, 5, 3, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
+fsid(a)
+# [0, 1, -1, 0, 1, -1, 1, -1, 1, 1, 1, 1, -1]
 ```
 
 ### Find peaks of array
