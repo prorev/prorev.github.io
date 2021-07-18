@@ -2800,24 +2800,6 @@ def alf(n):
 ### Find sign of increase and decrease in array
 
 ```python
-def fsid(a):
-    n = len(a)
-    ida = [0]*n
-    for i in range (1,n):
-        if a[i-1]<a[i]:
-            ida[i]=1
-        else:
-            ida[i]=-1
-    return ida
-a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
-fid(a)
-#[0, 1, -1, 1, -1, 1, -1, 1, 1, 1, 1, -1]
-```
-
-
-### Find increase and decrease in array
-
-```python
 def fsid(a):    
     n = len(a)
     ida = [0]*n
@@ -2832,6 +2814,22 @@ def fsid(a):
 a=[1, 5, 3, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
 fsid(a)
 # [0, 1, -1, 0, 1, -1, 1, -1, 1, 1, 1, 1, -1]
+```
+
+
+### Find increase and decrease in array
+
+```python
+def fid(a):
+    n = len(a)
+    ida = [0]*n
+    for i in range (1,n):
+        dif = a[i]-a[i-1]
+        ida[i]=dif
+    return ida
+a=[1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
+fid(a)
+#[0, 4, -2, 1, -1, 1, -3, 1, 1, 1, 2, -4]
 ```
 
 ### Find peaks of array
