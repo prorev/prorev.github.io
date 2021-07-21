@@ -302,7 +302,9 @@ A regression model predicts continuous values. For example, regression models ma
 3) **clustering**
 
 
-Regression and classification are supervised learning processes, while clustering is an unsupervised learning approach.
+Regression and classification analysis are supervised machine learning techniques in general. 
+
+Clustering is an unsupervised learning approach together with association. 
 
 Regression predicts continuous values for the output. Predicting a person's income from their age and education is an example of a regression task.
 
