@@ -73,5 +73,5 @@ If you don't have Media Features you need to enable it via Settings -> Optional 
  
 >Please install the Feature called "Media Foundation" in the Server Manager. Beware, some posts advise to install "Windows Server Essentials Media Pack", but this one requires the "Windows Server Essentials Experience" role, and this role will deeply affect your Windows Server configuration (by enforcing active directory integration etc.); so just installing the "Media Foundation" should be a safer choice.
  
-4) If the problem persis download [Dependencies](https://github.com/lucasg/Dependencies){:rel="nofollow"} and search for the package cv2.pyd file to debug missing DLL issues.
+4) If the problem persist download [Dependencies](https://github.com/lucasg/Dependencies){:rel="nofollow"} and search for the package cv2.pyd file to debug missing DLL issues.
 
