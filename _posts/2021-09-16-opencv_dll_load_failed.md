@@ -75,3 +75,7 @@ If you don't have Media Features you need to enable it via Settings -> Optional 
  
 4) If the problem persist download [Dependencies](https://github.com/lucasg/Dependencies){:rel="nofollow"} and search for the package cv2.pyd file to debug missing DLL issues.
 
+
+Once you resolve the problems the output should be without the error message:
+
+![opencv7](/wp-content/uploads/2021/09/opencv7.png)
