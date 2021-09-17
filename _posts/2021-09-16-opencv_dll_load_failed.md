@@ -15,7 +15,7 @@ tags:
 ---
 You installed Python (using Anaconda) on Windows 10.
  
-![anaconda](/wp-content/uploads/2021/09/anaconda.png){:height="341px" width="448"}
+<!-- ![anaconda](/wp-content/uploads/2021/09/anaconda.png){:height="341px" width="448"} -->
  
 This is an excellent way to deal with Python which gives you conda environments for free.
  
