@@ -15,14 +15,14 @@ tags:
 ---
 You installed Python (using Anaconda) on Windows 10.
  
-![anaconda](/wp-content/uploads/2021/09/anaconda.png)
+![anaconda](/wp-content/uploads/2021/09/anaconda.png){:height="341px" width="448"}
  
 This is an excellent way to deal with Python which gives you conda environments for free.
  
 Now you need to install the opencv package using pre-built libraries. Create a conda environment called opencv.
  
 ```
-conda create --name env_opencv
+conda create --name opencv
 ```
  
 Once you create the environment, activate it.
