@@ -70,7 +70,7 @@ If you don't have Media Features you need to enable it via Settings -> Optional 
  
 ![opencv6](/wp-content/uploads/2021/09/opencv6.png)
  
-3) For Windows Server 2012+, I found a [troubleshooting info](https://pypi.org/project/opencv-python/) from the official opencv documentation:
+3) For Windows Server 2012+, I found a [troubleshooting info](https://pypi.org/project/opencv-python/){:rel="nofollow"} from the official opencv documentation:
  
 _Please install the Feature called "Media Foundation" in the Server Manager. Beware, some posts advise to install "Windows Server Essentials Media Pack", but this one requires the "Windows Server Essentials Experience" role, and this role will deeply affect your Windows Server configuration (by enforcing active directory integration etc.); so just installing the "Media Foundation" should be a safer choice._ 
 
