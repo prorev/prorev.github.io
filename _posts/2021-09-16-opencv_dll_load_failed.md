@@ -31,7 +31,7 @@ Once you create the environment, activate it.
 conda activate opencv
 ```
  
-Check your python version:
+Check your Python version:
  
 ![opencv2](/wp-content/uploads/2021/09/opencv2.png)
  
@@ -48,11 +48,13 @@ Common problem on Windows 10 may be:
  
 **ImportError: DLL load failed: The specified module could not be found.**
  
-This problem means some opencv dlls are missing. Opencv has a cv2.pyd file packaged as a dynamic link library. It contains Python code which can be called out to and used by other Python applications.
+This problem means some opencv dlls are missing. Opencv has a cv2.pyd file packaged as a **dynamic link library**. 
+
+The problem indicates some of the cv2.pyd DLL dependencies are not loading.
+
+Here are the steps to resolve.
  
-Most likely the problem with this message is some of the cv2.pyd dependencies are not loading.
- 
-## Steps to solve: DLL load failed: The specified module could not be found.
+## Steps to resolve: DLL load failed: The specified module could not be found.
  
 Here are the steps you need to check:
  
@@ -70,9 +72,8 @@ If you don't have Media Features you need to enable it via Settings -> Optional 
  
 3) For Windows Server 2012+, I found a [troubleshooting info](https://pypi.org/project/opencv-python/) from the official opencv documentation:
  
- 
->Please install the Feature called "Media Foundation" in the Server Manager. Beware, some posts advise to install "Windows Server Essentials Media Pack", but this one requires the "Windows Server Essentials Experience" role, and this role will deeply affect your Windows Server configuration (by enforcing active directory integration etc.); so just installing the "Media Foundation" should be a safer choice.
- 
+_Please install the Feature called "Media Foundation" in the Server Manager. Beware, some posts advise to install "Windows Server Essentials Media Pack", but this one requires the "Windows Server Essentials Experience" role, and this role will deeply affect your Windows Server configuration (by enforcing active directory integration etc.); so just installing the "Media Foundation" should be a safer choice._ 
+
 4) If the problem persist download [Dependencies](https://github.com/lucasg/Dependencies){:rel="nofollow"} and search for the package cv2.pyd file to debug missing DLL issues.
 
 
