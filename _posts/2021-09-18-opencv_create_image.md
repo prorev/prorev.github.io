@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Opencv Create and Show the Image
+title: OpenCV Create and Show the Image
 date: 2020-01-22
 author: taimane
 layout: post
@@ -40,7 +40,7 @@ In this example we created a 3 channel image and filled it in gray.
  
 ## Draw primitives
 
-Basic primitives we can add to the image are lines and circles.
+Lines and circles are basic primitives we can add to the image. We use OpenCV library for adding primitives because it works directly on numpy images. 
 
 ```python
 import numpy as np
@@ -61,6 +61,8 @@ plt.show()
 ```
  
 ![primitives](/wp-content/uploads/2021/09/primitives.jpg)
+
+We used `matplotlib.pyplot` to show the image.
  
 ## Create a noisy image
  
@@ -109,6 +111,8 @@ _ = plt.imshow(img)
 ![apple](/wp-content/uploads/2021/09/apple.jpg)
 
 ## Create a grayscale image from RGB
+
+We can just use OpenCV `cvtColor` method to create single channel image and then if we combine three of these using OpenCV `merge` method we will get the gray apple.
 
 ```python
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
