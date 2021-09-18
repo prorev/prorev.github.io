@@ -45,17 +45,17 @@ Lines and circles are basic primitives we can add to the image. We use OpenCV li
 ```python
 import numpy as np
 import cv2
- 
-img = np.zeros((300, 300, 3), dtype = "uint8")
- 
+
+img = np.zeros((270,474, 3), dtype = "uint8")
+
 green = (0, 255, 0)
-cv2.line(img, (0, 0), (300, 300), green)
- 
+cv2.line(img, (0, 0), (474, 270), green)
+
 red = (255, 0, 0)
-R = 150
+R = 100
 (centerX, centerY) = (img.shape[1] // 2, img.shape[0] // 2)
 cv2.circle(img, (centerX, centerY), R , red)
- 
+
 plt.imshow(img)
 plt.show()
 ```
@@ -138,4 +138,40 @@ _ = plt.imshow(img)
 
 ![gray apple](/wp-content/uploads/2021/09/grayscale.jpg)
 
-Check out this [gist](https://gist.github.com/dejanbatanjac/7cefe4365921d75590e02c1cf43b70c2){:rel="nofollow"} for more details.
+Check out this [gist](https://gist.github.com/dejanbatanjac/2dd9274102faa365f21bf6f48107a999){:rel="nofollow"} for more details.
+
+## Read color image as grayscale (single channel)
+
+```python
+%matplotlib inline
+from matplotlib import pyplot as plt
+import cv2
+img=cv2.imread(r"apple.jpg", cv2.IMREAD_GRAYSCALE)
+print(img.shape)
+_ = plt.imshow(img)
+```
+
+![grayscale apple](/wp-content/uploads/2021/09/grayscaleapple1.jpg)
+
+But this does not look gray, because imshow method is using viridis cmap. Let's use another cmap.
+
+```python
+_ = plt.imshow(img, cmap='gray') # default is viridis
+```
+
+![grayscale apple](/wp-content/uploads/2021/09/grayscaleapple2.jpg)
+
+## Convert single channel image to RGB (three channels)
+
+```python
+%matplotlib inline
+from matplotlib import pyplot as plt
+import cv2
+grayimg=cv2.imread(r"apple.jpg", cv2.IMREAD_GRAYSCALE)
+print(grayimg.shape)
+img = cv2.cvtColor(grayimg,cv2.COLOR_GRAY2RGB)
+print(img.shape)
+_ = plt.imshow(img)
+```
+
+![grayscale apple](/wp-content/uploads/2021/09/grayscaleapple3.jpg)
