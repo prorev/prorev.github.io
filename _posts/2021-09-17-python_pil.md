@@ -18,6 +18,7 @@ tags:
   - [PIL.ImageFilter](#pilimagefilter)
   - [PIL.ImageEnhance](#pilimageenhance)
   - [PIL.Image.ImageDraw](#pilimageimagedraw)
+- [Comparison with OpenCV](#comparison-with-opencv)
 
 What is PIL? 
 
@@ -153,3 +154,8 @@ display(pil_image_again)
 ![pil primitive](/wp-content/uploads/2021/09/pil_primitive.jpg)
 
 
+You can use `ImageDraw` to draw primitives such as line, point, text, ellipse, polygon, bitmaps, etc.
+
+## Comparison with OpenCV
+
+OpenCV is written in C and C++ whereas PIL is written using Python and C. Because of that OpenCV seams faster.
