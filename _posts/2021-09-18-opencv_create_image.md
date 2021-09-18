@@ -12,6 +12,16 @@ categories:
 tags:   
    - image
 ---
+- [Create a gray image](#create-a-gray-image)
+- [Draw primitives](#draw-primitives)
+- [Create a noisy image](#create-a-noisy-image)
+- [Read image from URL](#read-image-from-url)
+- [Show image](#show-image)
+- [Blue apple](#blue-apple)
+- [Create a grayscale image from RGB](#create-a-grayscale-image-from-rgb)
+- [Read color image as grayscale (single channel)](#read-color-image-as-grayscale-single-channel)
+- [Convert single channel image to RGB (three channels)](#convert-single-channel-image-to-rgb-three-channels)
+
 Usually when we think of images we imagine three channel images.
  
 Let's create the image in Python using just `matplotlib.pyplot` and `numpy` packages. One great example would be to create a three channel gray image.
