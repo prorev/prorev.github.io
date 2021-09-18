@@ -12,6 +12,13 @@ categories:
 tags:   
    - image
 ---
+- [PIL.Image.open](#pilimageopen)
+- [Showing the image](#showing-the-image)
+- [PIL functions](#pil-functions)
+  - [PIL.ImageFilter](#pilimagefilter)
+  - [PIL.ImageEnhance](#pilimageenhance)
+  - [PIL.Image.ImageDraw](#pilimageimagedraw)
+
 What is PIL? 
 
 This is an old library from 1996. 
@@ -56,7 +63,7 @@ The example shows the usage of `PIL.Image.open()` to open given image file.
 
 > `PIL.Image.open()` returns a 2D image.
 
-> You can use `torchvision.transforms` to transform the PIL.Image to tensor format.
+> You can use `torchvision.transforms` to transform the `PIL.Image` to tensor format.
 
 ## Showing the image
 
@@ -132,7 +139,7 @@ Similar you can do to Brightness you can do to Contrast, Sharpness and Color.
 
 ### PIL.Image.ImageDraw
 
-ImageDraw in PIL (pillow) works like this:
+`ImageDraw` in PIL (pillow) works like this:
 
 ```python
 import PIL
