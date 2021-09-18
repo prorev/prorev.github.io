@@ -39,7 +39,9 @@ In this example we created a 3 channel image and filled it in gray.
 ![gray](/wp-content/uploads/2021/09/gray.jpg)
  
 ## Draw primitives
- 
+
+Basic primitives we can add to the image are lines and circles.
+
 ```python
 import numpy as np
 import cv2
@@ -105,4 +107,15 @@ _ = plt.imshow(img)
 ```
  
 ![apple](/wp-content/uploads/2021/09/apple.jpg)
+
+## Create a grayscale image from RGB
+
+```python
+img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+print(img.shape)
+img = cv2.merge([img,img,img])
+_ = plt.imshow(img)
+```
+
+![gray apple](/wp-content/uploads/2021/09/grayscale.jpg)
 
