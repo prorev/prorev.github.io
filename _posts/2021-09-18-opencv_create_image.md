@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: OpenCV Create and Show the Image
+title: OpenCV Create and Show the Image Correctly
 date: 2020-01-22
 author: taimane
 layout: post
@@ -109,6 +109,21 @@ _ = plt.imshow(img)
 ```
  
 ![apple](/wp-content/uploads/2021/09/apple.jpg)
+
+## Blue apple
+
+If we would not convert the image with `img=img[:,:,::-1]` we would get the blue apple.
+
+```python
+%matplotlib inline
+from matplotlib import pyplot as plt
+import cv2
+img=cv2.imread(r"apple.jpg")
+_ = plt.imshow(img)
+```
+
+![blue apple](/wp-content/uploads/2021/09/blueapple.jpg)
+
 
 ## Create a grayscale image from RGB
 
