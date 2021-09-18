@@ -1,68 +1,148 @@
 ---
 id: 12971
-title: Python GIL
+title: Python PIL image library
 date: 2020-01-22
 author: taimane
 layout: post
-permalink: /python/gil
-published: false
+permalink: /python/pil
+published: true
 image: 
 categories: 
    - python
 tags:   
-   - threading
+   - image
 ---
+What is PIL? 
 
-- [What is GIL](#what-is-gil)
-- [Python threading](#python-threading)
-- [Reference counting](#reference-counting)
+This is an old library from 1996. 
 
-## What is GIL
+Support for PIL (Python Imaging Library) got discontinued in 2011, but a project named pillow forked the original PIL project and added support for Python3.
 
-GIL makes any CPU python program single threaded.
+Pillow is now a replacement for PIL.
 
-> In case of massive calculations to improve the performance we need to create processes.
+Pillow supports a large number of image file formats including BMP, PNG, JPEG, and TIFF.
 
-For I/O based programs GIL has no effect. 
+Pillow is frequently used for creating command-line applications that can be used to convert images in various formats.
 
-> For instance, in case of reading big files it's fine to have multi threaded Python program.
+## PIL.Image.open
 
-`Thread.join()` waits for the thread to finish.
-
-## Python threading
-
-**What does threading.Lock() do?**
-
-
-threading.Lock is used to restrict access to a section of code (or a resource) 
-so that only one thread can execute that code (or use the resource) at a time. 
-
-In other words this is threads synchronization mechanism that allows one thread at a time to access resource.
-
-Every access to the resource must be protected by a Lock. 
-
-
-
-## Reference counting
-
-Python uses reference counting for memory management where each object has a reference counter.
+The next code shows how to open the image using PIL `Image.open` method:
 
 ```python
-import sys 
-a = []
-print(sys.getrefcount(a))
+%matplotlib inline
+from PIL import Image
+from matplotlib.pyplot import imshow 
+import torchvision.transforms as transforms
+
+pil_img = Image.open(r"apple.jpg")
+print(pil_img)
+ 
+tensor = transforms.ToTensor()(pil_img).unsqueeze_(0)
+print(tensor.shape) 
+
+pil_image = transforms.ToPILImage()(tensor.squeeze_(0))
+print(pil_image.size)
+pil_image_again = transforms.ToPILImage()(tensor).convert("RGB")
+print(pil_image_again)
+print(pil_image_again.size)
+display(pil_image_again)
+# pil_image_again.show() # not inline
+# imshow(pil_img)
 ```
 
-Out:
+![pil image](/wp-content/uploads/2021/09/pil1.jpg)
+
+The example shows the usage of `PIL.Image.open()` to open given image file.
+
+> `PIL.Image.open()` returns a 2D image.
+
+> You can use `torchvision.transforms` to transform the PIL.Image to tensor format.
+
+## Showing the image
+
+We can use `pil_image_again.show()` but it doesn't work inline from some reason so knowing you will be working inside jupyter notebook as I am aware this method is not the best. 
+
+You can simple use `display()` method to that works inline.
+
+Another alternative is tu use `matplotlib.pyplot` method `imshow`.
+
+## PIL functions
+
+The PIL module provides a number of functions we will examine now.
+
+
+### PIL.ImageFilter
+
+With this we can achieve the EMBOSS effect.
+
+```python
+from PIL import ImageFilter
+img2 = pil_image_again.filter(ImageFilter.EMBOSS)
+display(img2)
 ```
-2
+
+![pil emboss](/wp-content/uploads/2021/09/pil_emboss.jpg)
+
+CONTOUR effect as well:
+
+```python
+img2 = pil_image_again.filter(ImageFilter.CONTOUR)
+display(img2)
 ```
 
-Reference counter is Python internal variable that keeps track of the number of references to the object. 
-When reference counter is zero we can release the memory occupied by the object.
+![pil contour](/wp-content/uploads/2021/09/pil_contour.jpg)
 
-`sys.getrefcount` will return the reference count of object.
+MinFilter:
 
-The count returned is generally one higher than you might expect, because it includes the (temporary) reference as an argument to `getrefcount()`.
+```python
+img2 = pil_image_again.filter(ImageFilter.MaxFilter(size=5))
+display(img2)
+```
+![min filter](/wp-content/uploads/2021/09/pil_minfilter.jpg)
+
+
+MaxFilter:
+
+```python
+img2 = pil_image_again.filter(ImageFilter.MinFilter(size=5))
+display(img2)
+```
+
+![max filter](/wp-content/uploads/2021/09/pil_maxfilter.jpg)
+
+If you check 
+
+```python
+help(ImageFilter)
+```
+
+you will find all the possible filters.
+
+### PIL.ImageEnhance 
+
+```python
+from PIL import ImageEnhance
+effect = ImageEnhance.Brightness(pil_image_again)
+display(effect.enhance(5))
+```
+
+![enhance brightness](/wp-content/uploads/2021/09/pil_enhance_brightness.jpg)
+
+Similar you can do to Brightness you can do to Contrast, Sharpness and Color.
+
+### PIL.Image.ImageDraw
+
+ImageDraw in PIL (pillow) works like this:
+
+```python
+import PIL
+from PIL import ImageDraw
+
+area = ImageDraw.Draw(pil_image_again)
+area.rectangle((0,0, 200, 150), outline="white", width=1)
+display(pil_image_again)
+```
+
+![pil primitive](/wp-content/uploads/2021/09/pil_primitive.jpg)
 
 
