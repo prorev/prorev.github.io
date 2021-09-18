@@ -138,3 +138,4 @@ _ = plt.imshow(img)
 
 ![gray apple](/wp-content/uploads/2021/09/grayscale.jpg)
 
+Check out this [gist](https://gist.github.com/dejanbatanjac/7cefe4365921d75590e02c1cf43b70c2){:rel="nofollow"} for more details.
