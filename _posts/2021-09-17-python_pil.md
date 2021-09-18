@@ -12,6 +12,7 @@ categories:
 tags:   
    - image
 ---
+- [PIL.Image.mode](#pilimagemode)
 - [PIL.Image.open](#pilimageopen)
 - [Showing the image](#showing-the-image)
 - [PIL functions](#pil-functions)
@@ -31,6 +32,49 @@ Pillow is now a replacement for PIL.
 Pillow supports a large number of image file formats including BMP, PNG, JPEG, and TIFF.
  
 Pillow is frequently used for creating command-line applications that can be used to convert images in various formats.
+
+## PIL.Image.mode
+
+RGB images mean they have 3 channels, one for red, one for green and one for blue. 
+
+RGBA means there is another alpha channel.
+
+P mode image, that image colors are from the pallette.
+
+A palette with up to 256 different colours is shorter instead of storing 3 bytes for R, G and B for each pixel. P mode image stores 1 byte which is the index into the palette. 
+
+The disadvantage of P image mode is that it can only represent 256 unique colours.
+
+L mode image means it is a single channel image. L stands for luminance.
+
+You can check the PIL.Image mode with `mode` method.
+
+```python
+%matplotlib inline
+from PIL import Image
+from matplotlib.pyplot import imshow 
+import torchvision.transforms as transforms
+ 
+pil_img = Image.open(r"apple.jpg")
+print(pil_img.mode)
+print(pil_img.convert("L").mode)
+print(pil_img.convert("LA").mode)
+print(pil_img.convert("P").mode)
+print(pil_img.convert("PA").mode)
+print(pil_img.convert("RGB").mode)
+print(pil_img.convert("RGBA").mode)
+```
+
+Out:
+```
+RGB
+L
+LA
+P
+PA
+RGB
+RGBA
+```
  
 ## PIL.Image.open
  
