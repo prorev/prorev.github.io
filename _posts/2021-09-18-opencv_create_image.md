@@ -19,7 +19,7 @@ tags:
 - [Show image](#show-image)
 - [Blue apple](#blue-apple)
 - [Create a grayscale image from RGB](#create-a-grayscale-image-from-rgb)
-- [Read color image as grayscale (single channel)](#read-color-image-as-grayscale-single-channel)
+- [Show single channel image](#show-single-channel-image)
 - [Convert single channel image to RGB (three channels)](#convert-single-channel-image-to-rgb-three-channels)
 
 Usually when we think of images we imagine three channel images.
@@ -150,7 +150,7 @@ _ = plt.imshow(img)
 
 Check out this [gist](https://gist.github.com/dejanbatanjac/2dd9274102faa365f21bf6f48107a999){:rel="nofollow"} for more details.
 
-## Read color image as grayscale (single channel)
+## Show single channel image
 
 ```python
 %matplotlib inline
@@ -163,7 +163,7 @@ _ = plt.imshow(img)
 
 ![grayscale apple](/wp-content/uploads/2021/09/grayscaleapple1.jpg)
 
-But this does not look gray, because imshow method is using viridis cmap. Let's use another cmap.
+But this does not look gray, because imshow method is using viridis cmap. Let's use gray cmap.
 
 ```python
 _ = plt.imshow(img, cmap='gray') # default is viridis
