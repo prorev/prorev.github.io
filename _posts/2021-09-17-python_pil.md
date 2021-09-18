@@ -12,8 +12,8 @@ categories:
 tags:   
    - image
 ---
-- [PIL.Image.mode](#pilimagemode)
 - [PIL.Image.open](#pilimageopen)
+- [PIL.Image.mode](#pilimagemode)
 - [Showing the image](#showing-the-image)
 - [PIL functions](#pil-functions)
   - [PIL.ImageFilter](#pilimagefilter)
@@ -32,6 +32,43 @@ Pillow is now a replacement for PIL.
 Pillow supports a large number of image file formats including BMP, PNG, JPEG, and TIFF.
  
 Pillow is frequently used for creating command-line applications that can be used to convert images in various formats.
+
+
+ 
+## PIL.Image.open
+ 
+The next code shows how to open the image using PIL `Image.open` method:
+ 
+```python
+%matplotlib inline
+from PIL import Image
+from matplotlib.pyplot import imshow 
+import torchvision.transforms as transforms
+ 
+pil_img = Image.open(r"apple.jpg")
+print(pil_img)
+ 
+tensor = transforms.ToTensor()(pil_img).unsqueeze_(0)
+print(tensor.shape) 
+ 
+pil_image = transforms.ToPILImage()(tensor.squeeze_(0))
+print(pil_image.size)
+pil_image_again = transforms.ToPILImage()(tensor).convert("RGB")
+print(pil_image_again)
+print(pil_image_again.size)
+display(pil_image_again)
+# pil_image_again.show() # not inline
+# imshow(pil_img)
+```
+ 
+![pil image](/wp-content/uploads/2021/09/pil1.jpg)
+ 
+The example shows the usage of `PIL.Image.open()` to open a given image file.
+ 
+> `PIL.Image.open()` returns a 2D image.
+ 
+> You can use `torchvision.transforms` to transform the `PIL.Image` to tensor format.
+
 
 ## PIL.Image.mode
 
@@ -75,41 +112,7 @@ PA
 RGB
 RGBA
 ```
- 
-## PIL.Image.open
- 
-The next code shows how to open the image using PIL `Image.open` method:
- 
-```python
-%matplotlib inline
-from PIL import Image
-from matplotlib.pyplot import imshow 
-import torchvision.transforms as transforms
- 
-pil_img = Image.open(r"apple.jpg")
-print(pil_img)
- 
-tensor = transforms.ToTensor()(pil_img).unsqueeze_(0)
-print(tensor.shape) 
- 
-pil_image = transforms.ToPILImage()(tensor.squeeze_(0))
-print(pil_image.size)
-pil_image_again = transforms.ToPILImage()(tensor).convert("RGB")
-print(pil_image_again)
-print(pil_image_again.size)
-display(pil_image_again)
-# pil_image_again.show() # not inline
-# imshow(pil_img)
-```
- 
-![pil image](/wp-content/uploads/2021/09/pil1.jpg)
- 
-The example shows the usage of `PIL.Image.open()` to open a given image file.
- 
-> `PIL.Image.open()` returns a 2D image.
- 
-> You can use `torchvision.transforms` to transform the `PIL.Image` to tensor format.
- 
+
 ## Showing the image
  
 We can use `pil_image_again.show()` but it doesn't work inline from some reason so knowing you will be working inside jupyter notebook as I am aware this method is not the best. 
