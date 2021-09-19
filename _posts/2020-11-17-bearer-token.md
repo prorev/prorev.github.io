@@ -4,7 +4,8 @@ title: Bearer Token
 date: 2020-11-17
 author: taimane
 layout: post
-permalink: /auth/bearer
+redirect_from: /auth/bearer
+permalink: /html/bearer
 published: true
 image: 
 categories:
