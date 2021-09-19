@@ -9,7 +9,7 @@ permalink: /html/bearer
 published: true
 image: 
 categories:
-   - auth
+   - html
 tags:
    - oauth
 ---
