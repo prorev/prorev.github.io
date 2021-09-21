@@ -5,7 +5,7 @@ date: 2020-01-22
 author: taimane
 layout: post
 permalink: /machine-learning/history
-published: false
+published: true
 image: 
 categories: 
    - machine-learning
