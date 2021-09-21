@@ -17,7 +17,7 @@ Arthur Samuel first came up with the phrase "Machine Learning". He was an Americ
 Here is the short history of machine learning.
 
 - [1763 Bayes' Theorem](#1763-bayes-theorem)
-- [1805 Least Square](#1805-least-square)
+- [1805 Least Square methods](#1805-least-square-methods)
 - [1913 Markov Chains](#1913-markov-chains)
 - [1950 Turing's Learning Machine](#1950-turings-learning-machine)
 - [1951 First Neural Network Machine](#1951-first-neural-network-machine)
@@ -55,7 +55,7 @@ Bayes Theorem is a method to determine conditional probabilities. Conditional pr
  
 The theorem was discovered among the papers of the English mathematician Thomas Bayes and published posthumously in 1763.
  
-## 1805 Least Square
+## 1805 Least Square methods
  
 Adrien-Marie Legendre discovered the least squares method. The least squares method is used widely in data fitting. 
  
