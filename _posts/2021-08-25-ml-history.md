@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Maching Learning History
+title: Machine Learning History
 date: 2020-01-22
 author: taimane
 layout: post
@@ -12,6 +12,10 @@ categories:
 tags:
    - history
 ---
+Arthur Samuel first came up with the phrase "Machine Learning". He was an American IBM and pioneer in the field of computer gaming and artificial intelligence.
+
+Here is the short history of machine learning.
+
 - [1763 Bayes' Theorem](#1763-bayes-theorem)
 - [1805 Least Square](#1805-least-square)
 - [1913 Markov Chains](#1913-markov-chains)
