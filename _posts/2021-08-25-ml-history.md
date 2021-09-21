@@ -35,7 +35,7 @@ Here is the short history of machine learning.
 - [1989 Reinforcement Learning](#1989-reinforcement-learning)
 - [1995 Random Forest Algorithm](#1995-random-forest-algorithm)
 - [1995 Support-Vector Machines](#1995-support-vector-machines)
-- [1997  Achievement    IBM Deep Blue Beats Kasparov](#1997--achievement----ibm-deep-blue-beats-kasparov)
+- [1997 IBM Deep Blue Beats Kasparov](#1997-ibm-deep-blue-beats-kasparov)
 - [1997 LSTM](#1997-lstm)
 - [1998 MNIST database](#1998-mnist-database)
 - [2002 Torch Machine Learning Library](#2002-torch-machine-learning-library)
@@ -124,7 +124,7 @@ Tin Kam Ho publishes a paper describing random decision forests.
  
 Corinna Cortes and Vladimir Vapnik publish their work on support-vector machines.
  
-## 1997  Achievement    IBM Deep Blue Beats Kasparov
+## 1997 IBM Deep Blue Beats Kasparov
  
 IBM's Deep Blue beats the world champion at chess Garry Kasparov.
  
