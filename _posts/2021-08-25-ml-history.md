@@ -22,7 +22,7 @@ Here is the short history of machine learning.
 - [1763 Bayes' Theorem](#1763-bayes-theorem)
 - [1805 Least Square Methods](#1805-least-square-methods)
 - [1913 Markov Chains](#1913-markov-chains)
-- [1950 Turing's Learning Machine](#1950-turings-learning-machine)
+- [1950 Turing's Test](#1950-turings-test)
 - [1951 First Neural Network Machine](#1951-first-neural-network-machine)
 - [1952 Machines Playing Checkers](#1952-machines-playing-checkers)
 - [1957 The Perceptron](#1957-the-perceptron)
@@ -73,7 +73,7 @@ A Markov chain or Markov process is a stochastic model describing a sequence of 
  
 It is used to predict traffic flows, communications networks, genetic issues, ...
  
-## 1950 Turing's Learning Machine
+## 1950 Turing's Test
  
 In 1935 Turing described an abstract computing machine consisting of a limitless memory and a scanner that moves back and forth through the memory, symbol by symbol, reading what it finds and writing further symbols.
  
@@ -89,20 +89,22 @@ Arthur Samuel begins working on some of the very first machine learning programs
  
 ## 1957 The Perceptron
  
-The first artificial neural network was invented in 1958 by psychologist Frank Rosenblatt. Called Perceptron, it was intended to model how the human brain processes visual data and learned to recognize objects.
+The first artificial neural network was invented in 1957 by psychologist Frank Rosenblatt. Called Perceptron, it was intended to model how the human brain processes visual data and learned to recognize objects.
 
 
 
 ## 1963 Machines Playing Tic-Tac-Toe
  
-Donald Michie creates a 'machine' consisting of 304 match boxes and beads, which uses reinforcement learning to play Tic-tac-toe.
+Donald Michie creates a 'machine' consisting of 304 match boxes and beads, which uses reinforcement learning to play Tic-Tac-Toe.
  
 
 ## 1964 Study of the Visual Cortex
 
 Hubel and Wiesel in 1981 won the Nobel price for their findings on understanding of visual cortex back in 1964th paper.
 
-They used micro-electrodes to monitor changes to a single neuron's action potential with visual stimuli. They were able to record electrical activity from individual neurons in the brains of cats. They showed that brain neurons are organized into local receptive fields. This was the inspiration for the new class of neural architectures with local shared weights.
+They used micro-electrodes to monitor changes of a single neuron's action potential based on visual stimuli and they were able to record electrical activity from individual neurons in the brains of cats. 
+
+They concluded that brain neurons are organized into local receptive fields. This was the inspiration for the new class of neural architectures with local shared weights.
 
 
 
