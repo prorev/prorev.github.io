@@ -45,13 +45,13 @@ Here is the short history of machine learning.
 - [2002 Torch Machine Learning Library](#2002-torch-machine-learning-library)
 - [2006 The Netflix Prize Challenge](#2006-the-netflix-prize-challenge)
 - [2009 ImageNet](#2009-imagenet)
-- [2012 Alexnet](#2012-alexnet)
 - [2010 Kaggle Competition](#2010-kaggle-competition)
 - [2011 Beating Humans in Jeopardy](#2011-beating-humans-in-jeopardy)
+- [2012 Alexnet](#2012-alexnet)
 - [2012  Recognizing Cats on YouTube](#2012--recognizing-cats-on-youtube)
+- [2013 Word2vec](#2013-word2vec)
 - [2014 DeepFace](#2014-deepface)
 - [2014 Sibyl](#2014-sibyl)
-- [2013 Word2vec](#2013-word2vec)
 - [2016 Beating Humans in Go](#2016-beating-humans-in-go)
 - [2017 Transformers](#2017-transformers)
 - [2020 AlphaFold 2](#2020-alphafold-2)
@@ -180,11 +180,7 @@ The Netflix Prize competition is launched by Netflix. The aim of the competition
  
 ImageNet is created. ImageNet is a large visual database envisioned by Fei-Fei Li from Stanford University, who realized that the best machine learning algorithms wouldn't work well if the data didn't reflect the real world.
  
-## 2012 Alexnet
- 
-A deep convolutional neural network was called AlexNet, and it was introduced in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC 2012 contest), where it set a precedent for the field of Deep Learning.
- 
- 
+
 ## 2010 Kaggle Competition    
  
 Kaggle, a website that serves as a platform for machine learning competitions, is launched.
@@ -193,19 +189,16 @@ Kaggle, a website that serves as a platform for machine learning competitions, i
 ## 2011 Beating Humans in Jeopardy
  
 Using a combination of machine learning, natural language processing and information retrieval techniques, IBM's Watson beats two human champions in a Jeopardy!
+
+
+## 2012 Alexnet
  
+A deep convolutional neural network was called AlexNet, and it was introduced in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC 2012 contest), where it set a precedent for the field of Deep Learning.
+
 ## 2012  Recognizing Cats on YouTube
  
 The Google Brain team, led by Andrew Ng and Jeff Dean, create a neural network that learns to recognize cats by watching unlabeled images taken from frames of YouTube videos.
- 
- 
-## 2014 DeepFace
- 
-Facebook researchers publish their work on DeepFace, a system that uses neural networks that identifies faces with 97.35% accuracy. The results are an improvement of more than 27% over previous systems and rivals human performance.
- 
-## 2014 Sibyl
- 
-Researchers from Google detail their work on Sibyl, a proprietary platform for massively parallel machine learning used internally by Google to make predictions about user behavior and provide recommendations.
+
 
 ## 2013 Word2vec
 
@@ -220,6 +213,17 @@ Word2vec was capable of doing word arithmetics for the first time:
 ```
 W['king'] - W['man'] + W['woman'] = W['queen'] 
 ```
+ 
+ 
+## 2014 DeepFace
+ 
+Facebook researchers publish their work on DeepFace, a system that uses neural networks that identifies faces with 97.35% accuracy. The results are an improvement of more than 27% over previous systems and rivals human performance.
+ 
+## 2014 Sibyl
+ 
+Researchers from Google detail their work on Sibyl, a proprietary platform for massively parallel machine learning used internally by Google to make predictions about user behavior and provide recommendations.
+
+
  
 ## 2016 Beating Humans in Go
  
