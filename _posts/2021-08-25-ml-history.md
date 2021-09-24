@@ -20,26 +20,30 @@ _Ser Arthur Samuel playing checkers_
 Here is the short history of machine learning.
 
 - [1763 Bayes' Theorem](#1763-bayes-theorem)
-- [1805 Least Square methods](#1805-least-square-methods)
+- [1805 Least Square Methods](#1805-least-square-methods)
 - [1913 Markov Chains](#1913-markov-chains)
 - [1950 Turing's Learning Machine](#1950-turings-learning-machine)
 - [1951 First Neural Network Machine](#1951-first-neural-network-machine)
 - [1952 Machines Playing Checkers](#1952-machines-playing-checkers)
-- [1958 Perceptron](#1958-perceptron)
+- [1957 The Perceptron](#1957-the-perceptron)
 - [1963 Machines Playing Tic-Tac-Toe](#1963-machines-playing-tic-tac-toe)
+- [1964 Study of the Visual Cortex](#1964-study-of-the-visual-cortex)
 - [1967 Nearest Neighbor](#1967-nearest-neighbor)
 - [1970  Automatic Differentiation (Backpropagation)](#1970--automatic-differentiation-backpropagation)
+- [1980 Fukushima's Neocognitron](#1980-fukushimas-neocognitron)
+- [1989 Recognizing of Handwritten Zip Digit Images](#1989-recognizing-of-handwritten-zip-digit-images)
 - [1982 Recurrent Neural Network](#1982-recurrent-neural-network)
 - [1985 NetTalk](#1985-nettalk)
 - [1986  Backpropagation](#1986--backpropagation)
 - [1989 Reinforcement Learning](#1989-reinforcement-learning)
+- [1989 Universal Approximation Theorem](#1989-universal-approximation-theorem)
 - [1995 Random Forest Algorithm](#1995-random-forest-algorithm)
 - [1995 Support-Vector Machines](#1995-support-vector-machines)
 - [1997 IBM Deep Blue Beats Kasparov](#1997-ibm-deep-blue-beats-kasparov)
 - [1997 LSTM](#1997-lstm)
 - [1998 MNIST database](#1998-mnist-database)
 - [2002 Torch Machine Learning Library](#2002-torch-machine-learning-library)
-- [2006 The Netflix Prize](#2006-the-netflix-prize)
+- [2006 The Netflix Prize Challenge](#2006-the-netflix-prize-challenge)
 - [2009 ImageNet](#2009-imagenet)
 - [2012 Alexnet](#2012-alexnet)
 - [2010 Kaggle Competition](#2010-kaggle-competition)
@@ -50,6 +54,7 @@ Here is the short history of machine learning.
 - [2013 Word2vec](#2013-word2vec)
 - [2016 Beating Humans in Go](#2016-beating-humans-in-go)
 - [2017 Transformers](#2017-transformers)
+- [2020 AlphaFold 2](#2020-alphafold-2)
  
  
 ## 1763 Bayes' Theorem
@@ -58,7 +63,7 @@ Bayes Theorem is a method to determine conditional probabilities. Conditional pr
  
 The theorem was discovered among the papers of the English mathematician Thomas Bayes and published posthumously in 1763.
  
-## 1805 Least Square methods
+## 1805 Least Square Methods
  
 Adrien-Marie Legendre discovered the least squares method. The least squares method is used widely in data fitting. 
  
@@ -82,15 +87,25 @@ Marvin Minsky and Dean Edmonds built the first neural network machine, able to l
  
 Arthur Samuel begins working on some of the very first machine learning programs, first creating programs that play checkers.
  
-## 1958 Perceptron
+## 1957 The Perceptron
  
 The first artificial neural network was invented in 1958 by psychologist Frank Rosenblatt. Called Perceptron, it was intended to model how the human brain processes visual data and learned to recognize objects.
- 
- 
+
+
+
 ## 1963 Machines Playing Tic-Tac-Toe
  
 Donald Michie creates a 'machine' consisting of 304 match boxes and beads, which uses reinforcement learning to play Tic-tac-toe.
  
+
+## 1964 Study of the Visual Cortex
+
+Hubel and Wiesel in 1981 won the Nobel price for their findings on understanding of visual cortex back in 1964th paper.
+
+They used micro-electrodes to monitor changes to a single neuron's action potential with visual stimuli. They were able to record electrical activity from individual neurons in the brains of cats. They showed that brain neurons are organized into local receptive fields. This was the inspiration for the new class of neural architectures with local shared weights.
+
+
+
 ## 1967 Nearest Neighbor
  
 The nearest neighbor algorithm was created, which is the start of basic pattern recognition. The algorithm was used to map routes.
@@ -98,6 +113,14 @@ The nearest neighbor algorithm was created, which is the start of basic pattern 
 ## 1970  Automatic Differentiation (Backpropagation)
  
 Seppo Linnainmaa publishes the general method for automatic differentiation (AD) of discrete connected networks of nested differentiable functions. This corresponds to the modern version of backpropagation, but is not yet named as such.
+
+## 1980 Fukushima's Neocognitron
+
+In 1980, Fukushima published the neocognitron, first deep convolutional neural network (CNN) architecture. Fukushima proposed several supervised and unsupervised learning algorithms to train the parameters of a deep neocognitron such that it could learn internal representations of incoming data. He didn't used backpropagation at time.
+
+## 1989 Recognizing of Handwritten Zip Digit Images
+
+Yann LeCun 1989 was able to successfully use backpropagation to recognize the handwritten digit images. Later, he did the same for the ZIP codes.
  
 ## 1982 Recurrent Neural Network
  
@@ -115,6 +138,13 @@ Seppo Linnainmaa's reverse mode of automatic differentiation (first applied to n
 ## 1989 Reinforcement Learning
  
 Christopher Watkins develops Q-learning, which greatly improves the practicality and feasibility of reinforcement learning.
+
+## 1989 Universal Approximation Theorem
+
+Proven by George Cybenko in 1989 for sigmoid activation functions.
+
+Universal approximation theorem (UAT) says that neural networks can approximate any function.
+
  
 ## 1995 Random Forest Algorithm
  
@@ -136,11 +166,11 @@ Sepp Hochreiter and Jürgen Schmidhuber invent long short-term memory (LSTM) rec
  
 A team led by Yann LeCun releases the MNIST database, a dataset comprising a mix of handwritten digits from American Census Bureau employees and American high school students. The MNIST database has since become a benchmark for evaluating handwriting recognition.
  
-## 2002 Torch Machine Learning Library    
+## 2002 Torch Machine Learning Library
  
 Torch, a software library for machine learning, is first released.
  
-## 2006 The Netflix Prize
+## 2006 The Netflix Prize Challenge
  
 The Netflix Prize competition is launched by Netflix. The aim of the competition was to use machine learning to beat Netflix's own recommendation software's accuracy in predicting a user's rating for a film given their ratings for previous films by at least 10%.[40] The prize was won in 2009. 
  
@@ -173,7 +203,7 @@ Facebook researchers publish their work on DeepFace, a system that uses neural n
  
 ## 2014 Sibyl
  
-Researchers from Google detail their work on Sibyl,a proprietary platform for massively parallel machine learning used internally by Google to make predictions about user behavior and provide recommendations.
+Researchers from Google detail their work on Sibyl, a proprietary platform for massively parallel machine learning used internally by Google to make predictions about user behavior and provide recommendations.
 
 ## 2013 Word2vec
 
@@ -196,6 +226,14 @@ Google's AlphaGo program becomes the first Computer Go program to beat an unhand
 ## 2017 Transformers
  
 NLP transformers are used for natural language processing (NLP) and in computer vision (CV). Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization.
+
+## 2020 AlphaFold 2
+
+AlphaFold, outperformed around 100 other teams in a biennial protein-structure prediction challenge called CASP, short for Critical Assessment of Structure Prediction.
+
+![Nature - AlphaFold](/wp-content/uploads/2021/09/nature_af.jpg)
+
+_AlphaFold 2 global distance test_
 
 ---
  
