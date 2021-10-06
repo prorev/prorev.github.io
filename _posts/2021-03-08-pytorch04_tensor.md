@@ -1621,7 +1621,10 @@ tensor([[0.4301, 0.5616],
 ## `torch.matmul()`
 
 
-Another type is `matmul`. This is the same as `mm` and the same as `@` operator.
+Another type is `torch.matmul()`. This is almost the same as `torch.mm()` and the same as `@` operator.
+
+> `torch.matmul()` has support for broadcasting while `torch.mm()` doesn't. That's the difference. 
+
 
 **Example**: `matmul()` = `mm()` = `@`
 
