@@ -31,10 +31,10 @@ Here is the short history of machine learning.
 - [1967 Nearest Neighbor](#1967-nearest-neighbor)
 - [1970  Automatic Differentiation (Backpropagation)](#1970--automatic-differentiation-backpropagation)
 - [1980 Fukushima's Neocognitron](#1980-fukushimas-neocognitron)
-- [1989 Recognizing of Handwritten Zip Digit Images](#1989-recognizing-of-handwritten-zip-digit-images)
 - [1982 Recurrent Neural Network](#1982-recurrent-neural-network)
 - [1985 NetTalk](#1985-nettalk)
 - [1986  Backpropagation](#1986--backpropagation)
+- [1989 Recognizing of Handwritten Zip Digit Images](#1989-recognizing-of-handwritten-zip-digit-images)
 - [1989 Reinforcement Learning](#1989-reinforcement-learning)
 - [1989 Universal Approximation Theorem](#1989-universal-approximation-theorem)
 - [1995 Random Forest Algorithm](#1995-random-forest-algorithm)
@@ -120,10 +120,6 @@ Seppo Linnainmaa publishes the general method for automatic differentiation (AD)
 
 In 1980, Fukushima published the neocognitron, first deep convolutional neural network (CNN) architecture. Fukushima proposed several supervised and unsupervised learning algorithms to train the parameters of a deep neocognitron such that it could learn internal representations of incoming data. He didn't used backpropagation at time.
 
-## 1989 Recognizing of Handwritten Zip Digit Images
-
-Yann LeCun 1989 was able to successfully use backpropagation to recognize the handwritten digit images. Later, he did the same for the ZIP codes.
- 
 ## 1982 Recurrent Neural Network
  
 John Hopfield popularizes Hopfield networks, a type of recurrent neural network that can serve as content-addressable memory systems.
@@ -135,6 +131,12 @@ A program that learns to pronounce words the same way a baby does, is developed 
 ## 1986  Backpropagation
  
 Seppo Linnainmaa's reverse mode of automatic differentiation (first applied to neural networks by Paul Werbos) is used in experiments by David Rumelhart, Geoff Hinton and Ronald J. Williams to learn internal representations
+ 
+
+
+## 1989 Recognizing of Handwritten Zip Digit Images
+
+Yann LeCun 1989 was able to successfully use backpropagation to recognize the handwritten digit images. Later, he did the same for the ZIP codes.
  
  
 ## 1989 Reinforcement Learning
