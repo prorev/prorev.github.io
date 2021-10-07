@@ -195,7 +195,7 @@ Using a combination of machine learning, natural language processing and informa
 
 ## 2012 Alexnet
  
-A deep convolutional neural network was called AlexNet, and it was introduced in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC 2012 contest), where it set a precedent for the field of Deep Learning.
+A deep convolutional neural network -- AlexNet was introduced in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC 2012 contest), where it set a precedent for the field of Deep Learning.
 
 ## 2012  Recognizing Cats on YouTube
  
