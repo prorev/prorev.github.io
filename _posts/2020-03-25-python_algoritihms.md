@@ -1107,7 +1107,33 @@ def solution(a):
 
 ### MaxProfit 
 
-Scores 100%. In here we have an array of prices at particular day such as this one `a = [5,4,3,2,3,4,5,6,5,4,5,6,7,1]` and we would like to find the maximum jump `mj` or maximum profit we may get.
+Using just three temp variables.
+
+```python
+def solution(a):
+    smax=None
+    smin=None
+    mp=0 # max profit
+    
+    for e in a:
+        if smin==None:
+            smin=e
+        if smax==None:
+            smax=e
+        
+        if e > smax:
+            smax=e
+        if e < smin:
+            smin=e
+            smax=e
+        
+        if mp < smax-smin:
+            mp = smax-smin
+            
+    return mp
+```
+
+Another solution `jump` Scores 100%. In here we have an array of prices at particular day such as this one `a = [5,4,3,2,3,4,5,6,5,4,5,6,7,1]` and we would like to find the maximum jump `mj` or maximum profit we may get.
 
 Local jump `lj` is non negative local jumps, and sj is single jumps `sj` may be negative.
 

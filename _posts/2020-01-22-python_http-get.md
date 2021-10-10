@@ -15,6 +15,7 @@ tags:
 ---
 ![get content](/wp-content/uploads/2020/01/request26_0.jpg)
 
+_Table of contents:_
 - [Get html content using `urllib`](#get-html-content-using-urllib)
 - [Get html content using `requests`](#get-html-content-using-requests)
 - [Get a text file using requests](#get-a-text-file-using-requests)
