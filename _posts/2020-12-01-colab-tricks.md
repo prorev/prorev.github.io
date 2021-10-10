@@ -12,6 +12,7 @@ tags:
    - tricks
    - google
 ---
+_Table of contents:_
 - [1. Use GPU](#1-use-gpu)
 - [2. Use Google drive](#2-use-google-drive)
 - [3. Execute Linux commands](#3-execute-linux-commands)
