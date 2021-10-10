@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Python get the html content
+title: Python get the HTML content
 date: 2020-01-22
 author: taimane
 layout: post
