@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Python strings
+title: Python elementary string operations
 date: 2020-01-22
 author: taimane
 layout: post
@@ -12,7 +12,7 @@ categories:
 tags:
    - string
 ---
-
+_Table of contents:_
 - [The size of a single character](#the-size-of-a-single-character)
 - [The size of the empty string](#the-size-of-the-empty-string)
 - [Tricky interning](#tricky-interning)
