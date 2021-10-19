@@ -18,17 +18,7 @@ tags:
 
 Random variable is called random, because you can choose it from within the range of the **associated** probability distribution.
 
-In other words for a random variable we know the distribution.
-
-### Trivial and non trivial Random Variables 
-
-Most obvious simple random variable is when you flip a coin. Associate $X=1$ with flipping to a tail, and $X=0$ to a head.
-
-Non trivial random variable is to measure the number of heads when you flip a coin for 5 times.
-
-Another non trivial random variable will be to choose a random number from a range of five (5), where each random number has associated probability distribution $p1, p2, p3, p4, p5$ for the numbers $1, 2, 3, 4, 5$.
-
-We mentioned the **associated** probability distribution for a variable. In the previous case sum of all $p1+p2+p3+p4+p5=1$. 
+In other words for a random variable we know (or we should know) the distribution.
 
 ### Expected value for the Random Variable
 
@@ -91,12 +81,14 @@ plt.show()
 ![variants of normal distribution](/wp-content/uploads/2020/04/ndv.jpg)
 
 
-## Bernoulli distribution
+
+
+<!-- ## Bernoulli distribution
 
 A random variable has a Bernoulli distribution if it takes only two values (1 and 0 with probability θ and 1−θ, respectively) and has the following probability distribution function:
-p(θ,x)=θx(1−θ)(1−x),x∈{0,1}
+p(θ,x)=θx(1−θ)(1−x),x∈{0,1} -->
 
-## Independent and dependent probabilities
+<!-- ## Independent and dependent probabilities
 
 ## Bayesian interference
 
@@ -108,4 +100,4 @@ p(θ,x)=θx(1−θ)(1−x),x∈{0,1}
 
 ...
 
-
+ -->

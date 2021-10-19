@@ -12,6 +12,7 @@ categories:
 tags:
    - string
 ---
+_Table of contents:_
 
 - [What are lists?](#what-are-lists)
 - [List operations](#list-operations)
