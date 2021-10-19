@@ -731,7 +731,7 @@ class C
 {
   public static void Main()
   {
-    string str = @""x:\\y\\z"";
+    string str = @"x:\\y\\z";
     Console.WriteLine(str);
   }
 }
