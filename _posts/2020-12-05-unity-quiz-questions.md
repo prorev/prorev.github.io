@@ -12,6 +12,7 @@ tags:
    - quiz
    - unity
 ---
+_Table of contents:_
 - [1. Who created the initial version of Unity?](#1-who-created-the-initial-version-of-unity)
 - [2. Is Scripting editor part of Unity?](#2-is-scripting-editor-part-of-unity)
 - [3. When you create a new scene, it will contain?](#3-when-you-create-a-new-scene-it-will-contain)
