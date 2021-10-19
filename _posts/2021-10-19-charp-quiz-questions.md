@@ -548,7 +548,7 @@ Operator `+=` will transform to something like `Observable::add_eh` ...
 
 
 
-## 36. In C#, you should use _ _ _ keyword to protect your code from exceptions.
+## 36. In C#, you should use which keyword to protect your code from exceptions?
 
 ☑ **`try`** ☐ `catch` ☐ `finally` ☐ `throw`
 
