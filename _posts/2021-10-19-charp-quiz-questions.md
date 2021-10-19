@@ -12,15 +12,14 @@ tags:
    - quiz
    - answers
 ---
-_Table of contents:_
 - [1. Who created C#?](#1-who-created-c)
 - [2. What is CLR?](#2-what-is-clr)
 - [3. C# can run on Linux, Mac OS X, iOS, and Android?](#3-c-can-run-on-linux-mac-os-x-ios-and-android)
 - [4. Can you mix other .NET languages with C#?](#4-can-you-mix-other-net-languages-with-c)
 - [5. C# is?](#5-c-is)
 - [6. Following instructions:](#6-following-instructions)
-- [7.To work with C# compiler (csc.exe) it is best to have:](#7to-work-with-c-compiler-cscexe-it-is-best-to-have)
-- [8. Code](#8-code)
+- [7. To work with C# compiler (csc.exe) it is best to have:](#7-to-work-with-c-compiler-cscexe-it-is-best-to-have)
+- [8. For the code:](#8-for-the-code)
 - [9. What is variable scope?](#9-what-is-variable-scope)
 - [10. You can build the executable in Visual Studio if your solution doesn't have any project in it?](#10-you-can-build-the-executable-in-visual-studio-if-your-solution-doesnt-have-any-project-in-it)
 - [11. To switch between Debug and Release build you need to tweak the settings on:](#11-to-switch-between-debug-and-release-build-you-need-to-tweak-the-settings-on)
@@ -48,7 +47,7 @@ _Table of contents:_
 - [33. In C# there are reference types and value types. Which one is reference type?](#33-in-c-there-are-reference-types-and-value-types-which-one-is-reference-type)
 - [34. What is Encapsulation?](#34-what-is-encapsulation)
 - [35. What is true for the events?](#35-what-is-true-for-the-events)
-- [36. In C#, you should use ____ keyword to protect your code from exceptions.](#36-in-c-you-should-use-____-keyword-to-protect-your-code-from-exceptions)
+- [36. In C#, you should use which keyword to protect your code from exceptions?](#36-in-c-you-should-use-which-keyword-to-protect-your-code-from-exceptions)
 - [37. Will this code compile without errors?](#37-will-this-code-compile-without-errors)
 - [38. What can we tell for the object `x`](#38-what-can-we-tell-for-the-object-x)
 - [39. Can we have a method inside a namespace?](#39-can-we-have-a-method-inside-a-namespace)
@@ -56,8 +55,8 @@ _Table of contents:_
 - [41. Following naming conventions in C# is a must?](#41-following-naming-conventions-in-c-is-a-must)
 - [42. What is bitwise complement operator?](#42-what-is-bitwise-complement-operator)
 - [43. Which of the following statements can be used for declaring a two dimensional array?](#43-which-of-the-following-statements-can-be-used-for-declaring-a-two-dimensional-array)
-- [44.](#44)
-- [45. What is ` [Serializable] ` in here?](#45-what-is-serializable-in-here)
+- [44. What is the output of the following code?](#44-what-is-the-output-of-the-following-code)
+- [45. What is `[Serializable]` in here?](#45-what-is-serializable-in-here)
 - [46. One of these operators you cannot overload. Which one?](#46-one-of-these-operators-you-cannot-overload-which-one)
 - [47. Which namespace is not defined in .NET?](#47-which-namespace-is-not-defined-in-net)
 - [48. Lambda expressions are used only in LINQ?](#48-lambda-expressions-are-used-only-in-linq)
@@ -392,7 +391,7 @@ public interface IDoStuff
    int SomeMethod(string arg);
    event EventHandler Click;
 }
-````
+```
 
 ☐ YES ☑ NO
 
