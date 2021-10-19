@@ -12,6 +12,7 @@ tags:
    - quiz
    - answers
 ---
+_Table of Contents:_
 - [1. Who created C#?](#1-who-created-c)
 - [2. What is CLR?](#2-what-is-clr)
 - [3. C# can run on Linux, Mac OS X, iOS, and Android?](#3-c-can-run-on-linux-mac-os-x-ios-and-android)
