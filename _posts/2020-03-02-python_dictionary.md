@@ -13,6 +13,7 @@ tags:
    - dictionary
    - dict
 ---
+_Table of contents:_
 
 - [Get the len of dictionary](#get-the-len-of-dictionary)
 - [Get the value from the dictionary](#get-the-value-from-the-dictionary)
