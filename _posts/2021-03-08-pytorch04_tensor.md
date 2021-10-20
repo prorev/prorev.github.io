@@ -21,6 +21,7 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+_Table of Contents:_
 - [Numpy tensors](#numpy-tensors)
 - [Creating PyTorch tensors](#creating-pytorch-tensors)
 - [PyTorch `info()` method](#pytorch-info-method)
