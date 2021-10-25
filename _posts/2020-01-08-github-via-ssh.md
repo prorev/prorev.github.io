@@ -249,18 +249,3 @@ Lastly make sure your public key has been added to the GitHub with read/write ac
 
 ![Write access](/wp-content/uploads/2020/write-access.jpg)
 
-
-<!--
-## Basic GIT operations
-
-git pull will
-
-fetch from origin and merge your commits into master branch on your repo.
-The "upstream/master" you were referring to is not the same as the "origin/master" of your repo.
-To fix this, you should have run:
-git pull origin master 
-
-instead of 
-git pull upstream master
-
--->

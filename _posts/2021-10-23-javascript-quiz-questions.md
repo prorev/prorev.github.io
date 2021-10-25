@@ -5,7 +5,7 @@ date: 2020-12-05 17:02:58
 author: taimane
 layout: post
 permalink: /javascript/quiz/
-published: true
+published: false
 categories:
    - javascript
 tags:
