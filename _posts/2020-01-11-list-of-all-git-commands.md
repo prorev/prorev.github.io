@@ -7,7 +7,7 @@ layout: post
 permalink: /list-of-all-git-commands/
 published: true
 categories:
-   - git
+   - github
 tags:
    - commands
 ---
