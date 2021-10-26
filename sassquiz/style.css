@@ -1,0 +1,253 @@
+/* //meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+/* big text */
+/* small text */
+/* background */
+/* links, button corners, button top part */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  background: #dadbdf;
+  height: 100%; }
+
+body {
+  margin: 0 auto;
+  width: 720px;
+  color: #fff;
+  font-family: "Istok Web", sans-serif;
+  text-align: center; }
+
+::-moz-selection, ::selection {
+  background: #bfc0c7;
+  color: #fff;
+  text-shadow: none; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s; }
+  a:hover {
+    color: #d98cb3; }
+
+article a {
+  color: #484c55; }
+
+input {
+  margin: 0 0 40px 0;
+  border: 0;
+  padding: 11px 12px;
+  width: 300px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.3);
+  -moz-transition: all 0.125s ease-out;
+  -o-transition: all 0.125s ease-out;
+  -webkit-transition: all 0.125s ease-out;
+  transition: all 0.125s ease-out; }
+  input:focus {
+    outline: none;
+    -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.6); }
+
+header {
+  margin: 20px 0;
+  border-bottom: 1px solid #808c99;
+  padding: 0 0 20px 0;
+  height: 128px;
+  position: relative; }
+
+h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #808c99;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+h2 {
+  font-size: 18px;
+  color: #808c99; }
+
+header p {
+  color: #484c55;
+  font-size: 16px; }
+
+.asterisk {
+  font-size: 80%;
+  text-decoration: none;
+  vertical-align: top; }
+
+footer {
+  background: #c69;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 13px; }
+  footer div {
+    margin: 0 auto;
+    width: 720px; }
+  footer p {
+    float: left;
+    color: #484c55; }
+  footer a {
+    color: #534855; }
+
+small {
+  float: right;
+  font-size: 13px; }
+
+#intro {
+  padding: 0 60px;
+  text-align: left; }
+  #intro p {
+    color: #484c55; }
+    #intro p + h2 {
+      margin-top: 20px; }
+
+button {
+  background: #d98cb3;
+  background: -moz-linear-gradient(top, #c69 50%, #c69 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #c69), color-stop(50%, #c69));
+  background: -webkit-linear-gradient(top, #c69 50%, #c69 50%);
+  background: -o-linear-gradient(top, #c69 50%, #c69 50%);
+  background: -ms-linear-gradient(top, #c69 50%, #c69 50%);
+  background: linear-gradient(top, #c69 50%, #c69 50%);
+  display: block;
+  margin: 40px auto;
+  border: 6px solid #c69;
+  padding: 8px;
+  width: 260px;
+  color: #fff;
+  font-family: "Istok Web", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 1px 2px 1px #bf4080;
+  -webkit-box-shadow: 1px 2px 1px #bf4080;
+  box-shadow: 1px 2px 1px #bf4080;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; }
+  button:hover, button:focus {
+    background: -moz-linear-gradient(top, #c69 50%, #c69 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #c69), color-stop(50%, #c69));
+    background: -webkit-linear-gradient(top, #c69 50%, #c69 50%);
+    background: -o-linear-gradient(top, #c69 50%, #c69 50%);
+    background: -ms-linear-gradient(top, #c69 50%, #c69 50%);
+    background: linear-gradient(top, #c69 50%, #c69 50%);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+#quiz_wrapper {
+  padding: 0 0 40px 0; }
+
+#clock {
+  margin: 0 auto;
+  width: 105px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  color: #484c55; }
+
+.warning {
+  color: #c69; }
+
+#remaining {
+  color: #c69;
+  font-size: 24px; }
+
+#quiz {
+  display: none; }
+  #quiz p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #5f6571; }
+
+.element_list li {
+  display: inline-block;
+  padding: 0 8px;
+  color: #667280;
+  font-family: monospace;
+  font-size: 13px; }
+
+#outro {
+  display: none; }
+  #outro p {
+    color: #808c99; }
+  #outro strong {
+    color: #484c55; }
+
+#share {
+  margin: 40px 0; }
+  #share h2 {
+    margin: 0 0 20px; }
+
+.share_item {
+  display: inline-block;
+  margin: 0 20px;
+  height: 70px;
+  vertical-align: top; }
+
+.bank {
+  position: fixed;
+  bottom: 60px;
+  height: 90px;
+  left: 0;
+  right: 0; }
+
+.money {
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+  background: #dadbdf; }
