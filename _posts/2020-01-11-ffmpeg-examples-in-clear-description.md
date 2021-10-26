@@ -6,7 +6,7 @@ author: taimane
 layout: post
 redirect_from: /ffmpeg-examples-in-clear-description
 permalink: /linux/ffmpeg-examples/
-published: true
+published: false
 categories:
    - unix
 tags:
