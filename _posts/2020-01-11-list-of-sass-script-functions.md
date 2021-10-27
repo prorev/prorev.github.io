@@ -8,219 +8,231 @@ permalink: /css/list-of-sass-script-functions/
 redirect_from: /list-of-sass-script-functions/
 published: true
 categories:
-   - css
+ - css
 tags:
-   - sass
+ - sass
 ---
-RGB Functions
+Table of Contents:
+- [RGB Functions](#rgb-functions)
+- [HSL Functions](#hsl-functions)
+- [Opacity Functions](#opacity-functions)
+- [OtherColor Functions](#othercolor-functions)
+- [String Functions](#string-functions)
+- [Number Functions](#number-functions)
+- [List Functions](#list-functions)
+- [Map Functions](#map-functions)
+- [Selector Functions](#selector-functions)
+- [Introspection Functions](#introspection-functions)
+- [Miscellaneous Functions](#miscellaneous-functions)
+## RGB Functions
 
-rgb<small> Creates a Color from red, green, and blue values.</small>
+`rgb`` -- Creates a Color from red, green, and blue values.
 
-rgba<small> Creates a Color from red, green, blue, and alpha values.</small>
+`rgba` ` -- Creates a Color from red, green, blue, and alpha values.
 
-red<small> Gets the red component of a color.</small>
+`red`` -- Gets the red component of a color.
 
-green<small> Gets the green component of a color.</small>
+`green`` -- Gets the green component of a color.
 
-blue<small> Gets the blue component of a color.</small>
+`blue`` -- Gets the blue component of a color.
 
-mix<small> Mixes two colors together. </small>
+`mix`` -- Mixes two colors together. 
 
 
 
-HSL Functions
+## HSL Functions
 
 
 
-hsl<small> Creates a Color from hue, saturation, and lightness values.</small>
+`hsl`` -- Creates a Color from hue, saturation, and lightness values.
 
-hsla<small> Creates a Color from hue, saturation, lightness, and alpha values.</small>
+`hsla`` -- Creates a Color from hue, saturation, lightness, and alpha values.
 
-hue<small> Gets the hue component of a color.</small>
+`hue`` -- Gets the hue component of a color.
 
-saturation<small> Gets the saturation component of a color.</small>
+`saturation`` -- Gets the saturation component of a color.
 
-lightness<small> Gets the lightness component of a color.</small>
+`lightness`` -- Gets the lightness component of a color.
 
-adjust-hue<small> Changes the hue of a color.</small>
+`adjust-hue`` -- Changes the hue of a color.
 
-lighten<small> Makes a color lighter.</small>
+`lighten`` -- Makes a color lighter.
 
-darken<small> Makes a color darker.</small>
+`darken`` -- Makes a color darker.
 
-saturate<small> Makes a color more saturated.</small>
+`saturate`` -- Makes a color more saturated.
 
-desaturate<small> Makes a color less saturated.</small>
+`desaturate`` -- Makes a color less saturated.
 
-grayscale<small> Converts a color to grayscale.</small>
+`grayscale`` -- Converts a color to grayscale.
 
-complement<small> Returns the complement of a color.</small>
+`complement`` -- Returns the complement of a color.
 
-invert<small> Returns the inverse of a color. </small>
+`invert`` -- Returns the inverse of a color. 
 
 
 
-Opacity Functions
+## Opacity Functions
 
 
 
-alpha<small> Gets the alpha component rgba Changes the alpha component for a color.</small>
+`alpha`` -- Gets the alpha component rgba Changes the alpha component for a color.
 
-opacify<small> Makes a color more opaque.</small>
+`opacify`` -- Makes a color more opaque.
 
-transparentize<small> Makes a color more transparent.</small>
+`transparentize`` -- Makes a color more transparent.
 
 
 
-OtherColor Functions
+## OtherColor Functions
 
 
 
-adjust-color<small> Increases or decreases one or more components of a color.</small>
+`adjust-color` -- Increases or decreases one or more components of a color.
 
-scale-color<small> Fluidly scales one or more properties of a color.</small>
+`scale-color`` -- Fluidly scales one or more properties of a color.
 
-change-color<small> Changes one or more properties of a color.</small>
+`change-color`` -- Changes one or more properties of a color.
 
-ie-hex-str<small> Converts a color into the format understood by IE filters. </small>
+`ie-hex-str`` -- Converts a color into the format understood by IE filters. 
 
 
 
-String Functions
+## String Functions
 
 
 
-unquote<small> Removes quotes from a string.</small>
+`unquote` -- Removes quotes from a string.
 
-quote<small> Adds quotes to a string.</small>
+`quote` -- Adds quotes to a string.
 
-str-length<small> Returns the number of characters in a string.</small>
+`str-length` -- Returns the number of characters in a string.
 
-str-insert<small> Inserts $insert into $string at $index.</small>
+`str-insert` -- Inserts $insert into $string at $index.
 
-str-index<small> Returns the index of the first occurrence of $substring in $string.</small>
+`str-index` -- Returns the index of the first occurrence of $substring in $string.
 
-str-slice<small> Extracts a substring from $string.</small>
+`str-slice` -- Extracts a substring from $string.
 
-to-upper-case<small> Converts a string to upper case.</small>
+`to-upper-case` -- Converts a string to upper case.
 
-to-lower-case<small> Converts a string to lower case.</small>
+`to-lower-case` -- Converts a string to lower case.
 
 
 
-Number Functions
+## Number Functions
 
 
 
-percentage<small> Converts a unitless number to a percentage.</small>
+`percentage` -- Converts a unitless number to a percentage.
 
-round<small> Rounds a number to the nearest whole number.</small>
+`round` -- Rounds a number to the nearest whole number.
 
-ceil<small> Rounds a number up to the next whole number.</small>
+`ceil` -- Rounds a number up to the next whole number.
 
-floor<small> Rounds a number down to the previous whole number.</small>
+`floor` -- Rounds a number down to the previous whole number.
 
-abs<small> Returns the absolute value of a number.</small>
+`abs` -- Returns the absolute value of a number.
 
-min<small> Finds the minimum of several numbers.</small>
+`min` -- Finds the minimum of several numbers.
 
-max<small> Finds the maximum of several numbers.</small>
+`max` -- Finds the maximum of several numbers.
 
-random<small> Returns a random number.</small>
+`random` -- Returns a random number.
 
 
 
-List Functions
+## List Functions
 
 
 
-length<small> Returns the length of a list.</small>
+`length` -- Returns the length of a list.
 
-nth<small> Returns a specific item in a list.</small>
+`nth` -- Returns a specific item in a list.
 
-set-nth<small> Replaces the nth item in a list.</small>
+`set-nth` -- Replaces the nth item in a list.
 
-join<small> Joins together two lists into one.</small>
+`join` -- Joins together two lists into one.
 
-append<small> Appends a single value onto the end of a list.</small>
+`append` -- Appends a single value onto the end of a list.
 
-zip<small> Combines several lists into a single multidimensional list.</small>
+`zip` -- Combines several lists into a single multidimensional list.
 
-index<small> Returns the position of a value within a list.</small>
+`index` -- Returns the position of a value within a list.
 
-list-separator<small> Returns the separator of a list.</small>
+`list-separator` -- Returns the separator of a list.
 
 
 
-Map Functions
+## Map Functions
 
 
 
-map-get<small> Returns the value in a map associated with a given key.</small>
+`map-get` -- Returns the value in a map associated with a given key.
 
-map-merge<small> Merges two maps together into a new map.</small>
+`map-merge` -- Merges two maps together into a new map.
 
-map-remove<small> Returns a new map with keys removed.</small>
+`map-remove` -- Returns a new map with keys removed.
 
-map-keys<small> Returns a list of all keys in a map.</small>
+`map-keys` -- Returns a list of all keys in a map.
 
-map-values<small> Returns a list of all values in a map.</small>
+`map-values` -- Returns a list of all values in a map.
 
-map-has-key<small> Returns whether a map has a value associated with a given key.</small>
+`map-has-key` -- Returns whether a map has a value associated with a given key.
 
-keywords<small> Returns the keywords passed to a function that takes variable arguments.</small>
+`keywords` -- Returns the keywords passed to a function that takes variable arguments.
 
 
 
-Selector Functions
+## Selector Functions
 
 
 
-selector-nest<small> Nests selector beneath one another like they would be nested in the stylesheet.</small>
+`selector-nest` -- Nests selector beneath one another like they would be nested in the stylesheet.
 
-selector-append<small> Appends selectors to one another without spaces in between.</small>
+`selector-append` -- Appends selectors to one another without spaces in between.
 
-selector-extend<small> Extends $extendee with $extender within $selector.</small>
+`selector-extend` -- Extends $extendee with $extender within $selector.
 
-selector-replace<small> Replaces $original with $replacement within $selector.</small>
+`selector-replace` -- Replaces $original with $replacement within $selector.
 
-selector-unify<small> Unifies two selectors to produce a selector that matches elements matched by both.</small>
+`selector-unify` -- Unifies two selectors to produce a selector that matches elements matched by both.
 
-is-superselector<small> Returns whether $super matches all the elements $sub does, and possibly more.</small>
+`is-superselector` -- Returns whether $super matches all the elements $sub does, and possibly more.
 
-simple-selectors<small> Returns the simple selectors that comprise a compound selector.</small>
+`simple-selectors` -- Returns the simple selectors that comprise a compound selector.
 
-selector-parse<small> Parses a selector into the format returned by &.</small>
+`selector-parse` -- Parses a selector into the format returned by &.
 
 
 
 
 
-Introspection Functions
+## Introspection Functions
 
 
 
-feature-exists<small> Returns whether a feature exists in the current Sass runtime.</small>
+`feature-exists` -- Returns whether a feature exists in the current Sass runtime.
 
-variable-exists<small >Returns whether a variable with the given name exists in the current scope.</small>
+`variable-exists` -- Returns whether a variable with the given name exists in the current scope.
 
-global-variable-exists<small> Returns whether a variable with the given name exists in the global scope.</small>
+`global-variable-exists` -- Returns whether a variable with the given name exists in the global scope.
 
-function-exists<small> Returns whether a function with the given name exists.</small>
+`function-exists` -- Returns whether a function with the given name exists.
 
-mixin-exists<small> Returns whether a mixin with the given name exists.</small>
+`mixin-exists` -- Returns whether a mixin with the given name exists.
 
-inspect<small> Returns the string representation of a value as it would be represented in Sass.</small>
+`inspect` -- Returns the string representation of a value as it would be represented in Sass.
 
-type-of<small> Returns the type of a value.</small>
+`type-of` -- Returns the type of a value.
 
-unit<small> Returns the unit </small>
+`unit` -- Returns the unit 
 
-unitless<small> Returns whether a number has units.</small>
+`unitless` -- Returns whether a number has units.
 
-comparable<small> Returns whether two numbers can be added, subtracted, or compared.</small>
+`comparable` -- Returns whether two numbers can be added, subtracted, or compared.
 
-call<small> Dynamically calls a Sass function.</small>
+call` -- Dynamically calls a Sass function.
 
 
 
@@ -228,11 +240,11 @@ call<small> Dynamically calls a Sass function.</small>
 
 
 
-Miscellaneous Functions
+## Miscellaneous Functions
 
 
 
-if<small> Returns one of two values, depending on whether or not $condition is true.</small>
+`if` -- Returns one of two values, depending on whether or not $condition is true.
 
-unique-id<small> Returns a unique CSS identifier.</small>  
+`unique-id` -- Returns a unique CSS identifier. 
 
