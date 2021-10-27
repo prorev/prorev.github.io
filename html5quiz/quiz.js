@@ -15,7 +15,7 @@ var outro;
 var replay;
 var replay_button;
 
-var intro_html  = '<div id="intro"><h2>How To Play</h2><p>On the next screen, enter as many HTML5 elements as you can think of within five minutes. Correct answers will automatically be logged as you type within the input field. Once your time is up, any elements you missed will be listed so you can improve for next time!</p><button type="button" id="start_button" title="Leeeeeeeroy Jennnnnkinnnns!">Start</button></div>';
+var intro_html  = '<div id="intro"><h2>How To Play</h2><p>On the next screen, enter as many HTML5 elements as you can think of within five minutes. Correct answers will automatically be logged as you type within the input field. Once your time is up, any elements you missed will be listed so you can improve for next time!</p><button type="button" id="start_button" title="Start with the test">Start</button></div>';
 var quiz_html   = '<div id="quiz"><div id="clock">5:00</div><input id="input"><p><b id="remaining"></b> elements remaining</p><ul id="solved" class="element_list"></ul></div>';
 var outro_html  = '<div id="outro"><h2>Finished!</h2><p>You named <strong id="named">0</strong> HTML5 elements in five minutes!</p><div id="share"><h2>Share Your Score</h2></div><p id="missed_message">You missed the following elements:</p><ul id="missed_elements" class="element_list"></ul><button type="button" id="replay">Again?</button>';
 
