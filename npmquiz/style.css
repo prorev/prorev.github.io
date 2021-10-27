@@ -87,7 +87,7 @@ a:hover {
 }
 
 footer a {
-    color: #f16529;
+    color: white;;
 }
 
 article a {
@@ -177,6 +177,7 @@ footer div {
 
 footer p {
     float: left;
+    color: white;
 }
 
 small {

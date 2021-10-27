@@ -87,7 +87,7 @@ a:hover {
 }
 
 footer a {
-    color: #f16529;
+    color: white;;
 }
 
 input {
@@ -173,6 +173,7 @@ footer div {
 
 footer p {
     float: left;
+    color: white;
 }
 
 small {
