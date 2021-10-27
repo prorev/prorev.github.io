@@ -26,17 +26,17 @@ Table of Contents:
 - [Miscellaneous Functions](#miscellaneous-functions)
 ## RGB Functions
 
-`rgb`` -- Creates a Color from red, green, and blue values.
+`rgb` -- Creates a Color from red, green, and blue values.
 
-`rgba` ` -- Creates a Color from red, green, blue, and alpha values.
+`rgba` -- Creates a Color from red, green, blue, and alpha values.
 
-`red`` -- Gets the red component of a color.
+`red` -- Gets the red component of a color.
 
-`green`` -- Gets the green component of a color.
+`green` -- Gets the green component of a color.
 
-`blue`` -- Gets the blue component of a color.
+`blue` -- Gets the blue component of a color.
 
-`mix`` -- Mixes two colors together. 
+`mix` -- Mixes two colors together. 
 
 
 
@@ -44,31 +44,31 @@ Table of Contents:
 
 
 
-`hsl`` -- Creates a Color from hue, saturation, and lightness values.
+`hsl` -- Creates a Color from hue, saturation, and lightness values.
 
-`hsla`` -- Creates a Color from hue, saturation, lightness, and alpha values.
+`hsla` -- Creates a Color from hue, saturation, lightness, and alpha values.
 
-`hue`` -- Gets the hue component of a color.
+`hue` -- Gets the hue component of a color.
 
-`saturation`` -- Gets the saturation component of a color.
+`saturation` -- Gets the saturation component of a color.
 
-`lightness`` -- Gets the lightness component of a color.
+`lightness` -- Gets the lightness component of a color.
 
-`adjust-hue`` -- Changes the hue of a color.
+`adjust-hue` -- Changes the hue of a color.
 
-`lighten`` -- Makes a color lighter.
+`lighten` -- Makes a color lighter.
 
-`darken`` -- Makes a color darker.
+`darken` -- Makes a color darker.
 
-`saturate`` -- Makes a color more saturated.
+`saturate` -- Makes a color more saturated.
 
-`desaturate`` -- Makes a color less saturated.
+`desaturate` -- Makes a color less saturated.
 
-`grayscale`` -- Converts a color to grayscale.
+`grayscale` -- Converts a color to grayscale.
 
-`complement`` -- Returns the complement of a color.
+`complement` -- Returns the complement of a color.
 
-`invert`` -- Returns the inverse of a color. 
+`invert` -- Returns the inverse of a color. 
 
 
 
@@ -76,11 +76,11 @@ Table of Contents:
 
 
 
-`alpha`` -- Gets the alpha component rgba Changes the alpha component for a color.
+`alpha` -- Gets the alpha component rgba Changes the alpha component for a color.
 
-`opacify`` -- Makes a color more opaque.
+`opacify` -- Makes a color more opaque.
 
-`transparentize`` -- Makes a color more transparent.
+`transparentize` -- Makes a color more transparent.
 
 
 
@@ -90,11 +90,11 @@ Table of Contents:
 
 `adjust-color` -- Increases or decreases one or more components of a color.
 
-`scale-color`` -- Fluidly scales one or more properties of a color.
+`scale-color` -- Fluidly scales one or more properties of a color.
 
-`change-color`` -- Changes one or more properties of a color.
+`change-color` -- Changes one or more properties of a color.
 
-`ie-hex-str`` -- Converts a color into the format understood by IE filters. 
+`ie-hex-str` -- Converts a color into the format understood by IE filters. 
 
 
 
@@ -232,7 +232,7 @@ Table of Contents:
 
 `comparable` -- Returns whether two numbers can be added, subtracted, or compared.
 
-call` -- Dynamically calls a Sass function.
+`call` -- Dynamically calls a Sass function.
 
 
 
