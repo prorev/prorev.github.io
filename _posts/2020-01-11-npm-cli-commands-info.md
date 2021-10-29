@@ -4,22 +4,29 @@ title: NPM cli commands info
 date: 2016-09-27 12:38:04
 author: taimane
 layout: post
-permalink: /npm/cli-commands-info/
+permalink: /javascript/cli-commands-info/
 redirect_from: /npm-cli-commands-info/
+redirect_from: /npm/npm-cli-commands-info/
 published: true
 categories:
-   -
+   - javascript
 tags:
    -
 ---
-## CLI Commands
+**npm** is the package manager for the Node JavaScript platform.
+
+Wikipedia said **npm** is the world's largest Software Registry. The registry contains over 800,000 code packages. Open-source developers use npm to share software.
+
+## List of NPM CLI Commands
 
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/access">access</a> <span class="faint heading">Set access level on published packages</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/adduser">adduser</a> <span class="faint heading">Add a registry user account</span>
+* <a rel="nofollow" href="https://docs.npmjs.com/cli/audit">audit</a> <span class="faint heading">Run a security audit</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/bin">bin</a> <span class="faint heading">Display npm bin folder</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/bugs">bugs</a> <span class="faint heading">Bugs for a package in a web browser maybe</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/build">build</a> <span class="faint heading">Build a package</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/bundle">bundle</a> <span class="faint heading">REMOVED</span>
+* <a rel="nofollow" href="https://docs.npmjs.com/cli/ci">ci</a> <span class="faint heading">Install a project with a clean slate</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/cache">cache</a> <span class="faint heading">Manipulates packages cache</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/completion">completion</a> <span class="faint heading">Tab Completion for npm</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/config">config</a> <span class="faint heading">Manage the npm configuration files</span>
@@ -65,3 +72,10 @@ tags:
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/version">version</a> <span class="faint heading">Bump a package version</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/view">view</a> <span class="faint heading">View registry info</span>
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/whoami">whoami</a> <span class="faint heading">Display npm username</span>
+
+
+[Practice above commands}(https://programming-review.com/npmquiz).
+
+REF: [https://docs.npmjs.com/cli/v6/commands](https://docs.npmjs.com/cli/v6/commands){:rel="nofollow"}
+
+<!-- note improve for the version 6.x>
