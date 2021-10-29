@@ -74,7 +74,7 @@ Wikipedia said **npm** is the world's largest Software Registry. The registry co
 * <a rel="nofollow" href="https://docs.npmjs.com/cli/whoami">whoami</a> <span class="faint heading">Display npm username</span>
 
 
-[Practice above commands](https://programming-review.com/npmquiz/).
+Practice above commands. Take this [quiz](https://programming-review.com/npmquiz/).
 
 REF: [https://docs.npmjs.com/cli/v6/commands](https://docs.npmjs.com/cli/v6/commands){:rel="nofollow"}
 
