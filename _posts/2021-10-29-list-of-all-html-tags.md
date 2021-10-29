@@ -166,4 +166,4 @@ wbr
 
 In total 109 tags.
 
-If you would like to practice to memo HTML tags take this [quiz](https://programming-review.com/htmlquiz).
+If you would like to practice to memo HTML tags take this [quiz](https://programming-review.com/html5quiz/).
