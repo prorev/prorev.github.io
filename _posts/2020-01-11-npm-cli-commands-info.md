@@ -4,7 +4,7 @@ title: NPM cli commands info
 date: 2016-09-27 12:38:04
 author: taimane
 layout: post
-permalink: /javascript/cli-commands-info/
+permalink: /javascript/npm-cli-commands-info/
 redirect_from: /npm-cli-commands-info/
 redirect_from: /npm/npm-cli-commands-info/
 published: true
