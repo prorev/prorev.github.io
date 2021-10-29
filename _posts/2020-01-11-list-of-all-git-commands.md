@@ -4,7 +4,8 @@ title: List of all git commands
 date: 2016-10-03 14:56:48
 author: taimane
 layout: post
-permalink: /list-of-all-git-commands/
+permalink: /github/list-of-all-git-commands/
+redirect_from: /list-of-all-git-commands/
 published: true
 categories:
    - github
