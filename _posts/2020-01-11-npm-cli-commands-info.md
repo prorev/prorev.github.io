@@ -78,3 +78,4 @@ Wikipedia said **npm** is the world's largest Software Registry. The registry co
 
 REF: [https://docs.npmjs.com/cli/v6/commands](https://docs.npmjs.com/cli/v6/commands){:rel="nofollow"}
 
+<!-- improve for the version 6.0 -->
