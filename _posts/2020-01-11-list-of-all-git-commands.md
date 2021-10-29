@@ -60,4 +60,4 @@ difftool             rebase               worktree
 fetch                reflog               
 ```
 
-If you would like to practice your memory of commands you may take this [quiz](https://programming-review.com/gitquiz)
+If you would like to practice to list commands you may take this [quiz](https://programming-review.com/gitquiz).
