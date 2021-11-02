@@ -1,3 +1,18 @@
+---
+id: 821
+title: Adding a new Quick Tag in WordPress
+date: 2012-10-31 14:38:23
+author: taimane
+layout: post
+redirect_from: /quick-tags/
+permalink: /wordpress/quick-tags/
+published: true
+categories:
+   - wordpress
+tags:
+   - quick 
+   - tags
+---
 There is a very simple way to modify `quicktags-toolbar` very simple in WordPress.
  
 ![quick tags toolbar](https://programming-review.com/wp-content/uploads/2012/10/Selection_2731-1024x62.png)
