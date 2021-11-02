@@ -13,7 +13,7 @@ tags:
    - quick 
    - tags
 ---
-There is a very simple way to modify `quicktags-toolbar` very simple in WordPress.
+There is a very simple way to modify `quicktags-toolbar` in WordPress.
  
 ![quick tags toolbar](https://programming-review.com/wp-content/uploads/2012/10/Selection_2731-1024x62.png)
  
