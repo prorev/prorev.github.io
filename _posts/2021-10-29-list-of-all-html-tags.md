@@ -1,6 +1,6 @@
 ---
 id: 3180
-title: List of all HTML tags
+title: List of all HTML5 tags
 date: 2016-10-03 14:56:48
 author: taimane
 layout: post
@@ -9,7 +9,7 @@ published: true
 categories:
    - html
 tags:
-   - commands
+   - html5
    - tags
 ---
 On Wikipedia you may find **HTML** is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. 
