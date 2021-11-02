@@ -4,8 +4,8 @@ title: Adding a new Quick Tag in WordPress
 date: 2012-10-31 14:38:23
 author: taimane
 layout: post
-redirect_from: /quick-tags/
 permalink: /wordpress/quick-tags/
+redirect_from: /quick-tags/
 published: true
 categories:
    - wordpress
