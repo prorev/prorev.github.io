@@ -144,7 +144,7 @@ Visual Studio uses MSBuild to load and build managed projects. The project files
  
 ## 8. For the code:
  
-```
+```c#
 int willNotWork;
 Console.WriteLine(willNotWork);
 ```
@@ -159,7 +159,8 @@ Compiler will complain:
 meaning `willNotWork` is an unassigned variable.
  
 C# compiler will always panic, forcing you to assign variables. This is OK:
-```
+
+```c#
 int willNotWork=0;
 Console.WriteLine(willNotWork);
 ```
@@ -244,7 +245,7 @@ Note: Managed means managed by .NET language runtime.
  
 ## 17. Will this work?
  
-```
+```c#
 int something;
 something = "something";
 ```
@@ -257,15 +258,17 @@ Note: This would be allowed in dynamic languages such as JavaScript, because a J
  
 ## 18. Will this work?
  
-`var something;
-something = "something";`
+```c#
+var something;
+something = "something";
+```
 ☑**YES** ☐ NO
  
 C# has the `var` keyword meaning variable of any type. This way the compiler will select the appropriate type for you.
  
 Note: You will not be able to write something like:
  
-```
+```c#
 var something = "something";
 something = 1;
 ```
@@ -291,7 +294,7 @@ It will return 8.
  
 `double` is the biggest size.
  
-```
+```c#
 Console.WriteLine(sizeof(int));
 Console.WriteLine(sizeof(float));
 Console.WriteLine(sizeof(double));
@@ -314,7 +317,7 @@ Will result:
  
 There will be no problems in any case.
  
-```
+```c#
 ulong u1 = 123ul;
 ulong u2 = 123UL;
 ulong u3 = 123Lu;
@@ -329,7 +332,7 @@ Compiler will not complain.
  
 Properties in a class typically expose class members via getter and setter special functions.
  
-```
+```c#
 public class HasProperty
 {
    private int _x;
@@ -351,7 +354,7 @@ You may define just the setter or just the getter.
  
 Using `+`, `-`, `>`, `<`, `<=`, ... as operators is common practice if you define your custom types.
  
-```
+```c#
 public static X operator +(X x, int y)
 {
    return new X(x.Count + y);
@@ -362,7 +365,7 @@ The main scenario for the `true` and `false` operators is to enable custom types
  
 You can define conversion operators like this:
  
-```
+```c#
 public static operator int(X value)
 {
    return value.Count;
@@ -383,7 +386,7 @@ Interfaces only define the API, not the implementation.
  
 ## 25. Will the next code fail?
  
-```
+```c#
 public interface IDoStuff
 {
    string this[int i] { get; set; }
@@ -397,7 +400,8 @@ public interface IDoStuff
 ☐ YES ☑ NO
  
 The code
-```
+
+```c#
 public interface IDoStuff
 {
    string this[int i] { get; set; }
@@ -431,14 +435,14 @@ C# an anonymous type, as the name suggests, is without a name.
  
 C# allows you to create an object with the `new` keyword without defining its class. The implicitly typed variable `var` is used to hold the reference of anonymous types.
  
-```
+```c#
 var x = new { Name = ""Rust"", Born = 2010 };
 Console.WriteLine(""Welcome, "" + x.Name + "" "" + x.Born);
 ```
  
 ## 28. Will this code work?
  
-```
+```c#
 var x = new { };
 ```
  
@@ -468,7 +472,7 @@ Only the method name and its parameters types are part of the signature.
  
 ## 30. What method will work with this delegate?
  
-```
+```c#
 public delegate int PerformCalculation(int x, int y);
 ```
  
@@ -493,7 +497,7 @@ You can also use the `new` keyword or you can create them on stack without the `
  
 A delegate object is normally constructed by providing the name of the method the delegate will wrap, or with an anonymous Method.
  
-```
+```c#
 delegate void myDelegate();
 ```
  
@@ -503,7 +507,7 @@ delegate void myDelegate();
  
 ☐ True ☑ **False**
  
-The C# specification defines the term anonymous function as an alternative name for an inline method with a non-void return type, while an <b>anonymous method</b> is an inline method defined with the delegate keyword.
+The C# specification defines the term anonymous function as an alternative name for an inline method with a non-void return type, while an **anonymous method** is an inline method defined with the delegate keyword.
  
  
 ## 33. In C# there are reference types and value types. Which one is the reference type?
@@ -534,12 +538,12 @@ Encapsulation enables a group of properties, methods and other members to be con
 After checking inside IL adding and removing events will transform to `add_` and `remove_` methods.
  
 You declare the event like this:
-```
+```c#
 public event EventHandler eh;
 ```
  
 and then at some point call:
-```
+```c#
 observable.eh += observer.HandleEvent;
 ```
 Operator `+=` will transform to something like `Observable::add_eh` ...
@@ -563,7 +567,7 @@ Operator `+=` will transform to something like `Observable::add_eh` ...
  
 ## 37. Will this code compile without errors?
  
-```
+```c#
 abstract class Shape
 {
   public abstract void Draw();
@@ -584,7 +588,7 @@ Here is the error that will occur:
  
 With minimum improvement we can get this working:
  
-```
+```c#
 abstract class Shape
 {
   public abstract void Draw();
@@ -600,7 +604,7 @@ Note: In here the `Draw(){}` is the empty method.
  
 ## 38. What can we tell for the object `x`
  
-```
+```c#
 class X
 {
    public override void draw();
@@ -617,7 +621,8 @@ class Y
 ☐ it is assigned ☑ **it is unassigned**
  
 To assign the object `x` we need to use the `new` keyword.
-```
+
+```c#
 class X
 {
   public override void draw();
@@ -647,7 +652,7 @@ You cannot define members or methods inside a namespace.
  
 ## 40. Given the following code, what is happening in the second line?
  
-```
+```c#
 int i = 5;
 object o = i;
 int j = (int) o;
@@ -658,7 +663,7 @@ int j = (int) o;
 You have two variables: `i` is a value type variable. `o` is a reference type variable.
 How does it make sense to assign the value of `i` to `o`.
  
-```
+```c#
 int i = 5;
 object o = i;
 int j = (int) o;
@@ -680,7 +685,7 @@ Following naming conventions is great but not obligatory.
  
 Convention usually depends on project bases. Still it is pretty common to use convention like this in C#:
  
-```
+```c#
 MyClass (class)
 MyMethod (method)
 myLocalVariable (local variable)
@@ -709,7 +714,7 @@ MyConstant (constant)
  
 This is the example of 2x2 two dimensional array:
  
-```
+```c#
 int[ , ] arr = new int[ , ]
 {
    {1, 2},
@@ -726,7 +731,7 @@ Console.WriteLine(arr[1, 1]);
  
 ## 44. What is the output of the following code?
  
-```
+```c#
 class C
 {
   public static void Main()
@@ -747,7 +752,7 @@ When we use `string str = @"x:\\y\\z";` compiler will generate the string `"x:\\
  
 `@` can be also used for multiline strings like this:
  
-```
+```c#
 string query = @"SELECT foo, bar
 FROM table
 WHERE name = 'a\b'";
@@ -760,7 +765,7 @@ The only bit of escaping is that if you want a double quote, you have to add an 
  
 ## 45. What is `[Serializable]` in here?
  
-```
+```c#
 [Serializable]  
 public class C {  
   public int i1 = 0;    
@@ -778,7 +783,7 @@ A tag is depicted by square `[ ]` brackets placed above the element it is used f
  
 This attribute tells that objects will later be saved to a binary file for instance:
  
-```
+```c#
 C o = new C();  
 o.n1 = 1;  
 o.s = ""foo"";  
@@ -835,7 +840,7 @@ If you mark your method `async` but don't use `await` anywhere, then your method
  
 ## 50. Is there a difference between `arr1` and `arr2`?
  
-```
+```c#
 int[] arr1 = new int[] {1, 2, 3}
 int[] arr2 = {1, 2, 3}
 ```
@@ -844,7 +849,7 @@ int[] arr2 = {1, 2, 3}
  
 Here it is completely irrelevant which one is used.
  
-```
+```c#
 int[] arr1 = new int[] {1, 2, 3}
 int[] arr2 = {1, 2, 3}
 ```
