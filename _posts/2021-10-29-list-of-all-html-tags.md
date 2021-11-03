@@ -5,6 +5,7 @@ date: 2016-10-03 14:56:48
 author: taimane
 layout: post
 permalink: /html/list-of-all-html-tags/
+redirect_from: /list-of-all-html5-elements/
 published: true
 categories:
    - html
