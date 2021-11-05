@@ -6,7 +6,6 @@ author: taimane
 layout: post
 permalink: /javascript/npm-cli-commands-info/
 redirect_from: /npm-cli-commands-info/
-redirect_from: /npm/npm-cli-commands-info/
 published: true
 categories:
    - javascript
