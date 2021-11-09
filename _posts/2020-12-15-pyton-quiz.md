@@ -872,7 +872,7 @@ Only the `num['two'] = 2` is correct since we update the dictionary element by u
 ## 58. Which operator is used in Python to import modules from packages?
  
 ☐ `.` operator <br>
-☑ **`* operator`** <br>
+☑ **`*` operator** <br>
 ☐ `->` symbol <br>
 ☐ `,` operator
  
