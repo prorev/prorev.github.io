@@ -476,11 +476,11 @@ If we try to update the value of the string object the new string object will be
 For example:
  
 ```python
-$s='str'
-$id(s)
+$ s='str'
+$ id(s)
 50842944
-$s=s+'ing'
-$id(s)
+$ s=s+'ing'
+$ id(s)
 52112389
 ```
  
@@ -600,18 +600,18 @@ Data conversion in Python can happen in two ways: either you tell the compiler t
 In the first case, you are performing an explicit data type conversion:
  
 ```python
-$a = 3.14
-$a=int(a)
-$print(type(a))
+$ a = 3.14
+$ a=int(a)
+$ print(type(a))
 <class 'int'>`
 ```
  
 The example of the implicit conversion would be:
  
 ```python
-$a = 3
-$a=a+.1
-$print(type(a))
+$ a = 3
+$ a=a+.1
+$ print(type(a))
 <class 'float'>
 ```
  
@@ -1032,10 +1032,10 @@ Because the list indexing starts from 0, the 5th element will be test[4].
 The `__init__` method represents a constructor in Python.
  
 ```python
-$class Foo:
+$ class Foo:
 ...  pass  
 ...
-$o1 = Foo()
+$ o1 = Foo()
 ```
  
 When you call `o1 = Foo()` Python should create an object for you.
