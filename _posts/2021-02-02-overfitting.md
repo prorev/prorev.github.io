@@ -165,8 +165,8 @@ Converting a model to half precision for instance in PyTorch improves the regula
 One common network architecture trick would be to use ensembles.
  
 Ensembles are combined separate models. The most well known are:
-* bagging ensembles and 
-* boosting ensembles
+* bagging ensembles 
+* boosting ensembles and 
 * stacked ensembles
  
 #### Bagging
