@@ -495,8 +495,9 @@ Yes. All you need is:
  
  
 ## 27. What is the return of the next comparison:
- 
-`null === undefined`
+```js
+null === undefined
+```
  
 ☐ True ☑ **False**
  
