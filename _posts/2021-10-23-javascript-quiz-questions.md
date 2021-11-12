@@ -392,10 +392,14 @@ Do not overuse this method, as it prevents the user from accessing other parts o
 In JavaScript we create arrays in two ways:
  
 Array literal syntax:
-`var arr = [item1, item2, ...];`
+```js
+var arr = [item1, item2, ...];
+```
  
 Using the `new` keyword:
-`var arr = new Array(item1, item2, ...);`
+```js
+var arr = new Array(item1, item2, ...);
+```
  
 Array items typically have different data types.
  
@@ -468,13 +472,12 @@ To get the last element of the array we should write:
  
 The `mousein` is not a standard event in JavaScript.
  
+Events: 
+* `mousemove` - is when the pointer is moving while it is over an element
+* `mouseout` - is when a user moves the mouse pointer out of an element, or out of one of its children
+* `mouseover` - is when the pointer is moved onto an element, or onto one of its children
  
-* `mousemove` - the event occurs when the pointer is moving while it is over an element
-* `mouseout` - the event occurs when a user moves the mouse pointer out of an element, or out of one of its children
-* `mouseover` - the event occurs when the pointer is moved onto an element, or onto one of its children
- 
- 
- 
+
 ## 26. Can you test JavaScript code inside web browsers like Firefox, Chrome, Microsoft Edge?
  
 ☑ **YES** ☐ NO
