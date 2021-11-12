@@ -209,6 +209,7 @@ The `name, href, content` are not `<script>` tag attributes.
 ☑ **False** ☐ True
  
 External file is called like this:
+
 ```js
 <script src="new.js"></script>
 ```
@@ -414,7 +415,7 @@ The value of x is :<br>
  
 The correct result is `"77"`.
  
-Inside `var x = 3 + 4 + "7"` the first `+` is an addition operation 3+4=7, and the other `+` is a concatenation `7+"7"` that returns the string `"77"`.
+Inside `var x = 3 + 4 + "7"` the first `+` is an addition operation `3+4=7`, and the other `+` is a concatenation `7+"7"` that returns the string `"77"`.
  
  
  
@@ -484,14 +485,9 @@ Events:
  
 Yes. All you need is:
  
-1. Press F12 to open the Inspector
-2. Select the Console tab
-3. Start typing your JavaScript and press Enter when done.
- 
- 
- 
- 
- 
+* Press F12 to open the Inspector
+* Select the Console tab
+* Start typing your JavaScript and press Enter when done.
  
  
 ## 27. What is the return of the next comparison:
@@ -863,7 +859,9 @@ We use `setTimeout()` to create a delay.
  
 Here is how we call the function:
  
-`setTimeout(function, milliseconds);`
+```js
+setTimeout(function, milliseconds);
+```
  
 The first parameter is a function we plan to execute.
  
@@ -871,7 +869,9 @@ The second parameter indicates the number of milliseconds before execution.
  
  
 ## 49. What would be the result?
-`document.getElementsByTagName("p");`
+```js
+document.getElementsByTagName("p");
+```
  
 ☐ array <br>
 ☑ HTMLcollection <br>
