@@ -165,7 +165,7 @@ br
 wbr
 ```
 
-In total 109 tags.
+In total 109 tags taken from [HTML5 Doctor website](https://html5doctor.com/element-index/){:rel="nofollow"}. 
 
 
-To practice memorizing HTML tags take [HTML5 Quiz](https://programming-review.com/html5quiz/).
+To practice memorizing HTML5 tags take [HTML5 Elements Quiz](https://programming-review.com/html5quiz/).
