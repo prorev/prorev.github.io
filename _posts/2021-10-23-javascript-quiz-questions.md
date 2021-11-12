@@ -25,6 +25,11 @@ _Table of Contents:_
 - [10. What is the correct syntax to use an external script called "new.js"?](#10-what-is-the-correct-syntax-to-use-an-external-script-called-newjs)
 - [11. The external JavaScript file must contain the `<script></script>` tags.](#11-the-external-javascript-file-must-contain-the-scriptscript-tags)
 - [12. What is correct commenting in JavaScript?](#12-what-is-correct-commenting-in-javascript)
+- [13. How do you declare a JavaScript variable x?](#13-how-do-you-declare-a-javascript-variable-x)
+- [14. To get the data type of some variable you will use:](#14-to-get-the-data-type-of-some-variable-you-will-use)
+- [15. When we don't assign a value to a variable it will be?](#15-when-we-dont-assign-a-value-to-a-variable-it-will-be)
+- [16. In JavaScript can we pass functions as arguments to other functions?](#16-in-javascript-can-we-pass-functions-as-arguments-to-other-functions)
+- [17. Would the next code cause the error?](#17-would-the-next-code-cause-the-error)
 - [18. Can you guess the return of the following code:](#18-can-you-guess-the-return-of-the-following-code)
 - [19. How do you write "Eureka" in an alert box?](#19-how-do-you-write-eureka-in-an-alert-box)
 - [20. What is the correct way to write a JavaScript array?](#20-what-is-the-correct-way-to-write-a-javascript-array)
@@ -63,13 +68,10 @@ _Table of Contents:_
  
 ☑ **Brendan Eich** ☐ Douglas Crockford ☐ James Gosling ☐ Ryan Dahl
  
-**Brendan Eich** created the very first JavaScript engine for the Netscape Navigator Web browser.
- 
-**Douglas Crockford** specified JSON format. 
-
-**James Gosling** originally developed the Java programming language.
- 
-**Ryan Dahl** wrote Node.js.
+* **Brendan Eich** created the very first JavaScript engine for the Netscape Navigator Web browser. 
+* **Douglas Crockford** specified JSON format. 
+* **James Gosling** originally developed the Java programming language.
+* **Ryan Dahl** wrote Node.js.
  
  
 ## 2. JavaScripts works inside web browsers only?
@@ -138,11 +140,14 @@ Yes. In JavaScript, there are 6 primitive data types: `string`, `number`, `boole
  
 Primitive types define immutable values. For example, if we set:
  
-`var a = 1;`
+```js
+var a = 1;
+```
  
 and later on we set
- 
-`a = 2;`
+```js
+a = 2;
+```
  
 Inside JavaScript runtime, variable `a` that is first equal to 1 will be destroyed and new variable `a` will be created to hold the value of 2.
  
@@ -152,7 +157,10 @@ Objects on the other side are mutable. You can set a property to the object, but
  
  
 ## 8. Inside what HTML tag you would put JavaScript code?
-☐ `<js>` ☐ `<scripting>` ☑ **`<script>`** ☐ `<javascript>`
+☐ `<js>`<br> 
+☐ `<scripting>`<br>
+☑ **`<script>`** <br>
+☐ `<javascript>`
  
 The HTML `<script>` tag is used to embed or reference JavaScript code.
  
@@ -186,20 +194,24 @@ The correct answer is:
 `<script src="new.js"></script>`
  
 If the `"src"` attribute is present, content inside the  `<script></script>` tags must be empty.
- 
-`<script name="new.js">`<br>
-`<script href="new.js">`<br>
-`<script content= "new.js">`
-are fake.
+
+These are fake: 
+* `<script name="new.js">`
+* `<script href="new.js">`
+* `<script content= "new.js">`
+
  
 The `name, href, content` are not `<script>` tag attributes.
  
  
 ## 11. The external JavaScript file must contain the `<script></script>` tags.
+
 ☑ **False** ☐ True
  
 External file is called like this:
-`<script src="new.js"></script>`
+```js
+<script src="new.js"></script>
+```
  
 We don't need to have a wrapper `<script></script>` in `new.js`.
  
@@ -215,14 +227,18 @@ In JavaScript you can write single line comments with `//` or multiline comments
  
 For example:
  
-```
+```js
 // This is single line comment
  
 /*This comment is
 multiline*/
 ````
  
-Note: `<!--This is also a comment-->` is how you comment in HTML.
+Note: This is how you comment in HTML
+
+```html
+<!--This is also a comment-->
+```
  
  
  
@@ -241,20 +257,21 @@ Note: In `var x;` we just declared a variable `x`. We haven't initialized it.
  
 To initialize a variable `x` you would write like this:
  
-`var x = "quiz";`
- 
- 
+```js
+var x = "quiz";
+```
+
  
 ## 14. To get the data type of some variable you will use:
  
 ☐ `dataType`
-☑ `typeof`
+☑ **`typeof`**
  
 The `typeof` operator is used to get the data type. The operand can be either a literal or a data structure such as a variable, a function, or an object. The operator `typeof` returns the string.
  
-Following lines are both correct:<br>
-`typeof operand`<br>
-`typeof(operand)`
+Following lines are both correct:
+* `typeof operand`
+* `typeof(operand)`
  
  
  
@@ -269,7 +286,10 @@ A variable that has not been assigned a value holds the value `undefined`.
  
 Expression `null` represents the intentional absence of any object value or type.
  
-If we write: `var x = null;`
+If we write: 
+```js
+var x = null;
+```
  
 We can say: `x` is known to exist, but it has no type or value.
  
@@ -288,7 +308,7 @@ This feature is called **first-class** functions.
  
 ## 17. Would the next code cause the error?
  
-```javascript
+```js
 var y;
 y = 9;
 y = "Dog";
@@ -299,7 +319,7 @@ No. JavaScript supports **dynamic** types. This means that the same variable can
  
 In our case:
  
-```javascript
+```js
 var y;
 y = 9;
 typeof y; // returns "number"
@@ -366,7 +386,7 @@ Do not overuse this method, as it prevents the user from accessing other parts o
  
 ## 20. What is the correct way to write a JavaScript array?
  
-☑ `var num=[1,2,3];`<br>
+☑ **`var num=[1,2,3];`**<br>
 ☐ `var num=(1,2,3);`
  
 In JavaScript we create arrays in two ways:
@@ -443,17 +463,15 @@ To get the last element of the array we should write:
 ## 25. What is the intruder?
 ☐ `mouseover` <br>
 ☐ `mouseout` <br>
-☑ `mousein` <br>
-☑ `mousemove`
+☑ **`mousein`** <br>
+☐ `mousemove`
  
 The `mousein` is not a standard event in JavaScript.
  
  
-`mousemove` - the event occurs when the pointer is moving while it is over an element
- 
-`mouseout` - the event occurs when a user moves the mouse pointer out of an element, or out of one of its children
- 
-`mouseover` - the event occurs when the pointer is moved onto an element, or onto one of its children
+* `mousemove` - the event occurs when the pointer is moving while it is over an element
+* `mouseout` - the event occurs when a user moves the mouse pointer out of an element, or out of one of its children
+* `mouseover` - the event occurs when the pointer is moved onto an element, or onto one of its children
  
  
  
@@ -493,7 +511,9 @@ typeof(undefined) // returns "undefined"
  
 ## 28. Is this correct?
  
-`var int number = 12;`
+```js
+var int number = 12;
+```
  
 ☐ YES ☑ **NO**
  
@@ -522,11 +542,11 @@ Some people believe that it is a good practice to put them at the end of each st
 ☑ **`push()`**<br>
 ☐ `addToEnd()`
  
-The `push()` method adds a new element to the end of an array.
+* `push()` method adds a new element to the end of an array.
  
-The `pop()` method removes the last element from an array.
+* `pop()` method removes the last element from an array.
  
-The methods `add()` and `addToEnd()` are not standard commands in JavaScript.
+* `add()` and `addToEnd()` are not standard commands in JavaScript.
  
  
  
@@ -537,12 +557,17 @@ The methods `add()` and `addToEnd()` are not standard commands in JavaScript.
  
 The `click` is an event listener used for the `addEventListener()` method.
  
-Example: `object.addEventListener("click", myFunction);`
+Example: 
+```js
+object.addEventListener("click", myFunction);
+```
  
 The `onclick` is an event handler.
  
 The syntax for `onclick` is like this:
-`object.onclick = function(){ ... };`
+```js
+object.onclick = function(){ ... };
+```
  
  
 ## 32. A string can be converted to an array using which method:
@@ -591,7 +616,9 @@ The function `parseInt()` parses a string and if it is possible converts to numb
  
 For instance:
  
-`parseInt("dogs 5"); // will return NaN`
+```js
+parseInt("dogs 5"); // will return NaN
+```
  
  
 ## 35. What is the output of this code?
@@ -752,7 +779,7 @@ The `location.URL` and the `URL.location` are fake.
  
 ☐ `navigator.platform` <br>
 ☐ `navigator.appName` <br>
-☑ `navigator.userAgent` <br>
+☑ **`navigator.userAgent`** <br>
 ☐ `browser.appName`
  
 The `navigator` object contains information about the browser.
