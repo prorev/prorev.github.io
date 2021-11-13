@@ -198,7 +198,8 @@ Hi Emily.
  
 ## 8. What is used to define a block of code in Python?
  
-☐ Curly braces<br☐ Parenthesis <br>
+☐ Curly braces<br>
+☐ Parenthesis <br>
 ☑ **Indentation** <br>
 ☐ Quotation
  
@@ -210,8 +211,10 @@ Statements within the same block of code need to be indented at the same level.
  
 ## 9. Which of the following is correct about the comments?
  
-☐ They help us understand the program better<br☐ Python Interpreter ignores comments<br>
-☐ Multiline comments start either with `'''` or `"""`<br ☑ **All options are correct**
+☐ They help us understand the program better<br>
+☐ Python Interpreter ignores comments<br>
+☐ Multiline comments start either with `'''` or `"""`<br> 
+☑ **All options are correct**
  
  
 Comments in Python start with the hash character, `#` and extend to the end of the physical line.
@@ -283,7 +286,9 @@ Note that Python is case sensitive language, and the `False` is not the same as 
  
 If we check, `type(False)` would return `<class 'bool'>` and `type(false)` would lead to NameError:
  
-`There is no such keyword 'false'.`
+```python
+There is no such keyword 'false'.
+```
  
 ## 15. Is there a `do while` loop in Python?
  
@@ -293,7 +298,9 @@ There are `while` and `for` loops in Python, but there is no `do while` loop.
  
 ## 16. What is the output of the following code?
  
-`print(type([1,2]))`
+```python
+print(type([1,2]))
+```
  
 ☐ <class 'tuple'><br>
 ☐ <class 'set'><br>
@@ -318,7 +325,9 @@ In Python unassigned variables are simply not allowed.
  
 This is of course possible. The smallest example would be like this:
  
-`list = [[]] `
+```python
+list = [[]] 
+```
  
  
  
@@ -348,7 +357,9 @@ $ chr(97)
  
 ## 21. What will be the result of this function?
  
-`len("Hello World")`
+```python
+len("Hello World")
+```
  
 ☐ 10 ☑ **11**
  
@@ -976,12 +987,11 @@ Then `a()` will return the 'Hello' string.
  
 ## 65. Suppose you need to print the `pi` constant defined in the `math` module. Which of the following code can do this task?
  
-☐ `print(math.pi)`
-☐ `print(pi)`
-☑ **`from math import pi`**;
-☑ **`print(pi)`**
-☐ `from math import pi`;
-☐ `print(math.pi)`
+☐ `print(math.pi)`<br>
+☐ `print(pi)`<br>
+☑ **`from math import pi`**; **`print(pi)`**<br>
+☐ `from math import pi`;<br>
+☐ `print(math.pi)`<br>
  
  
 This would be two correct ways:
