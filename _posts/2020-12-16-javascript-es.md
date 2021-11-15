@@ -468,4 +468,4 @@ method | desc
 `Number()` | Converts an object's value to a number
 `parseFloat()` | Parses a string and returns a floating point number
 `parseInt()` | Parses a string and returns an integer
-`String()` | Converts an object's
+`String()` | Converts an object's value to a string
