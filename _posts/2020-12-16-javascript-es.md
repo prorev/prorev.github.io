@@ -1,7 +1,7 @@
 ---
 id: 2987
 title: ECMAScript Basics
-date: 2020-12-16 
+date: 2020-12-16
 author: taimane
 layout: post
 permalink: /javascript/es/
@@ -28,48 +28,48 @@ tags:
 - [Appendix](#appendix)
   - [String Methods](#string-methods)
   - [Global Methods](#global-methods)
-
+ 
 ![ESMAScript](/wp-content/uploads/2020/12/javascript.jpg)
-
-In here you will find brief history of ECMAScript and we will cover what was new in ES6 and ES2017. Still, the idea of this article is to cover basic JavaScript features and to provide examples.
-
+ 
+Here you will find a brief history of ECMAScript and we will cover what was new in ES6 and ES2017. Still, the idea of this article is to cover basic JavaScript features and to provide examples.
+ 
 ## From JS history
-
+ 
 _Mozilla Firefox_ was the first browser ever, but at that time it was called _Netscape_.
-
-Netscape created _JavaScript_ first version, and they submit the language to ECMA (European Computer Manufacturers Association) for standardization.
-
+ 
+Netscape created _JavaScript_ first version, and they submitted the language to ECMA (European Computer Manufacturers Association) for standardization.
+ 
 There was a problem with the language name _JavaScript_, because _Sun Microsystems_ (now Oracle) created language Java, so they had to name it **ECMAScript** instead.
-
-You can find ECMAScript short name is ES, but we all simple use JavaScript.
-
+ 
+You can find ECMAScript's short name is ES, but we all simply use JavaScript.
+ 
 The two major impact releases of ES were ES5 (2010) and ES6 (2015). After ES6 we had: ES2016, ES2017, ES2018, ES2019, and ES2020.
-
+ 
 [New ES releases](https://en.wikipedia.org/wiki/ECMAScript){:rel="nofollow"} should bring new features and better security with improved simplicity. At least this is the idea.
-
-European Computer Manufacturers Association last standalone version was ES3, after the version 3 Yahoo, Microsoft, Google, and others bigger players joined and helped to define the ES standard.
-
+ 
+The European Computer Manufacturers Association last standalone version was ES3, after the version 3 Yahoo, Microsoft, Google, and others bigger players joined and helped to define the ES standard.
+ 
 ## ES6 (ES2015)
-
+ 
 ES6 currently is very popular (**widely supported**). This release brought:
-
+ 
 * `for...of` loops
 * Python-style iterators, generators
 * arrow function expression `(() => {...})`
-* `let` keyword for local declarations 
+* `let` keyword for local declarations
 * `const` keyword for constant local declarations
 * new collections (maps, sets and WeakMap)
 * promises
-
-
+ 
+ 
 We can use any browser to write JavaScript. With FireFox use _Inspect Element_ -> _Console_ and start typing/executing JavaScript.
-
-Use `console.log()` method to print.
-
+ 
+Use the `console.log()` method to print.
+ 
 ### Array
-
-Arrays were part of JavaScript from the early days, but in here we use the new ES6 `let` and `const` keywords to define them.
-
+ 
+Arrays were part of JavaScript from the early days, but here we use the new ES6 `let` and `const` keywords to define them.
+ 
 _Example: Array_
 ```js
 let a=[]
@@ -81,21 +81,21 @@ Out:
 ```
 Array [ "asdf", "asdf" ]
 ```
-
-> Before `let` keyword (ES6) there was `var` in older releases, that is present still. 
-
+ 
+> Before the `let` keyword (ES6) there was `var` in older releases, that is present still.
+ 
 > To define constants `const` keyword will suffice `const PI = 3.141593`.
-
-
+ 
+ 
 Most frequently used Array property is `.length`. You would use it like: `a.length` in our example.
-
+ 
 Core Array methods:
-
+ 
 method | desc
 ---|---
 `concat()` | Joins two or more arrays, and returns a copy of the joined arrays
 `indexOf()` | Searches array for an element, and returns element's position
-`join()` | Joins all elements of an array into a string 
+`join()` | Joins all elements of an array into a string
 `lastIndexOf()` | Searches array for an element, starting at the end, and returns element's position
 `pop()` | Removes last element of an array, and returns that element
 `push()` | Adds new element to the end of an array, and returns the new length
@@ -110,31 +110,31 @@ method | desc
 `map()` | Creates a new array with the results of calling a provided function on every element in this array
 `filter()` | Creates a new array with all elements that pass the test implemented by the provided function
 `every()` | Tests whether all elements in the array pass the test implemented by the provided function
-`foreach()` | Executes a provided function once per array element 
-
-
+`foreach()` | Executes a provided function once per array element
+ 
+ 
 ### Object
-
-Fist we will create an empty object.
-
+ 
+First we will create an empty object.
+ 
 ```js
 const empty = {}
 ```
-
+ 
 The problem with this object, we cannot alter it, because it is `const`.
-
+ 
 ```js
 let ob = {
     type : "string",
     value : "asdf"
 }
 ```
-
+ 
 We will get:
 ```
 Object { type: "string", value: "asdf" }
 ```
-
+ 
 *Example: An array of objects*
 ```js
 let ao = []
@@ -153,7 +153,7 @@ ao[2] = {
 }
 console.log(ao)
 ```
-
+ 
 _Output:_
 ```
 (3) […]
@@ -165,33 +165,33 @@ value: Object { type: "string", value: "asdf" }
 <prototype>: Object { … }
 length: 3
 ```
-
-
+ 
+ 
 ### Function
-
-A function is block of JavaScript code we invoke.
-
+ 
+A function is a block of JavaScript code we invoke.
+ 
 ```js
 const square = function(x){
     return x*x;
 }
 ```
-
+ 
 ### Arrow Function
-
-This is new ES6 feature. The same function from above can be achieved using arrow function syntax:
-
+ 
+This is a new ES6 feature. The same function from above can be achieved using arrow function syntax:
+ 
 ```js
 const square = (x) => x*x
 ```
-
-> I avoid using the arrow function from the same reason I avoid the lambda functions in Python, but they are possible.
-
-
+ 
+> I avoid using the arrow function for the same reason I avoid the lambda functions in Python, but they are possible.
+ 
+ 
 ### Class
-
+ 
 A JavaScript class is not an object, officially it is a _function_ under the ~~wood~~ hood.
-
+ 
 ```js
 class Browser {
   constructor(name, version) {
@@ -202,41 +202,41 @@ class Browser {
       console.log(`${this.name} version ${this.version}`  )
   }
 }
-
+ 
 console.log(typeof Browser) // function
 let ff85 = new Browser("Firefox", 85);
 console.log(typeof ff85) // object
 console.log(ff85) // Object { name: "Firefox", version: 85 }
 ff85.print() // Firefox version 85
 ```
-
-> `class` keyword is new in ES6. Before we used `function` keyword to [create classes](/javascript/classes) in ES5.
-
-
-### Set 
-
+ 
+> `class` keyword is new in ES6. Before we used the `function` keyword to [create classes](/javascript/classes) in ES5.
+ 
+ 
+### Set
+ 
 Sets are Arrays where all elements are unique. Sets are new in ES6.
-
+ 
 ```js
 let s = new Set()
 s.add("hello").add("goodbye").add("hello")
 console.log(s) // Set [ "hello", "goodbye" ]
 console.log(s.size === 2) // true
 console.log(s.has("hello") === true) // true
-for (let key of s.values()) 
+for (let key of s.values())
     console.log(key) // insertion order first hello then goodbye
 ```
-Use method `add()` to append element to a Set.
-We also used in here the new ES6 `for...of` syntax.
-
+Use method `add()` to append elements to a Set.
+We also used the new ES6 `for...of` syntax.
+ 
 ###  Map
-
+ 
 Map is a collection of elements, where each element of a Map is _key/value_ pair.
-
+ 
 Map is very similar to dict in Python, except we can iterate over Map in the order of insertion. For Python dict this is not true, unless we use ordered dicts.
-
+ 
 _Example: Map_
-
+ 
 ```js
 let m = new Map()
 m.set("hello", 42)
@@ -245,31 +245,31 @@ console.log(m.size === 2)
 for (let [ key, val ] of m.entries())
     console.log(key + " = " + val)
 ```
-
+ 
 _Out:_
 ```
-true 
-hello = 42 
+true
+hello = 42
 53 = world
 ```
-
+ 
 ### `for...of` loops
-
+ 
 Iterators and Generators bring the concept of iteration into JavaScript. You can iterate them using `for...of` loops.
-
+ 
 _Example: Iterator_
-
+ 
 Iterator is any JavaScript object that implements `next()` method and returns an object with two properties **value** and **done**.
-
+ 
 **value** means the next value in the iteration.sequence.
 **done** is true if the last value in the sequence has already been consumed, else false.
-
-
+ 
+ 
 ```js
 function makeRangeIterator(start = 0, end = Infinity, step = 1) {
     let nextIndex = start;
     let iterationCount = 0;
-
+ 
     const rangeIterator = {
        next: function() {
            let result;
@@ -285,13 +285,13 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
     return rangeIterator;
 }
 const it = makeRangeIterator(1, 10, 2);
-
+ 
 let result = it.next();
 while (!result.done) {
  console.log(result.value); // 1 3 5 7 9
  result = it.next();
 }
-console.log("Iterated over sequence of size: ", result.value); 
+console.log("Iterated over sequence of size: ", result.value);
 ```
 _Out:_
 ```
@@ -300,22 +300,22 @@ _Out:_
 5
 7
 9
-Iterated over sequence of size: 5 
+Iterated over sequence of size: 5
 ```
-
-
+ 
+ 
 _Example: Generator_
-
+ 
 ```js
 function* simpleGenerator() {
     yield 1;
     yield 3;
     yield 5;
-} 
+}
 var g = simpleGenerator();
  
 for (let i=0; i<4; i++){
-console.log(g.next()); 
+console.log(g.next());
 }
 ```
 _Out:_
@@ -325,12 +325,12 @@ Object { value: 3, done: false }
 Object { value: 5, done: false }
 Object { value: undefined, done: true }
 ```
-
-
+ 
+ 
 > String, Array, TypedArray, Map and Set are all built-in iterables, because their prototype objects all have a `Symbol.iterator` method.
-
+ 
 JavaScript supports 5 types of loops:
-
+ 
 type | desc
 ---|---
 for | loops through a block of code a number of times
@@ -338,19 +338,19 @@ for/in | loops through the properties of an object
 for/of | loops through the values of an iterable object
 while | loops through a block of code while a specified condition is true
 do/while | also loops through a block of code while a specified condition is true
-
-
-So far we explained what is new in ES6 compared to eS5 except we haven't explained ES6 Promises. The next section will cover promises inside async/await section.
-
+ 
+ 
+So far we explained what is new in ES6 compared to eS5 except we haven't explained ES6 Promises. The next section will cover promises inside the async/await section.
+ 
 ## ES2017
-
+ 
 ES2017 or ECMAScript 2017 new features include the `Object.values`, `Object.entries` and `Object.getOwnPropertyDescriptors` functions for easy manipulation of Objects and my favorite `async/await` constructions which use generators and promises for concurrency.
-
-
+ 
+ 
 ### `Object.values()`
-
-This is a method that should return iterator.
-
+ 
+This is a method that should return an iterator.
+ 
 _Example:_
 ```js
 const ob = {
@@ -359,12 +359,12 @@ const ob = {
 };
 console.log(Object.values(ob)); // Array [ "asdf", 53 ]
 ```
-
+ 
 ### `Object.entries()`
-
-This method is similar as `Object.values()` except it returns an object containing all elements (entries).
-
-
+ 
+This method is similar to `Object.values()` except it returns an object containing all elements (entries).
+ 
+ 
 _Example:_
 ```js
 const ob = {
@@ -374,7 +374,7 @@ const ob = {
 console.log(typeof Object.entries(ob));
 console.log(Object.entries(ob));
 ```
-
+ 
 _Out:_
 ```
 object
@@ -382,35 +382,35 @@ object
 1: Array [ "b", 53 ]
 length: 2
 ```
-
-
-
-
+ 
+ 
+ 
+ 
 ### async/await
-
+ 
 There is new syntax to work with promises called async/await.
-
+ 
 ```js
 async function f() {
   return 1;
 }
 ```
-
+ 
 The keyword `async` means the function _always_ returns a promise.
-
+ 
 This is exactly equivalent to this code:
-
+ 
 ```js
 async function f() {
   return Promise.resolve(1);
 }
 ```
-
+ 
 `await` keyword goes with `async` and works only inside `async`.
 When we call `await` this pauses the function execution until the promise returns.
-
+ 
 _Example: Promise_
-
+ 
 ```js
 async function f() {
   let promise = new Promise((resolve, reject) => {
@@ -421,15 +421,15 @@ async function f() {
 }
 f();
 ```
-In here we used a Promise. The Promise is JavaScript **object**.
+Here we used a Promise. The Promise is JavaScript **object**.
 Promise is designed to process asynchronous operation until success or failure (resolve or reject callbacks).
-
+ 
 ## Appendix
-
+ 
 ### String Methods
-
+ 
 Since working with strings is one of the most frequent action in JavaScript here are the string methods outlined:
-
+ 
 method | desc
 ---|---
 `charAt()` | Returns the character at the specified index
@@ -447,14 +447,14 @@ method | desc
 `substring()` | Extracts the characters from a string, between two specified indices
 `toLowerCase()` | Converts a string to lowercase letters
 `toUpperCase()` | Converts a string to uppercase letters
-`valueOf()` | Returns the primitive value of a String object 
-
-
-
+`valueOf()` | Returns the primitive value of a String object
+ 
+ 
+ 
 ### Global Methods
-
+ 
 These are the JavaScript global methods
-
+ 
 method | desc
 ---|---
 `decodeURI()` | Decodes a URI
@@ -467,4 +467,4 @@ method | desc
 `Number()` | Converts an object's value to a number
 `parseFloat()` | Parses a string and returns a floating point number
 `parseInt()` | Parses a string and returns an integer
-`String()` | Converts an object's 
+`String()` | Converts an object's
