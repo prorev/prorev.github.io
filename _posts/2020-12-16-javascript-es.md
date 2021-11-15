@@ -11,6 +11,7 @@ categories:
 tags:
    - await
 ---
+_Table of Contents:_
 - [From JS history](#from-js-history)
 - [ES6 (ES2015)](#es6-es2015)
   - [Array](#array)
