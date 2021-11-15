@@ -403,8 +403,7 @@ Wikipedia said **npm** is the world's largest Software Registry. The registry co
 
 
 
+To practice CLI commands take [NPM Commands Quiz](https://programming-review.com/npmquiz/).
 
-These are the NPM CLI version 7 (latest) commands. To practice the above commands take this [NPM Commands Quiz](https://programming-review.com/npmquiz/).
-
-REF: [https://docs.npmjs.com/cli/v6/commands](https://docs.npmjs.com/cli/v6/commands){:rel="nofollow"}
+REF: [https://docs.npmjs.com/cli/v7/commands](https://docs.npmjs.com/cli/v7/commands){:rel="nofollow"}
 
