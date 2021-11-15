@@ -1,5 +1,5 @@
 
-var ELEMENT_LIST    = 'access,adduser,bin,bugs,c,cache,completion,config,ddp,dedupe,deprecate,dist-tag,docs,edit,explore,get,help,help-search,i,init,install,install-test,it,link,list,ln,logout,ls,outdated,owner,pack,ping,prefix,prune,publish,rb,rebuild,repo,restart,root,run,run-script,s,se,search,set,shrinkwrap,star,stars,start,stop,t,tag,team,test,tst,un,uninstall,unpublish,unstar,up,update,v,version,view,whoami';
+var ELEMENT_LIST    = 'access,adduser,audit,bin,bugs,cache,ci,completion,config,dedupe,deprecate,diff,dist-tag,docs,doctor,edit,exec,explain,explore,find-dupes,fund,help,help-search,hook,init,install,install-ci-test,install-test,link,logout,ls,org,outdated,owner,pack,ping,pkg,prefix,profile,prune,publish,rebuild,repo,restart,root,run-script,search,set-script,shrinkwrap,star,stars,start,stop,team,test,token,uninstall,unpublish,unstar,update,version,view,whoami';
 var one_second      = 1000;
 var time_left       = min * 60000; // min in global space
 var elements        = ELEMENT_LIST.split(',');
