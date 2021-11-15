@@ -14,7 +14,7 @@ tags:
 ---
 **npm** is the package manager for the Node JavaScript platform.
 
-Wikipedia said **npm** is the world's largest Software Registry. The registry contains over 800,000 code packages. Open-source developers use npm to share software.
+Wikipedia said **npm** is the world's largest Software Registry. The registry contains more than one million code packages. Open-source developers use npm to share software.
 
 ## List of NPM CLI Commands
 
