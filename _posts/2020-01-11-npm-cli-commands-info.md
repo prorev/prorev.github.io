@@ -12,9 +12,9 @@ categories:
 tags:
    - npm
 ---
-**npm** is the package manager for the Node JavaScript platform.
+**NPM** (**N**ode **P**ackage **M**anager) is package manager for the Node (JavaScript) platform.
 
-Wikipedia said **npm** is the world's largest Software Registry. The registry contains more than one million code packages. Open-source developers use npm to share software.
+Wikipedia said **NPM** is the world's largest Software Registry. The registry contains more than one million code packages. Open-source developers use npm to share software.
 
 ## List of NPM CLI Commands
 
