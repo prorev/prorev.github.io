@@ -30,7 +30,7 @@ tags:
 
 ## Gradients, Jacobians and Hessians
 
-We mentioned how AD works to compute the gradients. Now, it's time for a basic experiment with PyTorch AD. In this section we explain the specifics of gradients in PyTorch and also Jacobian and Hessian matrices as these are important.
+We mentioned [how AD works](https://programming-review.com/pytorch/ad) to compute the gradients. Now, it's time for a basic experiment with PyTorch AD. In this section we explain the specifics of gradients in PyTorch and also Jacobian and Hessian matrices as these are important.
 
 ## Gradients act as accumulators
 
