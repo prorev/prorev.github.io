@@ -62,4 +62,4 @@ fetch                reflog
 
 If you would like to practice to list commands you may take [Git Commands Quiz](https://programming-review.com/gitquiz).
 
-REF: [Git Commands](https://git-scm.com/docs/git#_git_commands){:rel="nofollow"}
+There are [even more Git Commands](https://git-scm.com/docs/git#_git_commands){:rel="nofollow"}, but the [Git Commands Quiz](https://programming-review.com/gitquiz) shows commands present since 2016.
