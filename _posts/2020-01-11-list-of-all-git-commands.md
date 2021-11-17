@@ -1,6 +1,6 @@
 ---
 id: 3180
-title: List of all git commands
+title: List of all Git commands
 date: 2016-10-03 14:56:48
 author: taimane
 layout: post
@@ -14,7 +14,7 @@ tags:
 ---
 On Wikipedia you may find **git** is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
 
-Here is a quick list of **git** commands:
+Here is a list of **git** commands:
 
 ```
 add                  filter-branch        relink 
@@ -60,4 +60,4 @@ difftool             rebase               worktree
 fetch                reflog               
 ```
 
-If you would like to practice to list commands you may take this [quiz](https://programming-review.com/gitquiz).
+If you would like to practice to list commands you may take [Git Commands Quiz](https://programming-review.com/gitquiz).
