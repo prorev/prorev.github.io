@@ -21,6 +21,10 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+_Table of Contents:_
+- [Spectral norm](#spectral-norm)
+- [Weight norm](#weight-norm)
+- [Frobenius norm](#frobenius-norm)
 ## Spectral norm
 
 The algorithm of spectral normalization works together with gradient descent.
