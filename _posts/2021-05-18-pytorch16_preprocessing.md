@@ -21,7 +21,13 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-- [Reproducibility trick](#reproducibility-trick)
+_Table of Contents:_
+- [Three kind of preprocessing](#three-kind-of-preprocessing)
+- [Normalization](#normalization)
+- [Standardization](#standardization)
+- [Whitening images](#whitening-images)
+
+>_Article not finished..._
 
 ## Three kind of preprocessing
 
@@ -34,6 +40,12 @@ These are:
 
 Normalization is for the mean, standardization is for the variance and whitening is for the correlation.
 
+## Normalization
+...
+
+## Standardization
+...
+
 ## Whitening images
 
 The most interesting whitening algorithm is called Zero Component Analysis or ZCA. 
@@ -43,8 +55,6 @@ The most interesting whitening algorithm is called Zero Component Analysis or ZC
 Identity matrix means all one in the diagonal and 0 else. 
 
 Happens to be the white noise has the same covariance matrix as the image after whitening.
-
-
 
 Here are more details on the identity matrix.
 
