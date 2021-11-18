@@ -8,7 +8,7 @@ permalink: /php/installing-xdebug/
 redirect_from: /installing-xdebug-on-centos/
 published: true
 categories:
-   - linux
+   - php
 tags:
    - centos
    - xdebug
