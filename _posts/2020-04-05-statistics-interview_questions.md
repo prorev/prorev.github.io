@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Statistics interview questions
+title: Statistics Interview Questions
 date: 2020-04-05
 author: taimane
 layout: post
