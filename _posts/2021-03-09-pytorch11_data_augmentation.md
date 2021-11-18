@@ -21,6 +21,7 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+_Table of Contents:_
 - [Python libraries for data augmentation](#python-libraries-for-data-augmentation)
 - [Reading images](#reading-images)
 - [Images as Tensors](#images-as-tensors)
