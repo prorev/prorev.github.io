@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Wd CLI Quiz
+title: WordPress CLI Quiz
 date: 2020-02-12
 author: taimane
 layout: post
