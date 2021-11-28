@@ -1,6 +1,6 @@
 ---
 id: 2987
-title: Unity Quiz Questions with Answers
+title: Raspberry-pi Quiz Questions with Answers
 date: 2020-12-05 17:02:58
 author: taimane
 layout: post
