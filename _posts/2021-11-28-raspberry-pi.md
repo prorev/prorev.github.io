@@ -154,7 +154,9 @@ GPIO pin is a Raspberry Pi pin controlled by software.
 
  
 ## 8. In the image we have?
- 
+
+![joined wires](/wp-content/uploads/2021/11/joined.jpg)
+
 - ☑ Joined wires
 - ☐ Unjoined wires
  
