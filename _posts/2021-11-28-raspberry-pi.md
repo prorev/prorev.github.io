@@ -71,10 +71,10 @@ _Table of contents:_
 
 ## 1. Who created Raspberry Pi?
  
-- ☐ ODROID
-- ☐ Arduino
-- ☑ **Raspberry Pi foundation**
-- ☐ DIY
++ ☐ ODROID
++ ☐ Arduino
++ ☑ **Raspberry Pi foundation**
++ ☐ DIY
  
 The Raspberry Pi Foundation (UK) is a charity founded in 2009 to promote the study of basic computer science in schools, and is responsible for developing a single-board computer called the Raspberry Pi.
  
@@ -110,8 +110,8 @@ Note: Make sure you are using the Class-10 SD card or better.
  
 ## 4. What is magic smoke?
  
-- ☐ What makes Electronic Circuit work
-- ☑ **A joke**
++ ☐ What makes Electronic Circuit work
++ ☑ **A joke**
  
 The magic smoke is an inside joke in the electronics field.
  
@@ -141,8 +141,9 @@ Note: Earlier models could PXE/netboot with an appropriately set up SD card.
  
  
 ## 7. What is a GPIO pin?
-- ☑ **General Purpose Input Output pin**
-- ☐ Gigabyte Pin Output
+
++ ☑ **General Purpose Input Output pin**
++ ☐ Gigabyte Pin Output
  
  
 GPIO stands for General Purpose Input/Output.
@@ -157,8 +158,8 @@ GPIO pin is a Raspberry Pi pin controlled by software.
 
 ![joined wires](/wp-content/uploads/2021/11/joined.jpg)
 
-- ☑ Joined wires
-- ☐ Unjoined wires
++ ☑ Joined wires
++ ☐ Unjoined wires
  
 This is the joined wires schematics with the dot in the center.
  
