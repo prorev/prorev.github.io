@@ -13,6 +13,8 @@ tags:
    - threading
 ---
 
+_Table of Contents:_
+
 - [What is GIL](#what-is-gil)
 - [Python threading](#python-threading)
 - [Reference counting](#reference-counting)

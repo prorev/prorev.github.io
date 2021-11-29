@@ -12,7 +12,7 @@ categories:
 tags:
    - string
 ---
-
+_Table of Contents:_
 - [What is list comprehension?](#what-is-list-comprehension)
 - [Remove single element from a list](#remove-single-element-from-a-list)
 - [What are lists](#what-are-lists)

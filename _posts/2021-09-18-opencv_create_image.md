@@ -12,6 +12,8 @@ categories:
 tags:   
    - image
 ---
+_Table of Contents:_
+
 - [Create a gray image](#create-a-gray-image)
 - [Draw primitives](#draw-primitives)
 - [Create a noisy image](#create-a-noisy-image)

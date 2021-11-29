@@ -14,6 +14,7 @@ tags:
    - logic
    - programming
 ---
+_Table of Contents:_
 - [Iterations](#iterations)
   - [BinaryGap](#binarygap)
 - [Arrays](#arrays)

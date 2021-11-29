@@ -11,6 +11,8 @@ categories:
 tags:
    - tricks
 ---
+_Table of Contents:_
+
 - [What are feature maps](#what-are-feature-maps)
 - [Padding](#padding)
 - [Pooling - focusing](#pooling---focusing)

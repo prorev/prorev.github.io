@@ -13,6 +13,9 @@ tags:
    - ssh
    - vpn
 ---
+
+_Table of Contents:_
+
 - [About Public Key Authentication (PKA)](#about-public-key-authentication-pka)
 - [Generate SSH keys on Windows](#generate-ssh-keys-on-windows)
 - [Move public key to VPN (Linux server)](#move-public-key-to-vpn-linux-server)

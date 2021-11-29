@@ -13,8 +13,9 @@ tags:
    - random forest
    - scikit-learn
 ---
-In here I took the example from [Tyler White](http://structuringtheunstructured.blogspot.com/2017/11/coloring-with-random-forests.html){:rel="nofollow"} and modified it to use scikit-learn random forest. Also I took some ideas from [Octavio's article](https://octaviomm.com/decisionTreeViz.html){:rel="nofollow"}.
+_In here I took the example from [Tyler White](http://structuringtheunstructured.blogspot.com/2017/11/coloring-with-random-forests.html){:rel="nofollow"} and modified it to use scikit-learn random forest. Also I took some ideas from [Octavio's article](https://octaviomm.com/decisionTreeViz.html){:rel="nofollow"}._
 
+_Table of Contents:_
 - [Initial data](#initial-data)
 - [Random forest](#random-forest)
 - [Modified data](#modified-data)

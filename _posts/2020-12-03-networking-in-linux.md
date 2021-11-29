@@ -14,6 +14,9 @@ tags:
    - gateways
    - bridges
 ---
+
+_Table of Contents:_
+
 - [Networking commands](#networking-commands)
 - [Hostname](#hostname)
 - [Check your IP Address](#check-your-ip-address)

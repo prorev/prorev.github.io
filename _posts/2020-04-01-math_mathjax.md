@@ -21,9 +21,10 @@ tags:
     });
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-This would be MathJax basic tutorial and reference you may need frequently dealing with formulas:
+_This would be MathJax basic tutorial and reference you may need frequently dealing with formulas._
 
-- [Use of `$` and `$$`](#use-of--and)
+_Table of Contents:_
+- [Use of `$` and `$$`](#use-of--and-)
 - [Superscripts and Subscripts](#superscripts-and-subscripts)
 - [Controlling the sizes](#controlling-the-sizes)
 - [Curly braces](#curly-braces)

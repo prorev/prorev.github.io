@@ -11,7 +11,13 @@ categories:
   - r
 tags:
   - interview 
+  - questions
+  - data
+  - analyst
+  - R
+  - answers
 ---
+_Table of Contents:_
 - [What is R used for?](#what-is-r-used-for)
 - [What is RStudio?](#what-is-rstudio)
 - [General Machine Learning questions](#general-machine-learning-questions)

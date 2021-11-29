@@ -12,6 +12,9 @@ categories:
 tags:   
    - image
 ---
+
+_Table of Contents:_
+
 - [PIL.Image.open](#pilimageopen)
 - [PIL.Image.mode](#pilimagemode)
 - [Showing the image](#showing-the-image)

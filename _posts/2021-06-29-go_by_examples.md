@@ -13,6 +13,8 @@ tags:
    - examples
 ---
 
+_Table of Contents:_
+
 - [Print a line](#print-a-line)
 - [Comments](#comments)
 - [Import Packages](#import-packages)

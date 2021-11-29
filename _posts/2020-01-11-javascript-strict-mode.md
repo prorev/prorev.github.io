@@ -12,6 +12,7 @@ categories:
 tags:
    - strict mode
 ---
+_Table of Contents:_
 - [Rules:](#rules)
   - [Prevent using undeclared variables](#prevent-using-undeclared-variables)
   - [Prevent using keywords as variable name](#prevent-using-keywords-as-variable-name)

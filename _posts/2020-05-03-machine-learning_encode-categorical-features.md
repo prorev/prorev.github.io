@@ -14,11 +14,14 @@ tags:
    - pandas
    - sklearn
 ---
-In machine learning when you deal with pandas datasets you often have to convert categorical features to numerical since machine learning algorithms work with numerical values.
+_In machine learning when you deal with pandas datasets you often have to convert categorical features to numerical since machine learning algorithms work with numerical values._
 
 In case we have our data as pandas DataFrame, we **encode** categorical features (read:columns) of a DataFrame. For conversion you can use pandas and scikit-learn methods:
 
-- [The **get_dummies** method](#the-getdummies-method)
+
+_Table of Contents:_
+
+- [The **get_dummies** method](#the-get_dummies-method)
 - [**LabelEncoder** method](#labelencoder-method)
 - [**OneHotEncoder** method](#onehotencoder-method)
 - [**OrdinalEncoder** method](#ordinalencoder-method)

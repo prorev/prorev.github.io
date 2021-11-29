@@ -12,6 +12,8 @@ categories:
 tags:
    - ssh
 ---
+_Table of Contents:_
+
 - [In JavaScript there are `true` and `false`](#in-javascript-there-are-true-and-false)
 - [There are no classes in JavaScript, only objects](#there-are-no-classes-in-javascript-only-objects)
 - [Forget about `new Object()`](#forget-about-new-object)

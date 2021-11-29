@@ -12,12 +12,14 @@ categories:
 tags:
    - history
 ---
-Arthur Samuel first came up with the phrase "Machine Learning". He was IBM pioneer in the field of computer gaming and artificial intelligence.
+_Arthur Samuel first came up with the phrase "Machine Learning". He was IBM pioneer in the field of computer gaming and artificial intelligence._
 
 ![Arthur Samuel playing checkers](/wp-content/uploads/2021/09/checkers_as.jpg)
 _Ser Arthur Samuel playing checkers_
 
 Here is the short history of machine learning.
+
+_Table of Contents:_
 
 - [1763 Bayes' Theorem](#1763-bayes-theorem)
 - [1805 Least Square Methods](#1805-least-square-methods)

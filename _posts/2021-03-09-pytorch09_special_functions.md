@@ -21,6 +21,7 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+_Table of Contents:_
 - [argmax vs. max](#argmax-vs-max)
 - [softmax vs. softmax with temperature vs. logsoftmax](#softmax-vs-softmax-with-temperature-vs-logsoftmax)
 

@@ -22,7 +22,9 @@ tags:
     });
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 _Table of Contents:_
+
 - [What are Autoencoders](#what-are-autoencoders)
 - [Create Autoencoder using MNIST](#create-autoencoder-using-mnist)
 - [Training](#training)

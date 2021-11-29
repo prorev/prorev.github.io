@@ -11,6 +11,9 @@ categories:
 tags:
    - javascript
 ---
+
+_Table of Contents:_
+
 - [What is browser fingerprinting?](#what-is-browser-fingerprinting)
 - [Canvas fingerprinting](#canvas-fingerprinting)
 - [WebRTC](#webrtc)

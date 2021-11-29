@@ -12,6 +12,8 @@ categories:
 tags:
    - distribution
 ---
+_Table of Contents:_
+
 - [Long tail distribution](#long-tail-distribution)
 
 

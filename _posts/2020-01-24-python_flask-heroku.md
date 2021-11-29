@@ -13,6 +13,7 @@ tags:
    - flask
    - heroku
 ---
+_Table of Contents:_
 - [About Flask](#about-flask)
 - [Flask original components](#flask-original-components)
 - [Start with Flask](#start-with-flask)

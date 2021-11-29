@@ -12,6 +12,9 @@ categories:
 tags:
    - advanced
 ---
+
+_Table of Contents:_
+
 - [Functions](#functions)
   - [Function inside a function](#function-inside-a-function)
   - [Closure](#closure)

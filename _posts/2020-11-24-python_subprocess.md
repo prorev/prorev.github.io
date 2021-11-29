@@ -12,6 +12,9 @@ categories:
 tags:
    - subprocess
 ---
+
+_Table of Contents:_
+
 - [What is subprocess?](#what-is-subprocess)
 - [Using `subprocess.call()`](#using-subprocesscall)
 - [Using `subprocess.run()`](#using-subprocessrun)

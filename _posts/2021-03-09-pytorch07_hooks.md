@@ -21,6 +21,7 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+_Table of Contents:_
 
 - [About PyTorch Hooks](#about-pytorch-hooks)
 - [Use hooks to customize machine learning procedure](#use-hooks-to-customize-machine-learning-procedure)

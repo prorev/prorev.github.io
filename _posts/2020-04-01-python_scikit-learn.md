@@ -23,6 +23,7 @@ tags:
     });
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 _Table of contents:_
 - [What can we do with Scikit-learn?](#what-can-we-do-with-scikit-learn)
 - [Installation](#installation)

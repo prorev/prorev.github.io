@@ -25,6 +25,7 @@ tags:
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 In here I will ask and answer many questions from statistics.
 
+_Table of Contents:_
 - [What is regression?](#what-is-regression)
 - [What is Information?](#what-is-information)
 - [What is entropy?](#what-is-entropy)

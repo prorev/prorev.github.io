@@ -12,6 +12,7 @@ categories:
 tags:
    - tuple
 ---
+_Table of Contents:_
 - [Converting list to tuple](#converting-list-to-tuple)
 - [Concatenating tuples](#concatenating-tuples)
 - [Adding two tuples together](#adding-two-tuples-together)

@@ -12,7 +12,7 @@ categories:
 tags:
    - selenium
 ---
-
+_Table of Contents:_
 - [What is selenium project?](#what-is-selenium-project)
 - [How to install selenium with chromium?](#how-to-install-selenium-with-chromium)
 - [Why we need selenium](#why-we-need-selenium)

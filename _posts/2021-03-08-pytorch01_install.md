@@ -11,6 +11,9 @@ categories:
 tags:
    - installation
 ---
+
+_Table of Contents:_
+
 - [What is PyTorch](#what-is-pytorch)
 - [Install PyTorch](#install-pytorch)
 - [Check PyTorch config and environment](#check-pytorch-config-and-environment)

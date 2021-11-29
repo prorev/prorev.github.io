@@ -12,6 +12,7 @@ categories:
 tags:
    - imports
 ---
+_Table of Contents:_
 - [What is Python imports?](#what-is-python-imports)
 - [Importing a package](#importing-a-package)
 - [What can be imported?](#what-can-be-imported)

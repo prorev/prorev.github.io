@@ -12,6 +12,9 @@ categories:
 tags:
    - random forests
 ---
+
+_Table of Contents:_
+
 - [Set figure size and dpi](#set-figure-size-and-dpi)
 - [Creating sublots](#creating-sublots)
 - [Graphs labeling](#graphs-labeling)

@@ -21,6 +21,8 @@ tags:
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+_Table of Contents:_
+
 - [About PyTorch Optimizers](#about-pytorch-optimizers)
 - [Instantiate optimizers](#instantiate-optimizers)
 - [Creating a custom optimizer](#creating-a-custom-optimizer)

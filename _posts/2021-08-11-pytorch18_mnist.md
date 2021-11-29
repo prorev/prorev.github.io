@@ -11,6 +11,8 @@ categories:
 tags:
    - tricks
 ---
+_Table of Contents:_
+
 - [What is PyTorch](#what-is-pytorch)
 - [Load a dataset](#load-a-dataset)
 - [Create the model](#create-the-model)

@@ -12,15 +12,18 @@ categories:
 tags:
    - numpy
 ---
+
+_Table of Contents:_
+
 - [Data Types](#data-types)
 - [Tensors (arrays)](#tensors-arrays)
 - [Inspectors](#inspectors)
 - [Creating tensors](#creating-tensors)
 - [Copy related items](#copy-related-items)
 - [Creating tensors with np.where()](#creating-tensors-with-npwhere)
-- [np.c_ and np.r_](#npc-and-npr)
-  - [np.c_](#npc)
-  - [np.r_](#npr)
+- [np.c_ and np.r_](#npc_-and-npr_)
+  - [np.c_](#npc_)
+  - [np.r_](#npr_)
 - [Grids](#grids)
 - [Tensor operation](#tensor-operation)
   - [Transpose](#transpose)

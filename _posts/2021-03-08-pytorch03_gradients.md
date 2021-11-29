@@ -22,6 +22,9 @@ tags:
     });
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+_Table of Contents:_
+
 - [Gradients, Jacobians and Hessians](#gradients-jacobians-and-hessians)
 - [Gradients act as accumulators](#gradients-act-as-accumulators)
 - [Gradient with respect to (w.r.t) inputs](#gradient-with-respect-to-wrt-inputs)
