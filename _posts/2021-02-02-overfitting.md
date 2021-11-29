@@ -21,6 +21,8 @@ tags:
     });
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+_Table of Contents:_
  
 - [Detecting overfitting](#detecting-overfitting)
 - [General division of regularization techniques](#general-division-of-regularization-techniques)

@@ -12,6 +12,7 @@ tags:
    - quiz
 
 ---
+_Table of Contents:_
 - [1. Who created Vi?](#1-who-created-vi)
 - [2. Is this true?](#2-is-this-true)
 - [3. How many modes Vim have?](#3-how-many-modes-vim-have)
