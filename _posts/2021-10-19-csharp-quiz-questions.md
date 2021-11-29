@@ -1,6 +1,7 @@
 ---
 id: 2987
 title: CSHARP Quiz Questions with Answers
+description: 50 questions about Csharp with explanations
 date: 2020-12-05 17:02:58
 author: taimane
 layout: post
