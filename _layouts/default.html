@@ -14,11 +14,9 @@
       <title> {{page.title | upcase }} — {{site.title | upcase}}  </title>
     {% endif %}  
     
-    {% if page.tags %}
-    <!--keywords] -->
+    {% if page.tags %}    
     <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
     {% for tag in page.tags %}
-    <!--tag] -->
     <meta property="article:tag" content="{{ tag }}">
     {% endfor %}
     {% endif %}
