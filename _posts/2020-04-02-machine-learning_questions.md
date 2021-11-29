@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Machine learning Questions
+title: Machine Learning Questions
 date: 2020-04-02
 author: taimane
 layout: post
