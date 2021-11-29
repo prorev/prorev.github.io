@@ -11,6 +11,20 @@ categories:
 tags:
    - microcontroler
    - raspberry-pi
+   - camera
+   - 8GB
+   - GPIO
+   - pico
+   - wifi
+   - specs
+   - zero
+   - models
+   - Pi 4
+   - Raspbian
+   - Ubuntu
+   - voltage
+   - GPU
+   - Face Recognition
 ---
 _Table of contents:_
 - [1. Who created Raspberry Pi?](#1-who-created-raspberry-pi)

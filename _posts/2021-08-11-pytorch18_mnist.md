@@ -10,6 +10,12 @@ categories:
    - pytorch
 tags:
    - tricks
+   - mnist
+   - dataset
+   - manual
+   - loading
+   - pytorch
+   - reproducing
 ---
 _Table of Contents:_
 
