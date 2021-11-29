@@ -1,6 +1,6 @@
 ---
 id: 13
-title: Csharp interview questions
+title: Csharp Interview Questions
 date: 2011-02-28 09:08:00
 author: taimane
 layout: post
