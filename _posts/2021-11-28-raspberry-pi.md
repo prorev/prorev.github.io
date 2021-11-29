@@ -28,7 +28,7 @@ tags:
 ---
 _Table of contents:_
 - [1. Who created Raspberry Pi?](#1-who-created-raspberry-pi)
-- [2.Raspbian is the only operating system available for Raspberry Pi?](#2raspbian-is-the-only-operating-system-available-for-raspberry-pi)
+- [2. Raspbian is the only operating system available for Raspberry Pi?](#2-raspbian-is-the-only-operating-system-available-for-raspberry-pi)
 - [3. Raspberry Pi usually runs from an SD card?](#3-raspberry-pi-usually-runs-from-an-sd-card)
 - [4. What is magic smoke?](#4-what-is-magic-smoke)
 - [5. Hardware has a tendency not to work for the smallest reasons.](#5-hardware-has-a-tendency-not-to-work-for-the-smallest-reasons)
@@ -100,7 +100,7 @@ DIY is short for Do It Yourself.
  
  
  
-## 2.Raspbian is the only operating system available for Raspberry Pi?
+## 2. Raspbian is the only operating system available for Raspberry Pi?
  
 ☐ True  ☑ False
  
