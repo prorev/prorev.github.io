@@ -69,6 +69,11 @@ sudo restart ssh
 ```
  
 This way you will only have public key authentication, and username password authentication will be disabled.
+
+As a consequence of your actions you will get this message if you try to authenticate using Putty: 
+
+![auth](/wp-content/uploads/2021/11/pka3.jpg)
+
  
 ## sshd_config config file
  
