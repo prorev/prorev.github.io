@@ -10,6 +10,7 @@ categories:
    - linux
 tags:
    - speed
+   - test
 ---
 Testing the speed of VPN server is always a great idea.
 
