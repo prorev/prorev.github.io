@@ -6,7 +6,7 @@ author: taimane
 layout: post
 permalink: /android/stack/
 redirect_from: /android-stack/
-published: false
+published: true
 categories:
    - android
 tags:
