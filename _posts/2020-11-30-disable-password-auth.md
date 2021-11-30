@@ -170,4 +170,5 @@ UsePAM yes
 * Exit VIM without saving: `:q! [Enter]`
 * Exit VIM and save changes: `:x [Enter]`
 * VIM enter insert mode: `i`
+* VIM enter the command mode: `[Esc]`
 
