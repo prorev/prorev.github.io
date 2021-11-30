@@ -74,7 +74,13 @@ As a consequence of your actions you will get this message if you try to authent
 
 ![auth](/wp-content/uploads/2021/11/pka3.jpg)
 
- 
+**Step 4**: Make sure your `/etc/ssh/sshd_config` has:
+
+```bash
+ChallengeResponseAuthentication no
+```
+If this field would be `yes` you can still use password to login.
+
 ## sshd_config config file
  
 Here is the complete content of the `/etc/ssh/sshd_config` file once we set PKA and disabled username password auth:
