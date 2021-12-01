@@ -1,13 +1,14 @@
 ---
 id: 12971
-title: Using add_filter hook function in WordPress — a working example
+title: Using add_filter hook in WordPress — a working example
 date: 2020-01-10
 author: taimane
 layout: post
-permalink: /wordpress/add_filter-hook/
+permalink: /wordpress/add-filter-hook/
 redirect_from: 
    - /add_filter-hook/
    - /wordpress/using-add_filter-hook/
+   - /wordpress/add_filter-hook/
 
 published: true
 image: 
