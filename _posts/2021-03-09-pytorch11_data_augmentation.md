@@ -4,7 +4,8 @@ title: PyTorch | Data Augmentation
 date: 2021-03-09 23:57:32
 author: taimane
 layout: post
-permalink: /pytorch/data_augmentation
+permalink: /pytorch/data-augmentation
+redirect_from: /pytorch/data_augmentation
 published: true
 categories:
    - pytorch
