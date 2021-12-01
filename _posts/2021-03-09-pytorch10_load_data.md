@@ -4,7 +4,8 @@ title: PyTorch | Load Data
 date: 2021-03-09 23:57:32
 author: taimane
 layout: post
-permalink: /pytorch/load_data
+permalink: /pytorch/load-data
+redirect_from: /pytorch/load_data
 published: true
 categories:
    - pytorch
