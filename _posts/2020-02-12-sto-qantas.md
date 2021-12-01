@@ -3,8 +3,10 @@ id: 12971
 title: STO QANTAS
 date: 2020-02-12
 author: taimane
+description: Promoting the Australia most popular airplane company
 layout: post
-permalink: /promo/sto_qantas
+permalink: /promo/sto-qantas
+redirect_from: /promo/sto_qantas
 published: true
 image: 
 categories: 
