@@ -3,6 +3,7 @@ id: 3183
 title: List of Sass script functions
 date: 2016-10-03 16:27:01
 author: taimane
+description: Defining Sass script function categories and explaining the functions in few words
 layout: post
 permalink: /css/list-of-sass-script-functions/
 redirect_from: /list-of-sass-script-functions/
@@ -26,17 +27,17 @@ Table of Contents:
 - [Miscellaneous Functions](#miscellaneous-functions)
 ## RGB Functions
 
-`rgb` -- Creates a Color from red, green, and blue values.
+**`rgb`** -- Creates a Color from red, green, and blue values.
 
-`rgba` -- Creates a Color from red, green, blue, and alpha values.
+**`rgba`** -- Creates a Color from red, green, blue, and alpha values.
 
-`red` -- Gets the red component of a color.
+**`red`** -- Gets the red component of a color.
 
-`green` -- Gets the green component of a color.
+**`green`** -- Gets the green component of a color.
 
-`blue` -- Gets the blue component of a color.
+**`blue`** -- Gets the blue component of a color.
 
-`mix` -- Mixes two colors together. 
+**`mix`** -- Mixes two colors together. 
 
 
 
@@ -44,31 +45,31 @@ Table of Contents:
 
 
 
-`hsl` -- Creates a Color from hue, saturation, and lightness values.
+**`hsl`** -- Creates a Color from hue, saturation, and lightness values.
 
-`hsla` -- Creates a Color from hue, saturation, lightness, and alpha values.
+**`hsla`** -- Creates a Color from hue, saturation, lightness, and alpha values.
 
-`hue` -- Gets the hue component of a color.
+**`hue`** -- Gets the hue component of a color.
 
-`saturation` -- Gets the saturation component of a color.
+**`saturation`** -- Gets the saturation component of a color.
 
-`lightness` -- Gets the lightness component of a color.
+**`lightness`** -- Gets the lightness component of a color.
 
-`adjust-hue` -- Changes the hue of a color.
+**`adjust-hue`** -- Changes the hue of a color.
 
-`lighten` -- Makes a color lighter.
+**`lighten`** -- Makes a color lighter.
 
-`darken` -- Makes a color darker.
+**`darken`** -- Makes a color darker.
 
-`saturate` -- Makes a color more saturated.
+**`saturate`** -- Makes a color more saturated.
 
-`desaturate` -- Makes a color less saturated.
+**`desaturate`** -- Makes a color less saturated.
 
-`grayscale` -- Converts a color to grayscale.
+**`grayscale`** -- Converts a color to grayscale.
 
-`complement` -- Returns the complement of a color.
+**`complement`** -- Returns the complement of a color.
 
-`invert` -- Returns the inverse of a color. 
+**`invert`** -- Returns the inverse of a color. 
 
 
 
@@ -76,11 +77,11 @@ Table of Contents:
 
 
 
-`alpha` -- Gets the alpha component rgba Changes the alpha component for a color.
+**`alpha`** -- Gets the alpha component rgba Changes the alpha component for a color.
 
-`opacify` -- Makes a color more opaque.
+**`opacify`** -- Makes a color more opaque.
 
-`transparentize` -- Makes a color more transparent.
+**`transparentize`** -- Makes a color more transparent.
 
 
 
@@ -88,13 +89,13 @@ Table of Contents:
 
 
 
-`adjust-color` -- Increases or decreases one or more components of a color.
+**`adjust-color`** -- Increases or decreases one or more components of a color.
 
-`scale-color` -- Fluidly scales one or more properties of a color.
+**`scale-color`** -- Fluidly scales one or more properties of a color.
 
-`change-color` -- Changes one or more properties of a color.
+**`change-color`** -- Changes one or more properties of a color.
 
-`ie-hex-str` -- Converts a color into the format understood by IE filters. 
+**`ie-hex-str`** -- Converts a color into the format understood by IE filters. 
 
 
 
@@ -102,21 +103,21 @@ Table of Contents:
 
 
 
-`unquote` -- Removes quotes from a string.
+**`unquote`** -- Removes quotes from a string.
 
-`quote` -- Adds quotes to a string.
+**`quote`** -- Adds quotes to a string.
 
-`str-length` -- Returns the number of characters in a string.
+**`str-length`** -- Returns the number of characters in a string.
 
-`str-insert` -- Inserts $insert into $string at $index.
+**`str-insert`** -- Inserts $insert into $string at $index.
 
-`str-index` -- Returns the index of the first occurrence of $substring in $string.
+**`str-index`** -- Returns the index of the first occurrence of $substring in $string.
 
-`str-slice` -- Extracts a substring from $string.
+**`str-slice`** -- Extracts a substring from $string.
 
-`to-upper-case` -- Converts a string to upper case.
+**`to-upper-case`** -- Converts a string to upper case.
 
-`to-lower-case` -- Converts a string to lower case.
+**`to-lower-case`** -- Converts a string to lower case.
 
 
 
@@ -124,21 +125,21 @@ Table of Contents:
 
 
 
-`percentage` -- Converts a unitless number to a percentage.
+**`percentage`** -- Converts a unitless number to a percentage.
 
-`round` -- Rounds a number to the nearest whole number.
+**`round`** -- Rounds a number to the nearest whole number.
 
-`ceil` -- Rounds a number up to the next whole number.
+**`ceil`** -- Rounds a number up to the next whole number.
 
-`floor` -- Rounds a number down to the previous whole number.
+**`floor`** -- Rounds a number down to the previous whole number.
 
-`abs` -- Returns the absolute value of a number.
+**`abs`** -- Returns the absolute value of a number.
 
-`min` -- Finds the minimum of several numbers.
+**`min`** -- Finds the minimum of several numbers.
 
-`max` -- Finds the maximum of several numbers.
+**`max`** -- Finds the maximum of several numbers.
 
-`random` -- Returns a random number.
+**`random`** -- Returns a random number.
 
 
 
@@ -146,21 +147,21 @@ Table of Contents:
 
 
 
-`length` -- Returns the length of a list.
+**`length`** -- Returns the length of a list.
 
-`nth` -- Returns a specific item in a list.
+**`nth`** -- Returns a specific item in a list.
 
-`set-nth` -- Replaces the nth item in a list.
+**`set-nth`** -- Replaces the nth item in a list.
 
-`join` -- Joins together two lists into one.
+**`join`** -- Joins together two lists into one.
 
-`append` -- Appends a single value onto the end of a list.
+**`append`** -- Appends a single value onto the end of a list.
 
-`zip` -- Combines several lists into a single multidimensional list.
+**`zip`** -- Combines several lists into a single multidimensional list.
 
-`index` -- Returns the position of a value within a list.
+**`index`** -- Returns the position of a value within a list.
 
-`list-separator` -- Returns the separator of a list.
+**`list-separator`** -- Returns the separator of a list.
 
 
 
@@ -168,19 +169,19 @@ Table of Contents:
 
 
 
-`map-get` -- Returns the value in a map associated with a given key.
+**`map-get`** -- Returns the value in a map associated with a given key.
 
-`map-merge` -- Merges two maps together into a new map.
+**`map-merge`** -- Merges two maps together into a new map.
 
-`map-remove` -- Returns a new map with keys removed.
+**`map-remove`** -- Returns a new map with keys removed.
 
-`map-keys` -- Returns a list of all keys in a map.
+**`map-keys`** -- Returns a list of all keys in a map.
 
-`map-values` -- Returns a list of all values in a map.
+**`map-values`** -- Returns a list of all values in a map.
 
-`map-has-key` -- Returns whether a map has a value associated with a given key.
+**`map-has-key`** -- Returns whether a map has a value associated with a given key.
 
-`keywords` -- Returns the keywords passed to a function that takes variable arguments.
+**`keywords`** -- Returns the keywords passed to a function that takes variable arguments.
 
 
 
@@ -188,21 +189,21 @@ Table of Contents:
 
 
 
-`selector-nest` -- Nests selector beneath one another like they would be nested in the stylesheet.
+**`selector-nest`** -- Nests selector beneath one another like they would be nested in the stylesheet.
 
-`selector-append` -- Appends selectors to one another without spaces in between.
+**`selector-append`** -- Appends selectors to one another without spaces in between.
 
-`selector-extend` -- Extends $extendee with $extender within $selector.
+**`selector-extend`** -- Extends $extendee with $extender within $selector.
 
-`selector-replace` -- Replaces $original with $replacement within $selector.
+**`selector-replace`** -- Replaces $original with $replacement within $selector.
 
-`selector-unify` -- Unifies two selectors to produce a selector that matches elements matched by both.
+**`selector-unify`** -- Unifies two selectors to produce a selector that matches elements matched by both.
 
-`is-superselector` -- Returns whether $super matches all the elements $sub does, and possibly more.
+**`is-superselector`** -- Returns whether $super matches all the elements $sub does, and possibly more.
 
-`simple-selectors` -- Returns the simple selectors that comprise a compound selector.
+**`simple-selectors`** -- Returns the simple selectors that comprise a compound selector.
 
-`selector-parse` -- Parses a selector into the format returned by &.
+**`selector-parse`** -- Parses a selector into the format returned by &.
 
 
 
@@ -212,27 +213,27 @@ Table of Contents:
 
 
 
-`feature-exists` -- Returns whether a feature exists in the current Sass runtime.
+**`feature-exists`** -- Returns whether a feature exists in the current Sass runtime.
 
-`variable-exists` -- Returns whether a variable with the given name exists in the current scope.
+**`variable-exists`** -- Returns whether a variable with the given name exists in the current scope.
 
-`global-variable-exists` -- Returns whether a variable with the given name exists in the global scope.
+**`global-variable-exists`** -- Returns whether a variable with the given name exists in the global scope.
 
-`function-exists` -- Returns whether a function with the given name exists.
+**`function-exists`** -- Returns whether a function with the given name exists.
 
-`mixin-exists` -- Returns whether a mixin with the given name exists.
+**`mixin-exists`** -- Returns whether a mixin with the given name exists.
 
-`inspect` -- Returns the string representation of a value as it would be represented in Sass.
+**`inspect`** -- Returns the string representation of a value as it would be represented in Sass.
 
-`type-of` -- Returns the type of a value.
+**`type-of`** -- Returns the type of a value.
 
-`unit` -- Returns the unit 
+**`unit`** -- Returns the unit 
 
-`unitless` -- Returns whether a number has units.
+**`unitless`** -- Returns whether a number has units.
 
-`comparable` -- Returns whether two numbers can be added, subtracted, or compared.
+**`comparable`** -- Returns whether two numbers can be added, subtracted, or compared.
 
-`call` -- Dynamically calls a Sass function.
+**`call`** -- Dynamically calls a Sass function.
 
 
 
@@ -244,7 +245,7 @@ Table of Contents:
 
 
 
-`if` -- Returns one of two values, depending on whether or not $condition is true.
+**`if`** -- Returns one of two values, depending on whether or not $condition is true.
 
-`unique-id` -- Returns a unique CSS identifier. 
+**`unique-id`** -- Returns a unique CSS identifier. 
 
