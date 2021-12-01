@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Machine learning examples
+title: Machine Learning Examples
 date: 2020-04-25
 author: taimane
 layout: post
