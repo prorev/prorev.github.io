@@ -1,7 +1,7 @@
 ---
 id: 100
 title: PyTorch | Optimizer
-description: Dealing with the PyTorch Optimizer, known as torch.optim package
+description: Dealing with the PyTorch Optimizer, known as torch.optim package that defines many optimization algorithms that are commonly used for deep learning, including SGD+momentum, RMSProp, Adam, etc.
 date: 2021-03-09 23:57:32
 author: taimane
 layout: post
