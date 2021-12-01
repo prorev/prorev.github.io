@@ -80,12 +80,12 @@ words: List[str] = tok.batch_decode(gen, skip_special_tokens=True)
 words # ["Where's the bus stop?"]
 ```
 
-For all the existing models search Hugging Face website for [Helsinki](the https://huggingface.co/models?search=Helsinki){:rel="nofollow"}
+For all the existing models search Hugging Face website for [Helsinki](https://huggingface.co/models?search=Helsinki){:rel="nofollow"}
 
 
 ## Helsinki model details:
 
-Each model is ~ 300MB, and there are [~ 1000 models](the https://huggingface.co/models?search=Helsinki){:rel="nofollow"}.
+Each model is ~ 300MB, and there are [~ 1000 models](https://huggingface.co/models?search=Helsinki){:rel="nofollow"}.
 
 Models were trained using the [Marian C++ library](https://marian-nmt.github.io/){:rel="nofollow"}.
 

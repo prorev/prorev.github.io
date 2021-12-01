@@ -36,7 +36,7 @@ _Table of Contents:_
 PyTorch has default optimizers. Most famous is `torch.optim.SGD`, followed by `torch.optim.Adam` or 
 `torch.optim.AdamW`.
 
->The original Adam algorithm was proposed in [Adam: A Method for Stochastic Optimization](href="https://arxiv.org/abs/1412.6980). The AdamW variant was proposed in [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101).
+>The original Adam algorithm was proposed in [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980). The AdamW variant was proposed in [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101).
 
 Recently very popular is also `torch.optim.LBFGS` inspired by a matlab function [minFunc](https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html).
 
