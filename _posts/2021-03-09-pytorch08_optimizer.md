@@ -1,6 +1,7 @@
 ---
 id: 100
 title: PyTorch | Optimizer
+description: Dealing with the PyTorch Optimizer, known as torch.optim package
 date: 2021-03-09 23:57:32
 author: taimane
 layout: post
