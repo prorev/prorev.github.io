@@ -33,11 +33,11 @@ _Table of Contents:_
 - [Using Python built-in `filter()` function](#using-python-built-in-filter-function)
 - [Python `reduce()` function](#python-reduce-function)
 - [Conclusion](#conclusion)
-
+ 
 ![map-filter-reduce](/wp-content/uploads/2021/12/map-filter-reduce.jpg)
-
-`map()`, `filter()` and `reduce()` are functions forcing functional programming approach in Python.
-
+ 
+`map()`, `filter()` and `reduce()` are functions forcing a functional programming approach in Python.
+ 
  
 ## The built-in `map()` function in Python
  
@@ -235,4 +235,4 @@ print(t)
  
 ## Conclusion
  
-In conclusion, built-in functions `map()` and `filter()` and `functools.reduce` are useful for those who like the functional programming style in Python.
+Built-in functions `map()`, `filter()` and `functools.reduce()` are useful for those who like the functional programming style in Python. The benefit would be you don't need to create the `for` loops in Python if you use them.
