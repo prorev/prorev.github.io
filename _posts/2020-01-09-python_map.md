@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Python functional programming | Map, Filter and Reduce
+title: Python Functional Programming | Map, Filter and Reduce
 date: 2020-01-08
 author: taimane
 description: Python functions for functional programming, map(), filter() and functools.reduce()) explained examples
