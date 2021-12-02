@@ -33,8 +33,11 @@ _Table of Contents:_
 - [Using Python built-in `filter()` function](#using-python-built-in-filter-function)
 - [Python `reduce()` function](#python-reduce-function)
 - [Conclusion](#conclusion)
- 
-`map()`, `filter()` and `reduce()` are functions which facilitate a functional approach to programming in Python.
+
+![map-filter-reduce](/wp-content/uploads/2021/12/map-filter-reduce.jpg)
+
+`map()`, `filter()` and `reduce()` are functions forcing functional programming approach in Python.
+
  
 ## The built-in `map()` function in Python
  
