@@ -235,4 +235,4 @@ print(t)
  
 ## Conclusion
  
-Built-in functions `map()`, `filter()` and `functools.reduce()` are useful for those who like the functional programming style in Python. The benefit would be you don't need to create the `for` loops in Python if you use them.
+Built-in functions `map()`, `filter()` and `functools.reduce()` are useful for those who like the functional programming style in Python. If you use these functions you can avoid the Python `for` loops.
