@@ -63,7 +63,7 @@ $(function(){
 
 Variables in JavaScript can be **_global_** or **_local_**.
 
-Global are those variables declared outside of a function. Variables declared in JavaScript inside a function are **_local_** but can also be** _global_**.
+Global are those variables declared outside of a function. Variables declared in JavaScript inside a function are **_local_** but can also be **_global_**.
 
 When a variable is declared inside a function, without the `var` keyword, it will be **_local_**.
 If you declare a variable with `var` it is **_global_**, regardless of where you defined it.
