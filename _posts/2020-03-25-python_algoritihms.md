@@ -3,7 +3,7 @@ id: 12971
 title: 70+ Codility Problems solved in Python
 date: 2020-03-05
 author: taimane
-description: Long list of Codility problems solved in Python serving as a preparation material. Multiple algorithms and effective scores provided for each problem. The appendix section contains common useful Python primitives needed for almost any complex Codility problem.
+description: Long list of Codility problems solved in Python serving as a preparation material for testing. Multiple algorithms and effective scores provided for each problem. The appendix section contains common useful Python primitives needed for almost any complex Codility problem.
 layout: post
 permalink: /python/algorithms
 published: true
