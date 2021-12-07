@@ -3,6 +3,7 @@ id: 12971
 title: 70+ Codility Problems solved in Python
 date: 2020-03-05
 author: taimane
+description: Long list of Codility problems solved in Python serving as a preparation material. Multiple algorithms and effective scores provided for each problem. The appendix section contains common useful Python primitives needed for almost any complex Codility problem.
 layout: post
 permalink: /python/algorithms
 published: true
@@ -13,6 +14,89 @@ tags:
    - problems
    - logic
    - programming
+   - Iterations
+   - BinaryGap
+   - Arrays
+   - CyclicRotation
+   - OddOccurrencesInArray
+   - Time Complexity
+   - PermMissingElem
+   - FrogJmp
+   - TapeEquilibrium
+   - Counting Elements
+   - FrogRiverOne
+   - MaxCounters
+   - MissingInteger
+   - PermCheck
+   - Prefix Sums
+   - PassingCars
+   - GenomicRangeQuery
+   - MinAvgTwoSlice
+   - CountDiv
+   - Sorting
+   - Triangle
+   - Distinct
+   - MaxProductOfThree
+   - NumberOfDiscIntersections
+   - Stacks and Queues
+   - Brackets
+   - Nesting
+   - StoneWall
+   - Fish
+   - Leader
+   - Dominator
+   - EquiLeader
+   - Maximum Slice Problem
+   - MaxProfit
+   - MaxSliceSum
+   - MaxDoubleSliceSum
+   - Prime and composite numbers
+   - MinPerimeterRectangle
+   - CountFactors
+   - Peaks
+   - Flags
+   - Sieve or Eratosthenes
+   - CountSemiprimes
+   - CountNonDivisible
+   - Euclidean Algorithm
+   - ChocolatesByNumbers
+   - CommonPrimeDivisors
+   - Fibonacci Numbers
+   - FibFrog
+   - Ladder
+   - Binary Search
+   - MinMaxDivision
+   - NailingPlanks
+   - Caterpillar method
+   - AbsDistinct
+   - CountDistinctSlices
+   - CountTriangles
+   - MinAbsSumOfTwo
+   - Greedy algorithms
+   - TieRopes
+   - MaxNonoverlappingSegments
+   - Dynamic Programming
+   - NumberSolitaire
+   - MinAbsSum
+   - Challenges
+   - Buckets
+   - SheepAndSunshades
+   - Rivers
+   - DifferentCharacters
+   - DreamTeam
+   - MaxPathFromTheLeftTopCorner
+   - FloodDepth
+   - MaxZeroProduct
+   - TheaterTickets
+   - Conoeist
+   - BeautifulPassword
+   - PascalTriangles
+   - CoverBuildings
+   - LongestPassword
+   - Casino
+   - Number of countries
+   - Number Of Means
+   - Shortest Complate List
 ---
 _Table of Contents:_
 - [Iterations](#iterations)
