@@ -3,6 +3,7 @@ id: 100
 title: PyTorch | Autoencoder Example
 date: 2021-03-09 23:57:32
 author: taimane
+description: Creating simple PyTorch linear layer autoencoder using MNIST dataset from Yann LeCun. Visualization of the autoencoder latent features after training the autoencoder for 10 epochs. Identifying the building blocks of the autoencoder and explaining how it works.
 layout: post
 permalink: /pytorch/autoencoder
 published: true
@@ -12,6 +13,8 @@ tags:
    - project
    - autoencoder
    - tutor
+   - MNIST
+   - latent features
    - pytorch autoencoder
    - autoencoder in pytorch
    - convolutional autoencoder
