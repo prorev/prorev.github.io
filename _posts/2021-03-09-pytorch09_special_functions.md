@@ -10,6 +10,16 @@ categories:
    - pytorch
 tags:
    - functions
+   - softmax
+   - argmax
+   - logistic regression
+   - softmax with temperature
+   - logsoftmax
+   - numerical stability
+   - max
+   - argmax
+   - pytorch
+   - multinomial logistic regression
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
