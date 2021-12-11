@@ -3,13 +3,16 @@ id: 995
 title: Drawing graphs with graphviz
 date: 2013-01-03 15:05:49
 author: taimane
+description: Show few graphviz examples with the complete code included
 layout: post
 permalink: /drawing-graphs-with-graphviz/
-published: true
+published: false
 categories:
-   -
+   - python
 tags:
-   -
+   - graphviz
+   - neato
+   - drawing
 ---
 <a rel="nofollow" href="http://www.graphviz.org/">Graphviz</a> is a great resource for drawing both directed and undirected graphs.
 

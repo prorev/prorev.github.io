@@ -92,7 +92,7 @@ add_action('wp_head', 'add_metatags');
  
 ```
  
-Note, apart from the `add_action` hooks there are also `add_filter` hooks described in the <a href="https://programming-review.com/add-filter-hook/">tutorial to use `add_filter` hook</a>.
+Note, apart from the `add_action` hooks there are also `add_filter` hooks described in the <a href="https://programming-review.com/wordpress/add-filter-hook/">tutorial to use `add_filter` hook</a>.
 
 Filters give you the ability to change data. Callback functions for filters will typically accept a variable, modify it, and than return it. 
 
