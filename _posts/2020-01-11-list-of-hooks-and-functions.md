@@ -12,7 +12,7 @@ categories:
 tags:
    -
 ---
-In article <a href="https://programming-review.com/add_filter-hook/">Using add_filter hook...</a> we set the the code how to enumerate the functions being hooked to the specific WordPress hook, but we never covered how to show all hooks and all the hooking functions, and lastly to show the execution priories for the hooking functions execution.
+In article <a href="https://programming-review.com/wordpress/add_filter-hook/">Using add_filter hook...</a> we set the the code how to enumerate the functions being hooked to the specific WordPress hook, but we never covered how to show all hooks and all the hooking functions, and lastly to show the execution priories for the hooking functions execution.
 
 It must be several years I saw <a rel="nofollow" href="http://www.wprecipes.com/list-all-hooked-wordpress-functions">this article</a>.
 It contains the code to print all hooked WordPress functions for all hooks.

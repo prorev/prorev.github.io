@@ -25,7 +25,7 @@ This is all the "hard job" you need to do. Nothing more, but it cannot be done f
 
 
 
-In order to use the action hooks you can refer to <a href="https://programming-review.com/add_filter-hook/">already created article</a>.
+In order to use the action hooks you can refer to <a href="https://programming-review.com/wordpress/add_filter-hook/">already created article</a>.
 
 
 
