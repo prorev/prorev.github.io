@@ -12,6 +12,7 @@ categories:
    - python
 tags:
    - problems
+   - codility task solutions
    - logic
    - programming
    - Iterations
@@ -88,7 +89,7 @@ tags:
    - FloodDepth
    - MaxZeroProduct
    - TheaterTickets
-   - Conoeist
+   - Canoeist
    - BeautifulPassword
    - PascalTriangles
    - CoverBuildings
@@ -96,7 +97,7 @@ tags:
    - Casino
    - Number of countries
    - Number Of Means
-   - Shortest Complate List
+   - Shortest Complete List
 ---
 _Table of Contents:_
 - [Iterations](#iterations)
@@ -173,7 +174,7 @@ _Table of Contents:_
   - [FloodDepth](#flooddepth)
   - [MaxZeroProduct](#maxzeroproduct)
   - [TheaterTickets](#theatertickets)
-  - [Conoeist](#conoeist)
+  - [Canoeist](#canoeist)
   - [BeautifulPassword](#beautifulpassword)
   - [PascalTriangles](#pascaltriangles)
   - [CoverBuildings](#coverbuildings)
@@ -181,7 +182,7 @@ _Table of Contents:_
   - [Casino](#casino)
   - [Number of countries](#number-of-countries)
   - [Number Of Means](#number-of-means)
-  - [Shortest Complate List](#shortest-complate-list)
+  - [Shortest Complete List](#shortest-complete-list)
 - [Appendix](#appendix)
   - [Primes](#primes)
   - [Counter](#counter)
@@ -2428,7 +2429,8 @@ def solution(a):
     return len(s)
 ```
 
-### Conoeist
+### Canoeist
+
 
 ```python
 from collections import deque
@@ -2762,7 +2764,7 @@ a,m= [2, 4, 0], 2
 solution(a,m)
 ```
 
-### Shortest Complate List
+### Shortest Complete List
 
 In here we need to find the length of the shortest sublist with all elements inside.
 
