@@ -13,7 +13,8 @@ categories:
 tags:
    - samsung
    - ODIN
-   - android
+   - samsund odin
+   - android odin
    - PIT
    - ODIN3
    - Heimdall
@@ -27,14 +28,14 @@ You may root your device. Once you rooted your device, make sure you have OEM un
  
 ## ODIN3 tool components
  
-This tool is actually made by Samsung. It should have
+This tool is actually made by Samsung. It should have: 
  
 * BL: Bootloader
 * AP: Android partition (OS)
 * CP: modern firmware
 * CSC: Consumer software customization
  
-You can even create and use PIT (Partition Information Table), this way you can create your own partitions.
+In Samsung ODIN helps you create and use PIT (Partition Information Table), in a way you create and manage your own partitions.
  
 ### What is PIT?
  

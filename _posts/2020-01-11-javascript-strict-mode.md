@@ -3,6 +3,7 @@ id: 3087
 title: JavaScript strict mode advantages. Why is it there?
 date: 2016-09-08 21:54:20
 author: taimane
+description: Explains why there is strict mode in JavaScript, lists rules for JavaScript strict mode. Several JavaScript strict mode examples are given all using "use strict" literal.
 layout: post
 permalink: /javascript/strict-mode/
 redirect_from: /javascript-strict-mode/
@@ -11,6 +12,15 @@ categories:
    - javascript
 tags:
    - strict mode
+   - use strict 
+   - javascript use strict
+   - javascript strict
+   - javascript example
+   - example
+   - literal
+   - script 
+   - function
+   - module
 ---
 _Table of Contents:_
 - [Rules:](#rules)
