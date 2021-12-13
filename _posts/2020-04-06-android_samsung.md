@@ -35,7 +35,7 @@ This tool is actually made by Samsung. It should have:
 * CP: modern firmware
 * CSC: Consumer software customization
  
-In Samsung ODIN helps you create and use PIT (Partition Information Table), in a way you create and manage your own partitions.
+Samsung ODIN tool helps you create and use PIT (Partition Information Table).
  
 ### What is PIT?
  
