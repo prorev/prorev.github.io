@@ -3,6 +3,7 @@ id: 12971
 title: Samsung android ODIN tool
 date: 2020-04-06
 author: taimane
+description: Lists the tools you can use to root the Samsung android phone, provides few tips on each tool and explains how not to get the FAP lock. 
 layout: post
 permalink: /android/samsung-odin
 published: true
