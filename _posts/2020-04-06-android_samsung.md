@@ -39,7 +39,13 @@ This tool is actually made by Samsung. It should have:
 * CP: modern firmware
 * CSC: Consumer software customization
  
-Samsung ODIN tool helps with the task of creating PIT (Partition Information Table).
+Samsung ODIN tool helps to:
+* create PIT (Partition Information Table)
+* install custom ROM
+* unbrick your Android device
+
+Originally, Odin was used internaly by Samsung repair centers, but has been leaked out since.
+You can find Odin versions for Mac, Windows and Linux.
 
 ### What is PIT?
  
