@@ -28,6 +28,7 @@ tags:
    - unbrick phone
    - FAP Lock
    - Odin to remove FAP lock
+   - FAP unlock
 ---
 What can you do with the ODIN3 tool?
  
