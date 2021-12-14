@@ -1,17 +1,29 @@
 ---
 id: 2987
 title: CSHARP Quiz Questions with Answers
-description: 50 questions about Csharp explained
 date: 2020-12-05 17:02:58
-author: taimane
+author: taimane 
+description: 50 questions about c# explained excellent for beginners and intermediate Csharp programmers covering wide variety of topics such as c# history, CLR, c# compiler, .NET, Visual Studio, and also C# types, properties, syntax, functions, classes, namespaces, etc.
 layout: post
 permalink: /csharp/quiz/
 published: true
 categories:
    - csharp
 tags:
-   - quiz
+   - quiz   
    - answers
+   - csharp
+   - csharp programmers
+   - c#
+   - quiz questions
+   - quiz answers
+   - c# quiz 
+   - C# quiz questions
+   - C# answers
+   - quiz questions in c#
+   - beginners
+   - intermediate
+   - .NET framework
 ---
 _Table of Contents:_
 - [1. Who created C#?](#1-who-created-c)
