@@ -24,6 +24,8 @@ tags:
    - beginners
    - intermediate
    - .NET framework
+   - c# class
+   - C# class property
 ---
 _Table of Contents:_
 - [1. Who created C#?](#1-who-created-c)
