@@ -3,7 +3,7 @@ id: 12971
 title: Samsung android ODIN tool
 date: 2020-04-06
 author: taimane
-description: Lists the tools you can use to root the Samsung android phone, provides few tips on each tool and explains how not to get the FAP lock. 
+description: Lists the tools you can use to root the Samsung android phone, provides few tips on each tool and explains how not to get the FAP lock (bricked phone), but even if you brick your phone, provides you the list of tools to unbrick it.
 layout: post
 permalink: /android/samsung-odin
 published: true
@@ -24,6 +24,10 @@ tags:
    - AP
    - CP
    - CSC
+   - bricked phone
+   - unbrick phone
+   - FAP Lock
+   - Odin to remove FAP lock
 ---
 What can you do with the ODIN3 tool?
  
