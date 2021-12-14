@@ -20,6 +20,10 @@ tags:
    - Heimdall
    - Samsung Smart Switch
    - Bootloader
+   - BL
+   - AP
+   - CP
+   - CSC
 ---
 What can you do with the ODIN3 tool?
  
@@ -35,8 +39,8 @@ This tool is actually made by Samsung. It should have:
 * CP: modern firmware
 * CSC: Consumer software customization
  
-Samsung ODIN tool helps you create and use PIT (Partition Information Table).
- 
+Samsung ODIN tool helps with the task of creating PIT (Partition Information Table).
+
 ### What is PIT?
  
 PIT stands for Partition Information Table.
