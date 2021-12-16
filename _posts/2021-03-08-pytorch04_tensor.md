@@ -4,12 +4,27 @@ title: PyTorch | Tensor
 date: 2021-03-08 23:57:32
 author: taimane
 layout: post
+description: Explains the connection PyTorch tensor has to numpy array, explains how to create PyTorch tensors of specific dtype and shape. Tensor initialization is covered with examples, tensor storage and tensor stride are explained in detail.
 permalink: /pytorch/tensor
 published: true
 categories:
    - pytorch
 tags:
    - tensor
+   - pytorch
+   - pytorch tensor
+   - pytorch tensors
+   - pytorch bmm
+   - create pytorch tensor
+   - creating pytorch tensors
+   - tensor shape
+   - tensor dtype
+   - set tensor precision in pytorch
+   - tensor initialization
+   - Creating uninitialized tensor
+   - tensor products
+   - numpy to tensor
+   - tensor to numpy
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -120,6 +135,8 @@ t = torch.randn_like(t) # random normal with the same shape as t
 t = torch.clone(t) # gradients propagating to the cloned tensor
 t = t.copy_(t) # gradients are not propagated
 ```
+
+> numpy to tensor is one very frequent way to create a tensor, for instance when you use pandas. 
 
 ## PyTorch `info()` method
 
@@ -285,7 +302,7 @@ tensor(0.12345679)
 tensor(0.123456791043281555)
 ```
 
-Ups, after setting the precision to 18bit we cannot see all the digits from the original number any more. Why is that? 
+Ups, after setting the precision to 18-bit we cannot see all the digits from the original number any more. Why is that? 
 
 It is because the default `dtype` in PyTorch for float numbers `float32` and our number needs more precision bits. Let's quickly make the default precision to `float64`.
 
@@ -303,6 +320,7 @@ torch.float32
 torch.float64
 tensor(0.123456789012343998)
 ```
+> To set **tensor precision in pytorch** we use `torch.set_default_dtype`.
 
 Still not perfect you may say, but this is because numbers are stored in memory as arrays of zeros and ones. Every `dtype` holds the information about sign of the number (usually one bit), plus the number of bites for mantisa and exponent. By default `torch.float32` uses one bit for the sign, 8 bites for the exponent and 23 for the mantisa, while `torch.float64` uses 1 bit for the sign, 11 for the exponent and 52 for the mantisa.
 
