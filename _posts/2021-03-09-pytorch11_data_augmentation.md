@@ -3,7 +3,7 @@ id: 100
 title: PyTorch | Data Augmentation
 date: 2021-03-09 23:57:32
 author: taimane
-description: Explains PyTorch data augmentation for visual tasks using the examples from different python data augmentation libraries such as cv2, pil, matplotlib... Resizing images and other transforms covered.
+description: Explains data augmentation in PyTorch for visual tasks using the examples from different python data augmentation libraries such as cv2, pil, matplotlib... Resizing images and other torchvision transforms covered.
 layout: post
 permalink: /pytorch/data-augmentation
 redirect_from: /pytorch/data_augmentation
@@ -20,6 +20,7 @@ tags:
    - image examples
    - split and merge image
    - data distribution
+   - torchvision
    - CV2
    - PIL
    - matplotlib
