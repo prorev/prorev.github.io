@@ -3,6 +3,7 @@ id: 100
 title: PyTorch | Train and Save the Model
 date: 2021-03-08 23:57:32
 author: taimane
+description: How to train PyTorch model and how to save it and reuse later
 layout: post
 permalink: /pytorch/train
 published: true
@@ -12,6 +13,14 @@ tags:
    - train
    - test
    - inference
+   - pytorch zero_grad
+   - forward pass
+   - pytorch forward pass
+   - calculating the loss
+   - backward pass
+   - pytorch backward pass
+   - updating the parameters
+   - zero the gradients
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -36,6 +45,7 @@ There are characteristic phases:
 * backward pass
 * updating the parameters
 * zero the gradients
+* pytorch epoch
 
 As this is the foundation, optionally we may tweak the learning rate using the learning rate scheduler. Learning rate is a hyperparameter.
 

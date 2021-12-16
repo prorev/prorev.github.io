@@ -3,6 +3,7 @@ id: 100
 title: PyTorch | Gradients
 date: 2021-03-08 23:57:32
 author: taimane
+description: Explains gradients accumulation, How to create gradients in PyTorch, why do we need to zero the gradients and how to zero the gradients, when to use backward() and when grad() function to create the gradients
 layout: post
 permalink: /pytorch/gradients
 published: true
@@ -12,6 +13,8 @@ tags:
    - gradients
    - jacobians
    - hessians
+   - pytorch requires_grad
+   - pytorch gradients
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -27,7 +30,7 @@ _Table of Contents:_
 
 - [Gradients, Jacobians and Hessians](#gradients-jacobians-and-hessians)
 - [Gradients act as accumulators](#gradients-act-as-accumulators)
-- [Gradient with respect to (w.r.t) inputs](#gradient-with-respect-to-wrt-inputs)
+- [Gradient with respect to (wrt.) the inputs and gradients wrt. the leaves](#gradient-with-respect-to-wrt-the-inputs-and-gradients-wrt-the-leaves)
 - [Formal definition of Gradients, Jacobians and Hessians](#formal-definition-of-gradients-jacobians-and-hessians)
 - [Getting the gradients](#getting-the-gradients)
 
@@ -129,7 +132,7 @@ Out:
 tensor([0., 0., 0., 0., 0.])
 ```
 
-## Gradient with respect to (w.r.t) inputs
+## Gradient with respect to (wrt.) the inputs and gradients wrt. the leaves
 
 From the last example we may request gradients for `s` w.r.t. `w`. To do that we call [`torch.autograd.grad()`](https://pytorch.org/docs/stable/autograd.html#torch.autograd.grad) function.
 
@@ -222,7 +225,7 @@ tensor([[[[-7.4587, -0.0000],
 
 ## Getting the gradients
 
-*Example*:  Getting Jacobians usign [`torch.autograd.grad`](https://pytorch.org/docs/stable/autograd.html#torch.autograd.grad){:rel="nofollow"}
+*Example*:  Getting Jacobians using [`torch.autograd.grad`](https://pytorch.org/docs/stable/autograd.html#torch.autograd.grad){:rel="nofollow"}
 
 In the next example `torch.autograd.grad`
 computes the product of the jacobian with the vector given in `grad_outputs`. In `grad_outputs` you give the vector `[1., 1.]` with this line:
