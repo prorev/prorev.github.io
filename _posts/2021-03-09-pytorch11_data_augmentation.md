@@ -3,6 +3,7 @@ id: 100
 title: PyTorch | Data Augmentation
 date: 2021-03-09 23:57:32
 author: taimane
+description: Explains PyTorch data augmentation for visual tasks using the examples from different python data augmentation libraries such as cv2, pil, matplotlib... Resizing images and other transforms covered.
 layout: post
 permalink: /pytorch/data-augmentation
 redirect_from: /pytorch/data_augmentation
@@ -11,6 +12,21 @@ categories:
    - pytorch
 tags:
    - data augmentation
+   - data augmentation in pytorch
+   - data augmentation pytorch
+   - pytorch data augmentation
+   - visual machine learning
+   - visual images
+   - image examples
+   - split and merge image
+   - data distribution
+   - CV2
+   - PIL
+   - matplotlib
+   - scikit-images
+   - pgmagic
+   - numpy
+   - SciPy
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -39,7 +55,7 @@ _Table of Contents:_
 
 ## Python libraries for data augmentation
 
-Data augmentation is a technique where you increase the number of data examples. The additional data examples should ideally have the same or "close" data distribution as the initial data.
+Data augmentation is a technique where you increase the number of data examples somehow. The additional data examples should ideally have the same or "close" **data distribution** as the initial data.
 
 Imagine your initial data is 100 images. You can create 50 more images similar to these original 100 to augment.
 
