@@ -11,6 +11,7 @@ image:
 categories: 
    - python
 tags:
+   - python download file
    - download file
    - python wget
    - pip install wget
