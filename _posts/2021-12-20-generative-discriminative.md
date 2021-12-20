@@ -127,7 +127,7 @@ Generative models can generate probability of an instance, but also probability 
  
 ## Bayes Optimal Classifier to get the single prediction
  
-When you know the distribution $P(Y | X)$ you may use Bayes Optimal classifier to get the prediction for the new data.
+When you know the distribution $P(Y \mid X)$ you may use Bayes Optimal classifier to get the prediction for the new data.
  
 Since Bayes Optimal classifier picks the most likely $Y$ for the given $X$ you can use it to determine the most probable prediction for a new data input.
  
