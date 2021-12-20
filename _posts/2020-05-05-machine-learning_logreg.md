@@ -11,6 +11,10 @@ categories:
    - machine-learning
 tags:
    - logistic regression
+   - sigmoid function
+   - logit function
+   - classification task
+   - 
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -24,7 +28,7 @@ tags:
 
 ## Sigmoid function inside
 
-Let's have a function 
+Let's have a function:
 
 $Sig(x)=\Large{\frac{e^x}{1 + e^{x}}}$
 
