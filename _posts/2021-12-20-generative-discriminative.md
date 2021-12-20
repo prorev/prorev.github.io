@@ -53,7 +53,7 @@ There are few different types machine learning models may fit in:
 * classification or regression models
 * generative or discriminative models
  
-Let's explain them.
+Let's explain the difference between generative and discriminative models.
  
 ## Generative vs. discriminative models
 
