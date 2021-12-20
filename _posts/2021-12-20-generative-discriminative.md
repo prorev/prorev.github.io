@@ -11,18 +11,18 @@ categories:
    - machine-learning
 tags:
    - data analysis
+   - machine learning model
    - generative
    - discriminative
-   - clustering
    - probability
    - algorithm steps  
    - segmentation
-   - clustering
    - parametric
    - non-parametric
-   - cluster
-   - class
-   - group
+   - modeling the distribution
+   - hypothesis
+   - model or hypothesis
+
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
