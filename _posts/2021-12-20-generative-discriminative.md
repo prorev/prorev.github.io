@@ -66,7 +66,7 @@ Example of a generative machine learning model is **Naive Bayes**. For instance 
  
 Naive Bayes can predict multiple classes based on inputs features. The name "Naive Bayes" was given because of the assumption the algorithm has:
  
-In Naive Bayes **features are independent** (actually iid. = independent and identically distributed).
+In Naive Bayes **features are independent** (actually i.i.d. = independent and identically distributed random variables).
  
 In general case features may not be independent.
  
