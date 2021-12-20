@@ -1,6 +1,6 @@
 ---
 id: 12971
-title: Generative and Discriminative machine learning models
+title: Generative and Discriminative Machine Learning Models
 date: 2020-04-01
 author: taimane
 layout: post
