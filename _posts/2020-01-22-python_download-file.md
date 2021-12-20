@@ -3,6 +3,7 @@ id: 12971
 title: Python download file
 date: 2020-02-14
 author: taimane
+description: Using different libraries in Python to download a file and unzip it afterwords. Most common way would be to use wget and requests packages, and in some cases tqdm to create the progress bar while downlaoding. Examples cover all cases.
 layout: post
 permalink: /python/download-file/
 published: true
@@ -11,6 +12,8 @@ categories:
    - python
 tags:
    - download file
+   - python wget
+   - pip install wget
    - python wget downlad
    - python download file
    - python requests
