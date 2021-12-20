@@ -89,7 +89,11 @@ In here "gender" is a **feature**. In general, generative algorithms generate a 
 What's great about generative models: they can create **new data**.
  
 ## Generative model written in formal way
- 
+
+Having the features:  $X={x_1, x_2, \dots, x_n}$
+and label  $Y=y$, and we can define joint probability
+$P(Y,X) = P(y,x_1,x_2, \dots, x_n)$
+
 **Generative models** task is to learn [joint probability](https://dejanbatanjac.github.io/joint-probability): $P(X,Y)$ , which in case there are no labels is just $P(X)$. Here $Y$ is the target variable and $X$ is the observable variable.
  
 We can read simple $P(X,Y)$ as: generative model learns the distribution of the data and tells you how likely a given example is.
