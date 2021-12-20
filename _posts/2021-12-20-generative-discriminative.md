@@ -96,16 +96,16 @@ We can read simple $P(X,Y)$ as: generative model learns the distribution of the 
  
 If we rewrite this joint probability:
  
-$P(X,Y) = P(X | Y) P(Y)$
+$P(X,Y) = P(X \mid Y) P(Y)$
  
-We can read $P(X | Y)$ as probability of $X$ given label $Y$.
+We can read $P(X \mid Y)$ as probability of $X$ given label $Y$.
  
  
 $P(Y)$ or $p(Y)$ denotes the probability. We use [small $p$ for probability of continuous distributions and $P$ for discrete distributions](https://dejanbatanjac.github.io/bayesian-rule).
  
 ## Discriminative model written in formal way
  
-**Discriminative models** learns conditional probability: $P(Y|X=x)$.
+**Discriminative models** learns conditional probability: $P(Y \mid X=x)$.
  
 We may try to learn this probability distribution or to estimate it.
  
@@ -136,13 +136,13 @@ In practice Bayes Optimal classifier may be computationally expensive or even in
  
 ## Discriminative model as a function
  
-Discriminative model may not learn the $P(Y | X)$ because this may be hard. Why to learn the whole distribution when we can just learn the function to get the most likely label:
+Discriminative model may not learn the $P(Y \mid X)$ because this may be hard. Why to learn the whole distribution when we can just learn the function to get the most likely label:
  
-$$f(X) = \underset{y}{\operatorname{arg\,max}}  P(X | Y=y)$$
+$$f(X) = \underset{y}{\operatorname{arg\,max}}  P(X \mid Y=y)$$
  
 The function will allays return a single label.
  
-> If we have probability distribution $P(Y | X)$ we can always determine function $f(X)$.
+> If we have probability distribution $P(Y \mid X)$ we can always determine function $f(X)$.
  
 KNN is an example of a discriminative model that works exactly as a function $f(X)$.
 
@@ -158,7 +158,7 @@ To learn the model from the distribution we have two approaches and one formula:
 * Maximum a Posteriori (MAP), a Bayesian method
 * Maximum Likelihood Estimation (MLE), a frequentist method.
  
-$$P(\theta | X) = P(X | \theta)P(\theta)$$
+$$P(\theta \mid X) = P(X \mid \theta)P(\theta)$$
  
 > Often the terminology for "find a model" is "find a hypothesis".
  
