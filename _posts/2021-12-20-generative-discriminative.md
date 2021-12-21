@@ -91,7 +91,7 @@ What's great about generative models: they can create **new data**.
 ## Generative model written in formal way
 
 Having the features:  $X={x_1, x_2, \dots, x_n}$
-and label  $Y=y$, and we can define joint probability
+and label  $Y=y$, we can define joint probability
 $P(Y,X) = P(y,x_1,x_2, \dots, x_n)$
 
 **Generative models** task is to learn [joint probability](https://dejanbatanjac.github.io/joint-probability): $P(X,Y)$ , which in case there are no labels is just $P(X)$. Here $Y$ is the target variable and $X$ is the observable variable.
