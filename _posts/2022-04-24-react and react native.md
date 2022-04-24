@@ -7,7 +7,7 @@ layout: post
 permalink: /react-and-react-native/
 published: true
 categories:
-   - js   
+   - javascript
 tags:
    - react-native
    - react
