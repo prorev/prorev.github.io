@@ -143,7 +143,9 @@ cd my-app
 npm start
 ```
 
-Create React App is a comfortable environment for learning React, and is the best way to start building a new single-page application in React.
+The npx stands for Node Package Execute and it comes with the npm. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package.
+
+Create React App (create-react-app) is a comfortable environment for learning React, and is probable the best way to start building a new single-page application in React.
 
 There are other ways:
 * Next.js
