@@ -60,5 +60,5 @@ render() {
 React is for websites.
 React Native is for mobile applications, allowing you to build native mobile applications for different platforms.
 
-<div data-snack-id="@intelnovel/supportive-banana" data-snack-platform="web" data-snack-preview="true" data-snack-theme="light" style="overflow:hidden;background:#F9F9F9;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
+<div data-snack-id="@intelnovel/supportive-banana-part-2" data-snack-platform="web" data-snack-preview="true" data-snack-theme="light" style="overflow:hidden;background:#F9F9F9;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
 <script async src="https://snack.expo.dev/embed.js"></script>
