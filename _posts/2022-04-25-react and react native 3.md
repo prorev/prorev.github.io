@@ -92,7 +92,7 @@ If you plan to show the image in React native you should use the Image component
  
 But the image won't be visible if you don't explicitly specify a width and height.
  
-```jsx
+```
 import React from 'react';
 import { Image,  StyleSheet, Text, View } from 'react-native';
 import logo from './assets/logo.png';
