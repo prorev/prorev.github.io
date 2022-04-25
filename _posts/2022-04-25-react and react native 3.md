@@ -102,7 +102,7 @@ export default function App() {
     <View style={styles.container}>
       <Image source={logo} style={ { width: 305, height: 159 } } />
  
-      <Text style={{color: '#888', fontSize: 18}}>
+      <Text style={ {color: '#888', fontSize: 18} }>
         To share a photo from your phone with a friend, just press the button below!
       </Text>
     </View>
@@ -128,9 +128,9 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={{ uri: "https://i.imgur.com/TkIrScD.png" }} style={{ width: 305, height: 199 }} />
+      <Image source={ { uri: "https://i.imgur.com/TkIrScD.png" } } style={ { width: 305, height: 199 } } />
    
-      <Text style={{color: '#888', fontSize: 18}}>
+      <Text style={ {color: '#888', fontSize: 18} }>
         To share a photo from your phone with a friend, just press the button below!
       </Text>
     </View>
@@ -176,9 +176,9 @@ const styles = StyleSheet.create({
  
 ## Inline styles
  
-The example with inline styles use `{{}}` double brackets set on a Text component:
+The example with inline styles use `{ {} }` double brackets set on a Text component:
  
-`{{color: '#888', fontSize: 18}}`
+`{ {color: '#888', fontSize: 18} }`
  
 ```jsx
 import React from 'react';
@@ -187,7 +187,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{color: '#888', fontSize: 18}}>
+      <Text style={ {color: '#888', fontSize: 18} }>
         To share a photo from your phone with a friend, just press the button below!
       </Text>
     </View>
@@ -224,7 +224,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={{ uri: 'https://i.imgur.com/TkIrScD.png' }} style={styles.logo} />
+      <Image source={ { uri: 'https://i.imgur.com/TkIrScD.png' } } style={styles.logo} />
       <Text style={styles.instructions}>
         To share a photo from your phone with a friend, just press the button below!
       </Text>
