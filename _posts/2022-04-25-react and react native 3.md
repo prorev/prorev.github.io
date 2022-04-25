@@ -1,6 +1,6 @@
 ---
 id: 3152
-title: React and React Native
+title: React and React Native part 3
 date: 2016-09-22 19:12:56
 author: taimane
 layout: post
