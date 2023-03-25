@@ -4,7 +4,7 @@ title: React and React Native part 2
 date: 2016-09-22 19:12:56
 author: taimane
 layout: post
-permalink: /react-and-react-native2/
+permalink: /react-and-react-native-2/
 published: true
 categories:
    - javascript
@@ -38,7 +38,7 @@ State is used for data that will change.
  
 Now the text will be the state and if we click the original text the text will alter
  
-```js
+```jsx
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
  
@@ -85,7 +85,7 @@ The purpose of the function is to display the specified HTML code inside the spe
  
 Example:
  
-```js
+```jsx
 ReactDOM.render(<p>Hello</p>, document.getElementById('root'));
 ```
  
@@ -96,7 +96,7 @@ I can think of Class components and Function components. Component name _**must*
  
 Class component includes the `extends React.Component` part.
  
-```js
+```jsx
 class Car extends React.Component {
   render() {
     return <h2>Hi, I am a Car!</h2>;
@@ -105,7 +105,7 @@ class Car extends React.Component {
 ```
 Functional component for the same output HTML is shorter:
  
-```js
+```jsx
 function Car() {
   return <h2>Hi, I am a Car!</h2>;
 }
@@ -117,7 +117,7 @@ To use components in React apps just write: `<Car />`.
 ## Component in a component
  
 You can create two components
-```js
+```jsx
 function Bike() {
   return <h2>I am a Bike!</h2>;
 }
@@ -141,7 +141,7 @@ Props are passed into React components.
  
 Example: Property as HTML attribute
  
-```js
+```jsx
 function Car(props) {
   return <h2>I am a { props.brand }!</h2>;
 }
@@ -161,7 +161,7 @@ root.render(<Garage />);
  
 Example: Create a variable carName
  
-```js
+```jsx
 function Car(props) {
   return <h2>I am a { props.brand }!</h2>;
 }
@@ -186,13 +186,13 @@ root.render(<Garage />);
 Use camelCase syntax to define React events and use
 `{}`  after the event name:
  
-```js
+```jsx
 <button onClick={shoot}>Take the Shot!</button>
 ```
  
 In here the onClick function is called `shoot` and it is set inside the `Ball` component:
  
-```js
+```jsx
 function Ball() {
   const shoot = () => {
     alert("Great Shot!");
@@ -209,7 +209,7 @@ root.render(<Ball />);
  
 ## Lists
  
-```js
+```jsx
 function Car(props) {
   return <li>I am a { props.brand }</li>;
 }
@@ -243,7 +243,7 @@ npm i -D react-router-dom
  
 Now use react router to route to pages based on URL:
  
-```js
+```jsx
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
@@ -289,7 +289,7 @@ If you write a function component and realize you need to add some state to it, 
  
 You can save the state inside the class:
  
-```js
+```jsx
 class Example extends React.Component {
   constructor(props) {
     super(props);
@@ -313,7 +313,7 @@ class Example extends React.Component {
  
 But effectively you can achieve the same with hooks.
  
-```js
+```jsx
 import React, { useState } from 'react';
  
 function Example() {
@@ -331,7 +331,8 @@ function Example() {
 ```
  
 Note we used the `useState` hook in the previous example.
-```js
+
+```jsx
 import { useState } from "react";
 ```
  
@@ -342,7 +343,7 @@ import { useState } from "react";
  
 _Example: Multiple state hooks_
  
-```js
+```jsx
 import { useState } from "react";
 import ReactDOM from "react-dom";
  
@@ -370,7 +371,7 @@ root.render(<Car />);
  
 The `useEffect` hook allows you to perform side effects in your components.
  
-```js
+```jsx
 import { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
  

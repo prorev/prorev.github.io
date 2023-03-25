@@ -70,7 +70,7 @@ const myElement = <h1 className="myclass">Hello World</h1>;
  
 JSX does not support `if` statement:
  
-```js
+```jsx
 const x = 5;
 let text = "Goodbye";
 if (x < 10) {
@@ -137,7 +137,7 @@ React uses ES6. Stay familiar with features like:
  
 ## How do you create a React app?
  
-```js
+```
 npx create-react-app my-app
 cd my-app
 npm start

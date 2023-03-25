@@ -65,3 +65,7 @@ function videos_in_playlist($playlist_id){
 	return $varr;
 }
 ```
+
+
+YouTube quotas cost:
+https://developers.google.com/youtube/v3/determine_quota_cost
