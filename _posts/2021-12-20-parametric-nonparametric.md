@@ -5,8 +5,8 @@ date: 2020-04-01
 author: taimane
 description: Explains the parametric and non-parametric machine learning models.
 layout: post
-permalink: /machine-learning/parametric/
-published: false
+permalink: /machine-learning/parametric-vs-nonparametric/
+published: true
 image: 
 categories: 
    - machine-learning
@@ -45,28 +45,44 @@ _Table of Contents:_
 
 ## Parametric vs. non-parametric
 
-Let's explain parametric vs. non-parametric machine learning models and what is the difference.
-
 To define parametric machine learning models we have two options:
 
 **_Option 1_**: Parametric machine learning models are those using fixed number of parameters.
 
-The opposite non parametric models would be those models having 0 or infinite number of parameters.
+The opposite would be those models having 0 or infinite number of parameters.
 
 **_Option 2_**: Structure of parametric machine learning models can be specified a priori (in advance), or we can assume the data distribution in advance.
 
-The opposite would be we cannot assume the data distribution in advance (a priori). Data distribution is determined from the data.
+In non-parametric models we cannot assume the data distribution in advance. Data distribution is determined from the data.
 
+
+**Parametric models** are characterized by a fixed set of parameters that are learned from the data during training.
+
+These models assume a specific functional form for the relationship between the input features and the output variable, and the goal is to estimate the values of the model parameters that best fit the data. 
+
+
+**Nonparametric models** do not make assumptions about the functional form of the relationship between the input features and the output variable. They use flexible or adaptive models that can adjust to the complexity of the data during training. 
+
+## When to choose P over the other NP model
+
+Parametric models are often preferred when the relationship between the input features and the output variable is well understood and can be modeled with a known functional form. Nonparametric models are useful when the relationship is complex or unknown, or when the data has a high degree of noise or variability.
 
 ## Different parametric models
 
-Logistic regression
+Logistic regression, linear regression, neural networks with a fixed number of layers.
 
 
 ## Different non-parametric models
 
-KNN
+Decision trees, random forests, support vector machines, k-nearest neighbors.
 
-## What is histogram
+## In practice 
 
-...
+The choice between parametric and nonparametric models depends on the specific problem and the characteristics of the data. It's often a good idea to try both types of models and compare their performance before making a final decision.
+
+
+Parametric models are often easier to interpret than nonparametric models, but can be sensitive to outliers or the presence of noise in the data, which can affect the accuracy of the model.
+
+Nonparametric models can potentially fit any pattern in the data, which can make them more accurate than parametric models in some cases.
+
+Nonparametric models are often better suited for high-dimensional data or data with complex interactions between features.
