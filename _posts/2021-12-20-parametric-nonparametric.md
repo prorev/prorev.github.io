@@ -93,3 +93,7 @@ Nonparametric models are often better suited for high-dimensional data or data w
 *A learning model that summarizes data with a set of parameters of fixed size (independent of the number of training examples) is called a parametric model. No matter how much data you throw at a parametric model, it won't change its mind about how many parameters it needs.*
 
 — [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Approach-Stuart-Russell/dp/9332543518/ref=sr_1_6?crid=1L1TPYVZOB9B0&keywords=Artificial+Intelligence%3A+A+Modern+Approach&qid=1679935585&sprefix=artificial+intelligence+a+modern+approach%2Caps%2C187&sr=8-6), page 737
+
+For nonparametric models we ask a question: What is the number of parameters of the decision tree since the decision tree is an example of a nonparametric model? 
+
+The number of parameters in a decision tree depends on the quantity of the data. The more data we have means more parameters.
