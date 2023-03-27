@@ -55,6 +55,7 @@ The opposite would be those models having 0 or infinite number of parameters.
 
 In non-parametric models we cannot assume the data distribution in advance. Data distribution is determined from the data.
 
+![parametric](/wp-content/uploads/2023/parametric.nonparametric.jpg)
 
 **Parametric models** are characterized by a fixed set of parameters that are learned from the data during training.
 
