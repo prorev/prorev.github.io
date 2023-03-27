@@ -34,7 +34,7 @@ tags:
     });
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<style> img { width: 600px !important;}</style>
+<style> img { width: 300px !important;}</style>
 
 
 _Table of Contents:_
