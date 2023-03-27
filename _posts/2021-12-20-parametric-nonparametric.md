@@ -63,7 +63,7 @@ These models assume a specific functional form for the relationship between the 
 
 **Nonparametric models** do not make assumptions about the functional form of the relationship between the input features and the output variable. They use flexible or adaptive models that can adjust to the complexity of the data during training. 
 
-## When to choose P over the other NP model
+## When to choose parametric over the other nonparametric model
 
 Parametric models are often preferred when the relationship between the input features and the output variable is well understood and can be modeled with a known functional form. Nonparametric models are useful when the relationship is complex or unknown, or when the data has a high degree of noise or variability.
 
@@ -85,4 +85,8 @@ Parametric models are often easier to interpret than nonparametric models, but c
 
 Nonparametric models can potentially fit any pattern in the data, which can make them more accurate than parametric models in some cases.
 
-Nonparametric models are often better suited for high-dimensional data or data with complex interactions between features..
+Nonparametric models are often better suited for high-dimensional data or data with complex interactions between features.
+
+    A learning model that summarizes data with a set of parameters of fixed size (independent of the number of training examples) is called a parametric model. No matter how much data you throw at a parametric model, it won't change its mind about how many parameters it needs.
+
+— [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Approach-Stuart-Russell/dp/9332543518/ref=sr_1_6?crid=1L1TPYVZOB9B0&keywords=Artificial+Intelligence%3A+A+Modern+Approach&qid=1679935585&sprefix=artificial+intelligence+a+modern+approach%2Caps%2C187&sr=8-6), page 737
