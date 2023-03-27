@@ -85,4 +85,4 @@ Parametric models are often easier to interpret than nonparametric models, but c
 
 Nonparametric models can potentially fit any pattern in the data, which can make them more accurate than parametric models in some cases.
 
-Nonparametric models are often better suited for high-dimensional data or data with complex interactions between features.
+Nonparametric models are often better suited for high-dimensional data or data with complex interactions between features..
