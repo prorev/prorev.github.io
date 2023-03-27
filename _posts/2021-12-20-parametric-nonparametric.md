@@ -90,6 +90,6 @@ Nonparametric models can potentially fit any pattern in the data, which can make
 
 Nonparametric models are often better suited for high-dimensional data or data with complex interactions between features.
 
-    A learning model that summarizes data with a set of parameters of fixed size (independent of the number of training examples) is called a parametric model. No matter how much data you throw at a parametric model, it won't change its mind about how many parameters it needs.
+*A learning model that summarizes data with a set of parameters of fixed size (independent of the number of training examples) is called a parametric model. No matter how much data you throw at a parametric model, it won't change its mind about how many parameters it needs.*
 
 — [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Approach-Stuart-Russell/dp/9332543518/ref=sr_1_6?crid=1L1TPYVZOB9B0&keywords=Artificial+Intelligence%3A+A+Modern+Approach&qid=1679935585&sprefix=artificial+intelligence+a+modern+approach%2Caps%2C187&sr=8-6), page 737
