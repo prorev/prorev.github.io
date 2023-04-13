@@ -5,7 +5,7 @@ date: 2022-03-20
 author: taimane
 layout: post
 permalink: /machine-learning/object-detection/
-published: false
+published: true
 image:
 categories:
    - machine-learning
