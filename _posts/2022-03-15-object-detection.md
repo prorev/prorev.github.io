@@ -148,7 +148,25 @@ Example: Canny edge detector with different parameter alpha
 
 > R-CNN once it gets the features, each 2000+ region uses a selective search algorithm.
 
+## YOLO
 
+YOLO (You Only Look Once) is a popular object detection algorithm that uses a deep convolutional neural network to detect objects in an image. Unlike traditional object detection methods that require multiple region proposals and classification steps, YOLO performs detection in a single forward pass of the neural network.
+
+The YOLO algorithm works by dividing the input image into a grid of cells and predicting the bounding boxes and class probabilities for each cell. Each bounding box is represented by a set of four coordinates (x, y, width, height), and the class probabilities are predicted for each object category that the network is trained to recognize.
+
+The YOLO algorithm consists of the following steps:
+
+* Image Input: The input image is passed through a deep convolutional neural network, such as DarkNet, which generates a feature map.
+
+* Grid Creation: The feature map is divided into a grid of cells, and each cell is responsible for detecting objects that are located within it.
+
+* Bounding Box Prediction: For each cell, the network predicts a fixed number of bounding boxes, along with the confidence scores that indicate the likelihood of the object's presence inside each box. Each bounding box is also associated with a class probability score for each object category.
+
+* Non-Maximum Suppression: To eliminate overlapping bounding boxes, non-maximum suppression is applied to the output of the network. This involves discarding low-confidence bounding boxes that have a high overlap with other bounding boxes that have a higher confidence score.
+
+* Output: The final output of the network is a list of bounding boxes and their associated class probabilities.
+
+YOLO has several advantages over traditional object detection algorithms, including speed and accuracy. Because YOLO performs detection in a single pass, it is significantly faster than other approaches that require multiple region proposals and classification steps. Additionally, YOLO is able to capture the context of an object in the image, which can improve detection accuracy.
 
 
 ## Selective Search Algorithm
@@ -193,14 +211,32 @@ During training, the network learns to adjust the location and size of the ancho
 Using anchor boxes helps to reduce the computational complexity of object detection by reducing the number of possible object locations that the network needs to consider. It also improves the accuracy of object detection by allowing the network to better localize and classify objects in the image.
 
 
+## SSD
 
+SSD (Single Shot MultiBox Detector) is another popular object detection algorithm that uses a deep convolutional neural network to detect objects in an image. Like YOLO, it is designed to be fast and efficient, and can detect multiple objects in a single pass.
+
+The SSD algorithm works by dividing the input image into a grid of fixed-size default boxes, which are used as templates for predicting the location and class of objects within the grid. Each default box is associated with a set of class probabilities, indicating the likelihood that the object within the box belongs to each of the predefined classes.
+
+The SSD algorithm consists of the following steps:
+
+* Image Input: The input image is passed through a deep convolutional neural network, such as VGGNet, which generates a feature map.
+
+* Feature Extraction: The feature map is then passed through a set of convolutional layers, which are responsible for detecting objects at different scales and aspect ratios.
+
+* Default Box Generation: For each location in the feature map, a fixed set of default boxes are generated with different aspect ratios and scales, which serve as templates for predicting the location and class of objects within the box.
+
+* Bounding Box Prediction: For each default box, the network predicts the offset between the box and the ground truth box, as well as the class probabilities for each predefined class.
+
+* Non-Maximum Suppression: Like YOLO, SSD uses non-maximum suppression to eliminate overlapping bounding boxes and retain only the most confident detections.
+
+* Output: The final output of the network is a list of bounding boxes and their associated class probabilities.
+
+SSD has several advantages over traditional object detection algorithms, including its ability to detect objects at different scales and aspect ratios, and its speed and efficiency. Additionally, SSD is able to handle images with multiple objects of different classes, making it suitable for a wide range of applications, such as pedestrian detection, traffic sign recognition, and facial detection.
 
 ## Similar tasks to Object Detection
 
 
-
-
-There are several similar tasks to object detection in computer vision and machine learning:
+There are several similar tasks to object detection not to be confused with object detection:
 
 
 * Object Localization: Object localization involves identifying the location of an object in an image, typically using bounding boxes. However, unlike object detection, it doesn't involve identifying the class or category of the object.
