@@ -15,12 +15,9 @@ tags:
 ---
 From Wikipedia:
 
-
 >Response status codes beginning with the digit "5" indicate cases in which the server is aware that it has encountered an error or is otherwise incapable of performing the request.
 
-
-Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation, and indicate whether it is a temporary or permanent condition."
-
+>Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation, and indicate whether it is a temporary or permanent condition.
 
 502 Bad Gateway error occurs when using proxy (intermediate) CDN servers. These intermediate servers stay between the original server and the clients assessing the original web site.
 
