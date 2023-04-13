@@ -4,11 +4,10 @@ title: 502 Bad gateway HTTP error
 date: 2012-11-22 21:31:32
 author: taimane
 layout: post
-permalink: /html/502-bad-gateway-http-error/
+permalink: /http/502-bad-gateway-http-error/
 published: true
 categories:
-   - http 
-   - html
+   - http    
 tags:
    - 501
    - 502
