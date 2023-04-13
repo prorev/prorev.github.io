@@ -34,20 +34,15 @@ If you ask yourself about the location of the proxy server you should analyze th
 ![502](/wp-content/uploads/2023/concept1.png)
 
 
-```wget https://google.com
-
-
+```
+wget https://google.com
 --2012-11-22 22:21:54--  https://google.com/
-
 
 Resolving google.com... 79.101.110.94, 79.101.110.98, 79.101.110.99, ...
 
-
 Connecting to google.com|79.101.110.94|:80... connected.
 
-
 HTTP request sent, awaiting response... 301 Moved Permanently
-
 
 Location: https://www.google.com/ [following]
 --2012-11-22 22:22:09--  https://www.google.com/
@@ -57,13 +52,7 @@ Location: https://www.google.com/ [following]
 If you are surfing the Web and see this problem is for all Websites you try to visit, then either your ISP has a major equipment failure/overload problem or there is something wrong with your internal Internet connection.
 
 
-
-
-
-
 If you get this problem for only some of the Web sites you try to visit then it is likely to be a problem at those sites.
-
-
 
 
 Use of proxies and caching is increasing on the Web and there must be a way to get the traffic from the original web site (not using the proxy web servers) and this can be done without using the DNS by direct IP address typing the HTTP requests.
@@ -73,10 +62,6 @@ Use of proxies and caching is increasing on the Web and there must be a way to g
 
 
 Any Web browser goes through the following cycle when it communicates with the Web server:
-
-
-
-
 
 
 Obtain an IP address from the IP name of the site (the site URL without the leading 'https://'). This lookup (conversion of IP name to IP address) is provided by domain name servers (DNSs).
@@ -94,7 +79,7 @@ Receive an HTTP data stream back from the Web server in response. This data stre
 ![502](/wp-content/uploads/2023/concept3.png)
 
 
-The list of other 5xx errors:
+**The list of other 5xx errors:**
 
 
 500 Internal Server Error - A generic error message, given when no more specific message is suitable.
