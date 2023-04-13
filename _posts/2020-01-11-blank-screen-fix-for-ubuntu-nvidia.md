@@ -5,7 +5,7 @@ date: 2014-10-19 23:37:46
 author: taimane
 layout: post
 permalink: /ubuntu/blank-screen-fix-for-ubuntu-nvidia/
-published: false
+published: true
 categories:
    - nvidia
 tags:
