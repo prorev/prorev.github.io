@@ -15,7 +15,7 @@ tags:
 ---
 
 
-Object detection is a machine learning technique used to identify and locate objects in images or videos. It's important for things like self-driving cars, security cameras, and medical imaging.
+Object detection is a machine learning technique used to identify and locate objects in images or videos. It's important for things like self-driving cars, security cameras, medical imaging and more. 
 
 
 Deep learning-based methods are popular and involve using neural networks to detect objects. Usually it requires a large dataset of labeled images for training.
