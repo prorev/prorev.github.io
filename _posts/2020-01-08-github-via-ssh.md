@@ -73,7 +73,7 @@ $ Get-Service ssh-agent
 _Output:_
 ```
 Status   Name               DisplayName
-------   ----               -----------
+------   ----               ----------
 Stopped  ssh-agent          OpenSSH Authentication Agent
 ```
 
