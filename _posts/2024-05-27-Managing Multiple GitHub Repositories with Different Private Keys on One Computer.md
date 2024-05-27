@@ -1,10 +1,9 @@
 ---
 id: 12971
-title: Using GitHub via SSH
+title: Managing Multiple GitHub Repositories with Different Private Keys on One Computer (Linux based)
 date: 2024-05-27
 author: taimane
 layout: post
-title: Managing Multiple GitHub Repositories with Different Private Keys on One Computer (Linux based)
 permalink: /github/multi-github-repos-via-ssh/
 published: true
 image: 
