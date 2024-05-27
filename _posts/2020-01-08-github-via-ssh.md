@@ -27,7 +27,7 @@ _Table of Contents:_
 
 ---
 
-> This text will explain connecting to GitHub using SSH protocol on Windows OS.
+> This text will explain connecting to GitHub using SSH protocol on Windows OS. 
 
 You can connect and authenticate to remote servers and services using the SSH protocol. With SSH keys, no username or password are needed. 
 
