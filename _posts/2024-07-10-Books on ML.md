@@ -12,6 +12,7 @@ categories:
 tags:
    - knjige
    - mašinski učenje
+   - ml
 ---
 
 _Sadržaj:_
