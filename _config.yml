@@ -4,7 +4,7 @@ description: Catching the latest programming trends.
 url: https://programming-review.com
 lang: en
 theme: minima
-footer: © <a href="https://programming-review.com">PROGRAMMING REVIEW 2010-2021</a>
+footer: © <a href="https://programming-review.com">PROGRAMMING REVIEW 2010-2025</a>
 markdown: kramdown
 kramdown:
   input: GFM
